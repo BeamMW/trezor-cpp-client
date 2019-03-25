@@ -10,6 +10,7 @@ typedef struct
   uint16_t type = 0;
   uint32_t length = 0;
   std::vector<uint8_t> msg;
+  std::string error = {};
 } Call;
 
 inline void from_bytes(const uint8_t *bytes, Call &value)

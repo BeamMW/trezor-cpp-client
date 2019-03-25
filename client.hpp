@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <utility>
 #include <vector>
 #include <curl/curl.h>
 #include "models/models.hpp"
@@ -21,35 +22,46 @@ class Client
 
     std::vector<Enumerate> enumerate()
     {
-        return perform<std::vector<Enumerate>>("/enumerate");
+        return perform<std::vector<Enumerate>>("/enumerate").first;
     }
 
     Session acquire(std::string path, std::string previousSession = "null")
     {
-        return perform<Session>("/acquire/" + path + "/" + previousSession);
+        return perform<Session>("/acquire/" + path + "/" + previousSession).first;
     }
 
     Call call(std::string session, std::string hex)
     {
         Call response;
-        auto res = perform("/call/" + session, hex.c_str());
-        auto bytes = new unsigned char[res.length() / 2];
-        hex2bin(res.c_str(), res.length(), bytes);
-        from_bytes(bytes, response);
-        delete bytes;
+        auto result = perform<Error>("/call/" + session, hex.c_str());
+        if (result.first.error.empty())
+        {
+            auto raw = result.second;
+            auto bytes = new unsigned char[raw.length() / 2];
+            std::cout << "bytes: " << raw.length() << std::endl;
+            hex2bin(raw.c_str(), raw.length(), bytes);
+            from_bytes(bytes, response);
+            delete bytes;
+            bytes = nullptr; 
+        }
+        else
+        {
+            response.error = result.first.error;
+        }
+        
         return response;
     }
 
   protected:
     template <typename T>
-    T perform(std::string url, const char *body = nullptr)
+    std::pair<T, std::string> perform(std::string url, const char *body = nullptr)
     {
-        auto res = perform(url, body);
+        auto result = perform(url, body);
         T response;
 
         try
         {
-            auto j = nlohmann::json::parse(res);
+            auto j = nlohmann::json::parse(result);
             response = j.get<T>();
         }
         catch (nlohmann::detail::exception e)
@@ -57,7 +69,7 @@ class Client
             std::cout << "CATCHED: " << e.what() << std::endl;
         }
 
-        return response;
+        return std::make_pair(response, result);
     }
 
     std::string perform(std::string url, const char *body = nullptr)
