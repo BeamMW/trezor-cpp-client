@@ -20,3 +20,7 @@ inline void from_bytes(const uint8_t *bytes, Call &value)
   std::copy_n(bytes + sizeof(value.type) + sizeof(value.length),
               value.length, std::back_inserter(value.msg));
 }
+
+inline std::string to_response(const Call &value) {
+  return pack_message(value.type, value.length, value.msg);
+}

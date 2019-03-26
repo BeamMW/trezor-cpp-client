@@ -37,12 +37,9 @@ class Client
         if (result.first.error.empty())
         {
             auto raw = result.second;
-            auto bytes = new unsigned char[raw.length() / 2];
-            std::cout << "bytes: " << raw.length() << std::endl;
-            hex2bin(raw.c_str(), raw.length(), bytes);
-            from_bytes(bytes, response);
-            delete bytes;
-            bytes = nullptr; 
+            std::unique_ptr<unsigned char[]> bytes (new unsigned char[raw.length() / 2]);
+            hex2bin(raw.c_str(), raw.length(), bytes.get());
+            from_bytes(bytes.get(), response);
         }
         else
         {
@@ -66,7 +63,8 @@ class Client
         }
         catch (nlohmann::detail::exception e)
         {
-            std::cout << "CATCHED: " << e.what() << std::endl;
+            std::cout << "CATCHED: " << e.what() << std::endl
+                      << "WAS: " << result << std::endl;
         }
 
         return std::make_pair(response, result);

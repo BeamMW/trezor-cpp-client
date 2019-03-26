@@ -10,7 +10,7 @@ src_files += [
     'src/messages/messages-common.pb.cc',
     'src/messages/messages-management.pb.cc',
     'src/messages/messages-beam.pb.cc',
-    'src/main.cpp',
+    'main.cpp',
 ]
 
 libs += [
