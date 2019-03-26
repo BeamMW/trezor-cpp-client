@@ -10,7 +10,7 @@ src_files += [
     'src/messages/messages-common.pb.cc',
     'src/messages/messages-management.pb.cc',
     'src/messages/messages-beam.pb.cc',
-    'main.cpp',
+    'src/main.cpp',
 ]
 
 libs += [
@@ -21,6 +21,7 @@ libs += [
 
 cpp_flags += [
     '-I.',
+    '-Isrc',
     '-Isrc/messages/',
 ]
 
