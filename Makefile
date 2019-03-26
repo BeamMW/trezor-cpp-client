@@ -2,8 +2,10 @@ JOBS = 4
 MAKE = make -j $(JOBS)
 SCONS = scons -j $(JOBS)
 
+.PHONY: build
+
 build:
-	$(SCONS) #CPPFLAGS=$(CXXFLAGS)
+	$(SCONS)
 
 rebuild: clean
 	$(SCONS) --no-cache
