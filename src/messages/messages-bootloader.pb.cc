@@ -6,18 +6,15 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
 namespace hw {
 namespace trezor {
@@ -25,30 +22,25 @@ namespace messages {
 namespace bootloader {
 class FirmwareEraseDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<FirmwareErase>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<FirmwareErase> _instance;
 } _FirmwareErase_default_instance_;
 class FirmwareRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<FirmwareRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<FirmwareRequest> _instance;
 } _FirmwareRequest_default_instance_;
 class FirmwareUploadDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<FirmwareUpload>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<FirmwareUpload> _instance;
 } _FirmwareUpload_default_instance_;
 class SelfTestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<SelfTest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<SelfTest> _instance;
 } _SelfTest_default_instance_;
 }  // namespace bootloader
 }  // namespace messages
 }  // namespace trezor
 }  // namespace hw
-namespace protobuf_messages_2dbootloader_2eproto {
-static void InitDefaultsFirmwareErase() {
+static void InitDefaultsFirmwareErase_messages_2dbootloader_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -59,10 +51,10 @@ static void InitDefaultsFirmwareErase() {
   ::hw::trezor::messages::bootloader::FirmwareErase::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_FirmwareErase =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsFirmwareErase}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_FirmwareErase_messages_2dbootloader_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsFirmwareErase_messages_2dbootloader_2eproto}, {}};
 
-static void InitDefaultsFirmwareRequest() {
+static void InitDefaultsFirmwareRequest_messages_2dbootloader_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -73,10 +65,10 @@ static void InitDefaultsFirmwareRequest() {
   ::hw::trezor::messages::bootloader::FirmwareRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_FirmwareRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsFirmwareRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_FirmwareRequest_messages_2dbootloader_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsFirmwareRequest_messages_2dbootloader_2eproto}, {}};
 
-static void InitDefaultsFirmwareUpload() {
+static void InitDefaultsFirmwareUpload_messages_2dbootloader_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -87,10 +79,10 @@ static void InitDefaultsFirmwareUpload() {
   ::hw::trezor::messages::bootloader::FirmwareUpload::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_FirmwareUpload =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsFirmwareUpload}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_FirmwareUpload_messages_2dbootloader_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsFirmwareUpload_messages_2dbootloader_2eproto}, {}};
 
-static void InitDefaultsSelfTest() {
+static void InitDefaultsSelfTest_messages_2dbootloader_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -101,53 +93,55 @@ static void InitDefaultsSelfTest() {
   ::hw::trezor::messages::bootloader::SelfTest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_SelfTest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsSelfTest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_SelfTest_messages_2dbootloader_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsSelfTest_messages_2dbootloader_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_FirmwareErase.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_FirmwareRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_FirmwareUpload.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_SelfTest.base);
+void InitDefaults_messages_2dbootloader_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_FirmwareErase_messages_2dbootloader_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_FirmwareRequest_messages_2dbootloader_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_FirmwareUpload_messages_2dbootloader_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_SelfTest_messages_2dbootloader_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[4];
+::google::protobuf::Metadata file_level_metadata_messages_2dbootloader_2eproto[4];
+constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_messages_2dbootloader_2eproto = nullptr;
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2dbootloader_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareErase, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareErase, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_messages_2dbootloader_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareErase, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareErase, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareErase, length_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareErase, length_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareRequest, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareRequest, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareRequest, offset_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareRequest, length_),
-  0,
-  1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareUpload, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareUpload, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareUpload, payload_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareUpload, hash_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareRequest, offset_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareRequest, length_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bootloader::SelfTest, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bootloader::SelfTest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareUpload, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareUpload, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bootloader::SelfTest, payload_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareUpload, payload_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bootloader::FirmwareUpload, hash_),
+  0,
+  1,
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bootloader::SelfTest, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bootloader::SelfTest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bootloader::SelfTest, payload_),
   0,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 6, sizeof(::hw::trezor::messages::bootloader::FirmwareErase)},
   { 7, 14, sizeof(::hw::trezor::messages::bootloader::FirmwareRequest)},
   { 16, 23, sizeof(::hw::trezor::messages::bootloader::FirmwareUpload)},
@@ -161,53 +155,37 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::bootloader::_SelfTest_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "messages-bootloader.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2dbootloader_2eproto = {
+  {}, AddDescriptors_messages_2dbootloader_2eproto, "messages-bootloader.proto", schemas,
+  file_default_instances, TableStruct_messages_2dbootloader_2eproto::offsets,
+  file_level_metadata_messages_2dbootloader_2eproto, 4, file_level_enum_descriptors_messages_2dbootloader_2eproto, file_level_service_descriptors_messages_2dbootloader_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_messages_2dbootloader_2eproto[] =
+  "\n\031messages-bootloader.proto\022\035hw.trezor.m"
+  "essages.bootloader\"\037\n\rFirmwareErase\022\016\n\006l"
+  "ength\030\001 \001(\r\"1\n\017FirmwareRequest\022\016\n\006offset"
+  "\030\001 \001(\r\022\016\n\006length\030\002 \001(\r\"/\n\016FirmwareUpload"
+  "\022\017\n\007payload\030\001 \002(\014\022\014\n\004hash\030\002 \001(\014\"\033\n\010SelfT"
+  "est\022\017\n\007payload\030\001 \001(\014B>\n#com.satoshilabs."
+  "trezor.lib.protobufB\027TrezorMessageBootlo"
+  "ader"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dbootloader_2eproto = {
+  false, InitDefaults_messages_2dbootloader_2eproto, 
+  descriptor_table_protodef_messages_2dbootloader_2eproto,
+  "messages-bootloader.proto", &assign_descriptors_table_messages_2dbootloader_2eproto, 284,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 4);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\031messages-bootloader.proto\022\035hw.trezor.m"
-      "essages.bootloader\"\037\n\rFirmwareErase\022\016\n\006l"
-      "ength\030\001 \001(\r\"1\n\017FirmwareRequest\022\016\n\006offset"
-      "\030\001 \001(\r\022\016\n\006length\030\002 \001(\r\"/\n\016FirmwareUpload"
-      "\022\017\n\007payload\030\001 \002(\014\022\014\n\004hash\030\002 \001(\014\"\033\n\010SelfT"
-      "est\022\017\n\007payload\030\001 \001(\014B>\n#com.satoshilabs."
-      "trezor.lib.protobufB\027TrezorMessageBootlo"
-      "ader"
+void AddDescriptors_messages_2dbootloader_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 284);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "messages-bootloader.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_messages_2dbootloader_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_messages_2dbootloader_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_messages_2dbootloader_2eproto = []() { AddDescriptors_messages_2dbootloader_2eproto(); return true; }();
 namespace hw {
 namespace trezor {
 namespace messages {
@@ -217,20 +195,25 @@ namespace bootloader {
 
 void FirmwareErase::InitAsDefaultInstance() {
 }
+class FirmwareErase::HasBitSetters {
+ public:
+  static void set_has_length(FirmwareErase* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int FirmwareErase::kLengthFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 FirmwareErase::FirmwareErase()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbootloader_2eproto::scc_info_FirmwareErase.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bootloader.FirmwareErase)
 }
 FirmwareErase::FirmwareErase(const FirmwareErase& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   length_ = from.length_;
@@ -252,13 +235,8 @@ void FirmwareErase::SharedDtor() {
 void FirmwareErase::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* FirmwareErase::descriptor() {
-  ::protobuf_messages_2dbootloader_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbootloader_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const FirmwareErase& FirmwareErase::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbootloader_2eproto::scc_info_FirmwareErase.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_FirmwareErase_messages_2dbootloader_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -274,9 +252,46 @@ void FirmwareErase::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* FirmwareErase::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<FirmwareErase*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 length = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_length(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool FirmwareErase::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bootloader.FirmwareErase)
   for (;;) {
@@ -286,9 +301,8 @@ bool FirmwareErase::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 length = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_length();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_length(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &length_)));
@@ -317,6 +331,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void FirmwareErase::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -338,8 +353,7 @@ void FirmwareErase::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* FirmwareErase::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bootloader.FirmwareErase)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -367,8 +381,13 @@ size_t FirmwareErase::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional uint32 length = 1;
-  if (has_length()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->length());
@@ -383,9 +402,9 @@ void FirmwareErase::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bootloader.FirmwareErase)
   GOOGLE_DCHECK_NE(&from, this);
   const FirmwareErase* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const FirmwareErase>(
+      ::google::protobuf::DynamicCastToGenerated<FirmwareErase>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bootloader.FirmwareErase)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -430,14 +449,14 @@ void FirmwareErase::Swap(FirmwareErase* other) {
 }
 void FirmwareErase::InternalSwap(FirmwareErase* other) {
   using std::swap;
-  swap(length_, other->length_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(length_, other->length_);
 }
 
 ::google::protobuf::Metadata FirmwareErase::GetMetadata() const {
-  protobuf_messages_2dbootloader_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbootloader_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbootloader_2eproto);
+  return ::file_level_metadata_messages_2dbootloader_2eproto[kIndexInFileMessages];
 }
 
 
@@ -445,21 +464,29 @@ void FirmwareErase::InternalSwap(FirmwareErase* other) {
 
 void FirmwareRequest::InitAsDefaultInstance() {
 }
+class FirmwareRequest::HasBitSetters {
+ public:
+  static void set_has_offset(FirmwareRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_length(FirmwareRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int FirmwareRequest::kOffsetFieldNumber;
 const int FirmwareRequest::kLengthFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 FirmwareRequest::FirmwareRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbootloader_2eproto::scc_info_FirmwareRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bootloader.FirmwareRequest)
 }
 FirmwareRequest::FirmwareRequest(const FirmwareRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&offset_, &from.offset_,
@@ -485,13 +512,8 @@ void FirmwareRequest::SharedDtor() {
 void FirmwareRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* FirmwareRequest::descriptor() {
-  ::protobuf_messages_2dbootloader_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbootloader_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const FirmwareRequest& FirmwareRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbootloader_2eproto::scc_info_FirmwareRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_FirmwareRequest_messages_2dbootloader_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -503,7 +525,7 @@ void FirmwareRequest::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&offset_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&length_) -
         reinterpret_cast<char*>(&offset_)) + sizeof(length_));
@@ -512,9 +534,53 @@ void FirmwareRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* FirmwareRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<FirmwareRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 offset = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_offset(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 length = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_length(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool FirmwareRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bootloader.FirmwareRequest)
   for (;;) {
@@ -524,9 +590,8 @@ bool FirmwareRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 offset = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_offset();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_offset(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &offset_)));
@@ -538,9 +603,8 @@ bool FirmwareRequest::MergePartialFromCodedStream(
 
       // optional uint32 length = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_length();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_length(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &length_)));
@@ -569,6 +633,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void FirmwareRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -595,8 +660,7 @@ void FirmwareRequest::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* FirmwareRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bootloader.FirmwareRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -629,16 +693,21 @@ size_t FirmwareRequest::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint32 offset = 1;
-    if (has_offset()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->offset());
     }
 
     // optional uint32 length = 2;
-    if (has_length()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->length());
@@ -654,9 +723,9 @@ void FirmwareRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bootloader.FirmwareRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const FirmwareRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const FirmwareRequest>(
+      ::google::protobuf::DynamicCastToGenerated<FirmwareRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bootloader.FirmwareRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -673,7 +742,7 @@ void FirmwareRequest::MergeFrom(const FirmwareRequest& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       offset_ = from.offset_;
     }
@@ -708,15 +777,15 @@ void FirmwareRequest::Swap(FirmwareRequest* other) {
 }
 void FirmwareRequest::InternalSwap(FirmwareRequest* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(offset_, other->offset_);
   swap(length_, other->length_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata FirmwareRequest::GetMetadata() const {
-  protobuf_messages_2dbootloader_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbootloader_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbootloader_2eproto);
+  return ::file_level_metadata_messages_2dbootloader_2eproto[kIndexInFileMessages];
 }
 
 
@@ -724,21 +793,29 @@ void FirmwareRequest::InternalSwap(FirmwareRequest* other) {
 
 void FirmwareUpload::InitAsDefaultInstance() {
 }
+class FirmwareUpload::HasBitSetters {
+ public:
+  static void set_has_payload(FirmwareUpload* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_hash(FirmwareUpload* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int FirmwareUpload::kPayloadFieldNumber;
 const int FirmwareUpload::kHashFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 FirmwareUpload::FirmwareUpload()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbootloader_2eproto::scc_info_FirmwareUpload.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bootloader.FirmwareUpload)
 }
 FirmwareUpload::FirmwareUpload(const FirmwareUpload& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   payload_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -753,6 +830,8 @@ FirmwareUpload::FirmwareUpload(const FirmwareUpload& from)
 }
 
 void FirmwareUpload::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_FirmwareUpload_messages_2dbootloader_2eproto.base);
   payload_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   hash_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -770,13 +849,8 @@ void FirmwareUpload::SharedDtor() {
 void FirmwareUpload::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* FirmwareUpload::descriptor() {
-  ::protobuf_messages_2dbootloader_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbootloader_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const FirmwareUpload& FirmwareUpload::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbootloader_2eproto::scc_info_FirmwareUpload.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_FirmwareUpload_messages_2dbootloader_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -788,7 +862,7 @@ void FirmwareUpload::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       payload_.ClearNonDefaultToEmptyNoArena();
     }
@@ -800,9 +874,76 @@ void FirmwareUpload::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* FirmwareUpload::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<FirmwareUpload*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // required bytes payload = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_payload();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes hash = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_hash();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool FirmwareUpload::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bootloader.FirmwareUpload)
   for (;;) {
@@ -812,8 +953,7 @@ bool FirmwareUpload::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required bytes payload = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_payload()));
         } else {
@@ -824,8 +964,7 @@ bool FirmwareUpload::MergePartialFromCodedStream(
 
       // optional bytes hash = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_hash()));
         } else {
@@ -853,6 +992,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void FirmwareUpload::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -881,8 +1021,7 @@ void FirmwareUpload::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* FirmwareUpload::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bootloader.FirmwareUpload)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -925,8 +1064,13 @@ size_t FirmwareUpload::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->payload());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional bytes hash = 2;
-  if (has_hash()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000002u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->hash());
@@ -941,9 +1085,9 @@ void FirmwareUpload::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bootloader.FirmwareUpload)
   GOOGLE_DCHECK_NE(&from, this);
   const FirmwareUpload* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const FirmwareUpload>(
+      ::google::protobuf::DynamicCastToGenerated<FirmwareUpload>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bootloader.FirmwareUpload)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -960,13 +1104,13 @@ void FirmwareUpload::MergeFrom(const FirmwareUpload& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_payload();
+      _has_bits_[0] |= 0x00000001u;
       payload_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.payload_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_hash();
+      _has_bits_[0] |= 0x00000002u;
       hash_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.hash_);
     }
   }
@@ -997,17 +1141,17 @@ void FirmwareUpload::Swap(FirmwareUpload* other) {
 }
 void FirmwareUpload::InternalSwap(FirmwareUpload* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   payload_.Swap(&other->payload_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   hash_.Swap(&other->hash_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata FirmwareUpload::GetMetadata() const {
-  protobuf_messages_2dbootloader_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbootloader_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbootloader_2eproto);
+  return ::file_level_metadata_messages_2dbootloader_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1015,20 +1159,25 @@ void FirmwareUpload::InternalSwap(FirmwareUpload* other) {
 
 void SelfTest::InitAsDefaultInstance() {
 }
+class SelfTest::HasBitSetters {
+ public:
+  static void set_has_payload(SelfTest* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SelfTest::kPayloadFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SelfTest::SelfTest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbootloader_2eproto::scc_info_SelfTest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bootloader.SelfTest)
 }
 SelfTest::SelfTest(const SelfTest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   payload_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1039,6 +1188,8 @@ SelfTest::SelfTest(const SelfTest& from)
 }
 
 void SelfTest::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_SelfTest_messages_2dbootloader_2eproto.base);
   payload_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1054,13 +1205,8 @@ void SelfTest::SharedDtor() {
 void SelfTest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* SelfTest::descriptor() {
-  ::protobuf_messages_2dbootloader_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbootloader_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const SelfTest& SelfTest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbootloader_2eproto::scc_info_SelfTest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_SelfTest_messages_2dbootloader_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1079,9 +1225,61 @@ void SelfTest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* SelfTest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<SelfTest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes payload = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_payload();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool SelfTest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bootloader.SelfTest)
   for (;;) {
@@ -1091,8 +1289,7 @@ bool SelfTest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes payload = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_payload()));
         } else {
@@ -1120,6 +1317,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void SelfTest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1142,8 +1340,7 @@ void SelfTest::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* SelfTest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bootloader.SelfTest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1173,8 +1370,13 @@ size_t SelfTest::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional bytes payload = 1;
-  if (has_payload()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->payload());
@@ -1189,9 +1391,9 @@ void SelfTest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bootloader.SelfTest)
   GOOGLE_DCHECK_NE(&from, this);
   const SelfTest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const SelfTest>(
+      ::google::protobuf::DynamicCastToGenerated<SelfTest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bootloader.SelfTest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1208,7 +1410,7 @@ void SelfTest::MergeFrom(const SelfTest& from) {
   (void) cached_has_bits;
 
   if (from.has_payload()) {
-    set_has_payload();
+    _has_bits_[0] |= 0x00000001u;
     payload_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.payload_);
   }
 }
@@ -1237,15 +1439,15 @@ void SelfTest::Swap(SelfTest* other) {
 }
 void SelfTest::InternalSwap(SelfTest* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   payload_.Swap(&other->payload_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata SelfTest::GetMetadata() const {
-  protobuf_messages_2dbootloader_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbootloader_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbootloader_2eproto);
+  return ::file_level_metadata_messages_2dbootloader_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1256,19 +1458,20 @@ void SelfTest::InternalSwap(SelfTest* other) {
 }  // namespace hw
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bootloader::FirmwareErase* Arena::CreateMaybeMessage< ::hw::trezor::messages::bootloader::FirmwareErase >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bootloader::FirmwareErase* Arena::CreateMaybeMessage< ::hw::trezor::messages::bootloader::FirmwareErase >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bootloader::FirmwareErase >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bootloader::FirmwareRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::bootloader::FirmwareRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bootloader::FirmwareRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::bootloader::FirmwareRequest >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bootloader::FirmwareRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bootloader::FirmwareUpload* Arena::CreateMaybeMessage< ::hw::trezor::messages::bootloader::FirmwareUpload >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bootloader::FirmwareUpload* Arena::CreateMaybeMessage< ::hw::trezor::messages::bootloader::FirmwareUpload >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bootloader::FirmwareUpload >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bootloader::SelfTest* Arena::CreateMaybeMessage< ::hw::trezor::messages::bootloader::SelfTest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bootloader::SelfTest* Arena::CreateMaybeMessage< ::hw::trezor::messages::bootloader::SelfTest >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bootloader::SelfTest >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

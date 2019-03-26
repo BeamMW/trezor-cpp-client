@@ -6,86 +6,68 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_messages_2dcardano_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dcardano_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CardanoSignTx_CardanoTxInputType;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dcardano_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CardanoSignTx_CardanoTxOutputType;
-}  // namespace protobuf_messages_2dcardano_2eproto
-namespace protobuf_messages_2dcommon_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dcommon_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HDNodeType;
-}  // namespace protobuf_messages_2dcommon_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dcardano_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CardanoSignTx_CardanoTxInputType_messages_2dcardano_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dcardano_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_CardanoSignTx_CardanoTxOutputType_messages_2dcardano_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dcommon_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HDNodeType_messages_2dcommon_2eproto;
 namespace hw {
 namespace trezor {
 namespace messages {
 namespace cardano {
 class CardanoGetAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CardanoGetAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CardanoGetAddress> _instance;
 } _CardanoGetAddress_default_instance_;
 class CardanoAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CardanoAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CardanoAddress> _instance;
 } _CardanoAddress_default_instance_;
 class CardanoGetPublicKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CardanoGetPublicKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CardanoGetPublicKey> _instance;
 } _CardanoGetPublicKey_default_instance_;
 class CardanoPublicKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CardanoPublicKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CardanoPublicKey> _instance;
 } _CardanoPublicKey_default_instance_;
 class CardanoSignTx_CardanoTxInputTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CardanoSignTx_CardanoTxInputType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CardanoSignTx_CardanoTxInputType> _instance;
 } _CardanoSignTx_CardanoTxInputType_default_instance_;
 class CardanoSignTx_CardanoTxOutputTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CardanoSignTx_CardanoTxOutputType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CardanoSignTx_CardanoTxOutputType> _instance;
 } _CardanoSignTx_CardanoTxOutputType_default_instance_;
 class CardanoSignTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CardanoSignTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CardanoSignTx> _instance;
 } _CardanoSignTx_default_instance_;
 class CardanoTxRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CardanoTxRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CardanoTxRequest> _instance;
 } _CardanoTxRequest_default_instance_;
 class CardanoTxAckDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CardanoTxAck>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CardanoTxAck> _instance;
 } _CardanoTxAck_default_instance_;
 class CardanoSignedTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<CardanoSignedTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<CardanoSignedTx> _instance;
 } _CardanoSignedTx_default_instance_;
 }  // namespace cardano
 }  // namespace messages
 }  // namespace trezor
 }  // namespace hw
-namespace protobuf_messages_2dcardano_2eproto {
-static void InitDefaultsCardanoGetAddress() {
+static void InitDefaultsCardanoGetAddress_messages_2dcardano_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -96,10 +78,10 @@ static void InitDefaultsCardanoGetAddress() {
   ::hw::trezor::messages::cardano::CardanoGetAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CardanoGetAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoGetAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CardanoGetAddress_messages_2dcardano_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoGetAddress_messages_2dcardano_2eproto}, {}};
 
-static void InitDefaultsCardanoAddress() {
+static void InitDefaultsCardanoAddress_messages_2dcardano_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -110,10 +92,10 @@ static void InitDefaultsCardanoAddress() {
   ::hw::trezor::messages::cardano::CardanoAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CardanoAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CardanoAddress_messages_2dcardano_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoAddress_messages_2dcardano_2eproto}, {}};
 
-static void InitDefaultsCardanoGetPublicKey() {
+static void InitDefaultsCardanoGetPublicKey_messages_2dcardano_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -124,10 +106,10 @@ static void InitDefaultsCardanoGetPublicKey() {
   ::hw::trezor::messages::cardano::CardanoGetPublicKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CardanoGetPublicKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoGetPublicKey}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CardanoGetPublicKey_messages_2dcardano_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoGetPublicKey_messages_2dcardano_2eproto}, {}};
 
-static void InitDefaultsCardanoPublicKey() {
+static void InitDefaultsCardanoPublicKey_messages_2dcardano_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -138,11 +120,11 @@ static void InitDefaultsCardanoPublicKey() {
   ::hw::trezor::messages::cardano::CardanoPublicKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_CardanoPublicKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCardanoPublicKey}, {
-      &protobuf_messages_2dcommon_2eproto::scc_info_HDNodeType.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_CardanoPublicKey_messages_2dcardano_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsCardanoPublicKey_messages_2dcardano_2eproto}, {
+      &scc_info_HDNodeType_messages_2dcommon_2eproto.base,}};
 
-static void InitDefaultsCardanoSignTx_CardanoTxInputType() {
+static void InitDefaultsCardanoSignTx_CardanoTxInputType_messages_2dcardano_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -153,10 +135,10 @@ static void InitDefaultsCardanoSignTx_CardanoTxInputType() {
   ::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CardanoSignTx_CardanoTxInputType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoSignTx_CardanoTxInputType}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CardanoSignTx_CardanoTxInputType_messages_2dcardano_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoSignTx_CardanoTxInputType_messages_2dcardano_2eproto}, {}};
 
-static void InitDefaultsCardanoSignTx_CardanoTxOutputType() {
+static void InitDefaultsCardanoSignTx_CardanoTxOutputType_messages_2dcardano_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -167,10 +149,10 @@ static void InitDefaultsCardanoSignTx_CardanoTxOutputType() {
   ::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CardanoSignTx_CardanoTxOutputType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoSignTx_CardanoTxOutputType}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CardanoSignTx_CardanoTxOutputType_messages_2dcardano_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoSignTx_CardanoTxOutputType_messages_2dcardano_2eproto}, {}};
 
-static void InitDefaultsCardanoSignTx() {
+static void InitDefaultsCardanoSignTx_messages_2dcardano_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -181,12 +163,12 @@ static void InitDefaultsCardanoSignTx() {
   ::hw::trezor::messages::cardano::CardanoSignTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_CardanoSignTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCardanoSignTx}, {
-      &protobuf_messages_2dcardano_2eproto::scc_info_CardanoSignTx_CardanoTxInputType.base,
-      &protobuf_messages_2dcardano_2eproto::scc_info_CardanoSignTx_CardanoTxOutputType.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_CardanoSignTx_messages_2dcardano_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsCardanoSignTx_messages_2dcardano_2eproto}, {
+      &scc_info_CardanoSignTx_CardanoTxInputType_messages_2dcardano_2eproto.base,
+      &scc_info_CardanoSignTx_CardanoTxOutputType_messages_2dcardano_2eproto.base,}};
 
-static void InitDefaultsCardanoTxRequest() {
+static void InitDefaultsCardanoTxRequest_messages_2dcardano_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -197,10 +179,10 @@ static void InitDefaultsCardanoTxRequest() {
   ::hw::trezor::messages::cardano::CardanoTxRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CardanoTxRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoTxRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CardanoTxRequest_messages_2dcardano_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoTxRequest_messages_2dcardano_2eproto}, {}};
 
-static void InitDefaultsCardanoTxAck() {
+static void InitDefaultsCardanoTxAck_messages_2dcardano_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -211,10 +193,10 @@ static void InitDefaultsCardanoTxAck() {
   ::hw::trezor::messages::cardano::CardanoTxAck::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CardanoTxAck =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoTxAck}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CardanoTxAck_messages_2dcardano_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoTxAck_messages_2dcardano_2eproto}, {}};
 
-static void InitDefaultsCardanoSignedTx() {
+static void InitDefaultsCardanoSignedTx_messages_2dcardano_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -225,125 +207,127 @@ static void InitDefaultsCardanoSignedTx() {
   ::hw::trezor::messages::cardano::CardanoSignedTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_CardanoSignedTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoSignedTx}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_CardanoSignedTx_messages_2dcardano_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsCardanoSignedTx_messages_2dcardano_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_CardanoGetAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CardanoAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CardanoGetPublicKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CardanoPublicKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CardanoSignTx_CardanoTxInputType.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CardanoSignTx_CardanoTxOutputType.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CardanoSignTx.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CardanoTxRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CardanoTxAck.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_CardanoSignedTx.base);
+void InitDefaults_messages_2dcardano_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_CardanoGetAddress_messages_2dcardano_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CardanoAddress_messages_2dcardano_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CardanoGetPublicKey_messages_2dcardano_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CardanoPublicKey_messages_2dcardano_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CardanoSignTx_CardanoTxInputType_messages_2dcardano_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CardanoSignTx_CardanoTxOutputType_messages_2dcardano_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CardanoSignTx_messages_2dcardano_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CardanoTxRequest_messages_2dcardano_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CardanoTxAck_messages_2dcardano_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_CardanoSignedTx_messages_2dcardano_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[10];
+::google::protobuf::Metadata file_level_metadata_messages_2dcardano_2eproto[10];
+constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_messages_2dcardano_2eproto = nullptr;
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2dcardano_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetAddress, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_messages_2dcardano_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetAddress, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetAddress, show_display_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetAddress, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetAddress, show_display_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoAddress, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoAddress, address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoAddress, address_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetPublicKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetPublicKey, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetPublicKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetPublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetPublicKey, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetPublicKey, show_display_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetPublicKey, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoGetPublicKey, show_display_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoPublicKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoPublicKey, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoPublicKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoPublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoPublicKey, xpub_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoPublicKey, node_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoPublicKey, xpub_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoPublicKey, node_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType, prev_hash_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType, prev_index_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType, type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType, prev_hash_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType, prev_index_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType, type_),
   ~0u,
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType, address_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType, amount_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType, address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType, amount_),
   0,
   ~0u,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx, inputs_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx, outputs_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx, transactions_count_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx, protocol_magic_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx, inputs_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx, outputs_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx, transactions_count_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignTx, protocol_magic_),
   ~0u,
   ~0u,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxRequest, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxRequest, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxRequest, tx_index_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxRequest, tx_hash_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxRequest, tx_body_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxRequest, tx_index_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxRequest, tx_hash_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxRequest, tx_body_),
   2,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxAck, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxAck, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxAck, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxAck, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxAck, transaction_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoTxAck, transaction_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignedTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignedTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignedTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignedTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignedTx, tx_hash_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignedTx, tx_body_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignedTx, tx_hash_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::cardano::CardanoSignedTx, tx_body_),
   0,
   1,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::hw::trezor::messages::cardano::CardanoGetAddress)},
   { 9, 15, sizeof(::hw::trezor::messages::cardano::CardanoAddress)},
   { 16, 23, sizeof(::hw::trezor::messages::cardano::CardanoGetPublicKey)},
@@ -369,70 +353,54 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::cardano::_CardanoSignedTx_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "messages-cardano.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2dcardano_2eproto = {
+  {}, AddDescriptors_messages_2dcardano_2eproto, "messages-cardano.proto", schemas,
+  file_default_instances, TableStruct_messages_2dcardano_2eproto::offsets,
+  file_level_metadata_messages_2dcardano_2eproto, 10, file_level_enum_descriptors_messages_2dcardano_2eproto, file_level_service_descriptors_messages_2dcardano_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_messages_2dcardano_2eproto[] =
+  "\n\026messages-cardano.proto\022\032hw.trezor.mess"
+  "ages.cardano\032\025messages-common.proto\"<\n\021C"
+  "ardanoGetAddress\022\021\n\taddress_n\030\001 \003(\r\022\024\n\014s"
+  "how_display\030\002 \001(\010\"!\n\016CardanoAddress\022\017\n\007a"
+  "ddress\030\001 \001(\t\">\n\023CardanoGetPublicKey\022\021\n\ta"
+  "ddress_n\030\001 \003(\r\022\024\n\014show_display\030\002 \001(\010\"U\n\020"
+  "CardanoPublicKey\022\014\n\004xpub\030\001 \001(\t\0223\n\004node\030\002"
+  " \001(\0132%.hw.trezor.messages.common.HDNodeT"
+  "ype\"\212\003\n\rCardanoSignTx\022L\n\006inputs\030\001 \003(\0132<."
+  "hw.trezor.messages.cardano.CardanoSignTx"
+  ".CardanoTxInputType\022N\n\007outputs\030\002 \003(\0132=.h"
+  "w.trezor.messages.cardano.CardanoSignTx."
+  "CardanoTxOutputType\022\032\n\022transactions_coun"
+  "t\030\003 \001(\r\022\026\n\016protocol_magic\030\005 \001(\r\032\\\n\022Carda"
+  "noTxInputType\022\021\n\taddress_n\030\001 \003(\r\022\021\n\tprev"
+  "_hash\030\002 \001(\014\022\022\n\nprev_index\030\003 \001(\r\022\014\n\004type\030"
+  "\004 \001(\r\032I\n\023CardanoTxOutputType\022\017\n\007address\030"
+  "\001 \001(\t\022\021\n\taddress_n\030\002 \003(\r\022\016\n\006amount\030\003 \001(\004"
+  "\"F\n\020CardanoTxRequest\022\020\n\010tx_index\030\001 \001(\r\022\017"
+  "\n\007tx_hash\030\002 \001(\014\022\017\n\007tx_body\030\003 \001(\014\"#\n\014Card"
+  "anoTxAck\022\023\n\013transaction\030\001 \001(\014\"3\n\017Cardano"
+  "SignedTx\022\017\n\007tx_hash\030\001 \001(\014\022\017\n\007tx_body\030\002 \001"
+  "(\014B;\n#com.satoshilabs.trezor.lib.protobu"
+  "fB\024TrezorMessageCardano"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dcardano_2eproto = {
+  false, InitDefaults_messages_2dcardano_2eproto, 
+  descriptor_table_protodef_messages_2dcardano_2eproto,
+  "messages-cardano.proto", &assign_descriptors_table_messages_2dcardano_2eproto, 943,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 10);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\026messages-cardano.proto\022\032hw.trezor.mess"
-      "ages.cardano\032\025messages-common.proto\"<\n\021C"
-      "ardanoGetAddress\022\021\n\taddress_n\030\001 \003(\r\022\024\n\014s"
-      "how_display\030\002 \001(\010\"!\n\016CardanoAddress\022\017\n\007a"
-      "ddress\030\001 \001(\t\">\n\023CardanoGetPublicKey\022\021\n\ta"
-      "ddress_n\030\001 \003(\r\022\024\n\014show_display\030\002 \001(\010\"U\n\020"
-      "CardanoPublicKey\022\014\n\004xpub\030\001 \001(\t\0223\n\004node\030\002"
-      " \001(\0132%.hw.trezor.messages.common.HDNodeT"
-      "ype\"\212\003\n\rCardanoSignTx\022L\n\006inputs\030\001 \003(\0132<."
-      "hw.trezor.messages.cardano.CardanoSignTx"
-      ".CardanoTxInputType\022N\n\007outputs\030\002 \003(\0132=.h"
-      "w.trezor.messages.cardano.CardanoSignTx."
-      "CardanoTxOutputType\022\032\n\022transactions_coun"
-      "t\030\003 \001(\r\022\026\n\016protocol_magic\030\005 \001(\r\032\\\n\022Carda"
-      "noTxInputType\022\021\n\taddress_n\030\001 \003(\r\022\021\n\tprev"
-      "_hash\030\002 \001(\014\022\022\n\nprev_index\030\003 \001(\r\022\014\n\004type\030"
-      "\004 \001(\r\032I\n\023CardanoTxOutputType\022\017\n\007address\030"
-      "\001 \001(\t\022\021\n\taddress_n\030\002 \003(\r\022\016\n\006amount\030\003 \001(\004"
-      "\"F\n\020CardanoTxRequest\022\020\n\010tx_index\030\001 \001(\r\022\017"
-      "\n\007tx_hash\030\002 \001(\014\022\017\n\007tx_body\030\003 \001(\014\"#\n\014Card"
-      "anoTxAck\022\023\n\013transaction\030\001 \001(\014\"3\n\017Cardano"
-      "SignedTx\022\017\n\007tx_hash\030\001 \001(\014\022\017\n\007tx_body\030\002 \001"
-      "(\014B;\n#com.satoshilabs.trezor.lib.protobu"
-      "fB\024TrezorMessageCardano"
+void AddDescriptors_messages_2dcardano_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
+    ::AddDescriptors_messages_2dcommon_2eproto,
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 943);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "messages-cardano.proto", &protobuf_RegisterTypes);
-  ::protobuf_messages_2dcommon_2eproto::AddDescriptors();
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_messages_2dcardano_2eproto, deps, 1);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_messages_2dcardano_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_messages_2dcardano_2eproto = []() { AddDescriptors_messages_2dcardano_2eproto(); return true; }();
 namespace hw {
 namespace trezor {
 namespace messages {
@@ -442,21 +410,26 @@ namespace cardano {
 
 void CardanoGetAddress::InitAsDefaultInstance() {
 }
+class CardanoGetAddress::HasBitSetters {
+ public:
+  static void set_has_show_display(CardanoGetAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CardanoGetAddress::kAddressNFieldNumber;
 const int CardanoGetAddress::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CardanoGetAddress::CardanoGetAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcardano_2eproto::scc_info_CardanoGetAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.cardano.CardanoGetAddress)
 }
 CardanoGetAddress::CardanoGetAddress(const CardanoGetAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -479,13 +452,8 @@ void CardanoGetAddress::SharedDtor() {
 void CardanoGetAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CardanoGetAddress::descriptor() {
-  ::protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CardanoGetAddress& CardanoGetAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcardano_2eproto::scc_info_CardanoGetAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CardanoGetAddress_messages_2dcardano_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -502,9 +470,69 @@ void CardanoGetAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CardanoGetAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CardanoGetAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool show_display = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CardanoGetAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.cardano.CardanoGetAddress)
   for (;;) {
@@ -514,14 +542,11 @@ bool CardanoGetAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -533,9 +558,8 @@ bool CardanoGetAddress::MergePartialFromCodedStream(
 
       // optional bool show_display = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -564,6 +588,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CardanoGetAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -591,8 +616,7 @@ void CardanoGetAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CardanoGetAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.cardano.CardanoGetAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -624,6 +648,10 @@ size_t CardanoGetAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -634,7 +662,8 @@ size_t CardanoGetAddress::ByteSizeLong() const {
   }
 
   // optional bool show_display = 2;
-  if (has_show_display()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -647,9 +676,9 @@ void CardanoGetAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.cardano.CardanoGetAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const CardanoGetAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CardanoGetAddress>(
+      ::google::protobuf::DynamicCastToGenerated<CardanoGetAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.cardano.CardanoGetAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -695,15 +724,15 @@ void CardanoGetAddress::Swap(CardanoGetAddress* other) {
 }
 void CardanoGetAddress::InternalSwap(CardanoGetAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CardanoGetAddress::GetMetadata() const {
-  protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcardano_2eproto);
+  return ::file_level_metadata_messages_2dcardano_2eproto[kIndexInFileMessages];
 }
 
 
@@ -711,20 +740,25 @@ void CardanoGetAddress::InternalSwap(CardanoGetAddress* other) {
 
 void CardanoAddress::InitAsDefaultInstance() {
 }
+class CardanoAddress::HasBitSetters {
+ public:
+  static void set_has_address(CardanoAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CardanoAddress::kAddressFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CardanoAddress::CardanoAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcardano_2eproto::scc_info_CardanoAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.cardano.CardanoAddress)
 }
 CardanoAddress::CardanoAddress(const CardanoAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -735,6 +769,8 @@ CardanoAddress::CardanoAddress(const CardanoAddress& from)
 }
 
 void CardanoAddress::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CardanoAddress_messages_2dcardano_2eproto.base);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -750,13 +786,8 @@ void CardanoAddress::SharedDtor() {
 void CardanoAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CardanoAddress::descriptor() {
-  ::protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CardanoAddress& CardanoAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcardano_2eproto::scc_info_CardanoAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CardanoAddress_messages_2dcardano_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -775,9 +806,62 @@ void CardanoAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CardanoAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CardanoAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.cardano.CardanoAddress.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CardanoAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.cardano.CardanoAddress)
   for (;;) {
@@ -787,8 +871,7 @@ bool CardanoAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -820,6 +903,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CardanoAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -846,8 +930,7 @@ void CardanoAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CardanoAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.cardano.CardanoAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -881,8 +964,13 @@ size_t CardanoAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string address = 1;
-  if (has_address()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->address());
@@ -897,9 +985,9 @@ void CardanoAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.cardano.CardanoAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const CardanoAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CardanoAddress>(
+      ::google::protobuf::DynamicCastToGenerated<CardanoAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.cardano.CardanoAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -916,7 +1004,7 @@ void CardanoAddress::MergeFrom(const CardanoAddress& from) {
   (void) cached_has_bits;
 
   if (from.has_address()) {
-    set_has_address();
+    _has_bits_[0] |= 0x00000001u;
     address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
   }
 }
@@ -945,15 +1033,15 @@ void CardanoAddress::Swap(CardanoAddress* other) {
 }
 void CardanoAddress::InternalSwap(CardanoAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CardanoAddress::GetMetadata() const {
-  protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcardano_2eproto);
+  return ::file_level_metadata_messages_2dcardano_2eproto[kIndexInFileMessages];
 }
 
 
@@ -961,21 +1049,26 @@ void CardanoAddress::InternalSwap(CardanoAddress* other) {
 
 void CardanoGetPublicKey::InitAsDefaultInstance() {
 }
+class CardanoGetPublicKey::HasBitSetters {
+ public:
+  static void set_has_show_display(CardanoGetPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CardanoGetPublicKey::kAddressNFieldNumber;
 const int CardanoGetPublicKey::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CardanoGetPublicKey::CardanoGetPublicKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcardano_2eproto::scc_info_CardanoGetPublicKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.cardano.CardanoGetPublicKey)
 }
 CardanoGetPublicKey::CardanoGetPublicKey(const CardanoGetPublicKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -998,13 +1091,8 @@ void CardanoGetPublicKey::SharedDtor() {
 void CardanoGetPublicKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CardanoGetPublicKey::descriptor() {
-  ::protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CardanoGetPublicKey& CardanoGetPublicKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcardano_2eproto::scc_info_CardanoGetPublicKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CardanoGetPublicKey_messages_2dcardano_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1021,9 +1109,69 @@ void CardanoGetPublicKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CardanoGetPublicKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CardanoGetPublicKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool show_display = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CardanoGetPublicKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.cardano.CardanoGetPublicKey)
   for (;;) {
@@ -1033,14 +1181,11 @@ bool CardanoGetPublicKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1052,9 +1197,8 @@ bool CardanoGetPublicKey::MergePartialFromCodedStream(
 
       // optional bool show_display = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -1083,6 +1227,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CardanoGetPublicKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1110,8 +1255,7 @@ void CardanoGetPublicKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CardanoGetPublicKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.cardano.CardanoGetPublicKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1143,6 +1287,10 @@ size_t CardanoGetPublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1153,7 +1301,8 @@ size_t CardanoGetPublicKey::ByteSizeLong() const {
   }
 
   // optional bool show_display = 2;
-  if (has_show_display()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -1166,9 +1315,9 @@ void CardanoGetPublicKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.cardano.CardanoGetPublicKey)
   GOOGLE_DCHECK_NE(&from, this);
   const CardanoGetPublicKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CardanoGetPublicKey>(
+      ::google::protobuf::DynamicCastToGenerated<CardanoGetPublicKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.cardano.CardanoGetPublicKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1214,15 +1363,15 @@ void CardanoGetPublicKey::Swap(CardanoGetPublicKey* other) {
 }
 void CardanoGetPublicKey::InternalSwap(CardanoGetPublicKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CardanoGetPublicKey::GetMetadata() const {
-  protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcardano_2eproto);
+  return ::file_level_metadata_messages_2dcardano_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1232,9 +1381,24 @@ void CardanoPublicKey::InitAsDefaultInstance() {
   ::hw::trezor::messages::cardano::_CardanoPublicKey_default_instance_._instance.get_mutable()->node_ = const_cast< ::hw::trezor::messages::common::HDNodeType*>(
       ::hw::trezor::messages::common::HDNodeType::internal_default_instance());
 }
+class CardanoPublicKey::HasBitSetters {
+ public:
+  static void set_has_xpub(CardanoPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::hw::trezor::messages::common::HDNodeType& node(const CardanoPublicKey* msg);
+  static void set_has_node(CardanoPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
+const ::hw::trezor::messages::common::HDNodeType&
+CardanoPublicKey::HasBitSetters::node(const CardanoPublicKey* msg) {
+  return *msg->node_;
+}
 void CardanoPublicKey::clear_node() {
-  if (node_ != NULL) node_->Clear();
-  clear_has_node();
+  if (node_ != nullptr) node_->Clear();
+  _has_bits_[0] &= ~0x00000002u;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CardanoPublicKey::kXpubFieldNumber;
@@ -1242,15 +1406,13 @@ const int CardanoPublicKey::kNodeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CardanoPublicKey::CardanoPublicKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcardano_2eproto::scc_info_CardanoPublicKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.cardano.CardanoPublicKey)
 }
 CardanoPublicKey::CardanoPublicKey(const CardanoPublicKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   xpub_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1260,14 +1422,16 @@ CardanoPublicKey::CardanoPublicKey(const CardanoPublicKey& from)
   if (from.has_node()) {
     node_ = new ::hw::trezor::messages::common::HDNodeType(*from.node_);
   } else {
-    node_ = NULL;
+    node_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.cardano.CardanoPublicKey)
 }
 
 void CardanoPublicKey::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CardanoPublicKey_messages_2dcardano_2eproto.base);
   xpub_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  node_ = NULL;
+  node_ = nullptr;
 }
 
 CardanoPublicKey::~CardanoPublicKey() {
@@ -1283,13 +1447,8 @@ void CardanoPublicKey::SharedDtor() {
 void CardanoPublicKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CardanoPublicKey::descriptor() {
-  ::protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CardanoPublicKey& CardanoPublicKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcardano_2eproto::scc_info_CardanoPublicKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CardanoPublicKey_messages_2dcardano_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1301,12 +1460,12 @@ void CardanoPublicKey::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       xpub_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(node_ != NULL);
+      GOOGLE_DCHECK(node_ != nullptr);
       node_->Clear();
     }
   }
@@ -1314,9 +1473,75 @@ void CardanoPublicKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CardanoPublicKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CardanoPublicKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string xpub = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.cardano.CardanoPublicKey.xpub");
+        object = msg->mutable_xpub();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional .hw.trezor.messages.common.HDNodeType node = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::common::HDNodeType::_InternalParse;
+        object = msg->mutable_node();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CardanoPublicKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.cardano.CardanoPublicKey)
   for (;;) {
@@ -1326,8 +1551,7 @@ bool CardanoPublicKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string xpub = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_xpub()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1342,8 +1566,7 @@ bool CardanoPublicKey::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.common.HDNodeType node = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_node()));
         } else {
@@ -1371,6 +1594,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CardanoPublicKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1392,7 +1616,7 @@ void CardanoPublicKey::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.common.HDNodeType node = 2;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_node(), output);
+      2, HasBitSetters::node(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1403,8 +1627,7 @@ void CardanoPublicKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CardanoPublicKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.cardano.CardanoPublicKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1425,7 +1648,7 @@ void CardanoPublicKey::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_node(), deterministic, target);
+        2, HasBitSetters::node(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1445,16 +1668,21 @@ size_t CardanoPublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string xpub = 1;
-    if (has_xpub()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->xpub());
     }
 
     // optional .hw.trezor.messages.common.HDNodeType node = 2;
-    if (has_node()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *node_);
@@ -1470,9 +1698,9 @@ void CardanoPublicKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.cardano.CardanoPublicKey)
   GOOGLE_DCHECK_NE(&from, this);
   const CardanoPublicKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CardanoPublicKey>(
+      ::google::protobuf::DynamicCastToGenerated<CardanoPublicKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.cardano.CardanoPublicKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1489,9 +1717,9 @@ void CardanoPublicKey::MergeFrom(const CardanoPublicKey& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_xpub();
+      _has_bits_[0] |= 0x00000001u;
       xpub_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.xpub_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -1527,16 +1755,16 @@ void CardanoPublicKey::Swap(CardanoPublicKey* other) {
 }
 void CardanoPublicKey::InternalSwap(CardanoPublicKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   xpub_.Swap(&other->xpub_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(node_, other->node_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CardanoPublicKey::GetMetadata() const {
-  protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcardano_2eproto);
+  return ::file_level_metadata_messages_2dcardano_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1544,6 +1772,19 @@ void CardanoPublicKey::InternalSwap(CardanoPublicKey* other) {
 
 void CardanoSignTx_CardanoTxInputType::InitAsDefaultInstance() {
 }
+class CardanoSignTx_CardanoTxInputType::HasBitSetters {
+ public:
+  static void set_has_prev_hash(CardanoSignTx_CardanoTxInputType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_prev_index(CardanoSignTx_CardanoTxInputType* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_type(CardanoSignTx_CardanoTxInputType* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CardanoSignTx_CardanoTxInputType::kAddressNFieldNumber;
 const int CardanoSignTx_CardanoTxInputType::kPrevHashFieldNumber;
@@ -1552,15 +1793,13 @@ const int CardanoSignTx_CardanoTxInputType::kTypeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CardanoSignTx_CardanoTxInputType::CardanoSignTx_CardanoTxInputType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcardano_2eproto::scc_info_CardanoSignTx_CardanoTxInputType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.cardano.CardanoSignTx.CardanoTxInputType)
 }
 CardanoSignTx_CardanoTxInputType::CardanoSignTx_CardanoTxInputType(const CardanoSignTx_CardanoTxInputType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -1575,6 +1814,8 @@ CardanoSignTx_CardanoTxInputType::CardanoSignTx_CardanoTxInputType(const Cardano
 }
 
 void CardanoSignTx_CardanoTxInputType::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CardanoSignTx_CardanoTxInputType_messages_2dcardano_2eproto.base);
   prev_hash_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&prev_index_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&type_) -
@@ -1593,13 +1834,8 @@ void CardanoSignTx_CardanoTxInputType::SharedDtor() {
 void CardanoSignTx_CardanoTxInputType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CardanoSignTx_CardanoTxInputType::descriptor() {
-  ::protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CardanoSignTx_CardanoTxInputType& CardanoSignTx_CardanoTxInputType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcardano_2eproto::scc_info_CardanoSignTx_CardanoTxInputType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CardanoSignTx_CardanoTxInputType_messages_2dcardano_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1615,7 +1851,7 @@ void CardanoSignTx_CardanoTxInputType::Clear() {
   if (cached_has_bits & 0x00000001u) {
     prev_hash_.ClearNonDefaultToEmptyNoArena();
   }
-  if (cached_has_bits & 6u) {
+  if (cached_has_bits & 0x00000006u) {
     ::memset(&prev_index_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&type_) -
         reinterpret_cast<char*>(&prev_index_)) + sizeof(type_));
@@ -1624,9 +1860,95 @@ void CardanoSignTx_CardanoTxInputType::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CardanoSignTx_CardanoTxInputType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CardanoSignTx_CardanoTxInputType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bytes prev_hash = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_prev_hash();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 prev_index = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_prev_index(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 type = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CardanoSignTx_CardanoTxInputType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.cardano.CardanoSignTx.CardanoTxInputType)
   for (;;) {
@@ -1636,14 +1958,11 @@ bool CardanoSignTx_CardanoTxInputType::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1655,8 +1974,7 @@ bool CardanoSignTx_CardanoTxInputType::MergePartialFromCodedStream(
 
       // optional bytes prev_hash = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_prev_hash()));
         } else {
@@ -1667,9 +1985,8 @@ bool CardanoSignTx_CardanoTxInputType::MergePartialFromCodedStream(
 
       // optional uint32 prev_index = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_prev_index();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_prev_index(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &prev_index_)));
@@ -1681,9 +1998,8 @@ bool CardanoSignTx_CardanoTxInputType::MergePartialFromCodedStream(
 
       // optional uint32 type = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &type_)));
@@ -1712,6 +2028,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CardanoSignTx_CardanoTxInputType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1750,8 +2067,7 @@ void CardanoSignTx_CardanoTxInputType::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CardanoSignTx_CardanoTxInputType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.cardano.CardanoSignTx.CardanoTxInputType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1795,6 +2111,10 @@ size_t CardanoSignTx_CardanoTxInputType::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1804,23 +2124,24 @@ size_t CardanoSignTx_CardanoTxInputType::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 7u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional bytes prev_hash = 2;
-    if (has_prev_hash()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->prev_hash());
     }
 
     // optional uint32 prev_index = 3;
-    if (has_prev_index()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->prev_index());
     }
 
     // optional uint32 type = 4;
-    if (has_type()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->type());
@@ -1836,9 +2157,9 @@ void CardanoSignTx_CardanoTxInputType::MergeFrom(const ::google::protobuf::Messa
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.cardano.CardanoSignTx.CardanoTxInputType)
   GOOGLE_DCHECK_NE(&from, this);
   const CardanoSignTx_CardanoTxInputType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CardanoSignTx_CardanoTxInputType>(
+      ::google::protobuf::DynamicCastToGenerated<CardanoSignTx_CardanoTxInputType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.cardano.CardanoSignTx.CardanoTxInputType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1856,9 +2177,9 @@ void CardanoSignTx_CardanoTxInputType::MergeFrom(const CardanoSignTx_CardanoTxIn
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_prev_hash();
+      _has_bits_[0] |= 0x00000001u;
       prev_hash_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.prev_hash_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -1895,18 +2216,18 @@ void CardanoSignTx_CardanoTxInputType::Swap(CardanoSignTx_CardanoTxInputType* ot
 }
 void CardanoSignTx_CardanoTxInputType::InternalSwap(CardanoSignTx_CardanoTxInputType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   prev_hash_.Swap(&other->prev_hash_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(prev_index_, other->prev_index_);
   swap(type_, other->type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CardanoSignTx_CardanoTxInputType::GetMetadata() const {
-  protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcardano_2eproto);
+  return ::file_level_metadata_messages_2dcardano_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1914,6 +2235,16 @@ void CardanoSignTx_CardanoTxInputType::InternalSwap(CardanoSignTx_CardanoTxInput
 
 void CardanoSignTx_CardanoTxOutputType::InitAsDefaultInstance() {
 }
+class CardanoSignTx_CardanoTxOutputType::HasBitSetters {
+ public:
+  static void set_has_address(CardanoSignTx_CardanoTxOutputType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_amount(CardanoSignTx_CardanoTxOutputType* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CardanoSignTx_CardanoTxOutputType::kAddressFieldNumber;
 const int CardanoSignTx_CardanoTxOutputType::kAddressNFieldNumber;
@@ -1921,15 +2252,13 @@ const int CardanoSignTx_CardanoTxOutputType::kAmountFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CardanoSignTx_CardanoTxOutputType::CardanoSignTx_CardanoTxOutputType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcardano_2eproto::scc_info_CardanoSignTx_CardanoTxOutputType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.cardano.CardanoSignTx.CardanoTxOutputType)
 }
 CardanoSignTx_CardanoTxOutputType::CardanoSignTx_CardanoTxOutputType(const CardanoSignTx_CardanoTxOutputType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -1942,8 +2271,10 @@ CardanoSignTx_CardanoTxOutputType::CardanoSignTx_CardanoTxOutputType(const Carda
 }
 
 void CardanoSignTx_CardanoTxOutputType::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CardanoSignTx_CardanoTxOutputType_messages_2dcardano_2eproto.base);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  amount_ = GOOGLE_ULONGLONG(0);
+  amount_ = PROTOBUF_ULONGLONG(0);
 }
 
 CardanoSignTx_CardanoTxOutputType::~CardanoSignTx_CardanoTxOutputType() {
@@ -1958,13 +2289,8 @@ void CardanoSignTx_CardanoTxOutputType::SharedDtor() {
 void CardanoSignTx_CardanoTxOutputType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CardanoSignTx_CardanoTxOutputType::descriptor() {
-  ::protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CardanoSignTx_CardanoTxOutputType& CardanoSignTx_CardanoTxOutputType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcardano_2eproto::scc_info_CardanoSignTx_CardanoTxOutputType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CardanoSignTx_CardanoTxOutputType_messages_2dcardano_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1980,14 +2306,94 @@ void CardanoSignTx_CardanoTxOutputType::Clear() {
   if (cached_has_bits & 0x00000001u) {
     address_.ClearNonDefaultToEmptyNoArena();
   }
-  amount_ = GOOGLE_ULONGLONG(0);
+  amount_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CardanoSignTx_CardanoTxOutputType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CardanoSignTx_CardanoTxOutputType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.cardano.CardanoSignTx.CardanoTxOutputType.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // repeated uint32 address_n = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 16) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 16 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional uint64 amount = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CardanoSignTx_CardanoTxOutputType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.cardano.CardanoSignTx.CardanoTxOutputType)
   for (;;) {
@@ -1997,8 +2403,7 @@ bool CardanoSignTx_CardanoTxOutputType::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2013,14 +2418,11 @@ bool CardanoSignTx_CardanoTxOutputType::MergePartialFromCodedStream(
 
       // repeated uint32 address_n = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 16u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -2032,9 +2434,8 @@ bool CardanoSignTx_CardanoTxOutputType::MergePartialFromCodedStream(
 
       // optional uint64 amount = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &amount_)));
@@ -2063,6 +2464,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CardanoSignTx_CardanoTxOutputType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2100,8 +2502,7 @@ void CardanoSignTx_CardanoTxOutputType::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CardanoSignTx_CardanoTxOutputType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.cardano.CardanoSignTx.CardanoTxOutputType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2144,6 +2545,10 @@ size_t CardanoSignTx_CardanoTxOutputType::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 2;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -2153,16 +2558,17 @@ size_t CardanoSignTx_CardanoTxOutputType::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 3u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string address = 1;
-    if (has_address()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->address());
     }
 
     // optional uint64 amount = 3;
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->amount());
@@ -2178,9 +2584,9 @@ void CardanoSignTx_CardanoTxOutputType::MergeFrom(const ::google::protobuf::Mess
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.cardano.CardanoSignTx.CardanoTxOutputType)
   GOOGLE_DCHECK_NE(&from, this);
   const CardanoSignTx_CardanoTxOutputType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CardanoSignTx_CardanoTxOutputType>(
+      ::google::protobuf::DynamicCastToGenerated<CardanoSignTx_CardanoTxOutputType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.cardano.CardanoSignTx.CardanoTxOutputType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2198,9 +2604,9 @@ void CardanoSignTx_CardanoTxOutputType::MergeFrom(const CardanoSignTx_CardanoTxO
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_address();
+      _has_bits_[0] |= 0x00000001u;
       address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -2234,17 +2640,17 @@ void CardanoSignTx_CardanoTxOutputType::Swap(CardanoSignTx_CardanoTxOutputType* 
 }
 void CardanoSignTx_CardanoTxOutputType::InternalSwap(CardanoSignTx_CardanoTxOutputType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(amount_, other->amount_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CardanoSignTx_CardanoTxOutputType::GetMetadata() const {
-  protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcardano_2eproto);
+  return ::file_level_metadata_messages_2dcardano_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2252,6 +2658,16 @@ void CardanoSignTx_CardanoTxOutputType::InternalSwap(CardanoSignTx_CardanoTxOutp
 
 void CardanoSignTx::InitAsDefaultInstance() {
 }
+class CardanoSignTx::HasBitSetters {
+ public:
+  static void set_has_transactions_count(CardanoSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_protocol_magic(CardanoSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CardanoSignTx::kInputsFieldNumber;
 const int CardanoSignTx::kOutputsFieldNumber;
@@ -2260,15 +2676,13 @@ const int CardanoSignTx::kProtocolMagicFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CardanoSignTx::CardanoSignTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcardano_2eproto::scc_info_CardanoSignTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.cardano.CardanoSignTx)
 }
 CardanoSignTx::CardanoSignTx(const CardanoSignTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       inputs_(from.inputs_),
       outputs_(from.outputs_) {
@@ -2280,6 +2694,8 @@ CardanoSignTx::CardanoSignTx(const CardanoSignTx& from)
 }
 
 void CardanoSignTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CardanoSignTx_messages_2dcardano_2eproto.base);
   ::memset(&transactions_count_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&protocol_magic_) -
       reinterpret_cast<char*>(&transactions_count_)) + sizeof(protocol_magic_));
@@ -2296,13 +2712,8 @@ void CardanoSignTx::SharedDtor() {
 void CardanoSignTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CardanoSignTx::descriptor() {
-  ::protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CardanoSignTx& CardanoSignTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcardano_2eproto::scc_info_CardanoSignTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CardanoSignTx_messages_2dcardano_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2316,7 +2727,7 @@ void CardanoSignTx::Clear() {
   inputs_.Clear();
   outputs_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&transactions_count_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&protocol_magic_) -
         reinterpret_cast<char*>(&transactions_count_)) + sizeof(protocol_magic_));
@@ -2325,9 +2736,88 @@ void CardanoSignTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CardanoSignTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CardanoSignTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated .hw.trezor.messages.cardano.CardanoSignTx.CardanoTxInputType inputs = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType::_InternalParse;
+          object = msg->add_inputs();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
+        break;
+      }
+      // repeated .hw.trezor.messages.cardano.CardanoSignTx.CardanoTxOutputType outputs = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType::_InternalParse;
+          object = msg->add_outputs();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 18 && (ptr += 1));
+        break;
+      }
+      // optional uint32 transactions_count = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_transactions_count(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 protocol_magic = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_protocol_magic(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CardanoSignTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.cardano.CardanoSignTx)
   for (;;) {
@@ -2337,8 +2827,7 @@ bool CardanoSignTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .hw.trezor.messages.cardano.CardanoSignTx.CardanoTxInputType inputs = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_inputs()));
         } else {
@@ -2349,8 +2838,7 @@ bool CardanoSignTx::MergePartialFromCodedStream(
 
       // repeated .hw.trezor.messages.cardano.CardanoSignTx.CardanoTxOutputType outputs = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_outputs()));
         } else {
@@ -2361,9 +2849,8 @@ bool CardanoSignTx::MergePartialFromCodedStream(
 
       // optional uint32 transactions_count = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_transactions_count();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_transactions_count(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &transactions_count_)));
@@ -2375,9 +2862,8 @@ bool CardanoSignTx::MergePartialFromCodedStream(
 
       // optional uint32 protocol_magic = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_protocol_magic();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_protocol_magic(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &protocol_magic_)));
@@ -2406,6 +2892,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CardanoSignTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2450,8 +2937,7 @@ void CardanoSignTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CardanoSignTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.cardano.CardanoSignTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2461,7 +2947,7 @@ void CardanoSignTx::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->inputs_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->inputs(static_cast<int>(i)), deterministic, target);
+        1, this->inputs(static_cast<int>(i)), target);
   }
 
   // repeated .hw.trezor.messages.cardano.CardanoSignTx.CardanoTxOutputType outputs = 2;
@@ -2469,7 +2955,7 @@ void CardanoSignTx::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->outputs_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->outputs(static_cast<int>(i)), deterministic, target);
+        2, this->outputs(static_cast<int>(i)), target);
   }
 
   cached_has_bits = _has_bits_[0];
@@ -2500,6 +2986,10 @@ size_t CardanoSignTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .hw.trezor.messages.cardano.CardanoSignTx.CardanoTxInputType inputs = 1;
   {
     unsigned int count = static_cast<unsigned int>(this->inputs_size());
@@ -2522,16 +3012,17 @@ size_t CardanoSignTx::ByteSizeLong() const {
     }
   }
 
-  if (_has_bits_[0 / 32] & 3u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint32 transactions_count = 3;
-    if (has_transactions_count()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->transactions_count());
     }
 
     // optional uint32 protocol_magic = 5;
-    if (has_protocol_magic()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->protocol_magic());
@@ -2547,9 +3038,9 @@ void CardanoSignTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.cardano.CardanoSignTx)
   GOOGLE_DCHECK_NE(&from, this);
   const CardanoSignTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CardanoSignTx>(
+      ::google::protobuf::DynamicCastToGenerated<CardanoSignTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.cardano.CardanoSignTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2568,7 +3059,7 @@ void CardanoSignTx::MergeFrom(const CardanoSignTx& from) {
   inputs_.MergeFrom(from.inputs_);
   outputs_.MergeFrom(from.outputs_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       transactions_count_ = from.transactions_count_;
     }
@@ -2603,17 +3094,17 @@ void CardanoSignTx::Swap(CardanoSignTx* other) {
 }
 void CardanoSignTx::InternalSwap(CardanoSignTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&inputs_)->InternalSwap(CastToBase(&other->inputs_));
   CastToBase(&outputs_)->InternalSwap(CastToBase(&other->outputs_));
   swap(transactions_count_, other->transactions_count_);
   swap(protocol_magic_, other->protocol_magic_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CardanoSignTx::GetMetadata() const {
-  protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcardano_2eproto);
+  return ::file_level_metadata_messages_2dcardano_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2621,6 +3112,19 @@ void CardanoSignTx::InternalSwap(CardanoSignTx* other) {
 
 void CardanoTxRequest::InitAsDefaultInstance() {
 }
+class CardanoTxRequest::HasBitSetters {
+ public:
+  static void set_has_tx_index(CardanoTxRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_tx_hash(CardanoTxRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_tx_body(CardanoTxRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CardanoTxRequest::kTxIndexFieldNumber;
 const int CardanoTxRequest::kTxHashFieldNumber;
@@ -2628,15 +3132,13 @@ const int CardanoTxRequest::kTxBodyFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CardanoTxRequest::CardanoTxRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcardano_2eproto::scc_info_CardanoTxRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.cardano.CardanoTxRequest)
 }
 CardanoTxRequest::CardanoTxRequest(const CardanoTxRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   tx_hash_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2652,6 +3154,8 @@ CardanoTxRequest::CardanoTxRequest(const CardanoTxRequest& from)
 }
 
 void CardanoTxRequest::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CardanoTxRequest_messages_2dcardano_2eproto.base);
   tx_hash_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   tx_body_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   tx_index_ = 0u;
@@ -2670,13 +3174,8 @@ void CardanoTxRequest::SharedDtor() {
 void CardanoTxRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CardanoTxRequest::descriptor() {
-  ::protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CardanoTxRequest& CardanoTxRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcardano_2eproto::scc_info_CardanoTxRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CardanoTxRequest_messages_2dcardano_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2688,7 +3187,7 @@ void CardanoTxRequest::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       tx_hash_.ClearNonDefaultToEmptyNoArena();
     }
@@ -2701,9 +3200,83 @@ void CardanoTxRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CardanoTxRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CardanoTxRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 tx_index = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_tx_index(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes tx_hash = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_tx_hash();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes tx_body = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_tx_body();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CardanoTxRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.cardano.CardanoTxRequest)
   for (;;) {
@@ -2713,9 +3286,8 @@ bool CardanoTxRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 tx_index = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_tx_index();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_tx_index(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &tx_index_)));
@@ -2727,8 +3299,7 @@ bool CardanoTxRequest::MergePartialFromCodedStream(
 
       // optional bytes tx_hash = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_tx_hash()));
         } else {
@@ -2739,8 +3310,7 @@ bool CardanoTxRequest::MergePartialFromCodedStream(
 
       // optional bytes tx_body = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_tx_body()));
         } else {
@@ -2768,6 +3338,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CardanoTxRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2801,8 +3372,7 @@ void CardanoTxRequest::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CardanoTxRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.cardano.CardanoTxRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2844,23 +3414,28 @@ size_t CardanoTxRequest::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional bytes tx_hash = 2;
-    if (has_tx_hash()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->tx_hash());
     }
 
     // optional bytes tx_body = 3;
-    if (has_tx_body()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->tx_body());
     }
 
     // optional uint32 tx_index = 1;
-    if (has_tx_index()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->tx_index());
@@ -2876,9 +3451,9 @@ void CardanoTxRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.cardano.CardanoTxRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const CardanoTxRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CardanoTxRequest>(
+      ::google::protobuf::DynamicCastToGenerated<CardanoTxRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.cardano.CardanoTxRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2895,13 +3470,13 @@ void CardanoTxRequest::MergeFrom(const CardanoTxRequest& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_tx_hash();
+      _has_bits_[0] |= 0x00000001u;
       tx_hash_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.tx_hash_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_tx_body();
+      _has_bits_[0] |= 0x00000002u;
       tx_body_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.tx_body_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -2935,18 +3510,18 @@ void CardanoTxRequest::Swap(CardanoTxRequest* other) {
 }
 void CardanoTxRequest::InternalSwap(CardanoTxRequest* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   tx_hash_.Swap(&other->tx_hash_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   tx_body_.Swap(&other->tx_body_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(tx_index_, other->tx_index_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CardanoTxRequest::GetMetadata() const {
-  protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcardano_2eproto);
+  return ::file_level_metadata_messages_2dcardano_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2954,20 +3529,25 @@ void CardanoTxRequest::InternalSwap(CardanoTxRequest* other) {
 
 void CardanoTxAck::InitAsDefaultInstance() {
 }
+class CardanoTxAck::HasBitSetters {
+ public:
+  static void set_has_transaction(CardanoTxAck* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CardanoTxAck::kTransactionFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CardanoTxAck::CardanoTxAck()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcardano_2eproto::scc_info_CardanoTxAck.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.cardano.CardanoTxAck)
 }
 CardanoTxAck::CardanoTxAck(const CardanoTxAck& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   transaction_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2978,6 +3558,8 @@ CardanoTxAck::CardanoTxAck(const CardanoTxAck& from)
 }
 
 void CardanoTxAck::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CardanoTxAck_messages_2dcardano_2eproto.base);
   transaction_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -2993,13 +3575,8 @@ void CardanoTxAck::SharedDtor() {
 void CardanoTxAck::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CardanoTxAck::descriptor() {
-  ::protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CardanoTxAck& CardanoTxAck::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcardano_2eproto::scc_info_CardanoTxAck.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CardanoTxAck_messages_2dcardano_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3018,9 +3595,61 @@ void CardanoTxAck::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CardanoTxAck::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CardanoTxAck*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes transaction = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_transaction();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CardanoTxAck::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.cardano.CardanoTxAck)
   for (;;) {
@@ -3030,8 +3659,7 @@ bool CardanoTxAck::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes transaction = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_transaction()));
         } else {
@@ -3059,6 +3687,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CardanoTxAck::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3081,8 +3710,7 @@ void CardanoTxAck::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CardanoTxAck::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.cardano.CardanoTxAck)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3112,8 +3740,13 @@ size_t CardanoTxAck::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional bytes transaction = 1;
-  if (has_transaction()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->transaction());
@@ -3128,9 +3761,9 @@ void CardanoTxAck::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.cardano.CardanoTxAck)
   GOOGLE_DCHECK_NE(&from, this);
   const CardanoTxAck* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CardanoTxAck>(
+      ::google::protobuf::DynamicCastToGenerated<CardanoTxAck>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.cardano.CardanoTxAck)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3147,7 +3780,7 @@ void CardanoTxAck::MergeFrom(const CardanoTxAck& from) {
   (void) cached_has_bits;
 
   if (from.has_transaction()) {
-    set_has_transaction();
+    _has_bits_[0] |= 0x00000001u;
     transaction_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.transaction_);
   }
 }
@@ -3176,15 +3809,15 @@ void CardanoTxAck::Swap(CardanoTxAck* other) {
 }
 void CardanoTxAck::InternalSwap(CardanoTxAck* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   transaction_.Swap(&other->transaction_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CardanoTxAck::GetMetadata() const {
-  protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcardano_2eproto);
+  return ::file_level_metadata_messages_2dcardano_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3192,21 +3825,29 @@ void CardanoTxAck::InternalSwap(CardanoTxAck* other) {
 
 void CardanoSignedTx::InitAsDefaultInstance() {
 }
+class CardanoSignedTx::HasBitSetters {
+ public:
+  static void set_has_tx_hash(CardanoSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_tx_body(CardanoSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CardanoSignedTx::kTxHashFieldNumber;
 const int CardanoSignedTx::kTxBodyFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 CardanoSignedTx::CardanoSignedTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcardano_2eproto::scc_info_CardanoSignedTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.cardano.CardanoSignedTx)
 }
 CardanoSignedTx::CardanoSignedTx(const CardanoSignedTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   tx_hash_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3221,6 +3862,8 @@ CardanoSignedTx::CardanoSignedTx(const CardanoSignedTx& from)
 }
 
 void CardanoSignedTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_CardanoSignedTx_messages_2dcardano_2eproto.base);
   tx_hash_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   tx_body_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -3238,13 +3881,8 @@ void CardanoSignedTx::SharedDtor() {
 void CardanoSignedTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* CardanoSignedTx::descriptor() {
-  ::protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const CardanoSignedTx& CardanoSignedTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcardano_2eproto::scc_info_CardanoSignedTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_CardanoSignedTx_messages_2dcardano_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3256,7 +3894,7 @@ void CardanoSignedTx::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       tx_hash_.ClearNonDefaultToEmptyNoArena();
     }
@@ -3268,9 +3906,76 @@ void CardanoSignedTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* CardanoSignedTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<CardanoSignedTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes tx_hash = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_tx_hash();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes tx_body = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_tx_body();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool CardanoSignedTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.cardano.CardanoSignedTx)
   for (;;) {
@@ -3280,8 +3985,7 @@ bool CardanoSignedTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes tx_hash = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_tx_hash()));
         } else {
@@ -3292,8 +3996,7 @@ bool CardanoSignedTx::MergePartialFromCodedStream(
 
       // optional bytes tx_body = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_tx_body()));
         } else {
@@ -3321,6 +4024,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void CardanoSignedTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3349,8 +4053,7 @@ void CardanoSignedTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* CardanoSignedTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.cardano.CardanoSignedTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3387,16 +4090,21 @@ size_t CardanoSignedTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes tx_hash = 1;
-    if (has_tx_hash()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->tx_hash());
     }
 
     // optional bytes tx_body = 2;
-    if (has_tx_body()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->tx_body());
@@ -3412,9 +4120,9 @@ void CardanoSignedTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.cardano.CardanoSignedTx)
   GOOGLE_DCHECK_NE(&from, this);
   const CardanoSignedTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const CardanoSignedTx>(
+      ::google::protobuf::DynamicCastToGenerated<CardanoSignedTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.cardano.CardanoSignedTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3431,13 +4139,13 @@ void CardanoSignedTx::MergeFrom(const CardanoSignedTx& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_tx_hash();
+      _has_bits_[0] |= 0x00000001u;
       tx_hash_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.tx_hash_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_tx_body();
+      _has_bits_[0] |= 0x00000002u;
       tx_body_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.tx_body_);
     }
   }
@@ -3467,17 +4175,17 @@ void CardanoSignedTx::Swap(CardanoSignedTx* other) {
 }
 void CardanoSignedTx::InternalSwap(CardanoSignedTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   tx_hash_.Swap(&other->tx_hash_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   tx_body_.Swap(&other->tx_body_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata CardanoSignedTx::GetMetadata() const {
-  protobuf_messages_2dcardano_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcardano_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcardano_2eproto);
+  return ::file_level_metadata_messages_2dcardano_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3488,37 +4196,38 @@ void CardanoSignedTx::InternalSwap(CardanoSignedTx* other) {
 }  // namespace hw
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::cardano::CardanoGetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoGetAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::cardano::CardanoGetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoGetAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::cardano::CardanoGetAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::cardano::CardanoAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::cardano::CardanoAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::cardano::CardanoAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::cardano::CardanoGetPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoGetPublicKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::cardano::CardanoGetPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoGetPublicKey >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::cardano::CardanoGetPublicKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::cardano::CardanoPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoPublicKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::cardano::CardanoPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoPublicKey >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::cardano::CardanoPublicKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxInputType >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::cardano::CardanoSignTx_CardanoTxOutputType >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::cardano::CardanoSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoSignTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::cardano::CardanoSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoSignTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::cardano::CardanoSignTx >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::cardano::CardanoTxRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoTxRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::cardano::CardanoTxRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoTxRequest >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::cardano::CardanoTxRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::cardano::CardanoTxAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoTxAck >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::cardano::CardanoTxAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoTxAck >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::cardano::CardanoTxAck >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::cardano::CardanoSignedTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoSignedTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::cardano::CardanoSignedTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::cardano::CardanoSignedTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::cardano::CardanoSignedTx >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

@@ -6,57 +6,46 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_messages_2dripple_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dripple_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_RippleSignTx_RipplePayment;
-}  // namespace protobuf_messages_2dripple_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dripple_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_RippleSignTx_RipplePayment_messages_2dripple_2eproto;
 namespace hw {
 namespace trezor {
 namespace messages {
 namespace ripple {
 class RippleGetAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<RippleGetAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<RippleGetAddress> _instance;
 } _RippleGetAddress_default_instance_;
 class RippleAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<RippleAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<RippleAddress> _instance;
 } _RippleAddress_default_instance_;
 class RippleSignTx_RipplePaymentDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<RippleSignTx_RipplePayment>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<RippleSignTx_RipplePayment> _instance;
 } _RippleSignTx_RipplePayment_default_instance_;
 class RippleSignTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<RippleSignTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<RippleSignTx> _instance;
 } _RippleSignTx_default_instance_;
 class RippleSignedTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<RippleSignedTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<RippleSignedTx> _instance;
 } _RippleSignedTx_default_instance_;
 }  // namespace ripple
 }  // namespace messages
 }  // namespace trezor
 }  // namespace hw
-namespace protobuf_messages_2dripple_2eproto {
-static void InitDefaultsRippleGetAddress() {
+static void InitDefaultsRippleGetAddress_messages_2dripple_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -67,10 +56,10 @@ static void InitDefaultsRippleGetAddress() {
   ::hw::trezor::messages::ripple::RippleGetAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_RippleGetAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsRippleGetAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_RippleGetAddress_messages_2dripple_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsRippleGetAddress_messages_2dripple_2eproto}, {}};
 
-static void InitDefaultsRippleAddress() {
+static void InitDefaultsRippleAddress_messages_2dripple_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -81,10 +70,10 @@ static void InitDefaultsRippleAddress() {
   ::hw::trezor::messages::ripple::RippleAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_RippleAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsRippleAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_RippleAddress_messages_2dripple_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsRippleAddress_messages_2dripple_2eproto}, {}};
 
-static void InitDefaultsRippleSignTx_RipplePayment() {
+static void InitDefaultsRippleSignTx_RipplePayment_messages_2dripple_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -95,10 +84,10 @@ static void InitDefaultsRippleSignTx_RipplePayment() {
   ::hw::trezor::messages::ripple::RippleSignTx_RipplePayment::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_RippleSignTx_RipplePayment =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsRippleSignTx_RipplePayment}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_RippleSignTx_RipplePayment_messages_2dripple_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsRippleSignTx_RipplePayment_messages_2dripple_2eproto}, {}};
 
-static void InitDefaultsRippleSignTx() {
+static void InitDefaultsRippleSignTx_messages_2dripple_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -109,11 +98,11 @@ static void InitDefaultsRippleSignTx() {
   ::hw::trezor::messages::ripple::RippleSignTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_RippleSignTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsRippleSignTx}, {
-      &protobuf_messages_2dripple_2eproto::scc_info_RippleSignTx_RipplePayment.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_RippleSignTx_messages_2dripple_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsRippleSignTx_messages_2dripple_2eproto}, {
+      &scc_info_RippleSignTx_RipplePayment_messages_2dripple_2eproto.base,}};
 
-static void InitDefaultsRippleSignedTx() {
+static void InitDefaultsRippleSignedTx_messages_2dripple_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -124,75 +113,77 @@ static void InitDefaultsRippleSignedTx() {
   ::hw::trezor::messages::ripple::RippleSignedTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_RippleSignedTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsRippleSignedTx}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_RippleSignedTx_messages_2dripple_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsRippleSignedTx_messages_2dripple_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_RippleGetAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_RippleAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_RippleSignTx_RipplePayment.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_RippleSignTx.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_RippleSignedTx.base);
+void InitDefaults_messages_2dripple_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_RippleGetAddress_messages_2dripple_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_RippleAddress_messages_2dripple_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_RippleSignTx_RipplePayment_messages_2dripple_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_RippleSignTx_messages_2dripple_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_RippleSignedTx_messages_2dripple_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[5];
+::google::protobuf::Metadata file_level_metadata_messages_2dripple_2eproto[5];
+constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_messages_2dripple_2eproto = nullptr;
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2dripple_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleGetAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleGetAddress, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_messages_2dripple_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleGetAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleGetAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleGetAddress, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleGetAddress, show_display_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleGetAddress, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleGetAddress, show_display_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleAddress, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleAddress, address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleAddress, address_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx_RipplePayment, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx_RipplePayment, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx_RipplePayment, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx_RipplePayment, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx_RipplePayment, amount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx_RipplePayment, destination_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx_RipplePayment, destination_tag_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx_RipplePayment, amount_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx_RipplePayment, destination_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx_RipplePayment, destination_tag_),
   1,
   0,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, fee_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, flags_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, sequence_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, last_ledger_sequence_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, payment_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, fee_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, flags_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, sequence_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, last_ledger_sequence_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignTx, payment_),
   ~0u,
   1,
   2,
   3,
   4,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignedTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignedTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignedTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignedTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignedTx, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignedTx, serialized_tx_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignedTx, signature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ripple::RippleSignedTx, serialized_tx_),
   0,
   1,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::hw::trezor::messages::ripple::RippleGetAddress)},
   { 9, 15, sizeof(::hw::trezor::messages::ripple::RippleAddress)},
   { 16, 24, sizeof(::hw::trezor::messages::ripple::RippleSignTx_RipplePayment)},
@@ -208,59 +199,43 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::ripple::_RippleSignedTx_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "messages-ripple.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2dripple_2eproto = {
+  {}, AddDescriptors_messages_2dripple_2eproto, "messages-ripple.proto", schemas,
+  file_default_instances, TableStruct_messages_2dripple_2eproto::offsets,
+  file_level_metadata_messages_2dripple_2eproto, 5, file_level_enum_descriptors_messages_2dripple_2eproto, file_level_service_descriptors_messages_2dripple_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_messages_2dripple_2eproto[] =
+  "\n\025messages-ripple.proto\022\031hw.trezor.messa"
+  "ges.ripple\";\n\020RippleGetAddress\022\021\n\taddres"
+  "s_n\030\001 \003(\r\022\024\n\014show_display\030\002 \001(\010\" \n\rRippl"
+  "eAddress\022\017\n\007address\030\001 \001(\t\"\204\002\n\014RippleSign"
+  "Tx\022\021\n\taddress_n\030\001 \003(\r\022\013\n\003fee\030\002 \001(\004\022\r\n\005fl"
+  "ags\030\003 \001(\r\022\020\n\010sequence\030\004 \001(\r\022\034\n\024last_ledg"
+  "er_sequence\030\005 \001(\r\022F\n\007payment\030\006 \001(\01325.hw."
+  "trezor.messages.ripple.RippleSignTx.Ripp"
+  "lePayment\032M\n\rRipplePayment\022\016\n\006amount\030\001 \001"
+  "(\004\022\023\n\013destination\030\002 \001(\t\022\027\n\017destination_t"
+  "ag\030\003 \001(\r\":\n\016RippleSignedTx\022\021\n\tsignature\030"
+  "\001 \001(\014\022\025\n\rserialized_tx\030\002 \001(\014B:\n#com.sato"
+  "shilabs.trezor.lib.protobufB\023TrezorMessa"
+  "geRipple"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dripple_2eproto = {
+  false, InitDefaults_messages_2dripple_2eproto, 
+  descriptor_table_protodef_messages_2dripple_2eproto,
+  "messages-ripple.proto", &assign_descriptors_table_messages_2dripple_2eproto, 528,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 5);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\025messages-ripple.proto\022\031hw.trezor.messa"
-      "ges.ripple\";\n\020RippleGetAddress\022\021\n\taddres"
-      "s_n\030\001 \003(\r\022\024\n\014show_display\030\002 \001(\010\" \n\rRippl"
-      "eAddress\022\017\n\007address\030\001 \001(\t\"\204\002\n\014RippleSign"
-      "Tx\022\021\n\taddress_n\030\001 \003(\r\022\013\n\003fee\030\002 \001(\004\022\r\n\005fl"
-      "ags\030\003 \001(\r\022\020\n\010sequence\030\004 \001(\r\022\034\n\024last_ledg"
-      "er_sequence\030\005 \001(\r\022F\n\007payment\030\006 \001(\01325.hw."
-      "trezor.messages.ripple.RippleSignTx.Ripp"
-      "lePayment\032M\n\rRipplePayment\022\016\n\006amount\030\001 \001"
-      "(\004\022\023\n\013destination\030\002 \001(\t\022\027\n\017destination_t"
-      "ag\030\003 \001(\r\":\n\016RippleSignedTx\022\021\n\tsignature\030"
-      "\001 \001(\014\022\025\n\rserialized_tx\030\002 \001(\014B:\n#com.sato"
-      "shilabs.trezor.lib.protobufB\023TrezorMessa"
-      "geRipple"
+void AddDescriptors_messages_2dripple_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 528);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "messages-ripple.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_messages_2dripple_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_messages_2dripple_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_messages_2dripple_2eproto = []() { AddDescriptors_messages_2dripple_2eproto(); return true; }();
 namespace hw {
 namespace trezor {
 namespace messages {
@@ -270,21 +245,26 @@ namespace ripple {
 
 void RippleGetAddress::InitAsDefaultInstance() {
 }
+class RippleGetAddress::HasBitSetters {
+ public:
+  static void set_has_show_display(RippleGetAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int RippleGetAddress::kAddressNFieldNumber;
 const int RippleGetAddress::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 RippleGetAddress::RippleGetAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dripple_2eproto::scc_info_RippleGetAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ripple.RippleGetAddress)
 }
 RippleGetAddress::RippleGetAddress(const RippleGetAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -307,13 +287,8 @@ void RippleGetAddress::SharedDtor() {
 void RippleGetAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* RippleGetAddress::descriptor() {
-  ::protobuf_messages_2dripple_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dripple_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const RippleGetAddress& RippleGetAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dripple_2eproto::scc_info_RippleGetAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_RippleGetAddress_messages_2dripple_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -330,9 +305,69 @@ void RippleGetAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* RippleGetAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<RippleGetAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool show_display = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool RippleGetAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ripple.RippleGetAddress)
   for (;;) {
@@ -342,14 +377,11 @@ bool RippleGetAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -361,9 +393,8 @@ bool RippleGetAddress::MergePartialFromCodedStream(
 
       // optional bool show_display = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -392,6 +423,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void RippleGetAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -419,8 +451,7 @@ void RippleGetAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* RippleGetAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ripple.RippleGetAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -452,6 +483,10 @@ size_t RippleGetAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -462,7 +497,8 @@ size_t RippleGetAddress::ByteSizeLong() const {
   }
 
   // optional bool show_display = 2;
-  if (has_show_display()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -475,9 +511,9 @@ void RippleGetAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ripple.RippleGetAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const RippleGetAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const RippleGetAddress>(
+      ::google::protobuf::DynamicCastToGenerated<RippleGetAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ripple.RippleGetAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -523,15 +559,15 @@ void RippleGetAddress::Swap(RippleGetAddress* other) {
 }
 void RippleGetAddress::InternalSwap(RippleGetAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata RippleGetAddress::GetMetadata() const {
-  protobuf_messages_2dripple_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dripple_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dripple_2eproto);
+  return ::file_level_metadata_messages_2dripple_2eproto[kIndexInFileMessages];
 }
 
 
@@ -539,20 +575,25 @@ void RippleGetAddress::InternalSwap(RippleGetAddress* other) {
 
 void RippleAddress::InitAsDefaultInstance() {
 }
+class RippleAddress::HasBitSetters {
+ public:
+  static void set_has_address(RippleAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int RippleAddress::kAddressFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 RippleAddress::RippleAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dripple_2eproto::scc_info_RippleAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ripple.RippleAddress)
 }
 RippleAddress::RippleAddress(const RippleAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -563,6 +604,8 @@ RippleAddress::RippleAddress(const RippleAddress& from)
 }
 
 void RippleAddress::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_RippleAddress_messages_2dripple_2eproto.base);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -578,13 +621,8 @@ void RippleAddress::SharedDtor() {
 void RippleAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* RippleAddress::descriptor() {
-  ::protobuf_messages_2dripple_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dripple_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const RippleAddress& RippleAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dripple_2eproto::scc_info_RippleAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_RippleAddress_messages_2dripple_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -603,9 +641,62 @@ void RippleAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* RippleAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<RippleAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.ripple.RippleAddress.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool RippleAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ripple.RippleAddress)
   for (;;) {
@@ -615,8 +706,7 @@ bool RippleAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -648,6 +738,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void RippleAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -674,8 +765,7 @@ void RippleAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* RippleAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ripple.RippleAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -709,8 +799,13 @@ size_t RippleAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string address = 1;
-  if (has_address()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->address());
@@ -725,9 +820,9 @@ void RippleAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ripple.RippleAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const RippleAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const RippleAddress>(
+      ::google::protobuf::DynamicCastToGenerated<RippleAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ripple.RippleAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -744,7 +839,7 @@ void RippleAddress::MergeFrom(const RippleAddress& from) {
   (void) cached_has_bits;
 
   if (from.has_address()) {
-    set_has_address();
+    _has_bits_[0] |= 0x00000001u;
     address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
   }
 }
@@ -773,15 +868,15 @@ void RippleAddress::Swap(RippleAddress* other) {
 }
 void RippleAddress::InternalSwap(RippleAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata RippleAddress::GetMetadata() const {
-  protobuf_messages_2dripple_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dripple_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dripple_2eproto);
+  return ::file_level_metadata_messages_2dripple_2eproto[kIndexInFileMessages];
 }
 
 
@@ -789,6 +884,19 @@ void RippleAddress::InternalSwap(RippleAddress* other) {
 
 void RippleSignTx_RipplePayment::InitAsDefaultInstance() {
 }
+class RippleSignTx_RipplePayment::HasBitSetters {
+ public:
+  static void set_has_amount(RippleSignTx_RipplePayment* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_destination(RippleSignTx_RipplePayment* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_destination_tag(RippleSignTx_RipplePayment* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int RippleSignTx_RipplePayment::kAmountFieldNumber;
 const int RippleSignTx_RipplePayment::kDestinationFieldNumber;
@@ -796,15 +904,13 @@ const int RippleSignTx_RipplePayment::kDestinationTagFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 RippleSignTx_RipplePayment::RippleSignTx_RipplePayment()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dripple_2eproto::scc_info_RippleSignTx_RipplePayment.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ripple.RippleSignTx.RipplePayment)
 }
 RippleSignTx_RipplePayment::RippleSignTx_RipplePayment(const RippleSignTx_RipplePayment& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   destination_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -818,6 +924,8 @@ RippleSignTx_RipplePayment::RippleSignTx_RipplePayment(const RippleSignTx_Ripple
 }
 
 void RippleSignTx_RipplePayment::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_RippleSignTx_RipplePayment_messages_2dripple_2eproto.base);
   destination_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&amount_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&destination_tag_) -
@@ -836,13 +944,8 @@ void RippleSignTx_RipplePayment::SharedDtor() {
 void RippleSignTx_RipplePayment::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* RippleSignTx_RipplePayment::descriptor() {
-  ::protobuf_messages_2dripple_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dripple_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const RippleSignTx_RipplePayment& RippleSignTx_RipplePayment::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dripple_2eproto::scc_info_RippleSignTx_RipplePayment.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_RippleSignTx_RipplePayment_messages_2dripple_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -857,7 +960,7 @@ void RippleSignTx_RipplePayment::Clear() {
   if (cached_has_bits & 0x00000001u) {
     destination_.ClearNonDefaultToEmptyNoArena();
   }
-  if (cached_has_bits & 6u) {
+  if (cached_has_bits & 0x00000006u) {
     ::memset(&amount_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&destination_tag_) -
         reinterpret_cast<char*>(&amount_)) + sizeof(destination_tag_));
@@ -866,9 +969,76 @@ void RippleSignTx_RipplePayment::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* RippleSignTx_RipplePayment::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<RippleSignTx_RipplePayment*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 amount = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string destination = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.ripple.RippleSignTx.RipplePayment.destination");
+        object = msg->mutable_destination();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 destination_tag = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_destination_tag(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool RippleSignTx_RipplePayment::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ripple.RippleSignTx.RipplePayment)
   for (;;) {
@@ -878,9 +1048,8 @@ bool RippleSignTx_RipplePayment::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 amount = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &amount_)));
@@ -892,8 +1061,7 @@ bool RippleSignTx_RipplePayment::MergePartialFromCodedStream(
 
       // optional string destination = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_destination()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -908,9 +1076,8 @@ bool RippleSignTx_RipplePayment::MergePartialFromCodedStream(
 
       // optional uint32 destination_tag = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_destination_tag();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_destination_tag(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &destination_tag_)));
@@ -939,6 +1106,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void RippleSignTx_RipplePayment::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -975,8 +1143,7 @@ void RippleSignTx_RipplePayment::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* RippleSignTx_RipplePayment::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ripple.RippleSignTx.RipplePayment)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1020,23 +1187,28 @@ size_t RippleSignTx_RipplePayment::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string destination = 2;
-    if (has_destination()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->destination());
     }
 
     // optional uint64 amount = 1;
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->amount());
     }
 
     // optional uint32 destination_tag = 3;
-    if (has_destination_tag()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->destination_tag());
@@ -1052,9 +1224,9 @@ void RippleSignTx_RipplePayment::MergeFrom(const ::google::protobuf::Message& fr
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ripple.RippleSignTx.RipplePayment)
   GOOGLE_DCHECK_NE(&from, this);
   const RippleSignTx_RipplePayment* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const RippleSignTx_RipplePayment>(
+      ::google::protobuf::DynamicCastToGenerated<RippleSignTx_RipplePayment>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ripple.RippleSignTx.RipplePayment)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1071,9 +1243,9 @@ void RippleSignTx_RipplePayment::MergeFrom(const RippleSignTx_RipplePayment& fro
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_destination();
+      _has_bits_[0] |= 0x00000001u;
       destination_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.destination_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -1110,17 +1282,17 @@ void RippleSignTx_RipplePayment::Swap(RippleSignTx_RipplePayment* other) {
 }
 void RippleSignTx_RipplePayment::InternalSwap(RippleSignTx_RipplePayment* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   destination_.Swap(&other->destination_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(amount_, other->amount_);
   swap(destination_tag_, other->destination_tag_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata RippleSignTx_RipplePayment::GetMetadata() const {
-  protobuf_messages_2dripple_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dripple_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dripple_2eproto);
+  return ::file_level_metadata_messages_2dripple_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1129,6 +1301,30 @@ void RippleSignTx_RipplePayment::InternalSwap(RippleSignTx_RipplePayment* other)
 void RippleSignTx::InitAsDefaultInstance() {
   ::hw::trezor::messages::ripple::_RippleSignTx_default_instance_._instance.get_mutable()->payment_ = const_cast< ::hw::trezor::messages::ripple::RippleSignTx_RipplePayment*>(
       ::hw::trezor::messages::ripple::RippleSignTx_RipplePayment::internal_default_instance());
+}
+class RippleSignTx::HasBitSetters {
+ public:
+  static void set_has_fee(RippleSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_flags(RippleSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_sequence(RippleSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_last_ledger_sequence(RippleSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static const ::hw::trezor::messages::ripple::RippleSignTx_RipplePayment& payment(const RippleSignTx* msg);
+  static void set_has_payment(RippleSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::hw::trezor::messages::ripple::RippleSignTx_RipplePayment&
+RippleSignTx::HasBitSetters::payment(const RippleSignTx* msg) {
+  return *msg->payment_;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int RippleSignTx::kAddressNFieldNumber;
@@ -1140,22 +1336,20 @@ const int RippleSignTx::kPaymentFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 RippleSignTx::RippleSignTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dripple_2eproto::scc_info_RippleSignTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ripple.RippleSignTx)
 }
 RippleSignTx::RippleSignTx(const RippleSignTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_payment()) {
     payment_ = new ::hw::trezor::messages::ripple::RippleSignTx_RipplePayment(*from.payment_);
   } else {
-    payment_ = NULL;
+    payment_ = nullptr;
   }
   ::memcpy(&fee_, &from.fee_,
     static_cast<size_t>(reinterpret_cast<char*>(&last_ledger_sequence_) -
@@ -1164,6 +1358,8 @@ RippleSignTx::RippleSignTx(const RippleSignTx& from)
 }
 
 void RippleSignTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_RippleSignTx_messages_2dripple_2eproto.base);
   ::memset(&payment_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&last_ledger_sequence_) -
       reinterpret_cast<char*>(&payment_)) + sizeof(last_ledger_sequence_));
@@ -1181,13 +1377,8 @@ void RippleSignTx::SharedDtor() {
 void RippleSignTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* RippleSignTx::descriptor() {
-  ::protobuf_messages_2dripple_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dripple_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const RippleSignTx& RippleSignTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dripple_2eproto::scc_info_RippleSignTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_RippleSignTx_messages_2dripple_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1201,10 +1392,10 @@ void RippleSignTx::Clear() {
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(payment_ != NULL);
+    GOOGLE_DCHECK(payment_ != nullptr);
     payment_->Clear();
   }
-  if (cached_has_bits & 30u) {
+  if (cached_has_bits & 0x0000001eu) {
     ::memset(&fee_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&last_ledger_sequence_) -
         reinterpret_cast<char*>(&fee_)) + sizeof(last_ledger_sequence_));
@@ -1213,9 +1404,103 @@ void RippleSignTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* RippleSignTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<RippleSignTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional uint64 fee = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_fee(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 flags = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_flags(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 sequence = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_sequence(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 last_ledger_sequence = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_last_ledger_sequence(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.ripple.RippleSignTx.RipplePayment payment = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::ripple::RippleSignTx_RipplePayment::_InternalParse;
+        object = msg->mutable_payment();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool RippleSignTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ripple.RippleSignTx)
   for (;;) {
@@ -1225,14 +1510,11 @@ bool RippleSignTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1244,9 +1526,8 @@ bool RippleSignTx::MergePartialFromCodedStream(
 
       // optional uint64 fee = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_fee();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_fee(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &fee_)));
@@ -1258,9 +1539,8 @@ bool RippleSignTx::MergePartialFromCodedStream(
 
       // optional uint32 flags = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_flags();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_flags(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &flags_)));
@@ -1272,9 +1552,8 @@ bool RippleSignTx::MergePartialFromCodedStream(
 
       // optional uint32 sequence = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_sequence();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_sequence(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sequence_)));
@@ -1286,9 +1565,8 @@ bool RippleSignTx::MergePartialFromCodedStream(
 
       // optional uint32 last_ledger_sequence = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_last_ledger_sequence();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_last_ledger_sequence(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &last_ledger_sequence_)));
@@ -1300,8 +1578,7 @@ bool RippleSignTx::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.ripple.RippleSignTx.RipplePayment payment = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_payment()));
         } else {
@@ -1329,6 +1606,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void RippleSignTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1366,7 +1644,7 @@ void RippleSignTx::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.ripple.RippleSignTx.RipplePayment payment = 6;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, this->_internal_payment(), output);
+      6, HasBitSetters::payment(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1377,8 +1655,7 @@ void RippleSignTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* RippleSignTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ripple.RippleSignTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1412,7 +1689,7 @@ void RippleSignTx::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        6, this->_internal_payment(), deterministic, target);
+        6, HasBitSetters::payment(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1432,6 +1709,10 @@ size_t RippleSignTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1441,37 +1722,38 @@ size_t RippleSignTx::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 31u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000001fu) {
     // optional .hw.trezor.messages.ripple.RippleSignTx.RipplePayment payment = 6;
-    if (has_payment()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *payment_);
     }
 
     // optional uint64 fee = 2;
-    if (has_fee()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->fee());
     }
 
     // optional uint32 flags = 3;
-    if (has_flags()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->flags());
     }
 
     // optional uint32 sequence = 4;
-    if (has_sequence()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->sequence());
     }
 
     // optional uint32 last_ledger_sequence = 5;
-    if (has_last_ledger_sequence()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->last_ledger_sequence());
@@ -1487,9 +1769,9 @@ void RippleSignTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ripple.RippleSignTx)
   GOOGLE_DCHECK_NE(&from, this);
   const RippleSignTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const RippleSignTx>(
+      ::google::protobuf::DynamicCastToGenerated<RippleSignTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ripple.RippleSignTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1507,7 +1789,7 @@ void RippleSignTx::MergeFrom(const RippleSignTx& from) {
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
       mutable_payment()->::hw::trezor::messages::ripple::RippleSignTx_RipplePayment::MergeFrom(from.payment());
     }
@@ -1551,19 +1833,19 @@ void RippleSignTx::Swap(RippleSignTx* other) {
 }
 void RippleSignTx::InternalSwap(RippleSignTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(payment_, other->payment_);
   swap(fee_, other->fee_);
   swap(flags_, other->flags_);
   swap(sequence_, other->sequence_);
   swap(last_ledger_sequence_, other->last_ledger_sequence_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata RippleSignTx::GetMetadata() const {
-  protobuf_messages_2dripple_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dripple_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dripple_2eproto);
+  return ::file_level_metadata_messages_2dripple_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1571,21 +1853,29 @@ void RippleSignTx::InternalSwap(RippleSignTx* other) {
 
 void RippleSignedTx::InitAsDefaultInstance() {
 }
+class RippleSignedTx::HasBitSetters {
+ public:
+  static void set_has_signature(RippleSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_serialized_tx(RippleSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int RippleSignedTx::kSignatureFieldNumber;
 const int RippleSignedTx::kSerializedTxFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 RippleSignedTx::RippleSignedTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dripple_2eproto::scc_info_RippleSignedTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ripple.RippleSignedTx)
 }
 RippleSignedTx::RippleSignedTx(const RippleSignedTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1600,6 +1890,8 @@ RippleSignedTx::RippleSignedTx(const RippleSignedTx& from)
 }
 
 void RippleSignedTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_RippleSignedTx_messages_2dripple_2eproto.base);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   serialized_tx_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1617,13 +1909,8 @@ void RippleSignedTx::SharedDtor() {
 void RippleSignedTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* RippleSignedTx::descriptor() {
-  ::protobuf_messages_2dripple_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dripple_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const RippleSignedTx& RippleSignedTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dripple_2eproto::scc_info_RippleSignedTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_RippleSignedTx_messages_2dripple_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1635,7 +1922,7 @@ void RippleSignedTx::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       signature_.ClearNonDefaultToEmptyNoArena();
     }
@@ -1647,9 +1934,76 @@ void RippleSignedTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* RippleSignedTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<RippleSignedTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes signature = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes serialized_tx = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_serialized_tx();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool RippleSignedTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ripple.RippleSignedTx)
   for (;;) {
@@ -1659,8 +2013,7 @@ bool RippleSignedTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes signature = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -1671,8 +2024,7 @@ bool RippleSignedTx::MergePartialFromCodedStream(
 
       // optional bytes serialized_tx = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_serialized_tx()));
         } else {
@@ -1700,6 +2052,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void RippleSignedTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1728,8 +2081,7 @@ void RippleSignedTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* RippleSignedTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ripple.RippleSignedTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1766,16 +2118,21 @@ size_t RippleSignedTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes signature = 1;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
     }
 
     // optional bytes serialized_tx = 2;
-    if (has_serialized_tx()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->serialized_tx());
@@ -1791,9 +2148,9 @@ void RippleSignedTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ripple.RippleSignedTx)
   GOOGLE_DCHECK_NE(&from, this);
   const RippleSignedTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const RippleSignedTx>(
+      ::google::protobuf::DynamicCastToGenerated<RippleSignedTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ripple.RippleSignedTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1810,13 +2167,13 @@ void RippleSignedTx::MergeFrom(const RippleSignedTx& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000001u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_serialized_tx();
+      _has_bits_[0] |= 0x00000002u;
       serialized_tx_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.serialized_tx_);
     }
   }
@@ -1846,17 +2203,17 @@ void RippleSignedTx::Swap(RippleSignedTx* other) {
 }
 void RippleSignedTx::InternalSwap(RippleSignedTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   serialized_tx_.Swap(&other->serialized_tx_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata RippleSignedTx::GetMetadata() const {
-  protobuf_messages_2dripple_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dripple_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dripple_2eproto);
+  return ::file_level_metadata_messages_2dripple_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1867,22 +2224,23 @@ void RippleSignedTx::InternalSwap(RippleSignedTx* other) {
 }  // namespace hw
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ripple::RippleGetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::ripple::RippleGetAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ripple::RippleGetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::ripple::RippleGetAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ripple::RippleGetAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ripple::RippleAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::ripple::RippleAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ripple::RippleAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::ripple::RippleAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ripple::RippleAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ripple::RippleSignTx_RipplePayment* Arena::CreateMaybeMessage< ::hw::trezor::messages::ripple::RippleSignTx_RipplePayment >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ripple::RippleSignTx_RipplePayment* Arena::CreateMaybeMessage< ::hw::trezor::messages::ripple::RippleSignTx_RipplePayment >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ripple::RippleSignTx_RipplePayment >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ripple::RippleSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::ripple::RippleSignTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ripple::RippleSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::ripple::RippleSignTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ripple::RippleSignTx >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ripple::RippleSignedTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::ripple::RippleSignedTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ripple::RippleSignedTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::ripple::RippleSignedTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ripple::RippleSignedTx >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

@@ -6,91 +6,74 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_messages_2dtezos_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtezos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TezosSignTx_TezosContractID;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtezos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosDelegationOp;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtezos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosOriginationOp;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtezos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosRevealOp;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtezos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosTransactionOp;
-}  // namespace protobuf_messages_2dtezos_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtezos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TezosSignTx_TezosContractID_messages_2dtezos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtezos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosDelegationOp_messages_2dtezos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtezos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosOriginationOp_messages_2dtezos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtezos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosRevealOp_messages_2dtezos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtezos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosTransactionOp_messages_2dtezos_2eproto;
 namespace hw {
 namespace trezor {
 namespace messages {
 namespace tezos {
 class TezosGetAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TezosGetAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TezosGetAddress> _instance;
 } _TezosGetAddress_default_instance_;
 class TezosAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TezosAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TezosAddress> _instance;
 } _TezosAddress_default_instance_;
 class TezosGetPublicKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TezosGetPublicKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TezosGetPublicKey> _instance;
 } _TezosGetPublicKey_default_instance_;
 class TezosPublicKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TezosPublicKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TezosPublicKey> _instance;
 } _TezosPublicKey_default_instance_;
 class TezosSignTx_TezosContractIDDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TezosSignTx_TezosContractID>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TezosSignTx_TezosContractID> _instance;
 } _TezosSignTx_TezosContractID_default_instance_;
 class TezosSignTx_TezosRevealOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TezosSignTx_TezosRevealOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TezosSignTx_TezosRevealOp> _instance;
 } _TezosSignTx_TezosRevealOp_default_instance_;
 class TezosSignTx_TezosTransactionOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TezosSignTx_TezosTransactionOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TezosSignTx_TezosTransactionOp> _instance;
 } _TezosSignTx_TezosTransactionOp_default_instance_;
 class TezosSignTx_TezosOriginationOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TezosSignTx_TezosOriginationOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TezosSignTx_TezosOriginationOp> _instance;
 } _TezosSignTx_TezosOriginationOp_default_instance_;
 class TezosSignTx_TezosDelegationOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TezosSignTx_TezosDelegationOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TezosSignTx_TezosDelegationOp> _instance;
 } _TezosSignTx_TezosDelegationOp_default_instance_;
 class TezosSignTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TezosSignTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TezosSignTx> _instance;
 } _TezosSignTx_default_instance_;
 class TezosSignedTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TezosSignedTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TezosSignedTx> _instance;
 } _TezosSignedTx_default_instance_;
 }  // namespace tezos
 }  // namespace messages
 }  // namespace trezor
 }  // namespace hw
-namespace protobuf_messages_2dtezos_2eproto {
-static void InitDefaultsTezosGetAddress() {
+static void InitDefaultsTezosGetAddress_messages_2dtezos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -101,10 +84,10 @@ static void InitDefaultsTezosGetAddress() {
   ::hw::trezor::messages::tezos::TezosGetAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TezosGetAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTezosGetAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TezosGetAddress_messages_2dtezos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTezosGetAddress_messages_2dtezos_2eproto}, {}};
 
-static void InitDefaultsTezosAddress() {
+static void InitDefaultsTezosAddress_messages_2dtezos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -115,10 +98,10 @@ static void InitDefaultsTezosAddress() {
   ::hw::trezor::messages::tezos::TezosAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TezosAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTezosAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TezosAddress_messages_2dtezos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTezosAddress_messages_2dtezos_2eproto}, {}};
 
-static void InitDefaultsTezosGetPublicKey() {
+static void InitDefaultsTezosGetPublicKey_messages_2dtezos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -129,10 +112,10 @@ static void InitDefaultsTezosGetPublicKey() {
   ::hw::trezor::messages::tezos::TezosGetPublicKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TezosGetPublicKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTezosGetPublicKey}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TezosGetPublicKey_messages_2dtezos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTezosGetPublicKey_messages_2dtezos_2eproto}, {}};
 
-static void InitDefaultsTezosPublicKey() {
+static void InitDefaultsTezosPublicKey_messages_2dtezos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -143,10 +126,10 @@ static void InitDefaultsTezosPublicKey() {
   ::hw::trezor::messages::tezos::TezosPublicKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TezosPublicKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTezosPublicKey}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TezosPublicKey_messages_2dtezos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTezosPublicKey_messages_2dtezos_2eproto}, {}};
 
-static void InitDefaultsTezosSignTx_TezosContractID() {
+static void InitDefaultsTezosSignTx_TezosContractID_messages_2dtezos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -157,10 +140,10 @@ static void InitDefaultsTezosSignTx_TezosContractID() {
   ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TezosSignTx_TezosContractID =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTezosSignTx_TezosContractID}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TezosSignTx_TezosContractID_messages_2dtezos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTezosSignTx_TezosContractID_messages_2dtezos_2eproto}, {}};
 
-static void InitDefaultsTezosSignTx_TezosRevealOp() {
+static void InitDefaultsTezosSignTx_TezosRevealOp_messages_2dtezos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -171,11 +154,11 @@ static void InitDefaultsTezosSignTx_TezosRevealOp() {
   ::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosRevealOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTezosSignTx_TezosRevealOp}, {
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosContractID.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosRevealOp_messages_2dtezos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTezosSignTx_TezosRevealOp_messages_2dtezos_2eproto}, {
+      &scc_info_TezosSignTx_TezosContractID_messages_2dtezos_2eproto.base,}};
 
-static void InitDefaultsTezosSignTx_TezosTransactionOp() {
+static void InitDefaultsTezosSignTx_TezosTransactionOp_messages_2dtezos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -186,11 +169,11 @@ static void InitDefaultsTezosSignTx_TezosTransactionOp() {
   ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosTransactionOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTezosSignTx_TezosTransactionOp}, {
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosContractID.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosTransactionOp_messages_2dtezos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTezosSignTx_TezosTransactionOp_messages_2dtezos_2eproto}, {
+      &scc_info_TezosSignTx_TezosContractID_messages_2dtezos_2eproto.base,}};
 
-static void InitDefaultsTezosSignTx_TezosOriginationOp() {
+static void InitDefaultsTezosSignTx_TezosOriginationOp_messages_2dtezos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -201,11 +184,11 @@ static void InitDefaultsTezosSignTx_TezosOriginationOp() {
   ::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosOriginationOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTezosSignTx_TezosOriginationOp}, {
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosContractID.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosOriginationOp_messages_2dtezos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTezosSignTx_TezosOriginationOp_messages_2dtezos_2eproto}, {
+      &scc_info_TezosSignTx_TezosContractID_messages_2dtezos_2eproto.base,}};
 
-static void InitDefaultsTezosSignTx_TezosDelegationOp() {
+static void InitDefaultsTezosSignTx_TezosDelegationOp_messages_2dtezos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -216,11 +199,11 @@ static void InitDefaultsTezosSignTx_TezosDelegationOp() {
   ::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosDelegationOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTezosSignTx_TezosDelegationOp}, {
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosContractID.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_TezosSignTx_TezosDelegationOp_messages_2dtezos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTezosSignTx_TezosDelegationOp_messages_2dtezos_2eproto}, {
+      &scc_info_TezosSignTx_TezosContractID_messages_2dtezos_2eproto.base,}};
 
-static void InitDefaultsTezosSignTx() {
+static void InitDefaultsTezosSignTx_messages_2dtezos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -231,14 +214,14 @@ static void InitDefaultsTezosSignTx() {
   ::hw::trezor::messages::tezos::TezosSignTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<4> scc_info_TezosSignTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 4, InitDefaultsTezosSignTx}, {
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosRevealOp.base,
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosTransactionOp.base,
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosOriginationOp.base,
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosDelegationOp.base,}};
+::google::protobuf::internal::SCCInfo<4> scc_info_TezosSignTx_messages_2dtezos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 4, InitDefaultsTezosSignTx_messages_2dtezos_2eproto}, {
+      &scc_info_TezosSignTx_TezosRevealOp_messages_2dtezos_2eproto.base,
+      &scc_info_TezosSignTx_TezosTransactionOp_messages_2dtezos_2eproto.base,
+      &scc_info_TezosSignTx_TezosOriginationOp_messages_2dtezos_2eproto.base,
+      &scc_info_TezosSignTx_TezosDelegationOp_messages_2dtezos_2eproto.base,}};
 
-static void InitDefaultsTezosSignedTx() {
+static void InitDefaultsTezosSignedTx_messages_2dtezos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -249,98 +232,99 @@ static void InitDefaultsTezosSignedTx() {
   ::hw::trezor::messages::tezos::TezosSignedTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TezosSignedTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTezosSignedTx}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TezosSignedTx_messages_2dtezos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTezosSignedTx_messages_2dtezos_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_TezosGetAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TezosAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TezosGetPublicKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TezosPublicKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TezosSignTx_TezosContractID.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TezosSignTx_TezosRevealOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TezosSignTx_TezosTransactionOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TezosSignTx_TezosOriginationOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TezosSignTx_TezosDelegationOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TezosSignTx.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TezosSignedTx.base);
+void InitDefaults_messages_2dtezos_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_TezosGetAddress_messages_2dtezos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TezosAddress_messages_2dtezos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TezosGetPublicKey_messages_2dtezos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TezosPublicKey_messages_2dtezos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TezosSignTx_TezosContractID_messages_2dtezos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TezosSignTx_TezosRevealOp_messages_2dtezos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TezosSignTx_TezosTransactionOp_messages_2dtezos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TezosSignTx_TezosOriginationOp_messages_2dtezos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TezosSignTx_TezosDelegationOp_messages_2dtezos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TezosSignTx_messages_2dtezos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TezosSignedTx_messages_2dtezos_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[11];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+::google::protobuf::Metadata file_level_metadata_messages_2dtezos_2eproto[11];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors_messages_2dtezos_2eproto[1];
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2dtezos_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetAddress, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_messages_2dtezos_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetAddress, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetAddress, show_display_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetAddress, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetAddress, show_display_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosAddress, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosAddress, address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosAddress, address_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetPublicKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetPublicKey, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetPublicKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetPublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetPublicKey, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetPublicKey, show_display_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetPublicKey, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosGetPublicKey, show_display_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosPublicKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosPublicKey, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosPublicKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosPublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosPublicKey, public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosPublicKey, public_key_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID, tag_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID, hash_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID, tag_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID, hash_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, source_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, fee_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, counter_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, gas_limit_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, storage_limit_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, source_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, fee_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, counter_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, gas_limit_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, storage_limit_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp, public_key_),
   1,
   2,
   3,
   4,
   5,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, source_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, fee_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, counter_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, gas_limit_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, storage_limit_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, amount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, destination_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, parameters_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, source_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, fee_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, counter_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, gas_limit_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, storage_limit_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, amount_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, destination_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp, parameters_),
   1,
   3,
   4,
@@ -349,22 +333,22 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   7,
   2,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, source_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, fee_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, counter_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, gas_limit_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, storage_limit_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, manager_pubkey_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, balance_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, spendable_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, delegatable_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, delegate_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, script_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, source_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, fee_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, counter_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, gas_limit_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, storage_limit_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, manager_pubkey_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, balance_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, spendable_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, delegatable_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, delegate_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp, script_),
   3,
   4,
   5,
@@ -376,53 +360,53 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   10,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, source_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, fee_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, counter_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, gas_limit_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, storage_limit_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, delegate_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, source_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, fee_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, counter_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, gas_limit_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, storage_limit_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp, delegate_),
   1,
   2,
   3,
   4,
   5,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, branch_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, reveal_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, transaction_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, origination_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, delegation_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, branch_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, reveal_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, transaction_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, origination_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignTx, delegation_),
   ~0u,
   0,
   1,
   2,
   3,
   4,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignedTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignedTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignedTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignedTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignedTx, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignedTx, sig_op_contents_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignedTx, operation_hash_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignedTx, signature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignedTx, sig_op_contents_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::tezos::TezosSignedTx, operation_hash_),
   0,
   1,
   2,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::hw::trezor::messages::tezos::TezosGetAddress)},
   { 9, 15, sizeof(::hw::trezor::messages::tezos::TezosAddress)},
   { 16, 23, sizeof(::hw::trezor::messages::tezos::TezosGetPublicKey)},
@@ -450,98 +434,82 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::tezos::_TezosSignedTx_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "messages-tezos.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2dtezos_2eproto = {
+  {}, AddDescriptors_messages_2dtezos_2eproto, "messages-tezos.proto", schemas,
+  file_default_instances, TableStruct_messages_2dtezos_2eproto::offsets,
+  file_level_metadata_messages_2dtezos_2eproto, 11, file_level_enum_descriptors_messages_2dtezos_2eproto, file_level_service_descriptors_messages_2dtezos_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_messages_2dtezos_2eproto[] =
+  "\n\024messages-tezos.proto\022\030hw.trezor.messag"
+  "es.tezos\":\n\017TezosGetAddress\022\021\n\taddress_n"
+  "\030\001 \003(\r\022\024\n\014show_display\030\002 \001(\010\"\037\n\014TezosAdd"
+  "ress\022\017\n\007address\030\001 \001(\t\"<\n\021TezosGetPublicK"
+  "ey\022\021\n\taddress_n\030\001 \003(\r\022\024\n\014show_display\030\002 "
+  "\001(\010\"$\n\016TezosPublicKey\022\022\n\npublic_key\030\001 \001("
+  "\t\"\246\013\n\013TezosSignTx\022\021\n\taddress_n\030\001 \003(\r\022\016\n\006"
+  "branch\030\002 \001(\014\022C\n\006reveal\030\003 \001(\01323.hw.trezor"
+  ".messages.tezos.TezosSignTx.TezosRevealO"
+  "p\022M\n\013transaction\030\004 \001(\01328.hw.trezor.messa"
+  "ges.tezos.TezosSignTx.TezosTransactionOp"
+  "\022M\n\013origination\030\005 \001(\01328.hw.trezor.messag"
+  "es.tezos.TezosSignTx.TezosOriginationOp\022"
+  "K\n\ndelegation\030\006 \001(\01327.hw.trezor.messages"
+  ".tezos.TezosSignTx.TezosDelegationOp\032\250\001\n"
+  "\017TezosContractID\022T\n\003tag\030\001 \001(\0162G.hw.trezo"
+  "r.messages.tezos.TezosSignTx.TezosContra"
+  "ctID.TezosContractType\022\014\n\004hash\030\002 \001(\014\"1\n\021"
+  "TezosContractType\022\014\n\010Implicit\020\000\022\016\n\nOrigi"
+  "nated\020\001\032\262\001\n\rTezosRevealOp\022E\n\006source\030\001 \001("
+  "\01325.hw.trezor.messages.tezos.TezosSignTx"
+  ".TezosContractID\022\013\n\003fee\030\002 \001(\004\022\017\n\007counter"
+  "\030\003 \001(\004\022\021\n\tgas_limit\030\004 \001(\004\022\025\n\rstorage_lim"
+  "it\030\005 \001(\004\022\022\n\npublic_key\030\006 \001(\014\032\223\002\n\022TezosTr"
+  "ansactionOp\022E\n\006source\030\001 \001(\01325.hw.trezor."
+  "messages.tezos.TezosSignTx.TezosContract"
+  "ID\022\013\n\003fee\030\002 \001(\004\022\017\n\007counter\030\003 \001(\004\022\021\n\tgas_"
+  "limit\030\004 \001(\004\022\025\n\rstorage_limit\030\005 \001(\004\022\016\n\006am"
+  "ount\030\006 \001(\004\022J\n\013destination\030\007 \001(\01325.hw.tre"
+  "zor.messages.tezos.TezosSignTx.TezosCont"
+  "ractID\022\022\n\nparameters\030\010 \001(\014\032\226\002\n\022TezosOrig"
+  "inationOp\022E\n\006source\030\001 \001(\01325.hw.trezor.me"
+  "ssages.tezos.TezosSignTx.TezosContractID"
+  "\022\013\n\003fee\030\002 \001(\004\022\017\n\007counter\030\003 \001(\004\022\021\n\tgas_li"
+  "mit\030\004 \001(\004\022\025\n\rstorage_limit\030\005 \001(\004\022\026\n\016mana"
+  "ger_pubkey\030\006 \001(\014\022\017\n\007balance\030\007 \001(\004\022\021\n\tspe"
+  "ndable\030\010 \001(\010\022\023\n\013delegatable\030\t \001(\010\022\020\n\010del"
+  "egate\030\n \001(\014\022\016\n\006script\030\013 \001(\014\032\264\001\n\021TezosDel"
+  "egationOp\022E\n\006source\030\001 \001(\01325.hw.trezor.me"
+  "ssages.tezos.TezosSignTx.TezosContractID"
+  "\022\013\n\003fee\030\002 \001(\004\022\017\n\007counter\030\003 \001(\004\022\021\n\tgas_li"
+  "mit\030\004 \001(\004\022\025\n\rstorage_limit\030\005 \001(\004\022\020\n\010dele"
+  "gate\030\006 \001(\014\"S\n\rTezosSignedTx\022\021\n\tsignature"
+  "\030\001 \001(\t\022\027\n\017sig_op_contents\030\002 \001(\014\022\026\n\016opera"
+  "tion_hash\030\003 \001(\tB9\n#com.satoshilabs.trezo"
+  "r.lib.protobufB\022TrezorMessageTezos"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dtezos_2eproto = {
+  false, InitDefaults_messages_2dtezos_2eproto, 
+  descriptor_table_protodef_messages_2dtezos_2eproto,
+  "messages-tezos.proto", &assign_descriptors_table_messages_2dtezos_2eproto, 1834,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 11);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\024messages-tezos.proto\022\030hw.trezor.messag"
-      "es.tezos\":\n\017TezosGetAddress\022\021\n\taddress_n"
-      "\030\001 \003(\r\022\024\n\014show_display\030\002 \001(\010\"\037\n\014TezosAdd"
-      "ress\022\017\n\007address\030\001 \001(\t\"<\n\021TezosGetPublicK"
-      "ey\022\021\n\taddress_n\030\001 \003(\r\022\024\n\014show_display\030\002 "
-      "\001(\010\"$\n\016TezosPublicKey\022\022\n\npublic_key\030\001 \001("
-      "\t\"\246\013\n\013TezosSignTx\022\021\n\taddress_n\030\001 \003(\r\022\016\n\006"
-      "branch\030\002 \001(\014\022C\n\006reveal\030\003 \001(\01323.hw.trezor"
-      ".messages.tezos.TezosSignTx.TezosRevealO"
-      "p\022M\n\013transaction\030\004 \001(\01328.hw.trezor.messa"
-      "ges.tezos.TezosSignTx.TezosTransactionOp"
-      "\022M\n\013origination\030\005 \001(\01328.hw.trezor.messag"
-      "es.tezos.TezosSignTx.TezosOriginationOp\022"
-      "K\n\ndelegation\030\006 \001(\01327.hw.trezor.messages"
-      ".tezos.TezosSignTx.TezosDelegationOp\032\250\001\n"
-      "\017TezosContractID\022T\n\003tag\030\001 \001(\0162G.hw.trezo"
-      "r.messages.tezos.TezosSignTx.TezosContra"
-      "ctID.TezosContractType\022\014\n\004hash\030\002 \001(\014\"1\n\021"
-      "TezosContractType\022\014\n\010Implicit\020\000\022\016\n\nOrigi"
-      "nated\020\001\032\262\001\n\rTezosRevealOp\022E\n\006source\030\001 \001("
-      "\01325.hw.trezor.messages.tezos.TezosSignTx"
-      ".TezosContractID\022\013\n\003fee\030\002 \001(\004\022\017\n\007counter"
-      "\030\003 \001(\004\022\021\n\tgas_limit\030\004 \001(\004\022\025\n\rstorage_lim"
-      "it\030\005 \001(\004\022\022\n\npublic_key\030\006 \001(\014\032\223\002\n\022TezosTr"
-      "ansactionOp\022E\n\006source\030\001 \001(\01325.hw.trezor."
-      "messages.tezos.TezosSignTx.TezosContract"
-      "ID\022\013\n\003fee\030\002 \001(\004\022\017\n\007counter\030\003 \001(\004\022\021\n\tgas_"
-      "limit\030\004 \001(\004\022\025\n\rstorage_limit\030\005 \001(\004\022\016\n\006am"
-      "ount\030\006 \001(\004\022J\n\013destination\030\007 \001(\01325.hw.tre"
-      "zor.messages.tezos.TezosSignTx.TezosCont"
-      "ractID\022\022\n\nparameters\030\010 \001(\014\032\226\002\n\022TezosOrig"
-      "inationOp\022E\n\006source\030\001 \001(\01325.hw.trezor.me"
-      "ssages.tezos.TezosSignTx.TezosContractID"
-      "\022\013\n\003fee\030\002 \001(\004\022\017\n\007counter\030\003 \001(\004\022\021\n\tgas_li"
-      "mit\030\004 \001(\004\022\025\n\rstorage_limit\030\005 \001(\004\022\026\n\016mana"
-      "ger_pubkey\030\006 \001(\014\022\017\n\007balance\030\007 \001(\004\022\021\n\tspe"
-      "ndable\030\010 \001(\010\022\023\n\013delegatable\030\t \001(\010\022\020\n\010del"
-      "egate\030\n \001(\014\022\016\n\006script\030\013 \001(\014\032\264\001\n\021TezosDel"
-      "egationOp\022E\n\006source\030\001 \001(\01325.hw.trezor.me"
-      "ssages.tezos.TezosSignTx.TezosContractID"
-      "\022\013\n\003fee\030\002 \001(\004\022\017\n\007counter\030\003 \001(\004\022\021\n\tgas_li"
-      "mit\030\004 \001(\004\022\025\n\rstorage_limit\030\005 \001(\004\022\020\n\010dele"
-      "gate\030\006 \001(\014\"S\n\rTezosSignedTx\022\021\n\tsignature"
-      "\030\001 \001(\t\022\027\n\017sig_op_contents\030\002 \001(\014\022\026\n\016opera"
-      "tion_hash\030\003 \001(\tB9\n#com.satoshilabs.trezo"
-      "r.lib.protobufB\022TrezorMessageTezos"
+void AddDescriptors_messages_2dtezos_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1834);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "messages-tezos.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_messages_2dtezos_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_messages_2dtezos_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_messages_2dtezos_2eproto = []() { AddDescriptors_messages_2dtezos_2eproto(); return true; }();
 namespace hw {
 namespace trezor {
 namespace messages {
 namespace tezos {
 const ::google::protobuf::EnumDescriptor* TezosSignTx_TezosContractID_TezosContractType_descriptor() {
-  protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_messages_2dtezos_2eproto::file_level_enum_descriptors[0];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dtezos_2eproto);
+  return file_level_enum_descriptors_messages_2dtezos_2eproto[0];
 }
 bool TezosSignTx_TezosContractID_TezosContractType_IsValid(int value) {
   switch (value) {
@@ -565,21 +533,26 @@ const int TezosSignTx_TezosContractID::TezosContractType_ARRAYSIZE;
 
 void TezosGetAddress::InitAsDefaultInstance() {
 }
+class TezosGetAddress::HasBitSetters {
+ public:
+  static void set_has_show_display(TezosGetAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TezosGetAddress::kAddressNFieldNumber;
 const int TezosGetAddress::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TezosGetAddress::TezosGetAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosGetAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.tezos.TezosGetAddress)
 }
 TezosGetAddress::TezosGetAddress(const TezosGetAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -602,13 +575,8 @@ void TezosGetAddress::SharedDtor() {
 void TezosGetAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TezosGetAddress::descriptor() {
-  ::protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TezosGetAddress& TezosGetAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtezos_2eproto::scc_info_TezosGetAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TezosGetAddress_messages_2dtezos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -625,9 +593,69 @@ void TezosGetAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TezosGetAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TezosGetAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool show_display = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TezosGetAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.tezos.TezosGetAddress)
   for (;;) {
@@ -637,14 +665,11 @@ bool TezosGetAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -656,9 +681,8 @@ bool TezosGetAddress::MergePartialFromCodedStream(
 
       // optional bool show_display = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -687,6 +711,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TezosGetAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -714,8 +739,7 @@ void TezosGetAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TezosGetAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.tezos.TezosGetAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -747,6 +771,10 @@ size_t TezosGetAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -757,7 +785,8 @@ size_t TezosGetAddress::ByteSizeLong() const {
   }
 
   // optional bool show_display = 2;
-  if (has_show_display()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -770,9 +799,9 @@ void TezosGetAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.tezos.TezosGetAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const TezosGetAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TezosGetAddress>(
+      ::google::protobuf::DynamicCastToGenerated<TezosGetAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.tezos.TezosGetAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -818,15 +847,15 @@ void TezosGetAddress::Swap(TezosGetAddress* other) {
 }
 void TezosGetAddress::InternalSwap(TezosGetAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TezosGetAddress::GetMetadata() const {
-  protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtezos_2eproto);
+  return ::file_level_metadata_messages_2dtezos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -834,20 +863,25 @@ void TezosGetAddress::InternalSwap(TezosGetAddress* other) {
 
 void TezosAddress::InitAsDefaultInstance() {
 }
+class TezosAddress::HasBitSetters {
+ public:
+  static void set_has_address(TezosAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TezosAddress::kAddressFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TezosAddress::TezosAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.tezos.TezosAddress)
 }
 TezosAddress::TezosAddress(const TezosAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -858,6 +892,8 @@ TezosAddress::TezosAddress(const TezosAddress& from)
 }
 
 void TezosAddress::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TezosAddress_messages_2dtezos_2eproto.base);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -873,13 +909,8 @@ void TezosAddress::SharedDtor() {
 void TezosAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TezosAddress::descriptor() {
-  ::protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TezosAddress& TezosAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtezos_2eproto::scc_info_TezosAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TezosAddress_messages_2dtezos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -898,9 +929,62 @@ void TezosAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TezosAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TezosAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.tezos.TezosAddress.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TezosAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.tezos.TezosAddress)
   for (;;) {
@@ -910,8 +994,7 @@ bool TezosAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -943,6 +1026,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TezosAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -969,8 +1053,7 @@ void TezosAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TezosAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.tezos.TezosAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1004,8 +1087,13 @@ size_t TezosAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string address = 1;
-  if (has_address()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->address());
@@ -1020,9 +1108,9 @@ void TezosAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.tezos.TezosAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const TezosAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TezosAddress>(
+      ::google::protobuf::DynamicCastToGenerated<TezosAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.tezos.TezosAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1039,7 +1127,7 @@ void TezosAddress::MergeFrom(const TezosAddress& from) {
   (void) cached_has_bits;
 
   if (from.has_address()) {
-    set_has_address();
+    _has_bits_[0] |= 0x00000001u;
     address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
   }
 }
@@ -1068,15 +1156,15 @@ void TezosAddress::Swap(TezosAddress* other) {
 }
 void TezosAddress::InternalSwap(TezosAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TezosAddress::GetMetadata() const {
-  protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtezos_2eproto);
+  return ::file_level_metadata_messages_2dtezos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1084,21 +1172,26 @@ void TezosAddress::InternalSwap(TezosAddress* other) {
 
 void TezosGetPublicKey::InitAsDefaultInstance() {
 }
+class TezosGetPublicKey::HasBitSetters {
+ public:
+  static void set_has_show_display(TezosGetPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TezosGetPublicKey::kAddressNFieldNumber;
 const int TezosGetPublicKey::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TezosGetPublicKey::TezosGetPublicKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosGetPublicKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.tezos.TezosGetPublicKey)
 }
 TezosGetPublicKey::TezosGetPublicKey(const TezosGetPublicKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -1121,13 +1214,8 @@ void TezosGetPublicKey::SharedDtor() {
 void TezosGetPublicKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TezosGetPublicKey::descriptor() {
-  ::protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TezosGetPublicKey& TezosGetPublicKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtezos_2eproto::scc_info_TezosGetPublicKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TezosGetPublicKey_messages_2dtezos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1144,9 +1232,69 @@ void TezosGetPublicKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TezosGetPublicKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TezosGetPublicKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool show_display = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TezosGetPublicKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.tezos.TezosGetPublicKey)
   for (;;) {
@@ -1156,14 +1304,11 @@ bool TezosGetPublicKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1175,9 +1320,8 @@ bool TezosGetPublicKey::MergePartialFromCodedStream(
 
       // optional bool show_display = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -1206,6 +1350,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TezosGetPublicKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1233,8 +1378,7 @@ void TezosGetPublicKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TezosGetPublicKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.tezos.TezosGetPublicKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1266,6 +1410,10 @@ size_t TezosGetPublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1276,7 +1424,8 @@ size_t TezosGetPublicKey::ByteSizeLong() const {
   }
 
   // optional bool show_display = 2;
-  if (has_show_display()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -1289,9 +1438,9 @@ void TezosGetPublicKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.tezos.TezosGetPublicKey)
   GOOGLE_DCHECK_NE(&from, this);
   const TezosGetPublicKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TezosGetPublicKey>(
+      ::google::protobuf::DynamicCastToGenerated<TezosGetPublicKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.tezos.TezosGetPublicKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1337,15 +1486,15 @@ void TezosGetPublicKey::Swap(TezosGetPublicKey* other) {
 }
 void TezosGetPublicKey::InternalSwap(TezosGetPublicKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TezosGetPublicKey::GetMetadata() const {
-  protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtezos_2eproto);
+  return ::file_level_metadata_messages_2dtezos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1353,20 +1502,25 @@ void TezosGetPublicKey::InternalSwap(TezosGetPublicKey* other) {
 
 void TezosPublicKey::InitAsDefaultInstance() {
 }
+class TezosPublicKey::HasBitSetters {
+ public:
+  static void set_has_public_key(TezosPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TezosPublicKey::kPublicKeyFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TezosPublicKey::TezosPublicKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosPublicKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.tezos.TezosPublicKey)
 }
 TezosPublicKey::TezosPublicKey(const TezosPublicKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1377,6 +1531,8 @@ TezosPublicKey::TezosPublicKey(const TezosPublicKey& from)
 }
 
 void TezosPublicKey::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TezosPublicKey_messages_2dtezos_2eproto.base);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1392,13 +1548,8 @@ void TezosPublicKey::SharedDtor() {
 void TezosPublicKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TezosPublicKey::descriptor() {
-  ::protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TezosPublicKey& TezosPublicKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtezos_2eproto::scc_info_TezosPublicKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TezosPublicKey_messages_2dtezos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1417,9 +1568,62 @@ void TezosPublicKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TezosPublicKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TezosPublicKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string public_key = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.tezos.TezosPublicKey.public_key");
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TezosPublicKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.tezos.TezosPublicKey)
   for (;;) {
@@ -1429,8 +1633,7 @@ bool TezosPublicKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string public_key = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_public_key()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1462,6 +1665,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TezosPublicKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1488,8 +1692,7 @@ void TezosPublicKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TezosPublicKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.tezos.TezosPublicKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1523,8 +1726,13 @@ size_t TezosPublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string public_key = 1;
-  if (has_public_key()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->public_key());
@@ -1539,9 +1747,9 @@ void TezosPublicKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.tezos.TezosPublicKey)
   GOOGLE_DCHECK_NE(&from, this);
   const TezosPublicKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TezosPublicKey>(
+      ::google::protobuf::DynamicCastToGenerated<TezosPublicKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.tezos.TezosPublicKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1558,7 +1766,7 @@ void TezosPublicKey::MergeFrom(const TezosPublicKey& from) {
   (void) cached_has_bits;
 
   if (from.has_public_key()) {
-    set_has_public_key();
+    _has_bits_[0] |= 0x00000001u;
     public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
   }
 }
@@ -1587,15 +1795,15 @@ void TezosPublicKey::Swap(TezosPublicKey* other) {
 }
 void TezosPublicKey::InternalSwap(TezosPublicKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TezosPublicKey::GetMetadata() const {
-  protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtezos_2eproto);
+  return ::file_level_metadata_messages_2dtezos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1603,21 +1811,29 @@ void TezosPublicKey::InternalSwap(TezosPublicKey* other) {
 
 void TezosSignTx_TezosContractID::InitAsDefaultInstance() {
 }
+class TezosSignTx_TezosContractID::HasBitSetters {
+ public:
+  static void set_has_tag(TezosSignTx_TezosContractID* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_hash(TezosSignTx_TezosContractID* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TezosSignTx_TezosContractID::kTagFieldNumber;
 const int TezosSignTx_TezosContractID::kHashFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TezosSignTx_TezosContractID::TezosSignTx_TezosContractID()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosContractID.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.tezos.TezosSignTx.TezosContractID)
 }
 TezosSignTx_TezosContractID::TezosSignTx_TezosContractID(const TezosSignTx_TezosContractID& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   hash_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1629,6 +1845,8 @@ TezosSignTx_TezosContractID::TezosSignTx_TezosContractID(const TezosSignTx_Tezos
 }
 
 void TezosSignTx_TezosContractID::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TezosSignTx_TezosContractID_messages_2dtezos_2eproto.base);
   hash_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   tag_ = 0;
 }
@@ -1645,13 +1863,8 @@ void TezosSignTx_TezosContractID::SharedDtor() {
 void TezosSignTx_TezosContractID::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TezosSignTx_TezosContractID::descriptor() {
-  ::protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TezosSignTx_TezosContractID& TezosSignTx_TezosContractID::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosContractID.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TezosSignTx_TezosContractID_messages_2dtezos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1671,9 +1884,73 @@ void TezosSignTx_TezosContractID::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TezosSignTx_TezosContractID::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TezosSignTx_TezosContractID*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID.TezosContractType tag = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::tezos::TezosSignTx_TezosContractID_TezosContractType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(1, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_tag(static_cast<::hw::trezor::messages::tezos::TezosSignTx_TezosContractID_TezosContractType>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes hash = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_hash();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TezosSignTx_TezosContractID::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.tezos.TezosSignTx.TezosContractID)
   for (;;) {
@@ -1683,9 +1960,8 @@ bool TezosSignTx_TezosContractID::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID.TezosContractType tag = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -1693,7 +1969,7 @@ bool TezosSignTx_TezosContractID::MergePartialFromCodedStream(
             set_tag(static_cast< ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID_TezosContractType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                1, static_cast< ::google::protobuf::uint64>(value));
+                1, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -1703,8 +1979,7 @@ bool TezosSignTx_TezosContractID::MergePartialFromCodedStream(
 
       // optional bytes hash = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_hash()));
         } else {
@@ -1732,6 +2007,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TezosSignTx_TezosContractID::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1760,8 +2036,7 @@ void TezosSignTx_TezosContractID::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TezosSignTx_TezosContractID::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.tezos.TezosSignTx.TezosContractID)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1797,16 +2072,21 @@ size_t TezosSignTx_TezosContractID::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes hash = 2;
-    if (has_hash()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->hash());
     }
 
     // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID.TezosContractType tag = 1;
-    if (has_tag()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->tag());
     }
@@ -1821,9 +2101,9 @@ void TezosSignTx_TezosContractID::MergeFrom(const ::google::protobuf::Message& f
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.tezos.TezosSignTx.TezosContractID)
   GOOGLE_DCHECK_NE(&from, this);
   const TezosSignTx_TezosContractID* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TezosSignTx_TezosContractID>(
+      ::google::protobuf::DynamicCastToGenerated<TezosSignTx_TezosContractID>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.tezos.TezosSignTx.TezosContractID)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1840,9 +2120,9 @@ void TezosSignTx_TezosContractID::MergeFrom(const TezosSignTx_TezosContractID& f
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_hash();
+      _has_bits_[0] |= 0x00000001u;
       hash_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.hash_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -1876,16 +2156,16 @@ void TezosSignTx_TezosContractID::Swap(TezosSignTx_TezosContractID* other) {
 }
 void TezosSignTx_TezosContractID::InternalSwap(TezosSignTx_TezosContractID* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   hash_.Swap(&other->hash_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(tag_, other->tag_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TezosSignTx_TezosContractID::GetMetadata() const {
-  protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtezos_2eproto);
+  return ::file_level_metadata_messages_2dtezos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1894,6 +2174,33 @@ void TezosSignTx_TezosContractID::InternalSwap(TezosSignTx_TezosContractID* othe
 void TezosSignTx_TezosRevealOp::InitAsDefaultInstance() {
   ::hw::trezor::messages::tezos::_TezosSignTx_TezosRevealOp_default_instance_._instance.get_mutable()->source_ = const_cast< ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID*>(
       ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID::internal_default_instance());
+}
+class TezosSignTx_TezosRevealOp::HasBitSetters {
+ public:
+  static const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& source(const TezosSignTx_TezosRevealOp* msg);
+  static void set_has_source(TezosSignTx_TezosRevealOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_fee(TezosSignTx_TezosRevealOp* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_counter(TezosSignTx_TezosRevealOp* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_gas_limit(TezosSignTx_TezosRevealOp* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_storage_limit(TezosSignTx_TezosRevealOp* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_public_key(TezosSignTx_TezosRevealOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID&
+TezosSignTx_TezosRevealOp::HasBitSetters::source(const TezosSignTx_TezosRevealOp* msg) {
+  return *msg->source_;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TezosSignTx_TezosRevealOp::kSourceFieldNumber;
@@ -1905,15 +2212,13 @@ const int TezosSignTx_TezosRevealOp::kPublicKeyFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TezosSignTx_TezosRevealOp::TezosSignTx_TezosRevealOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosRevealOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp)
 }
 TezosSignTx_TezosRevealOp::TezosSignTx_TezosRevealOp(const TezosSignTx_TezosRevealOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1923,7 +2228,7 @@ TezosSignTx_TezosRevealOp::TezosSignTx_TezosRevealOp(const TezosSignTx_TezosReve
   if (from.has_source()) {
     source_ = new ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID(*from.source_);
   } else {
-    source_ = NULL;
+    source_ = nullptr;
   }
   ::memcpy(&fee_, &from.fee_,
     static_cast<size_t>(reinterpret_cast<char*>(&storage_limit_) -
@@ -1932,6 +2237,8 @@ TezosSignTx_TezosRevealOp::TezosSignTx_TezosRevealOp(const TezosSignTx_TezosReve
 }
 
 void TezosSignTx_TezosRevealOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TezosSignTx_TezosRevealOp_messages_2dtezos_2eproto.base);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&source_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&storage_limit_) -
@@ -1951,13 +2258,8 @@ void TezosSignTx_TezosRevealOp::SharedDtor() {
 void TezosSignTx_TezosRevealOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TezosSignTx_TezosRevealOp::descriptor() {
-  ::protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TezosSignTx_TezosRevealOp& TezosSignTx_TezosRevealOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosRevealOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TezosSignTx_TezosRevealOp_messages_2dtezos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1969,16 +2271,16 @@ void TezosSignTx_TezosRevealOp::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       public_key_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(source_ != NULL);
+      GOOGLE_DCHECK(source_ != nullptr);
       source_->Clear();
     }
   }
-  if (cached_has_bits & 60u) {
+  if (cached_has_bits & 0x0000003cu) {
     ::memset(&fee_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&storage_limit_) -
         reinterpret_cast<char*>(&fee_)) + sizeof(storage_limit_));
@@ -1987,9 +2289,102 @@ void TezosSignTx_TezosRevealOp::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TezosSignTx_TezosRevealOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TezosSignTx_TezosRevealOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID::_InternalParse;
+        object = msg->mutable_source();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional uint64 fee = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_fee(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 counter = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_counter(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 gas_limit = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_gas_limit(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 storage_limit = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_storage_limit(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes public_key = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TezosSignTx_TezosRevealOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp)
   for (;;) {
@@ -1999,8 +2394,7 @@ bool TezosSignTx_TezosRevealOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_source()));
         } else {
@@ -2011,9 +2405,8 @@ bool TezosSignTx_TezosRevealOp::MergePartialFromCodedStream(
 
       // optional uint64 fee = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_fee();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_fee(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &fee_)));
@@ -2025,9 +2418,8 @@ bool TezosSignTx_TezosRevealOp::MergePartialFromCodedStream(
 
       // optional uint64 counter = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_counter();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_counter(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &counter_)));
@@ -2039,9 +2431,8 @@ bool TezosSignTx_TezosRevealOp::MergePartialFromCodedStream(
 
       // optional uint64 gas_limit = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_gas_limit();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_gas_limit(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &gas_limit_)));
@@ -2053,9 +2444,8 @@ bool TezosSignTx_TezosRevealOp::MergePartialFromCodedStream(
 
       // optional uint64 storage_limit = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_storage_limit();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_storage_limit(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &storage_limit_)));
@@ -2067,8 +2457,7 @@ bool TezosSignTx_TezosRevealOp::MergePartialFromCodedStream(
 
       // optional bytes public_key = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_public_key()));
         } else {
@@ -2096,6 +2485,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TezosSignTx_TezosRevealOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2107,7 +2497,7 @@ void TezosSignTx_TezosRevealOp::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_source(), output);
+      1, HasBitSetters::source(this), output);
   }
 
   // optional uint64 fee = 2;
@@ -2144,8 +2534,7 @@ void TezosSignTx_TezosRevealOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TezosSignTx_TezosRevealOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2155,7 +2544,7 @@ void TezosSignTx_TezosRevealOp::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_source(), deterministic, target);
+        1, HasBitSetters::source(this), target);
   }
 
   // optional uint64 fee = 2;
@@ -2202,44 +2591,49 @@ size_t TezosSignTx_TezosRevealOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 63u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000003fu) {
     // optional bytes public_key = 6;
-    if (has_public_key()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->public_key());
     }
 
     // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
-    if (has_source()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *source_);
     }
 
     // optional uint64 fee = 2;
-    if (has_fee()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->fee());
     }
 
     // optional uint64 counter = 3;
-    if (has_counter()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->counter());
     }
 
     // optional uint64 gas_limit = 4;
-    if (has_gas_limit()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->gas_limit());
     }
 
     // optional uint64 storage_limit = 5;
-    if (has_storage_limit()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->storage_limit());
@@ -2255,9 +2649,9 @@ void TezosSignTx_TezosRevealOp::MergeFrom(const ::google::protobuf::Message& fro
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp)
   GOOGLE_DCHECK_NE(&from, this);
   const TezosSignTx_TezosRevealOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TezosSignTx_TezosRevealOp>(
+      ::google::protobuf::DynamicCastToGenerated<TezosSignTx_TezosRevealOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2274,9 +2668,9 @@ void TezosSignTx_TezosRevealOp::MergeFrom(const TezosSignTx_TezosRevealOp& from)
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 63u) {
+  if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_public_key();
+      _has_bits_[0] |= 0x00000001u;
       public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -2322,6 +2716,8 @@ void TezosSignTx_TezosRevealOp::Swap(TezosSignTx_TezosRevealOp* other) {
 }
 void TezosSignTx_TezosRevealOp::InternalSwap(TezosSignTx_TezosRevealOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(source_, other->source_);
@@ -2329,13 +2725,11 @@ void TezosSignTx_TezosRevealOp::InternalSwap(TezosSignTx_TezosRevealOp* other) {
   swap(counter_, other->counter_);
   swap(gas_limit_, other->gas_limit_);
   swap(storage_limit_, other->storage_limit_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TezosSignTx_TezosRevealOp::GetMetadata() const {
-  protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtezos_2eproto);
+  return ::file_level_metadata_messages_2dtezos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2346,6 +2740,44 @@ void TezosSignTx_TezosTransactionOp::InitAsDefaultInstance() {
       ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID::internal_default_instance());
   ::hw::trezor::messages::tezos::_TezosSignTx_TezosTransactionOp_default_instance_._instance.get_mutable()->destination_ = const_cast< ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID*>(
       ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID::internal_default_instance());
+}
+class TezosSignTx_TezosTransactionOp::HasBitSetters {
+ public:
+  static const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& source(const TezosSignTx_TezosTransactionOp* msg);
+  static void set_has_source(TezosSignTx_TezosTransactionOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_fee(TezosSignTx_TezosTransactionOp* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_counter(TezosSignTx_TezosTransactionOp* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_gas_limit(TezosSignTx_TezosTransactionOp* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_storage_limit(TezosSignTx_TezosTransactionOp* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_amount(TezosSignTx_TezosTransactionOp* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& destination(const TezosSignTx_TezosTransactionOp* msg);
+  static void set_has_destination(TezosSignTx_TezosTransactionOp* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_parameters(TezosSignTx_TezosTransactionOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID&
+TezosSignTx_TezosTransactionOp::HasBitSetters::source(const TezosSignTx_TezosTransactionOp* msg) {
+  return *msg->source_;
+}
+const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID&
+TezosSignTx_TezosTransactionOp::HasBitSetters::destination(const TezosSignTx_TezosTransactionOp* msg) {
+  return *msg->destination_;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TezosSignTx_TezosTransactionOp::kSourceFieldNumber;
@@ -2359,15 +2791,13 @@ const int TezosSignTx_TezosTransactionOp::kParametersFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TezosSignTx_TezosTransactionOp::TezosSignTx_TezosTransactionOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosTransactionOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp)
 }
 TezosSignTx_TezosTransactionOp::TezosSignTx_TezosTransactionOp(const TezosSignTx_TezosTransactionOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   parameters_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2377,12 +2807,12 @@ TezosSignTx_TezosTransactionOp::TezosSignTx_TezosTransactionOp(const TezosSignTx
   if (from.has_source()) {
     source_ = new ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID(*from.source_);
   } else {
-    source_ = NULL;
+    source_ = nullptr;
   }
   if (from.has_destination()) {
     destination_ = new ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID(*from.destination_);
   } else {
-    destination_ = NULL;
+    destination_ = nullptr;
   }
   ::memcpy(&fee_, &from.fee_,
     static_cast<size_t>(reinterpret_cast<char*>(&amount_) -
@@ -2391,6 +2821,8 @@ TezosSignTx_TezosTransactionOp::TezosSignTx_TezosTransactionOp(const TezosSignTx
 }
 
 void TezosSignTx_TezosTransactionOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TezosSignTx_TezosTransactionOp_messages_2dtezos_2eproto.base);
   parameters_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&source_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&amount_) -
@@ -2411,13 +2843,8 @@ void TezosSignTx_TezosTransactionOp::SharedDtor() {
 void TezosSignTx_TezosTransactionOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TezosSignTx_TezosTransactionOp::descriptor() {
-  ::protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TezosSignTx_TezosTransactionOp& TezosSignTx_TezosTransactionOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosTransactionOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TezosSignTx_TezosTransactionOp_messages_2dtezos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2429,20 +2856,20 @@ void TezosSignTx_TezosTransactionOp::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       parameters_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(source_ != NULL);
+      GOOGLE_DCHECK(source_ != nullptr);
       source_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(destination_ != NULL);
+      GOOGLE_DCHECK(destination_ != nullptr);
       destination_->Clear();
     }
   }
-  if (cached_has_bits & 248u) {
+  if (cached_has_bits & 0x000000f8u) {
     ::memset(&fee_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&amount_) -
         reinterpret_cast<char*>(&fee_)) + sizeof(amount_));
@@ -2451,9 +2878,122 @@ void TezosSignTx_TezosTransactionOp::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TezosSignTx_TezosTransactionOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TezosSignTx_TezosTransactionOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID::_InternalParse;
+        object = msg->mutable_source();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional uint64 fee = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_fee(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 counter = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_counter(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 gas_limit = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_gas_limit(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 storage_limit = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_storage_limit(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 amount = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID destination = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 58) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID::_InternalParse;
+        object = msg->mutable_destination();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional bytes parameters = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 66) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_parameters();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TezosSignTx_TezosTransactionOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp)
   for (;;) {
@@ -2463,8 +3003,7 @@ bool TezosSignTx_TezosTransactionOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_source()));
         } else {
@@ -2475,9 +3014,8 @@ bool TezosSignTx_TezosTransactionOp::MergePartialFromCodedStream(
 
       // optional uint64 fee = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_fee();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_fee(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &fee_)));
@@ -2489,9 +3027,8 @@ bool TezosSignTx_TezosTransactionOp::MergePartialFromCodedStream(
 
       // optional uint64 counter = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_counter();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_counter(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &counter_)));
@@ -2503,9 +3040,8 @@ bool TezosSignTx_TezosTransactionOp::MergePartialFromCodedStream(
 
       // optional uint64 gas_limit = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_gas_limit();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_gas_limit(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &gas_limit_)));
@@ -2517,9 +3053,8 @@ bool TezosSignTx_TezosTransactionOp::MergePartialFromCodedStream(
 
       // optional uint64 storage_limit = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_storage_limit();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_storage_limit(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &storage_limit_)));
@@ -2531,9 +3066,8 @@ bool TezosSignTx_TezosTransactionOp::MergePartialFromCodedStream(
 
       // optional uint64 amount = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &amount_)));
@@ -2545,8 +3079,7 @@ bool TezosSignTx_TezosTransactionOp::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID destination = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (58 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_destination()));
         } else {
@@ -2557,8 +3090,7 @@ bool TezosSignTx_TezosTransactionOp::MergePartialFromCodedStream(
 
       // optional bytes parameters = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (66 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_parameters()));
         } else {
@@ -2586,6 +3118,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TezosSignTx_TezosTransactionOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2597,7 +3130,7 @@ void TezosSignTx_TezosTransactionOp::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_source(), output);
+      1, HasBitSetters::source(this), output);
   }
 
   // optional uint64 fee = 2;
@@ -2628,7 +3161,7 @@ void TezosSignTx_TezosTransactionOp::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID destination = 7;
   if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, this->_internal_destination(), output);
+      7, HasBitSetters::destination(this), output);
   }
 
   // optional bytes parameters = 8;
@@ -2645,8 +3178,7 @@ void TezosSignTx_TezosTransactionOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TezosSignTx_TezosTransactionOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2656,7 +3188,7 @@ void TezosSignTx_TezosTransactionOp::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_source(), deterministic, target);
+        1, HasBitSetters::source(this), target);
   }
 
   // optional uint64 fee = 2;
@@ -2688,7 +3220,7 @@ void TezosSignTx_TezosTransactionOp::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        7, this->_internal_destination(), deterministic, target);
+        7, HasBitSetters::destination(this), target);
   }
 
   // optional bytes parameters = 8;
@@ -2715,58 +3247,63 @@ size_t TezosSignTx_TezosTransactionOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 255u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional bytes parameters = 8;
-    if (has_parameters()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->parameters());
     }
 
     // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
-    if (has_source()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *source_);
     }
 
     // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID destination = 7;
-    if (has_destination()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *destination_);
     }
 
     // optional uint64 fee = 2;
-    if (has_fee()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->fee());
     }
 
     // optional uint64 counter = 3;
-    if (has_counter()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->counter());
     }
 
     // optional uint64 gas_limit = 4;
-    if (has_gas_limit()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->gas_limit());
     }
 
     // optional uint64 storage_limit = 5;
-    if (has_storage_limit()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->storage_limit());
     }
 
     // optional uint64 amount = 6;
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->amount());
@@ -2782,9 +3319,9 @@ void TezosSignTx_TezosTransactionOp::MergeFrom(const ::google::protobuf::Message
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp)
   GOOGLE_DCHECK_NE(&from, this);
   const TezosSignTx_TezosTransactionOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TezosSignTx_TezosTransactionOp>(
+      ::google::protobuf::DynamicCastToGenerated<TezosSignTx_TezosTransactionOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2801,9 +3338,9 @@ void TezosSignTx_TezosTransactionOp::MergeFrom(const TezosSignTx_TezosTransactio
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_parameters();
+      _has_bits_[0] |= 0x00000001u;
       parameters_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parameters_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -2855,6 +3392,8 @@ void TezosSignTx_TezosTransactionOp::Swap(TezosSignTx_TezosTransactionOp* other)
 }
 void TezosSignTx_TezosTransactionOp::InternalSwap(TezosSignTx_TezosTransactionOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   parameters_.Swap(&other->parameters_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(source_, other->source_);
@@ -2864,13 +3403,11 @@ void TezosSignTx_TezosTransactionOp::InternalSwap(TezosSignTx_TezosTransactionOp
   swap(gas_limit_, other->gas_limit_);
   swap(storage_limit_, other->storage_limit_);
   swap(amount_, other->amount_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TezosSignTx_TezosTransactionOp::GetMetadata() const {
-  protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtezos_2eproto);
+  return ::file_level_metadata_messages_2dtezos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2879,6 +3416,48 @@ void TezosSignTx_TezosTransactionOp::InternalSwap(TezosSignTx_TezosTransactionOp
 void TezosSignTx_TezosOriginationOp::InitAsDefaultInstance() {
   ::hw::trezor::messages::tezos::_TezosSignTx_TezosOriginationOp_default_instance_._instance.get_mutable()->source_ = const_cast< ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID*>(
       ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID::internal_default_instance());
+}
+class TezosSignTx_TezosOriginationOp::HasBitSetters {
+ public:
+  static const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& source(const TezosSignTx_TezosOriginationOp* msg);
+  static void set_has_source(TezosSignTx_TezosOriginationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_fee(TezosSignTx_TezosOriginationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_counter(TezosSignTx_TezosOriginationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_gas_limit(TezosSignTx_TezosOriginationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_storage_limit(TezosSignTx_TezosOriginationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static void set_has_manager_pubkey(TezosSignTx_TezosOriginationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_balance(TezosSignTx_TezosOriginationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static void set_has_spendable(TezosSignTx_TezosOriginationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000200u;
+  }
+  static void set_has_delegatable(TezosSignTx_TezosOriginationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000400u;
+  }
+  static void set_has_delegate(TezosSignTx_TezosOriginationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_script(TezosSignTx_TezosOriginationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
+const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID&
+TezosSignTx_TezosOriginationOp::HasBitSetters::source(const TezosSignTx_TezosOriginationOp* msg) {
+  return *msg->source_;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TezosSignTx_TezosOriginationOp::kSourceFieldNumber;
@@ -2895,15 +3474,13 @@ const int TezosSignTx_TezosOriginationOp::kScriptFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TezosSignTx_TezosOriginationOp::TezosSignTx_TezosOriginationOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosOriginationOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp)
 }
 TezosSignTx_TezosOriginationOp::TezosSignTx_TezosOriginationOp(const TezosSignTx_TezosOriginationOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   manager_pubkey_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2921,7 +3498,7 @@ TezosSignTx_TezosOriginationOp::TezosSignTx_TezosOriginationOp(const TezosSignTx
   if (from.has_source()) {
     source_ = new ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID(*from.source_);
   } else {
-    source_ = NULL;
+    source_ = nullptr;
   }
   ::memcpy(&fee_, &from.fee_,
     static_cast<size_t>(reinterpret_cast<char*>(&delegatable_) -
@@ -2930,6 +3507,8 @@ TezosSignTx_TezosOriginationOp::TezosSignTx_TezosOriginationOp(const TezosSignTx
 }
 
 void TezosSignTx_TezosOriginationOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TezosSignTx_TezosOriginationOp_messages_2dtezos_2eproto.base);
   manager_pubkey_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   delegate_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   script_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2953,13 +3532,8 @@ void TezosSignTx_TezosOriginationOp::SharedDtor() {
 void TezosSignTx_TezosOriginationOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TezosSignTx_TezosOriginationOp::descriptor() {
-  ::protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TezosSignTx_TezosOriginationOp& TezosSignTx_TezosOriginationOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosOriginationOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TezosSignTx_TezosOriginationOp_messages_2dtezos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2971,7 +3545,7 @@ void TezosSignTx_TezosOriginationOp::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       manager_pubkey_.ClearNonDefaultToEmptyNoArena();
     }
@@ -2982,16 +3556,16 @@ void TezosSignTx_TezosOriginationOp::Clear() {
       script_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(source_ != NULL);
+      GOOGLE_DCHECK(source_ != nullptr);
       source_->Clear();
     }
   }
-  if (cached_has_bits & 240u) {
+  if (cached_has_bits & 0x000000f0u) {
     ::memset(&fee_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&storage_limit_) -
         reinterpret_cast<char*>(&fee_)) + sizeof(storage_limit_));
   }
-  if (cached_has_bits & 1792u) {
+  if (cached_has_bits & 0x00000700u) {
     ::memset(&balance_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&delegatable_) -
         reinterpret_cast<char*>(&balance_)) + sizeof(delegatable_));
@@ -3000,9 +3574,153 @@ void TezosSignTx_TezosOriginationOp::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TezosSignTx_TezosOriginationOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TezosSignTx_TezosOriginationOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID::_InternalParse;
+        object = msg->mutable_source();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional uint64 fee = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_fee(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 counter = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_counter(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 gas_limit = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_gas_limit(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 storage_limit = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_storage_limit(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes manager_pubkey = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_manager_pubkey();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint64 balance = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_balance(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool spendable = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 64) goto handle_unusual;
+        msg->set_spendable(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool delegatable = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 72) goto handle_unusual;
+        msg->set_delegatable(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes delegate = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 82) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_delegate();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes script = 11;
+      case 11: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 90) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_script();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TezosSignTx_TezosOriginationOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp)
   for (;;) {
@@ -3012,8 +3730,7 @@ bool TezosSignTx_TezosOriginationOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_source()));
         } else {
@@ -3024,9 +3741,8 @@ bool TezosSignTx_TezosOriginationOp::MergePartialFromCodedStream(
 
       // optional uint64 fee = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_fee();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_fee(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &fee_)));
@@ -3038,9 +3754,8 @@ bool TezosSignTx_TezosOriginationOp::MergePartialFromCodedStream(
 
       // optional uint64 counter = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_counter();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_counter(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &counter_)));
@@ -3052,9 +3767,8 @@ bool TezosSignTx_TezosOriginationOp::MergePartialFromCodedStream(
 
       // optional uint64 gas_limit = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_gas_limit();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_gas_limit(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &gas_limit_)));
@@ -3066,9 +3780,8 @@ bool TezosSignTx_TezosOriginationOp::MergePartialFromCodedStream(
 
       // optional uint64 storage_limit = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_storage_limit();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_storage_limit(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &storage_limit_)));
@@ -3080,8 +3793,7 @@ bool TezosSignTx_TezosOriginationOp::MergePartialFromCodedStream(
 
       // optional bytes manager_pubkey = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_manager_pubkey()));
         } else {
@@ -3092,9 +3804,8 @@ bool TezosSignTx_TezosOriginationOp::MergePartialFromCodedStream(
 
       // optional uint64 balance = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_balance();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_balance(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &balance_)));
@@ -3106,9 +3817,8 @@ bool TezosSignTx_TezosOriginationOp::MergePartialFromCodedStream(
 
       // optional bool spendable = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
-          set_has_spendable();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (64 & 0xFF)) {
+          HasBitSetters::set_has_spendable(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &spendable_)));
@@ -3120,9 +3830,8 @@ bool TezosSignTx_TezosOriginationOp::MergePartialFromCodedStream(
 
       // optional bool delegatable = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
-          set_has_delegatable();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (72 & 0xFF)) {
+          HasBitSetters::set_has_delegatable(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &delegatable_)));
@@ -3134,8 +3843,7 @@ bool TezosSignTx_TezosOriginationOp::MergePartialFromCodedStream(
 
       // optional bytes delegate = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (82 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_delegate()));
         } else {
@@ -3146,8 +3854,7 @@ bool TezosSignTx_TezosOriginationOp::MergePartialFromCodedStream(
 
       // optional bytes script = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (90 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_script()));
         } else {
@@ -3175,6 +3882,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TezosSignTx_TezosOriginationOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3186,7 +3894,7 @@ void TezosSignTx_TezosOriginationOp::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
   if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_source(), output);
+      1, HasBitSetters::source(this), output);
   }
 
   // optional uint64 fee = 2;
@@ -3250,8 +3958,7 @@ void TezosSignTx_TezosOriginationOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TezosSignTx_TezosOriginationOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3261,7 +3968,7 @@ void TezosSignTx_TezosOriginationOp::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_source(), deterministic, target);
+        1, HasBitSetters::source(this), target);
   }
 
   // optional uint64 fee = 2;
@@ -3337,79 +4044,84 @@ size_t TezosSignTx_TezosOriginationOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 255u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional bytes manager_pubkey = 6;
-    if (has_manager_pubkey()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->manager_pubkey());
     }
 
     // optional bytes delegate = 10;
-    if (has_delegate()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->delegate());
     }
 
     // optional bytes script = 11;
-    if (has_script()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->script());
     }
 
     // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
-    if (has_source()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *source_);
     }
 
     // optional uint64 fee = 2;
-    if (has_fee()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->fee());
     }
 
     // optional uint64 counter = 3;
-    if (has_counter()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->counter());
     }
 
     // optional uint64 gas_limit = 4;
-    if (has_gas_limit()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->gas_limit());
     }
 
     // optional uint64 storage_limit = 5;
-    if (has_storage_limit()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->storage_limit());
     }
 
   }
-  if (_has_bits_[8 / 32] & 1792u) {
+  if (cached_has_bits & 0x00000700u) {
     // optional uint64 balance = 7;
-    if (has_balance()) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->balance());
     }
 
     // optional bool spendable = 8;
-    if (has_spendable()) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 1 + 1;
     }
 
     // optional bool delegatable = 9;
-    if (has_delegatable()) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 1 + 1;
     }
 
@@ -3423,9 +4135,9 @@ void TezosSignTx_TezosOriginationOp::MergeFrom(const ::google::protobuf::Message
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp)
   GOOGLE_DCHECK_NE(&from, this);
   const TezosSignTx_TezosOriginationOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TezosSignTx_TezosOriginationOp>(
+      ::google::protobuf::DynamicCastToGenerated<TezosSignTx_TezosOriginationOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3442,17 +4154,17 @@ void TezosSignTx_TezosOriginationOp::MergeFrom(const TezosSignTx_TezosOriginatio
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_manager_pubkey();
+      _has_bits_[0] |= 0x00000001u;
       manager_pubkey_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.manager_pubkey_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_delegate();
+      _has_bits_[0] |= 0x00000002u;
       delegate_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.delegate_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_script();
+      _has_bits_[0] |= 0x00000004u;
       script_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.script_);
     }
     if (cached_has_bits & 0x00000008u) {
@@ -3472,7 +4184,7 @@ void TezosSignTx_TezosOriginationOp::MergeFrom(const TezosSignTx_TezosOriginatio
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 1792u) {
+  if (cached_has_bits & 0x00000700u) {
     if (cached_has_bits & 0x00000100u) {
       balance_ = from.balance_;
     }
@@ -3510,6 +4222,8 @@ void TezosSignTx_TezosOriginationOp::Swap(TezosSignTx_TezosOriginationOp* other)
 }
 void TezosSignTx_TezosOriginationOp::InternalSwap(TezosSignTx_TezosOriginationOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   manager_pubkey_.Swap(&other->manager_pubkey_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   delegate_.Swap(&other->delegate_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -3524,13 +4238,11 @@ void TezosSignTx_TezosOriginationOp::InternalSwap(TezosSignTx_TezosOriginationOp
   swap(balance_, other->balance_);
   swap(spendable_, other->spendable_);
   swap(delegatable_, other->delegatable_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TezosSignTx_TezosOriginationOp::GetMetadata() const {
-  protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtezos_2eproto);
+  return ::file_level_metadata_messages_2dtezos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3539,6 +4251,33 @@ void TezosSignTx_TezosOriginationOp::InternalSwap(TezosSignTx_TezosOriginationOp
 void TezosSignTx_TezosDelegationOp::InitAsDefaultInstance() {
   ::hw::trezor::messages::tezos::_TezosSignTx_TezosDelegationOp_default_instance_._instance.get_mutable()->source_ = const_cast< ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID*>(
       ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID::internal_default_instance());
+}
+class TezosSignTx_TezosDelegationOp::HasBitSetters {
+ public:
+  static const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& source(const TezosSignTx_TezosDelegationOp* msg);
+  static void set_has_source(TezosSignTx_TezosDelegationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_fee(TezosSignTx_TezosDelegationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_counter(TezosSignTx_TezosDelegationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_gas_limit(TezosSignTx_TezosDelegationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_storage_limit(TezosSignTx_TezosDelegationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_delegate(TezosSignTx_TezosDelegationOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID&
+TezosSignTx_TezosDelegationOp::HasBitSetters::source(const TezosSignTx_TezosDelegationOp* msg) {
+  return *msg->source_;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TezosSignTx_TezosDelegationOp::kSourceFieldNumber;
@@ -3550,15 +4289,13 @@ const int TezosSignTx_TezosDelegationOp::kDelegateFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TezosSignTx_TezosDelegationOp::TezosSignTx_TezosDelegationOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosDelegationOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp)
 }
 TezosSignTx_TezosDelegationOp::TezosSignTx_TezosDelegationOp(const TezosSignTx_TezosDelegationOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   delegate_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3568,7 +4305,7 @@ TezosSignTx_TezosDelegationOp::TezosSignTx_TezosDelegationOp(const TezosSignTx_T
   if (from.has_source()) {
     source_ = new ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID(*from.source_);
   } else {
-    source_ = NULL;
+    source_ = nullptr;
   }
   ::memcpy(&fee_, &from.fee_,
     static_cast<size_t>(reinterpret_cast<char*>(&storage_limit_) -
@@ -3577,6 +4314,8 @@ TezosSignTx_TezosDelegationOp::TezosSignTx_TezosDelegationOp(const TezosSignTx_T
 }
 
 void TezosSignTx_TezosDelegationOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TezosSignTx_TezosDelegationOp_messages_2dtezos_2eproto.base);
   delegate_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&source_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&storage_limit_) -
@@ -3596,13 +4335,8 @@ void TezosSignTx_TezosDelegationOp::SharedDtor() {
 void TezosSignTx_TezosDelegationOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TezosSignTx_TezosDelegationOp::descriptor() {
-  ::protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TezosSignTx_TezosDelegationOp& TezosSignTx_TezosDelegationOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx_TezosDelegationOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TezosSignTx_TezosDelegationOp_messages_2dtezos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3614,16 +4348,16 @@ void TezosSignTx_TezosDelegationOp::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       delegate_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(source_ != NULL);
+      GOOGLE_DCHECK(source_ != nullptr);
       source_->Clear();
     }
   }
-  if (cached_has_bits & 60u) {
+  if (cached_has_bits & 0x0000003cu) {
     ::memset(&fee_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&storage_limit_) -
         reinterpret_cast<char*>(&fee_)) + sizeof(storage_limit_));
@@ -3632,9 +4366,102 @@ void TezosSignTx_TezosDelegationOp::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TezosSignTx_TezosDelegationOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TezosSignTx_TezosDelegationOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID::_InternalParse;
+        object = msg->mutable_source();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional uint64 fee = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_fee(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 counter = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_counter(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 gas_limit = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_gas_limit(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 storage_limit = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_storage_limit(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes delegate = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_delegate();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TezosSignTx_TezosDelegationOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp)
   for (;;) {
@@ -3644,8 +4471,7 @@ bool TezosSignTx_TezosDelegationOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_source()));
         } else {
@@ -3656,9 +4482,8 @@ bool TezosSignTx_TezosDelegationOp::MergePartialFromCodedStream(
 
       // optional uint64 fee = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_fee();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_fee(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &fee_)));
@@ -3670,9 +4495,8 @@ bool TezosSignTx_TezosDelegationOp::MergePartialFromCodedStream(
 
       // optional uint64 counter = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_counter();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_counter(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &counter_)));
@@ -3684,9 +4508,8 @@ bool TezosSignTx_TezosDelegationOp::MergePartialFromCodedStream(
 
       // optional uint64 gas_limit = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_gas_limit();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_gas_limit(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &gas_limit_)));
@@ -3698,9 +4521,8 @@ bool TezosSignTx_TezosDelegationOp::MergePartialFromCodedStream(
 
       // optional uint64 storage_limit = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_storage_limit();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_storage_limit(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &storage_limit_)));
@@ -3712,8 +4534,7 @@ bool TezosSignTx_TezosDelegationOp::MergePartialFromCodedStream(
 
       // optional bytes delegate = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_delegate()));
         } else {
@@ -3741,6 +4562,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TezosSignTx_TezosDelegationOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3752,7 +4574,7 @@ void TezosSignTx_TezosDelegationOp::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_source(), output);
+      1, HasBitSetters::source(this), output);
   }
 
   // optional uint64 fee = 2;
@@ -3789,8 +4611,7 @@ void TezosSignTx_TezosDelegationOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TezosSignTx_TezosDelegationOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3800,7 +4621,7 @@ void TezosSignTx_TezosDelegationOp::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_source(), deterministic, target);
+        1, HasBitSetters::source(this), target);
   }
 
   // optional uint64 fee = 2;
@@ -3847,44 +4668,49 @@ size_t TezosSignTx_TezosDelegationOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 63u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000003fu) {
     // optional bytes delegate = 6;
-    if (has_delegate()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->delegate());
     }
 
     // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
-    if (has_source()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *source_);
     }
 
     // optional uint64 fee = 2;
-    if (has_fee()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->fee());
     }
 
     // optional uint64 counter = 3;
-    if (has_counter()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->counter());
     }
 
     // optional uint64 gas_limit = 4;
-    if (has_gas_limit()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->gas_limit());
     }
 
     // optional uint64 storage_limit = 5;
-    if (has_storage_limit()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->storage_limit());
@@ -3900,9 +4726,9 @@ void TezosSignTx_TezosDelegationOp::MergeFrom(const ::google::protobuf::Message&
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp)
   GOOGLE_DCHECK_NE(&from, this);
   const TezosSignTx_TezosDelegationOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TezosSignTx_TezosDelegationOp>(
+      ::google::protobuf::DynamicCastToGenerated<TezosSignTx_TezosDelegationOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3919,9 +4745,9 @@ void TezosSignTx_TezosDelegationOp::MergeFrom(const TezosSignTx_TezosDelegationO
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 63u) {
+  if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_delegate();
+      _has_bits_[0] |= 0x00000001u;
       delegate_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.delegate_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -3967,6 +4793,8 @@ void TezosSignTx_TezosDelegationOp::Swap(TezosSignTx_TezosDelegationOp* other) {
 }
 void TezosSignTx_TezosDelegationOp::InternalSwap(TezosSignTx_TezosDelegationOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   delegate_.Swap(&other->delegate_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(source_, other->source_);
@@ -3974,13 +4802,11 @@ void TezosSignTx_TezosDelegationOp::InternalSwap(TezosSignTx_TezosDelegationOp* 
   swap(counter_, other->counter_);
   swap(gas_limit_, other->gas_limit_);
   swap(storage_limit_, other->storage_limit_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TezosSignTx_TezosDelegationOp::GetMetadata() const {
-  protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtezos_2eproto);
+  return ::file_level_metadata_messages_2dtezos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3996,6 +4822,45 @@ void TezosSignTx::InitAsDefaultInstance() {
   ::hw::trezor::messages::tezos::_TezosSignTx_default_instance_._instance.get_mutable()->delegation_ = const_cast< ::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp*>(
       ::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp::internal_default_instance());
 }
+class TezosSignTx::HasBitSetters {
+ public:
+  static void set_has_branch(TezosSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp& reveal(const TezosSignTx* msg);
+  static void set_has_reveal(TezosSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static const ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp& transaction(const TezosSignTx* msg);
+  static void set_has_transaction(TezosSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static const ::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp& origination(const TezosSignTx* msg);
+  static void set_has_origination(TezosSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static const ::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp& delegation(const TezosSignTx* msg);
+  static void set_has_delegation(TezosSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+};
+
+const ::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp&
+TezosSignTx::HasBitSetters::reveal(const TezosSignTx* msg) {
+  return *msg->reveal_;
+}
+const ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp&
+TezosSignTx::HasBitSetters::transaction(const TezosSignTx* msg) {
+  return *msg->transaction_;
+}
+const ::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp&
+TezosSignTx::HasBitSetters::origination(const TezosSignTx* msg) {
+  return *msg->origination_;
+}
+const ::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp&
+TezosSignTx::HasBitSetters::delegation(const TezosSignTx* msg) {
+  return *msg->delegation_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TezosSignTx::kAddressNFieldNumber;
 const int TezosSignTx::kBranchFieldNumber;
@@ -4006,15 +4871,13 @@ const int TezosSignTx::kDelegationFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TezosSignTx::TezosSignTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.tezos.TezosSignTx)
 }
 TezosSignTx::TezosSignTx(const TezosSignTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -4025,27 +4888,29 @@ TezosSignTx::TezosSignTx(const TezosSignTx& from)
   if (from.has_reveal()) {
     reveal_ = new ::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp(*from.reveal_);
   } else {
-    reveal_ = NULL;
+    reveal_ = nullptr;
   }
   if (from.has_transaction()) {
     transaction_ = new ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp(*from.transaction_);
   } else {
-    transaction_ = NULL;
+    transaction_ = nullptr;
   }
   if (from.has_origination()) {
     origination_ = new ::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp(*from.origination_);
   } else {
-    origination_ = NULL;
+    origination_ = nullptr;
   }
   if (from.has_delegation()) {
     delegation_ = new ::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp(*from.delegation_);
   } else {
-    delegation_ = NULL;
+    delegation_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.tezos.TezosSignTx)
 }
 
 void TezosSignTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TezosSignTx_messages_2dtezos_2eproto.base);
   branch_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&reveal_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&delegation_) -
@@ -4068,13 +4933,8 @@ void TezosSignTx::SharedDtor() {
 void TezosSignTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TezosSignTx::descriptor() {
-  ::protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TezosSignTx& TezosSignTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtezos_2eproto::scc_info_TezosSignTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TezosSignTx_messages_2dtezos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4087,24 +4947,24 @@ void TezosSignTx::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
       branch_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(reveal_ != NULL);
+      GOOGLE_DCHECK(reveal_ != nullptr);
       reveal_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(transaction_ != NULL);
+      GOOGLE_DCHECK(transaction_ != nullptr);
       transaction_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(origination_ != NULL);
+      GOOGLE_DCHECK(origination_ != nullptr);
       origination_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(delegation_ != NULL);
+      GOOGLE_DCHECK(delegation_ != nullptr);
       delegation_->Clear();
     }
   }
@@ -4112,9 +4972,133 @@ void TezosSignTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TezosSignTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TezosSignTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bytes branch = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_branch();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional .hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp reveal = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp::_InternalParse;
+        object = msg->mutable_reveal();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp transaction = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp::_InternalParse;
+        object = msg->mutable_transaction();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp origination = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp::_InternalParse;
+        object = msg->mutable_origination();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp delegation = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp::_InternalParse;
+        object = msg->mutable_delegation();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TezosSignTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.tezos.TezosSignTx)
   for (;;) {
@@ -4124,14 +5108,11 @@ bool TezosSignTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -4143,8 +5124,7 @@ bool TezosSignTx::MergePartialFromCodedStream(
 
       // optional bytes branch = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_branch()));
         } else {
@@ -4155,8 +5135,7 @@ bool TezosSignTx::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp reveal = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_reveal()));
         } else {
@@ -4167,8 +5146,7 @@ bool TezosSignTx::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp transaction = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_transaction()));
         } else {
@@ -4179,8 +5157,7 @@ bool TezosSignTx::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp origination = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_origination()));
         } else {
@@ -4191,8 +5168,7 @@ bool TezosSignTx::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp delegation = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_delegation()));
         } else {
@@ -4220,6 +5196,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TezosSignTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4243,25 +5220,25 @@ void TezosSignTx::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp reveal = 3;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_reveal(), output);
+      3, HasBitSetters::reveal(this), output);
   }
 
   // optional .hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp transaction = 4;
   if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_transaction(), output);
+      4, HasBitSetters::transaction(this), output);
   }
 
   // optional .hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp origination = 5;
   if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->_internal_origination(), output);
+      5, HasBitSetters::origination(this), output);
   }
 
   // optional .hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp delegation = 6;
   if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, this->_internal_delegation(), output);
+      6, HasBitSetters::delegation(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4272,8 +5249,7 @@ void TezosSignTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TezosSignTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.tezos.TezosSignTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4294,28 +5270,28 @@ void TezosSignTx::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_reveal(), deterministic, target);
+        3, HasBitSetters::reveal(this), target);
   }
 
   // optional .hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp transaction = 4;
   if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_transaction(), deterministic, target);
+        4, HasBitSetters::transaction(this), target);
   }
 
   // optional .hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp origination = 5;
   if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->_internal_origination(), deterministic, target);
+        5, HasBitSetters::origination(this), target);
   }
 
   // optional .hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp delegation = 6;
   if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        6, this->_internal_delegation(), deterministic, target);
+        6, HasBitSetters::delegation(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4335,6 +5311,10 @@ size_t TezosSignTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -4344,37 +5324,38 @@ size_t TezosSignTx::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 31u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000001fu) {
     // optional bytes branch = 2;
-    if (has_branch()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->branch());
     }
 
     // optional .hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp reveal = 3;
-    if (has_reveal()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *reveal_);
     }
 
     // optional .hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp transaction = 4;
-    if (has_transaction()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *transaction_);
     }
 
     // optional .hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp origination = 5;
-    if (has_origination()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *origination_);
     }
 
     // optional .hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp delegation = 6;
-    if (has_delegation()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *delegation_);
@@ -4390,9 +5371,9 @@ void TezosSignTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.tezos.TezosSignTx)
   GOOGLE_DCHECK_NE(&from, this);
   const TezosSignTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TezosSignTx>(
+      ::google::protobuf::DynamicCastToGenerated<TezosSignTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.tezos.TezosSignTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4410,9 +5391,9 @@ void TezosSignTx::MergeFrom(const TezosSignTx& from) {
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_branch();
+      _has_bits_[0] |= 0x00000001u;
       branch_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.branch_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -4454,6 +5435,8 @@ void TezosSignTx::Swap(TezosSignTx* other) {
 }
 void TezosSignTx::InternalSwap(TezosSignTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   branch_.Swap(&other->branch_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -4461,13 +5444,11 @@ void TezosSignTx::InternalSwap(TezosSignTx* other) {
   swap(transaction_, other->transaction_);
   swap(origination_, other->origination_);
   swap(delegation_, other->delegation_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TezosSignTx::GetMetadata() const {
-  protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtezos_2eproto);
+  return ::file_level_metadata_messages_2dtezos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4475,6 +5456,19 @@ void TezosSignTx::InternalSwap(TezosSignTx* other) {
 
 void TezosSignedTx::InitAsDefaultInstance() {
 }
+class TezosSignedTx::HasBitSetters {
+ public:
+  static void set_has_signature(TezosSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_sig_op_contents(TezosSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_operation_hash(TezosSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TezosSignedTx::kSignatureFieldNumber;
 const int TezosSignedTx::kSigOpContentsFieldNumber;
@@ -4482,15 +5476,13 @@ const int TezosSignedTx::kOperationHashFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TezosSignedTx::TezosSignedTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtezos_2eproto::scc_info_TezosSignedTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.tezos.TezosSignedTx)
 }
 TezosSignedTx::TezosSignedTx(const TezosSignedTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4509,6 +5501,8 @@ TezosSignedTx::TezosSignedTx(const TezosSignedTx& from)
 }
 
 void TezosSignedTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TezosSignedTx_messages_2dtezos_2eproto.base);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   sig_op_contents_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   operation_hash_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4528,13 +5522,8 @@ void TezosSignedTx::SharedDtor() {
 void TezosSignedTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TezosSignedTx::descriptor() {
-  ::protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TezosSignedTx& TezosSignedTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtezos_2eproto::scc_info_TezosSignedTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TezosSignedTx_messages_2dtezos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4546,7 +5535,7 @@ void TezosSignedTx::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       signature_.ClearNonDefaultToEmptyNoArena();
     }
@@ -4561,9 +5550,93 @@ void TezosSignedTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TezosSignedTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TezosSignedTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string signature = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.tezos.TezosSignedTx.signature");
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes sig_op_contents = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_sig_op_contents();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string operation_hash = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.tezos.TezosSignedTx.operation_hash");
+        object = msg->mutable_operation_hash();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TezosSignedTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.tezos.TezosSignedTx)
   for (;;) {
@@ -4573,8 +5646,7 @@ bool TezosSignedTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string signature = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_signature()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4589,8 +5661,7 @@ bool TezosSignedTx::MergePartialFromCodedStream(
 
       // optional bytes sig_op_contents = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_sig_op_contents()));
         } else {
@@ -4601,8 +5672,7 @@ bool TezosSignedTx::MergePartialFromCodedStream(
 
       // optional string operation_hash = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_operation_hash()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4634,6 +5704,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TezosSignedTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4676,8 +5747,7 @@ void TezosSignedTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TezosSignedTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.tezos.TezosSignedTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4729,23 +5799,28 @@ size_t TezosSignedTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string signature = 1;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->signature());
     }
 
     // optional bytes sig_op_contents = 2;
-    if (has_sig_op_contents()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->sig_op_contents());
     }
 
     // optional string operation_hash = 3;
-    if (has_operation_hash()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->operation_hash());
@@ -4761,9 +5836,9 @@ void TezosSignedTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.tezos.TezosSignedTx)
   GOOGLE_DCHECK_NE(&from, this);
   const TezosSignedTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TezosSignedTx>(
+      ::google::protobuf::DynamicCastToGenerated<TezosSignedTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.tezos.TezosSignedTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4780,17 +5855,17 @@ void TezosSignedTx::MergeFrom(const TezosSignedTx& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000001u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_sig_op_contents();
+      _has_bits_[0] |= 0x00000002u;
       sig_op_contents_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sig_op_contents_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_operation_hash();
+      _has_bits_[0] |= 0x00000004u;
       operation_hash_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.operation_hash_);
     }
   }
@@ -4820,19 +5895,19 @@ void TezosSignedTx::Swap(TezosSignedTx* other) {
 }
 void TezosSignedTx::InternalSwap(TezosSignedTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   sig_op_contents_.Swap(&other->sig_op_contents_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   operation_hash_.Swap(&other->operation_hash_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TezosSignedTx::GetMetadata() const {
-  protobuf_messages_2dtezos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtezos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtezos_2eproto);
+  return ::file_level_metadata_messages_2dtezos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4843,40 +5918,41 @@ void TezosSignedTx::InternalSwap(TezosSignedTx* other) {
 }  // namespace hw
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::tezos::TezosGetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosGetAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::tezos::TezosGetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosGetAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::tezos::TezosGetAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::tezos::TezosAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::tezos::TezosAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::tezos::TezosAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::tezos::TezosGetPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosGetPublicKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::tezos::TezosGetPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosGetPublicKey >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::tezos::TezosGetPublicKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::tezos::TezosPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosPublicKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::tezos::TezosPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosPublicKey >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::tezos::TezosPublicKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::tezos::TezosSignTx_TezosDelegationOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::tezos::TezosSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosSignTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::tezos::TezosSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosSignTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::tezos::TezosSignTx >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::tezos::TezosSignedTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosSignedTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::tezos::TezosSignedTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::tezos::TezosSignedTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::tezos::TezosSignedTx >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

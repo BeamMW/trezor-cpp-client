@@ -6,121 +6,99 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_messages_2dnem_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMAggregateModification_NEMCosignatoryModification;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMImportanceTransfer;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMMosaicSupplyChange;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMProvisionNamespace;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMTransactionCommon;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMTransfer_NEMMosaic;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_NEMSignTx_NEMAggregateModification;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_NEMSignTx_NEMMosaicCreation;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_NEMSignTx_NEMTransfer;
-}  // namespace protobuf_messages_2dnem_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMAggregateModification_NEMCosignatoryModification_messages_2dnem_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMImportanceTransfer_messages_2dnem_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_messages_2dnem_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMMosaicSupplyChange_messages_2dnem_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMProvisionNamespace_messages_2dnem_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMTransactionCommon_messages_2dnem_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMTransfer_NEMMosaic_messages_2dnem_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_NEMSignTx_NEMAggregateModification_messages_2dnem_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_NEMSignTx_NEMMosaicCreation_messages_2dnem_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dnem_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_NEMSignTx_NEMTransfer_messages_2dnem_2eproto;
 namespace hw {
 namespace trezor {
 namespace messages {
 namespace nem {
 class NEMGetAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMGetAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMGetAddress> _instance;
 } _NEMGetAddress_default_instance_;
 class NEMAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMAddress> _instance;
 } _NEMAddress_default_instance_;
 class NEMSignTx_NEMTransactionCommonDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMTransactionCommon>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMTransactionCommon> _instance;
 } _NEMSignTx_NEMTransactionCommon_default_instance_;
 class NEMSignTx_NEMTransfer_NEMMosaicDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMTransfer_NEMMosaic>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMTransfer_NEMMosaic> _instance;
 } _NEMSignTx_NEMTransfer_NEMMosaic_default_instance_;
 class NEMSignTx_NEMTransferDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMTransfer>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMTransfer> _instance;
 } _NEMSignTx_NEMTransfer_default_instance_;
 class NEMSignTx_NEMProvisionNamespaceDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMProvisionNamespace>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMProvisionNamespace> _instance;
 } _NEMSignTx_NEMProvisionNamespace_default_instance_;
 class NEMSignTx_NEMMosaicCreation_NEMMosaicDefinitionDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition> _instance;
 } _NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_default_instance_;
 class NEMSignTx_NEMMosaicCreationDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMMosaicCreation>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMMosaicCreation> _instance;
 } _NEMSignTx_NEMMosaicCreation_default_instance_;
 class NEMSignTx_NEMMosaicSupplyChangeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMMosaicSupplyChange>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMMosaicSupplyChange> _instance;
 } _NEMSignTx_NEMMosaicSupplyChange_default_instance_;
 class NEMSignTx_NEMAggregateModification_NEMCosignatoryModificationDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMAggregateModification_NEMCosignatoryModification>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMAggregateModification_NEMCosignatoryModification> _instance;
 } _NEMSignTx_NEMAggregateModification_NEMCosignatoryModification_default_instance_;
 class NEMSignTx_NEMAggregateModificationDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMAggregateModification>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMAggregateModification> _instance;
 } _NEMSignTx_NEMAggregateModification_default_instance_;
 class NEMSignTx_NEMImportanceTransferDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMImportanceTransfer>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx_NEMImportanceTransfer> _instance;
 } _NEMSignTx_NEMImportanceTransfer_default_instance_;
 class NEMSignTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignTx> _instance;
 } _NEMSignTx_default_instance_;
 class NEMSignedTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignedTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMSignedTx> _instance;
 } _NEMSignedTx_default_instance_;
 class NEMDecryptMessageDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMDecryptMessage>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMDecryptMessage> _instance;
 } _NEMDecryptMessage_default_instance_;
 class NEMDecryptedMessageDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<NEMDecryptedMessage>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<NEMDecryptedMessage> _instance;
 } _NEMDecryptedMessage_default_instance_;
 }  // namespace nem
 }  // namespace messages
 }  // namespace trezor
 }  // namespace hw
-namespace protobuf_messages_2dnem_2eproto {
-static void InitDefaultsNEMGetAddress() {
+static void InitDefaultsNEMGetAddress_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -131,10 +109,10 @@ static void InitDefaultsNEMGetAddress() {
   ::hw::trezor::messages::nem::NEMGetAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_NEMGetAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMGetAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_NEMGetAddress_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMGetAddress_messages_2dnem_2eproto}, {}};
 
-static void InitDefaultsNEMAddress() {
+static void InitDefaultsNEMAddress_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -145,10 +123,10 @@ static void InitDefaultsNEMAddress() {
   ::hw::trezor::messages::nem::NEMAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_NEMAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_NEMAddress_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMAddress_messages_2dnem_2eproto}, {}};
 
-static void InitDefaultsNEMSignTx_NEMTransactionCommon() {
+static void InitDefaultsNEMSignTx_NEMTransactionCommon_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -159,10 +137,10 @@ static void InitDefaultsNEMSignTx_NEMTransactionCommon() {
   ::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMTransactionCommon =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignTx_NEMTransactionCommon}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMTransactionCommon_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignTx_NEMTransactionCommon_messages_2dnem_2eproto}, {}};
 
-static void InitDefaultsNEMSignTx_NEMTransfer_NEMMosaic() {
+static void InitDefaultsNEMSignTx_NEMTransfer_NEMMosaic_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -173,10 +151,10 @@ static void InitDefaultsNEMSignTx_NEMTransfer_NEMMosaic() {
   ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMTransfer_NEMMosaic =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignTx_NEMTransfer_NEMMosaic}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMTransfer_NEMMosaic_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignTx_NEMTransfer_NEMMosaic_messages_2dnem_2eproto}, {}};
 
-static void InitDefaultsNEMSignTx_NEMTransfer() {
+static void InitDefaultsNEMSignTx_NEMTransfer_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -187,11 +165,11 @@ static void InitDefaultsNEMSignTx_NEMTransfer() {
   ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_NEMSignTx_NEMTransfer =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsNEMSignTx_NEMTransfer}, {
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMTransfer_NEMMosaic.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_NEMSignTx_NEMTransfer_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsNEMSignTx_NEMTransfer_messages_2dnem_2eproto}, {
+      &scc_info_NEMSignTx_NEMTransfer_NEMMosaic_messages_2dnem_2eproto.base,}};
 
-static void InitDefaultsNEMSignTx_NEMProvisionNamespace() {
+static void InitDefaultsNEMSignTx_NEMProvisionNamespace_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -202,10 +180,10 @@ static void InitDefaultsNEMSignTx_NEMProvisionNamespace() {
   ::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMProvisionNamespace =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignTx_NEMProvisionNamespace}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMProvisionNamespace_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignTx_NEMProvisionNamespace_messages_2dnem_2eproto}, {}};
 
-static void InitDefaultsNEMSignTx_NEMMosaicCreation_NEMMosaicDefinition() {
+static void InitDefaultsNEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -216,10 +194,10 @@ static void InitDefaultsNEMSignTx_NEMMosaicCreation_NEMMosaicDefinition() {
   ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignTx_NEMMosaicCreation_NEMMosaicDefinition}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_messages_2dnem_2eproto}, {}};
 
-static void InitDefaultsNEMSignTx_NEMMosaicCreation() {
+static void InitDefaultsNEMSignTx_NEMMosaicCreation_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -230,11 +208,11 @@ static void InitDefaultsNEMSignTx_NEMMosaicCreation() {
   ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_NEMSignTx_NEMMosaicCreation =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsNEMSignTx_NEMMosaicCreation}, {
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_NEMSignTx_NEMMosaicCreation_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsNEMSignTx_NEMMosaicCreation_messages_2dnem_2eproto}, {
+      &scc_info_NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_messages_2dnem_2eproto.base,}};
 
-static void InitDefaultsNEMSignTx_NEMMosaicSupplyChange() {
+static void InitDefaultsNEMSignTx_NEMMosaicSupplyChange_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -245,10 +223,10 @@ static void InitDefaultsNEMSignTx_NEMMosaicSupplyChange() {
   ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMMosaicSupplyChange =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignTx_NEMMosaicSupplyChange}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMMosaicSupplyChange_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignTx_NEMMosaicSupplyChange_messages_2dnem_2eproto}, {}};
 
-static void InitDefaultsNEMSignTx_NEMAggregateModification_NEMCosignatoryModification() {
+static void InitDefaultsNEMSignTx_NEMAggregateModification_NEMCosignatoryModification_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -259,10 +237,10 @@ static void InitDefaultsNEMSignTx_NEMAggregateModification_NEMCosignatoryModific
   ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMAggregateModification_NEMCosignatoryModification =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignTx_NEMAggregateModification_NEMCosignatoryModification}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMAggregateModification_NEMCosignatoryModification_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignTx_NEMAggregateModification_NEMCosignatoryModification_messages_2dnem_2eproto}, {}};
 
-static void InitDefaultsNEMSignTx_NEMAggregateModification() {
+static void InitDefaultsNEMSignTx_NEMAggregateModification_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -273,11 +251,11 @@ static void InitDefaultsNEMSignTx_NEMAggregateModification() {
   ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_NEMSignTx_NEMAggregateModification =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsNEMSignTx_NEMAggregateModification}, {
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMAggregateModification_NEMCosignatoryModification.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_NEMSignTx_NEMAggregateModification_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsNEMSignTx_NEMAggregateModification_messages_2dnem_2eproto}, {
+      &scc_info_NEMSignTx_NEMAggregateModification_NEMCosignatoryModification_messages_2dnem_2eproto.base,}};
 
-static void InitDefaultsNEMSignTx_NEMImportanceTransfer() {
+static void InitDefaultsNEMSignTx_NEMImportanceTransfer_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -288,10 +266,10 @@ static void InitDefaultsNEMSignTx_NEMImportanceTransfer() {
   ::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMImportanceTransfer =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignTx_NEMImportanceTransfer}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignTx_NEMImportanceTransfer_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignTx_NEMImportanceTransfer_messages_2dnem_2eproto}, {}};
 
-static void InitDefaultsNEMSignTx() {
+static void InitDefaultsNEMSignTx_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -302,17 +280,17 @@ static void InitDefaultsNEMSignTx() {
   ::hw::trezor::messages::nem::NEMSignTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<7> scc_info_NEMSignTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 7, InitDefaultsNEMSignTx}, {
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMTransactionCommon.base,
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMTransfer.base,
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMProvisionNamespace.base,
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMMosaicCreation.base,
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMMosaicSupplyChange.base,
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMAggregateModification.base,
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMImportanceTransfer.base,}};
+::google::protobuf::internal::SCCInfo<7> scc_info_NEMSignTx_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 7, InitDefaultsNEMSignTx_messages_2dnem_2eproto}, {
+      &scc_info_NEMSignTx_NEMTransactionCommon_messages_2dnem_2eproto.base,
+      &scc_info_NEMSignTx_NEMTransfer_messages_2dnem_2eproto.base,
+      &scc_info_NEMSignTx_NEMProvisionNamespace_messages_2dnem_2eproto.base,
+      &scc_info_NEMSignTx_NEMMosaicCreation_messages_2dnem_2eproto.base,
+      &scc_info_NEMSignTx_NEMMosaicSupplyChange_messages_2dnem_2eproto.base,
+      &scc_info_NEMSignTx_NEMAggregateModification_messages_2dnem_2eproto.base,
+      &scc_info_NEMSignTx_NEMImportanceTransfer_messages_2dnem_2eproto.base,}};
 
-static void InitDefaultsNEMSignedTx() {
+static void InitDefaultsNEMSignedTx_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -323,10 +301,10 @@ static void InitDefaultsNEMSignedTx() {
   ::hw::trezor::messages::nem::NEMSignedTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignedTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignedTx}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_NEMSignedTx_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMSignedTx_messages_2dnem_2eproto}, {}};
 
-static void InitDefaultsNEMDecryptMessage() {
+static void InitDefaultsNEMDecryptMessage_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -337,10 +315,10 @@ static void InitDefaultsNEMDecryptMessage() {
   ::hw::trezor::messages::nem::NEMDecryptMessage::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_NEMDecryptMessage =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMDecryptMessage}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_NEMDecryptMessage_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMDecryptMessage_messages_2dnem_2eproto}, {}};
 
-static void InitDefaultsNEMDecryptedMessage() {
+static void InitDefaultsNEMDecryptedMessage_messages_2dnem_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -351,126 +329,127 @@ static void InitDefaultsNEMDecryptedMessage() {
   ::hw::trezor::messages::nem::NEMDecryptedMessage::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_NEMDecryptedMessage =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMDecryptedMessage}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_NEMDecryptedMessage_messages_2dnem_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsNEMDecryptedMessage_messages_2dnem_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMGetAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMTransactionCommon.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMTransfer_NEMMosaic.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMTransfer.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMProvisionNamespace.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMMosaicCreation.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMMosaicSupplyChange.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMAggregateModification_NEMCosignatoryModification.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMAggregateModification.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMImportanceTransfer.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignedTx.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMDecryptMessage.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_NEMDecryptedMessage.base);
+void InitDefaults_messages_2dnem_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMGetAddress_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMAddress_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMTransactionCommon_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMTransfer_NEMMosaic_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMTransfer_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMProvisionNamespace_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMMosaicCreation_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMMosaicSupplyChange_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMAggregateModification_NEMCosignatoryModification_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMAggregateModification_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_NEMImportanceTransfer_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignTx_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMSignedTx_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMDecryptMessage_messages_2dnem_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_NEMDecryptedMessage_messages_2dnem_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[16];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[4];
+::google::protobuf::Metadata file_level_metadata_messages_2dnem_2eproto[16];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors_messages_2dnem_2eproto[4];
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2dnem_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMGetAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMGetAddress, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_messages_2dnem_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMGetAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMGetAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMGetAddress, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMGetAddress, network_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMGetAddress, show_display_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMGetAddress, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMGetAddress, network_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMGetAddress, show_display_),
   ~0u,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMAddress, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMAddress, address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMAddress, address_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, network_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, timestamp_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, fee_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, deadline_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, signer_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, network_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, fee_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, deadline_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon, signer_),
   ~0u,
   1,
   2,
   3,
   4,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic, namespace__),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic, mosaic_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic, quantity_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic, namespace__),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic, mosaic_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic, quantity_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer, recipient_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer, amount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer, payload_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer, public_key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer, mosaics_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer, recipient_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer, amount_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer, payload_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer, public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMTransfer, mosaics_),
   0,
   3,
   1,
   2,
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace, namespace__),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace, parent_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace, sink_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace, fee_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace, namespace__),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace, parent_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace, sink_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace, fee_),
   0,
   1,
   2,
   3,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, ticker_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, namespace__),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, mosaic_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, divisibility_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, levy_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, fee_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, levy_address_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, levy_namespace_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, levy_mosaic_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, supply_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, mutable_supply_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, transferable_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, description_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, networks_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, name_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, ticker_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, namespace__),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, mosaic_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, divisibility_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, levy_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, fee_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, levy_address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, levy_namespace_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, levy_mosaic_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, supply_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, mutable_supply_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, transferable_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, description_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition, networks_),
   0,
   1,
   2,
@@ -486,71 +465,71 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   11,
   7,
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation, definition_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation, sink_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation, fee_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation, definition_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation, sink_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation, fee_),
   1,
   0,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange, namespace__),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange, mosaic_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange, type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange, delta_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange, namespace__),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange, mosaic_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange, type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange, delta_),
   0,
   1,
   3,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification, type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification, public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification, type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification, public_key_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification, modifications_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification, relative_change_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification, modifications_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification, relative_change_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer, mode_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer, public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer, mode_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer, public_key_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, transaction_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, multisig_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, transfer_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, cosigning_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, provision_namespace_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, mosaic_creation_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, supply_change_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, aggregate_modification_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, importance_transfer_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, transaction_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, multisig_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, transfer_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, cosigning_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, provision_namespace_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, mosaic_creation_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, supply_change_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, aggregate_modification_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignTx, importance_transfer_),
   0,
   1,
   2,
@@ -560,37 +539,37 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   5,
   6,
   7,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignedTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignedTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignedTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignedTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignedTx, data_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignedTx, signature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignedTx, data_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMSignedTx, signature_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptMessage, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptMessage, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptMessage, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptMessage, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptMessage, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptMessage, network_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptMessage, public_key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptMessage, payload_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptMessage, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptMessage, network_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptMessage, public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptMessage, payload_),
   ~0u,
   2,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptedMessage, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptedMessage, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptedMessage, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptedMessage, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptedMessage, payload_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::nem::NEMDecryptedMessage, payload_),
   0,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 8, sizeof(::hw::trezor::messages::nem::NEMGetAddress)},
   { 11, 17, sizeof(::hw::trezor::messages::nem::NEMAddress)},
   { 18, 29, sizeof(::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon)},
@@ -628,128 +607,112 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::nem::_NEMDecryptedMessage_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "messages-nem.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2dnem_2eproto = {
+  {}, AddDescriptors_messages_2dnem_2eproto, "messages-nem.proto", schemas,
+  file_default_instances, TableStruct_messages_2dnem_2eproto::offsets,
+  file_level_metadata_messages_2dnem_2eproto, 16, file_level_enum_descriptors_messages_2dnem_2eproto, file_level_service_descriptors_messages_2dnem_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_messages_2dnem_2eproto[] =
+  "\n\022messages-nem.proto\022\026hw.trezor.messages"
+  ".nem\"I\n\rNEMGetAddress\022\021\n\taddress_n\030\001 \003(\r"
+  "\022\017\n\007network\030\002 \001(\r\022\024\n\014show_display\030\003 \001(\010\""
+  "\035\n\nNEMAddress\022\017\n\007address\030\001 \002(\t\"\301\024\n\tNEMSi"
+  "gnTx\022K\n\013transaction\030\001 \001(\01326.hw.trezor.me"
+  "ssages.nem.NEMSignTx.NEMTransactionCommo"
+  "n\022H\n\010multisig\030\002 \001(\01326.hw.trezor.messages"
+  ".nem.NEMSignTx.NEMTransactionCommon\022\?\n\010t"
+  "ransfer\030\003 \001(\0132-.hw.trezor.messages.nem.N"
+  "EMSignTx.NEMTransfer\022\021\n\tcosigning\030\004 \001(\010\022"
+  "T\n\023provision_namespace\030\005 \001(\01327.hw.trezor"
+  ".messages.nem.NEMSignTx.NEMProvisionName"
+  "space\022L\n\017mosaic_creation\030\006 \001(\01323.hw.trez"
+  "or.messages.nem.NEMSignTx.NEMMosaicCreat"
+  "ion\022N\n\rsupply_change\030\007 \001(\01327.hw.trezor.m"
+  "essages.nem.NEMSignTx.NEMMosaicSupplyCha"
+  "nge\022Z\n\026aggregate_modification\030\010 \001(\0132:.hw"
+  ".trezor.messages.nem.NEMSignTx.NEMAggreg"
+  "ateModification\022T\n\023importance_transfer\030\t"
+  " \001(\01327.hw.trezor.messages.nem.NEMSignTx."
+  "NEMImportanceTransfer\032|\n\024NEMTransactionC"
+  "ommon\022\021\n\taddress_n\030\001 \003(\r\022\017\n\007network\030\002 \001("
+  "\r\022\021\n\ttimestamp\030\003 \001(\r\022\013\n\003fee\030\004 \001(\004\022\020\n\010dea"
+  "dline\030\005 \001(\r\022\016\n\006signer\030\006 \001(\014\032\341\001\n\013NEMTrans"
+  "fer\022\021\n\trecipient\030\001 \001(\t\022\016\n\006amount\030\002 \001(\004\022\017"
+  "\n\007payload\030\003 \001(\014\022\022\n\npublic_key\030\004 \001(\014\022H\n\007m"
+  "osaics\030\005 \003(\01327.hw.trezor.messages.nem.NE"
+  "MSignTx.NEMTransfer.NEMMosaic\032@\n\tNEMMosa"
+  "ic\022\021\n\tnamespace\030\001 \001(\t\022\016\n\006mosaic\030\002 \001(\t\022\020\n"
+  "\010quantity\030\003 \001(\004\032U\n\025NEMProvisionNamespace"
+  "\022\021\n\tnamespace\030\001 \001(\t\022\016\n\006parent\030\002 \001(\t\022\014\n\004s"
+  "ink\030\003 \001(\t\022\013\n\003fee\030\004 \001(\004\032\331\004\n\021NEMMosaicCrea"
+  "tion\022[\n\ndefinition\030\001 \001(\0132G.hw.trezor.mes"
+  "sages.nem.NEMSignTx.NEMMosaicCreation.NE"
+  "MMosaicDefinition\022\014\n\004sink\030\002 \001(\t\022\013\n\003fee\030\003"
+  " \001(\004\032\313\003\n\023NEMMosaicDefinition\022\014\n\004name\030\001 \001"
+  "(\t\022\016\n\006ticker\030\002 \001(\t\022\021\n\tnamespace\030\003 \001(\t\022\016\n"
+  "\006mosaic\030\004 \001(\t\022\024\n\014divisibility\030\005 \001(\r\022c\n\004l"
+  "evy\030\006 \001(\0162U.hw.trezor.messages.nem.NEMSi"
+  "gnTx.NEMMosaicCreation.NEMMosaicDefiniti"
+  "on.NEMMosaicLevy\022\013\n\003fee\030\007 \001(\004\022\024\n\014levy_ad"
+  "dress\030\010 \001(\t\022\026\n\016levy_namespace\030\t \001(\t\022\023\n\013l"
+  "evy_mosaic\030\n \001(\t\022\016\n\006supply\030\013 \001(\004\022\026\n\016muta"
+  "ble_supply\030\014 \001(\010\022\024\n\014transferable\030\r \001(\010\022\023"
+  "\n\013description\030\016 \001(\t\022\020\n\010networks\030\017 \003(\r\"C\n"
+  "\rNEMMosaicLevy\022\027\n\023MosaicLevy_Absolute\020\001\022"
+  "\031\n\025MosaicLevy_Percentile\020\002\032\361\001\n\025NEMMosaic"
+  "SupplyChange\022\021\n\tnamespace\030\001 \001(\t\022\016\n\006mosai"
+  "c\030\002 \001(\t\022Y\n\004type\030\003 \001(\0162K.hw.trezor.messag"
+  "es.nem.NEMSignTx.NEMMosaicSupplyChange.N"
+  "EMSupplyChangeType\022\r\n\005delta\030\004 \001(\004\"K\n\023NEM"
+  "SupplyChangeType\022\031\n\025SupplyChange_Increas"
+  "e\020\001\022\031\n\025SupplyChange_Decrease\020\002\032\251\003\n\030NEMAg"
+  "gregateModification\022l\n\rmodifications\030\001 \003"
+  "(\0132U.hw.trezor.messages.nem.NEMSignTx.NE"
+  "MAggregateModification.NEMCosignatoryMod"
+  "ification\022\027\n\017relative_change\030\002 \001(\021\032\205\002\n\032N"
+  "EMCosignatoryModification\022w\n\004type\030\001 \001(\0162"
+  "i.hw.trezor.messages.nem.NEMSignTx.NEMAg"
+  "gregateModification.NEMCosignatoryModifi"
+  "cation.NEMModificationType\022\022\n\npublic_key"
+  "\030\002 \001(\014\"Z\n\023NEMModificationType\022\037\n\033Cosigna"
+  "toryModification_Add\020\001\022\"\n\036CosignatoryMod"
+  "ification_Delete\020\002\032\355\001\n\025NEMImportanceTran"
+  "sfer\022_\n\004mode\030\001 \001(\0162Q.hw.trezor.messages."
+  "nem.NEMSignTx.NEMImportanceTransfer.NEMI"
+  "mportanceTransferMode\022\022\n\npublic_key\030\002 \001("
+  "\014\"_\n\031NEMImportanceTransferMode\022\037\n\033Import"
+  "anceTransfer_Activate\020\001\022!\n\035ImportanceTra"
+  "nsfer_Deactivate\020\002\".\n\013NEMSignedTx\022\014\n\004dat"
+  "a\030\001 \001(\014\022\021\n\tsignature\030\002 \001(\014\"\\\n\021NEMDecrypt"
+  "Message\022\021\n\taddress_n\030\001 \003(\r\022\017\n\007network\030\002 "
+  "\001(\r\022\022\n\npublic_key\030\003 \001(\014\022\017\n\007payload\030\004 \001(\014"
+  "\"&\n\023NEMDecryptedMessage\022\017\n\007payload\030\001 \001(\014"
+  "B7\n#com.satoshilabs.trezor.lib.protobufB"
+  "\020TrezorMessageNem"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dnem_2eproto = {
+  false, InitDefaults_messages_2dnem_2eproto, 
+  descriptor_table_protodef_messages_2dnem_2eproto,
+  "messages-nem.proto", &assign_descriptors_table_messages_2dnem_2eproto, 3017,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 16);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\022messages-nem.proto\022\026hw.trezor.messages"
-      ".nem\"I\n\rNEMGetAddress\022\021\n\taddress_n\030\001 \003(\r"
-      "\022\017\n\007network\030\002 \001(\r\022\024\n\014show_display\030\003 \001(\010\""
-      "\035\n\nNEMAddress\022\017\n\007address\030\001 \002(\t\"\301\024\n\tNEMSi"
-      "gnTx\022K\n\013transaction\030\001 \001(\01326.hw.trezor.me"
-      "ssages.nem.NEMSignTx.NEMTransactionCommo"
-      "n\022H\n\010multisig\030\002 \001(\01326.hw.trezor.messages"
-      ".nem.NEMSignTx.NEMTransactionCommon\022\?\n\010t"
-      "ransfer\030\003 \001(\0132-.hw.trezor.messages.nem.N"
-      "EMSignTx.NEMTransfer\022\021\n\tcosigning\030\004 \001(\010\022"
-      "T\n\023provision_namespace\030\005 \001(\01327.hw.trezor"
-      ".messages.nem.NEMSignTx.NEMProvisionName"
-      "space\022L\n\017mosaic_creation\030\006 \001(\01323.hw.trez"
-      "or.messages.nem.NEMSignTx.NEMMosaicCreat"
-      "ion\022N\n\rsupply_change\030\007 \001(\01327.hw.trezor.m"
-      "essages.nem.NEMSignTx.NEMMosaicSupplyCha"
-      "nge\022Z\n\026aggregate_modification\030\010 \001(\0132:.hw"
-      ".trezor.messages.nem.NEMSignTx.NEMAggreg"
-      "ateModification\022T\n\023importance_transfer\030\t"
-      " \001(\01327.hw.trezor.messages.nem.NEMSignTx."
-      "NEMImportanceTransfer\032|\n\024NEMTransactionC"
-      "ommon\022\021\n\taddress_n\030\001 \003(\r\022\017\n\007network\030\002 \001("
-      "\r\022\021\n\ttimestamp\030\003 \001(\r\022\013\n\003fee\030\004 \001(\004\022\020\n\010dea"
-      "dline\030\005 \001(\r\022\016\n\006signer\030\006 \001(\014\032\341\001\n\013NEMTrans"
-      "fer\022\021\n\trecipient\030\001 \001(\t\022\016\n\006amount\030\002 \001(\004\022\017"
-      "\n\007payload\030\003 \001(\014\022\022\n\npublic_key\030\004 \001(\014\022H\n\007m"
-      "osaics\030\005 \003(\01327.hw.trezor.messages.nem.NE"
-      "MSignTx.NEMTransfer.NEMMosaic\032@\n\tNEMMosa"
-      "ic\022\021\n\tnamespace\030\001 \001(\t\022\016\n\006mosaic\030\002 \001(\t\022\020\n"
-      "\010quantity\030\003 \001(\004\032U\n\025NEMProvisionNamespace"
-      "\022\021\n\tnamespace\030\001 \001(\t\022\016\n\006parent\030\002 \001(\t\022\014\n\004s"
-      "ink\030\003 \001(\t\022\013\n\003fee\030\004 \001(\004\032\331\004\n\021NEMMosaicCrea"
-      "tion\022[\n\ndefinition\030\001 \001(\0132G.hw.trezor.mes"
-      "sages.nem.NEMSignTx.NEMMosaicCreation.NE"
-      "MMosaicDefinition\022\014\n\004sink\030\002 \001(\t\022\013\n\003fee\030\003"
-      " \001(\004\032\313\003\n\023NEMMosaicDefinition\022\014\n\004name\030\001 \001"
-      "(\t\022\016\n\006ticker\030\002 \001(\t\022\021\n\tnamespace\030\003 \001(\t\022\016\n"
-      "\006mosaic\030\004 \001(\t\022\024\n\014divisibility\030\005 \001(\r\022c\n\004l"
-      "evy\030\006 \001(\0162U.hw.trezor.messages.nem.NEMSi"
-      "gnTx.NEMMosaicCreation.NEMMosaicDefiniti"
-      "on.NEMMosaicLevy\022\013\n\003fee\030\007 \001(\004\022\024\n\014levy_ad"
-      "dress\030\010 \001(\t\022\026\n\016levy_namespace\030\t \001(\t\022\023\n\013l"
-      "evy_mosaic\030\n \001(\t\022\016\n\006supply\030\013 \001(\004\022\026\n\016muta"
-      "ble_supply\030\014 \001(\010\022\024\n\014transferable\030\r \001(\010\022\023"
-      "\n\013description\030\016 \001(\t\022\020\n\010networks\030\017 \003(\r\"C\n"
-      "\rNEMMosaicLevy\022\027\n\023MosaicLevy_Absolute\020\001\022"
-      "\031\n\025MosaicLevy_Percentile\020\002\032\361\001\n\025NEMMosaic"
-      "SupplyChange\022\021\n\tnamespace\030\001 \001(\t\022\016\n\006mosai"
-      "c\030\002 \001(\t\022Y\n\004type\030\003 \001(\0162K.hw.trezor.messag"
-      "es.nem.NEMSignTx.NEMMosaicSupplyChange.N"
-      "EMSupplyChangeType\022\r\n\005delta\030\004 \001(\004\"K\n\023NEM"
-      "SupplyChangeType\022\031\n\025SupplyChange_Increas"
-      "e\020\001\022\031\n\025SupplyChange_Decrease\020\002\032\251\003\n\030NEMAg"
-      "gregateModification\022l\n\rmodifications\030\001 \003"
-      "(\0132U.hw.trezor.messages.nem.NEMSignTx.NE"
-      "MAggregateModification.NEMCosignatoryMod"
-      "ification\022\027\n\017relative_change\030\002 \001(\021\032\205\002\n\032N"
-      "EMCosignatoryModification\022w\n\004type\030\001 \001(\0162"
-      "i.hw.trezor.messages.nem.NEMSignTx.NEMAg"
-      "gregateModification.NEMCosignatoryModifi"
-      "cation.NEMModificationType\022\022\n\npublic_key"
-      "\030\002 \001(\014\"Z\n\023NEMModificationType\022\037\n\033Cosigna"
-      "toryModification_Add\020\001\022\"\n\036CosignatoryMod"
-      "ification_Delete\020\002\032\355\001\n\025NEMImportanceTran"
-      "sfer\022_\n\004mode\030\001 \001(\0162Q.hw.trezor.messages."
-      "nem.NEMSignTx.NEMImportanceTransfer.NEMI"
-      "mportanceTransferMode\022\022\n\npublic_key\030\002 \001("
-      "\014\"_\n\031NEMImportanceTransferMode\022\037\n\033Import"
-      "anceTransfer_Activate\020\001\022!\n\035ImportanceTra"
-      "nsfer_Deactivate\020\002\".\n\013NEMSignedTx\022\014\n\004dat"
-      "a\030\001 \001(\014\022\021\n\tsignature\030\002 \001(\014\"\\\n\021NEMDecrypt"
-      "Message\022\021\n\taddress_n\030\001 \003(\r\022\017\n\007network\030\002 "
-      "\001(\r\022\022\n\npublic_key\030\003 \001(\014\022\017\n\007payload\030\004 \001(\014"
-      "\"&\n\023NEMDecryptedMessage\022\017\n\007payload\030\001 \001(\014"
-      "B7\n#com.satoshilabs.trezor.lib.protobufB"
-      "\020TrezorMessageNem"
+void AddDescriptors_messages_2dnem_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 3017);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "messages-nem.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_messages_2dnem_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_messages_2dnem_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_messages_2dnem_2eproto = []() { AddDescriptors_messages_2dnem_2eproto(); return true; }();
 namespace hw {
 namespace trezor {
 namespace messages {
 namespace nem {
 const ::google::protobuf::EnumDescriptor* NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_NEMMosaicLevy_descriptor() {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_messages_2dnem_2eproto::file_level_enum_descriptors[0];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dnem_2eproto);
+  return file_level_enum_descriptors_messages_2dnem_2eproto[0];
 }
 bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_NEMMosaicLevy_IsValid(int value) {
   switch (value) {
@@ -769,8 +732,8 @@ const NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_NEMMosaicLevy NEMSignTx_NE
 const int NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::NEMMosaicLevy_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* NEMSignTx_NEMMosaicSupplyChange_NEMSupplyChangeType_descriptor() {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_messages_2dnem_2eproto::file_level_enum_descriptors[1];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dnem_2eproto);
+  return file_level_enum_descriptors_messages_2dnem_2eproto[1];
 }
 bool NEMSignTx_NEMMosaicSupplyChange_NEMSupplyChangeType_IsValid(int value) {
   switch (value) {
@@ -790,8 +753,8 @@ const NEMSignTx_NEMMosaicSupplyChange_NEMSupplyChangeType NEMSignTx_NEMMosaicSup
 const int NEMSignTx_NEMMosaicSupplyChange::NEMSupplyChangeType_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* NEMSignTx_NEMAggregateModification_NEMCosignatoryModification_NEMModificationType_descriptor() {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_messages_2dnem_2eproto::file_level_enum_descriptors[2];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dnem_2eproto);
+  return file_level_enum_descriptors_messages_2dnem_2eproto[2];
 }
 bool NEMSignTx_NEMAggregateModification_NEMCosignatoryModification_NEMModificationType_IsValid(int value) {
   switch (value) {
@@ -811,8 +774,8 @@ const NEMSignTx_NEMAggregateModification_NEMCosignatoryModification_NEMModificat
 const int NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::NEMModificationType_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* NEMSignTx_NEMImportanceTransfer_NEMImportanceTransferMode_descriptor() {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_messages_2dnem_2eproto::file_level_enum_descriptors[3];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dnem_2eproto);
+  return file_level_enum_descriptors_messages_2dnem_2eproto[3];
 }
 bool NEMSignTx_NEMImportanceTransfer_NEMImportanceTransferMode_IsValid(int value) {
   switch (value) {
@@ -836,6 +799,16 @@ const int NEMSignTx_NEMImportanceTransfer::NEMImportanceTransferMode_ARRAYSIZE;
 
 void NEMGetAddress::InitAsDefaultInstance() {
 }
+class NEMGetAddress::HasBitSetters {
+ public:
+  static void set_has_network(NEMGetAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_show_display(NEMGetAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMGetAddress::kAddressNFieldNumber;
 const int NEMGetAddress::kNetworkFieldNumber;
@@ -843,15 +816,13 @@ const int NEMGetAddress::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMGetAddress::NEMGetAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMGetAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMGetAddress)
 }
 NEMGetAddress::NEMGetAddress(const NEMGetAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -878,13 +849,8 @@ void NEMGetAddress::SharedDtor() {
 void NEMGetAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMGetAddress::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMGetAddress& NEMGetAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMGetAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMGetAddress_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -897,7 +863,7 @@ void NEMGetAddress::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&network_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&show_display_) -
         reinterpret_cast<char*>(&network_)) + sizeof(show_display_));
@@ -906,9 +872,76 @@ void NEMGetAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMGetAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMGetAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional uint32 network = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_network(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool show_display = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMGetAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMGetAddress)
   for (;;) {
@@ -918,14 +951,11 @@ bool NEMGetAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -937,9 +967,8 @@ bool NEMGetAddress::MergePartialFromCodedStream(
 
       // optional uint32 network = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_network();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_network(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &network_)));
@@ -951,9 +980,8 @@ bool NEMGetAddress::MergePartialFromCodedStream(
 
       // optional bool show_display = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -982,6 +1010,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMGetAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1014,8 +1043,7 @@ void NEMGetAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMGetAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMGetAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1052,6 +1080,10 @@ size_t NEMGetAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1061,16 +1093,17 @@ size_t NEMGetAddress::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 3u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint32 network = 2;
-    if (has_network()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->network());
     }
 
     // optional bool show_display = 3;
-    if (has_show_display()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 1;
     }
 
@@ -1084,9 +1117,9 @@ void NEMGetAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMGetAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMGetAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMGetAddress>(
+      ::google::protobuf::DynamicCastToGenerated<NEMGetAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMGetAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1104,7 +1137,7 @@ void NEMGetAddress::MergeFrom(const NEMGetAddress& from) {
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       network_ = from.network_;
     }
@@ -1139,16 +1172,16 @@ void NEMGetAddress::Swap(NEMGetAddress* other) {
 }
 void NEMGetAddress::InternalSwap(NEMGetAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(network_, other->network_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMGetAddress::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1156,20 +1189,25 @@ void NEMGetAddress::InternalSwap(NEMGetAddress* other) {
 
 void NEMAddress::InitAsDefaultInstance() {
 }
+class NEMAddress::HasBitSetters {
+ public:
+  static void set_has_address(NEMAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMAddress::kAddressFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMAddress::NEMAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMAddress)
 }
 NEMAddress::NEMAddress(const NEMAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1180,6 +1218,8 @@ NEMAddress::NEMAddress(const NEMAddress& from)
 }
 
 void NEMAddress::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMAddress_messages_2dnem_2eproto.base);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1195,13 +1235,8 @@ void NEMAddress::SharedDtor() {
 void NEMAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMAddress::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMAddress& NEMAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMAddress_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1220,9 +1255,62 @@ void NEMAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // required string address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMAddress.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMAddress)
   for (;;) {
@@ -1232,8 +1320,7 @@ bool NEMAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required string address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1265,6 +1352,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1291,8 +1379,7 @@ void NEMAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1332,6 +1419,10 @@ size_t NEMAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->address());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1341,9 +1432,9 @@ void NEMAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMAddress>(
+      ::google::protobuf::DynamicCastToGenerated<NEMAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1360,7 +1451,7 @@ void NEMAddress::MergeFrom(const NEMAddress& from) {
   (void) cached_has_bits;
 
   if (from.has_address()) {
-    set_has_address();
+    _has_bits_[0] |= 0x00000001u;
     address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
   }
 }
@@ -1390,15 +1481,15 @@ void NEMAddress::Swap(NEMAddress* other) {
 }
 void NEMAddress::InternalSwap(NEMAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMAddress::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1406,6 +1497,25 @@ void NEMAddress::InternalSwap(NEMAddress* other) {
 
 void NEMSignTx_NEMTransactionCommon::InitAsDefaultInstance() {
 }
+class NEMSignTx_NEMTransactionCommon::HasBitSetters {
+ public:
+  static void set_has_network(NEMSignTx_NEMTransactionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_timestamp(NEMSignTx_NEMTransactionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_fee(NEMSignTx_NEMTransactionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_deadline(NEMSignTx_NEMTransactionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_signer(NEMSignTx_NEMTransactionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMSignTx_NEMTransactionCommon::kAddressNFieldNumber;
 const int NEMSignTx_NEMTransactionCommon::kNetworkFieldNumber;
@@ -1416,15 +1526,13 @@ const int NEMSignTx_NEMTransactionCommon::kSignerFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMSignTx_NEMTransactionCommon::NEMSignTx_NEMTransactionCommon()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMTransactionCommon.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMSignTx.NEMTransactionCommon)
 }
 NEMSignTx_NEMTransactionCommon::NEMSignTx_NEMTransactionCommon(const NEMSignTx_NEMTransactionCommon& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -1439,6 +1547,8 @@ NEMSignTx_NEMTransactionCommon::NEMSignTx_NEMTransactionCommon(const NEMSignTx_N
 }
 
 void NEMSignTx_NEMTransactionCommon::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMSignTx_NEMTransactionCommon_messages_2dnem_2eproto.base);
   signer_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&network_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&deadline_) -
@@ -1457,13 +1567,8 @@ void NEMSignTx_NEMTransactionCommon::SharedDtor() {
 void NEMSignTx_NEMTransactionCommon::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMSignTx_NEMTransactionCommon::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMSignTx_NEMTransactionCommon& NEMSignTx_NEMTransactionCommon::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMTransactionCommon.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMSignTx_NEMTransactionCommon_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1479,7 +1584,7 @@ void NEMSignTx_NEMTransactionCommon::Clear() {
   if (cached_has_bits & 0x00000001u) {
     signer_.ClearNonDefaultToEmptyNoArena();
   }
-  if (cached_has_bits & 30u) {
+  if (cached_has_bits & 0x0000001eu) {
     ::memset(&network_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&deadline_) -
         reinterpret_cast<char*>(&network_)) + sizeof(deadline_));
@@ -1488,9 +1593,109 @@ void NEMSignTx_NEMTransactionCommon::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMSignTx_NEMTransactionCommon::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMSignTx_NEMTransactionCommon*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional uint32 network = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_network(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 timestamp = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_timestamp(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 fee = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_fee(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 deadline = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_deadline(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes signer = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signer();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMSignTx_NEMTransactionCommon::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMSignTx.NEMTransactionCommon)
   for (;;) {
@@ -1500,14 +1705,11 @@ bool NEMSignTx_NEMTransactionCommon::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1519,9 +1721,8 @@ bool NEMSignTx_NEMTransactionCommon::MergePartialFromCodedStream(
 
       // optional uint32 network = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_network();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_network(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &network_)));
@@ -1533,9 +1734,8 @@ bool NEMSignTx_NEMTransactionCommon::MergePartialFromCodedStream(
 
       // optional uint32 timestamp = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_timestamp();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_timestamp(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &timestamp_)));
@@ -1547,9 +1747,8 @@ bool NEMSignTx_NEMTransactionCommon::MergePartialFromCodedStream(
 
       // optional uint64 fee = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_fee();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_fee(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &fee_)));
@@ -1561,9 +1760,8 @@ bool NEMSignTx_NEMTransactionCommon::MergePartialFromCodedStream(
 
       // optional uint32 deadline = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_deadline();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_deadline(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &deadline_)));
@@ -1575,8 +1773,7 @@ bool NEMSignTx_NEMTransactionCommon::MergePartialFromCodedStream(
 
       // optional bytes signer = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signer()));
         } else {
@@ -1604,6 +1801,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMSignTx_NEMTransactionCommon::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1652,8 +1850,7 @@ void NEMSignTx_NEMTransactionCommon::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMSignTx_NEMTransactionCommon::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMSignTx.NEMTransactionCommon)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1707,6 +1904,10 @@ size_t NEMSignTx_NEMTransactionCommon::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1716,37 +1917,38 @@ size_t NEMSignTx_NEMTransactionCommon::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 31u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000001fu) {
     // optional bytes signer = 6;
-    if (has_signer()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signer());
     }
 
     // optional uint32 network = 2;
-    if (has_network()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->network());
     }
 
     // optional uint32 timestamp = 3;
-    if (has_timestamp()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->timestamp());
     }
 
     // optional uint64 fee = 4;
-    if (has_fee()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->fee());
     }
 
     // optional uint32 deadline = 5;
-    if (has_deadline()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->deadline());
@@ -1762,9 +1964,9 @@ void NEMSignTx_NEMTransactionCommon::MergeFrom(const ::google::protobuf::Message
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMSignTx.NEMTransactionCommon)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMSignTx_NEMTransactionCommon* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMSignTx_NEMTransactionCommon>(
+      ::google::protobuf::DynamicCastToGenerated<NEMSignTx_NEMTransactionCommon>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMSignTx.NEMTransactionCommon)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1782,9 +1984,9 @@ void NEMSignTx_NEMTransactionCommon::MergeFrom(const NEMSignTx_NEMTransactionCom
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_signer();
+      _has_bits_[0] |= 0x00000001u;
       signer_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signer_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -1827,6 +2029,8 @@ void NEMSignTx_NEMTransactionCommon::Swap(NEMSignTx_NEMTransactionCommon* other)
 }
 void NEMSignTx_NEMTransactionCommon::InternalSwap(NEMSignTx_NEMTransactionCommon* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   signer_.Swap(&other->signer_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -1834,13 +2038,11 @@ void NEMSignTx_NEMTransactionCommon::InternalSwap(NEMSignTx_NEMTransactionCommon
   swap(timestamp_, other->timestamp_);
   swap(fee_, other->fee_);
   swap(deadline_, other->deadline_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMSignTx_NEMTransactionCommon::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1848,6 +2050,19 @@ void NEMSignTx_NEMTransactionCommon::InternalSwap(NEMSignTx_NEMTransactionCommon
 
 void NEMSignTx_NEMTransfer_NEMMosaic::InitAsDefaultInstance() {
 }
+class NEMSignTx_NEMTransfer_NEMMosaic::HasBitSetters {
+ public:
+  static void set_has_namespace_(NEMSignTx_NEMTransfer_NEMMosaic* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_mosaic(NEMSignTx_NEMTransfer_NEMMosaic* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_quantity(NEMSignTx_NEMTransfer_NEMMosaic* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMSignTx_NEMTransfer_NEMMosaic::kNamespaceFieldNumber;
 const int NEMSignTx_NEMTransfer_NEMMosaic::kMosaicFieldNumber;
@@ -1855,15 +2070,13 @@ const int NEMSignTx_NEMTransfer_NEMMosaic::kQuantityFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMSignTx_NEMTransfer_NEMMosaic::NEMSignTx_NEMTransfer_NEMMosaic()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMTransfer_NEMMosaic.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMSignTx.NEMTransfer.NEMMosaic)
 }
 NEMSignTx_NEMTransfer_NEMMosaic::NEMSignTx_NEMTransfer_NEMMosaic(const NEMSignTx_NEMTransfer_NEMMosaic& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   namespace__.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1879,9 +2092,11 @@ NEMSignTx_NEMTransfer_NEMMosaic::NEMSignTx_NEMTransfer_NEMMosaic(const NEMSignTx
 }
 
 void NEMSignTx_NEMTransfer_NEMMosaic::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMSignTx_NEMTransfer_NEMMosaic_messages_2dnem_2eproto.base);
   namespace__.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   mosaic_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  quantity_ = GOOGLE_ULONGLONG(0);
+  quantity_ = PROTOBUF_ULONGLONG(0);
 }
 
 NEMSignTx_NEMTransfer_NEMMosaic::~NEMSignTx_NEMTransfer_NEMMosaic() {
@@ -1897,13 +2112,8 @@ void NEMSignTx_NEMTransfer_NEMMosaic::SharedDtor() {
 void NEMSignTx_NEMTransfer_NEMMosaic::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMSignTx_NEMTransfer_NEMMosaic::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMSignTx_NEMTransfer_NEMMosaic& NEMSignTx_NEMTransfer_NEMMosaic::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMTransfer_NEMMosaic.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMSignTx_NEMTransfer_NEMMosaic_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1915,7 +2125,7 @@ void NEMSignTx_NEMTransfer_NEMMosaic::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       namespace__.ClearNonDefaultToEmptyNoArena();
     }
@@ -1923,14 +2133,90 @@ void NEMSignTx_NEMTransfer_NEMMosaic::Clear() {
       mosaic_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  quantity_ = GOOGLE_ULONGLONG(0);
+  quantity_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMSignTx_NEMTransfer_NEMMosaic::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMSignTx_NEMTransfer_NEMMosaic*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string namespace = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMTransfer.NEMMosaic.namespace");
+        object = msg->mutable_namespace_();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string mosaic = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMTransfer.NEMMosaic.mosaic");
+        object = msg->mutable_mosaic();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint64 quantity = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_quantity(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMSignTx_NEMTransfer_NEMMosaic::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMSignTx.NEMTransfer.NEMMosaic)
   for (;;) {
@@ -1940,8 +2226,7 @@ bool NEMSignTx_NEMTransfer_NEMMosaic::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string namespace = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_namespace_()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1956,8 +2241,7 @@ bool NEMSignTx_NEMTransfer_NEMMosaic::MergePartialFromCodedStream(
 
       // optional string mosaic = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_mosaic()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1972,9 +2256,8 @@ bool NEMSignTx_NEMTransfer_NEMMosaic::MergePartialFromCodedStream(
 
       // optional uint64 quantity = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_quantity();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_quantity(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &quantity_)));
@@ -2003,6 +2286,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMSignTx_NEMTransfer_NEMMosaic::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2044,8 +2328,7 @@ void NEMSignTx_NEMTransfer_NEMMosaic::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMSignTx_NEMTransfer_NEMMosaic::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMSignTx.NEMTransfer.NEMMosaic)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2095,23 +2378,28 @@ size_t NEMSignTx_NEMTransfer_NEMMosaic::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string namespace = 1;
-    if (has_namespace_()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->namespace_());
     }
 
     // optional string mosaic = 2;
-    if (has_mosaic()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->mosaic());
     }
 
     // optional uint64 quantity = 3;
-    if (has_quantity()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->quantity());
@@ -2127,9 +2415,9 @@ void NEMSignTx_NEMTransfer_NEMMosaic::MergeFrom(const ::google::protobuf::Messag
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMSignTx.NEMTransfer.NEMMosaic)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMSignTx_NEMTransfer_NEMMosaic* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMSignTx_NEMTransfer_NEMMosaic>(
+      ::google::protobuf::DynamicCastToGenerated<NEMSignTx_NEMTransfer_NEMMosaic>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMSignTx.NEMTransfer.NEMMosaic)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2146,13 +2434,13 @@ void NEMSignTx_NEMTransfer_NEMMosaic::MergeFrom(const NEMSignTx_NEMTransfer_NEMM
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_namespace_();
+      _has_bits_[0] |= 0x00000001u;
       namespace__.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.namespace__);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_mosaic();
+      _has_bits_[0] |= 0x00000002u;
       mosaic_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.mosaic_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -2186,18 +2474,18 @@ void NEMSignTx_NEMTransfer_NEMMosaic::Swap(NEMSignTx_NEMTransfer_NEMMosaic* othe
 }
 void NEMSignTx_NEMTransfer_NEMMosaic::InternalSwap(NEMSignTx_NEMTransfer_NEMMosaic* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   namespace__.Swap(&other->namespace__, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   mosaic_.Swap(&other->mosaic_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(quantity_, other->quantity_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMSignTx_NEMTransfer_NEMMosaic::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2205,6 +2493,22 @@ void NEMSignTx_NEMTransfer_NEMMosaic::InternalSwap(NEMSignTx_NEMTransfer_NEMMosa
 
 void NEMSignTx_NEMTransfer::InitAsDefaultInstance() {
 }
+class NEMSignTx_NEMTransfer::HasBitSetters {
+ public:
+  static void set_has_recipient(NEMSignTx_NEMTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_amount(NEMSignTx_NEMTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_payload(NEMSignTx_NEMTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_public_key(NEMSignTx_NEMTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMSignTx_NEMTransfer::kRecipientFieldNumber;
 const int NEMSignTx_NEMTransfer::kAmountFieldNumber;
@@ -2214,15 +2518,13 @@ const int NEMSignTx_NEMTransfer::kMosaicsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMSignTx_NEMTransfer::NEMSignTx_NEMTransfer()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMTransfer.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMSignTx.NEMTransfer)
 }
 NEMSignTx_NEMTransfer::NEMSignTx_NEMTransfer(const NEMSignTx_NEMTransfer& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       mosaics_(from.mosaics_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -2243,10 +2545,12 @@ NEMSignTx_NEMTransfer::NEMSignTx_NEMTransfer(const NEMSignTx_NEMTransfer& from)
 }
 
 void NEMSignTx_NEMTransfer::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMSignTx_NEMTransfer_messages_2dnem_2eproto.base);
   recipient_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   payload_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  amount_ = GOOGLE_ULONGLONG(0);
+  amount_ = PROTOBUF_ULONGLONG(0);
 }
 
 NEMSignTx_NEMTransfer::~NEMSignTx_NEMTransfer() {
@@ -2263,13 +2567,8 @@ void NEMSignTx_NEMTransfer::SharedDtor() {
 void NEMSignTx_NEMTransfer::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMSignTx_NEMTransfer::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMSignTx_NEMTransfer& NEMSignTx_NEMTransfer::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMTransfer.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMSignTx_NEMTransfer_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2282,7 +2581,7 @@ void NEMSignTx_NEMTransfer::Clear() {
 
   mosaics_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       recipient_.ClearNonDefaultToEmptyNoArena();
     }
@@ -2293,14 +2592,120 @@ void NEMSignTx_NEMTransfer::Clear() {
       public_key_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  amount_ = GOOGLE_ULONGLONG(0);
+  amount_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMSignTx_NEMTransfer::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMSignTx_NEMTransfer*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string recipient = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMTransfer.recipient");
+        object = msg->mutable_recipient();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint64 amount = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes payload = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_payload();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes public_key = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // repeated .hw.trezor.messages.nem.NEMSignTx.NEMTransfer.NEMMosaic mosaics = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic::_InternalParse;
+          object = msg->add_mosaics();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 42 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMSignTx_NEMTransfer::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMSignTx.NEMTransfer)
   for (;;) {
@@ -2310,8 +2715,7 @@ bool NEMSignTx_NEMTransfer::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string recipient = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_recipient()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2326,9 +2730,8 @@ bool NEMSignTx_NEMTransfer::MergePartialFromCodedStream(
 
       // optional uint64 amount = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &amount_)));
@@ -2340,8 +2743,7 @@ bool NEMSignTx_NEMTransfer::MergePartialFromCodedStream(
 
       // optional bytes payload = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_payload()));
         } else {
@@ -2352,8 +2754,7 @@ bool NEMSignTx_NEMTransfer::MergePartialFromCodedStream(
 
       // optional bytes public_key = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_public_key()));
         } else {
@@ -2364,8 +2765,7 @@ bool NEMSignTx_NEMTransfer::MergePartialFromCodedStream(
 
       // repeated .hw.trezor.messages.nem.NEMSignTx.NEMTransfer.NEMMosaic mosaics = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_mosaics()));
         } else {
@@ -2393,6 +2793,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMSignTx_NEMTransfer::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2445,8 +2846,7 @@ void NEMSignTx_NEMTransfer::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMSignTx_NEMTransfer::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMSignTx.NEMTransfer)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2487,7 +2887,7 @@ void NEMSignTx_NEMTransfer::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->mosaics_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->mosaics(static_cast<int>(i)), deterministic, target);
+        5, this->mosaics(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -2507,6 +2907,10 @@ size_t NEMSignTx_NEMTransfer::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .hw.trezor.messages.nem.NEMSignTx.NEMTransfer.NEMMosaic mosaics = 5;
   {
     unsigned int count = static_cast<unsigned int>(this->mosaics_size());
@@ -2518,30 +2922,31 @@ size_t NEMSignTx_NEMTransfer::ByteSizeLong() const {
     }
   }
 
-  if (_has_bits_[0 / 32] & 15u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional string recipient = 1;
-    if (has_recipient()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->recipient());
     }
 
     // optional bytes payload = 3;
-    if (has_payload()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->payload());
     }
 
     // optional bytes public_key = 4;
-    if (has_public_key()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->public_key());
     }
 
     // optional uint64 amount = 2;
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->amount());
@@ -2557,9 +2962,9 @@ void NEMSignTx_NEMTransfer::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMSignTx.NEMTransfer)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMSignTx_NEMTransfer* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMSignTx_NEMTransfer>(
+      ::google::protobuf::DynamicCastToGenerated<NEMSignTx_NEMTransfer>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMSignTx.NEMTransfer)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2577,17 +2982,17 @@ void NEMSignTx_NEMTransfer::MergeFrom(const NEMSignTx_NEMTransfer& from) {
 
   mosaics_.MergeFrom(from.mosaics_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_recipient();
+      _has_bits_[0] |= 0x00000001u;
       recipient_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.recipient_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_payload();
+      _has_bits_[0] |= 0x00000002u;
       payload_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.payload_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_public_key();
+      _has_bits_[0] |= 0x00000004u;
       public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
     }
     if (cached_has_bits & 0x00000008u) {
@@ -2621,6 +3026,8 @@ void NEMSignTx_NEMTransfer::Swap(NEMSignTx_NEMTransfer* other) {
 }
 void NEMSignTx_NEMTransfer::InternalSwap(NEMSignTx_NEMTransfer* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&mosaics_)->InternalSwap(CastToBase(&other->mosaics_));
   recipient_.Swap(&other->recipient_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -2629,13 +3036,11 @@ void NEMSignTx_NEMTransfer::InternalSwap(NEMSignTx_NEMTransfer* other) {
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(amount_, other->amount_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMSignTx_NEMTransfer::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2643,6 +3048,22 @@ void NEMSignTx_NEMTransfer::InternalSwap(NEMSignTx_NEMTransfer* other) {
 
 void NEMSignTx_NEMProvisionNamespace::InitAsDefaultInstance() {
 }
+class NEMSignTx_NEMProvisionNamespace::HasBitSetters {
+ public:
+  static void set_has_namespace_(NEMSignTx_NEMProvisionNamespace* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_parent(NEMSignTx_NEMProvisionNamespace* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_sink(NEMSignTx_NEMProvisionNamespace* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_fee(NEMSignTx_NEMProvisionNamespace* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMSignTx_NEMProvisionNamespace::kNamespaceFieldNumber;
 const int NEMSignTx_NEMProvisionNamespace::kParentFieldNumber;
@@ -2651,15 +3072,13 @@ const int NEMSignTx_NEMProvisionNamespace::kFeeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMSignTx_NEMProvisionNamespace::NEMSignTx_NEMProvisionNamespace()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMProvisionNamespace.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMSignTx.NEMProvisionNamespace)
 }
 NEMSignTx_NEMProvisionNamespace::NEMSignTx_NEMProvisionNamespace(const NEMSignTx_NEMProvisionNamespace& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   namespace__.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2679,10 +3098,12 @@ NEMSignTx_NEMProvisionNamespace::NEMSignTx_NEMProvisionNamespace(const NEMSignTx
 }
 
 void NEMSignTx_NEMProvisionNamespace::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMSignTx_NEMProvisionNamespace_messages_2dnem_2eproto.base);
   namespace__.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   parent_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   sink_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  fee_ = GOOGLE_ULONGLONG(0);
+  fee_ = PROTOBUF_ULONGLONG(0);
 }
 
 NEMSignTx_NEMProvisionNamespace::~NEMSignTx_NEMProvisionNamespace() {
@@ -2699,13 +3120,8 @@ void NEMSignTx_NEMProvisionNamespace::SharedDtor() {
 void NEMSignTx_NEMProvisionNamespace::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMSignTx_NEMProvisionNamespace::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMSignTx_NEMProvisionNamespace& NEMSignTx_NEMProvisionNamespace::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMProvisionNamespace.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMSignTx_NEMProvisionNamespace_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2717,7 +3133,7 @@ void NEMSignTx_NEMProvisionNamespace::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       namespace__.ClearNonDefaultToEmptyNoArena();
     }
@@ -2728,14 +3144,106 @@ void NEMSignTx_NEMProvisionNamespace::Clear() {
       sink_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  fee_ = GOOGLE_ULONGLONG(0);
+  fee_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMSignTx_NEMProvisionNamespace::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMSignTx_NEMProvisionNamespace*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string namespace = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMProvisionNamespace.namespace");
+        object = msg->mutable_namespace_();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string parent = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMProvisionNamespace.parent");
+        object = msg->mutable_parent();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string sink = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMProvisionNamespace.sink");
+        object = msg->mutable_sink();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint64 fee = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_fee(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMSignTx_NEMProvisionNamespace::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMSignTx.NEMProvisionNamespace)
   for (;;) {
@@ -2745,8 +3253,7 @@ bool NEMSignTx_NEMProvisionNamespace::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string namespace = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_namespace_()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2761,8 +3268,7 @@ bool NEMSignTx_NEMProvisionNamespace::MergePartialFromCodedStream(
 
       // optional string parent = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_parent()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2777,8 +3283,7 @@ bool NEMSignTx_NEMProvisionNamespace::MergePartialFromCodedStream(
 
       // optional string sink = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_sink()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2793,9 +3298,8 @@ bool NEMSignTx_NEMProvisionNamespace::MergePartialFromCodedStream(
 
       // optional uint64 fee = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_fee();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_fee(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &fee_)));
@@ -2824,6 +3328,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMSignTx_NEMProvisionNamespace::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2875,8 +3380,7 @@ void NEMSignTx_NEMProvisionNamespace::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMSignTx_NEMProvisionNamespace::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMSignTx.NEMProvisionNamespace)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2937,30 +3441,35 @@ size_t NEMSignTx_NEMProvisionNamespace::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional string namespace = 1;
-    if (has_namespace_()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->namespace_());
     }
 
     // optional string parent = 2;
-    if (has_parent()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->parent());
     }
 
     // optional string sink = 3;
-    if (has_sink()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->sink());
     }
 
     // optional uint64 fee = 4;
-    if (has_fee()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->fee());
@@ -2976,9 +3485,9 @@ void NEMSignTx_NEMProvisionNamespace::MergeFrom(const ::google::protobuf::Messag
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMSignTx.NEMProvisionNamespace)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMSignTx_NEMProvisionNamespace* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMSignTx_NEMProvisionNamespace>(
+      ::google::protobuf::DynamicCastToGenerated<NEMSignTx_NEMProvisionNamespace>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMSignTx.NEMProvisionNamespace)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2995,17 +3504,17 @@ void NEMSignTx_NEMProvisionNamespace::MergeFrom(const NEMSignTx_NEMProvisionName
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_namespace_();
+      _has_bits_[0] |= 0x00000001u;
       namespace__.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.namespace__);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_parent();
+      _has_bits_[0] |= 0x00000002u;
       parent_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parent_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_sink();
+      _has_bits_[0] |= 0x00000004u;
       sink_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sink_);
     }
     if (cached_has_bits & 0x00000008u) {
@@ -3039,6 +3548,8 @@ void NEMSignTx_NEMProvisionNamespace::Swap(NEMSignTx_NEMProvisionNamespace* othe
 }
 void NEMSignTx_NEMProvisionNamespace::InternalSwap(NEMSignTx_NEMProvisionNamespace* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   namespace__.Swap(&other->namespace__, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   parent_.Swap(&other->parent_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -3046,13 +3557,11 @@ void NEMSignTx_NEMProvisionNamespace::InternalSwap(NEMSignTx_NEMProvisionNamespa
   sink_.Swap(&other->sink_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(fee_, other->fee_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMSignTx_NEMProvisionNamespace::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3060,6 +3569,52 @@ void NEMSignTx_NEMProvisionNamespace::InternalSwap(NEMSignTx_NEMProvisionNamespa
 
 void NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::InitAsDefaultInstance() {
 }
+class NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::HasBitSetters {
+ public:
+  static void set_has_name(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_ticker(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_namespace_(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_mosaic(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_divisibility(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* msg) {
+    msg->_has_bits_[0] |= 0x00000200u;
+  }
+  static void set_has_levy(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* msg) {
+    msg->_has_bits_[0] |= 0x00002000u;
+  }
+  static void set_has_fee(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static void set_has_levy_address(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_levy_namespace(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_levy_mosaic(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_supply(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* msg) {
+    msg->_has_bits_[0] |= 0x00001000u;
+  }
+  static void set_has_mutable_supply(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* msg) {
+    msg->_has_bits_[0] |= 0x00000400u;
+  }
+  static void set_has_transferable(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* msg) {
+    msg->_has_bits_[0] |= 0x00000800u;
+  }
+  static void set_has_description(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::kNameFieldNumber;
 const int NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::kTickerFieldNumber;
@@ -3079,15 +3634,13 @@ const int NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::kNetworksFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition)
 }
 NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition(const NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       networks_(from.networks_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -3130,6 +3683,8 @@ NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::NEMSignTx_NEMMosaicCreation_NEM
 }
 
 void NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_messages_2dnem_2eproto.base);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ticker_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   namespace__.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3163,13 +3718,8 @@ void NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::SharedDtor() {
 void NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition& NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3182,7 +3732,7 @@ void NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::Clear() {
 
   networks_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
       name_.ClearNonDefaultToEmptyNoArena();
     }
@@ -3208,7 +3758,7 @@ void NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::Clear() {
       description_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 16128u) {
+  if (cached_has_bits & 0x00003f00u) {
     ::memset(&fee_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&supply_) -
         reinterpret_cast<char*>(&fee_)) + sizeof(supply_));
@@ -3218,9 +3768,241 @@ void NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string name = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition.name");
+        object = msg->mutable_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string ticker = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition.ticker");
+        object = msg->mutable_ticker();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string namespace = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition.namespace");
+        object = msg->mutable_namespace_();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string mosaic = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition.mosaic");
+        object = msg->mutable_mosaic();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 divisibility = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_divisibility(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition.NEMMosaicLevy levy = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_NEMMosaicLevy_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(6, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_levy(static_cast<::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_NEMMosaicLevy>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 fee = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_fee(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string levy_address = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 66) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition.levy_address");
+        object = msg->mutable_levy_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string levy_namespace = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 74) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition.levy_namespace");
+        object = msg->mutable_levy_namespace();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string levy_mosaic = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 82) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition.levy_mosaic");
+        object = msg->mutable_levy_mosaic();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint64 supply = 11;
+      case 11: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 88) goto handle_unusual;
+        msg->set_supply(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool mutable_supply = 12;
+      case 12: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 96) goto handle_unusual;
+        msg->set_mutable_supply(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool transferable = 13;
+      case 13: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 104) goto handle_unusual;
+        msg->set_transferable(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string description = 14;
+      case 14: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 114) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition.description");
+        object = msg->mutable_description();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // repeated uint32 networks = 15;
+      case 15: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 120) {
+          do {
+            msg->add_networks(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 120 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 122) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_networks();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition)
   for (;;) {
@@ -3230,8 +4012,7 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string name = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3246,8 +4027,7 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
 
       // optional string ticker = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_ticker()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3262,8 +4042,7 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
 
       // optional string namespace = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_namespace_()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3278,8 +4057,7 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
 
       // optional string mosaic = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_mosaic()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3294,9 +4072,8 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
 
       // optional uint32 divisibility = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_divisibility();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_divisibility(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &divisibility_)));
@@ -3308,9 +4085,8 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
 
       // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition.NEMMosaicLevy levy = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -3318,7 +4094,7 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
             set_levy(static_cast< ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition_NEMMosaicLevy >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                6, static_cast< ::google::protobuf::uint64>(value));
+                6, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -3328,9 +4104,8 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
 
       // optional uint64 fee = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_fee();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_fee(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &fee_)));
@@ -3342,8 +4117,7 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
 
       // optional string levy_address = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (66 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_levy_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3358,8 +4132,7 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
 
       // optional string levy_namespace = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(74u /* 74 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (74 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_levy_namespace()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3374,8 +4147,7 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
 
       // optional string levy_mosaic = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (82 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_levy_mosaic()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3390,9 +4162,8 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
 
       // optional uint64 supply = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(88u /* 88 & 0xFF */)) {
-          set_has_supply();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (88 & 0xFF)) {
+          HasBitSetters::set_has_supply(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &supply_)));
@@ -3404,9 +4175,8 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
 
       // optional bool mutable_supply = 12;
       case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(96u /* 96 & 0xFF */)) {
-          set_has_mutable_supply();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (96 & 0xFF)) {
+          HasBitSetters::set_has_mutable_supply(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &mutable_supply_)));
@@ -3418,9 +4188,8 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
 
       // optional bool transferable = 13;
       case 13: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(104u /* 104 & 0xFF */)) {
-          set_has_transferable();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (104 & 0xFF)) {
+          HasBitSetters::set_has_transferable(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &transferable_)));
@@ -3432,8 +4201,7 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
 
       // optional string description = 14;
       case 14: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(114u /* 114 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (114 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_description()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3448,14 +4216,11 @@ bool NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergePartialFromCodedStrea
 
       // repeated uint32 networks = 15;
       case 15: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(120u /* 120 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (120 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 120u, input, this->mutable_networks())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(122u /* 122 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (122 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_networks())));
@@ -3484,6 +4249,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3617,8 +4383,7 @@ void NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3764,6 +4529,10 @@ size_t NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 networks = 15;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -3773,98 +4542,99 @@ size_t NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 255u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional string name = 1;
-    if (has_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->name());
     }
 
     // optional string ticker = 2;
-    if (has_ticker()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->ticker());
     }
 
     // optional string namespace = 3;
-    if (has_namespace_()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->namespace_());
     }
 
     // optional string mosaic = 4;
-    if (has_mosaic()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->mosaic());
     }
 
     // optional string levy_address = 8;
-    if (has_levy_address()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->levy_address());
     }
 
     // optional string levy_namespace = 9;
-    if (has_levy_namespace()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->levy_namespace());
     }
 
     // optional string levy_mosaic = 10;
-    if (has_levy_mosaic()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->levy_mosaic());
     }
 
     // optional string description = 14;
-    if (has_description()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->description());
     }
 
   }
-  if (_has_bits_[8 / 32] & 16128u) {
+  if (cached_has_bits & 0x00003f00u) {
     // optional uint64 fee = 7;
-    if (has_fee()) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->fee());
     }
 
     // optional uint32 divisibility = 5;
-    if (has_divisibility()) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->divisibility());
     }
 
     // optional bool mutable_supply = 12;
-    if (has_mutable_supply()) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 1 + 1;
     }
 
     // optional bool transferable = 13;
-    if (has_transferable()) {
+    if (cached_has_bits & 0x00000800u) {
       total_size += 1 + 1;
     }
 
     // optional uint64 supply = 11;
-    if (has_supply()) {
+    if (cached_has_bits & 0x00001000u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->supply());
     }
 
     // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition.NEMMosaicLevy levy = 6;
-    if (has_levy()) {
+    if (cached_has_bits & 0x00002000u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->levy());
     }
@@ -3879,9 +4649,9 @@ void NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergeFrom(const ::google::
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition>(
+      ::google::protobuf::DynamicCastToGenerated<NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3899,41 +4669,41 @@ void NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::MergeFrom(const NEMSignTx_
 
   networks_.MergeFrom(from.networks_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_name();
+      _has_bits_[0] |= 0x00000001u;
       name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_ticker();
+      _has_bits_[0] |= 0x00000002u;
       ticker_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.ticker_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_namespace_();
+      _has_bits_[0] |= 0x00000004u;
       namespace__.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.namespace__);
     }
     if (cached_has_bits & 0x00000008u) {
-      set_has_mosaic();
+      _has_bits_[0] |= 0x00000008u;
       mosaic_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.mosaic_);
     }
     if (cached_has_bits & 0x00000010u) {
-      set_has_levy_address();
+      _has_bits_[0] |= 0x00000010u;
       levy_address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.levy_address_);
     }
     if (cached_has_bits & 0x00000020u) {
-      set_has_levy_namespace();
+      _has_bits_[0] |= 0x00000020u;
       levy_namespace_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.levy_namespace_);
     }
     if (cached_has_bits & 0x00000040u) {
-      set_has_levy_mosaic();
+      _has_bits_[0] |= 0x00000040u;
       levy_mosaic_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.levy_mosaic_);
     }
     if (cached_has_bits & 0x00000080u) {
-      set_has_description();
+      _has_bits_[0] |= 0x00000080u;
       description_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.description_);
     }
   }
-  if (cached_has_bits & 16128u) {
+  if (cached_has_bits & 0x00003f00u) {
     if (cached_has_bits & 0x00000100u) {
       fee_ = from.fee_;
     }
@@ -3980,6 +4750,8 @@ void NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::Swap(NEMSignTx_NEMMosaicCr
 }
 void NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::InternalSwap(NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   networks_.InternalSwap(&other->networks_);
   name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -4003,13 +4775,11 @@ void NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::InternalSwap(NEMSignTx_NEM
   swap(transferable_, other->transferable_);
   swap(supply_, other->supply_);
   swap(levy_, other->levy_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4019,6 +4789,24 @@ void NEMSignTx_NEMMosaicCreation::InitAsDefaultInstance() {
   ::hw::trezor::messages::nem::_NEMSignTx_NEMMosaicCreation_default_instance_._instance.get_mutable()->definition_ = const_cast< ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition*>(
       ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::internal_default_instance());
 }
+class NEMSignTx_NEMMosaicCreation::HasBitSetters {
+ public:
+  static const ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition& definition(const NEMSignTx_NEMMosaicCreation* msg);
+  static void set_has_definition(NEMSignTx_NEMMosaicCreation* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_sink(NEMSignTx_NEMMosaicCreation* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_fee(NEMSignTx_NEMMosaicCreation* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
+const ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition&
+NEMSignTx_NEMMosaicCreation::HasBitSetters::definition(const NEMSignTx_NEMMosaicCreation* msg) {
+  return *msg->definition_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMSignTx_NEMMosaicCreation::kDefinitionFieldNumber;
 const int NEMSignTx_NEMMosaicCreation::kSinkFieldNumber;
@@ -4026,15 +4814,13 @@ const int NEMSignTx_NEMMosaicCreation::kFeeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMSignTx_NEMMosaicCreation::NEMSignTx_NEMMosaicCreation()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMMosaicCreation.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation)
 }
 NEMSignTx_NEMMosaicCreation::NEMSignTx_NEMMosaicCreation(const NEMSignTx_NEMMosaicCreation& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   sink_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4044,13 +4830,15 @@ NEMSignTx_NEMMosaicCreation::NEMSignTx_NEMMosaicCreation(const NEMSignTx_NEMMosa
   if (from.has_definition()) {
     definition_ = new ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition(*from.definition_);
   } else {
-    definition_ = NULL;
+    definition_ = nullptr;
   }
   fee_ = from.fee_;
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation)
 }
 
 void NEMSignTx_NEMMosaicCreation::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMSignTx_NEMMosaicCreation_messages_2dnem_2eproto.base);
   sink_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&definition_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&fee_) -
@@ -4070,13 +4858,8 @@ void NEMSignTx_NEMMosaicCreation::SharedDtor() {
 void NEMSignTx_NEMMosaicCreation::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMSignTx_NEMMosaicCreation::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMSignTx_NEMMosaicCreation& NEMSignTx_NEMMosaicCreation::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMMosaicCreation.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMSignTx_NEMMosaicCreation_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4088,23 +4871,96 @@ void NEMSignTx_NEMMosaicCreation::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       sink_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(definition_ != NULL);
+      GOOGLE_DCHECK(definition_ != nullptr);
       definition_->Clear();
     }
   }
-  fee_ = GOOGLE_ULONGLONG(0);
+  fee_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMSignTx_NEMMosaicCreation::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMSignTx_NEMMosaicCreation*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition definition = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition::_InternalParse;
+        object = msg->mutable_definition();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional string sink = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.sink");
+        object = msg->mutable_sink();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint64 fee = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_fee(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMSignTx_NEMMosaicCreation::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation)
   for (;;) {
@@ -4114,8 +4970,7 @@ bool NEMSignTx_NEMMosaicCreation::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition definition = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_definition()));
         } else {
@@ -4126,8 +4981,7 @@ bool NEMSignTx_NEMMosaicCreation::MergePartialFromCodedStream(
 
       // optional string sink = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_sink()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4142,9 +4996,8 @@ bool NEMSignTx_NEMMosaicCreation::MergePartialFromCodedStream(
 
       // optional uint64 fee = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_fee();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_fee(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &fee_)));
@@ -4173,6 +5026,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMSignTx_NEMMosaicCreation::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4184,7 +5038,7 @@ void NEMSignTx_NEMMosaicCreation::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition definition = 1;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_definition(), output);
+      1, HasBitSetters::definition(this), output);
   }
 
   // optional string sink = 2;
@@ -4210,8 +5064,7 @@ void NEMSignTx_NEMMosaicCreation::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMSignTx_NEMMosaicCreation::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4221,7 +5074,7 @@ void NEMSignTx_NEMMosaicCreation::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_definition(), deterministic, target);
+        1, HasBitSetters::definition(this), target);
   }
 
   // optional string sink = 2;
@@ -4257,23 +5110,28 @@ size_t NEMSignTx_NEMMosaicCreation::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string sink = 2;
-    if (has_sink()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->sink());
     }
 
     // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation.NEMMosaicDefinition definition = 1;
-    if (has_definition()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *definition_);
     }
 
     // optional uint64 fee = 3;
-    if (has_fee()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->fee());
@@ -4289,9 +5147,9 @@ void NEMSignTx_NEMMosaicCreation::MergeFrom(const ::google::protobuf::Message& f
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMSignTx_NEMMosaicCreation* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMSignTx_NEMMosaicCreation>(
+      ::google::protobuf::DynamicCastToGenerated<NEMSignTx_NEMMosaicCreation>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4308,9 +5166,9 @@ void NEMSignTx_NEMMosaicCreation::MergeFrom(const NEMSignTx_NEMMosaicCreation& f
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_sink();
+      _has_bits_[0] |= 0x00000001u;
       sink_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sink_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -4347,17 +5205,17 @@ void NEMSignTx_NEMMosaicCreation::Swap(NEMSignTx_NEMMosaicCreation* other) {
 }
 void NEMSignTx_NEMMosaicCreation::InternalSwap(NEMSignTx_NEMMosaicCreation* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   sink_.Swap(&other->sink_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(definition_, other->definition_);
   swap(fee_, other->fee_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMSignTx_NEMMosaicCreation::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4365,6 +5223,22 @@ void NEMSignTx_NEMMosaicCreation::InternalSwap(NEMSignTx_NEMMosaicCreation* othe
 
 void NEMSignTx_NEMMosaicSupplyChange::InitAsDefaultInstance() {
 }
+class NEMSignTx_NEMMosaicSupplyChange::HasBitSetters {
+ public:
+  static void set_has_namespace_(NEMSignTx_NEMMosaicSupplyChange* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_mosaic(NEMSignTx_NEMMosaicSupplyChange* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_type(NEMSignTx_NEMMosaicSupplyChange* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_delta(NEMSignTx_NEMMosaicSupplyChange* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMSignTx_NEMMosaicSupplyChange::kNamespaceFieldNumber;
 const int NEMSignTx_NEMMosaicSupplyChange::kMosaicFieldNumber;
@@ -4373,15 +5247,13 @@ const int NEMSignTx_NEMMosaicSupplyChange::kDeltaFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMSignTx_NEMMosaicSupplyChange::NEMSignTx_NEMMosaicSupplyChange()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMMosaicSupplyChange.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange)
 }
 NEMSignTx_NEMMosaicSupplyChange::NEMSignTx_NEMMosaicSupplyChange(const NEMSignTx_NEMMosaicSupplyChange& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   namespace__.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4399,9 +5271,11 @@ NEMSignTx_NEMMosaicSupplyChange::NEMSignTx_NEMMosaicSupplyChange(const NEMSignTx
 }
 
 void NEMSignTx_NEMMosaicSupplyChange::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMSignTx_NEMMosaicSupplyChange_messages_2dnem_2eproto.base);
   namespace__.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   mosaic_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  delta_ = GOOGLE_ULONGLONG(0);
+  delta_ = PROTOBUF_ULONGLONG(0);
   type_ = 1;
 }
 
@@ -4418,13 +5292,8 @@ void NEMSignTx_NEMMosaicSupplyChange::SharedDtor() {
 void NEMSignTx_NEMMosaicSupplyChange::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMSignTx_NEMMosaicSupplyChange::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMSignTx_NEMMosaicSupplyChange& NEMSignTx_NEMMosaicSupplyChange::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMMosaicSupplyChange.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMSignTx_NEMMosaicSupplyChange_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4436,7 +5305,7 @@ void NEMSignTx_NEMMosaicSupplyChange::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       namespace__.ClearNonDefaultToEmptyNoArena();
     }
@@ -4444,17 +5313,105 @@ void NEMSignTx_NEMMosaicSupplyChange::Clear() {
       mosaic_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 12u) {
-    delta_ = GOOGLE_ULONGLONG(0);
+  if (cached_has_bits & 0x0000000cu) {
+    delta_ = PROTOBUF_ULONGLONG(0);
     type_ = 1;
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMSignTx_NEMMosaicSupplyChange::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMSignTx_NEMMosaicSupplyChange*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string namespace = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange.namespace");
+        object = msg->mutable_namespace_();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string mosaic = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange.mosaic");
+        object = msg->mutable_mosaic();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange.NEMSupplyChangeType type = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange_NEMSupplyChangeType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(3, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_type(static_cast<::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange_NEMSupplyChangeType>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 delta = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_delta(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMSignTx_NEMMosaicSupplyChange::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange)
   for (;;) {
@@ -4464,8 +5421,7 @@ bool NEMSignTx_NEMMosaicSupplyChange::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string namespace = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_namespace_()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4480,8 +5436,7 @@ bool NEMSignTx_NEMMosaicSupplyChange::MergePartialFromCodedStream(
 
       // optional string mosaic = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_mosaic()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4496,9 +5451,8 @@ bool NEMSignTx_NEMMosaicSupplyChange::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange.NEMSupplyChangeType type = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -4506,7 +5460,7 @@ bool NEMSignTx_NEMMosaicSupplyChange::MergePartialFromCodedStream(
             set_type(static_cast< ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange_NEMSupplyChangeType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                3, static_cast< ::google::protobuf::uint64>(value));
+                3, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -4516,9 +5470,8 @@ bool NEMSignTx_NEMMosaicSupplyChange::MergePartialFromCodedStream(
 
       // optional uint64 delta = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_delta();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_delta(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &delta_)));
@@ -4547,6 +5500,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMSignTx_NEMMosaicSupplyChange::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4594,8 +5548,7 @@ void NEMSignTx_NEMMosaicSupplyChange::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMSignTx_NEMMosaicSupplyChange::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4651,30 +5604,35 @@ size_t NEMSignTx_NEMMosaicSupplyChange::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional string namespace = 1;
-    if (has_namespace_()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->namespace_());
     }
 
     // optional string mosaic = 2;
-    if (has_mosaic()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->mosaic());
     }
 
     // optional uint64 delta = 4;
-    if (has_delta()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->delta());
     }
 
     // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange.NEMSupplyChangeType type = 3;
-    if (has_type()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
     }
@@ -4689,9 +5647,9 @@ void NEMSignTx_NEMMosaicSupplyChange::MergeFrom(const ::google::protobuf::Messag
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMSignTx_NEMMosaicSupplyChange* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMSignTx_NEMMosaicSupplyChange>(
+      ::google::protobuf::DynamicCastToGenerated<NEMSignTx_NEMMosaicSupplyChange>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4708,13 +5666,13 @@ void NEMSignTx_NEMMosaicSupplyChange::MergeFrom(const NEMSignTx_NEMMosaicSupplyC
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_namespace_();
+      _has_bits_[0] |= 0x00000001u;
       namespace__.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.namespace__);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_mosaic();
+      _has_bits_[0] |= 0x00000002u;
       mosaic_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.mosaic_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -4751,19 +5709,19 @@ void NEMSignTx_NEMMosaicSupplyChange::Swap(NEMSignTx_NEMMosaicSupplyChange* othe
 }
 void NEMSignTx_NEMMosaicSupplyChange::InternalSwap(NEMSignTx_NEMMosaicSupplyChange* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   namespace__.Swap(&other->namespace__, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   mosaic_.Swap(&other->mosaic_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(delta_, other->delta_);
   swap(type_, other->type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMSignTx_NEMMosaicSupplyChange::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4771,21 +5729,29 @@ void NEMSignTx_NEMMosaicSupplyChange::InternalSwap(NEMSignTx_NEMMosaicSupplyChan
 
 void NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::InitAsDefaultInstance() {
 }
+class NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::HasBitSetters {
+ public:
+  static void set_has_type(NEMSignTx_NEMAggregateModification_NEMCosignatoryModification* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_public_key(NEMSignTx_NEMAggregateModification_NEMCosignatoryModification* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::kTypeFieldNumber;
 const int NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::kPublicKeyFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMAggregateModification_NEMCosignatoryModification.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification.NEMCosignatoryModification)
 }
 NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification(const NEMSignTx_NEMAggregateModification_NEMCosignatoryModification& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4797,6 +5763,8 @@ NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::NEMSignTx_NEMAggr
 }
 
 void NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMSignTx_NEMAggregateModification_NEMCosignatoryModification_messages_2dnem_2eproto.base);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   type_ = 1;
 }
@@ -4813,13 +5781,8 @@ void NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::SharedDtor()
 void NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMSignTx_NEMAggregateModification_NEMCosignatoryModification& NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMAggregateModification_NEMCosignatoryModification.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMSignTx_NEMAggregateModification_NEMCosignatoryModification_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4831,7 +5794,7 @@ void NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       public_key_.ClearNonDefaultToEmptyNoArena();
     }
@@ -4841,9 +5804,73 @@ void NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMSignTx_NEMAggregateModification_NEMCosignatoryModification*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification.NEMCosignatoryModification.NEMModificationType type = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification_NEMModificationType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(1, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_type(static_cast<::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification_NEMModificationType>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes public_key = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification.NEMCosignatoryModification)
   for (;;) {
@@ -4853,9 +5880,8 @@ bool NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::MergePartial
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification.NEMCosignatoryModification.NEMModificationType type = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -4863,7 +5889,7 @@ bool NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::MergePartial
             set_type(static_cast< ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification_NEMModificationType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                1, static_cast< ::google::protobuf::uint64>(value));
+                1, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -4873,8 +5899,7 @@ bool NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::MergePartial
 
       // optional bytes public_key = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_public_key()));
         } else {
@@ -4902,6 +5927,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4930,8 +5956,7 @@ void NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::SerializeWit
 }
 
 ::google::protobuf::uint8* NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification.NEMCosignatoryModification)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4967,16 +5992,21 @@ size_t NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::ByteSizeLo
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes public_key = 2;
-    if (has_public_key()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->public_key());
     }
 
     // optional .hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification.NEMCosignatoryModification.NEMModificationType type = 1;
-    if (has_type()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
     }
@@ -4991,9 +6021,9 @@ void NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::MergeFrom(co
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification.NEMCosignatoryModification)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMSignTx_NEMAggregateModification_NEMCosignatoryModification* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMSignTx_NEMAggregateModification_NEMCosignatoryModification>(
+      ::google::protobuf::DynamicCastToGenerated<NEMSignTx_NEMAggregateModification_NEMCosignatoryModification>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification.NEMCosignatoryModification)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5010,9 +6040,9 @@ void NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::MergeFrom(co
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_public_key();
+      _has_bits_[0] |= 0x00000001u;
       public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -5046,16 +6076,16 @@ void NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::Swap(NEMSign
 }
 void NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::InternalSwap(NEMSignTx_NEMAggregateModification_NEMCosignatoryModification* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(type_, other->type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5063,21 +6093,26 @@ void NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::InternalSwap
 
 void NEMSignTx_NEMAggregateModification::InitAsDefaultInstance() {
 }
+class NEMSignTx_NEMAggregateModification::HasBitSetters {
+ public:
+  static void set_has_relative_change(NEMSignTx_NEMAggregateModification* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMSignTx_NEMAggregateModification::kModificationsFieldNumber;
 const int NEMSignTx_NEMAggregateModification::kRelativeChangeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMSignTx_NEMAggregateModification::NEMSignTx_NEMAggregateModification()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMAggregateModification.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification)
 }
 NEMSignTx_NEMAggregateModification::NEMSignTx_NEMAggregateModification(const NEMSignTx_NEMAggregateModification& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       modifications_(from.modifications_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -5086,6 +6121,8 @@ NEMSignTx_NEMAggregateModification::NEMSignTx_NEMAggregateModification(const NEM
 }
 
 void NEMSignTx_NEMAggregateModification::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMSignTx_NEMAggregateModification_messages_2dnem_2eproto.base);
   relative_change_ = 0;
 }
 
@@ -5100,13 +6137,8 @@ void NEMSignTx_NEMAggregateModification::SharedDtor() {
 void NEMSignTx_NEMAggregateModification::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMSignTx_NEMAggregateModification::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMSignTx_NEMAggregateModification& NEMSignTx_NEMAggregateModification::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMAggregateModification.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMSignTx_NEMAggregateModification_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5123,9 +6155,65 @@ void NEMSignTx_NEMAggregateModification::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMSignTx_NEMAggregateModification::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMSignTx_NEMAggregateModification*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated .hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification.NEMCosignatoryModification modifications = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification::_InternalParse;
+          object = msg->add_modifications();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
+        break;
+      }
+      // optional sint32 relative_change = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_relative_change(::google::protobuf::internal::ReadVarintZigZag32(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMSignTx_NEMAggregateModification::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification)
   for (;;) {
@@ -5135,8 +6223,7 @@ bool NEMSignTx_NEMAggregateModification::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification.NEMCosignatoryModification modifications = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_modifications()));
         } else {
@@ -5147,9 +6234,8 @@ bool NEMSignTx_NEMAggregateModification::MergePartialFromCodedStream(
 
       // optional sint32 relative_change = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_relative_change();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_relative_change(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_SINT32>(
                  input, &relative_change_)));
@@ -5178,6 +6264,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMSignTx_NEMAggregateModification::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5208,8 +6295,7 @@ void NEMSignTx_NEMAggregateModification::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMSignTx_NEMAggregateModification::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5219,7 +6305,7 @@ void NEMSignTx_NEMAggregateModification::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->modifications_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->modifications(static_cast<int>(i)), deterministic, target);
+        1, this->modifications(static_cast<int>(i)), target);
   }
 
   cached_has_bits = _has_bits_[0];
@@ -5245,6 +6331,10 @@ size_t NEMSignTx_NEMAggregateModification::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification.NEMCosignatoryModification modifications = 1;
   {
     unsigned int count = static_cast<unsigned int>(this->modifications_size());
@@ -5257,7 +6347,8 @@ size_t NEMSignTx_NEMAggregateModification::ByteSizeLong() const {
   }
 
   // optional sint32 relative_change = 2;
-  if (has_relative_change()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::SInt32Size(
         this->relative_change());
@@ -5272,9 +6363,9 @@ void NEMSignTx_NEMAggregateModification::MergeFrom(const ::google::protobuf::Mes
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMSignTx_NEMAggregateModification* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMSignTx_NEMAggregateModification>(
+      ::google::protobuf::DynamicCastToGenerated<NEMSignTx_NEMAggregateModification>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5320,15 +6411,15 @@ void NEMSignTx_NEMAggregateModification::Swap(NEMSignTx_NEMAggregateModification
 }
 void NEMSignTx_NEMAggregateModification::InternalSwap(NEMSignTx_NEMAggregateModification* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&modifications_)->InternalSwap(CastToBase(&other->modifications_));
   swap(relative_change_, other->relative_change_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMSignTx_NEMAggregateModification::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5336,21 +6427,29 @@ void NEMSignTx_NEMAggregateModification::InternalSwap(NEMSignTx_NEMAggregateModi
 
 void NEMSignTx_NEMImportanceTransfer::InitAsDefaultInstance() {
 }
+class NEMSignTx_NEMImportanceTransfer::HasBitSetters {
+ public:
+  static void set_has_mode(NEMSignTx_NEMImportanceTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_public_key(NEMSignTx_NEMImportanceTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMSignTx_NEMImportanceTransfer::kModeFieldNumber;
 const int NEMSignTx_NEMImportanceTransfer::kPublicKeyFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMSignTx_NEMImportanceTransfer::NEMSignTx_NEMImportanceTransfer()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMImportanceTransfer.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMSignTx.NEMImportanceTransfer)
 }
 NEMSignTx_NEMImportanceTransfer::NEMSignTx_NEMImportanceTransfer(const NEMSignTx_NEMImportanceTransfer& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -5362,6 +6461,8 @@ NEMSignTx_NEMImportanceTransfer::NEMSignTx_NEMImportanceTransfer(const NEMSignTx
 }
 
 void NEMSignTx_NEMImportanceTransfer::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMSignTx_NEMImportanceTransfer_messages_2dnem_2eproto.base);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   mode_ = 1;
 }
@@ -5378,13 +6479,8 @@ void NEMSignTx_NEMImportanceTransfer::SharedDtor() {
 void NEMSignTx_NEMImportanceTransfer::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMSignTx_NEMImportanceTransfer::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMSignTx_NEMImportanceTransfer& NEMSignTx_NEMImportanceTransfer::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx_NEMImportanceTransfer.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMSignTx_NEMImportanceTransfer_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5396,7 +6492,7 @@ void NEMSignTx_NEMImportanceTransfer::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       public_key_.ClearNonDefaultToEmptyNoArena();
     }
@@ -5406,9 +6502,73 @@ void NEMSignTx_NEMImportanceTransfer::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMSignTx_NEMImportanceTransfer::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMSignTx_NEMImportanceTransfer*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.nem.NEMSignTx.NEMImportanceTransfer.NEMImportanceTransferMode mode = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer_NEMImportanceTransferMode_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(1, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_mode(static_cast<::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer_NEMImportanceTransferMode>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes public_key = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMSignTx_NEMImportanceTransfer::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMSignTx.NEMImportanceTransfer)
   for (;;) {
@@ -5418,9 +6578,8 @@ bool NEMSignTx_NEMImportanceTransfer::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.nem.NEMSignTx.NEMImportanceTransfer.NEMImportanceTransferMode mode = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -5428,7 +6587,7 @@ bool NEMSignTx_NEMImportanceTransfer::MergePartialFromCodedStream(
             set_mode(static_cast< ::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer_NEMImportanceTransferMode >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                1, static_cast< ::google::protobuf::uint64>(value));
+                1, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -5438,8 +6597,7 @@ bool NEMSignTx_NEMImportanceTransfer::MergePartialFromCodedStream(
 
       // optional bytes public_key = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_public_key()));
         } else {
@@ -5467,6 +6625,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMSignTx_NEMImportanceTransfer::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5495,8 +6654,7 @@ void NEMSignTx_NEMImportanceTransfer::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMSignTx_NEMImportanceTransfer::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMSignTx.NEMImportanceTransfer)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5532,16 +6690,21 @@ size_t NEMSignTx_NEMImportanceTransfer::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes public_key = 2;
-    if (has_public_key()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->public_key());
     }
 
     // optional .hw.trezor.messages.nem.NEMSignTx.NEMImportanceTransfer.NEMImportanceTransferMode mode = 1;
-    if (has_mode()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->mode());
     }
@@ -5556,9 +6719,9 @@ void NEMSignTx_NEMImportanceTransfer::MergeFrom(const ::google::protobuf::Messag
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMSignTx.NEMImportanceTransfer)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMSignTx_NEMImportanceTransfer* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMSignTx_NEMImportanceTransfer>(
+      ::google::protobuf::DynamicCastToGenerated<NEMSignTx_NEMImportanceTransfer>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMSignTx.NEMImportanceTransfer)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5575,9 +6738,9 @@ void NEMSignTx_NEMImportanceTransfer::MergeFrom(const NEMSignTx_NEMImportanceTra
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_public_key();
+      _has_bits_[0] |= 0x00000001u;
       public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -5611,16 +6774,16 @@ void NEMSignTx_NEMImportanceTransfer::Swap(NEMSignTx_NEMImportanceTransfer* othe
 }
 void NEMSignTx_NEMImportanceTransfer::InternalSwap(NEMSignTx_NEMImportanceTransfer* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(mode_, other->mode_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMSignTx_NEMImportanceTransfer::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5644,6 +6807,77 @@ void NEMSignTx::InitAsDefaultInstance() {
   ::hw::trezor::messages::nem::_NEMSignTx_default_instance_._instance.get_mutable()->importance_transfer_ = const_cast< ::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer*>(
       ::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer::internal_default_instance());
 }
+class NEMSignTx::HasBitSetters {
+ public:
+  static const ::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon& transaction(const NEMSignTx* msg);
+  static void set_has_transaction(NEMSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon& multisig(const NEMSignTx* msg);
+  static void set_has_multisig(NEMSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static const ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer& transfer(const NEMSignTx* msg);
+  static void set_has_transfer(NEMSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_cosigning(NEMSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static const ::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace& provision_namespace(const NEMSignTx* msg);
+  static void set_has_provision_namespace(NEMSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static const ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation& mosaic_creation(const NEMSignTx* msg);
+  static void set_has_mosaic_creation(NEMSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static const ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange& supply_change(const NEMSignTx* msg);
+  static void set_has_supply_change(NEMSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static const ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification& aggregate_modification(const NEMSignTx* msg);
+  static void set_has_aggregate_modification(NEMSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static const ::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer& importance_transfer(const NEMSignTx* msg);
+  static void set_has_importance_transfer(NEMSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+};
+
+const ::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon&
+NEMSignTx::HasBitSetters::transaction(const NEMSignTx* msg) {
+  return *msg->transaction_;
+}
+const ::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon&
+NEMSignTx::HasBitSetters::multisig(const NEMSignTx* msg) {
+  return *msg->multisig_;
+}
+const ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer&
+NEMSignTx::HasBitSetters::transfer(const NEMSignTx* msg) {
+  return *msg->transfer_;
+}
+const ::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace&
+NEMSignTx::HasBitSetters::provision_namespace(const NEMSignTx* msg) {
+  return *msg->provision_namespace_;
+}
+const ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation&
+NEMSignTx::HasBitSetters::mosaic_creation(const NEMSignTx* msg) {
+  return *msg->mosaic_creation_;
+}
+const ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange&
+NEMSignTx::HasBitSetters::supply_change(const NEMSignTx* msg) {
+  return *msg->supply_change_;
+}
+const ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification&
+NEMSignTx::HasBitSetters::aggregate_modification(const NEMSignTx* msg) {
+  return *msg->aggregate_modification_;
+}
+const ::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer&
+NEMSignTx::HasBitSetters::importance_transfer(const NEMSignTx* msg) {
+  return *msg->importance_transfer_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMSignTx::kTransactionFieldNumber;
 const int NEMSignTx::kMultisigFieldNumber;
@@ -5657,62 +6891,62 @@ const int NEMSignTx::kImportanceTransferFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMSignTx::NEMSignTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMSignTx)
 }
 NEMSignTx::NEMSignTx(const NEMSignTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_transaction()) {
     transaction_ = new ::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon(*from.transaction_);
   } else {
-    transaction_ = NULL;
+    transaction_ = nullptr;
   }
   if (from.has_multisig()) {
     multisig_ = new ::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon(*from.multisig_);
   } else {
-    multisig_ = NULL;
+    multisig_ = nullptr;
   }
   if (from.has_transfer()) {
     transfer_ = new ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer(*from.transfer_);
   } else {
-    transfer_ = NULL;
+    transfer_ = nullptr;
   }
   if (from.has_provision_namespace()) {
     provision_namespace_ = new ::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace(*from.provision_namespace_);
   } else {
-    provision_namespace_ = NULL;
+    provision_namespace_ = nullptr;
   }
   if (from.has_mosaic_creation()) {
     mosaic_creation_ = new ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation(*from.mosaic_creation_);
   } else {
-    mosaic_creation_ = NULL;
+    mosaic_creation_ = nullptr;
   }
   if (from.has_supply_change()) {
     supply_change_ = new ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange(*from.supply_change_);
   } else {
-    supply_change_ = NULL;
+    supply_change_ = nullptr;
   }
   if (from.has_aggregate_modification()) {
     aggregate_modification_ = new ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification(*from.aggregate_modification_);
   } else {
-    aggregate_modification_ = NULL;
+    aggregate_modification_ = nullptr;
   }
   if (from.has_importance_transfer()) {
     importance_transfer_ = new ::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer(*from.importance_transfer_);
   } else {
-    importance_transfer_ = NULL;
+    importance_transfer_ = nullptr;
   }
   cosigning_ = from.cosigning_;
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.nem.NEMSignTx)
 }
 
 void NEMSignTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMSignTx_messages_2dnem_2eproto.base);
   ::memset(&transaction_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&cosigning_) -
       reinterpret_cast<char*>(&transaction_)) + sizeof(cosigning_));
@@ -5737,13 +6971,8 @@ void NEMSignTx::SharedDtor() {
 void NEMSignTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMSignTx::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMSignTx& NEMSignTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMSignTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMSignTx_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5755,37 +6984,37 @@ void NEMSignTx::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(transaction_ != NULL);
+      GOOGLE_DCHECK(transaction_ != nullptr);
       transaction_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(multisig_ != NULL);
+      GOOGLE_DCHECK(multisig_ != nullptr);
       multisig_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(transfer_ != NULL);
+      GOOGLE_DCHECK(transfer_ != nullptr);
       transfer_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(provision_namespace_ != NULL);
+      GOOGLE_DCHECK(provision_namespace_ != nullptr);
       provision_namespace_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(mosaic_creation_ != NULL);
+      GOOGLE_DCHECK(mosaic_creation_ != nullptr);
       mosaic_creation_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(supply_change_ != NULL);
+      GOOGLE_DCHECK(supply_change_ != nullptr);
       supply_change_->Clear();
     }
     if (cached_has_bits & 0x00000040u) {
-      GOOGLE_DCHECK(aggregate_modification_ != NULL);
+      GOOGLE_DCHECK(aggregate_modification_ != nullptr);
       aggregate_modification_->Clear();
     }
     if (cached_has_bits & 0x00000080u) {
-      GOOGLE_DCHECK(importance_transfer_ != NULL);
+      GOOGLE_DCHECK(importance_transfer_ != nullptr);
       importance_transfer_->Clear();
     }
   }
@@ -5794,9 +7023,153 @@ void NEMSignTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMSignTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMSignTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.nem.NEMSignTx.NEMTransactionCommon transaction = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon::_InternalParse;
+        object = msg->mutable_transaction();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.nem.NEMSignTx.NEMTransactionCommon multisig = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon::_InternalParse;
+        object = msg->mutable_multisig();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.nem.NEMSignTx.NEMTransfer transfer = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer::_InternalParse;
+        object = msg->mutable_transfer();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional bool cosigning = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_cosigning(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.nem.NEMSignTx.NEMProvisionNamespace provision_namespace = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace::_InternalParse;
+        object = msg->mutable_provision_namespace();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation mosaic_creation = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation::_InternalParse;
+        object = msg->mutable_mosaic_creation();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange supply_change = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 58) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange::_InternalParse;
+        object = msg->mutable_supply_change();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification aggregate_modification = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 66) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification::_InternalParse;
+        object = msg->mutable_aggregate_modification();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.nem.NEMSignTx.NEMImportanceTransfer importance_transfer = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 74) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer::_InternalParse;
+        object = msg->mutable_importance_transfer();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMSignTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMSignTx)
   for (;;) {
@@ -5806,8 +7179,7 @@ bool NEMSignTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.nem.NEMSignTx.NEMTransactionCommon transaction = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_transaction()));
         } else {
@@ -5818,8 +7190,7 @@ bool NEMSignTx::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.nem.NEMSignTx.NEMTransactionCommon multisig = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_multisig()));
         } else {
@@ -5830,8 +7201,7 @@ bool NEMSignTx::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.nem.NEMSignTx.NEMTransfer transfer = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_transfer()));
         } else {
@@ -5842,9 +7212,8 @@ bool NEMSignTx::MergePartialFromCodedStream(
 
       // optional bool cosigning = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_cosigning();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_cosigning(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &cosigning_)));
@@ -5856,8 +7225,7 @@ bool NEMSignTx::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.nem.NEMSignTx.NEMProvisionNamespace provision_namespace = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_provision_namespace()));
         } else {
@@ -5868,8 +7236,7 @@ bool NEMSignTx::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation mosaic_creation = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_mosaic_creation()));
         } else {
@@ -5880,8 +7247,7 @@ bool NEMSignTx::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange supply_change = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (58 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_supply_change()));
         } else {
@@ -5892,8 +7258,7 @@ bool NEMSignTx::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification aggregate_modification = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (66 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_aggregate_modification()));
         } else {
@@ -5904,8 +7269,7 @@ bool NEMSignTx::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.nem.NEMSignTx.NEMImportanceTransfer importance_transfer = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(74u /* 74 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (74 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_importance_transfer()));
         } else {
@@ -5933,6 +7297,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMSignTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5944,19 +7309,19 @@ void NEMSignTx::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMTransactionCommon transaction = 1;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_transaction(), output);
+      1, HasBitSetters::transaction(this), output);
   }
 
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMTransactionCommon multisig = 2;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_multisig(), output);
+      2, HasBitSetters::multisig(this), output);
   }
 
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMTransfer transfer = 3;
   if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_transfer(), output);
+      3, HasBitSetters::transfer(this), output);
   }
 
   // optional bool cosigning = 4;
@@ -5967,31 +7332,31 @@ void NEMSignTx::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMProvisionNamespace provision_namespace = 5;
   if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->_internal_provision_namespace(), output);
+      5, HasBitSetters::provision_namespace(this), output);
   }
 
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation mosaic_creation = 6;
   if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, this->_internal_mosaic_creation(), output);
+      6, HasBitSetters::mosaic_creation(this), output);
   }
 
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange supply_change = 7;
   if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, this->_internal_supply_change(), output);
+      7, HasBitSetters::supply_change(this), output);
   }
 
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification aggregate_modification = 8;
   if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      8, this->_internal_aggregate_modification(), output);
+      8, HasBitSetters::aggregate_modification(this), output);
   }
 
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMImportanceTransfer importance_transfer = 9;
   if (cached_has_bits & 0x00000080u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      9, this->_internal_importance_transfer(), output);
+      9, HasBitSetters::importance_transfer(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6002,8 +7367,7 @@ void NEMSignTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMSignTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMSignTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6013,21 +7377,21 @@ void NEMSignTx::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_transaction(), deterministic, target);
+        1, HasBitSetters::transaction(this), target);
   }
 
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMTransactionCommon multisig = 2;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_multisig(), deterministic, target);
+        2, HasBitSetters::multisig(this), target);
   }
 
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMTransfer transfer = 3;
   if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_transfer(), deterministic, target);
+        3, HasBitSetters::transfer(this), target);
   }
 
   // optional bool cosigning = 4;
@@ -6039,35 +7403,35 @@ void NEMSignTx::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->_internal_provision_namespace(), deterministic, target);
+        5, HasBitSetters::provision_namespace(this), target);
   }
 
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation mosaic_creation = 6;
   if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        6, this->_internal_mosaic_creation(), deterministic, target);
+        6, HasBitSetters::mosaic_creation(this), target);
   }
 
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange supply_change = 7;
   if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        7, this->_internal_supply_change(), deterministic, target);
+        7, HasBitSetters::supply_change(this), target);
   }
 
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification aggregate_modification = 8;
   if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        8, this->_internal_aggregate_modification(), deterministic, target);
+        8, HasBitSetters::aggregate_modification(this), target);
   }
 
   // optional .hw.trezor.messages.nem.NEMSignTx.NEMImportanceTransfer importance_transfer = 9;
   if (cached_has_bits & 0x00000080u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        9, this->_internal_importance_transfer(), deterministic, target);
+        9, HasBitSetters::importance_transfer(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6087,58 +7451,63 @@ size_t NEMSignTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 255u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional .hw.trezor.messages.nem.NEMSignTx.NEMTransactionCommon transaction = 1;
-    if (has_transaction()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *transaction_);
     }
 
     // optional .hw.trezor.messages.nem.NEMSignTx.NEMTransactionCommon multisig = 2;
-    if (has_multisig()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *multisig_);
     }
 
     // optional .hw.trezor.messages.nem.NEMSignTx.NEMTransfer transfer = 3;
-    if (has_transfer()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *transfer_);
     }
 
     // optional .hw.trezor.messages.nem.NEMSignTx.NEMProvisionNamespace provision_namespace = 5;
-    if (has_provision_namespace()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *provision_namespace_);
     }
 
     // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicCreation mosaic_creation = 6;
-    if (has_mosaic_creation()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *mosaic_creation_);
     }
 
     // optional .hw.trezor.messages.nem.NEMSignTx.NEMMosaicSupplyChange supply_change = 7;
-    if (has_supply_change()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *supply_change_);
     }
 
     // optional .hw.trezor.messages.nem.NEMSignTx.NEMAggregateModification aggregate_modification = 8;
-    if (has_aggregate_modification()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *aggregate_modification_);
     }
 
     // optional .hw.trezor.messages.nem.NEMSignTx.NEMImportanceTransfer importance_transfer = 9;
-    if (has_importance_transfer()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *importance_transfer_);
@@ -6146,7 +7515,7 @@ size_t NEMSignTx::ByteSizeLong() const {
 
   }
   // optional bool cosigning = 4;
-  if (has_cosigning()) {
+  if (cached_has_bits & 0x00000100u) {
     total_size += 1 + 1;
   }
 
@@ -6159,9 +7528,9 @@ void NEMSignTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMSignTx)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMSignTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMSignTx>(
+      ::google::protobuf::DynamicCastToGenerated<NEMSignTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMSignTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6178,7 +7547,7 @@ void NEMSignTx::MergeFrom(const NEMSignTx& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
       mutable_transaction()->::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon::MergeFrom(from.transaction());
     }
@@ -6233,6 +7602,8 @@ void NEMSignTx::Swap(NEMSignTx* other) {
 }
 void NEMSignTx::InternalSwap(NEMSignTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(transaction_, other->transaction_);
   swap(multisig_, other->multisig_);
   swap(transfer_, other->transfer_);
@@ -6242,13 +7613,11 @@ void NEMSignTx::InternalSwap(NEMSignTx* other) {
   swap(aggregate_modification_, other->aggregate_modification_);
   swap(importance_transfer_, other->importance_transfer_);
   swap(cosigning_, other->cosigning_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMSignTx::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6256,21 +7625,29 @@ void NEMSignTx::InternalSwap(NEMSignTx* other) {
 
 void NEMSignedTx::InitAsDefaultInstance() {
 }
+class NEMSignedTx::HasBitSetters {
+ public:
+  static void set_has_data(NEMSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_signature(NEMSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMSignedTx::kDataFieldNumber;
 const int NEMSignedTx::kSignatureFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMSignedTx::NEMSignedTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMSignedTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMSignedTx)
 }
 NEMSignedTx::NEMSignedTx(const NEMSignedTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -6285,6 +7662,8 @@ NEMSignedTx::NEMSignedTx(const NEMSignedTx& from)
 }
 
 void NEMSignedTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMSignedTx_messages_2dnem_2eproto.base);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -6302,13 +7681,8 @@ void NEMSignedTx::SharedDtor() {
 void NEMSignedTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMSignedTx::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMSignedTx& NEMSignedTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMSignedTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMSignedTx_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6320,7 +7694,7 @@ void NEMSignedTx::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       data_.ClearNonDefaultToEmptyNoArena();
     }
@@ -6332,9 +7706,76 @@ void NEMSignedTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMSignedTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMSignedTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes data = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes signature = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMSignedTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMSignedTx)
   for (;;) {
@@ -6344,8 +7785,7 @@ bool NEMSignedTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes data = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_data()));
         } else {
@@ -6356,8 +7796,7 @@ bool NEMSignedTx::MergePartialFromCodedStream(
 
       // optional bytes signature = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -6385,6 +7824,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMSignedTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6413,8 +7853,7 @@ void NEMSignedTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMSignedTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMSignedTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6451,16 +7890,21 @@ size_t NEMSignedTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes data = 1;
-    if (has_data()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->data());
     }
 
     // optional bytes signature = 2;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
@@ -6476,9 +7920,9 @@ void NEMSignedTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMSignedTx)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMSignedTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMSignedTx>(
+      ::google::protobuf::DynamicCastToGenerated<NEMSignedTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMSignedTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6495,13 +7939,13 @@ void NEMSignedTx::MergeFrom(const NEMSignedTx& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_data();
+      _has_bits_[0] |= 0x00000001u;
       data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000002u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
   }
@@ -6531,17 +7975,17 @@ void NEMSignedTx::Swap(NEMSignedTx* other) {
 }
 void NEMSignedTx::InternalSwap(NEMSignedTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   data_.Swap(&other->data_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMSignedTx::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6549,6 +7993,19 @@ void NEMSignedTx::InternalSwap(NEMSignedTx* other) {
 
 void NEMDecryptMessage::InitAsDefaultInstance() {
 }
+class NEMDecryptMessage::HasBitSetters {
+ public:
+  static void set_has_network(NEMDecryptMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_public_key(NEMDecryptMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_payload(NEMDecryptMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMDecryptMessage::kAddressNFieldNumber;
 const int NEMDecryptMessage::kNetworkFieldNumber;
@@ -6557,15 +8014,13 @@ const int NEMDecryptMessage::kPayloadFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMDecryptMessage::NEMDecryptMessage()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMDecryptMessage.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMDecryptMessage)
 }
 NEMDecryptMessage::NEMDecryptMessage(const NEMDecryptMessage& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -6582,6 +8037,8 @@ NEMDecryptMessage::NEMDecryptMessage(const NEMDecryptMessage& from)
 }
 
 void NEMDecryptMessage::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMDecryptMessage_messages_2dnem_2eproto.base);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   payload_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   network_ = 0u;
@@ -6600,13 +8057,8 @@ void NEMDecryptMessage::SharedDtor() {
 void NEMDecryptMessage::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMDecryptMessage::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMDecryptMessage& NEMDecryptMessage::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMDecryptMessage.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMDecryptMessage_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6619,7 +8071,7 @@ void NEMDecryptMessage::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       public_key_.ClearNonDefaultToEmptyNoArena();
     }
@@ -6632,9 +8084,103 @@ void NEMDecryptMessage::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMDecryptMessage::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMDecryptMessage*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional uint32 network = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_network(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes public_key = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes payload = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_payload();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMDecryptMessage::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMDecryptMessage)
   for (;;) {
@@ -6644,14 +8190,11 @@ bool NEMDecryptMessage::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -6663,9 +8206,8 @@ bool NEMDecryptMessage::MergePartialFromCodedStream(
 
       // optional uint32 network = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_network();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_network(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &network_)));
@@ -6677,8 +8219,7 @@ bool NEMDecryptMessage::MergePartialFromCodedStream(
 
       // optional bytes public_key = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_public_key()));
         } else {
@@ -6689,8 +8230,7 @@ bool NEMDecryptMessage::MergePartialFromCodedStream(
 
       // optional bytes payload = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_payload()));
         } else {
@@ -6718,6 +8258,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMDecryptMessage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6757,8 +8298,7 @@ void NEMDecryptMessage::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMDecryptMessage::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMDecryptMessage)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6804,6 +8344,10 @@ size_t NEMDecryptMessage::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -6813,23 +8357,24 @@ size_t NEMDecryptMessage::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 7u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional bytes public_key = 3;
-    if (has_public_key()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->public_key());
     }
 
     // optional bytes payload = 4;
-    if (has_payload()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->payload());
     }
 
     // optional uint32 network = 2;
-    if (has_network()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->network());
@@ -6845,9 +8390,9 @@ void NEMDecryptMessage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMDecryptMessage)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMDecryptMessage* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMDecryptMessage>(
+      ::google::protobuf::DynamicCastToGenerated<NEMDecryptMessage>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMDecryptMessage)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6865,13 +8410,13 @@ void NEMDecryptMessage::MergeFrom(const NEMDecryptMessage& from) {
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_public_key();
+      _has_bits_[0] |= 0x00000001u;
       public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_payload();
+      _has_bits_[0] |= 0x00000002u;
       payload_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.payload_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -6905,19 +8450,19 @@ void NEMDecryptMessage::Swap(NEMDecryptMessage* other) {
 }
 void NEMDecryptMessage::InternalSwap(NEMDecryptMessage* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   payload_.Swap(&other->payload_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(network_, other->network_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMDecryptMessage::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6925,20 +8470,25 @@ void NEMDecryptMessage::InternalSwap(NEMDecryptMessage* other) {
 
 void NEMDecryptedMessage::InitAsDefaultInstance() {
 }
+class NEMDecryptedMessage::HasBitSetters {
+ public:
+  static void set_has_payload(NEMDecryptedMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int NEMDecryptedMessage::kPayloadFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 NEMDecryptedMessage::NEMDecryptedMessage()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dnem_2eproto::scc_info_NEMDecryptedMessage.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.nem.NEMDecryptedMessage)
 }
 NEMDecryptedMessage::NEMDecryptedMessage(const NEMDecryptedMessage& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   payload_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -6949,6 +8499,8 @@ NEMDecryptedMessage::NEMDecryptedMessage(const NEMDecryptedMessage& from)
 }
 
 void NEMDecryptedMessage::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_NEMDecryptedMessage_messages_2dnem_2eproto.base);
   payload_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -6964,13 +8516,8 @@ void NEMDecryptedMessage::SharedDtor() {
 void NEMDecryptedMessage::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* NEMDecryptedMessage::descriptor() {
-  ::protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const NEMDecryptedMessage& NEMDecryptedMessage::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dnem_2eproto::scc_info_NEMDecryptedMessage.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_NEMDecryptedMessage_messages_2dnem_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6989,9 +8536,61 @@ void NEMDecryptedMessage::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* NEMDecryptedMessage::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<NEMDecryptedMessage*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes payload = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_payload();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool NEMDecryptedMessage::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.nem.NEMDecryptedMessage)
   for (;;) {
@@ -7001,8 +8600,7 @@ bool NEMDecryptedMessage::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes payload = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_payload()));
         } else {
@@ -7030,6 +8628,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void NEMDecryptedMessage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7052,8 +8651,7 @@ void NEMDecryptedMessage::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* NEMDecryptedMessage::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.nem.NEMDecryptedMessage)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7083,8 +8681,13 @@ size_t NEMDecryptedMessage::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional bytes payload = 1;
-  if (has_payload()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->payload());
@@ -7099,9 +8702,9 @@ void NEMDecryptedMessage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.nem.NEMDecryptedMessage)
   GOOGLE_DCHECK_NE(&from, this);
   const NEMDecryptedMessage* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const NEMDecryptedMessage>(
+      ::google::protobuf::DynamicCastToGenerated<NEMDecryptedMessage>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.nem.NEMDecryptedMessage)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7118,7 +8721,7 @@ void NEMDecryptedMessage::MergeFrom(const NEMDecryptedMessage& from) {
   (void) cached_has_bits;
 
   if (from.has_payload()) {
-    set_has_payload();
+    _has_bits_[0] |= 0x00000001u;
     payload_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.payload_);
   }
 }
@@ -7147,15 +8750,15 @@ void NEMDecryptedMessage::Swap(NEMDecryptedMessage* other) {
 }
 void NEMDecryptedMessage::InternalSwap(NEMDecryptedMessage* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   payload_.Swap(&other->payload_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata NEMDecryptedMessage::GetMetadata() const {
-  protobuf_messages_2dnem_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dnem_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dnem_2eproto);
+  return ::file_level_metadata_messages_2dnem_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7166,55 +8769,56 @@ void NEMDecryptedMessage::InternalSwap(NEMDecryptedMessage* other) {
 }  // namespace hw
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMGetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMGetAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMGetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMGetAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMGetAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMSignTx_NEMTransactionCommon >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer_NEMMosaic >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMSignTx_NEMTransfer >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMSignTx_NEMProvisionNamespace >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation_NEMMosaicDefinition >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicCreation >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMSignTx_NEMMosaicSupplyChange >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification_NEMCosignatoryModification >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMSignTx_NEMAggregateModification >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMSignTx_NEMImportanceTransfer >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMSignTx >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMSignedTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignedTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMSignedTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMSignedTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMSignedTx >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMDecryptMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMDecryptMessage >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMDecryptMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMDecryptMessage >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMDecryptMessage >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::nem::NEMDecryptedMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMDecryptedMessage >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::nem::NEMDecryptedMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::nem::NEMDecryptedMessage >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::nem::NEMDecryptedMessage >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

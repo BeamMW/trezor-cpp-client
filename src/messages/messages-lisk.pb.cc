@@ -6,106 +6,86 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_messages_2dlisk_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dlisk_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dlisk_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dlisk_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dlisk_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_LiskSignTx_LiskTransactionCommon;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dlisk_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset;
-}  // namespace protobuf_messages_2dlisk_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dlisk_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType_messages_2dlisk_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dlisk_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType_messages_2dlisk_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dlisk_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType_messages_2dlisk_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dlisk_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_LiskSignTx_LiskTransactionCommon_messages_2dlisk_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dlisk_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_messages_2dlisk_2eproto;
 namespace hw {
 namespace trezor {
 namespace messages {
 namespace lisk {
 class LiskGetAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LiskGetAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<LiskGetAddress> _instance;
 } _LiskGetAddress_default_instance_;
 class LiskAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LiskAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<LiskAddress> _instance;
 } _LiskAddress_default_instance_;
 class LiskGetPublicKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LiskGetPublicKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<LiskGetPublicKey> _instance;
 } _LiskGetPublicKey_default_instance_;
 class LiskPublicKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LiskPublicKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<LiskPublicKey> _instance;
 } _LiskPublicKey_default_instance_;
 class LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType> _instance;
 } _LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType_default_instance_;
 class LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType> _instance;
 } _LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType_default_instance_;
 class LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType> _instance;
 } _LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType_default_instance_;
 class LiskSignTx_LiskTransactionCommon_LiskTransactionAssetDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset> _instance;
 } _LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_default_instance_;
 class LiskSignTx_LiskTransactionCommonDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignTx_LiskTransactionCommon>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignTx_LiskTransactionCommon> _instance;
 } _LiskSignTx_LiskTransactionCommon_default_instance_;
 class LiskSignTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignTx> _instance;
 } _LiskSignTx_default_instance_;
 class LiskSignedTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignedTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignedTx> _instance;
 } _LiskSignedTx_default_instance_;
 class LiskSignMessageDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignMessage>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<LiskSignMessage> _instance;
 } _LiskSignMessage_default_instance_;
 class LiskMessageSignatureDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LiskMessageSignature>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<LiskMessageSignature> _instance;
 } _LiskMessageSignature_default_instance_;
 class LiskVerifyMessageDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LiskVerifyMessage>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<LiskVerifyMessage> _instance;
 } _LiskVerifyMessage_default_instance_;
 }  // namespace lisk
 }  // namespace messages
 }  // namespace trezor
 }  // namespace hw
-namespace protobuf_messages_2dlisk_2eproto {
-static void InitDefaultsLiskGetAddress() {
+static void InitDefaultsLiskGetAddress_messages_2dlisk_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -116,10 +96,10 @@ static void InitDefaultsLiskGetAddress() {
   ::hw::trezor::messages::lisk::LiskGetAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_LiskGetAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskGetAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_LiskGetAddress_messages_2dlisk_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskGetAddress_messages_2dlisk_2eproto}, {}};
 
-static void InitDefaultsLiskAddress() {
+static void InitDefaultsLiskAddress_messages_2dlisk_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -130,10 +110,10 @@ static void InitDefaultsLiskAddress() {
   ::hw::trezor::messages::lisk::LiskAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_LiskAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_LiskAddress_messages_2dlisk_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskAddress_messages_2dlisk_2eproto}, {}};
 
-static void InitDefaultsLiskGetPublicKey() {
+static void InitDefaultsLiskGetPublicKey_messages_2dlisk_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -144,10 +124,10 @@ static void InitDefaultsLiskGetPublicKey() {
   ::hw::trezor::messages::lisk::LiskGetPublicKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_LiskGetPublicKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskGetPublicKey}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_LiskGetPublicKey_messages_2dlisk_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskGetPublicKey_messages_2dlisk_2eproto}, {}};
 
-static void InitDefaultsLiskPublicKey() {
+static void InitDefaultsLiskPublicKey_messages_2dlisk_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -158,10 +138,10 @@ static void InitDefaultsLiskPublicKey() {
   ::hw::trezor::messages::lisk::LiskPublicKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_LiskPublicKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskPublicKey}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_LiskPublicKey_messages_2dlisk_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskPublicKey_messages_2dlisk_2eproto}, {}};
 
-static void InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType() {
+static void InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType_messages_2dlisk_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -172,10 +152,10 @@ static void InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_Li
   ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType_messages_2dlisk_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType_messages_2dlisk_2eproto}, {}};
 
-static void InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType() {
+static void InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType_messages_2dlisk_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -186,10 +166,10 @@ static void InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_Li
   ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType_messages_2dlisk_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType_messages_2dlisk_2eproto}, {}};
 
-static void InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType() {
+static void InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType_messages_2dlisk_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -200,10 +180,10 @@ static void InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_Li
   ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType_messages_2dlisk_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType_messages_2dlisk_2eproto}, {}};
 
-static void InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset() {
+static void InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_messages_2dlisk_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -214,13 +194,13 @@ static void InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset() 
   ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<3> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset}, {
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType.base,
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType.base,
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType.base,}};
+::google::protobuf::internal::SCCInfo<3> scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_messages_2dlisk_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsLiskSignTx_LiskTransactionCommon_LiskTransactionAsset_messages_2dlisk_2eproto}, {
+      &scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType_messages_2dlisk_2eproto.base,
+      &scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType_messages_2dlisk_2eproto.base,
+      &scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType_messages_2dlisk_2eproto.base,}};
 
-static void InitDefaultsLiskSignTx_LiskTransactionCommon() {
+static void InitDefaultsLiskSignTx_LiskTransactionCommon_messages_2dlisk_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -231,11 +211,11 @@ static void InitDefaultsLiskSignTx_LiskTransactionCommon() {
   ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_LiskSignTx_LiskTransactionCommon =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsLiskSignTx_LiskTransactionCommon}, {
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_LiskSignTx_LiskTransactionCommon_messages_2dlisk_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsLiskSignTx_LiskTransactionCommon_messages_2dlisk_2eproto}, {
+      &scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_messages_2dlisk_2eproto.base,}};
 
-static void InitDefaultsLiskSignTx() {
+static void InitDefaultsLiskSignTx_messages_2dlisk_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -246,11 +226,11 @@ static void InitDefaultsLiskSignTx() {
   ::hw::trezor::messages::lisk::LiskSignTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_LiskSignTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsLiskSignTx}, {
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_LiskSignTx_messages_2dlisk_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsLiskSignTx_messages_2dlisk_2eproto}, {
+      &scc_info_LiskSignTx_LiskTransactionCommon_messages_2dlisk_2eproto.base,}};
 
-static void InitDefaultsLiskSignedTx() {
+static void InitDefaultsLiskSignedTx_messages_2dlisk_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -261,10 +241,10 @@ static void InitDefaultsLiskSignedTx() {
   ::hw::trezor::messages::lisk::LiskSignedTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignedTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskSignedTx}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignedTx_messages_2dlisk_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskSignedTx_messages_2dlisk_2eproto}, {}};
 
-static void InitDefaultsLiskSignMessage() {
+static void InitDefaultsLiskSignMessage_messages_2dlisk_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -275,10 +255,10 @@ static void InitDefaultsLiskSignMessage() {
   ::hw::trezor::messages::lisk::LiskSignMessage::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignMessage =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskSignMessage}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_LiskSignMessage_messages_2dlisk_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskSignMessage_messages_2dlisk_2eproto}, {}};
 
-static void InitDefaultsLiskMessageSignature() {
+static void InitDefaultsLiskMessageSignature_messages_2dlisk_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -289,10 +269,10 @@ static void InitDefaultsLiskMessageSignature() {
   ::hw::trezor::messages::lisk::LiskMessageSignature::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_LiskMessageSignature =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskMessageSignature}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_LiskMessageSignature_messages_2dlisk_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskMessageSignature_messages_2dlisk_2eproto}, {}};
 
-static void InitDefaultsLiskVerifyMessage() {
+static void InitDefaultsLiskVerifyMessage_messages_2dlisk_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -303,116 +283,117 @@ static void InitDefaultsLiskVerifyMessage() {
   ::hw::trezor::messages::lisk::LiskVerifyMessage::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_LiskVerifyMessage =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskVerifyMessage}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_LiskVerifyMessage_messages_2dlisk_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLiskVerifyMessage_messages_2dlisk_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_LiskGetAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LiskAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LiskGetPublicKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LiskPublicKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignTx_LiskTransactionCommon.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignTx.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignedTx.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignMessage.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LiskMessageSignature.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LiskVerifyMessage.base);
+void InitDefaults_messages_2dlisk_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_LiskGetAddress_messages_2dlisk_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LiskAddress_messages_2dlisk_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LiskGetPublicKey_messages_2dlisk_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LiskPublicKey_messages_2dlisk_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType_messages_2dlisk_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType_messages_2dlisk_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType_messages_2dlisk_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_messages_2dlisk_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignTx_LiskTransactionCommon_messages_2dlisk_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignTx_messages_2dlisk_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignedTx_messages_2dlisk_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LiskSignMessage_messages_2dlisk_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LiskMessageSignature_messages_2dlisk_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LiskVerifyMessage_messages_2dlisk_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[14];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+::google::protobuf::Metadata file_level_metadata_messages_2dlisk_2eproto[14];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors_messages_2dlisk_2eproto[1];
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2dlisk_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetAddress, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_messages_2dlisk_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetAddress, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetAddress, show_display_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetAddress, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetAddress, show_display_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskAddress, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskAddress, address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskAddress, address_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetPublicKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetPublicKey, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetPublicKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetPublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetPublicKey, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetPublicKey, show_display_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetPublicKey, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskGetPublicKey, show_display_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskPublicKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskPublicKey, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskPublicKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskPublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskPublicKey, public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskPublicKey, public_key_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType, public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType, public_key_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType, username_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType, username_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType, min_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType, life_time_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType, keys_group_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType, min_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType, life_time_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType, keys_group_),
   0,
   1,
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset, delegate_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset, votes_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset, multisignature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset, data_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset, signature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset, delegate_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset, votes_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset, multisignature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset, data_),
   1,
   2,
   ~0u,
   3,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, amount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, fee_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, recipient_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, sender_public_key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, requester_public_key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, timestamp_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, asset_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, amount_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, fee_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, recipient_id_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, sender_public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, requester_public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, signature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon, asset_),
   7,
   5,
   6,
@@ -422,53 +403,53 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   3,
   8,
   4,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx, transaction_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignTx, transaction_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignedTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignedTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignedTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignedTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignedTx, signature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignedTx, signature_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignMessage, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignMessage, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignMessage, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignMessage, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignMessage, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignMessage, message_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignMessage, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskSignMessage, message_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskMessageSignature, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskMessageSignature, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskMessageSignature, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskMessageSignature, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskMessageSignature, public_key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskMessageSignature, signature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskMessageSignature, public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskMessageSignature, signature_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskVerifyMessage, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskVerifyMessage, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskVerifyMessage, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskVerifyMessage, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskVerifyMessage, public_key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskVerifyMessage, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskVerifyMessage, message_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskVerifyMessage, public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskVerifyMessage, signature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::lisk::LiskVerifyMessage, message_),
   0,
   1,
   2,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::hw::trezor::messages::lisk::LiskGetAddress)},
   { 9, 15, sizeof(::hw::trezor::messages::lisk::LiskAddress)},
   { 16, 23, sizeof(::hw::trezor::messages::lisk::LiskGetPublicKey)},
@@ -502,97 +483,81 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::lisk::_LiskVerifyMessage_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "messages-lisk.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2dlisk_2eproto = {
+  {}, AddDescriptors_messages_2dlisk_2eproto, "messages-lisk.proto", schemas,
+  file_default_instances, TableStruct_messages_2dlisk_2eproto::offsets,
+  file_level_metadata_messages_2dlisk_2eproto, 14, file_level_enum_descriptors_messages_2dlisk_2eproto, file_level_service_descriptors_messages_2dlisk_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_messages_2dlisk_2eproto[] =
+  "\n\023messages-lisk.proto\022\027hw.trezor.message"
+  "s.lisk\"9\n\016LiskGetAddress\022\021\n\taddress_n\030\001 "
+  "\003(\r\022\024\n\014show_display\030\002 \001(\010\"\036\n\013LiskAddress"
+  "\022\017\n\007address\030\001 \001(\t\";\n\020LiskGetPublicKey\022\021\n"
+  "\taddress_n\030\001 \003(\r\022\024\n\014show_display\030\002 \001(\010\"#"
+  "\n\rLiskPublicKey\022\022\n\npublic_key\030\001 \001(\014\"\335\t\n\n"
+  "LiskSignTx\022\021\n\taddress_n\030\001 \003(\r\022N\n\013transac"
+  "tion\030\002 \001(\01329.hw.trezor.messages.lisk.Lis"
+  "kSignTx.LiskTransactionCommon\032\353\010\n\025LiskTr"
+  "ansactionCommon\022[\n\004type\030\001 \001(\0162M.hw.trezo"
+  "r.messages.lisk.LiskSignTx.LiskTransacti"
+  "onCommon.LiskTransactionType\022\021\n\006amount\030\002"
+  " \001(\004:\0010\022\013\n\003fee\030\003 \001(\004\022\024\n\014recipient_id\030\004 \001"
+  "(\t\022\031\n\021sender_public_key\030\005 \001(\014\022\034\n\024request"
+  "er_public_key\030\006 \001(\014\022\021\n\tsignature\030\007 \001(\014\022\021"
+  "\n\ttimestamp\030\010 \001(\r\022]\n\005asset\030\t \001(\0132N.hw.tr"
+  "ezor.messages.lisk.LiskSignTx.LiskTransa"
+  "ctionCommon.LiskTransactionAsset\032\267\004\n\024Lis"
+  "kTransactionAsset\022s\n\tsignature\030\001 \001(\0132`.h"
+  "w.trezor.messages.lisk.LiskSignTx.LiskTr"
+  "ansactionCommon.LiskTransactionAsset.Lis"
+  "kSignatureType\022q\n\010delegate\030\002 \001(\0132_.hw.tr"
+  "ezor.messages.lisk.LiskSignTx.LiskTransa"
+  "ctionCommon.LiskTransactionAsset.LiskDel"
+  "egateType\022\r\n\005votes\030\003 \003(\t\022}\n\016multisignatu"
+  "re\030\004 \001(\0132e.hw.trezor.messages.lisk.LiskS"
+  "ignTx.LiskTransactionCommon.LiskTransact"
+  "ionAsset.LiskMultisignatureType\022\014\n\004data\030"
+  "\005 \001(\t\032\'\n\021LiskSignatureType\022\022\n\npublic_key"
+  "\030\001 \001(\014\032$\n\020LiskDelegateType\022\020\n\010username\030\001"
+  " \001(\t\032L\n\026LiskMultisignatureType\022\013\n\003min\030\001 "
+  "\001(\r\022\021\n\tlife_time\030\002 \001(\r\022\022\n\nkeys_group\030\003 \003"
+  "(\t\"\306\001\n\023LiskTransactionType\022\014\n\010Transfer\020\000"
+  "\022\034\n\030RegisterSecondPassphrase\020\001\022\024\n\020Regist"
+  "erDelegate\020\002\022\r\n\tCastVotes\020\003\022!\n\035RegisterM"
+  "ultisignatureAccount\020\004\022\016\n\nCreateDapp\020\005\022\024"
+  "\n\020TransferIntoDapp\020\006\022\025\n\021TransferOutOfDap"
+  "p\020\007\"!\n\014LiskSignedTx\022\021\n\tsignature\030\001 \001(\014\"5"
+  "\n\017LiskSignMessage\022\021\n\taddress_n\030\001 \003(\r\022\017\n\007"
+  "message\030\002 \001(\014\"=\n\024LiskMessageSignature\022\022\n"
+  "\npublic_key\030\001 \001(\014\022\021\n\tsignature\030\002 \001(\014\"K\n\021"
+  "LiskVerifyMessage\022\022\n\npublic_key\030\001 \001(\014\022\021\n"
+  "\tsignature\030\002 \001(\014\022\017\n\007message\030\003 \001(\014B8\n#com"
+  ".satoshilabs.trezor.lib.protobufB\021Trezor"
+  "MessageLisk"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dlisk_2eproto = {
+  false, InitDefaults_messages_2dlisk_2eproto, 
+  descriptor_table_protodef_messages_2dlisk_2eproto,
+  "messages-lisk.proto", &assign_descriptors_table_messages_2dlisk_2eproto, 1771,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 14);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\023messages-lisk.proto\022\027hw.trezor.message"
-      "s.lisk\"9\n\016LiskGetAddress\022\021\n\taddress_n\030\001 "
-      "\003(\r\022\024\n\014show_display\030\002 \001(\010\"\036\n\013LiskAddress"
-      "\022\017\n\007address\030\001 \001(\t\";\n\020LiskGetPublicKey\022\021\n"
-      "\taddress_n\030\001 \003(\r\022\024\n\014show_display\030\002 \001(\010\"#"
-      "\n\rLiskPublicKey\022\022\n\npublic_key\030\001 \001(\014\"\335\t\n\n"
-      "LiskSignTx\022\021\n\taddress_n\030\001 \003(\r\022N\n\013transac"
-      "tion\030\002 \001(\01329.hw.trezor.messages.lisk.Lis"
-      "kSignTx.LiskTransactionCommon\032\353\010\n\025LiskTr"
-      "ansactionCommon\022[\n\004type\030\001 \001(\0162M.hw.trezo"
-      "r.messages.lisk.LiskSignTx.LiskTransacti"
-      "onCommon.LiskTransactionType\022\021\n\006amount\030\002"
-      " \001(\004:\0010\022\013\n\003fee\030\003 \001(\004\022\024\n\014recipient_id\030\004 \001"
-      "(\t\022\031\n\021sender_public_key\030\005 \001(\014\022\034\n\024request"
-      "er_public_key\030\006 \001(\014\022\021\n\tsignature\030\007 \001(\014\022\021"
-      "\n\ttimestamp\030\010 \001(\r\022]\n\005asset\030\t \001(\0132N.hw.tr"
-      "ezor.messages.lisk.LiskSignTx.LiskTransa"
-      "ctionCommon.LiskTransactionAsset\032\267\004\n\024Lis"
-      "kTransactionAsset\022s\n\tsignature\030\001 \001(\0132`.h"
-      "w.trezor.messages.lisk.LiskSignTx.LiskTr"
-      "ansactionCommon.LiskTransactionAsset.Lis"
-      "kSignatureType\022q\n\010delegate\030\002 \001(\0132_.hw.tr"
-      "ezor.messages.lisk.LiskSignTx.LiskTransa"
-      "ctionCommon.LiskTransactionAsset.LiskDel"
-      "egateType\022\r\n\005votes\030\003 \003(\t\022}\n\016multisignatu"
-      "re\030\004 \001(\0132e.hw.trezor.messages.lisk.LiskS"
-      "ignTx.LiskTransactionCommon.LiskTransact"
-      "ionAsset.LiskMultisignatureType\022\014\n\004data\030"
-      "\005 \001(\t\032\'\n\021LiskSignatureType\022\022\n\npublic_key"
-      "\030\001 \001(\014\032$\n\020LiskDelegateType\022\020\n\010username\030\001"
-      " \001(\t\032L\n\026LiskMultisignatureType\022\013\n\003min\030\001 "
-      "\001(\r\022\021\n\tlife_time\030\002 \001(\r\022\022\n\nkeys_group\030\003 \003"
-      "(\t\"\306\001\n\023LiskTransactionType\022\014\n\010Transfer\020\000"
-      "\022\034\n\030RegisterSecondPassphrase\020\001\022\024\n\020Regist"
-      "erDelegate\020\002\022\r\n\tCastVotes\020\003\022!\n\035RegisterM"
-      "ultisignatureAccount\020\004\022\016\n\nCreateDapp\020\005\022\024"
-      "\n\020TransferIntoDapp\020\006\022\025\n\021TransferOutOfDap"
-      "p\020\007\"!\n\014LiskSignedTx\022\021\n\tsignature\030\001 \001(\014\"5"
-      "\n\017LiskSignMessage\022\021\n\taddress_n\030\001 \003(\r\022\017\n\007"
-      "message\030\002 \001(\014\"=\n\024LiskMessageSignature\022\022\n"
-      "\npublic_key\030\001 \001(\014\022\021\n\tsignature\030\002 \001(\014\"K\n\021"
-      "LiskVerifyMessage\022\022\n\npublic_key\030\001 \001(\014\022\021\n"
-      "\tsignature\030\002 \001(\014\022\017\n\007message\030\003 \001(\014B8\n#com"
-      ".satoshilabs.trezor.lib.protobufB\021Trezor"
-      "MessageLisk"
+void AddDescriptors_messages_2dlisk_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1771);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "messages-lisk.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_messages_2dlisk_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_messages_2dlisk_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_messages_2dlisk_2eproto = []() { AddDescriptors_messages_2dlisk_2eproto(); return true; }();
 namespace hw {
 namespace trezor {
 namespace messages {
 namespace lisk {
 const ::google::protobuf::EnumDescriptor* LiskSignTx_LiskTransactionCommon_LiskTransactionType_descriptor() {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_messages_2dlisk_2eproto::file_level_enum_descriptors[0];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dlisk_2eproto);
+  return file_level_enum_descriptors_messages_2dlisk_2eproto[0];
 }
 bool LiskSignTx_LiskTransactionCommon_LiskTransactionType_IsValid(int value) {
   switch (value) {
@@ -628,21 +593,26 @@ const int LiskSignTx_LiskTransactionCommon::LiskTransactionType_ARRAYSIZE;
 
 void LiskGetAddress::InitAsDefaultInstance() {
 }
+class LiskGetAddress::HasBitSetters {
+ public:
+  static void set_has_show_display(LiskGetAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LiskGetAddress::kAddressNFieldNumber;
 const int LiskGetAddress::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LiskGetAddress::LiskGetAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskGetAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.lisk.LiskGetAddress)
 }
 LiskGetAddress::LiskGetAddress(const LiskGetAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -665,13 +635,8 @@ void LiskGetAddress::SharedDtor() {
 void LiskGetAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LiskGetAddress::descriptor() {
-  ::protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const LiskGetAddress& LiskGetAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dlisk_2eproto::scc_info_LiskGetAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_LiskGetAddress_messages_2dlisk_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -688,9 +653,69 @@ void LiskGetAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LiskGetAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<LiskGetAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool show_display = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool LiskGetAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.lisk.LiskGetAddress)
   for (;;) {
@@ -700,14 +725,11 @@ bool LiskGetAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -719,9 +741,8 @@ bool LiskGetAddress::MergePartialFromCodedStream(
 
       // optional bool show_display = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -750,6 +771,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void LiskGetAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -777,8 +799,7 @@ void LiskGetAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* LiskGetAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.lisk.LiskGetAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -810,6 +831,10 @@ size_t LiskGetAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -820,7 +845,8 @@ size_t LiskGetAddress::ByteSizeLong() const {
   }
 
   // optional bool show_display = 2;
-  if (has_show_display()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -833,9 +859,9 @@ void LiskGetAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.lisk.LiskGetAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const LiskGetAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LiskGetAddress>(
+      ::google::protobuf::DynamicCastToGenerated<LiskGetAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.lisk.LiskGetAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -881,15 +907,15 @@ void LiskGetAddress::Swap(LiskGetAddress* other) {
 }
 void LiskGetAddress::InternalSwap(LiskGetAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata LiskGetAddress::GetMetadata() const {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dlisk_2eproto);
+  return ::file_level_metadata_messages_2dlisk_2eproto[kIndexInFileMessages];
 }
 
 
@@ -897,20 +923,25 @@ void LiskGetAddress::InternalSwap(LiskGetAddress* other) {
 
 void LiskAddress::InitAsDefaultInstance() {
 }
+class LiskAddress::HasBitSetters {
+ public:
+  static void set_has_address(LiskAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LiskAddress::kAddressFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LiskAddress::LiskAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.lisk.LiskAddress)
 }
 LiskAddress::LiskAddress(const LiskAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -921,6 +952,8 @@ LiskAddress::LiskAddress(const LiskAddress& from)
 }
 
 void LiskAddress::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_LiskAddress_messages_2dlisk_2eproto.base);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -936,13 +969,8 @@ void LiskAddress::SharedDtor() {
 void LiskAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LiskAddress::descriptor() {
-  ::protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const LiskAddress& LiskAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dlisk_2eproto::scc_info_LiskAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_LiskAddress_messages_2dlisk_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -961,9 +989,62 @@ void LiskAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LiskAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<LiskAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.lisk.LiskAddress.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool LiskAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.lisk.LiskAddress)
   for (;;) {
@@ -973,8 +1054,7 @@ bool LiskAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1006,6 +1086,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void LiskAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1032,8 +1113,7 @@ void LiskAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* LiskAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.lisk.LiskAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1067,8 +1147,13 @@ size_t LiskAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string address = 1;
-  if (has_address()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->address());
@@ -1083,9 +1168,9 @@ void LiskAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.lisk.LiskAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const LiskAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LiskAddress>(
+      ::google::protobuf::DynamicCastToGenerated<LiskAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.lisk.LiskAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1102,7 +1187,7 @@ void LiskAddress::MergeFrom(const LiskAddress& from) {
   (void) cached_has_bits;
 
   if (from.has_address()) {
-    set_has_address();
+    _has_bits_[0] |= 0x00000001u;
     address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
   }
 }
@@ -1131,15 +1216,15 @@ void LiskAddress::Swap(LiskAddress* other) {
 }
 void LiskAddress::InternalSwap(LiskAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata LiskAddress::GetMetadata() const {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dlisk_2eproto);
+  return ::file_level_metadata_messages_2dlisk_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1147,21 +1232,26 @@ void LiskAddress::InternalSwap(LiskAddress* other) {
 
 void LiskGetPublicKey::InitAsDefaultInstance() {
 }
+class LiskGetPublicKey::HasBitSetters {
+ public:
+  static void set_has_show_display(LiskGetPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LiskGetPublicKey::kAddressNFieldNumber;
 const int LiskGetPublicKey::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LiskGetPublicKey::LiskGetPublicKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskGetPublicKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.lisk.LiskGetPublicKey)
 }
 LiskGetPublicKey::LiskGetPublicKey(const LiskGetPublicKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -1184,13 +1274,8 @@ void LiskGetPublicKey::SharedDtor() {
 void LiskGetPublicKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LiskGetPublicKey::descriptor() {
-  ::protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const LiskGetPublicKey& LiskGetPublicKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dlisk_2eproto::scc_info_LiskGetPublicKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_LiskGetPublicKey_messages_2dlisk_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1207,9 +1292,69 @@ void LiskGetPublicKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LiskGetPublicKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<LiskGetPublicKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool show_display = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool LiskGetPublicKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.lisk.LiskGetPublicKey)
   for (;;) {
@@ -1219,14 +1364,11 @@ bool LiskGetPublicKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1238,9 +1380,8 @@ bool LiskGetPublicKey::MergePartialFromCodedStream(
 
       // optional bool show_display = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -1269,6 +1410,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void LiskGetPublicKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1296,8 +1438,7 @@ void LiskGetPublicKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* LiskGetPublicKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.lisk.LiskGetPublicKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1329,6 +1470,10 @@ size_t LiskGetPublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1339,7 +1484,8 @@ size_t LiskGetPublicKey::ByteSizeLong() const {
   }
 
   // optional bool show_display = 2;
-  if (has_show_display()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -1352,9 +1498,9 @@ void LiskGetPublicKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.lisk.LiskGetPublicKey)
   GOOGLE_DCHECK_NE(&from, this);
   const LiskGetPublicKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LiskGetPublicKey>(
+      ::google::protobuf::DynamicCastToGenerated<LiskGetPublicKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.lisk.LiskGetPublicKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1400,15 +1546,15 @@ void LiskGetPublicKey::Swap(LiskGetPublicKey* other) {
 }
 void LiskGetPublicKey::InternalSwap(LiskGetPublicKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata LiskGetPublicKey::GetMetadata() const {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dlisk_2eproto);
+  return ::file_level_metadata_messages_2dlisk_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1416,20 +1562,25 @@ void LiskGetPublicKey::InternalSwap(LiskGetPublicKey* other) {
 
 void LiskPublicKey::InitAsDefaultInstance() {
 }
+class LiskPublicKey::HasBitSetters {
+ public:
+  static void set_has_public_key(LiskPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LiskPublicKey::kPublicKeyFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LiskPublicKey::LiskPublicKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskPublicKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.lisk.LiskPublicKey)
 }
 LiskPublicKey::LiskPublicKey(const LiskPublicKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1440,6 +1591,8 @@ LiskPublicKey::LiskPublicKey(const LiskPublicKey& from)
 }
 
 void LiskPublicKey::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_LiskPublicKey_messages_2dlisk_2eproto.base);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1455,13 +1608,8 @@ void LiskPublicKey::SharedDtor() {
 void LiskPublicKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LiskPublicKey::descriptor() {
-  ::protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const LiskPublicKey& LiskPublicKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dlisk_2eproto::scc_info_LiskPublicKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_LiskPublicKey_messages_2dlisk_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1480,9 +1628,61 @@ void LiskPublicKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LiskPublicKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<LiskPublicKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes public_key = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool LiskPublicKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.lisk.LiskPublicKey)
   for (;;) {
@@ -1492,8 +1692,7 @@ bool LiskPublicKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes public_key = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_public_key()));
         } else {
@@ -1521,6 +1720,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void LiskPublicKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1543,8 +1743,7 @@ void LiskPublicKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* LiskPublicKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.lisk.LiskPublicKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1574,8 +1773,13 @@ size_t LiskPublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional bytes public_key = 1;
-  if (has_public_key()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->public_key());
@@ -1590,9 +1794,9 @@ void LiskPublicKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.lisk.LiskPublicKey)
   GOOGLE_DCHECK_NE(&from, this);
   const LiskPublicKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LiskPublicKey>(
+      ::google::protobuf::DynamicCastToGenerated<LiskPublicKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.lisk.LiskPublicKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1609,7 +1813,7 @@ void LiskPublicKey::MergeFrom(const LiskPublicKey& from) {
   (void) cached_has_bits;
 
   if (from.has_public_key()) {
-    set_has_public_key();
+    _has_bits_[0] |= 0x00000001u;
     public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
   }
 }
@@ -1638,15 +1842,15 @@ void LiskPublicKey::Swap(LiskPublicKey* other) {
 }
 void LiskPublicKey::InternalSwap(LiskPublicKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata LiskPublicKey::GetMetadata() const {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dlisk_2eproto);
+  return ::file_level_metadata_messages_2dlisk_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1654,20 +1858,25 @@ void LiskPublicKey::InternalSwap(LiskPublicKey* other) {
 
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::InitAsDefaultInstance() {
 }
+class LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::HasBitSetters {
+ public:
+  static void set_has_public_key(LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::kPublicKeyFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskSignatureType)
 }
 LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType(const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1678,6 +1887,8 @@ LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::LiskSig
 }
 
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType_messages_2dlisk_2eproto.base);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1693,13 +1904,8 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::Sh
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::descriptor() {
-  ::protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType& LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType_messages_2dlisk_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1718,9 +1924,61 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::Cl
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes public_key = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskSignatureType)
   for (;;) {
@@ -1730,8 +1988,7 @@ bool LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::Me
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes public_key = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_public_key()));
         } else {
@@ -1759,6 +2016,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1781,8 +2039,7 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::Se
 }
 
 ::google::protobuf::uint8* LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskSignatureType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1812,8 +2069,13 @@ size_t LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional bytes public_key = 1;
-  if (has_public_key()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->public_key());
@@ -1828,9 +2090,9 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::Me
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskSignatureType)
   GOOGLE_DCHECK_NE(&from, this);
   const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType>(
+      ::google::protobuf::DynamicCastToGenerated<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskSignatureType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1847,7 +2109,7 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::Me
   (void) cached_has_bits;
 
   if (from.has_public_key()) {
-    set_has_public_key();
+    _has_bits_[0] |= 0x00000001u;
     public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
   }
 }
@@ -1876,15 +2138,15 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::Sw
 }
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::InternalSwap(LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::GetMetadata() const {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dlisk_2eproto);
+  return ::file_level_metadata_messages_2dlisk_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1892,20 +2154,25 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::In
 
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::InitAsDefaultInstance() {
 }
+class LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::HasBitSetters {
+ public:
+  static void set_has_username(LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::kUsernameFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskDelegateType)
 }
 LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType(const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   username_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1916,6 +2183,8 @@ LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::LiskSign
 }
 
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType_messages_2dlisk_2eproto.base);
   username_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1931,13 +2200,8 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::Sha
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::descriptor() {
-  ::protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType& LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType_messages_2dlisk_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1956,9 +2220,62 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::Cle
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string username = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskDelegateType.username");
+        object = msg->mutable_username();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskDelegateType)
   for (;;) {
@@ -1968,8 +2285,7 @@ bool LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::Mer
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string username = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_username()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2001,6 +2317,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2027,8 +2344,7 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::Ser
 }
 
 ::google::protobuf::uint8* LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskDelegateType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2062,8 +2378,13 @@ size_t LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::B
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string username = 1;
-  if (has_username()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->username());
@@ -2078,9 +2399,9 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::Mer
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskDelegateType)
   GOOGLE_DCHECK_NE(&from, this);
   const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType>(
+      ::google::protobuf::DynamicCastToGenerated<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskDelegateType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2097,7 +2418,7 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::Mer
   (void) cached_has_bits;
 
   if (from.has_username()) {
-    set_has_username();
+    _has_bits_[0] |= 0x00000001u;
     username_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.username_);
   }
 }
@@ -2126,15 +2447,15 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::Swa
 }
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::InternalSwap(LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   username_.Swap(&other->username_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::GetMetadata() const {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dlisk_2eproto);
+  return ::file_level_metadata_messages_2dlisk_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2142,6 +2463,16 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::Int
 
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::InitAsDefaultInstance() {
 }
+class LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::HasBitSetters {
+ public:
+  static void set_has_min(LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_life_time(LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::kMinFieldNumber;
 const int LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::kLifeTimeFieldNumber;
@@ -2149,15 +2480,13 @@ const int LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatu
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskMultisignatureType)
 }
 LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType(const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       keys_group_(from.keys_group_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -2168,6 +2497,8 @@ LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::Li
 }
 
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType_messages_2dlisk_2eproto.base);
   ::memset(&min_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&life_time_) -
       reinterpret_cast<char*>(&min_)) + sizeof(life_time_));
@@ -2184,13 +2515,8 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureTyp
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::descriptor() {
-  ::protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType& LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType_messages_2dlisk_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2203,7 +2529,7 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureTyp
 
   keys_group_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&min_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&life_time_) -
         reinterpret_cast<char*>(&min_)) + sizeof(life_time_));
@@ -2212,9 +2538,79 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureTyp
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 min = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_min(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 life_time = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_life_time(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated string keys_group = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          ctx->extra_parse_data().SetFieldName("hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskMultisignatureType.keys_group");
+          object = msg->add_keys_group();
+          if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+            parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+            goto string_till_end;
+          }
+          GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+          ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+          ptr += size;
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 26 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskMultisignatureType)
   for (;;) {
@@ -2224,9 +2620,8 @@ bool LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureTyp
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 min = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_min();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_min(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &min_)));
@@ -2238,9 +2633,8 @@ bool LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureTyp
 
       // optional uint32 life_time = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_life_time();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_life_time(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &life_time_)));
@@ -2252,8 +2646,7 @@ bool LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureTyp
 
       // repeated string keys_group = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_keys_group()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2286,6 +2679,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2322,8 +2716,7 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureTyp
 }
 
 ::google::protobuf::uint8* LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskMultisignatureType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2366,6 +2759,10 @@ size_t LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureT
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated string keys_group = 3;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->keys_group_size());
@@ -2374,16 +2771,17 @@ size_t LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureT
       this->keys_group(i));
   }
 
-  if (_has_bits_[0 / 32] & 3u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint32 min = 1;
-    if (has_min()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->min());
     }
 
     // optional uint32 life_time = 2;
-    if (has_life_time()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->life_time());
@@ -2399,9 +2797,9 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureTyp
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskMultisignatureType)
   GOOGLE_DCHECK_NE(&from, this);
   const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType>(
+      ::google::protobuf::DynamicCastToGenerated<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskMultisignatureType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2419,7 +2817,7 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureTyp
 
   keys_group_.MergeFrom(from.keys_group_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       min_ = from.min_;
     }
@@ -2454,16 +2852,16 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureTyp
 }
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::InternalSwap(LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   keys_group_.InternalSwap(CastToBase(&other->keys_group_));
   swap(min_, other->min_);
   swap(life_time_, other->life_time_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::GetMetadata() const {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dlisk_2eproto);
+  return ::file_level_metadata_messages_2dlisk_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2477,6 +2875,37 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::InitAsDefaultInstanc
   ::hw::trezor::messages::lisk::_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_default_instance_._instance.get_mutable()->multisignature_ = const_cast< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType*>(
       ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::internal_default_instance());
 }
+class LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::HasBitSetters {
+ public:
+  static const ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType& signature(const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset* msg);
+  static void set_has_signature(LiskSignTx_LiskTransactionCommon_LiskTransactionAsset* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static const ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType& delegate(const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset* msg);
+  static void set_has_delegate(LiskSignTx_LiskTransactionCommon_LiskTransactionAsset* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static const ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType& multisignature(const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset* msg);
+  static void set_has_multisignature(LiskSignTx_LiskTransactionCommon_LiskTransactionAsset* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_data(LiskSignTx_LiskTransactionCommon_LiskTransactionAsset* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType&
+LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::HasBitSetters::signature(const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset* msg) {
+  return *msg->signature_;
+}
+const ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType&
+LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::HasBitSetters::delegate(const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset* msg) {
+  return *msg->delegate_;
+}
+const ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType&
+LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::HasBitSetters::multisignature(const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset* msg) {
+  return *msg->multisignature_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::kSignatureFieldNumber;
 const int LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::kDelegateFieldNumber;
@@ -2486,15 +2915,13 @@ const int LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::kDataFieldNumbe
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset)
 }
 LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset(const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       votes_(from.votes_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -2505,22 +2932,24 @@ LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::LiskSignTx_LiskTransactio
   if (from.has_signature()) {
     signature_ = new ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType(*from.signature_);
   } else {
-    signature_ = NULL;
+    signature_ = nullptr;
   }
   if (from.has_delegate()) {
     delegate_ = new ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType(*from.delegate_);
   } else {
-    delegate_ = NULL;
+    delegate_ = nullptr;
   }
   if (from.has_multisignature()) {
     multisignature_ = new ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType(*from.multisignature_);
   } else {
-    multisignature_ = NULL;
+    multisignature_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset)
 }
 
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_messages_2dlisk_2eproto.base);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&signature_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&multisignature_) -
@@ -2542,13 +2971,8 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::SharedDtor() {
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::descriptor() {
-  ::protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset& LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_messages_2dlisk_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2561,20 +2985,20 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::Clear() {
 
   votes_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       data_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(signature_ != NULL);
+      GOOGLE_DCHECK(signature_ != nullptr);
       signature_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(delegate_ != NULL);
+      GOOGLE_DCHECK(delegate_ != nullptr);
       delegate_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(multisignature_ != NULL);
+      GOOGLE_DCHECK(multisignature_ != nullptr);
       multisignature_->Clear();
     }
   }
@@ -2582,9 +3006,120 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskSignatureType signature = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType::_InternalParse;
+        object = msg->mutable_signature();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskDelegateType delegate = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType::_InternalParse;
+        object = msg->mutable_delegate();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // repeated string votes = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          ctx->extra_parse_data().SetFieldName("hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.votes");
+          object = msg->add_votes();
+          if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+            parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+            goto string_till_end;
+          }
+          GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+          ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+          ptr += size;
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 26 && (ptr += 1));
+        break;
+      }
+      // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskMultisignatureType multisignature = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType::_InternalParse;
+        object = msg->mutable_multisignature();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional string data = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.data");
+        object = msg->mutable_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset)
   for (;;) {
@@ -2594,8 +3129,7 @@ bool LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::MergePartialFromCode
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskSignatureType signature = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_signature()));
         } else {
@@ -2606,8 +3140,7 @@ bool LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::MergePartialFromCode
 
       // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskDelegateType delegate = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_delegate()));
         } else {
@@ -2618,8 +3151,7 @@ bool LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::MergePartialFromCode
 
       // repeated string votes = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_votes()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2635,8 +3167,7 @@ bool LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::MergePartialFromCode
 
       // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskMultisignatureType multisignature = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_multisignature()));
         } else {
@@ -2647,8 +3178,7 @@ bool LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::MergePartialFromCode
 
       // optional string data = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_data()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2680,6 +3210,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2691,13 +3222,13 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::SerializeWithCachedS
   // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskSignatureType signature = 1;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_signature(), output);
+      1, HasBitSetters::signature(this), output);
   }
 
   // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskDelegateType delegate = 2;
   if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_delegate(), output);
+      2, HasBitSetters::delegate(this), output);
   }
 
   // repeated string votes = 3;
@@ -2713,7 +3244,7 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::SerializeWithCachedS
   // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskMultisignatureType multisignature = 4;
   if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_multisignature(), output);
+      4, HasBitSetters::multisignature(this), output);
   }
 
   // optional string data = 5;
@@ -2734,8 +3265,7 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::SerializeWithCachedS
 }
 
 ::google::protobuf::uint8* LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2745,14 +3275,14 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::SerializeWithCachedS
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_signature(), deterministic, target);
+        1, HasBitSetters::signature(this), target);
   }
 
   // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskDelegateType delegate = 2;
   if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_delegate(), deterministic, target);
+        2, HasBitSetters::delegate(this), target);
   }
 
   // repeated string votes = 3;
@@ -2769,7 +3299,7 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::SerializeWithCachedS
   if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_multisignature(), deterministic, target);
+        4, HasBitSetters::multisignature(this), target);
   }
 
   // optional string data = 5;
@@ -2800,6 +3330,10 @@ size_t LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::ByteSizeLong() con
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated string votes = 3;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->votes_size());
@@ -2808,30 +3342,31 @@ size_t LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::ByteSizeLong() con
       this->votes(i));
   }
 
-  if (_has_bits_[0 / 32] & 15u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional string data = 5;
-    if (has_data()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->data());
     }
 
     // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskSignatureType signature = 1;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *signature_);
     }
 
     // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskDelegateType delegate = 2;
-    if (has_delegate()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *delegate_);
     }
 
     // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset.LiskMultisignatureType multisignature = 4;
-    if (has_multisignature()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *multisignature_);
@@ -2847,9 +3382,9 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::MergeFrom(const ::go
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset)
   GOOGLE_DCHECK_NE(&from, this);
   const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LiskSignTx_LiskTransactionCommon_LiskTransactionAsset>(
+      ::google::protobuf::DynamicCastToGenerated<LiskSignTx_LiskTransactionCommon_LiskTransactionAsset>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2867,9 +3402,9 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::MergeFrom(const Lisk
 
   votes_.MergeFrom(from.votes_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_data();
+      _has_bits_[0] |= 0x00000001u;
       data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -2908,19 +3443,19 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::Swap(LiskSignTx_Lisk
 }
 void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::InternalSwap(LiskSignTx_LiskTransactionCommon_LiskTransactionAsset* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   votes_.InternalSwap(CastToBase(&other->votes_));
   data_.Swap(&other->data_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(signature_, other->signature_);
   swap(delegate_, other->delegate_);
   swap(multisignature_, other->multisignature_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::GetMetadata() const {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dlisk_2eproto);
+  return ::file_level_metadata_messages_2dlisk_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2929,6 +3464,42 @@ void LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::InternalSwap(LiskSig
 void LiskSignTx_LiskTransactionCommon::InitAsDefaultInstance() {
   ::hw::trezor::messages::lisk::_LiskSignTx_LiskTransactionCommon_default_instance_._instance.get_mutable()->asset_ = const_cast< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset*>(
       ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::internal_default_instance());
+}
+class LiskSignTx_LiskTransactionCommon::HasBitSetters {
+ public:
+  static void set_has_type(LiskSignTx_LiskTransactionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static void set_has_amount(LiskSignTx_LiskTransactionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_fee(LiskSignTx_LiskTransactionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_recipient_id(LiskSignTx_LiskTransactionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_sender_public_key(LiskSignTx_LiskTransactionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_requester_public_key(LiskSignTx_LiskTransactionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_signature(LiskSignTx_LiskTransactionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_timestamp(LiskSignTx_LiskTransactionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static const ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset& asset(const LiskSignTx_LiskTransactionCommon* msg);
+  static void set_has_asset(LiskSignTx_LiskTransactionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+};
+
+const ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset&
+LiskSignTx_LiskTransactionCommon::HasBitSetters::asset(const LiskSignTx_LiskTransactionCommon* msg) {
+  return *msg->asset_;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LiskSignTx_LiskTransactionCommon::kTypeFieldNumber;
@@ -2943,15 +3514,13 @@ const int LiskSignTx_LiskTransactionCommon::kAssetFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LiskSignTx_LiskTransactionCommon::LiskSignTx_LiskTransactionCommon()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon)
 }
 LiskSignTx_LiskTransactionCommon::LiskSignTx_LiskTransactionCommon(const LiskSignTx_LiskTransactionCommon& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   recipient_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2973,7 +3542,7 @@ LiskSignTx_LiskTransactionCommon::LiskSignTx_LiskTransactionCommon(const LiskSig
   if (from.has_asset()) {
     asset_ = new ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset(*from.asset_);
   } else {
-    asset_ = NULL;
+    asset_ = nullptr;
   }
   ::memcpy(&amount_, &from.amount_,
     static_cast<size_t>(reinterpret_cast<char*>(&timestamp_) -
@@ -2982,6 +3551,8 @@ LiskSignTx_LiskTransactionCommon::LiskSignTx_LiskTransactionCommon(const LiskSig
 }
 
 void LiskSignTx_LiskTransactionCommon::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_LiskSignTx_LiskTransactionCommon_messages_2dlisk_2eproto.base);
   recipient_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   sender_public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   requester_public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3007,13 +3578,8 @@ void LiskSignTx_LiskTransactionCommon::SharedDtor() {
 void LiskSignTx_LiskTransactionCommon::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LiskSignTx_LiskTransactionCommon::descriptor() {
-  ::protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const LiskSignTx_LiskTransactionCommon& LiskSignTx_LiskTransactionCommon::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx_LiskTransactionCommon.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_LiskSignTx_LiskTransactionCommon_messages_2dlisk_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3025,7 +3591,7 @@ void LiskSignTx_LiskTransactionCommon::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
       recipient_id_.ClearNonDefaultToEmptyNoArena();
     }
@@ -3039,11 +3605,11 @@ void LiskSignTx_LiskTransactionCommon::Clear() {
       signature_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(asset_ != NULL);
+      GOOGLE_DCHECK(asset_ != nullptr);
       asset_->Clear();
     }
   }
-  if (cached_has_bits & 224u) {
+  if (cached_has_bits & 0x000000e0u) {
     ::memset(&amount_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&type_) -
         reinterpret_cast<char*>(&amount_)) + sizeof(type_));
@@ -3053,9 +3619,153 @@ void LiskSignTx_LiskTransactionCommon::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LiskSignTx_LiskTransactionCommon::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<LiskSignTx_LiskTransactionCommon*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionType type = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(1, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_type(static_cast<::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionType>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 amount = 2 [default = 0];
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 fee = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_fee(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string recipient_id = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.recipient_id");
+        object = msg->mutable_recipient_id();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes sender_public_key = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_sender_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes requester_public_key = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_requester_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes signature = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 58) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 timestamp = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 64) goto handle_unusual;
+        msg->set_timestamp(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset asset = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 74) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset::_InternalParse;
+        object = msg->mutable_asset();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool LiskSignTx_LiskTransactionCommon::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon)
   for (;;) {
@@ -3065,9 +3775,8 @@ bool LiskSignTx_LiskTransactionCommon::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionType type = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -3075,7 +3784,7 @@ bool LiskSignTx_LiskTransactionCommon::MergePartialFromCodedStream(
             set_type(static_cast< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                1, static_cast< ::google::protobuf::uint64>(value));
+                1, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -3085,9 +3794,8 @@ bool LiskSignTx_LiskTransactionCommon::MergePartialFromCodedStream(
 
       // optional uint64 amount = 2 [default = 0];
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &amount_)));
@@ -3099,9 +3807,8 @@ bool LiskSignTx_LiskTransactionCommon::MergePartialFromCodedStream(
 
       // optional uint64 fee = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_fee();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_fee(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &fee_)));
@@ -3113,8 +3820,7 @@ bool LiskSignTx_LiskTransactionCommon::MergePartialFromCodedStream(
 
       // optional string recipient_id = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_recipient_id()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3129,8 +3835,7 @@ bool LiskSignTx_LiskTransactionCommon::MergePartialFromCodedStream(
 
       // optional bytes sender_public_key = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_sender_public_key()));
         } else {
@@ -3141,8 +3846,7 @@ bool LiskSignTx_LiskTransactionCommon::MergePartialFromCodedStream(
 
       // optional bytes requester_public_key = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_requester_public_key()));
         } else {
@@ -3153,8 +3857,7 @@ bool LiskSignTx_LiskTransactionCommon::MergePartialFromCodedStream(
 
       // optional bytes signature = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (58 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -3165,9 +3868,8 @@ bool LiskSignTx_LiskTransactionCommon::MergePartialFromCodedStream(
 
       // optional uint32 timestamp = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
-          set_has_timestamp();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (64 & 0xFF)) {
+          HasBitSetters::set_has_timestamp(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &timestamp_)));
@@ -3179,8 +3881,7 @@ bool LiskSignTx_LiskTransactionCommon::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset asset = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(74u /* 74 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (74 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_asset()));
         } else {
@@ -3208,6 +3909,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void LiskSignTx_LiskTransactionCommon::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3268,7 +3970,7 @@ void LiskSignTx_LiskTransactionCommon::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset asset = 9;
   if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      9, this->_internal_asset(), output);
+      9, HasBitSetters::asset(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3279,8 +3981,7 @@ void LiskSignTx_LiskTransactionCommon::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* LiskSignTx_LiskTransactionCommon::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3343,7 +4044,7 @@ void LiskSignTx_LiskTransactionCommon::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        9, this->_internal_asset(), deterministic, target);
+        9, HasBitSetters::asset(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3363,65 +4064,70 @@ size_t LiskSignTx_LiskTransactionCommon::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 255u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional string recipient_id = 4;
-    if (has_recipient_id()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->recipient_id());
     }
 
     // optional bytes sender_public_key = 5;
-    if (has_sender_public_key()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->sender_public_key());
     }
 
     // optional bytes requester_public_key = 6;
-    if (has_requester_public_key()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->requester_public_key());
     }
 
     // optional bytes signature = 7;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
     }
 
     // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionAsset asset = 9;
-    if (has_asset()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *asset_);
     }
 
     // optional uint64 amount = 2 [default = 0];
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->amount());
     }
 
     // optional uint64 fee = 3;
-    if (has_fee()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->fee());
     }
 
     // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon.LiskTransactionType type = 1;
-    if (has_type()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
     }
 
   }
   // optional uint32 timestamp = 8;
-  if (has_timestamp()) {
+  if (cached_has_bits & 0x00000100u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->timestamp());
@@ -3436,9 +4142,9 @@ void LiskSignTx_LiskTransactionCommon::MergeFrom(const ::google::protobuf::Messa
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon)
   GOOGLE_DCHECK_NE(&from, this);
   const LiskSignTx_LiskTransactionCommon* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LiskSignTx_LiskTransactionCommon>(
+      ::google::protobuf::DynamicCastToGenerated<LiskSignTx_LiskTransactionCommon>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3455,21 +4161,21 @@ void LiskSignTx_LiskTransactionCommon::MergeFrom(const LiskSignTx_LiskTransactio
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_recipient_id();
+      _has_bits_[0] |= 0x00000001u;
       recipient_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.recipient_id_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_sender_public_key();
+      _has_bits_[0] |= 0x00000002u;
       sender_public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sender_public_key_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_requester_public_key();
+      _has_bits_[0] |= 0x00000004u;
       requester_public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.requester_public_key_);
     }
     if (cached_has_bits & 0x00000008u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000008u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
     if (cached_has_bits & 0x00000010u) {
@@ -3515,6 +4221,8 @@ void LiskSignTx_LiskTransactionCommon::Swap(LiskSignTx_LiskTransactionCommon* ot
 }
 void LiskSignTx_LiskTransactionCommon::InternalSwap(LiskSignTx_LiskTransactionCommon* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   recipient_id_.Swap(&other->recipient_id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   sender_public_key_.Swap(&other->sender_public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -3528,13 +4236,11 @@ void LiskSignTx_LiskTransactionCommon::InternalSwap(LiskSignTx_LiskTransactionCo
   swap(fee_, other->fee_);
   swap(type_, other->type_);
   swap(timestamp_, other->timestamp_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata LiskSignTx_LiskTransactionCommon::GetMetadata() const {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dlisk_2eproto);
+  return ::file_level_metadata_messages_2dlisk_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3544,34 +4250,46 @@ void LiskSignTx::InitAsDefaultInstance() {
   ::hw::trezor::messages::lisk::_LiskSignTx_default_instance_._instance.get_mutable()->transaction_ = const_cast< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon*>(
       ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon::internal_default_instance());
 }
+class LiskSignTx::HasBitSetters {
+ public:
+  static const ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon& transaction(const LiskSignTx* msg);
+  static void set_has_transaction(LiskSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon&
+LiskSignTx::HasBitSetters::transaction(const LiskSignTx* msg) {
+  return *msg->transaction_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LiskSignTx::kAddressNFieldNumber;
 const int LiskSignTx::kTransactionFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LiskSignTx::LiskSignTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.lisk.LiskSignTx)
 }
 LiskSignTx::LiskSignTx(const LiskSignTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_transaction()) {
     transaction_ = new ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon(*from.transaction_);
   } else {
-    transaction_ = NULL;
+    transaction_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.lisk.LiskSignTx)
 }
 
 void LiskSignTx::SharedCtor() {
-  transaction_ = NULL;
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_LiskSignTx_messages_2dlisk_2eproto.base);
+  transaction_ = nullptr;
 }
 
 LiskSignTx::~LiskSignTx() {
@@ -3586,13 +4304,8 @@ void LiskSignTx::SharedDtor() {
 void LiskSignTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LiskSignTx::descriptor() {
-  ::protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const LiskSignTx& LiskSignTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dlisk_2eproto::scc_info_LiskSignTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_LiskSignTx_messages_2dlisk_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3606,16 +4319,82 @@ void LiskSignTx::Clear() {
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(transaction_ != NULL);
+    GOOGLE_DCHECK(transaction_ != nullptr);
     transaction_->Clear();
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LiskSignTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<LiskSignTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon transaction = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon::_InternalParse;
+        object = msg->mutable_transaction();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool LiskSignTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.lisk.LiskSignTx)
   for (;;) {
@@ -3625,14 +4404,11 @@ bool LiskSignTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -3644,8 +4420,7 @@ bool LiskSignTx::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon transaction = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_transaction()));
         } else {
@@ -3673,6 +4448,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void LiskSignTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3690,7 +4466,7 @@ void LiskSignTx::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon transaction = 2;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_transaction(), output);
+      2, HasBitSetters::transaction(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3701,8 +4477,7 @@ void LiskSignTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* LiskSignTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.lisk.LiskSignTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3716,7 +4491,7 @@ void LiskSignTx::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_transaction(), deterministic, target);
+        2, HasBitSetters::transaction(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3736,6 +4511,10 @@ size_t LiskSignTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -3746,7 +4525,8 @@ size_t LiskSignTx::ByteSizeLong() const {
   }
 
   // optional .hw.trezor.messages.lisk.LiskSignTx.LiskTransactionCommon transaction = 2;
-  if (has_transaction()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *transaction_);
@@ -3761,9 +4541,9 @@ void LiskSignTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.lisk.LiskSignTx)
   GOOGLE_DCHECK_NE(&from, this);
   const LiskSignTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LiskSignTx>(
+      ::google::protobuf::DynamicCastToGenerated<LiskSignTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.lisk.LiskSignTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3809,15 +4589,15 @@ void LiskSignTx::Swap(LiskSignTx* other) {
 }
 void LiskSignTx::InternalSwap(LiskSignTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(transaction_, other->transaction_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata LiskSignTx::GetMetadata() const {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dlisk_2eproto);
+  return ::file_level_metadata_messages_2dlisk_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3825,20 +4605,25 @@ void LiskSignTx::InternalSwap(LiskSignTx* other) {
 
 void LiskSignedTx::InitAsDefaultInstance() {
 }
+class LiskSignedTx::HasBitSetters {
+ public:
+  static void set_has_signature(LiskSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LiskSignedTx::kSignatureFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LiskSignedTx::LiskSignedTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskSignedTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.lisk.LiskSignedTx)
 }
 LiskSignedTx::LiskSignedTx(const LiskSignedTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3849,6 +4634,8 @@ LiskSignedTx::LiskSignedTx(const LiskSignedTx& from)
 }
 
 void LiskSignedTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_LiskSignedTx_messages_2dlisk_2eproto.base);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -3864,13 +4651,8 @@ void LiskSignedTx::SharedDtor() {
 void LiskSignedTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LiskSignedTx::descriptor() {
-  ::protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const LiskSignedTx& LiskSignedTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dlisk_2eproto::scc_info_LiskSignedTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_LiskSignedTx_messages_2dlisk_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3889,9 +4671,61 @@ void LiskSignedTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LiskSignedTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<LiskSignedTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes signature = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool LiskSignedTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.lisk.LiskSignedTx)
   for (;;) {
@@ -3901,8 +4735,7 @@ bool LiskSignedTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes signature = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -3930,6 +4763,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void LiskSignedTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3952,8 +4786,7 @@ void LiskSignedTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* LiskSignedTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.lisk.LiskSignedTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3983,8 +4816,13 @@ size_t LiskSignedTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional bytes signature = 1;
-  if (has_signature()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->signature());
@@ -3999,9 +4837,9 @@ void LiskSignedTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.lisk.LiskSignedTx)
   GOOGLE_DCHECK_NE(&from, this);
   const LiskSignedTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LiskSignedTx>(
+      ::google::protobuf::DynamicCastToGenerated<LiskSignedTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.lisk.LiskSignedTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4018,7 +4856,7 @@ void LiskSignedTx::MergeFrom(const LiskSignedTx& from) {
   (void) cached_has_bits;
 
   if (from.has_signature()) {
-    set_has_signature();
+    _has_bits_[0] |= 0x00000001u;
     signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
   }
 }
@@ -4047,15 +4885,15 @@ void LiskSignedTx::Swap(LiskSignedTx* other) {
 }
 void LiskSignedTx::InternalSwap(LiskSignedTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata LiskSignedTx::GetMetadata() const {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dlisk_2eproto);
+  return ::file_level_metadata_messages_2dlisk_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4063,21 +4901,26 @@ void LiskSignedTx::InternalSwap(LiskSignedTx* other) {
 
 void LiskSignMessage::InitAsDefaultInstance() {
 }
+class LiskSignMessage::HasBitSetters {
+ public:
+  static void set_has_message(LiskSignMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LiskSignMessage::kAddressNFieldNumber;
 const int LiskSignMessage::kMessageFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LiskSignMessage::LiskSignMessage()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskSignMessage.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.lisk.LiskSignMessage)
 }
 LiskSignMessage::LiskSignMessage(const LiskSignMessage& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -4089,6 +4932,8 @@ LiskSignMessage::LiskSignMessage(const LiskSignMessage& from)
 }
 
 void LiskSignMessage::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_LiskSignMessage_messages_2dlisk_2eproto.base);
   message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -4104,13 +4949,8 @@ void LiskSignMessage::SharedDtor() {
 void LiskSignMessage::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LiskSignMessage::descriptor() {
-  ::protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const LiskSignMessage& LiskSignMessage::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dlisk_2eproto::scc_info_LiskSignMessage.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_LiskSignMessage_messages_2dlisk_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4130,9 +4970,81 @@ void LiskSignMessage::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LiskSignMessage::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<LiskSignMessage*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bytes message = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_message();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool LiskSignMessage::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.lisk.LiskSignMessage)
   for (;;) {
@@ -4142,14 +5054,11 @@ bool LiskSignMessage::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -4161,8 +5070,7 @@ bool LiskSignMessage::MergePartialFromCodedStream(
 
       // optional bytes message = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_message()));
         } else {
@@ -4190,6 +5098,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void LiskSignMessage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4218,8 +5127,7 @@ void LiskSignMessage::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* LiskSignMessage::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.lisk.LiskSignMessage)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4253,6 +5161,10 @@ size_t LiskSignMessage::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -4263,7 +5175,8 @@ size_t LiskSignMessage::ByteSizeLong() const {
   }
 
   // optional bytes message = 2;
-  if (has_message()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->message());
@@ -4278,9 +5191,9 @@ void LiskSignMessage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.lisk.LiskSignMessage)
   GOOGLE_DCHECK_NE(&from, this);
   const LiskSignMessage* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LiskSignMessage>(
+      ::google::protobuf::DynamicCastToGenerated<LiskSignMessage>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.lisk.LiskSignMessage)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4298,7 +5211,7 @@ void LiskSignMessage::MergeFrom(const LiskSignMessage& from) {
 
   address_n_.MergeFrom(from.address_n_);
   if (from.has_message()) {
-    set_has_message();
+    _has_bits_[0] |= 0x00000001u;
     message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.message_);
   }
 }
@@ -4327,16 +5240,16 @@ void LiskSignMessage::Swap(LiskSignMessage* other) {
 }
 void LiskSignMessage::InternalSwap(LiskSignMessage* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   message_.Swap(&other->message_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata LiskSignMessage::GetMetadata() const {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dlisk_2eproto);
+  return ::file_level_metadata_messages_2dlisk_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4344,21 +5257,29 @@ void LiskSignMessage::InternalSwap(LiskSignMessage* other) {
 
 void LiskMessageSignature::InitAsDefaultInstance() {
 }
+class LiskMessageSignature::HasBitSetters {
+ public:
+  static void set_has_public_key(LiskMessageSignature* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_signature(LiskMessageSignature* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LiskMessageSignature::kPublicKeyFieldNumber;
 const int LiskMessageSignature::kSignatureFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LiskMessageSignature::LiskMessageSignature()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskMessageSignature.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.lisk.LiskMessageSignature)
 }
 LiskMessageSignature::LiskMessageSignature(const LiskMessageSignature& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4373,6 +5294,8 @@ LiskMessageSignature::LiskMessageSignature(const LiskMessageSignature& from)
 }
 
 void LiskMessageSignature::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_LiskMessageSignature_messages_2dlisk_2eproto.base);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -4390,13 +5313,8 @@ void LiskMessageSignature::SharedDtor() {
 void LiskMessageSignature::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LiskMessageSignature::descriptor() {
-  ::protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const LiskMessageSignature& LiskMessageSignature::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dlisk_2eproto::scc_info_LiskMessageSignature.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_LiskMessageSignature_messages_2dlisk_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4408,7 +5326,7 @@ void LiskMessageSignature::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       public_key_.ClearNonDefaultToEmptyNoArena();
     }
@@ -4420,9 +5338,76 @@ void LiskMessageSignature::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LiskMessageSignature::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<LiskMessageSignature*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes public_key = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes signature = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool LiskMessageSignature::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.lisk.LiskMessageSignature)
   for (;;) {
@@ -4432,8 +5417,7 @@ bool LiskMessageSignature::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes public_key = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_public_key()));
         } else {
@@ -4444,8 +5428,7 @@ bool LiskMessageSignature::MergePartialFromCodedStream(
 
       // optional bytes signature = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -4473,6 +5456,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void LiskMessageSignature::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4501,8 +5485,7 @@ void LiskMessageSignature::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* LiskMessageSignature::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.lisk.LiskMessageSignature)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4539,16 +5522,21 @@ size_t LiskMessageSignature::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes public_key = 1;
-    if (has_public_key()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->public_key());
     }
 
     // optional bytes signature = 2;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
@@ -4564,9 +5552,9 @@ void LiskMessageSignature::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.lisk.LiskMessageSignature)
   GOOGLE_DCHECK_NE(&from, this);
   const LiskMessageSignature* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LiskMessageSignature>(
+      ::google::protobuf::DynamicCastToGenerated<LiskMessageSignature>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.lisk.LiskMessageSignature)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4583,13 +5571,13 @@ void LiskMessageSignature::MergeFrom(const LiskMessageSignature& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_public_key();
+      _has_bits_[0] |= 0x00000001u;
       public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000002u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
   }
@@ -4619,17 +5607,17 @@ void LiskMessageSignature::Swap(LiskMessageSignature* other) {
 }
 void LiskMessageSignature::InternalSwap(LiskMessageSignature* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata LiskMessageSignature::GetMetadata() const {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dlisk_2eproto);
+  return ::file_level_metadata_messages_2dlisk_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4637,6 +5625,19 @@ void LiskMessageSignature::InternalSwap(LiskMessageSignature* other) {
 
 void LiskVerifyMessage::InitAsDefaultInstance() {
 }
+class LiskVerifyMessage::HasBitSetters {
+ public:
+  static void set_has_public_key(LiskVerifyMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_signature(LiskVerifyMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_message(LiskVerifyMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LiskVerifyMessage::kPublicKeyFieldNumber;
 const int LiskVerifyMessage::kSignatureFieldNumber;
@@ -4644,15 +5645,13 @@ const int LiskVerifyMessage::kMessageFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 LiskVerifyMessage::LiskVerifyMessage()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dlisk_2eproto::scc_info_LiskVerifyMessage.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.lisk.LiskVerifyMessage)
 }
 LiskVerifyMessage::LiskVerifyMessage(const LiskVerifyMessage& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4671,6 +5670,8 @@ LiskVerifyMessage::LiskVerifyMessage(const LiskVerifyMessage& from)
 }
 
 void LiskVerifyMessage::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_LiskVerifyMessage_messages_2dlisk_2eproto.base);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4690,13 +5691,8 @@ void LiskVerifyMessage::SharedDtor() {
 void LiskVerifyMessage::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LiskVerifyMessage::descriptor() {
-  ::protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const LiskVerifyMessage& LiskVerifyMessage::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dlisk_2eproto::scc_info_LiskVerifyMessage.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_LiskVerifyMessage_messages_2dlisk_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4708,7 +5704,7 @@ void LiskVerifyMessage::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       public_key_.ClearNonDefaultToEmptyNoArena();
     }
@@ -4723,9 +5719,91 @@ void LiskVerifyMessage::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* LiskVerifyMessage::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<LiskVerifyMessage*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes public_key = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes signature = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes message = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_message();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool LiskVerifyMessage::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.lisk.LiskVerifyMessage)
   for (;;) {
@@ -4735,8 +5813,7 @@ bool LiskVerifyMessage::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes public_key = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_public_key()));
         } else {
@@ -4747,8 +5824,7 @@ bool LiskVerifyMessage::MergePartialFromCodedStream(
 
       // optional bytes signature = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -4759,8 +5835,7 @@ bool LiskVerifyMessage::MergePartialFromCodedStream(
 
       // optional bytes message = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_message()));
         } else {
@@ -4788,6 +5863,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void LiskVerifyMessage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4822,8 +5898,7 @@ void LiskVerifyMessage::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* LiskVerifyMessage::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.lisk.LiskVerifyMessage)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4867,23 +5942,28 @@ size_t LiskVerifyMessage::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional bytes public_key = 1;
-    if (has_public_key()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->public_key());
     }
 
     // optional bytes signature = 2;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
     }
 
     // optional bytes message = 3;
-    if (has_message()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->message());
@@ -4899,9 +5979,9 @@ void LiskVerifyMessage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.lisk.LiskVerifyMessage)
   GOOGLE_DCHECK_NE(&from, this);
   const LiskVerifyMessage* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LiskVerifyMessage>(
+      ::google::protobuf::DynamicCastToGenerated<LiskVerifyMessage>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.lisk.LiskVerifyMessage)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4918,17 +5998,17 @@ void LiskVerifyMessage::MergeFrom(const LiskVerifyMessage& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_public_key();
+      _has_bits_[0] |= 0x00000001u;
       public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000002u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_message();
+      _has_bits_[0] |= 0x00000004u;
       message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.message_);
     }
   }
@@ -4958,19 +6038,19 @@ void LiskVerifyMessage::Swap(LiskVerifyMessage* other) {
 }
 void LiskVerifyMessage::InternalSwap(LiskVerifyMessage* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   message_.Swap(&other->message_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata LiskVerifyMessage::GetMetadata() const {
-  protobuf_messages_2dlisk_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dlisk_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dlisk_2eproto);
+  return ::file_level_metadata_messages_2dlisk_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4981,49 +6061,50 @@ void LiskVerifyMessage::InternalSwap(LiskVerifyMessage* other) {
 }  // namespace hw
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::lisk::LiskGetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskGetAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::lisk::LiskGetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskGetAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::lisk::LiskGetAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::lisk::LiskAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::lisk::LiskAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::lisk::LiskAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::lisk::LiskGetPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskGetPublicKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::lisk::LiskGetPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskGetPublicKey >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::lisk::LiskGetPublicKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::lisk::LiskPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskPublicKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::lisk::LiskPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskPublicKey >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::lisk::LiskPublicKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskSignatureType >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskDelegateType >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset_LiskMultisignatureType >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon_LiskTransactionAsset >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::lisk::LiskSignTx_LiskTransactionCommon >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::lisk::LiskSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::lisk::LiskSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::lisk::LiskSignTx >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::lisk::LiskSignedTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignedTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::lisk::LiskSignedTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignedTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::lisk::LiskSignedTx >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::lisk::LiskSignMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignMessage >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::lisk::LiskSignMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskSignMessage >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::lisk::LiskSignMessage >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::lisk::LiskMessageSignature* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskMessageSignature >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::lisk::LiskMessageSignature* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskMessageSignature >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::lisk::LiskMessageSignature >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::lisk::LiskVerifyMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskVerifyMessage >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::lisk::LiskVerifyMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::lisk::LiskVerifyMessage >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::lisk::LiskVerifyMessage >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

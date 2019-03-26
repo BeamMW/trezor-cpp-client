@@ -6,163 +6,133 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_messages_2dtron_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronAccountUpdateContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronFreezeBalanceContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronParticipateAssetIssueContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronProposalApproveContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronProposalDeleteContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronTransferAssetContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronTransferContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronUnfreezeAssetContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronUnfreezeBalanceContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronUpdateAssetContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronVoteWitnessContract_TronVote;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronWithdrawBalanceContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronWitnessCreateContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronWitnessUpdateContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<16> scc_info_TronSignTx_TronContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TronSignTx_TronContract_TronAssetIssueContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TronSignTx_TronContract_TronProposalCreateContract;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TronSignTx_TronContract_TronVoteWitnessContract;
-}  // namespace protobuf_messages_2dtron_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronAccountUpdateContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronFreezeBalanceContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronParticipateAssetIssueContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronProposalApproveContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronProposalDeleteContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronTransferAssetContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronTransferContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronUnfreezeAssetContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronUnfreezeBalanceContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronUpdateAssetContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronVoteWitnessContract_TronVote_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronWithdrawBalanceContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronWitnessCreateContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronWitnessUpdateContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<16> scc_info_TronSignTx_TronContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TronSignTx_TronContract_TronAssetIssueContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TronSignTx_TronContract_TronProposalCreateContract_messages_2dtron_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dtron_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TronSignTx_TronContract_TronVoteWitnessContract_messages_2dtron_2eproto;
 class TronGetAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronGetAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronGetAddress> _instance;
 } _TronGetAddress_default_instance_;
 class TronAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronAddress> _instance;
 } _TronAddress_default_instance_;
 class TronSignTx_TronContract_TronAccountUpdateContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronAccountUpdateContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronAccountUpdateContract> _instance;
 } _TronSignTx_TronContract_TronAccountUpdateContract_default_instance_;
 class TronSignTx_TronContract_TronTransferContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronTransferContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronTransferContract> _instance;
 } _TronSignTx_TronContract_TronTransferContract_default_instance_;
 class TronSignTx_TronContract_TronTransferAssetContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronTransferAssetContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronTransferAssetContract> _instance;
 } _TronSignTx_TronContract_TronTransferAssetContract_default_instance_;
 class TronSignTx_TronContract_TronVoteWitnessContract_TronVoteDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronVoteWitnessContract_TronVote>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronVoteWitnessContract_TronVote> _instance;
 } _TronSignTx_TronContract_TronVoteWitnessContract_TronVote_default_instance_;
 class TronSignTx_TronContract_TronVoteWitnessContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronVoteWitnessContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronVoteWitnessContract> _instance;
 } _TronSignTx_TronContract_TronVoteWitnessContract_default_instance_;
 class TronSignTx_TronContract_TronWitnessCreateContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronWitnessCreateContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronWitnessCreateContract> _instance;
 } _TronSignTx_TronContract_TronWitnessCreateContract_default_instance_;
 class TronSignTx_TronContract_TronWitnessUpdateContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronWitnessUpdateContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronWitnessUpdateContract> _instance;
 } _TronSignTx_TronContract_TronWitnessUpdateContract_default_instance_;
 class TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupplyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply> _instance;
 } _TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply_default_instance_;
 class TronSignTx_TronContract_TronAssetIssueContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronAssetIssueContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronAssetIssueContract> _instance;
 } _TronSignTx_TronContract_TronAssetIssueContract_default_instance_;
 class TronSignTx_TronContract_TronParticipateAssetIssueContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronParticipateAssetIssueContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronParticipateAssetIssueContract> _instance;
 } _TronSignTx_TronContract_TronParticipateAssetIssueContract_default_instance_;
 class TronSignTx_TronContract_TronFreezeBalanceContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronFreezeBalanceContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronFreezeBalanceContract> _instance;
 } _TronSignTx_TronContract_TronFreezeBalanceContract_default_instance_;
 class TronSignTx_TronContract_TronUnfreezeBalanceContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronUnfreezeBalanceContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronUnfreezeBalanceContract> _instance;
 } _TronSignTx_TronContract_TronUnfreezeBalanceContract_default_instance_;
 class TronSignTx_TronContract_TronUnfreezeAssetContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronUnfreezeAssetContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronUnfreezeAssetContract> _instance;
 } _TronSignTx_TronContract_TronUnfreezeAssetContract_default_instance_;
 class TronSignTx_TronContract_TronWithdrawBalanceContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronWithdrawBalanceContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronWithdrawBalanceContract> _instance;
 } _TronSignTx_TronContract_TronWithdrawBalanceContract_default_instance_;
 class TronSignTx_TronContract_TronUpdateAssetContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronUpdateAssetContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronUpdateAssetContract> _instance;
 } _TronSignTx_TronContract_TronUpdateAssetContract_default_instance_;
 class TronSignTx_TronContract_TronProposalCreateContract_TronProposalParametersDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters> _instance;
 } _TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters_default_instance_;
 class TronSignTx_TronContract_TronProposalCreateContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronProposalCreateContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronProposalCreateContract> _instance;
 } _TronSignTx_TronContract_TronProposalCreateContract_default_instance_;
 class TronSignTx_TronContract_TronProposalApproveContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronProposalApproveContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronProposalApproveContract> _instance;
 } _TronSignTx_TronContract_TronProposalApproveContract_default_instance_;
 class TronSignTx_TronContract_TronProposalDeleteContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronProposalDeleteContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract_TronProposalDeleteContract> _instance;
 } _TronSignTx_TronContract_TronProposalDeleteContract_default_instance_;
 class TronSignTx_TronContractDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx_TronContract> _instance;
 } _TronSignTx_TronContract_default_instance_;
 class TronSignTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignTx> _instance;
 } _TronSignTx_default_instance_;
 class TronSignedTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TronSignedTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TronSignedTx> _instance;
 } _TronSignedTx_default_instance_;
-namespace protobuf_messages_2dtron_2eproto {
-static void InitDefaultsTronGetAddress() {
+static void InitDefaultsTronGetAddress_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -173,10 +143,10 @@ static void InitDefaultsTronGetAddress() {
   ::TronGetAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronGetAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronGetAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronGetAddress_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronGetAddress_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronAddress() {
+static void InitDefaultsTronAddress_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -187,10 +157,10 @@ static void InitDefaultsTronAddress() {
   ::TronAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronAddress_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronAddress_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronAccountUpdateContract() {
+static void InitDefaultsTronSignTx_TronContract_TronAccountUpdateContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -201,10 +171,10 @@ static void InitDefaultsTronSignTx_TronContract_TronAccountUpdateContract() {
   ::TronSignTx_TronContract_TronAccountUpdateContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronAccountUpdateContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronAccountUpdateContract}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronAccountUpdateContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronAccountUpdateContract_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronTransferContract() {
+static void InitDefaultsTronSignTx_TronContract_TronTransferContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -215,10 +185,10 @@ static void InitDefaultsTronSignTx_TronContract_TronTransferContract() {
   ::TronSignTx_TronContract_TronTransferContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronTransferContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronTransferContract}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronTransferContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronTransferContract_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronTransferAssetContract() {
+static void InitDefaultsTronSignTx_TronContract_TronTransferAssetContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -229,10 +199,10 @@ static void InitDefaultsTronSignTx_TronContract_TronTransferAssetContract() {
   ::TronSignTx_TronContract_TronTransferAssetContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronTransferAssetContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronTransferAssetContract}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronTransferAssetContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronTransferAssetContract_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronVoteWitnessContract_TronVote() {
+static void InitDefaultsTronSignTx_TronContract_TronVoteWitnessContract_TronVote_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -243,10 +213,10 @@ static void InitDefaultsTronSignTx_TronContract_TronVoteWitnessContract_TronVote
   ::TronSignTx_TronContract_TronVoteWitnessContract_TronVote::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronVoteWitnessContract_TronVote =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronVoteWitnessContract_TronVote}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronVoteWitnessContract_TronVote_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronVoteWitnessContract_TronVote_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronVoteWitnessContract() {
+static void InitDefaultsTronSignTx_TronContract_TronVoteWitnessContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -257,11 +227,11 @@ static void InitDefaultsTronSignTx_TronContract_TronVoteWitnessContract() {
   ::TronSignTx_TronContract_TronVoteWitnessContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_TronSignTx_TronContract_TronVoteWitnessContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTronSignTx_TronContract_TronVoteWitnessContract}, {
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronVoteWitnessContract_TronVote.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_TronSignTx_TronContract_TronVoteWitnessContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTronSignTx_TronContract_TronVoteWitnessContract_messages_2dtron_2eproto}, {
+      &scc_info_TronSignTx_TronContract_TronVoteWitnessContract_TronVote_messages_2dtron_2eproto.base,}};
 
-static void InitDefaultsTronSignTx_TronContract_TronWitnessCreateContract() {
+static void InitDefaultsTronSignTx_TronContract_TronWitnessCreateContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -272,10 +242,10 @@ static void InitDefaultsTronSignTx_TronContract_TronWitnessCreateContract() {
   ::TronSignTx_TronContract_TronWitnessCreateContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronWitnessCreateContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronWitnessCreateContract}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronWitnessCreateContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronWitnessCreateContract_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronWitnessUpdateContract() {
+static void InitDefaultsTronSignTx_TronContract_TronWitnessUpdateContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -286,10 +256,10 @@ static void InitDefaultsTronSignTx_TronContract_TronWitnessUpdateContract() {
   ::TronSignTx_TronContract_TronWitnessUpdateContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronWitnessUpdateContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronWitnessUpdateContract}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronWitnessUpdateContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronWitnessUpdateContract_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply() {
+static void InitDefaultsTronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -300,10 +270,10 @@ static void InitDefaultsTronSignTx_TronContract_TronAssetIssueContract_TronFroze
   ::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronAssetIssueContract() {
+static void InitDefaultsTronSignTx_TronContract_TronAssetIssueContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -314,11 +284,11 @@ static void InitDefaultsTronSignTx_TronContract_TronAssetIssueContract() {
   ::TronSignTx_TronContract_TronAssetIssueContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_TronSignTx_TronContract_TronAssetIssueContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTronSignTx_TronContract_TronAssetIssueContract}, {
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_TronSignTx_TronContract_TronAssetIssueContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTronSignTx_TronContract_TronAssetIssueContract_messages_2dtron_2eproto}, {
+      &scc_info_TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply_messages_2dtron_2eproto.base,}};
 
-static void InitDefaultsTronSignTx_TronContract_TronParticipateAssetIssueContract() {
+static void InitDefaultsTronSignTx_TronContract_TronParticipateAssetIssueContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -329,10 +299,10 @@ static void InitDefaultsTronSignTx_TronContract_TronParticipateAssetIssueContrac
   ::TronSignTx_TronContract_TronParticipateAssetIssueContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronParticipateAssetIssueContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronParticipateAssetIssueContract}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronParticipateAssetIssueContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronParticipateAssetIssueContract_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronFreezeBalanceContract() {
+static void InitDefaultsTronSignTx_TronContract_TronFreezeBalanceContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -343,10 +313,10 @@ static void InitDefaultsTronSignTx_TronContract_TronFreezeBalanceContract() {
   ::TronSignTx_TronContract_TronFreezeBalanceContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronFreezeBalanceContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronFreezeBalanceContract}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronFreezeBalanceContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronFreezeBalanceContract_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronUnfreezeBalanceContract() {
+static void InitDefaultsTronSignTx_TronContract_TronUnfreezeBalanceContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -357,10 +327,10 @@ static void InitDefaultsTronSignTx_TronContract_TronUnfreezeBalanceContract() {
   ::TronSignTx_TronContract_TronUnfreezeBalanceContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronUnfreezeBalanceContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronUnfreezeBalanceContract}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronUnfreezeBalanceContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronUnfreezeBalanceContract_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronUnfreezeAssetContract() {
+static void InitDefaultsTronSignTx_TronContract_TronUnfreezeAssetContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -371,10 +341,10 @@ static void InitDefaultsTronSignTx_TronContract_TronUnfreezeAssetContract() {
   ::TronSignTx_TronContract_TronUnfreezeAssetContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronUnfreezeAssetContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronUnfreezeAssetContract}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronUnfreezeAssetContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronUnfreezeAssetContract_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronWithdrawBalanceContract() {
+static void InitDefaultsTronSignTx_TronContract_TronWithdrawBalanceContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -385,10 +355,10 @@ static void InitDefaultsTronSignTx_TronContract_TronWithdrawBalanceContract() {
   ::TronSignTx_TronContract_TronWithdrawBalanceContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronWithdrawBalanceContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronWithdrawBalanceContract}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronWithdrawBalanceContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronWithdrawBalanceContract_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronUpdateAssetContract() {
+static void InitDefaultsTronSignTx_TronContract_TronUpdateAssetContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -399,10 +369,10 @@ static void InitDefaultsTronSignTx_TronContract_TronUpdateAssetContract() {
   ::TronSignTx_TronContract_TronUpdateAssetContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronUpdateAssetContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronUpdateAssetContract}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronUpdateAssetContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronUpdateAssetContract_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters() {
+static void InitDefaultsTronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -413,10 +383,10 @@ static void InitDefaultsTronSignTx_TronContract_TronProposalCreateContract_TronP
   ::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronProposalCreateContract() {
+static void InitDefaultsTronSignTx_TronContract_TronProposalCreateContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -427,11 +397,11 @@ static void InitDefaultsTronSignTx_TronContract_TronProposalCreateContract() {
   ::TronSignTx_TronContract_TronProposalCreateContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_TronSignTx_TronContract_TronProposalCreateContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTronSignTx_TronContract_TronProposalCreateContract}, {
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_TronSignTx_TronContract_TronProposalCreateContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTronSignTx_TronContract_TronProposalCreateContract_messages_2dtron_2eproto}, {
+      &scc_info_TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters_messages_2dtron_2eproto.base,}};
 
-static void InitDefaultsTronSignTx_TronContract_TronProposalApproveContract() {
+static void InitDefaultsTronSignTx_TronContract_TronProposalApproveContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -442,10 +412,10 @@ static void InitDefaultsTronSignTx_TronContract_TronProposalApproveContract() {
   ::TronSignTx_TronContract_TronProposalApproveContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronProposalApproveContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronProposalApproveContract}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronProposalApproveContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronProposalApproveContract_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract_TronProposalDeleteContract() {
+static void InitDefaultsTronSignTx_TronContract_TronProposalDeleteContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -456,10 +426,10 @@ static void InitDefaultsTronSignTx_TronContract_TronProposalDeleteContract() {
   ::TronSignTx_TronContract_TronProposalDeleteContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronProposalDeleteContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronProposalDeleteContract}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignTx_TronContract_TronProposalDeleteContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignTx_TronContract_TronProposalDeleteContract_messages_2dtron_2eproto}, {}};
 
-static void InitDefaultsTronSignTx_TronContract() {
+static void InitDefaultsTronSignTx_TronContract_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -470,26 +440,26 @@ static void InitDefaultsTronSignTx_TronContract() {
   ::TronSignTx_TronContract::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<16> scc_info_TronSignTx_TronContract =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 16, InitDefaultsTronSignTx_TronContract}, {
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronTransferContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronTransferAssetContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronVoteWitnessContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronWitnessCreateContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronAssetIssueContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronWitnessUpdateContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronParticipateAssetIssueContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronAccountUpdateContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronFreezeBalanceContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronUnfreezeBalanceContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronWithdrawBalanceContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronUnfreezeAssetContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronUpdateAssetContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronProposalCreateContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronProposalApproveContract.base,
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronProposalDeleteContract.base,}};
+::google::protobuf::internal::SCCInfo<16> scc_info_TronSignTx_TronContract_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 16, InitDefaultsTronSignTx_TronContract_messages_2dtron_2eproto}, {
+      &scc_info_TronSignTx_TronContract_TronTransferContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronTransferAssetContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronVoteWitnessContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronWitnessCreateContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronAssetIssueContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronWitnessUpdateContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronParticipateAssetIssueContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronAccountUpdateContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronFreezeBalanceContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronUnfreezeBalanceContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronWithdrawBalanceContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronUnfreezeAssetContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronUpdateAssetContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronProposalCreateContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronProposalApproveContract_messages_2dtron_2eproto.base,
+      &scc_info_TronSignTx_TronContract_TronProposalDeleteContract_messages_2dtron_2eproto.base,}};
 
-static void InitDefaultsTronSignTx() {
+static void InitDefaultsTronSignTx_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -500,11 +470,11 @@ static void InitDefaultsTronSignTx() {
   ::TronSignTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_TronSignTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTronSignTx}, {
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_TronSignTx_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTronSignTx_messages_2dtron_2eproto}, {
+      &scc_info_TronSignTx_TronContract_messages_2dtron_2eproto.base,}};
 
-static void InitDefaultsTronSignedTx() {
+static void InitDefaultsTronSignedTx_messages_2dtron_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -515,136 +485,138 @@ static void InitDefaultsTronSignedTx() {
   ::TronSignedTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TronSignedTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignedTx}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TronSignedTx_messages_2dtron_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTronSignedTx_messages_2dtron_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_TronGetAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronAccountUpdateContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronTransferContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronTransferAssetContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronVoteWitnessContract_TronVote.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronVoteWitnessContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronWitnessCreateContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronWitnessUpdateContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronAssetIssueContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronParticipateAssetIssueContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronFreezeBalanceContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronUnfreezeBalanceContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronUnfreezeAssetContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronWithdrawBalanceContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronUpdateAssetContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronProposalCreateContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronProposalApproveContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronProposalDeleteContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TronSignedTx.base);
+void InitDefaults_messages_2dtron_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_TronGetAddress_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronAddress_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronAccountUpdateContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronTransferContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronTransferAssetContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronVoteWitnessContract_TronVote_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronVoteWitnessContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronWitnessCreateContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronWitnessUpdateContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronAssetIssueContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronParticipateAssetIssueContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronFreezeBalanceContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronUnfreezeBalanceContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronUnfreezeAssetContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronWithdrawBalanceContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronUpdateAssetContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronProposalCreateContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronProposalApproveContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_TronProposalDeleteContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_TronContract_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignTx_messages_2dtron_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TronSignedTx_messages_2dtron_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[24];
+::google::protobuf::Metadata file_level_metadata_messages_2dtron_2eproto[24];
+constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_messages_2dtron_2eproto = nullptr;
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2dtron_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronGetAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronGetAddress, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_messages_2dtron_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::TronGetAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronGetAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronGetAddress, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronGetAddress, show_display_),
+  PROTOBUF_FIELD_OFFSET(::TronGetAddress, address_n_),
+  PROTOBUF_FIELD_OFFSET(::TronGetAddress, show_display_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronAddress, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronAddress, address_),
+  PROTOBUF_FIELD_OFFSET(::TronAddress, address_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAccountUpdateContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAccountUpdateContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAccountUpdateContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAccountUpdateContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAccountUpdateContract, account_name_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAccountUpdateContract, account_name_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferContract, to_address_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferContract, amount_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferContract, to_address_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferContract, amount_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferAssetContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferAssetContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferAssetContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferAssetContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferAssetContract, asset_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferAssetContract, to_address_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferAssetContract, amount_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferAssetContract, asset_name_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferAssetContract, to_address_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronTransferAssetContract, amount_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronVoteWitnessContract_TronVote, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronVoteWitnessContract_TronVote, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronVoteWitnessContract_TronVote, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronVoteWitnessContract_TronVote, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronVoteWitnessContract_TronVote, vote_address_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronVoteWitnessContract_TronVote, vote_count_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronVoteWitnessContract_TronVote, vote_address_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronVoteWitnessContract_TronVote, vote_count_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronVoteWitnessContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronVoteWitnessContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronVoteWitnessContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronVoteWitnessContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronVoteWitnessContract, votes_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronVoteWitnessContract, votes_),
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronWitnessCreateContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronWitnessCreateContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronWitnessCreateContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronWitnessCreateContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronWitnessCreateContract, url_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronWitnessCreateContract, url_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronWitnessUpdateContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronWitnessUpdateContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronWitnessUpdateContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronWitnessUpdateContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronWitnessUpdateContract, update_url_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronWitnessUpdateContract, update_url_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply, frozen_amount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply, frozen_days_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply, frozen_amount_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply, frozen_days_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, abbr_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, total_supply_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, frozen_supply_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, trx_num_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, num_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, start_time_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, end_time_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, description_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, url_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, name_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, abbr_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, total_supply_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, frozen_supply_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, trx_num_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, num_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, start_time_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, end_time_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, description_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronAssetIssueContract, url_),
   0,
   1,
   4,
@@ -655,103 +627,103 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   8,
   2,
   3,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronParticipateAssetIssueContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronParticipateAssetIssueContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronParticipateAssetIssueContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronParticipateAssetIssueContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronParticipateAssetIssueContract, to_address_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronParticipateAssetIssueContract, asset_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronParticipateAssetIssueContract, amount_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronParticipateAssetIssueContract, to_address_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronParticipateAssetIssueContract, asset_name_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronParticipateAssetIssueContract, amount_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronFreezeBalanceContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronFreezeBalanceContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronFreezeBalanceContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronFreezeBalanceContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronFreezeBalanceContract, frozen_balance_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronFreezeBalanceContract, frozen_duration_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronFreezeBalanceContract, frozen_balance_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronFreezeBalanceContract, frozen_duration_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronUnfreezeBalanceContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronUnfreezeBalanceContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronUnfreezeBalanceContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronUnfreezeBalanceContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronUnfreezeAssetContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronUnfreezeAssetContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronUnfreezeAssetContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronUnfreezeAssetContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronWithdrawBalanceContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronWithdrawBalanceContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronWithdrawBalanceContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronWithdrawBalanceContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronUpdateAssetContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronUpdateAssetContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronUpdateAssetContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronUpdateAssetContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronUpdateAssetContract, description_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronUpdateAssetContract, url_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronUpdateAssetContract, description_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronUpdateAssetContract, url_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters, key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters, value_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters, key_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters, value_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalCreateContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalCreateContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalCreateContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalCreateContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalCreateContract, parameters_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalCreateContract, parameters_),
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalApproveContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalApproveContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalApproveContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalApproveContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalApproveContract, proposal_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalApproveContract, is_add_approval_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalApproveContract, proposal_id_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalApproveContract, is_add_approval_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalDeleteContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalDeleteContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalDeleteContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalDeleteContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalDeleteContract, proposal_id_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract_TronProposalDeleteContract, proposal_id_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, transfer_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, transfer_asset_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, vote_witness_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, witness_create_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, asset_issue_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, witness_update_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, participate_asset_issue_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, account_update_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, freeze_balance_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, unfreeze_balance_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, withdraw_balance_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, unfreeze_asset_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, update_asset_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, proposal_create_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, proposal_approve_contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx_TronContract, proposal_delete_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, transfer_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, transfer_asset_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, vote_witness_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, witness_create_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, asset_issue_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, witness_update_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, participate_asset_issue_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, account_update_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, freeze_balance_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, unfreeze_balance_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, withdraw_balance_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, unfreeze_asset_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, update_asset_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, proposal_create_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, proposal_approve_contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx_TronContract, proposal_delete_contract_),
   0,
   1,
   2,
@@ -768,18 +740,18 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   13,
   14,
   15,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx, ref_block_bytes_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx, ref_block_hash_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx, expiration_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx, data_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx, contract_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignTx, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx, address_n_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx, ref_block_bytes_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx, ref_block_hash_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx, expiration_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx, data_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx, contract_),
+  PROTOBUF_FIELD_OFFSET(::TronSignTx, timestamp_),
   ~0u,
   0,
   1,
@@ -787,17 +759,17 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   2,
   3,
   5,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignedTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignedTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::TronSignedTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TronSignedTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignedTx, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::TronSignedTx, serialized_tx_),
+  PROTOBUF_FIELD_OFFSET(::TronSignedTx, signature_),
+  PROTOBUF_FIELD_OFFSET(::TronSignedTx, serialized_tx_),
   0,
   1,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::TronGetAddress)},
   { 9, 15, sizeof(::TronAddress)},
   { 16, 22, sizeof(::TronSignTx_TronContract_TronAccountUpdateContract)},
@@ -851,145 +823,134 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::_TronSignedTx_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "messages-tron.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2dtron_2eproto = {
+  {}, AddDescriptors_messages_2dtron_2eproto, "messages-tron.proto", schemas,
+  file_default_instances, TableStruct_messages_2dtron_2eproto::offsets,
+  file_level_metadata_messages_2dtron_2eproto, 24, file_level_enum_descriptors_messages_2dtron_2eproto, file_level_service_descriptors_messages_2dtron_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_messages_2dtron_2eproto[] =
+  "\n\023messages-tron.proto\"9\n\016TronGetAddress\022"
+  "\021\n\taddress_n\030\001 \003(\r\022\024\n\014show_display\030\002 \001(\010"
+  "\"\036\n\013TronAddress\022\017\n\007address\030\001 \001(\t\"\231\027\n\nTro"
+  "nSignTx\022\021\n\taddress_n\030\001 \003(\r\022\027\n\017ref_block_"
+  "bytes\030\002 \001(\014\022\026\n\016ref_block_hash\030\003 \001(\014\022\022\n\ne"
+  "xpiration\030\004 \001(\004\022\014\n\004data\030\005 \001(\t\022*\n\010contrac"
+  "t\030\006 \001(\0132\030.TronSignTx.TronContract\022\021\n\ttim"
+  "estamp\030\007 \001(\004\032\345\025\n\014TronContract\022H\n\021transfe"
+  "r_contract\030\001 \001(\0132-.TronSignTx.TronContra"
+  "ct.TronTransferContract\022S\n\027transfer_asse"
+  "t_contract\030\002 \001(\01322.TronSignTx.TronContra"
+  "ct.TronTransferAssetContract\022O\n\025vote_wit"
+  "ness_contract\030\004 \001(\01320.TronSignTx.TronCon"
+  "tract.TronVoteWitnessContract\022S\n\027witness"
+  "_create_contract\030\005 \001(\01322.TronSignTx.Tron"
+  "Contract.TronWitnessCreateContract\022M\n\024as"
+  "set_issue_contract\030\006 \001(\0132/.TronSignTx.Tr"
+  "onContract.TronAssetIssueContract\022S\n\027wit"
+  "ness_update_contract\030\010 \001(\01322.TronSignTx."
+  "TronContract.TronWitnessUpdateContract\022d"
+  "\n participate_asset_issue_contract\030\t \001(\013"
+  "2:.TronSignTx.TronContract.TronParticipa"
+  "teAssetIssueContract\022S\n\027account_update_c"
+  "ontract\030\n \001(\01322.TronSignTx.TronContract."
+  "TronAccountUpdateContract\022S\n\027freeze_bala"
+  "nce_contract\030\013 \001(\01322.TronSignTx.TronCont"
+  "ract.TronFreezeBalanceContract\022W\n\031unfree"
+  "ze_balance_contract\030\014 \001(\01324.TronSignTx.T"
+  "ronContract.TronUnfreezeBalanceContract\022"
+  "W\n\031withdraw_balance_contract\030\r \001(\01324.Tro"
+  "nSignTx.TronContract.TronWithdrawBalance"
+  "Contract\022S\n\027unfreeze_asset_contract\030\016 \001("
+  "\01322.TronSignTx.TronContract.TronUnfreeze"
+  "AssetContract\022O\n\025update_asset_contract\030\017"
+  " \001(\01320.TronSignTx.TronContract.TronUpdat"
+  "eAssetContract\022U\n\030proposal_create_contra"
+  "ct\030\020 \001(\01323.TronSignTx.TronContract.TronP"
+  "roposalCreateContract\022W\n\031proposal_approv"
+  "e_contract\030\021 \001(\01324.TronSignTx.TronContra"
+  "ct.TronProposalApproveContract\022U\n\030propos"
+  "al_delete_contract\030\022 \001(\01323.TronSignTx.Tr"
+  "onContract.TronProposalDeleteContract\0321\n"
+  "\031TronAccountUpdateContract\022\024\n\014account_na"
+  "me\030\001 \001(\t\032:\n\024TronTransferContract\022\022\n\nto_a"
+  "ddress\030\001 \001(\014\022\016\n\006amount\030\002 \001(\004\032S\n\031TronTran"
+  "sferAssetContract\022\022\n\nasset_name\030\001 \001(\t\022\022\n"
+  "\nto_address\030\002 \001(\014\022\016\n\006amount\030\003 \001(\004\032\231\001\n\027Tr"
+  "onVoteWitnessContract\022H\n\005votes\030\001 \003(\01329.T"
+  "ronSignTx.TronContract.TronVoteWitnessCo"
+  "ntract.TronVote\0324\n\010TronVote\022\024\n\014vote_addr"
+  "ess\030\001 \001(\014\022\022\n\nvote_count\030\002 \001(\004\032(\n\031TronWit"
+  "nessCreateContract\022\013\n\003url\030\001 \001(\t\032/\n\031TronW"
+  "itnessUpdateContract\022\022\n\nupdate_url\030\002 \001(\t"
+  "\032\311\002\n\026TronAssetIssueContract\022\014\n\004name\030\002 \001("
+  "\t\022\014\n\004abbr\030\003 \001(\t\022\024\n\014total_supply\030\004 \001(\004\022W\n"
+  "\rfrozen_supply\030\005 \003(\0132@.TronSignTx.TronCo"
+  "ntract.TronAssetIssueContract.TronFrozen"
+  "Supply\022\017\n\007trx_num\030\006 \001(\r\022\013\n\003num\030\007 \001(\r\022\022\n\n"
+  "start_time\030\010 \001(\004\022\020\n\010end_time\030\t \001(\004\022\023\n\013de"
+  "scription\030\n \001(\t\022\013\n\003url\030\013 \001(\t\032>\n\020TronFroz"
+  "enSupply\022\025\n\rfrozen_amount\030\001 \001(\004\022\023\n\013froze"
+  "n_days\030\002 \001(\004\032[\n!TronParticipateAssetIssu"
+  "eContract\022\022\n\nto_address\030\001 \001(\014\022\022\n\nasset_n"
+  "ame\030\002 \001(\t\022\016\n\006amount\030\003 \001(\004\032L\n\031TronFreezeB"
+  "alanceContract\022\026\n\016frozen_balance\030\001 \001(\004\022\027"
+  "\n\017frozen_duration\030\002 \001(\004\032\035\n\033TronUnfreezeB"
+  "alanceContract\032\033\n\031TronUnfreezeAssetContr"
+  "act\032\035\n\033TronWithdrawBalanceContract\032;\n\027Tr"
+  "onUpdateAssetContract\022\023\n\013description\030\001 \001"
+  "(\t\022\013\n\003url\030\002 \001(\t\032\262\001\n\032TronProposalCreateCo"
+  "ntract\022^\n\nparameters\030\001 \003(\0132J.TronSignTx."
+  "TronContract.TronProposalCreateContract."
+  "TronProposalParameters\0324\n\026TronProposalPa"
+  "rameters\022\013\n\003key\030\001 \001(\004\022\r\n\005value\030\002 \001(\004\032K\n\033"
+  "TronProposalApproveContract\022\023\n\013proposal_"
+  "id\030\001 \001(\004\022\027\n\017is_add_approval\030\002 \001(\010\0321\n\032Tro"
+  "nProposalDeleteContract\022\023\n\013proposal_id\030\001"
+  " \001(\004\"8\n\014TronSignedTx\022\021\n\tsignature\030\001 \001(\014\022"
+  "\025\n\rserialized_tx\030\002 \001(\014B8\n#com.satoshilab"
+  "s.trezor.lib.protobufB\021TrezorMessageTron"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dtron_2eproto = {
+  false, InitDefaults_messages_2dtron_2eproto, 
+  descriptor_table_protodef_messages_2dtron_2eproto,
+  "messages-tron.proto", &assign_descriptors_table_messages_2dtron_2eproto, 3200,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 24);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\023messages-tron.proto\"9\n\016TronGetAddress\022"
-      "\021\n\taddress_n\030\001 \003(\r\022\024\n\014show_display\030\002 \001(\010"
-      "\"\036\n\013TronAddress\022\017\n\007address\030\001 \001(\t\"\231\027\n\nTro"
-      "nSignTx\022\021\n\taddress_n\030\001 \003(\r\022\027\n\017ref_block_"
-      "bytes\030\002 \001(\014\022\026\n\016ref_block_hash\030\003 \001(\014\022\022\n\ne"
-      "xpiration\030\004 \001(\004\022\014\n\004data\030\005 \001(\t\022*\n\010contrac"
-      "t\030\006 \001(\0132\030.TronSignTx.TronContract\022\021\n\ttim"
-      "estamp\030\007 \001(\004\032\345\025\n\014TronContract\022H\n\021transfe"
-      "r_contract\030\001 \001(\0132-.TronSignTx.TronContra"
-      "ct.TronTransferContract\022S\n\027transfer_asse"
-      "t_contract\030\002 \001(\01322.TronSignTx.TronContra"
-      "ct.TronTransferAssetContract\022O\n\025vote_wit"
-      "ness_contract\030\004 \001(\01320.TronSignTx.TronCon"
-      "tract.TronVoteWitnessContract\022S\n\027witness"
-      "_create_contract\030\005 \001(\01322.TronSignTx.Tron"
-      "Contract.TronWitnessCreateContract\022M\n\024as"
-      "set_issue_contract\030\006 \001(\0132/.TronSignTx.Tr"
-      "onContract.TronAssetIssueContract\022S\n\027wit"
-      "ness_update_contract\030\010 \001(\01322.TronSignTx."
-      "TronContract.TronWitnessUpdateContract\022d"
-      "\n participate_asset_issue_contract\030\t \001(\013"
-      "2:.TronSignTx.TronContract.TronParticipa"
-      "teAssetIssueContract\022S\n\027account_update_c"
-      "ontract\030\n \001(\01322.TronSignTx.TronContract."
-      "TronAccountUpdateContract\022S\n\027freeze_bala"
-      "nce_contract\030\013 \001(\01322.TronSignTx.TronCont"
-      "ract.TronFreezeBalanceContract\022W\n\031unfree"
-      "ze_balance_contract\030\014 \001(\01324.TronSignTx.T"
-      "ronContract.TronUnfreezeBalanceContract\022"
-      "W\n\031withdraw_balance_contract\030\r \001(\01324.Tro"
-      "nSignTx.TronContract.TronWithdrawBalance"
-      "Contract\022S\n\027unfreeze_asset_contract\030\016 \001("
-      "\01322.TronSignTx.TronContract.TronUnfreeze"
-      "AssetContract\022O\n\025update_asset_contract\030\017"
-      " \001(\01320.TronSignTx.TronContract.TronUpdat"
-      "eAssetContract\022U\n\030proposal_create_contra"
-      "ct\030\020 \001(\01323.TronSignTx.TronContract.TronP"
-      "roposalCreateContract\022W\n\031proposal_approv"
-      "e_contract\030\021 \001(\01324.TronSignTx.TronContra"
-      "ct.TronProposalApproveContract\022U\n\030propos"
-      "al_delete_contract\030\022 \001(\01323.TronSignTx.Tr"
-      "onContract.TronProposalDeleteContract\0321\n"
-      "\031TronAccountUpdateContract\022\024\n\014account_na"
-      "me\030\001 \001(\t\032:\n\024TronTransferContract\022\022\n\nto_a"
-      "ddress\030\001 \001(\014\022\016\n\006amount\030\002 \001(\004\032S\n\031TronTran"
-      "sferAssetContract\022\022\n\nasset_name\030\001 \001(\t\022\022\n"
-      "\nto_address\030\002 \001(\014\022\016\n\006amount\030\003 \001(\004\032\231\001\n\027Tr"
-      "onVoteWitnessContract\022H\n\005votes\030\001 \003(\01329.T"
-      "ronSignTx.TronContract.TronVoteWitnessCo"
-      "ntract.TronVote\0324\n\010TronVote\022\024\n\014vote_addr"
-      "ess\030\001 \001(\014\022\022\n\nvote_count\030\002 \001(\004\032(\n\031TronWit"
-      "nessCreateContract\022\013\n\003url\030\001 \001(\t\032/\n\031TronW"
-      "itnessUpdateContract\022\022\n\nupdate_url\030\002 \001(\t"
-      "\032\311\002\n\026TronAssetIssueContract\022\014\n\004name\030\002 \001("
-      "\t\022\014\n\004abbr\030\003 \001(\t\022\024\n\014total_supply\030\004 \001(\004\022W\n"
-      "\rfrozen_supply\030\005 \003(\0132@.TronSignTx.TronCo"
-      "ntract.TronAssetIssueContract.TronFrozen"
-      "Supply\022\017\n\007trx_num\030\006 \001(\r\022\013\n\003num\030\007 \001(\r\022\022\n\n"
-      "start_time\030\010 \001(\004\022\020\n\010end_time\030\t \001(\004\022\023\n\013de"
-      "scription\030\n \001(\t\022\013\n\003url\030\013 \001(\t\032>\n\020TronFroz"
-      "enSupply\022\025\n\rfrozen_amount\030\001 \001(\004\022\023\n\013froze"
-      "n_days\030\002 \001(\004\032[\n!TronParticipateAssetIssu"
-      "eContract\022\022\n\nto_address\030\001 \001(\014\022\022\n\nasset_n"
-      "ame\030\002 \001(\t\022\016\n\006amount\030\003 \001(\004\032L\n\031TronFreezeB"
-      "alanceContract\022\026\n\016frozen_balance\030\001 \001(\004\022\027"
-      "\n\017frozen_duration\030\002 \001(\004\032\035\n\033TronUnfreezeB"
-      "alanceContract\032\033\n\031TronUnfreezeAssetContr"
-      "act\032\035\n\033TronWithdrawBalanceContract\032;\n\027Tr"
-      "onUpdateAssetContract\022\023\n\013description\030\001 \001"
-      "(\t\022\013\n\003url\030\002 \001(\t\032\262\001\n\032TronProposalCreateCo"
-      "ntract\022^\n\nparameters\030\001 \003(\0132J.TronSignTx."
-      "TronContract.TronProposalCreateContract."
-      "TronProposalParameters\0324\n\026TronProposalPa"
-      "rameters\022\013\n\003key\030\001 \001(\004\022\r\n\005value\030\002 \001(\004\032K\n\033"
-      "TronProposalApproveContract\022\023\n\013proposal_"
-      "id\030\001 \001(\004\022\027\n\017is_add_approval\030\002 \001(\010\0321\n\032Tro"
-      "nProposalDeleteContract\022\023\n\013proposal_id\030\001"
-      " \001(\004\"8\n\014TronSignedTx\022\021\n\tsignature\030\001 \001(\014\022"
-      "\025\n\rserialized_tx\030\002 \001(\014B8\n#com.satoshilab"
-      "s.trezor.lib.protobufB\021TrezorMessageTron"
+void AddDescriptors_messages_2dtron_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 3200);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "messages-tron.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_messages_2dtron_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_messages_2dtron_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_messages_2dtron_2eproto = []() { AddDescriptors_messages_2dtron_2eproto(); return true; }();
 
 // ===================================================================
 
 void TronGetAddress::InitAsDefaultInstance() {
 }
+class TronGetAddress::HasBitSetters {
+ public:
+  static void set_has_show_display(TronGetAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronGetAddress::kAddressNFieldNumber;
 const int TronGetAddress::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronGetAddress::TronGetAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronGetAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronGetAddress)
 }
 TronGetAddress::TronGetAddress(const TronGetAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -1012,13 +973,8 @@ void TronGetAddress::SharedDtor() {
 void TronGetAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronGetAddress::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronGetAddress& TronGetAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronGetAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronGetAddress_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1035,9 +991,69 @@ void TronGetAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronGetAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronGetAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool show_display = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronGetAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronGetAddress)
   for (;;) {
@@ -1047,14 +1063,11 @@ bool TronGetAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1066,9 +1079,8 @@ bool TronGetAddress::MergePartialFromCodedStream(
 
       // optional bool show_display = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -1097,6 +1109,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronGetAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1124,8 +1137,7 @@ void TronGetAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TronGetAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronGetAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1157,6 +1169,10 @@ size_t TronGetAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1167,7 +1183,8 @@ size_t TronGetAddress::ByteSizeLong() const {
   }
 
   // optional bool show_display = 2;
-  if (has_show_display()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -1180,9 +1197,9 @@ void TronGetAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:TronGetAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const TronGetAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronGetAddress>(
+      ::google::protobuf::DynamicCastToGenerated<TronGetAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronGetAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1228,15 +1245,15 @@ void TronGetAddress::Swap(TronGetAddress* other) {
 }
 void TronGetAddress::InternalSwap(TronGetAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronGetAddress::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1244,20 +1261,25 @@ void TronGetAddress::InternalSwap(TronGetAddress* other) {
 
 void TronAddress::InitAsDefaultInstance() {
 }
+class TronAddress::HasBitSetters {
+ public:
+  static void set_has_address(TronAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronAddress::kAddressFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronAddress::TronAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronAddress)
 }
 TronAddress::TronAddress(const TronAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1268,6 +1290,8 @@ TronAddress::TronAddress(const TronAddress& from)
 }
 
 void TronAddress::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronAddress_messages_2dtron_2eproto.base);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1283,13 +1307,8 @@ void TronAddress::SharedDtor() {
 void TronAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronAddress::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronAddress& TronAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronAddress_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1308,9 +1327,62 @@ void TronAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("TronAddress.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronAddress)
   for (;;) {
@@ -1320,8 +1392,7 @@ bool TronAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1353,6 +1424,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1379,8 +1451,7 @@ void TronAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TronAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1414,8 +1485,13 @@ size_t TronAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string address = 1;
-  if (has_address()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->address());
@@ -1430,9 +1506,9 @@ void TronAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:TronAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const TronAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronAddress>(
+      ::google::protobuf::DynamicCastToGenerated<TronAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1449,7 +1525,7 @@ void TronAddress::MergeFrom(const TronAddress& from) {
   (void) cached_has_bits;
 
   if (from.has_address()) {
-    set_has_address();
+    _has_bits_[0] |= 0x00000001u;
     address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
   }
 }
@@ -1478,15 +1554,15 @@ void TronAddress::Swap(TronAddress* other) {
 }
 void TronAddress::InternalSwap(TronAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronAddress::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1494,20 +1570,25 @@ void TronAddress::InternalSwap(TronAddress* other) {
 
 void TronSignTx_TronContract_TronAccountUpdateContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronAccountUpdateContract::HasBitSetters {
+ public:
+  static void set_has_account_name(TronSignTx_TronContract_TronAccountUpdateContract* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronAccountUpdateContract::kAccountNameFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronAccountUpdateContract::TronSignTx_TronContract_TronAccountUpdateContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronAccountUpdateContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronAccountUpdateContract)
 }
 TronSignTx_TronContract_TronAccountUpdateContract::TronSignTx_TronContract_TronAccountUpdateContract(const TronSignTx_TronContract_TronAccountUpdateContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   account_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1518,6 +1599,8 @@ TronSignTx_TronContract_TronAccountUpdateContract::TronSignTx_TronContract_TronA
 }
 
 void TronSignTx_TronContract_TronAccountUpdateContract::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronSignTx_TronContract_TronAccountUpdateContract_messages_2dtron_2eproto.base);
   account_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1533,13 +1616,8 @@ void TronSignTx_TronContract_TronAccountUpdateContract::SharedDtor() {
 void TronSignTx_TronContract_TronAccountUpdateContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronAccountUpdateContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronAccountUpdateContract& TronSignTx_TronContract_TronAccountUpdateContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronAccountUpdateContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronAccountUpdateContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1558,9 +1636,62 @@ void TronSignTx_TronContract_TronAccountUpdateContract::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronAccountUpdateContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronAccountUpdateContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string account_name = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("TronSignTx.TronContract.TronAccountUpdateContract.account_name");
+        object = msg->mutable_account_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronAccountUpdateContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronAccountUpdateContract)
   for (;;) {
@@ -1570,8 +1701,7 @@ bool TronSignTx_TronContract_TronAccountUpdateContract::MergePartialFromCodedStr
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string account_name = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_account_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1603,6 +1733,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronAccountUpdateContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1629,8 +1760,7 @@ void TronSignTx_TronContract_TronAccountUpdateContract::SerializeWithCachedSizes
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronAccountUpdateContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronAccountUpdateContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1664,8 +1794,13 @@ size_t TronSignTx_TronContract_TronAccountUpdateContract::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string account_name = 1;
-  if (has_account_name()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->account_name());
@@ -1680,9 +1815,9 @@ void TronSignTx_TronContract_TronAccountUpdateContract::MergeFrom(const ::google
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronAccountUpdateContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronAccountUpdateContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronAccountUpdateContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronAccountUpdateContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronAccountUpdateContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1699,7 +1834,7 @@ void TronSignTx_TronContract_TronAccountUpdateContract::MergeFrom(const TronSign
   (void) cached_has_bits;
 
   if (from.has_account_name()) {
-    set_has_account_name();
+    _has_bits_[0] |= 0x00000001u;
     account_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.account_name_);
   }
 }
@@ -1728,15 +1863,15 @@ void TronSignTx_TronContract_TronAccountUpdateContract::Swap(TronSignTx_TronCont
 }
 void TronSignTx_TronContract_TronAccountUpdateContract::InternalSwap(TronSignTx_TronContract_TronAccountUpdateContract* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   account_name_.Swap(&other->account_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronAccountUpdateContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1744,21 +1879,29 @@ void TronSignTx_TronContract_TronAccountUpdateContract::InternalSwap(TronSignTx_
 
 void TronSignTx_TronContract_TronTransferContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronTransferContract::HasBitSetters {
+ public:
+  static void set_has_to_address(TronSignTx_TronContract_TronTransferContract* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_amount(TronSignTx_TronContract_TronTransferContract* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronTransferContract::kToAddressFieldNumber;
 const int TronSignTx_TronContract_TronTransferContract::kAmountFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronTransferContract::TronSignTx_TronContract_TronTransferContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronTransferContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronTransferContract)
 }
 TronSignTx_TronContract_TronTransferContract::TronSignTx_TronContract_TronTransferContract(const TronSignTx_TronContract_TronTransferContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   to_address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1770,8 +1913,10 @@ TronSignTx_TronContract_TronTransferContract::TronSignTx_TronContract_TronTransf
 }
 
 void TronSignTx_TronContract_TronTransferContract::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronSignTx_TronContract_TronTransferContract_messages_2dtron_2eproto.base);
   to_address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  amount_ = GOOGLE_ULONGLONG(0);
+  amount_ = PROTOBUF_ULONGLONG(0);
 }
 
 TronSignTx_TronContract_TronTransferContract::~TronSignTx_TronContract_TronTransferContract() {
@@ -1786,13 +1931,8 @@ void TronSignTx_TronContract_TronTransferContract::SharedDtor() {
 void TronSignTx_TronContract_TronTransferContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronTransferContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronTransferContract& TronSignTx_TronContract_TronTransferContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronTransferContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronTransferContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1807,14 +1947,73 @@ void TronSignTx_TronContract_TronTransferContract::Clear() {
   if (cached_has_bits & 0x00000001u) {
     to_address_.ClearNonDefaultToEmptyNoArena();
   }
-  amount_ = GOOGLE_ULONGLONG(0);
+  amount_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronTransferContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronTransferContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes to_address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_to_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint64 amount = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronTransferContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronTransferContract)
   for (;;) {
@@ -1824,8 +2023,7 @@ bool TronSignTx_TronContract_TronTransferContract::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes to_address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_to_address()));
         } else {
@@ -1836,9 +2034,8 @@ bool TronSignTx_TronContract_TronTransferContract::MergePartialFromCodedStream(
 
       // optional uint64 amount = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &amount_)));
@@ -1867,6 +2064,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronTransferContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1894,8 +2092,7 @@ void TronSignTx_TronContract_TronTransferContract::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronTransferContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronTransferContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1930,16 +2127,21 @@ size_t TronSignTx_TronContract_TronTransferContract::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes to_address = 1;
-    if (has_to_address()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->to_address());
     }
 
     // optional uint64 amount = 2;
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->amount());
@@ -1955,9 +2157,9 @@ void TronSignTx_TronContract_TronTransferContract::MergeFrom(const ::google::pro
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronTransferContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronTransferContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronTransferContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronTransferContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronTransferContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1974,9 +2176,9 @@ void TronSignTx_TronContract_TronTransferContract::MergeFrom(const TronSignTx_Tr
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_to_address();
+      _has_bits_[0] |= 0x00000001u;
       to_address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.to_address_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -2010,16 +2212,16 @@ void TronSignTx_TronContract_TronTransferContract::Swap(TronSignTx_TronContract_
 }
 void TronSignTx_TronContract_TronTransferContract::InternalSwap(TronSignTx_TronContract_TronTransferContract* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   to_address_.Swap(&other->to_address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(amount_, other->amount_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronTransferContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2027,6 +2229,19 @@ void TronSignTx_TronContract_TronTransferContract::InternalSwap(TronSignTx_TronC
 
 void TronSignTx_TronContract_TronTransferAssetContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronTransferAssetContract::HasBitSetters {
+ public:
+  static void set_has_asset_name(TronSignTx_TronContract_TronTransferAssetContract* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_to_address(TronSignTx_TronContract_TronTransferAssetContract* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_amount(TronSignTx_TronContract_TronTransferAssetContract* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronTransferAssetContract::kAssetNameFieldNumber;
 const int TronSignTx_TronContract_TronTransferAssetContract::kToAddressFieldNumber;
@@ -2034,15 +2249,13 @@ const int TronSignTx_TronContract_TronTransferAssetContract::kAmountFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronTransferAssetContract::TronSignTx_TronContract_TronTransferAssetContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronTransferAssetContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronTransferAssetContract)
 }
 TronSignTx_TronContract_TronTransferAssetContract::TronSignTx_TronContract_TronTransferAssetContract(const TronSignTx_TronContract_TronTransferAssetContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   asset_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2058,9 +2271,11 @@ TronSignTx_TronContract_TronTransferAssetContract::TronSignTx_TronContract_TronT
 }
 
 void TronSignTx_TronContract_TronTransferAssetContract::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronSignTx_TronContract_TronTransferAssetContract_messages_2dtron_2eproto.base);
   asset_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   to_address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  amount_ = GOOGLE_ULONGLONG(0);
+  amount_ = PROTOBUF_ULONGLONG(0);
 }
 
 TronSignTx_TronContract_TronTransferAssetContract::~TronSignTx_TronContract_TronTransferAssetContract() {
@@ -2076,13 +2291,8 @@ void TronSignTx_TronContract_TronTransferAssetContract::SharedDtor() {
 void TronSignTx_TronContract_TronTransferAssetContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronTransferAssetContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronTransferAssetContract& TronSignTx_TronContract_TronTransferAssetContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronTransferAssetContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronTransferAssetContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2094,7 +2304,7 @@ void TronSignTx_TronContract_TronTransferAssetContract::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       asset_name_.ClearNonDefaultToEmptyNoArena();
     }
@@ -2102,14 +2312,89 @@ void TronSignTx_TronContract_TronTransferAssetContract::Clear() {
       to_address_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  amount_ = GOOGLE_ULONGLONG(0);
+  amount_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronTransferAssetContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronTransferAssetContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string asset_name = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("TronSignTx.TronContract.TronTransferAssetContract.asset_name");
+        object = msg->mutable_asset_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes to_address = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_to_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint64 amount = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronTransferAssetContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronTransferAssetContract)
   for (;;) {
@@ -2119,8 +2404,7 @@ bool TronSignTx_TronContract_TronTransferAssetContract::MergePartialFromCodedStr
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string asset_name = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_asset_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2135,8 +2419,7 @@ bool TronSignTx_TronContract_TronTransferAssetContract::MergePartialFromCodedStr
 
       // optional bytes to_address = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_to_address()));
         } else {
@@ -2147,9 +2430,8 @@ bool TronSignTx_TronContract_TronTransferAssetContract::MergePartialFromCodedStr
 
       // optional uint64 amount = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &amount_)));
@@ -2178,6 +2460,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronTransferAssetContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2215,8 +2498,7 @@ void TronSignTx_TronContract_TronTransferAssetContract::SerializeWithCachedSizes
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronTransferAssetContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronTransferAssetContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2262,23 +2544,28 @@ size_t TronSignTx_TronContract_TronTransferAssetContract::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string asset_name = 1;
-    if (has_asset_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->asset_name());
     }
 
     // optional bytes to_address = 2;
-    if (has_to_address()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->to_address());
     }
 
     // optional uint64 amount = 3;
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->amount());
@@ -2294,9 +2581,9 @@ void TronSignTx_TronContract_TronTransferAssetContract::MergeFrom(const ::google
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronTransferAssetContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronTransferAssetContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronTransferAssetContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronTransferAssetContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronTransferAssetContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2313,13 +2600,13 @@ void TronSignTx_TronContract_TronTransferAssetContract::MergeFrom(const TronSign
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_asset_name();
+      _has_bits_[0] |= 0x00000001u;
       asset_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.asset_name_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_to_address();
+      _has_bits_[0] |= 0x00000002u;
       to_address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.to_address_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -2353,18 +2640,18 @@ void TronSignTx_TronContract_TronTransferAssetContract::Swap(TronSignTx_TronCont
 }
 void TronSignTx_TronContract_TronTransferAssetContract::InternalSwap(TronSignTx_TronContract_TronTransferAssetContract* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   asset_name_.Swap(&other->asset_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   to_address_.Swap(&other->to_address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(amount_, other->amount_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronTransferAssetContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2372,21 +2659,29 @@ void TronSignTx_TronContract_TronTransferAssetContract::InternalSwap(TronSignTx_
 
 void TronSignTx_TronContract_TronVoteWitnessContract_TronVote::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronVoteWitnessContract_TronVote::HasBitSetters {
+ public:
+  static void set_has_vote_address(TronSignTx_TronContract_TronVoteWitnessContract_TronVote* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_vote_count(TronSignTx_TronContract_TronVoteWitnessContract_TronVote* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronVoteWitnessContract_TronVote::kVoteAddressFieldNumber;
 const int TronSignTx_TronContract_TronVoteWitnessContract_TronVote::kVoteCountFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronVoteWitnessContract_TronVote::TronSignTx_TronContract_TronVoteWitnessContract_TronVote()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronVoteWitnessContract_TronVote.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronVoteWitnessContract.TronVote)
 }
 TronSignTx_TronContract_TronVoteWitnessContract_TronVote::TronSignTx_TronContract_TronVoteWitnessContract_TronVote(const TronSignTx_TronContract_TronVoteWitnessContract_TronVote& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   vote_address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2398,8 +2693,10 @@ TronSignTx_TronContract_TronVoteWitnessContract_TronVote::TronSignTx_TronContrac
 }
 
 void TronSignTx_TronContract_TronVoteWitnessContract_TronVote::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronSignTx_TronContract_TronVoteWitnessContract_TronVote_messages_2dtron_2eproto.base);
   vote_address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  vote_count_ = GOOGLE_ULONGLONG(0);
+  vote_count_ = PROTOBUF_ULONGLONG(0);
 }
 
 TronSignTx_TronContract_TronVoteWitnessContract_TronVote::~TronSignTx_TronContract_TronVoteWitnessContract_TronVote() {
@@ -2414,13 +2711,8 @@ void TronSignTx_TronContract_TronVoteWitnessContract_TronVote::SharedDtor() {
 void TronSignTx_TronContract_TronVoteWitnessContract_TronVote::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronVoteWitnessContract_TronVote::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronVoteWitnessContract_TronVote& TronSignTx_TronContract_TronVoteWitnessContract_TronVote::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronVoteWitnessContract_TronVote.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronVoteWitnessContract_TronVote_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2435,14 +2727,73 @@ void TronSignTx_TronContract_TronVoteWitnessContract_TronVote::Clear() {
   if (cached_has_bits & 0x00000001u) {
     vote_address_.ClearNonDefaultToEmptyNoArena();
   }
-  vote_count_ = GOOGLE_ULONGLONG(0);
+  vote_count_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronVoteWitnessContract_TronVote::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronVoteWitnessContract_TronVote*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes vote_address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_vote_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint64 vote_count = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_vote_count(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronVoteWitnessContract_TronVote::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronVoteWitnessContract.TronVote)
   for (;;) {
@@ -2452,8 +2803,7 @@ bool TronSignTx_TronContract_TronVoteWitnessContract_TronVote::MergePartialFromC
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes vote_address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_vote_address()));
         } else {
@@ -2464,9 +2814,8 @@ bool TronSignTx_TronContract_TronVoteWitnessContract_TronVote::MergePartialFromC
 
       // optional uint64 vote_count = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_vote_count();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_vote_count(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &vote_count_)));
@@ -2495,6 +2844,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronVoteWitnessContract_TronVote::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2522,8 +2872,7 @@ void TronSignTx_TronContract_TronVoteWitnessContract_TronVote::SerializeWithCach
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronVoteWitnessContract_TronVote::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronVoteWitnessContract.TronVote)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2558,16 +2907,21 @@ size_t TronSignTx_TronContract_TronVoteWitnessContract_TronVote::ByteSizeLong() 
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes vote_address = 1;
-    if (has_vote_address()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->vote_address());
     }
 
     // optional uint64 vote_count = 2;
-    if (has_vote_count()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->vote_count());
@@ -2583,9 +2937,9 @@ void TronSignTx_TronContract_TronVoteWitnessContract_TronVote::MergeFrom(const :
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronVoteWitnessContract.TronVote)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronVoteWitnessContract_TronVote* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronVoteWitnessContract_TronVote>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronVoteWitnessContract_TronVote>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronVoteWitnessContract.TronVote)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2602,9 +2956,9 @@ void TronSignTx_TronContract_TronVoteWitnessContract_TronVote::MergeFrom(const T
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_vote_address();
+      _has_bits_[0] |= 0x00000001u;
       vote_address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.vote_address_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -2638,16 +2992,16 @@ void TronSignTx_TronContract_TronVoteWitnessContract_TronVote::Swap(TronSignTx_T
 }
 void TronSignTx_TronContract_TronVoteWitnessContract_TronVote::InternalSwap(TronSignTx_TronContract_TronVoteWitnessContract_TronVote* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   vote_address_.Swap(&other->vote_address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(vote_count_, other->vote_count_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronVoteWitnessContract_TronVote::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2655,20 +3009,22 @@ void TronSignTx_TronContract_TronVoteWitnessContract_TronVote::InternalSwap(Tron
 
 void TronSignTx_TronContract_TronVoteWitnessContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronVoteWitnessContract::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronVoteWitnessContract::kVotesFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronVoteWitnessContract::TronSignTx_TronContract_TronVoteWitnessContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronVoteWitnessContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronVoteWitnessContract)
 }
 TronSignTx_TronContract_TronVoteWitnessContract::TronSignTx_TronContract_TronVoteWitnessContract(const TronSignTx_TronContract_TronVoteWitnessContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       votes_(from.votes_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -2676,6 +3032,8 @@ TronSignTx_TronContract_TronVoteWitnessContract::TronSignTx_TronContract_TronVot
 }
 
 void TronSignTx_TronContract_TronVoteWitnessContract::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronSignTx_TronContract_TronVoteWitnessContract_messages_2dtron_2eproto.base);
 }
 
 TronSignTx_TronContract_TronVoteWitnessContract::~TronSignTx_TronContract_TronVoteWitnessContract() {
@@ -2689,13 +3047,8 @@ void TronSignTx_TronContract_TronVoteWitnessContract::SharedDtor() {
 void TronSignTx_TronContract_TronVoteWitnessContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronVoteWitnessContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronVoteWitnessContract& TronSignTx_TronContract_TronVoteWitnessContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronVoteWitnessContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronVoteWitnessContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2711,9 +3064,58 @@ void TronSignTx_TronContract_TronVoteWitnessContract::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronVoteWitnessContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronVoteWitnessContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated .TronSignTx.TronContract.TronVoteWitnessContract.TronVote votes = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::TronSignTx_TronContract_TronVoteWitnessContract_TronVote::_InternalParse;
+          object = msg->add_votes();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronVoteWitnessContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronVoteWitnessContract)
   for (;;) {
@@ -2723,8 +3125,7 @@ bool TronSignTx_TronContract_TronVoteWitnessContract::MergePartialFromCodedStrea
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .TronSignTx.TronContract.TronVoteWitnessContract.TronVote votes = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_votes()));
         } else {
@@ -2752,6 +3153,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronVoteWitnessContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2776,8 +3178,7 @@ void TronSignTx_TronContract_TronVoteWitnessContract::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronVoteWitnessContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronVoteWitnessContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2787,7 +3188,7 @@ void TronSignTx_TronContract_TronVoteWitnessContract::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->votes_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->votes(static_cast<int>(i)), deterministic, target);
+        1, this->votes(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -2807,6 +3208,10 @@ size_t TronSignTx_TronContract_TronVoteWitnessContract::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .TronSignTx.TronContract.TronVoteWitnessContract.TronVote votes = 1;
   {
     unsigned int count = static_cast<unsigned int>(this->votes_size());
@@ -2827,9 +3232,9 @@ void TronSignTx_TronContract_TronVoteWitnessContract::MergeFrom(const ::google::
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronVoteWitnessContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronVoteWitnessContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronVoteWitnessContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronVoteWitnessContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronVoteWitnessContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2872,14 +3277,14 @@ void TronSignTx_TronContract_TronVoteWitnessContract::Swap(TronSignTx_TronContra
 }
 void TronSignTx_TronContract_TronVoteWitnessContract::InternalSwap(TronSignTx_TronContract_TronVoteWitnessContract* other) {
   using std::swap;
-  CastToBase(&votes_)->InternalSwap(CastToBase(&other->votes_));
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  CastToBase(&votes_)->InternalSwap(CastToBase(&other->votes_));
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronVoteWitnessContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2887,20 +3292,25 @@ void TronSignTx_TronContract_TronVoteWitnessContract::InternalSwap(TronSignTx_Tr
 
 void TronSignTx_TronContract_TronWitnessCreateContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronWitnessCreateContract::HasBitSetters {
+ public:
+  static void set_has_url(TronSignTx_TronContract_TronWitnessCreateContract* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronWitnessCreateContract::kUrlFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronWitnessCreateContract::TronSignTx_TronContract_TronWitnessCreateContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronWitnessCreateContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronWitnessCreateContract)
 }
 TronSignTx_TronContract_TronWitnessCreateContract::TronSignTx_TronContract_TronWitnessCreateContract(const TronSignTx_TronContract_TronWitnessCreateContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2911,6 +3321,8 @@ TronSignTx_TronContract_TronWitnessCreateContract::TronSignTx_TronContract_TronW
 }
 
 void TronSignTx_TronContract_TronWitnessCreateContract::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronSignTx_TronContract_TronWitnessCreateContract_messages_2dtron_2eproto.base);
   url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -2926,13 +3338,8 @@ void TronSignTx_TronContract_TronWitnessCreateContract::SharedDtor() {
 void TronSignTx_TronContract_TronWitnessCreateContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronWitnessCreateContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronWitnessCreateContract& TronSignTx_TronContract_TronWitnessCreateContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronWitnessCreateContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronWitnessCreateContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2951,9 +3358,62 @@ void TronSignTx_TronContract_TronWitnessCreateContract::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronWitnessCreateContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronWitnessCreateContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string url = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("TronSignTx.TronContract.TronWitnessCreateContract.url");
+        object = msg->mutable_url();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronWitnessCreateContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronWitnessCreateContract)
   for (;;) {
@@ -2963,8 +3423,7 @@ bool TronSignTx_TronContract_TronWitnessCreateContract::MergePartialFromCodedStr
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string url = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_url()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2996,6 +3455,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronWitnessCreateContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3022,8 +3482,7 @@ void TronSignTx_TronContract_TronWitnessCreateContract::SerializeWithCachedSizes
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronWitnessCreateContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronWitnessCreateContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3057,8 +3516,13 @@ size_t TronSignTx_TronContract_TronWitnessCreateContract::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string url = 1;
-  if (has_url()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->url());
@@ -3073,9 +3537,9 @@ void TronSignTx_TronContract_TronWitnessCreateContract::MergeFrom(const ::google
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronWitnessCreateContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronWitnessCreateContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronWitnessCreateContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronWitnessCreateContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronWitnessCreateContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3092,7 +3556,7 @@ void TronSignTx_TronContract_TronWitnessCreateContract::MergeFrom(const TronSign
   (void) cached_has_bits;
 
   if (from.has_url()) {
-    set_has_url();
+    _has_bits_[0] |= 0x00000001u;
     url_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.url_);
   }
 }
@@ -3121,15 +3585,15 @@ void TronSignTx_TronContract_TronWitnessCreateContract::Swap(TronSignTx_TronCont
 }
 void TronSignTx_TronContract_TronWitnessCreateContract::InternalSwap(TronSignTx_TronContract_TronWitnessCreateContract* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   url_.Swap(&other->url_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronWitnessCreateContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3137,20 +3601,25 @@ void TronSignTx_TronContract_TronWitnessCreateContract::InternalSwap(TronSignTx_
 
 void TronSignTx_TronContract_TronWitnessUpdateContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronWitnessUpdateContract::HasBitSetters {
+ public:
+  static void set_has_update_url(TronSignTx_TronContract_TronWitnessUpdateContract* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronWitnessUpdateContract::kUpdateUrlFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronWitnessUpdateContract::TronSignTx_TronContract_TronWitnessUpdateContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronWitnessUpdateContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronWitnessUpdateContract)
 }
 TronSignTx_TronContract_TronWitnessUpdateContract::TronSignTx_TronContract_TronWitnessUpdateContract(const TronSignTx_TronContract_TronWitnessUpdateContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   update_url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3161,6 +3630,8 @@ TronSignTx_TronContract_TronWitnessUpdateContract::TronSignTx_TronContract_TronW
 }
 
 void TronSignTx_TronContract_TronWitnessUpdateContract::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronSignTx_TronContract_TronWitnessUpdateContract_messages_2dtron_2eproto.base);
   update_url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -3176,13 +3647,8 @@ void TronSignTx_TronContract_TronWitnessUpdateContract::SharedDtor() {
 void TronSignTx_TronContract_TronWitnessUpdateContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronWitnessUpdateContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronWitnessUpdateContract& TronSignTx_TronContract_TronWitnessUpdateContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronWitnessUpdateContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronWitnessUpdateContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3201,9 +3667,62 @@ void TronSignTx_TronContract_TronWitnessUpdateContract::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronWitnessUpdateContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronWitnessUpdateContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string update_url = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("TronSignTx.TronContract.TronWitnessUpdateContract.update_url");
+        object = msg->mutable_update_url();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronWitnessUpdateContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronWitnessUpdateContract)
   for (;;) {
@@ -3213,8 +3732,7 @@ bool TronSignTx_TronContract_TronWitnessUpdateContract::MergePartialFromCodedStr
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string update_url = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_update_url()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3246,6 +3764,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronWitnessUpdateContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3272,8 +3791,7 @@ void TronSignTx_TronContract_TronWitnessUpdateContract::SerializeWithCachedSizes
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronWitnessUpdateContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronWitnessUpdateContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3307,8 +3825,13 @@ size_t TronSignTx_TronContract_TronWitnessUpdateContract::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string update_url = 2;
-  if (has_update_url()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->update_url());
@@ -3323,9 +3846,9 @@ void TronSignTx_TronContract_TronWitnessUpdateContract::MergeFrom(const ::google
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronWitnessUpdateContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronWitnessUpdateContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronWitnessUpdateContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronWitnessUpdateContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronWitnessUpdateContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3342,7 +3865,7 @@ void TronSignTx_TronContract_TronWitnessUpdateContract::MergeFrom(const TronSign
   (void) cached_has_bits;
 
   if (from.has_update_url()) {
-    set_has_update_url();
+    _has_bits_[0] |= 0x00000001u;
     update_url_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.update_url_);
   }
 }
@@ -3371,15 +3894,15 @@ void TronSignTx_TronContract_TronWitnessUpdateContract::Swap(TronSignTx_TronCont
 }
 void TronSignTx_TronContract_TronWitnessUpdateContract::InternalSwap(TronSignTx_TronContract_TronWitnessUpdateContract* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   update_url_.Swap(&other->update_url_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronWitnessUpdateContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3387,21 +3910,29 @@ void TronSignTx_TronContract_TronWitnessUpdateContract::InternalSwap(TronSignTx_
 
 void TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::HasBitSetters {
+ public:
+  static void set_has_frozen_amount(TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_frozen_days(TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::kFrozenAmountFieldNumber;
 const int TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::kFrozenDaysFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronAssetIssueContract.TronFrozenSupply)
 }
 TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply(const TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&frozen_amount_, &from.frozen_amount_,
@@ -3427,13 +3958,8 @@ void TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::SharedDtor
 void TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply& TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3445,7 +3971,7 @@ void TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&frozen_amount_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&frozen_days_) -
         reinterpret_cast<char*>(&frozen_amount_)) + sizeof(frozen_days_));
@@ -3454,9 +3980,53 @@ void TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 frozen_amount = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_frozen_amount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 frozen_days = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_frozen_days(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronAssetIssueContract.TronFrozenSupply)
   for (;;) {
@@ -3466,9 +4036,8 @@ bool TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::MergeParti
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 frozen_amount = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_frozen_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_frozen_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &frozen_amount_)));
@@ -3480,9 +4049,8 @@ bool TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::MergeParti
 
       // optional uint64 frozen_days = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_frozen_days();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_frozen_days(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &frozen_days_)));
@@ -3511,6 +4079,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3537,8 +4106,7 @@ void TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::SerializeW
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronAssetIssueContract.TronFrozenSupply)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3571,16 +4139,21 @@ size_t TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::ByteSize
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint64 frozen_amount = 1;
-    if (has_frozen_amount()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->frozen_amount());
     }
 
     // optional uint64 frozen_days = 2;
-    if (has_frozen_days()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->frozen_days());
@@ -3596,9 +4169,9 @@ void TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::MergeFrom(
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronAssetIssueContract.TronFrozenSupply)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronAssetIssueContract.TronFrozenSupply)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3615,7 +4188,7 @@ void TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::MergeFrom(
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       frozen_amount_ = from.frozen_amount_;
     }
@@ -3650,15 +4223,15 @@ void TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::Swap(TronS
 }
 void TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::InternalSwap(TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(frozen_amount_, other->frozen_amount_);
   swap(frozen_days_, other->frozen_days_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3666,6 +4239,37 @@ void TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::InternalSw
 
 void TronSignTx_TronContract_TronAssetIssueContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronAssetIssueContract::HasBitSetters {
+ public:
+  static void set_has_name(TronSignTx_TronContract_TronAssetIssueContract* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_abbr(TronSignTx_TronContract_TronAssetIssueContract* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_total_supply(TronSignTx_TronContract_TronAssetIssueContract* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_trx_num(TronSignTx_TronContract_TronAssetIssueContract* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_num(TronSignTx_TronContract_TronAssetIssueContract* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_start_time(TronSignTx_TronContract_TronAssetIssueContract* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static void set_has_end_time(TronSignTx_TronContract_TronAssetIssueContract* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static void set_has_description(TronSignTx_TronContract_TronAssetIssueContract* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_url(TronSignTx_TronContract_TronAssetIssueContract* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronAssetIssueContract::kNameFieldNumber;
 const int TronSignTx_TronContract_TronAssetIssueContract::kAbbrFieldNumber;
@@ -3680,15 +4284,13 @@ const int TronSignTx_TronContract_TronAssetIssueContract::kUrlFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronAssetIssueContract::TronSignTx_TronContract_TronAssetIssueContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronAssetIssueContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronAssetIssueContract)
 }
 TronSignTx_TronContract_TronAssetIssueContract::TronSignTx_TronContract_TronAssetIssueContract(const TronSignTx_TronContract_TronAssetIssueContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       frozen_supply_(from.frozen_supply_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -3715,6 +4317,8 @@ TronSignTx_TronContract_TronAssetIssueContract::TronSignTx_TronContract_TronAsse
 }
 
 void TronSignTx_TronContract_TronAssetIssueContract::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronSignTx_TronContract_TronAssetIssueContract_messages_2dtron_2eproto.base);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   abbr_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3739,13 +4343,8 @@ void TronSignTx_TronContract_TronAssetIssueContract::SharedDtor() {
 void TronSignTx_TronContract_TronAssetIssueContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronAssetIssueContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronAssetIssueContract& TronSignTx_TronContract_TronAssetIssueContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronAssetIssueContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronAssetIssueContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3758,7 +4357,7 @@ void TronSignTx_TronContract_TronAssetIssueContract::Clear() {
 
   frozen_supply_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       name_.ClearNonDefaultToEmptyNoArena();
     }
@@ -3772,19 +4371,171 @@ void TronSignTx_TronContract_TronAssetIssueContract::Clear() {
       url_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 240u) {
+  if (cached_has_bits & 0x000000f0u) {
     ::memset(&total_supply_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&start_time_) -
         reinterpret_cast<char*>(&total_supply_)) + sizeof(start_time_));
   }
-  end_time_ = GOOGLE_ULONGLONG(0);
+  end_time_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronAssetIssueContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronAssetIssueContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string name = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("TronSignTx.TronContract.TronAssetIssueContract.name");
+        object = msg->mutable_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string abbr = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("TronSignTx.TronContract.TronAssetIssueContract.abbr");
+        object = msg->mutable_abbr();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint64 total_supply = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_total_supply(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated .TronSignTx.TronContract.TronAssetIssueContract.TronFrozenSupply frozen_supply = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply::_InternalParse;
+          object = msg->add_frozen_supply();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 42 && (ptr += 1));
+        break;
+      }
+      // optional uint32 trx_num = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_trx_num(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 num = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_num(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 start_time = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 64) goto handle_unusual;
+        msg->set_start_time(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 end_time = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 72) goto handle_unusual;
+        msg->set_end_time(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string description = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 82) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("TronSignTx.TronContract.TronAssetIssueContract.description");
+        object = msg->mutable_description();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string url = 11;
+      case 11: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 90) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("TronSignTx.TronContract.TronAssetIssueContract.url");
+        object = msg->mutable_url();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronAssetIssueContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronAssetIssueContract)
   for (;;) {
@@ -3794,8 +4545,7 @@ bool TronSignTx_TronContract_TronAssetIssueContract::MergePartialFromCodedStream
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string name = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3810,8 +4560,7 @@ bool TronSignTx_TronContract_TronAssetIssueContract::MergePartialFromCodedStream
 
       // optional string abbr = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_abbr()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3826,9 +4575,8 @@ bool TronSignTx_TronContract_TronAssetIssueContract::MergePartialFromCodedStream
 
       // optional uint64 total_supply = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_total_supply();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_total_supply(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &total_supply_)));
@@ -3840,8 +4588,7 @@ bool TronSignTx_TronContract_TronAssetIssueContract::MergePartialFromCodedStream
 
       // repeated .TronSignTx.TronContract.TronAssetIssueContract.TronFrozenSupply frozen_supply = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_frozen_supply()));
         } else {
@@ -3852,9 +4599,8 @@ bool TronSignTx_TronContract_TronAssetIssueContract::MergePartialFromCodedStream
 
       // optional uint32 trx_num = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_trx_num();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_trx_num(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &trx_num_)));
@@ -3866,9 +4612,8 @@ bool TronSignTx_TronContract_TronAssetIssueContract::MergePartialFromCodedStream
 
       // optional uint32 num = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_num();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_num(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &num_)));
@@ -3880,9 +4625,8 @@ bool TronSignTx_TronContract_TronAssetIssueContract::MergePartialFromCodedStream
 
       // optional uint64 start_time = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
-          set_has_start_time();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (64 & 0xFF)) {
+          HasBitSetters::set_has_start_time(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &start_time_)));
@@ -3894,9 +4638,8 @@ bool TronSignTx_TronContract_TronAssetIssueContract::MergePartialFromCodedStream
 
       // optional uint64 end_time = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
-          set_has_end_time();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (72 & 0xFF)) {
+          HasBitSetters::set_has_end_time(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &end_time_)));
@@ -3908,8 +4651,7 @@ bool TronSignTx_TronContract_TronAssetIssueContract::MergePartialFromCodedStream
 
       // optional string description = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (82 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_description()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3924,8 +4666,7 @@ bool TronSignTx_TronContract_TronAssetIssueContract::MergePartialFromCodedStream
 
       // optional string url = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (90 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_url()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3957,6 +4698,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronAssetIssueContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4047,8 +4789,7 @@ void TronSignTx_TronContract_TronAssetIssueContract::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronAssetIssueContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronAssetIssueContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4086,7 +4827,7 @@ void TronSignTx_TronContract_TronAssetIssueContract::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->frozen_supply_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->frozen_supply(static_cast<int>(i)), deterministic, target);
+        5, this->frozen_supply(static_cast<int>(i)), target);
   }
 
   // optional uint32 trx_num = 6;
@@ -4148,6 +4889,10 @@ size_t TronSignTx_TronContract_TronAssetIssueContract::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .TronSignTx.TronContract.TronAssetIssueContract.TronFrozenSupply frozen_supply = 5;
   {
     unsigned int count = static_cast<unsigned int>(this->frozen_supply_size());
@@ -4159,58 +4904,59 @@ size_t TronSignTx_TronContract_TronAssetIssueContract::ByteSizeLong() const {
     }
   }
 
-  if (_has_bits_[0 / 32] & 255u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional string name = 2;
-    if (has_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->name());
     }
 
     // optional string abbr = 3;
-    if (has_abbr()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->abbr());
     }
 
     // optional string description = 10;
-    if (has_description()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->description());
     }
 
     // optional string url = 11;
-    if (has_url()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->url());
     }
 
     // optional uint64 total_supply = 4;
-    if (has_total_supply()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->total_supply());
     }
 
     // optional uint32 trx_num = 6;
-    if (has_trx_num()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->trx_num());
     }
 
     // optional uint32 num = 7;
-    if (has_num()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->num());
     }
 
     // optional uint64 start_time = 8;
-    if (has_start_time()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->start_time());
@@ -4218,7 +4964,7 @@ size_t TronSignTx_TronContract_TronAssetIssueContract::ByteSizeLong() const {
 
   }
   // optional uint64 end_time = 9;
-  if (has_end_time()) {
+  if (cached_has_bits & 0x00000100u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt64Size(
         this->end_time());
@@ -4233,9 +4979,9 @@ void TronSignTx_TronContract_TronAssetIssueContract::MergeFrom(const ::google::p
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronAssetIssueContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronAssetIssueContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronAssetIssueContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronAssetIssueContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronAssetIssueContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4253,21 +4999,21 @@ void TronSignTx_TronContract_TronAssetIssueContract::MergeFrom(const TronSignTx_
 
   frozen_supply_.MergeFrom(from.frozen_supply_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_name();
+      _has_bits_[0] |= 0x00000001u;
       name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_abbr();
+      _has_bits_[0] |= 0x00000002u;
       abbr_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.abbr_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_description();
+      _has_bits_[0] |= 0x00000004u;
       description_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.description_);
     }
     if (cached_has_bits & 0x00000008u) {
-      set_has_url();
+      _has_bits_[0] |= 0x00000008u;
       url_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.url_);
     }
     if (cached_has_bits & 0x00000010u) {
@@ -4313,6 +5059,8 @@ void TronSignTx_TronContract_TronAssetIssueContract::Swap(TronSignTx_TronContrac
 }
 void TronSignTx_TronContract_TronAssetIssueContract::InternalSwap(TronSignTx_TronContract_TronAssetIssueContract* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&frozen_supply_)->InternalSwap(CastToBase(&other->frozen_supply_));
   name_.Swap(&other->name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -4327,13 +5075,11 @@ void TronSignTx_TronContract_TronAssetIssueContract::InternalSwap(TronSignTx_Tro
   swap(num_, other->num_);
   swap(start_time_, other->start_time_);
   swap(end_time_, other->end_time_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronAssetIssueContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4341,6 +5087,19 @@ void TronSignTx_TronContract_TronAssetIssueContract::InternalSwap(TronSignTx_Tro
 
 void TronSignTx_TronContract_TronParticipateAssetIssueContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronParticipateAssetIssueContract::HasBitSetters {
+ public:
+  static void set_has_to_address(TronSignTx_TronContract_TronParticipateAssetIssueContract* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_asset_name(TronSignTx_TronContract_TronParticipateAssetIssueContract* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_amount(TronSignTx_TronContract_TronParticipateAssetIssueContract* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronParticipateAssetIssueContract::kToAddressFieldNumber;
 const int TronSignTx_TronContract_TronParticipateAssetIssueContract::kAssetNameFieldNumber;
@@ -4348,15 +5107,13 @@ const int TronSignTx_TronContract_TronParticipateAssetIssueContract::kAmountFiel
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronParticipateAssetIssueContract::TronSignTx_TronContract_TronParticipateAssetIssueContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronParticipateAssetIssueContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronParticipateAssetIssueContract)
 }
 TronSignTx_TronContract_TronParticipateAssetIssueContract::TronSignTx_TronContract_TronParticipateAssetIssueContract(const TronSignTx_TronContract_TronParticipateAssetIssueContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   to_address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4372,9 +5129,11 @@ TronSignTx_TronContract_TronParticipateAssetIssueContract::TronSignTx_TronContra
 }
 
 void TronSignTx_TronContract_TronParticipateAssetIssueContract::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronSignTx_TronContract_TronParticipateAssetIssueContract_messages_2dtron_2eproto.base);
   to_address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   asset_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  amount_ = GOOGLE_ULONGLONG(0);
+  amount_ = PROTOBUF_ULONGLONG(0);
 }
 
 TronSignTx_TronContract_TronParticipateAssetIssueContract::~TronSignTx_TronContract_TronParticipateAssetIssueContract() {
@@ -4390,13 +5149,8 @@ void TronSignTx_TronContract_TronParticipateAssetIssueContract::SharedDtor() {
 void TronSignTx_TronContract_TronParticipateAssetIssueContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronParticipateAssetIssueContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronParticipateAssetIssueContract& TronSignTx_TronContract_TronParticipateAssetIssueContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronParticipateAssetIssueContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronParticipateAssetIssueContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4408,7 +5162,7 @@ void TronSignTx_TronContract_TronParticipateAssetIssueContract::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       to_address_.ClearNonDefaultToEmptyNoArena();
     }
@@ -4416,14 +5170,89 @@ void TronSignTx_TronContract_TronParticipateAssetIssueContract::Clear() {
       asset_name_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  amount_ = GOOGLE_ULONGLONG(0);
+  amount_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronParticipateAssetIssueContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronParticipateAssetIssueContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes to_address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_to_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string asset_name = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("TronSignTx.TronContract.TronParticipateAssetIssueContract.asset_name");
+        object = msg->mutable_asset_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint64 amount = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronParticipateAssetIssueContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronParticipateAssetIssueContract)
   for (;;) {
@@ -4433,8 +5262,7 @@ bool TronSignTx_TronContract_TronParticipateAssetIssueContract::MergePartialFrom
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes to_address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_to_address()));
         } else {
@@ -4445,8 +5273,7 @@ bool TronSignTx_TronContract_TronParticipateAssetIssueContract::MergePartialFrom
 
       // optional string asset_name = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_asset_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4461,9 +5288,8 @@ bool TronSignTx_TronContract_TronParticipateAssetIssueContract::MergePartialFrom
 
       // optional uint64 amount = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &amount_)));
@@ -4492,6 +5318,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronParticipateAssetIssueContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4529,8 +5356,7 @@ void TronSignTx_TronContract_TronParticipateAssetIssueContract::SerializeWithCac
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronParticipateAssetIssueContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronParticipateAssetIssueContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4576,23 +5402,28 @@ size_t TronSignTx_TronContract_TronParticipateAssetIssueContract::ByteSizeLong()
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional bytes to_address = 1;
-    if (has_to_address()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->to_address());
     }
 
     // optional string asset_name = 2;
-    if (has_asset_name()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->asset_name());
     }
 
     // optional uint64 amount = 3;
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->amount());
@@ -4608,9 +5439,9 @@ void TronSignTx_TronContract_TronParticipateAssetIssueContract::MergeFrom(const 
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronParticipateAssetIssueContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronParticipateAssetIssueContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronParticipateAssetIssueContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronParticipateAssetIssueContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronParticipateAssetIssueContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4627,13 +5458,13 @@ void TronSignTx_TronContract_TronParticipateAssetIssueContract::MergeFrom(const 
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_to_address();
+      _has_bits_[0] |= 0x00000001u;
       to_address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.to_address_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_asset_name();
+      _has_bits_[0] |= 0x00000002u;
       asset_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.asset_name_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -4667,18 +5498,18 @@ void TronSignTx_TronContract_TronParticipateAssetIssueContract::Swap(TronSignTx_
 }
 void TronSignTx_TronContract_TronParticipateAssetIssueContract::InternalSwap(TronSignTx_TronContract_TronParticipateAssetIssueContract* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   to_address_.Swap(&other->to_address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   asset_name_.Swap(&other->asset_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(amount_, other->amount_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronParticipateAssetIssueContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4686,21 +5517,29 @@ void TronSignTx_TronContract_TronParticipateAssetIssueContract::InternalSwap(Tro
 
 void TronSignTx_TronContract_TronFreezeBalanceContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronFreezeBalanceContract::HasBitSetters {
+ public:
+  static void set_has_frozen_balance(TronSignTx_TronContract_TronFreezeBalanceContract* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_frozen_duration(TronSignTx_TronContract_TronFreezeBalanceContract* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronFreezeBalanceContract::kFrozenBalanceFieldNumber;
 const int TronSignTx_TronContract_TronFreezeBalanceContract::kFrozenDurationFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronFreezeBalanceContract::TronSignTx_TronContract_TronFreezeBalanceContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronFreezeBalanceContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronFreezeBalanceContract)
 }
 TronSignTx_TronContract_TronFreezeBalanceContract::TronSignTx_TronContract_TronFreezeBalanceContract(const TronSignTx_TronContract_TronFreezeBalanceContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&frozen_balance_, &from.frozen_balance_,
@@ -4726,13 +5565,8 @@ void TronSignTx_TronContract_TronFreezeBalanceContract::SharedDtor() {
 void TronSignTx_TronContract_TronFreezeBalanceContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronFreezeBalanceContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronFreezeBalanceContract& TronSignTx_TronContract_TronFreezeBalanceContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronFreezeBalanceContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronFreezeBalanceContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4744,7 +5578,7 @@ void TronSignTx_TronContract_TronFreezeBalanceContract::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&frozen_balance_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&frozen_duration_) -
         reinterpret_cast<char*>(&frozen_balance_)) + sizeof(frozen_duration_));
@@ -4753,9 +5587,53 @@ void TronSignTx_TronContract_TronFreezeBalanceContract::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronFreezeBalanceContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronFreezeBalanceContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 frozen_balance = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_frozen_balance(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 frozen_duration = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_frozen_duration(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronFreezeBalanceContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronFreezeBalanceContract)
   for (;;) {
@@ -4765,9 +5643,8 @@ bool TronSignTx_TronContract_TronFreezeBalanceContract::MergePartialFromCodedStr
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 frozen_balance = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_frozen_balance();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_frozen_balance(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &frozen_balance_)));
@@ -4779,9 +5656,8 @@ bool TronSignTx_TronContract_TronFreezeBalanceContract::MergePartialFromCodedStr
 
       // optional uint64 frozen_duration = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_frozen_duration();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_frozen_duration(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &frozen_duration_)));
@@ -4810,6 +5686,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronFreezeBalanceContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4836,8 +5713,7 @@ void TronSignTx_TronContract_TronFreezeBalanceContract::SerializeWithCachedSizes
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronFreezeBalanceContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronFreezeBalanceContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4870,16 +5746,21 @@ size_t TronSignTx_TronContract_TronFreezeBalanceContract::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint64 frozen_balance = 1;
-    if (has_frozen_balance()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->frozen_balance());
     }
 
     // optional uint64 frozen_duration = 2;
-    if (has_frozen_duration()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->frozen_duration());
@@ -4895,9 +5776,9 @@ void TronSignTx_TronContract_TronFreezeBalanceContract::MergeFrom(const ::google
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronFreezeBalanceContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronFreezeBalanceContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronFreezeBalanceContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronFreezeBalanceContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronFreezeBalanceContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4914,7 +5795,7 @@ void TronSignTx_TronContract_TronFreezeBalanceContract::MergeFrom(const TronSign
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       frozen_balance_ = from.frozen_balance_;
     }
@@ -4949,15 +5830,15 @@ void TronSignTx_TronContract_TronFreezeBalanceContract::Swap(TronSignTx_TronCont
 }
 void TronSignTx_TronContract_TronFreezeBalanceContract::InternalSwap(TronSignTx_TronContract_TronFreezeBalanceContract* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(frozen_balance_, other->frozen_balance_);
   swap(frozen_duration_, other->frozen_duration_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronFreezeBalanceContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4965,19 +5846,21 @@ void TronSignTx_TronContract_TronFreezeBalanceContract::InternalSwap(TronSignTx_
 
 void TronSignTx_TronContract_TronUnfreezeBalanceContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronUnfreezeBalanceContract::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronUnfreezeBalanceContract::TronSignTx_TronContract_TronUnfreezeBalanceContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronUnfreezeBalanceContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronUnfreezeBalanceContract)
 }
 TronSignTx_TronContract_TronUnfreezeBalanceContract::TronSignTx_TronContract_TronUnfreezeBalanceContract(const TronSignTx_TronContract_TronUnfreezeBalanceContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:TronSignTx.TronContract.TronUnfreezeBalanceContract)
@@ -4997,13 +5880,8 @@ void TronSignTx_TronContract_TronUnfreezeBalanceContract::SharedDtor() {
 void TronSignTx_TronContract_TronUnfreezeBalanceContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronUnfreezeBalanceContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronUnfreezeBalanceContract& TronSignTx_TronContract_TronUnfreezeBalanceContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronUnfreezeBalanceContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronUnfreezeBalanceContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5018,9 +5896,38 @@ void TronSignTx_TronContract_TronUnfreezeBalanceContract::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronUnfreezeBalanceContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronUnfreezeBalanceContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      default: {
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronUnfreezeBalanceContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronUnfreezeBalanceContract)
   for (;;) {
@@ -5042,6 +5949,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronUnfreezeBalanceContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5057,8 +5965,7 @@ void TronSignTx_TronContract_TronUnfreezeBalanceContract::SerializeWithCachedSiz
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronUnfreezeBalanceContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronUnfreezeBalanceContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5080,6 +5987,10 @@ size_t TronSignTx_TronContract_TronUnfreezeBalanceContract::ByteSizeLong() const
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -5089,9 +6000,9 @@ void TronSignTx_TronContract_TronUnfreezeBalanceContract::MergeFrom(const ::goog
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronUnfreezeBalanceContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronUnfreezeBalanceContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronUnfreezeBalanceContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronUnfreezeBalanceContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronUnfreezeBalanceContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5133,13 +6044,13 @@ void TronSignTx_TronContract_TronUnfreezeBalanceContract::Swap(TronSignTx_TronCo
 }
 void TronSignTx_TronContract_TronUnfreezeBalanceContract::InternalSwap(TronSignTx_TronContract_TronUnfreezeBalanceContract* other) {
   using std::swap;
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronUnfreezeBalanceContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5147,19 +6058,21 @@ void TronSignTx_TronContract_TronUnfreezeBalanceContract::InternalSwap(TronSignT
 
 void TronSignTx_TronContract_TronUnfreezeAssetContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronUnfreezeAssetContract::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronUnfreezeAssetContract::TronSignTx_TronContract_TronUnfreezeAssetContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronUnfreezeAssetContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronUnfreezeAssetContract)
 }
 TronSignTx_TronContract_TronUnfreezeAssetContract::TronSignTx_TronContract_TronUnfreezeAssetContract(const TronSignTx_TronContract_TronUnfreezeAssetContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:TronSignTx.TronContract.TronUnfreezeAssetContract)
@@ -5179,13 +6092,8 @@ void TronSignTx_TronContract_TronUnfreezeAssetContract::SharedDtor() {
 void TronSignTx_TronContract_TronUnfreezeAssetContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronUnfreezeAssetContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronUnfreezeAssetContract& TronSignTx_TronContract_TronUnfreezeAssetContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronUnfreezeAssetContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronUnfreezeAssetContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5200,9 +6108,38 @@ void TronSignTx_TronContract_TronUnfreezeAssetContract::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronUnfreezeAssetContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronUnfreezeAssetContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      default: {
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronUnfreezeAssetContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronUnfreezeAssetContract)
   for (;;) {
@@ -5224,6 +6161,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronUnfreezeAssetContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5239,8 +6177,7 @@ void TronSignTx_TronContract_TronUnfreezeAssetContract::SerializeWithCachedSizes
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronUnfreezeAssetContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronUnfreezeAssetContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5262,6 +6199,10 @@ size_t TronSignTx_TronContract_TronUnfreezeAssetContract::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -5271,9 +6212,9 @@ void TronSignTx_TronContract_TronUnfreezeAssetContract::MergeFrom(const ::google
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronUnfreezeAssetContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronUnfreezeAssetContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronUnfreezeAssetContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronUnfreezeAssetContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronUnfreezeAssetContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5315,13 +6256,13 @@ void TronSignTx_TronContract_TronUnfreezeAssetContract::Swap(TronSignTx_TronCont
 }
 void TronSignTx_TronContract_TronUnfreezeAssetContract::InternalSwap(TronSignTx_TronContract_TronUnfreezeAssetContract* other) {
   using std::swap;
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronUnfreezeAssetContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5329,19 +6270,21 @@ void TronSignTx_TronContract_TronUnfreezeAssetContract::InternalSwap(TronSignTx_
 
 void TronSignTx_TronContract_TronWithdrawBalanceContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronWithdrawBalanceContract::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronWithdrawBalanceContract::TronSignTx_TronContract_TronWithdrawBalanceContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronWithdrawBalanceContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronWithdrawBalanceContract)
 }
 TronSignTx_TronContract_TronWithdrawBalanceContract::TronSignTx_TronContract_TronWithdrawBalanceContract(const TronSignTx_TronContract_TronWithdrawBalanceContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:TronSignTx.TronContract.TronWithdrawBalanceContract)
@@ -5361,13 +6304,8 @@ void TronSignTx_TronContract_TronWithdrawBalanceContract::SharedDtor() {
 void TronSignTx_TronContract_TronWithdrawBalanceContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronWithdrawBalanceContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronWithdrawBalanceContract& TronSignTx_TronContract_TronWithdrawBalanceContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronWithdrawBalanceContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronWithdrawBalanceContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5382,9 +6320,38 @@ void TronSignTx_TronContract_TronWithdrawBalanceContract::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronWithdrawBalanceContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronWithdrawBalanceContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      default: {
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronWithdrawBalanceContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronWithdrawBalanceContract)
   for (;;) {
@@ -5406,6 +6373,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronWithdrawBalanceContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5421,8 +6389,7 @@ void TronSignTx_TronContract_TronWithdrawBalanceContract::SerializeWithCachedSiz
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronWithdrawBalanceContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronWithdrawBalanceContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5444,6 +6411,10 @@ size_t TronSignTx_TronContract_TronWithdrawBalanceContract::ByteSizeLong() const
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -5453,9 +6424,9 @@ void TronSignTx_TronContract_TronWithdrawBalanceContract::MergeFrom(const ::goog
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronWithdrawBalanceContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronWithdrawBalanceContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronWithdrawBalanceContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronWithdrawBalanceContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronWithdrawBalanceContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5497,13 +6468,13 @@ void TronSignTx_TronContract_TronWithdrawBalanceContract::Swap(TronSignTx_TronCo
 }
 void TronSignTx_TronContract_TronWithdrawBalanceContract::InternalSwap(TronSignTx_TronContract_TronWithdrawBalanceContract* other) {
   using std::swap;
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronWithdrawBalanceContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5511,21 +6482,29 @@ void TronSignTx_TronContract_TronWithdrawBalanceContract::InternalSwap(TronSignT
 
 void TronSignTx_TronContract_TronUpdateAssetContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronUpdateAssetContract::HasBitSetters {
+ public:
+  static void set_has_description(TronSignTx_TronContract_TronUpdateAssetContract* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_url(TronSignTx_TronContract_TronUpdateAssetContract* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronUpdateAssetContract::kDescriptionFieldNumber;
 const int TronSignTx_TronContract_TronUpdateAssetContract::kUrlFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronUpdateAssetContract::TronSignTx_TronContract_TronUpdateAssetContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronUpdateAssetContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronUpdateAssetContract)
 }
 TronSignTx_TronContract_TronUpdateAssetContract::TronSignTx_TronContract_TronUpdateAssetContract(const TronSignTx_TronContract_TronUpdateAssetContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -5540,6 +6519,8 @@ TronSignTx_TronContract_TronUpdateAssetContract::TronSignTx_TronContract_TronUpd
 }
 
 void TronSignTx_TronContract_TronUpdateAssetContract::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronSignTx_TronContract_TronUpdateAssetContract_messages_2dtron_2eproto.base);
   description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -5557,13 +6538,8 @@ void TronSignTx_TronContract_TronUpdateAssetContract::SharedDtor() {
 void TronSignTx_TronContract_TronUpdateAssetContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronUpdateAssetContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronUpdateAssetContract& TronSignTx_TronContract_TronUpdateAssetContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronUpdateAssetContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronUpdateAssetContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5575,7 +6551,7 @@ void TronSignTx_TronContract_TronUpdateAssetContract::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       description_.ClearNonDefaultToEmptyNoArena();
     }
@@ -5587,9 +6563,78 @@ void TronSignTx_TronContract_TronUpdateAssetContract::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronUpdateAssetContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronUpdateAssetContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string description = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("TronSignTx.TronContract.TronUpdateAssetContract.description");
+        object = msg->mutable_description();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string url = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("TronSignTx.TronContract.TronUpdateAssetContract.url");
+        object = msg->mutable_url();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronUpdateAssetContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronUpdateAssetContract)
   for (;;) {
@@ -5599,8 +6644,7 @@ bool TronSignTx_TronContract_TronUpdateAssetContract::MergePartialFromCodedStrea
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string description = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_description()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -5615,8 +6659,7 @@ bool TronSignTx_TronContract_TronUpdateAssetContract::MergePartialFromCodedStrea
 
       // optional string url = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_url()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -5648,6 +6691,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronUpdateAssetContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5684,8 +6728,7 @@ void TronSignTx_TronContract_TronUpdateAssetContract::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronUpdateAssetContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronUpdateAssetContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5730,16 +6773,21 @@ size_t TronSignTx_TronContract_TronUpdateAssetContract::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string description = 1;
-    if (has_description()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->description());
     }
 
     // optional string url = 2;
-    if (has_url()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->url());
@@ -5755,9 +6803,9 @@ void TronSignTx_TronContract_TronUpdateAssetContract::MergeFrom(const ::google::
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronUpdateAssetContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronUpdateAssetContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronUpdateAssetContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronUpdateAssetContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronUpdateAssetContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5774,13 +6822,13 @@ void TronSignTx_TronContract_TronUpdateAssetContract::MergeFrom(const TronSignTx
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_description();
+      _has_bits_[0] |= 0x00000001u;
       description_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.description_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_url();
+      _has_bits_[0] |= 0x00000002u;
       url_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.url_);
     }
   }
@@ -5810,17 +6858,17 @@ void TronSignTx_TronContract_TronUpdateAssetContract::Swap(TronSignTx_TronContra
 }
 void TronSignTx_TronContract_TronUpdateAssetContract::InternalSwap(TronSignTx_TronContract_TronUpdateAssetContract* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   description_.Swap(&other->description_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   url_.Swap(&other->url_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronUpdateAssetContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5828,21 +6876,29 @@ void TronSignTx_TronContract_TronUpdateAssetContract::InternalSwap(TronSignTx_Tr
 
 void TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::HasBitSetters {
+ public:
+  static void set_has_key(TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_value(TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::kKeyFieldNumber;
 const int TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::kValueFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronProposalCreateContract.TronProposalParameters)
 }
 TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters(const TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&key_, &from.key_,
@@ -5868,13 +6924,8 @@ void TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::
 void TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters& TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5886,7 +6937,7 @@ void TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&key_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&value_) -
         reinterpret_cast<char*>(&key_)) + sizeof(value_));
@@ -5895,9 +6946,53 @@ void TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 key = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_key(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 value = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_value(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronProposalCreateContract.TronProposalParameters)
   for (;;) {
@@ -5907,9 +7002,8 @@ bool TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 key = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_key();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_key(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &key_)));
@@ -5921,9 +7015,8 @@ bool TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::
 
       // optional uint64 value = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_value();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_value(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &value_)));
@@ -5952,6 +7045,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5978,8 +7072,7 @@ void TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronProposalCreateContract.TronProposalParameters)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6012,16 +7105,21 @@ size_t TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint64 key = 1;
-    if (has_key()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->key());
     }
 
     // optional uint64 value = 2;
-    if (has_value()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->value());
@@ -6037,9 +7135,9 @@ void TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronProposalCreateContract.TronProposalParameters)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronProposalCreateContract.TronProposalParameters)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6056,7 +7154,7 @@ void TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       key_ = from.key_;
     }
@@ -6091,15 +7189,15 @@ void TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::
 }
 void TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::InternalSwap(TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(key_, other->key_);
   swap(value_, other->value_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6107,20 +7205,22 @@ void TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::
 
 void TronSignTx_TronContract_TronProposalCreateContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronProposalCreateContract::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronProposalCreateContract::kParametersFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronProposalCreateContract::TronSignTx_TronContract_TronProposalCreateContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronProposalCreateContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronProposalCreateContract)
 }
 TronSignTx_TronContract_TronProposalCreateContract::TronSignTx_TronContract_TronProposalCreateContract(const TronSignTx_TronContract_TronProposalCreateContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       parameters_(from.parameters_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -6128,6 +7228,8 @@ TronSignTx_TronContract_TronProposalCreateContract::TronSignTx_TronContract_Tron
 }
 
 void TronSignTx_TronContract_TronProposalCreateContract::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronSignTx_TronContract_TronProposalCreateContract_messages_2dtron_2eproto.base);
 }
 
 TronSignTx_TronContract_TronProposalCreateContract::~TronSignTx_TronContract_TronProposalCreateContract() {
@@ -6141,13 +7243,8 @@ void TronSignTx_TronContract_TronProposalCreateContract::SharedDtor() {
 void TronSignTx_TronContract_TronProposalCreateContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronProposalCreateContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronProposalCreateContract& TronSignTx_TronContract_TronProposalCreateContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronProposalCreateContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronProposalCreateContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6163,9 +7260,58 @@ void TronSignTx_TronContract_TronProposalCreateContract::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronProposalCreateContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronProposalCreateContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated .TronSignTx.TronContract.TronProposalCreateContract.TronProposalParameters parameters = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters::_InternalParse;
+          object = msg->add_parameters();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronProposalCreateContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronProposalCreateContract)
   for (;;) {
@@ -6175,8 +7321,7 @@ bool TronSignTx_TronContract_TronProposalCreateContract::MergePartialFromCodedSt
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .TronSignTx.TronContract.TronProposalCreateContract.TronProposalParameters parameters = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_parameters()));
         } else {
@@ -6204,6 +7349,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronProposalCreateContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6228,8 +7374,7 @@ void TronSignTx_TronContract_TronProposalCreateContract::SerializeWithCachedSize
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronProposalCreateContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronProposalCreateContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6239,7 +7384,7 @@ void TronSignTx_TronContract_TronProposalCreateContract::SerializeWithCachedSize
       n = static_cast<unsigned int>(this->parameters_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->parameters(static_cast<int>(i)), deterministic, target);
+        1, this->parameters(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6259,6 +7404,10 @@ size_t TronSignTx_TronContract_TronProposalCreateContract::ByteSizeLong() const 
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .TronSignTx.TronContract.TronProposalCreateContract.TronProposalParameters parameters = 1;
   {
     unsigned int count = static_cast<unsigned int>(this->parameters_size());
@@ -6279,9 +7428,9 @@ void TronSignTx_TronContract_TronProposalCreateContract::MergeFrom(const ::googl
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronProposalCreateContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronProposalCreateContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronProposalCreateContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronProposalCreateContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronProposalCreateContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6324,14 +7473,14 @@ void TronSignTx_TronContract_TronProposalCreateContract::Swap(TronSignTx_TronCon
 }
 void TronSignTx_TronContract_TronProposalCreateContract::InternalSwap(TronSignTx_TronContract_TronProposalCreateContract* other) {
   using std::swap;
-  CastToBase(&parameters_)->InternalSwap(CastToBase(&other->parameters_));
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  CastToBase(&parameters_)->InternalSwap(CastToBase(&other->parameters_));
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronProposalCreateContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6339,21 +7488,29 @@ void TronSignTx_TronContract_TronProposalCreateContract::InternalSwap(TronSignTx
 
 void TronSignTx_TronContract_TronProposalApproveContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronProposalApproveContract::HasBitSetters {
+ public:
+  static void set_has_proposal_id(TronSignTx_TronContract_TronProposalApproveContract* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_is_add_approval(TronSignTx_TronContract_TronProposalApproveContract* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronProposalApproveContract::kProposalIdFieldNumber;
 const int TronSignTx_TronContract_TronProposalApproveContract::kIsAddApprovalFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronProposalApproveContract::TronSignTx_TronContract_TronProposalApproveContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronProposalApproveContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronProposalApproveContract)
 }
 TronSignTx_TronContract_TronProposalApproveContract::TronSignTx_TronContract_TronProposalApproveContract(const TronSignTx_TronContract_TronProposalApproveContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&proposal_id_, &from.proposal_id_,
@@ -6379,13 +7536,8 @@ void TronSignTx_TronContract_TronProposalApproveContract::SharedDtor() {
 void TronSignTx_TronContract_TronProposalApproveContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronProposalApproveContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronProposalApproveContract& TronSignTx_TronContract_TronProposalApproveContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronProposalApproveContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronProposalApproveContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6397,7 +7549,7 @@ void TronSignTx_TronContract_TronProposalApproveContract::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&proposal_id_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&is_add_approval_) -
         reinterpret_cast<char*>(&proposal_id_)) + sizeof(is_add_approval_));
@@ -6406,9 +7558,53 @@ void TronSignTx_TronContract_TronProposalApproveContract::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronProposalApproveContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronProposalApproveContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 proposal_id = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_proposal_id(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool is_add_approval = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_is_add_approval(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronProposalApproveContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronProposalApproveContract)
   for (;;) {
@@ -6418,9 +7614,8 @@ bool TronSignTx_TronContract_TronProposalApproveContract::MergePartialFromCodedS
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 proposal_id = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_proposal_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_proposal_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &proposal_id_)));
@@ -6432,9 +7627,8 @@ bool TronSignTx_TronContract_TronProposalApproveContract::MergePartialFromCodedS
 
       // optional bool is_add_approval = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_is_add_approval();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_is_add_approval(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &is_add_approval_)));
@@ -6463,6 +7657,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronProposalApproveContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6489,8 +7684,7 @@ void TronSignTx_TronContract_TronProposalApproveContract::SerializeWithCachedSiz
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronProposalApproveContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronProposalApproveContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6523,16 +7717,21 @@ size_t TronSignTx_TronContract_TronProposalApproveContract::ByteSizeLong() const
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint64 proposal_id = 1;
-    if (has_proposal_id()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->proposal_id());
     }
 
     // optional bool is_add_approval = 2;
-    if (has_is_add_approval()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 1;
     }
 
@@ -6546,9 +7745,9 @@ void TronSignTx_TronContract_TronProposalApproveContract::MergeFrom(const ::goog
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronProposalApproveContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronProposalApproveContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronProposalApproveContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronProposalApproveContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronProposalApproveContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6565,7 +7764,7 @@ void TronSignTx_TronContract_TronProposalApproveContract::MergeFrom(const TronSi
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       proposal_id_ = from.proposal_id_;
     }
@@ -6600,15 +7799,15 @@ void TronSignTx_TronContract_TronProposalApproveContract::Swap(TronSignTx_TronCo
 }
 void TronSignTx_TronContract_TronProposalApproveContract::InternalSwap(TronSignTx_TronContract_TronProposalApproveContract* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(proposal_id_, other->proposal_id_);
   swap(is_add_approval_, other->is_add_approval_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronProposalApproveContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6616,20 +7815,25 @@ void TronSignTx_TronContract_TronProposalApproveContract::InternalSwap(TronSignT
 
 void TronSignTx_TronContract_TronProposalDeleteContract::InitAsDefaultInstance() {
 }
+class TronSignTx_TronContract_TronProposalDeleteContract::HasBitSetters {
+ public:
+  static void set_has_proposal_id(TronSignTx_TronContract_TronProposalDeleteContract* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract_TronProposalDeleteContract::kProposalIdFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract_TronProposalDeleteContract::TronSignTx_TronContract_TronProposalDeleteContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronProposalDeleteContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract.TronProposalDeleteContract)
 }
 TronSignTx_TronContract_TronProposalDeleteContract::TronSignTx_TronContract_TronProposalDeleteContract(const TronSignTx_TronContract_TronProposalDeleteContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   proposal_id_ = from.proposal_id_;
@@ -6637,7 +7841,7 @@ TronSignTx_TronContract_TronProposalDeleteContract::TronSignTx_TronContract_Tron
 }
 
 void TronSignTx_TronContract_TronProposalDeleteContract::SharedCtor() {
-  proposal_id_ = GOOGLE_ULONGLONG(0);
+  proposal_id_ = PROTOBUF_ULONGLONG(0);
 }
 
 TronSignTx_TronContract_TronProposalDeleteContract::~TronSignTx_TronContract_TronProposalDeleteContract() {
@@ -6651,13 +7855,8 @@ void TronSignTx_TronContract_TronProposalDeleteContract::SharedDtor() {
 void TronSignTx_TronContract_TronProposalDeleteContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract_TronProposalDeleteContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract_TronProposalDeleteContract& TronSignTx_TronContract_TronProposalDeleteContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract_TronProposalDeleteContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_TronProposalDeleteContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6668,14 +7867,51 @@ void TronSignTx_TronContract_TronProposalDeleteContract::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  proposal_id_ = GOOGLE_ULONGLONG(0);
+  proposal_id_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract_TronProposalDeleteContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract_TronProposalDeleteContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 proposal_id = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_proposal_id(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract_TronProposalDeleteContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract.TronProposalDeleteContract)
   for (;;) {
@@ -6685,9 +7921,8 @@ bool TronSignTx_TronContract_TronProposalDeleteContract::MergePartialFromCodedSt
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 proposal_id = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_proposal_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_proposal_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &proposal_id_)));
@@ -6716,6 +7951,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract_TronProposalDeleteContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6737,8 +7973,7 @@ void TronSignTx_TronContract_TronProposalDeleteContract::SerializeWithCachedSize
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract_TronProposalDeleteContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract.TronProposalDeleteContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6766,8 +8001,13 @@ size_t TronSignTx_TronContract_TronProposalDeleteContract::ByteSizeLong() const 
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional uint64 proposal_id = 1;
-  if (has_proposal_id()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt64Size(
         this->proposal_id());
@@ -6782,9 +8022,9 @@ void TronSignTx_TronContract_TronProposalDeleteContract::MergeFrom(const ::googl
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract.TronProposalDeleteContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract_TronProposalDeleteContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract_TronProposalDeleteContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract_TronProposalDeleteContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract.TronProposalDeleteContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6829,14 +8069,14 @@ void TronSignTx_TronContract_TronProposalDeleteContract::Swap(TronSignTx_TronCon
 }
 void TronSignTx_TronContract_TronProposalDeleteContract::InternalSwap(TronSignTx_TronContract_TronProposalDeleteContract* other) {
   using std::swap;
-  swap(proposal_id_, other->proposal_id_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(proposal_id_, other->proposal_id_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract_TronProposalDeleteContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6876,6 +8116,138 @@ void TronSignTx_TronContract::InitAsDefaultInstance() {
   ::_TronSignTx_TronContract_default_instance_._instance.get_mutable()->proposal_delete_contract_ = const_cast< ::TronSignTx_TronContract_TronProposalDeleteContract*>(
       ::TronSignTx_TronContract_TronProposalDeleteContract::internal_default_instance());
 }
+class TronSignTx_TronContract::HasBitSetters {
+ public:
+  static const ::TronSignTx_TronContract_TronTransferContract& transfer_contract(const TronSignTx_TronContract* msg);
+  static void set_has_transfer_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::TronSignTx_TronContract_TronTransferAssetContract& transfer_asset_contract(const TronSignTx_TronContract* msg);
+  static void set_has_transfer_asset_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static const ::TronSignTx_TronContract_TronVoteWitnessContract& vote_witness_contract(const TronSignTx_TronContract* msg);
+  static void set_has_vote_witness_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static const ::TronSignTx_TronContract_TronWitnessCreateContract& witness_create_contract(const TronSignTx_TronContract* msg);
+  static void set_has_witness_create_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static const ::TronSignTx_TronContract_TronAssetIssueContract& asset_issue_contract(const TronSignTx_TronContract* msg);
+  static void set_has_asset_issue_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static const ::TronSignTx_TronContract_TronWitnessUpdateContract& witness_update_contract(const TronSignTx_TronContract* msg);
+  static void set_has_witness_update_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static const ::TronSignTx_TronContract_TronParticipateAssetIssueContract& participate_asset_issue_contract(const TronSignTx_TronContract* msg);
+  static void set_has_participate_asset_issue_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static const ::TronSignTx_TronContract_TronAccountUpdateContract& account_update_contract(const TronSignTx_TronContract* msg);
+  static void set_has_account_update_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static const ::TronSignTx_TronContract_TronFreezeBalanceContract& freeze_balance_contract(const TronSignTx_TronContract* msg);
+  static void set_has_freeze_balance_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static const ::TronSignTx_TronContract_TronUnfreezeBalanceContract& unfreeze_balance_contract(const TronSignTx_TronContract* msg);
+  static void set_has_unfreeze_balance_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00000200u;
+  }
+  static const ::TronSignTx_TronContract_TronWithdrawBalanceContract& withdraw_balance_contract(const TronSignTx_TronContract* msg);
+  static void set_has_withdraw_balance_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00000400u;
+  }
+  static const ::TronSignTx_TronContract_TronUnfreezeAssetContract& unfreeze_asset_contract(const TronSignTx_TronContract* msg);
+  static void set_has_unfreeze_asset_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00000800u;
+  }
+  static const ::TronSignTx_TronContract_TronUpdateAssetContract& update_asset_contract(const TronSignTx_TronContract* msg);
+  static void set_has_update_asset_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00001000u;
+  }
+  static const ::TronSignTx_TronContract_TronProposalCreateContract& proposal_create_contract(const TronSignTx_TronContract* msg);
+  static void set_has_proposal_create_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00002000u;
+  }
+  static const ::TronSignTx_TronContract_TronProposalApproveContract& proposal_approve_contract(const TronSignTx_TronContract* msg);
+  static void set_has_proposal_approve_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00004000u;
+  }
+  static const ::TronSignTx_TronContract_TronProposalDeleteContract& proposal_delete_contract(const TronSignTx_TronContract* msg);
+  static void set_has_proposal_delete_contract(TronSignTx_TronContract* msg) {
+    msg->_has_bits_[0] |= 0x00008000u;
+  }
+};
+
+const ::TronSignTx_TronContract_TronTransferContract&
+TronSignTx_TronContract::HasBitSetters::transfer_contract(const TronSignTx_TronContract* msg) {
+  return *msg->transfer_contract_;
+}
+const ::TronSignTx_TronContract_TronTransferAssetContract&
+TronSignTx_TronContract::HasBitSetters::transfer_asset_contract(const TronSignTx_TronContract* msg) {
+  return *msg->transfer_asset_contract_;
+}
+const ::TronSignTx_TronContract_TronVoteWitnessContract&
+TronSignTx_TronContract::HasBitSetters::vote_witness_contract(const TronSignTx_TronContract* msg) {
+  return *msg->vote_witness_contract_;
+}
+const ::TronSignTx_TronContract_TronWitnessCreateContract&
+TronSignTx_TronContract::HasBitSetters::witness_create_contract(const TronSignTx_TronContract* msg) {
+  return *msg->witness_create_contract_;
+}
+const ::TronSignTx_TronContract_TronAssetIssueContract&
+TronSignTx_TronContract::HasBitSetters::asset_issue_contract(const TronSignTx_TronContract* msg) {
+  return *msg->asset_issue_contract_;
+}
+const ::TronSignTx_TronContract_TronWitnessUpdateContract&
+TronSignTx_TronContract::HasBitSetters::witness_update_contract(const TronSignTx_TronContract* msg) {
+  return *msg->witness_update_contract_;
+}
+const ::TronSignTx_TronContract_TronParticipateAssetIssueContract&
+TronSignTx_TronContract::HasBitSetters::participate_asset_issue_contract(const TronSignTx_TronContract* msg) {
+  return *msg->participate_asset_issue_contract_;
+}
+const ::TronSignTx_TronContract_TronAccountUpdateContract&
+TronSignTx_TronContract::HasBitSetters::account_update_contract(const TronSignTx_TronContract* msg) {
+  return *msg->account_update_contract_;
+}
+const ::TronSignTx_TronContract_TronFreezeBalanceContract&
+TronSignTx_TronContract::HasBitSetters::freeze_balance_contract(const TronSignTx_TronContract* msg) {
+  return *msg->freeze_balance_contract_;
+}
+const ::TronSignTx_TronContract_TronUnfreezeBalanceContract&
+TronSignTx_TronContract::HasBitSetters::unfreeze_balance_contract(const TronSignTx_TronContract* msg) {
+  return *msg->unfreeze_balance_contract_;
+}
+const ::TronSignTx_TronContract_TronWithdrawBalanceContract&
+TronSignTx_TronContract::HasBitSetters::withdraw_balance_contract(const TronSignTx_TronContract* msg) {
+  return *msg->withdraw_balance_contract_;
+}
+const ::TronSignTx_TronContract_TronUnfreezeAssetContract&
+TronSignTx_TronContract::HasBitSetters::unfreeze_asset_contract(const TronSignTx_TronContract* msg) {
+  return *msg->unfreeze_asset_contract_;
+}
+const ::TronSignTx_TronContract_TronUpdateAssetContract&
+TronSignTx_TronContract::HasBitSetters::update_asset_contract(const TronSignTx_TronContract* msg) {
+  return *msg->update_asset_contract_;
+}
+const ::TronSignTx_TronContract_TronProposalCreateContract&
+TronSignTx_TronContract::HasBitSetters::proposal_create_contract(const TronSignTx_TronContract* msg) {
+  return *msg->proposal_create_contract_;
+}
+const ::TronSignTx_TronContract_TronProposalApproveContract&
+TronSignTx_TronContract::HasBitSetters::proposal_approve_contract(const TronSignTx_TronContract* msg) {
+  return *msg->proposal_approve_contract_;
+}
+const ::TronSignTx_TronContract_TronProposalDeleteContract&
+TronSignTx_TronContract::HasBitSetters::proposal_delete_contract(const TronSignTx_TronContract* msg) {
+  return *msg->proposal_delete_contract_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx_TronContract::kTransferContractFieldNumber;
 const int TronSignTx_TronContract::kTransferAssetContractFieldNumber;
@@ -6896,101 +8268,101 @@ const int TronSignTx_TronContract::kProposalDeleteContractFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx_TronContract::TronSignTx_TronContract()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx.TronContract)
 }
 TronSignTx_TronContract::TronSignTx_TronContract(const TronSignTx_TronContract& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_transfer_contract()) {
     transfer_contract_ = new ::TronSignTx_TronContract_TronTransferContract(*from.transfer_contract_);
   } else {
-    transfer_contract_ = NULL;
+    transfer_contract_ = nullptr;
   }
   if (from.has_transfer_asset_contract()) {
     transfer_asset_contract_ = new ::TronSignTx_TronContract_TronTransferAssetContract(*from.transfer_asset_contract_);
   } else {
-    transfer_asset_contract_ = NULL;
+    transfer_asset_contract_ = nullptr;
   }
   if (from.has_vote_witness_contract()) {
     vote_witness_contract_ = new ::TronSignTx_TronContract_TronVoteWitnessContract(*from.vote_witness_contract_);
   } else {
-    vote_witness_contract_ = NULL;
+    vote_witness_contract_ = nullptr;
   }
   if (from.has_witness_create_contract()) {
     witness_create_contract_ = new ::TronSignTx_TronContract_TronWitnessCreateContract(*from.witness_create_contract_);
   } else {
-    witness_create_contract_ = NULL;
+    witness_create_contract_ = nullptr;
   }
   if (from.has_asset_issue_contract()) {
     asset_issue_contract_ = new ::TronSignTx_TronContract_TronAssetIssueContract(*from.asset_issue_contract_);
   } else {
-    asset_issue_contract_ = NULL;
+    asset_issue_contract_ = nullptr;
   }
   if (from.has_witness_update_contract()) {
     witness_update_contract_ = new ::TronSignTx_TronContract_TronWitnessUpdateContract(*from.witness_update_contract_);
   } else {
-    witness_update_contract_ = NULL;
+    witness_update_contract_ = nullptr;
   }
   if (from.has_participate_asset_issue_contract()) {
     participate_asset_issue_contract_ = new ::TronSignTx_TronContract_TronParticipateAssetIssueContract(*from.participate_asset_issue_contract_);
   } else {
-    participate_asset_issue_contract_ = NULL;
+    participate_asset_issue_contract_ = nullptr;
   }
   if (from.has_account_update_contract()) {
     account_update_contract_ = new ::TronSignTx_TronContract_TronAccountUpdateContract(*from.account_update_contract_);
   } else {
-    account_update_contract_ = NULL;
+    account_update_contract_ = nullptr;
   }
   if (from.has_freeze_balance_contract()) {
     freeze_balance_contract_ = new ::TronSignTx_TronContract_TronFreezeBalanceContract(*from.freeze_balance_contract_);
   } else {
-    freeze_balance_contract_ = NULL;
+    freeze_balance_contract_ = nullptr;
   }
   if (from.has_unfreeze_balance_contract()) {
     unfreeze_balance_contract_ = new ::TronSignTx_TronContract_TronUnfreezeBalanceContract(*from.unfreeze_balance_contract_);
   } else {
-    unfreeze_balance_contract_ = NULL;
+    unfreeze_balance_contract_ = nullptr;
   }
   if (from.has_withdraw_balance_contract()) {
     withdraw_balance_contract_ = new ::TronSignTx_TronContract_TronWithdrawBalanceContract(*from.withdraw_balance_contract_);
   } else {
-    withdraw_balance_contract_ = NULL;
+    withdraw_balance_contract_ = nullptr;
   }
   if (from.has_unfreeze_asset_contract()) {
     unfreeze_asset_contract_ = new ::TronSignTx_TronContract_TronUnfreezeAssetContract(*from.unfreeze_asset_contract_);
   } else {
-    unfreeze_asset_contract_ = NULL;
+    unfreeze_asset_contract_ = nullptr;
   }
   if (from.has_update_asset_contract()) {
     update_asset_contract_ = new ::TronSignTx_TronContract_TronUpdateAssetContract(*from.update_asset_contract_);
   } else {
-    update_asset_contract_ = NULL;
+    update_asset_contract_ = nullptr;
   }
   if (from.has_proposal_create_contract()) {
     proposal_create_contract_ = new ::TronSignTx_TronContract_TronProposalCreateContract(*from.proposal_create_contract_);
   } else {
-    proposal_create_contract_ = NULL;
+    proposal_create_contract_ = nullptr;
   }
   if (from.has_proposal_approve_contract()) {
     proposal_approve_contract_ = new ::TronSignTx_TronContract_TronProposalApproveContract(*from.proposal_approve_contract_);
   } else {
-    proposal_approve_contract_ = NULL;
+    proposal_approve_contract_ = nullptr;
   }
   if (from.has_proposal_delete_contract()) {
     proposal_delete_contract_ = new ::TronSignTx_TronContract_TronProposalDeleteContract(*from.proposal_delete_contract_);
   } else {
-    proposal_delete_contract_ = NULL;
+    proposal_delete_contract_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:TronSignTx.TronContract)
 }
 
 void TronSignTx_TronContract::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronSignTx_TronContract_messages_2dtron_2eproto.base);
   ::memset(&transfer_contract_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&proposal_delete_contract_) -
       reinterpret_cast<char*>(&transfer_contract_)) + sizeof(proposal_delete_contract_));
@@ -7023,13 +8395,8 @@ void TronSignTx_TronContract::SharedDtor() {
 void TronSignTx_TronContract::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx_TronContract::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx_TronContract& TronSignTx_TronContract::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx_TronContract.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_TronContract_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -7041,71 +8408,71 @@ void TronSignTx_TronContract::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(transfer_contract_ != NULL);
+      GOOGLE_DCHECK(transfer_contract_ != nullptr);
       transfer_contract_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(transfer_asset_contract_ != NULL);
+      GOOGLE_DCHECK(transfer_asset_contract_ != nullptr);
       transfer_asset_contract_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(vote_witness_contract_ != NULL);
+      GOOGLE_DCHECK(vote_witness_contract_ != nullptr);
       vote_witness_contract_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(witness_create_contract_ != NULL);
+      GOOGLE_DCHECK(witness_create_contract_ != nullptr);
       witness_create_contract_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(asset_issue_contract_ != NULL);
+      GOOGLE_DCHECK(asset_issue_contract_ != nullptr);
       asset_issue_contract_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(witness_update_contract_ != NULL);
+      GOOGLE_DCHECK(witness_update_contract_ != nullptr);
       witness_update_contract_->Clear();
     }
     if (cached_has_bits & 0x00000040u) {
-      GOOGLE_DCHECK(participate_asset_issue_contract_ != NULL);
+      GOOGLE_DCHECK(participate_asset_issue_contract_ != nullptr);
       participate_asset_issue_contract_->Clear();
     }
     if (cached_has_bits & 0x00000080u) {
-      GOOGLE_DCHECK(account_update_contract_ != NULL);
+      GOOGLE_DCHECK(account_update_contract_ != nullptr);
       account_update_contract_->Clear();
     }
   }
-  if (cached_has_bits & 65280u) {
+  if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
-      GOOGLE_DCHECK(freeze_balance_contract_ != NULL);
+      GOOGLE_DCHECK(freeze_balance_contract_ != nullptr);
       freeze_balance_contract_->Clear();
     }
     if (cached_has_bits & 0x00000200u) {
-      GOOGLE_DCHECK(unfreeze_balance_contract_ != NULL);
+      GOOGLE_DCHECK(unfreeze_balance_contract_ != nullptr);
       unfreeze_balance_contract_->Clear();
     }
     if (cached_has_bits & 0x00000400u) {
-      GOOGLE_DCHECK(withdraw_balance_contract_ != NULL);
+      GOOGLE_DCHECK(withdraw_balance_contract_ != nullptr);
       withdraw_balance_contract_->Clear();
     }
     if (cached_has_bits & 0x00000800u) {
-      GOOGLE_DCHECK(unfreeze_asset_contract_ != NULL);
+      GOOGLE_DCHECK(unfreeze_asset_contract_ != nullptr);
       unfreeze_asset_contract_->Clear();
     }
     if (cached_has_bits & 0x00001000u) {
-      GOOGLE_DCHECK(update_asset_contract_ != NULL);
+      GOOGLE_DCHECK(update_asset_contract_ != nullptr);
       update_asset_contract_->Clear();
     }
     if (cached_has_bits & 0x00002000u) {
-      GOOGLE_DCHECK(proposal_create_contract_ != NULL);
+      GOOGLE_DCHECK(proposal_create_contract_ != nullptr);
       proposal_create_contract_->Clear();
     }
     if (cached_has_bits & 0x00004000u) {
-      GOOGLE_DCHECK(proposal_approve_contract_ != NULL);
+      GOOGLE_DCHECK(proposal_approve_contract_ != nullptr);
       proposal_approve_contract_->Clear();
     }
     if (cached_has_bits & 0x00008000u) {
-      GOOGLE_DCHECK(proposal_delete_contract_ != NULL);
+      GOOGLE_DCHECK(proposal_delete_contract_ != nullptr);
       proposal_delete_contract_->Clear();
     }
   }
@@ -7113,9 +8480,250 @@ void TronSignTx_TronContract::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx_TronContract::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx_TronContract*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .TronSignTx.TronContract.TronTransferContract transfer_contract = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronTransferContract::_InternalParse;
+        object = msg->mutable_transfer_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronTransferAssetContract transfer_asset_contract = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronTransferAssetContract::_InternalParse;
+        object = msg->mutable_transfer_asset_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronVoteWitnessContract vote_witness_contract = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronVoteWitnessContract::_InternalParse;
+        object = msg->mutable_vote_witness_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronWitnessCreateContract witness_create_contract = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronWitnessCreateContract::_InternalParse;
+        object = msg->mutable_witness_create_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronAssetIssueContract asset_issue_contract = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronAssetIssueContract::_InternalParse;
+        object = msg->mutable_asset_issue_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronWitnessUpdateContract witness_update_contract = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 66) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronWitnessUpdateContract::_InternalParse;
+        object = msg->mutable_witness_update_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronParticipateAssetIssueContract participate_asset_issue_contract = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 74) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronParticipateAssetIssueContract::_InternalParse;
+        object = msg->mutable_participate_asset_issue_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronAccountUpdateContract account_update_contract = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 82) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronAccountUpdateContract::_InternalParse;
+        object = msg->mutable_account_update_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronFreezeBalanceContract freeze_balance_contract = 11;
+      case 11: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 90) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronFreezeBalanceContract::_InternalParse;
+        object = msg->mutable_freeze_balance_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronUnfreezeBalanceContract unfreeze_balance_contract = 12;
+      case 12: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 98) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronUnfreezeBalanceContract::_InternalParse;
+        object = msg->mutable_unfreeze_balance_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronWithdrawBalanceContract withdraw_balance_contract = 13;
+      case 13: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 106) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronWithdrawBalanceContract::_InternalParse;
+        object = msg->mutable_withdraw_balance_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronUnfreezeAssetContract unfreeze_asset_contract = 14;
+      case 14: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 114) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronUnfreezeAssetContract::_InternalParse;
+        object = msg->mutable_unfreeze_asset_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronUpdateAssetContract update_asset_contract = 15;
+      case 15: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 122) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronUpdateAssetContract::_InternalParse;
+        object = msg->mutable_update_asset_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronProposalCreateContract proposal_create_contract = 16;
+      case 16: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 130) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronProposalCreateContract::_InternalParse;
+        object = msg->mutable_proposal_create_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronProposalApproveContract proposal_approve_contract = 17;
+      case 17: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 138) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronProposalApproveContract::_InternalParse;
+        object = msg->mutable_proposal_approve_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .TronSignTx.TronContract.TronProposalDeleteContract proposal_delete_contract = 18;
+      case 18: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 146) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract_TronProposalDeleteContract::_InternalParse;
+        object = msg->mutable_proposal_delete_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx_TronContract::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx.TronContract)
   for (;;) {
@@ -7125,8 +8733,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .TronSignTx.TronContract.TronTransferContract transfer_contract = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_transfer_contract()));
         } else {
@@ -7137,8 +8744,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronTransferAssetContract transfer_asset_contract = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_transfer_asset_contract()));
         } else {
@@ -7149,8 +8755,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronVoteWitnessContract vote_witness_contract = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_vote_witness_contract()));
         } else {
@@ -7161,8 +8766,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronWitnessCreateContract witness_create_contract = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_witness_create_contract()));
         } else {
@@ -7173,8 +8777,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronAssetIssueContract asset_issue_contract = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_asset_issue_contract()));
         } else {
@@ -7185,8 +8788,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronWitnessUpdateContract witness_update_contract = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (66 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_witness_update_contract()));
         } else {
@@ -7197,8 +8799,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronParticipateAssetIssueContract participate_asset_issue_contract = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(74u /* 74 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (74 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_participate_asset_issue_contract()));
         } else {
@@ -7209,8 +8810,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronAccountUpdateContract account_update_contract = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (82 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_account_update_contract()));
         } else {
@@ -7221,8 +8821,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronFreezeBalanceContract freeze_balance_contract = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (90 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_freeze_balance_contract()));
         } else {
@@ -7233,8 +8832,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronUnfreezeBalanceContract unfreeze_balance_contract = 12;
       case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(98u /* 98 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (98 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_unfreeze_balance_contract()));
         } else {
@@ -7245,8 +8843,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronWithdrawBalanceContract withdraw_balance_contract = 13;
       case 13: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(106u /* 106 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (106 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_withdraw_balance_contract()));
         } else {
@@ -7257,8 +8854,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronUnfreezeAssetContract unfreeze_asset_contract = 14;
       case 14: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(114u /* 114 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (114 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_unfreeze_asset_contract()));
         } else {
@@ -7269,8 +8865,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronUpdateAssetContract update_asset_contract = 15;
       case 15: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(122u /* 122 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (122 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_update_asset_contract()));
         } else {
@@ -7281,8 +8876,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronProposalCreateContract proposal_create_contract = 16;
       case 16: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(130u /* 130 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (130 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_proposal_create_contract()));
         } else {
@@ -7293,8 +8887,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronProposalApproveContract proposal_approve_contract = 17;
       case 17: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(138u /* 138 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (138 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_proposal_approve_contract()));
         } else {
@@ -7305,8 +8898,7 @@ bool TronSignTx_TronContract::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract.TronProposalDeleteContract proposal_delete_contract = 18;
       case 18: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(146u /* 146 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (146 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_proposal_delete_contract()));
         } else {
@@ -7334,6 +8926,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx_TronContract::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7345,97 +8938,97 @@ void TronSignTx_TronContract::SerializeWithCachedSizes(
   // optional .TronSignTx.TronContract.TronTransferContract transfer_contract = 1;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_transfer_contract(), output);
+      1, HasBitSetters::transfer_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronTransferAssetContract transfer_asset_contract = 2;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_transfer_asset_contract(), output);
+      2, HasBitSetters::transfer_asset_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronVoteWitnessContract vote_witness_contract = 4;
   if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_vote_witness_contract(), output);
+      4, HasBitSetters::vote_witness_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronWitnessCreateContract witness_create_contract = 5;
   if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->_internal_witness_create_contract(), output);
+      5, HasBitSetters::witness_create_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronAssetIssueContract asset_issue_contract = 6;
   if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, this->_internal_asset_issue_contract(), output);
+      6, HasBitSetters::asset_issue_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronWitnessUpdateContract witness_update_contract = 8;
   if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      8, this->_internal_witness_update_contract(), output);
+      8, HasBitSetters::witness_update_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronParticipateAssetIssueContract participate_asset_issue_contract = 9;
   if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      9, this->_internal_participate_asset_issue_contract(), output);
+      9, HasBitSetters::participate_asset_issue_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronAccountUpdateContract account_update_contract = 10;
   if (cached_has_bits & 0x00000080u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      10, this->_internal_account_update_contract(), output);
+      10, HasBitSetters::account_update_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronFreezeBalanceContract freeze_balance_contract = 11;
   if (cached_has_bits & 0x00000100u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      11, this->_internal_freeze_balance_contract(), output);
+      11, HasBitSetters::freeze_balance_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronUnfreezeBalanceContract unfreeze_balance_contract = 12;
   if (cached_has_bits & 0x00000200u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      12, this->_internal_unfreeze_balance_contract(), output);
+      12, HasBitSetters::unfreeze_balance_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronWithdrawBalanceContract withdraw_balance_contract = 13;
   if (cached_has_bits & 0x00000400u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      13, this->_internal_withdraw_balance_contract(), output);
+      13, HasBitSetters::withdraw_balance_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronUnfreezeAssetContract unfreeze_asset_contract = 14;
   if (cached_has_bits & 0x00000800u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      14, this->_internal_unfreeze_asset_contract(), output);
+      14, HasBitSetters::unfreeze_asset_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronUpdateAssetContract update_asset_contract = 15;
   if (cached_has_bits & 0x00001000u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      15, this->_internal_update_asset_contract(), output);
+      15, HasBitSetters::update_asset_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronProposalCreateContract proposal_create_contract = 16;
   if (cached_has_bits & 0x00002000u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      16, this->_internal_proposal_create_contract(), output);
+      16, HasBitSetters::proposal_create_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronProposalApproveContract proposal_approve_contract = 17;
   if (cached_has_bits & 0x00004000u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      17, this->_internal_proposal_approve_contract(), output);
+      17, HasBitSetters::proposal_approve_contract(this), output);
   }
 
   // optional .TronSignTx.TronContract.TronProposalDeleteContract proposal_delete_contract = 18;
   if (cached_has_bits & 0x00008000u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      18, this->_internal_proposal_delete_contract(), output);
+      18, HasBitSetters::proposal_delete_contract(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -7446,8 +9039,7 @@ void TronSignTx_TronContract::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TronSignTx_TronContract::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx.TronContract)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7457,112 +9049,112 @@ void TronSignTx_TronContract::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_transfer_contract(), deterministic, target);
+        1, HasBitSetters::transfer_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronTransferAssetContract transfer_asset_contract = 2;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_transfer_asset_contract(), deterministic, target);
+        2, HasBitSetters::transfer_asset_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronVoteWitnessContract vote_witness_contract = 4;
   if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_vote_witness_contract(), deterministic, target);
+        4, HasBitSetters::vote_witness_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronWitnessCreateContract witness_create_contract = 5;
   if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->_internal_witness_create_contract(), deterministic, target);
+        5, HasBitSetters::witness_create_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronAssetIssueContract asset_issue_contract = 6;
   if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        6, this->_internal_asset_issue_contract(), deterministic, target);
+        6, HasBitSetters::asset_issue_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronWitnessUpdateContract witness_update_contract = 8;
   if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        8, this->_internal_witness_update_contract(), deterministic, target);
+        8, HasBitSetters::witness_update_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronParticipateAssetIssueContract participate_asset_issue_contract = 9;
   if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        9, this->_internal_participate_asset_issue_contract(), deterministic, target);
+        9, HasBitSetters::participate_asset_issue_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronAccountUpdateContract account_update_contract = 10;
   if (cached_has_bits & 0x00000080u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        10, this->_internal_account_update_contract(), deterministic, target);
+        10, HasBitSetters::account_update_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronFreezeBalanceContract freeze_balance_contract = 11;
   if (cached_has_bits & 0x00000100u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        11, this->_internal_freeze_balance_contract(), deterministic, target);
+        11, HasBitSetters::freeze_balance_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronUnfreezeBalanceContract unfreeze_balance_contract = 12;
   if (cached_has_bits & 0x00000200u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        12, this->_internal_unfreeze_balance_contract(), deterministic, target);
+        12, HasBitSetters::unfreeze_balance_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronWithdrawBalanceContract withdraw_balance_contract = 13;
   if (cached_has_bits & 0x00000400u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        13, this->_internal_withdraw_balance_contract(), deterministic, target);
+        13, HasBitSetters::withdraw_balance_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronUnfreezeAssetContract unfreeze_asset_contract = 14;
   if (cached_has_bits & 0x00000800u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        14, this->_internal_unfreeze_asset_contract(), deterministic, target);
+        14, HasBitSetters::unfreeze_asset_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronUpdateAssetContract update_asset_contract = 15;
   if (cached_has_bits & 0x00001000u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        15, this->_internal_update_asset_contract(), deterministic, target);
+        15, HasBitSetters::update_asset_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronProposalCreateContract proposal_create_contract = 16;
   if (cached_has_bits & 0x00002000u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        16, this->_internal_proposal_create_contract(), deterministic, target);
+        16, HasBitSetters::proposal_create_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronProposalApproveContract proposal_approve_contract = 17;
   if (cached_has_bits & 0x00004000u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        17, this->_internal_proposal_approve_contract(), deterministic, target);
+        17, HasBitSetters::proposal_approve_contract(this), target);
   }
 
   // optional .TronSignTx.TronContract.TronProposalDeleteContract proposal_delete_contract = 18;
   if (cached_has_bits & 0x00008000u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        18, this->_internal_proposal_delete_contract(), deterministic, target);
+        18, HasBitSetters::proposal_delete_contract(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -7582,116 +9174,121 @@ size_t TronSignTx_TronContract::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 255u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional .TronSignTx.TronContract.TronTransferContract transfer_contract = 1;
-    if (has_transfer_contract()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *transfer_contract_);
     }
 
     // optional .TronSignTx.TronContract.TronTransferAssetContract transfer_asset_contract = 2;
-    if (has_transfer_asset_contract()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *transfer_asset_contract_);
     }
 
     // optional .TronSignTx.TronContract.TronVoteWitnessContract vote_witness_contract = 4;
-    if (has_vote_witness_contract()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *vote_witness_contract_);
     }
 
     // optional .TronSignTx.TronContract.TronWitnessCreateContract witness_create_contract = 5;
-    if (has_witness_create_contract()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *witness_create_contract_);
     }
 
     // optional .TronSignTx.TronContract.TronAssetIssueContract asset_issue_contract = 6;
-    if (has_asset_issue_contract()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *asset_issue_contract_);
     }
 
     // optional .TronSignTx.TronContract.TronWitnessUpdateContract witness_update_contract = 8;
-    if (has_witness_update_contract()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *witness_update_contract_);
     }
 
     // optional .TronSignTx.TronContract.TronParticipateAssetIssueContract participate_asset_issue_contract = 9;
-    if (has_participate_asset_issue_contract()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *participate_asset_issue_contract_);
     }
 
     // optional .TronSignTx.TronContract.TronAccountUpdateContract account_update_contract = 10;
-    if (has_account_update_contract()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *account_update_contract_);
     }
 
   }
-  if (_has_bits_[8 / 32] & 65280u) {
+  if (cached_has_bits & 0x0000ff00u) {
     // optional .TronSignTx.TronContract.TronFreezeBalanceContract freeze_balance_contract = 11;
-    if (has_freeze_balance_contract()) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *freeze_balance_contract_);
     }
 
     // optional .TronSignTx.TronContract.TronUnfreezeBalanceContract unfreeze_balance_contract = 12;
-    if (has_unfreeze_balance_contract()) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *unfreeze_balance_contract_);
     }
 
     // optional .TronSignTx.TronContract.TronWithdrawBalanceContract withdraw_balance_contract = 13;
-    if (has_withdraw_balance_contract()) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *withdraw_balance_contract_);
     }
 
     // optional .TronSignTx.TronContract.TronUnfreezeAssetContract unfreeze_asset_contract = 14;
-    if (has_unfreeze_asset_contract()) {
+    if (cached_has_bits & 0x00000800u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *unfreeze_asset_contract_);
     }
 
     // optional .TronSignTx.TronContract.TronUpdateAssetContract update_asset_contract = 15;
-    if (has_update_asset_contract()) {
+    if (cached_has_bits & 0x00001000u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *update_asset_contract_);
     }
 
     // optional .TronSignTx.TronContract.TronProposalCreateContract proposal_create_contract = 16;
-    if (has_proposal_create_contract()) {
+    if (cached_has_bits & 0x00002000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *proposal_create_contract_);
     }
 
     // optional .TronSignTx.TronContract.TronProposalApproveContract proposal_approve_contract = 17;
-    if (has_proposal_approve_contract()) {
+    if (cached_has_bits & 0x00004000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *proposal_approve_contract_);
     }
 
     // optional .TronSignTx.TronContract.TronProposalDeleteContract proposal_delete_contract = 18;
-    if (has_proposal_delete_contract()) {
+    if (cached_has_bits & 0x00008000u) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *proposal_delete_contract_);
@@ -7707,9 +9304,9 @@ void TronSignTx_TronContract::MergeFrom(const ::google::protobuf::Message& from)
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx.TronContract)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx_TronContract* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx_TronContract>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx_TronContract>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx.TronContract)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7726,7 +9323,7 @@ void TronSignTx_TronContract::MergeFrom(const TronSignTx_TronContract& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
       mutable_transfer_contract()->::TronSignTx_TronContract_TronTransferContract::MergeFrom(from.transfer_contract());
     }
@@ -7752,7 +9349,7 @@ void TronSignTx_TronContract::MergeFrom(const TronSignTx_TronContract& from) {
       mutable_account_update_contract()->::TronSignTx_TronContract_TronAccountUpdateContract::MergeFrom(from.account_update_contract());
     }
   }
-  if (cached_has_bits & 65280u) {
+  if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
       mutable_freeze_balance_contract()->::TronSignTx_TronContract_TronFreezeBalanceContract::MergeFrom(from.freeze_balance_contract());
     }
@@ -7804,6 +9401,8 @@ void TronSignTx_TronContract::Swap(TronSignTx_TronContract* other) {
 }
 void TronSignTx_TronContract::InternalSwap(TronSignTx_TronContract* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(transfer_contract_, other->transfer_contract_);
   swap(transfer_asset_contract_, other->transfer_asset_contract_);
   swap(vote_witness_contract_, other->vote_witness_contract_);
@@ -7820,13 +9419,11 @@ void TronSignTx_TronContract::InternalSwap(TronSignTx_TronContract* other) {
   swap(proposal_create_contract_, other->proposal_create_contract_);
   swap(proposal_approve_contract_, other->proposal_approve_contract_);
   swap(proposal_delete_contract_, other->proposal_delete_contract_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx_TronContract::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7835,6 +9432,33 @@ void TronSignTx_TronContract::InternalSwap(TronSignTx_TronContract* other) {
 void TronSignTx::InitAsDefaultInstance() {
   ::_TronSignTx_default_instance_._instance.get_mutable()->contract_ = const_cast< ::TronSignTx_TronContract*>(
       ::TronSignTx_TronContract::internal_default_instance());
+}
+class TronSignTx::HasBitSetters {
+ public:
+  static void set_has_ref_block_bytes(TronSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_ref_block_hash(TronSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_expiration(TronSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_data(TronSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static const ::TronSignTx_TronContract& contract(const TronSignTx* msg);
+  static void set_has_contract(TronSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_timestamp(TronSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+};
+
+const ::TronSignTx_TronContract&
+TronSignTx::HasBitSetters::contract(const TronSignTx* msg) {
+  return *msg->contract_;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignTx::kAddressNFieldNumber;
@@ -7847,15 +9471,13 @@ const int TronSignTx::kTimestampFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignTx::TronSignTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignTx)
 }
 TronSignTx::TronSignTx(const TronSignTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -7874,7 +9496,7 @@ TronSignTx::TronSignTx(const TronSignTx& from)
   if (from.has_contract()) {
     contract_ = new ::TronSignTx_TronContract(*from.contract_);
   } else {
-    contract_ = NULL;
+    contract_ = nullptr;
   }
   ::memcpy(&expiration_, &from.expiration_,
     static_cast<size_t>(reinterpret_cast<char*>(&timestamp_) -
@@ -7883,6 +9505,8 @@ TronSignTx::TronSignTx(const TronSignTx& from)
 }
 
 void TronSignTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronSignTx_messages_2dtron_2eproto.base);
   ref_block_bytes_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ref_block_hash_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -7906,13 +9530,8 @@ void TronSignTx::SharedDtor() {
 void TronSignTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignTx::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignTx& TronSignTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignTx_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -7925,7 +9544,7 @@ void TronSignTx::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       ref_block_bytes_.ClearNonDefaultToEmptyNoArena();
     }
@@ -7936,11 +9555,11 @@ void TronSignTx::Clear() {
       data_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(contract_ != NULL);
+      GOOGLE_DCHECK(contract_ != nullptr);
       contract_->Clear();
     }
   }
-  if (cached_has_bits & 48u) {
+  if (cached_has_bits & 0x00000030u) {
     ::memset(&expiration_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&timestamp_) -
         reinterpret_cast<char*>(&expiration_)) + sizeof(timestamp_));
@@ -7949,9 +9568,139 @@ void TronSignTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bytes ref_block_bytes = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_ref_block_bytes();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes ref_block_hash = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_ref_block_hash();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint64 expiration = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_expiration(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string data = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("TronSignTx.data");
+        object = msg->mutable_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional .TronSignTx.TronContract contract = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::TronSignTx_TronContract::_InternalParse;
+        object = msg->mutable_contract();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional uint64 timestamp = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_timestamp(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignTx)
   for (;;) {
@@ -7961,14 +9710,11 @@ bool TronSignTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -7980,8 +9726,7 @@ bool TronSignTx::MergePartialFromCodedStream(
 
       // optional bytes ref_block_bytes = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_ref_block_bytes()));
         } else {
@@ -7992,8 +9737,7 @@ bool TronSignTx::MergePartialFromCodedStream(
 
       // optional bytes ref_block_hash = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_ref_block_hash()));
         } else {
@@ -8004,9 +9748,8 @@ bool TronSignTx::MergePartialFromCodedStream(
 
       // optional uint64 expiration = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_expiration();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_expiration(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &expiration_)));
@@ -8018,8 +9761,7 @@ bool TronSignTx::MergePartialFromCodedStream(
 
       // optional string data = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_data()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -8034,8 +9776,7 @@ bool TronSignTx::MergePartialFromCodedStream(
 
       // optional .TronSignTx.TronContract contract = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_contract()));
         } else {
@@ -8046,9 +9787,8 @@ bool TronSignTx::MergePartialFromCodedStream(
 
       // optional uint64 timestamp = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_timestamp();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_timestamp(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &timestamp_)));
@@ -8077,6 +9817,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -8121,7 +9862,7 @@ void TronSignTx::SerializeWithCachedSizes(
   // optional .TronSignTx.TronContract contract = 6;
   if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, this->_internal_contract(), output);
+      6, HasBitSetters::contract(this), output);
   }
 
   // optional uint64 timestamp = 7;
@@ -8137,8 +9878,7 @@ void TronSignTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TronSignTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8182,7 +9922,7 @@ void TronSignTx::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        6, this->_internal_contract(), deterministic, target);
+        6, HasBitSetters::contract(this), target);
   }
 
   // optional uint64 timestamp = 7;
@@ -8207,6 +9947,10 @@ size_t TronSignTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -8216,44 +9960,45 @@ size_t TronSignTx::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 63u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000003fu) {
     // optional bytes ref_block_bytes = 2;
-    if (has_ref_block_bytes()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->ref_block_bytes());
     }
 
     // optional bytes ref_block_hash = 3;
-    if (has_ref_block_hash()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->ref_block_hash());
     }
 
     // optional string data = 5;
-    if (has_data()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->data());
     }
 
     // optional .TronSignTx.TronContract contract = 6;
-    if (has_contract()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *contract_);
     }
 
     // optional uint64 expiration = 4;
-    if (has_expiration()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->expiration());
     }
 
     // optional uint64 timestamp = 7;
-    if (has_timestamp()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->timestamp());
@@ -8269,9 +10014,9 @@ void TronSignTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignTx)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignTx>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -8289,17 +10034,17 @@ void TronSignTx::MergeFrom(const TronSignTx& from) {
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 63u) {
+  if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_ref_block_bytes();
+      _has_bits_[0] |= 0x00000001u;
       ref_block_bytes_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.ref_block_bytes_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_ref_block_hash();
+      _has_bits_[0] |= 0x00000002u;
       ref_block_hash_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.ref_block_hash_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_data();
+      _has_bits_[0] |= 0x00000004u;
       data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
     }
     if (cached_has_bits & 0x00000008u) {
@@ -8339,6 +10084,8 @@ void TronSignTx::Swap(TronSignTx* other) {
 }
 void TronSignTx::InternalSwap(TronSignTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   ref_block_bytes_.Swap(&other->ref_block_bytes_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -8349,13 +10096,11 @@ void TronSignTx::InternalSwap(TronSignTx* other) {
   swap(contract_, other->contract_);
   swap(expiration_, other->expiration_);
   swap(timestamp_, other->timestamp_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignTx::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
@@ -8363,21 +10108,29 @@ void TronSignTx::InternalSwap(TronSignTx* other) {
 
 void TronSignedTx::InitAsDefaultInstance() {
 }
+class TronSignedTx::HasBitSetters {
+ public:
+  static void set_has_signature(TronSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_serialized_tx(TronSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TronSignedTx::kSignatureFieldNumber;
 const int TronSignedTx::kSerializedTxFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TronSignedTx::TronSignedTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dtron_2eproto::scc_info_TronSignedTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:TronSignedTx)
 }
 TronSignedTx::TronSignedTx(const TronSignedTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -8392,6 +10145,8 @@ TronSignedTx::TronSignedTx(const TronSignedTx& from)
 }
 
 void TronSignedTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TronSignedTx_messages_2dtron_2eproto.base);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   serialized_tx_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -8409,13 +10164,8 @@ void TronSignedTx::SharedDtor() {
 void TronSignedTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TronSignedTx::descriptor() {
-  ::protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TronSignedTx& TronSignedTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dtron_2eproto::scc_info_TronSignedTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TronSignedTx_messages_2dtron_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -8427,7 +10177,7 @@ void TronSignedTx::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       signature_.ClearNonDefaultToEmptyNoArena();
     }
@@ -8439,9 +10189,76 @@ void TronSignedTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TronSignedTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TronSignedTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes signature = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes serialized_tx = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_serialized_tx();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TronSignedTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:TronSignedTx)
   for (;;) {
@@ -8451,8 +10268,7 @@ bool TronSignedTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes signature = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -8463,8 +10279,7 @@ bool TronSignedTx::MergePartialFromCodedStream(
 
       // optional bytes serialized_tx = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_serialized_tx()));
         } else {
@@ -8492,6 +10307,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TronSignedTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -8520,8 +10336,7 @@ void TronSignedTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TronSignedTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:TronSignedTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8558,16 +10373,21 @@ size_t TronSignedTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes signature = 1;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
     }
 
     // optional bytes serialized_tx = 2;
-    if (has_serialized_tx()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->serialized_tx());
@@ -8583,9 +10403,9 @@ void TronSignedTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:TronSignedTx)
   GOOGLE_DCHECK_NE(&from, this);
   const TronSignedTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TronSignedTx>(
+      ::google::protobuf::DynamicCastToGenerated<TronSignedTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:TronSignedTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -8602,13 +10422,13 @@ void TronSignedTx::MergeFrom(const TronSignedTx& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000001u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_serialized_tx();
+      _has_bits_[0] |= 0x00000002u;
       serialized_tx_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.serialized_tx_);
     }
   }
@@ -8638,96 +10458,97 @@ void TronSignedTx::Swap(TronSignedTx* other) {
 }
 void TronSignedTx::InternalSwap(TronSignedTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   serialized_tx_.Swap(&other->serialized_tx_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TronSignedTx::GetMetadata() const {
-  protobuf_messages_2dtron_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dtron_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dtron_2eproto);
+  return ::file_level_metadata_messages_2dtron_2eproto[kIndexInFileMessages];
 }
 
 
 // @@protoc_insertion_point(namespace_scope)
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronGetAddress* Arena::CreateMaybeMessage< ::TronGetAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronGetAddress* Arena::CreateMaybeMessage< ::TronGetAddress >(Arena* arena) {
   return Arena::CreateInternal< ::TronGetAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronAddress* Arena::CreateMaybeMessage< ::TronAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronAddress* Arena::CreateMaybeMessage< ::TronAddress >(Arena* arena) {
   return Arena::CreateInternal< ::TronAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronAccountUpdateContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronAccountUpdateContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronAccountUpdateContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronAccountUpdateContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronAccountUpdateContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronTransferContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronTransferContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronTransferContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronTransferContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronTransferContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronTransferAssetContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronTransferAssetContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronTransferAssetContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronTransferAssetContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronTransferAssetContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronVoteWitnessContract_TronVote* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronVoteWitnessContract_TronVote >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronVoteWitnessContract_TronVote* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronVoteWitnessContract_TronVote >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronVoteWitnessContract_TronVote >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronVoteWitnessContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronVoteWitnessContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronVoteWitnessContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronVoteWitnessContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronVoteWitnessContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronWitnessCreateContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronWitnessCreateContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronWitnessCreateContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronWitnessCreateContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronWitnessCreateContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronWitnessUpdateContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronWitnessUpdateContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronWitnessUpdateContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronWitnessUpdateContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronWitnessUpdateContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronAssetIssueContract_TronFrozenSupply >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronAssetIssueContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronAssetIssueContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronAssetIssueContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronAssetIssueContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronAssetIssueContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronParticipateAssetIssueContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronParticipateAssetIssueContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronParticipateAssetIssueContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronParticipateAssetIssueContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronParticipateAssetIssueContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronFreezeBalanceContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronFreezeBalanceContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronFreezeBalanceContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronFreezeBalanceContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronFreezeBalanceContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronUnfreezeBalanceContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronUnfreezeBalanceContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronUnfreezeBalanceContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronUnfreezeBalanceContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronUnfreezeBalanceContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronUnfreezeAssetContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronUnfreezeAssetContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronUnfreezeAssetContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronUnfreezeAssetContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronUnfreezeAssetContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronWithdrawBalanceContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronWithdrawBalanceContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronWithdrawBalanceContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronWithdrawBalanceContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronWithdrawBalanceContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronUpdateAssetContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronUpdateAssetContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronUpdateAssetContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronUpdateAssetContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronUpdateAssetContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronProposalCreateContract_TronProposalParameters >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronProposalCreateContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronProposalCreateContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronProposalCreateContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronProposalCreateContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronProposalCreateContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronProposalApproveContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronProposalApproveContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronProposalApproveContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronProposalApproveContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronProposalApproveContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract_TronProposalDeleteContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronProposalDeleteContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract_TronProposalDeleteContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract_TronProposalDeleteContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract_TronProposalDeleteContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx_TronContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx_TronContract* Arena::CreateMaybeMessage< ::TronSignTx_TronContract >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx_TronContract >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignTx* Arena::CreateMaybeMessage< ::TronSignTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignTx* Arena::CreateMaybeMessage< ::TronSignTx >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignTx >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::TronSignedTx* Arena::CreateMaybeMessage< ::TronSignedTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TronSignedTx* Arena::CreateMaybeMessage< ::TronSignedTx >(Arena* arena) {
   return Arena::CreateInternal< ::TronSignedTx >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

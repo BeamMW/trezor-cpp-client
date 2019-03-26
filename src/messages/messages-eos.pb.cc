@@ -6,193 +6,159 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_messages_2deos_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosSignTx_EosTxHeader;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionBuyRamBytes;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionDeleteAuth;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionLinkAuth;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionRefund;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionSellRam;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionUnknown;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionUnlinkAuth;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionVoteProducer;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosAsset;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosAuthorizationKey;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosAuthorizationWait;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosPermissionLevel;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionBuyRam;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionCommon;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionDelegate;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionNewAccount;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionTransfer;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionUndelegate;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionUpdateAuth;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosAuthorizationAccount;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_EosTxActionAck_EosAuthorization;
-}  // namespace protobuf_messages_2deos_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosSignTx_EosTxHeader_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionBuyRamBytes_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionDeleteAuth_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionLinkAuth_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionRefund_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionSellRam_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionUnknown_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionUnlinkAuth_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionVoteProducer_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosAsset_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosAuthorizationKey_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosAuthorizationWait_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosPermissionLevel_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionBuyRam_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionCommon_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionDelegate_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionNewAccount_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionTransfer_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionUndelegate_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionUpdateAuth_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosAuthorizationAccount_messages_2deos_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2deos_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_EosTxActionAck_EosAuthorization_messages_2deos_2eproto;
 namespace hw {
 namespace trezor {
 namespace messages {
 namespace eos {
 class EosGetPublicKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosGetPublicKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosGetPublicKey> _instance;
 } _EosGetPublicKey_default_instance_;
 class EosPublicKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosPublicKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosPublicKey> _instance;
 } _EosPublicKey_default_instance_;
 class EosSignTx_EosTxHeaderDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosSignTx_EosTxHeader>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosSignTx_EosTxHeader> _instance;
 } _EosSignTx_EosTxHeader_default_instance_;
 class EosSignTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosSignTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosSignTx> _instance;
 } _EosSignTx_default_instance_;
 class EosTxActionRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionRequest> _instance;
 } _EosTxActionRequest_default_instance_;
 class EosTxActionAck_EosAssetDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosAsset>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosAsset> _instance;
 } _EosTxActionAck_EosAsset_default_instance_;
 class EosTxActionAck_EosPermissionLevelDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosPermissionLevel>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosPermissionLevel> _instance;
 } _EosTxActionAck_EosPermissionLevel_default_instance_;
 class EosTxActionAck_EosAuthorizationKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosAuthorizationKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosAuthorizationKey> _instance;
 } _EosTxActionAck_EosAuthorizationKey_default_instance_;
 class EosTxActionAck_EosAuthorizationAccountDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosAuthorizationAccount>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosAuthorizationAccount> _instance;
 } _EosTxActionAck_EosAuthorizationAccount_default_instance_;
 class EosTxActionAck_EosAuthorizationWaitDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosAuthorizationWait>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosAuthorizationWait> _instance;
 } _EosTxActionAck_EosAuthorizationWait_default_instance_;
 class EosTxActionAck_EosAuthorizationDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosAuthorization>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosAuthorization> _instance;
 } _EosTxActionAck_EosAuthorization_default_instance_;
 class EosTxActionAck_EosActionCommonDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionCommon>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionCommon> _instance;
 } _EosTxActionAck_EosActionCommon_default_instance_;
 class EosTxActionAck_EosActionTransferDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionTransfer>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionTransfer> _instance;
 } _EosTxActionAck_EosActionTransfer_default_instance_;
 class EosTxActionAck_EosActionDelegateDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionDelegate>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionDelegate> _instance;
 } _EosTxActionAck_EosActionDelegate_default_instance_;
 class EosTxActionAck_EosActionUndelegateDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionUndelegate>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionUndelegate> _instance;
 } _EosTxActionAck_EosActionUndelegate_default_instance_;
 class EosTxActionAck_EosActionRefundDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionRefund>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionRefund> _instance;
 } _EosTxActionAck_EosActionRefund_default_instance_;
 class EosTxActionAck_EosActionBuyRamDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionBuyRam>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionBuyRam> _instance;
 } _EosTxActionAck_EosActionBuyRam_default_instance_;
 class EosTxActionAck_EosActionBuyRamBytesDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionBuyRamBytes>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionBuyRamBytes> _instance;
 } _EosTxActionAck_EosActionBuyRamBytes_default_instance_;
 class EosTxActionAck_EosActionSellRamDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionSellRam>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionSellRam> _instance;
 } _EosTxActionAck_EosActionSellRam_default_instance_;
 class EosTxActionAck_EosActionVoteProducerDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionVoteProducer>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionVoteProducer> _instance;
 } _EosTxActionAck_EosActionVoteProducer_default_instance_;
 class EosTxActionAck_EosActionUpdateAuthDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionUpdateAuth>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionUpdateAuth> _instance;
 } _EosTxActionAck_EosActionUpdateAuth_default_instance_;
 class EosTxActionAck_EosActionDeleteAuthDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionDeleteAuth>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionDeleteAuth> _instance;
 } _EosTxActionAck_EosActionDeleteAuth_default_instance_;
 class EosTxActionAck_EosActionLinkAuthDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionLinkAuth>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionLinkAuth> _instance;
 } _EosTxActionAck_EosActionLinkAuth_default_instance_;
 class EosTxActionAck_EosActionUnlinkAuthDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionUnlinkAuth>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionUnlinkAuth> _instance;
 } _EosTxActionAck_EosActionUnlinkAuth_default_instance_;
 class EosTxActionAck_EosActionNewAccountDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionNewAccount>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionNewAccount> _instance;
 } _EosTxActionAck_EosActionNewAccount_default_instance_;
 class EosTxActionAck_EosActionUnknownDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionUnknown>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck_EosActionUnknown> _instance;
 } _EosTxActionAck_EosActionUnknown_default_instance_;
 class EosTxActionAckDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosTxActionAck> _instance;
 } _EosTxActionAck_default_instance_;
 class EosSignedTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EosSignedTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EosSignedTx> _instance;
 } _EosSignedTx_default_instance_;
 }  // namespace eos
 }  // namespace messages
 }  // namespace trezor
 }  // namespace hw
-namespace protobuf_messages_2deos_2eproto {
-static void InitDefaultsEosGetPublicKey() {
+static void InitDefaultsEosGetPublicKey_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -203,10 +169,10 @@ static void InitDefaultsEosGetPublicKey() {
   ::hw::trezor::messages::eos::EosGetPublicKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosGetPublicKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosGetPublicKey}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosGetPublicKey_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosGetPublicKey_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosPublicKey() {
+static void InitDefaultsEosPublicKey_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -217,10 +183,10 @@ static void InitDefaultsEosPublicKey() {
   ::hw::trezor::messages::eos::EosPublicKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosPublicKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosPublicKey}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosPublicKey_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosPublicKey_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosSignTx_EosTxHeader() {
+static void InitDefaultsEosSignTx_EosTxHeader_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -231,10 +197,10 @@ static void InitDefaultsEosSignTx_EosTxHeader() {
   ::hw::trezor::messages::eos::EosSignTx_EosTxHeader::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosSignTx_EosTxHeader =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosSignTx_EosTxHeader}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosSignTx_EosTxHeader_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosSignTx_EosTxHeader_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosSignTx() {
+static void InitDefaultsEosSignTx_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -245,11 +211,11 @@ static void InitDefaultsEosSignTx() {
   ::hw::trezor::messages::eos::EosSignTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_EosSignTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosSignTx}, {
-      &protobuf_messages_2deos_2eproto::scc_info_EosSignTx_EosTxHeader.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_EosSignTx_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosSignTx_messages_2deos_2eproto}, {
+      &scc_info_EosSignTx_EosTxHeader_messages_2deos_2eproto.base,}};
 
-static void InitDefaultsEosTxActionRequest() {
+static void InitDefaultsEosTxActionRequest_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -260,10 +226,10 @@ static void InitDefaultsEosTxActionRequest() {
   ::hw::trezor::messages::eos::EosTxActionRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionRequest_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionRequest_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosTxActionAck_EosAsset() {
+static void InitDefaultsEosTxActionAck_EosAsset_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -274,10 +240,10 @@ static void InitDefaultsEosTxActionAck_EosAsset() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosAsset::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosAsset =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosAsset}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosAsset_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosAsset_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosTxActionAck_EosPermissionLevel() {
+static void InitDefaultsEosTxActionAck_EosPermissionLevel_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -288,10 +254,10 @@ static void InitDefaultsEosTxActionAck_EosPermissionLevel() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosPermissionLevel =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosPermissionLevel}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosPermissionLevel_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosPermissionLevel_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosTxActionAck_EosAuthorizationKey() {
+static void InitDefaultsEosTxActionAck_EosAuthorizationKey_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -302,10 +268,10 @@ static void InitDefaultsEosTxActionAck_EosAuthorizationKey() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosAuthorizationKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosAuthorizationKey}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosAuthorizationKey_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosAuthorizationKey_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosTxActionAck_EosAuthorizationAccount() {
+static void InitDefaultsEosTxActionAck_EosAuthorizationAccount_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -316,11 +282,11 @@ static void InitDefaultsEosTxActionAck_EosAuthorizationAccount() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosAuthorizationAccount =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosAuthorizationAccount}, {
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosPermissionLevel.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosAuthorizationAccount_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosAuthorizationAccount_messages_2deos_2eproto}, {
+      &scc_info_EosTxActionAck_EosPermissionLevel_messages_2deos_2eproto.base,}};
 
-static void InitDefaultsEosTxActionAck_EosAuthorizationWait() {
+static void InitDefaultsEosTxActionAck_EosAuthorizationWait_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -331,10 +297,10 @@ static void InitDefaultsEosTxActionAck_EosAuthorizationWait() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosAuthorizationWait =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosAuthorizationWait}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosAuthorizationWait_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosAuthorizationWait_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosTxActionAck_EosAuthorization() {
+static void InitDefaultsEosTxActionAck_EosAuthorization_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -345,13 +311,13 @@ static void InitDefaultsEosTxActionAck_EosAuthorization() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<3> scc_info_EosTxActionAck_EosAuthorization =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsEosTxActionAck_EosAuthorization}, {
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAuthorizationKey.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAuthorizationAccount.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAuthorizationWait.base,}};
+::google::protobuf::internal::SCCInfo<3> scc_info_EosTxActionAck_EosAuthorization_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsEosTxActionAck_EosAuthorization_messages_2deos_2eproto}, {
+      &scc_info_EosTxActionAck_EosAuthorizationKey_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosAuthorizationAccount_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosAuthorizationWait_messages_2deos_2eproto.base,}};
 
-static void InitDefaultsEosTxActionAck_EosActionCommon() {
+static void InitDefaultsEosTxActionAck_EosActionCommon_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -362,11 +328,11 @@ static void InitDefaultsEosTxActionAck_EosActionCommon() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionCommon =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosActionCommon}, {
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosPermissionLevel.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionCommon_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosActionCommon_messages_2deos_2eproto}, {
+      &scc_info_EosTxActionAck_EosPermissionLevel_messages_2deos_2eproto.base,}};
 
-static void InitDefaultsEosTxActionAck_EosActionTransfer() {
+static void InitDefaultsEosTxActionAck_EosActionTransfer_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -377,11 +343,11 @@ static void InitDefaultsEosTxActionAck_EosActionTransfer() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionTransfer =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosActionTransfer}, {
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAsset.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionTransfer_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosActionTransfer_messages_2deos_2eproto}, {
+      &scc_info_EosTxActionAck_EosAsset_messages_2deos_2eproto.base,}};
 
-static void InitDefaultsEosTxActionAck_EosActionDelegate() {
+static void InitDefaultsEosTxActionAck_EosActionDelegate_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -392,11 +358,11 @@ static void InitDefaultsEosTxActionAck_EosActionDelegate() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionDelegate =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosActionDelegate}, {
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAsset.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionDelegate_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosActionDelegate_messages_2deos_2eproto}, {
+      &scc_info_EosTxActionAck_EosAsset_messages_2deos_2eproto.base,}};
 
-static void InitDefaultsEosTxActionAck_EosActionUndelegate() {
+static void InitDefaultsEosTxActionAck_EosActionUndelegate_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -407,11 +373,11 @@ static void InitDefaultsEosTxActionAck_EosActionUndelegate() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionUndelegate =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosActionUndelegate}, {
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAsset.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionUndelegate_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosActionUndelegate_messages_2deos_2eproto}, {
+      &scc_info_EosTxActionAck_EosAsset_messages_2deos_2eproto.base,}};
 
-static void InitDefaultsEosTxActionAck_EosActionRefund() {
+static void InitDefaultsEosTxActionAck_EosActionRefund_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -422,10 +388,10 @@ static void InitDefaultsEosTxActionAck_EosActionRefund() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionRefund =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionRefund}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionRefund_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionRefund_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosTxActionAck_EosActionBuyRam() {
+static void InitDefaultsEosTxActionAck_EosActionBuyRam_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -436,11 +402,11 @@ static void InitDefaultsEosTxActionAck_EosActionBuyRam() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionBuyRam =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosActionBuyRam}, {
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAsset.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionBuyRam_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosActionBuyRam_messages_2deos_2eproto}, {
+      &scc_info_EosTxActionAck_EosAsset_messages_2deos_2eproto.base,}};
 
-static void InitDefaultsEosTxActionAck_EosActionBuyRamBytes() {
+static void InitDefaultsEosTxActionAck_EosActionBuyRamBytes_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -451,10 +417,10 @@ static void InitDefaultsEosTxActionAck_EosActionBuyRamBytes() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionBuyRamBytes =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionBuyRamBytes}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionBuyRamBytes_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionBuyRamBytes_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosTxActionAck_EosActionSellRam() {
+static void InitDefaultsEosTxActionAck_EosActionSellRam_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -465,10 +431,10 @@ static void InitDefaultsEosTxActionAck_EosActionSellRam() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionSellRam =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionSellRam}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionSellRam_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionSellRam_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosTxActionAck_EosActionVoteProducer() {
+static void InitDefaultsEosTxActionAck_EosActionVoteProducer_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -479,10 +445,10 @@ static void InitDefaultsEosTxActionAck_EosActionVoteProducer() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionVoteProducer =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionVoteProducer}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionVoteProducer_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionVoteProducer_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosTxActionAck_EosActionUpdateAuth() {
+static void InitDefaultsEosTxActionAck_EosActionUpdateAuth_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -493,11 +459,11 @@ static void InitDefaultsEosTxActionAck_EosActionUpdateAuth() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionUpdateAuth =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosActionUpdateAuth}, {
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAuthorization.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionUpdateAuth_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosActionUpdateAuth_messages_2deos_2eproto}, {
+      &scc_info_EosTxActionAck_EosAuthorization_messages_2deos_2eproto.base,}};
 
-static void InitDefaultsEosTxActionAck_EosActionDeleteAuth() {
+static void InitDefaultsEosTxActionAck_EosActionDeleteAuth_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -508,10 +474,10 @@ static void InitDefaultsEosTxActionAck_EosActionDeleteAuth() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionDeleteAuth =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionDeleteAuth}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionDeleteAuth_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionDeleteAuth_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosTxActionAck_EosActionLinkAuth() {
+static void InitDefaultsEosTxActionAck_EosActionLinkAuth_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -522,10 +488,10 @@ static void InitDefaultsEosTxActionAck_EosActionLinkAuth() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionLinkAuth =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionLinkAuth}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionLinkAuth_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionLinkAuth_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosTxActionAck_EosActionUnlinkAuth() {
+static void InitDefaultsEosTxActionAck_EosActionUnlinkAuth_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -536,10 +502,10 @@ static void InitDefaultsEosTxActionAck_EosActionUnlinkAuth() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionUnlinkAuth =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionUnlinkAuth}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionUnlinkAuth_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionUnlinkAuth_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosTxActionAck_EosActionNewAccount() {
+static void InitDefaultsEosTxActionAck_EosActionNewAccount_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -550,11 +516,11 @@ static void InitDefaultsEosTxActionAck_EosActionNewAccount() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionNewAccount =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosActionNewAccount}, {
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAuthorization.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_EosTxActionAck_EosActionNewAccount_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEosTxActionAck_EosActionNewAccount_messages_2deos_2eproto}, {
+      &scc_info_EosTxActionAck_EosAuthorization_messages_2deos_2eproto.base,}};
 
-static void InitDefaultsEosTxActionAck_EosActionUnknown() {
+static void InitDefaultsEosTxActionAck_EosActionUnknown_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -565,10 +531,10 @@ static void InitDefaultsEosTxActionAck_EosActionUnknown() {
   ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionUnknown =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionUnknown}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosTxActionAck_EosActionUnknown_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosTxActionAck_EosActionUnknown_messages_2deos_2eproto}, {}};
 
-static void InitDefaultsEosTxActionAck() {
+static void InitDefaultsEosTxActionAck_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -579,25 +545,25 @@ static void InitDefaultsEosTxActionAck() {
   ::hw::trezor::messages::eos::EosTxActionAck::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<15> scc_info_EosTxActionAck =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 15, InitDefaultsEosTxActionAck}, {
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionCommon.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionTransfer.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionDelegate.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionUndelegate.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionRefund.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionBuyRam.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionBuyRamBytes.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionSellRam.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionVoteProducer.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionUpdateAuth.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionDeleteAuth.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionLinkAuth.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionUnlinkAuth.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionNewAccount.base,
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionUnknown.base,}};
+::google::protobuf::internal::SCCInfo<15> scc_info_EosTxActionAck_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 15, InitDefaultsEosTxActionAck_messages_2deos_2eproto}, {
+      &scc_info_EosTxActionAck_EosActionCommon_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosActionTransfer_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosActionDelegate_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosActionUndelegate_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosActionRefund_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosActionBuyRam_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosActionBuyRamBytes_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosActionSellRam_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosActionVoteProducer_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosActionUpdateAuth_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosActionDeleteAuth_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosActionLinkAuth_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosActionUnlinkAuth_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosActionNewAccount_messages_2deos_2eproto.base,
+      &scc_info_EosTxActionAck_EosActionUnknown_messages_2deos_2eproto.base,}};
 
-static void InitDefaultsEosSignedTx() {
+static void InitDefaultsEosSignedTx_messages_2deos_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -608,349 +574,351 @@ static void InitDefaultsEosSignedTx() {
   ::hw::trezor::messages::eos::EosSignedTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EosSignedTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosSignedTx}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EosSignedTx_messages_2deos_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEosSignedTx_messages_2deos_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_EosGetPublicKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosPublicKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosSignTx_EosTxHeader.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosSignTx.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosAsset.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosPermissionLevel.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosAuthorizationKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosAuthorizationAccount.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosAuthorizationWait.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosAuthorization.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionCommon.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionTransfer.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionDelegate.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionUndelegate.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionRefund.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionBuyRam.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionBuyRamBytes.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionSellRam.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionVoteProducer.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionUpdateAuth.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionDeleteAuth.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionLinkAuth.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionUnlinkAuth.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionNewAccount.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionUnknown.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EosSignedTx.base);
+void InitDefaults_messages_2deos_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_EosGetPublicKey_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosPublicKey_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosSignTx_EosTxHeader_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosSignTx_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionRequest_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosAsset_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosPermissionLevel_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosAuthorizationKey_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosAuthorizationAccount_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosAuthorizationWait_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosAuthorization_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionCommon_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionTransfer_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionDelegate_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionUndelegate_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionRefund_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionBuyRam_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionBuyRamBytes_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionSellRam_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionVoteProducer_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionUpdateAuth_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionDeleteAuth_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionLinkAuth_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionUnlinkAuth_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionNewAccount_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_EosActionUnknown_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosTxActionAck_messages_2deos_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EosSignedTx_messages_2deos_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[28];
+::google::protobuf::Metadata file_level_metadata_messages_2deos_2eproto[28];
+constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_messages_2deos_2eproto = nullptr;
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2deos_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosGetPublicKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosGetPublicKey, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_messages_2deos_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosGetPublicKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosGetPublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosGetPublicKey, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosGetPublicKey, show_display_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosGetPublicKey, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosGetPublicKey, show_display_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosPublicKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosPublicKey, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosPublicKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosPublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosPublicKey, wif_public_key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosPublicKey, raw_public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosPublicKey, wif_public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosPublicKey, raw_public_key_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, expiration_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, ref_block_num_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, ref_block_prefix_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, max_net_usage_words_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, max_cpu_usage_ms_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, delay_sec_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, expiration_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, ref_block_num_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, ref_block_prefix_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, max_net_usage_words_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, max_cpu_usage_ms_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx_EosTxHeader, delay_sec_),
   0,
   1,
   2,
   3,
   4,
   5,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx, chain_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx, header_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx, num_actions_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx, chain_id_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx, header_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignTx, num_actions_),
   ~0u,
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionRequest, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionRequest, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionRequest, data_size_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionRequest, data_size_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAsset, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAsset, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAsset, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAsset, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAsset, amount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAsset, symbol_),
-  0,
-  1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel, actor_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel, permission_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAsset, amount_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAsset, symbol_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey, type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey, key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey, weight_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel, actor_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel, permission_),
+  0,
+  1,
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey, type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey, key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey, weight_),
   1,
   0,
   ~0u,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount, account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount, weight_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount, account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount, weight_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait, wait_sec_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait, weight_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait, wait_sec_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait, weight_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization, threshold_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization, keys_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization, accounts_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization, waits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization, threshold_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization, keys_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization, accounts_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization, waits_),
   0,
   ~0u,
   ~0u,
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon, account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon, name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon, authorization_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon, account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon, name_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon, authorization_),
   0,
   1,
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer, sender_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer, receiver_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer, quantity_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer, memo_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer, sender_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer, receiver_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer, quantity_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer, memo_),
   2,
   3,
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate, sender_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate, receiver_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate, net_quantity_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate, cpu_quantity_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate, transfer_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate, sender_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate, receiver_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate, net_quantity_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate, cpu_quantity_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate, transfer_),
   2,
   3,
   0,
   1,
   4,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate, sender_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate, receiver_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate, net_quantity_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate, cpu_quantity_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate, sender_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate, receiver_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate, net_quantity_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate, cpu_quantity_),
   2,
   3,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund, owner_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund, owner_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam, payer_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam, receiver_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam, quantity_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam, payer_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam, receiver_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam, quantity_),
   1,
   2,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes, payer_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes, receiver_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes, bytes_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes, payer_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes, receiver_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes, bytes_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam, account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam, bytes_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam, account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam, bytes_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer, voter_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer, proxy_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer, producers_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer, voter_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer, proxy_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer, producers_),
   0,
   1,
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth, account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth, permission_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth, parent_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth, auth_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth, account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth, permission_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth, parent_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth, auth_),
   1,
   2,
   3,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth, account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth, permission_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth, account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth, permission_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth, account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth, code_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth, type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth, requirement_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth, account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth, code_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth, type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth, requirement_),
   0,
   1,
   2,
   3,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth, account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth, code_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth, type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth, account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth, code_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth, type_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount, creator_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount, name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount, owner_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount, active_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount, creator_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount, name_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount, owner_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount, active_),
   2,
   3,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown, data_size_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown, data_chunk_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown, data_size_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown, data_chunk_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, common_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, transfer_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, delegate_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, undelegate_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, refund_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, buy_ram_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, buy_ram_bytes_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, sell_ram_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, vote_producer_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, update_auth_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, delete_auth_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, link_auth_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, unlink_auth_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, new_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, unknown_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, common_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, transfer_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, delegate_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, undelegate_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, refund_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, buy_ram_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, buy_ram_bytes_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, sell_ram_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, vote_producer_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, update_auth_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, delete_auth_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, link_auth_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, unlink_auth_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, new_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosTxActionAck, unknown_),
   0,
   1,
   2,
@@ -966,19 +934,19 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   12,
   13,
   14,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignedTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignedTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignedTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignedTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignedTx, signature_v_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignedTx, signature_r_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignedTx, signature_s_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignedTx, signature_v_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignedTx, signature_r_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignedTx, signature_s_),
   2,
   0,
   1,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::hw::trezor::messages::eos::EosGetPublicKey)},
   { 9, 16, sizeof(::hw::trezor::messages::eos::EosPublicKey)},
   { 18, 29, sizeof(::hw::trezor::messages::eos::EosSignTx_EosTxHeader)},
@@ -1040,148 +1008,132 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::eos::_EosSignedTx_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "messages-eos.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2deos_2eproto = {
+  {}, AddDescriptors_messages_2deos_2eproto, "messages-eos.proto", schemas,
+  file_default_instances, TableStruct_messages_2deos_2eproto::offsets,
+  file_level_metadata_messages_2deos_2eproto, 28, file_level_enum_descriptors_messages_2deos_2eproto, file_level_service_descriptors_messages_2deos_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_messages_2deos_2eproto[] =
+  "\n\022messages-eos.proto\022\026hw.trezor.messages"
+  ".eos\":\n\017EosGetPublicKey\022\021\n\taddress_n\030\001 \003"
+  "(\r\022\024\n\014show_display\030\002 \001(\010\">\n\014EosPublicKey"
+  "\022\026\n\016wif_public_key\030\001 \001(\t\022\026\n\016raw_public_k"
+  "ey\030\002 \001(\014\"\243\002\n\tEosSignTx\022\021\n\taddress_n\030\001 \003("
+  "\r\022\020\n\010chain_id\030\002 \001(\014\022=\n\006header\030\003 \001(\0132-.hw"
+  ".trezor.messages.eos.EosSignTx.EosTxHead"
+  "er\022\023\n\013num_actions\030\004 \001(\r\032\234\001\n\013EosTxHeader\022"
+  "\022\n\nexpiration\030\001 \002(\r\022\025\n\rref_block_num\030\002 \002"
+  "(\r\022\030\n\020ref_block_prefix\030\003 \002(\r\022\033\n\023max_net_"
+  "usage_words\030\004 \002(\r\022\030\n\020max_cpu_usage_ms\030\005 "
+  "\002(\r\022\021\n\tdelay_sec\030\006 \002(\r\"\'\n\022EosTxActionReq"
+  "uest\022\021\n\tdata_size\030\001 \001(\r\"\226\033\n\016EosTxActionA"
+  "ck\022F\n\006common\030\001 \001(\01326.hw.trezor.messages."
+  "eos.EosTxActionAck.EosActionCommon\022J\n\010tr"
+  "ansfer\030\002 \001(\01328.hw.trezor.messages.eos.Eo"
+  "sTxActionAck.EosActionTransfer\022J\n\010delega"
+  "te\030\003 \001(\01328.hw.trezor.messages.eos.EosTxA"
+  "ctionAck.EosActionDelegate\022N\n\nundelegate"
+  "\030\004 \001(\0132:.hw.trezor.messages.eos.EosTxAct"
+  "ionAck.EosActionUndelegate\022F\n\006refund\030\005 \001"
+  "(\01326.hw.trezor.messages.eos.EosTxActionA"
+  "ck.EosActionRefund\022G\n\007buy_ram\030\006 \001(\01326.hw"
+  ".trezor.messages.eos.EosTxActionAck.EosA"
+  "ctionBuyRam\022R\n\rbuy_ram_bytes\030\007 \001(\0132;.hw."
+  "trezor.messages.eos.EosTxActionAck.EosAc"
+  "tionBuyRamBytes\022I\n\010sell_ram\030\010 \001(\01327.hw.t"
+  "rezor.messages.eos.EosTxActionAck.EosAct"
+  "ionSellRam\022S\n\rvote_producer\030\t \001(\0132<.hw.t"
+  "rezor.messages.eos.EosTxActionAck.EosAct"
+  "ionVoteProducer\022O\n\013update_auth\030\n \001(\0132:.h"
+  "w.trezor.messages.eos.EosTxActionAck.Eos"
+  "ActionUpdateAuth\022O\n\013delete_auth\030\013 \001(\0132:."
+  "hw.trezor.messages.eos.EosTxActionAck.Eo"
+  "sActionDeleteAuth\022K\n\tlink_auth\030\014 \001(\01328.h"
+  "w.trezor.messages.eos.EosTxActionAck.Eos"
+  "ActionLinkAuth\022O\n\013unlink_auth\030\r \001(\0132:.hw"
+  ".trezor.messages.eos.EosTxActionAck.EosA"
+  "ctionUnlinkAuth\022O\n\013new_account\030\016 \001(\0132:.h"
+  "w.trezor.messages.eos.EosTxActionAck.Eos"
+  "ActionNewAccount\022H\n\007unknown\030\017 \001(\01327.hw.t"
+  "rezor.messages.eos.EosTxActionAck.EosAct"
+  "ionUnknown\032*\n\010EosAsset\022\016\n\006amount\030\001 \001(\022\022\016"
+  "\n\006symbol\030\002 \001(\004\0327\n\022EosPermissionLevel\022\r\n\005"
+  "actor\030\001 \001(\004\022\022\n\npermission\030\002 \001(\004\032S\n\023EosAu"
+  "thorizationKey\022\014\n\004type\030\001 \001(\r\022\013\n\003key\030\002 \001("
+  "\014\022\021\n\taddress_n\030\003 \003(\r\022\016\n\006weight\030\004 \001(\r\032u\n\027"
+  "EosAuthorizationAccount\022J\n\007account\030\001 \001(\013"
+  "29.hw.trezor.messages.eos.EosTxActionAck"
+  ".EosPermissionLevel\022\016\n\006weight\030\002 \001(\r\0328\n\024E"
+  "osAuthorizationWait\022\020\n\010wait_sec\030\001 \001(\r\022\016\n"
+  "\006weight\030\002 \001(\r\032\215\002\n\020EosAuthorization\022\021\n\tth"
+  "reshold\030\001 \001(\r\022H\n\004keys\030\002 \003(\0132:.hw.trezor."
+  "messages.eos.EosTxActionAck.EosAuthoriza"
+  "tionKey\022P\n\010accounts\030\003 \003(\0132>.hw.trezor.me"
+  "ssages.eos.EosTxActionAck.EosAuthorizati"
+  "onAccount\022J\n\005waits\030\004 \003(\0132;.hw.trezor.mes"
+  "sages.eos.EosTxActionAck.EosAuthorizatio"
+  "nWait\032\202\001\n\017EosActionCommon\022\017\n\007account\030\001 \001"
+  "(\004\022\014\n\004name\030\002 \001(\004\022P\n\rauthorization\030\003 \003(\0132"
+  "9.hw.trezor.messages.eos.EosTxActionAck."
+  "EosPermissionLevel\032\206\001\n\021EosActionTransfer"
+  "\022\016\n\006sender\030\001 \001(\004\022\020\n\010receiver\030\002 \001(\004\022A\n\010qu"
+  "antity\030\003 \001(\0132/.hw.trezor.messages.eos.Eo"
+  "sTxActionAck.EosAsset\022\014\n\004memo\030\004 \001(\t\032\325\001\n\021"
+  "EosActionDelegate\022\016\n\006sender\030\001 \001(\004\022\020\n\010rec"
+  "eiver\030\002 \001(\004\022E\n\014net_quantity\030\003 \001(\0132/.hw.t"
+  "rezor.messages.eos.EosTxActionAck.EosAss"
+  "et\022E\n\014cpu_quantity\030\004 \001(\0132/.hw.trezor.mes"
+  "sages.eos.EosTxActionAck.EosAsset\022\020\n\010tra"
+  "nsfer\030\005 \001(\010\032\305\001\n\023EosActionUndelegate\022\016\n\006s"
+  "ender\030\001 \001(\004\022\020\n\010receiver\030\002 \001(\004\022E\n\014net_qua"
+  "ntity\030\003 \001(\0132/.hw.trezor.messages.eos.Eos"
+  "TxActionAck.EosAsset\022E\n\014cpu_quantity\030\004 \001"
+  "(\0132/.hw.trezor.messages.eos.EosTxActionA"
+  "ck.EosAsset\032 \n\017EosActionRefund\022\r\n\005owner\030"
+  "\001 \001(\004\032u\n\017EosActionBuyRam\022\r\n\005payer\030\001 \001(\004\022"
+  "\020\n\010receiver\030\002 \001(\004\022A\n\010quantity\030\003 \001(\0132/.hw"
+  ".trezor.messages.eos.EosTxActionAck.EosA"
+  "sset\032F\n\024EosActionBuyRamBytes\022\r\n\005payer\030\001 "
+  "\001(\004\022\020\n\010receiver\030\002 \001(\004\022\r\n\005bytes\030\003 \001(\r\0322\n\020"
+  "EosActionSellRam\022\017\n\007account\030\001 \001(\004\022\r\n\005byt"
+  "es\030\002 \001(\004\032H\n\025EosActionVoteProducer\022\r\n\005vot"
+  "er\030\001 \001(\004\022\r\n\005proxy\030\002 \001(\004\022\021\n\tproducers\030\003 \003"
+  "(\004\032\221\001\n\023EosActionUpdateAuth\022\017\n\007account\030\001 "
+  "\001(\004\022\022\n\npermission\030\002 \001(\004\022\016\n\006parent\030\003 \001(\004\022"
+  "E\n\004auth\030\004 \001(\01327.hw.trezor.messages.eos.E"
+  "osTxActionAck.EosAuthorization\032:\n\023EosAct"
+  "ionDeleteAuth\022\017\n\007account\030\001 \001(\004\022\022\n\npermis"
+  "sion\030\002 \001(\004\032U\n\021EosActionLinkAuth\022\017\n\007accou"
+  "nt\030\001 \001(\004\022\014\n\004code\030\002 \001(\004\022\014\n\004type\030\003 \001(\004\022\023\n\013"
+  "requirement\030\004 \001(\004\032B\n\023EosActionUnlinkAuth"
+  "\022\017\n\007account\030\001 \001(\004\022\014\n\004code\030\002 \001(\004\022\014\n\004type\030"
+  "\003 \001(\004\032\305\001\n\023EosActionNewAccount\022\017\n\007creator"
+  "\030\001 \001(\004\022\014\n\004name\030\002 \001(\004\022F\n\005owner\030\003 \001(\01327.hw"
+  ".trezor.messages.eos.EosTxActionAck.EosA"
+  "uthorization\022G\n\006active\030\004 \001(\01327.hw.trezor"
+  ".messages.eos.EosTxActionAck.EosAuthoriz"
+  "ation\0329\n\020EosActionUnknown\022\021\n\tdata_size\030\001"
+  " \001(\r\022\022\n\ndata_chunk\030\002 \001(\014\"L\n\013EosSignedTx\022"
+  "\023\n\013signature_v\030\001 \001(\r\022\023\n\013signature_r\030\002 \001("
+  "\014\022\023\n\013signature_s\030\003 \001(\014B7\n#com.satoshilab"
+  "s.trezor.lib.protobufB\020TrezorMessageEos"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_messages_2deos_2eproto = {
+  false, InitDefaults_messages_2deos_2eproto, 
+  descriptor_table_protodef_messages_2deos_2eproto,
+  "messages-eos.proto", &assign_descriptors_table_messages_2deos_2eproto, 4119,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 28);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\022messages-eos.proto\022\026hw.trezor.messages"
-      ".eos\":\n\017EosGetPublicKey\022\021\n\taddress_n\030\001 \003"
-      "(\r\022\024\n\014show_display\030\002 \001(\010\">\n\014EosPublicKey"
-      "\022\026\n\016wif_public_key\030\001 \001(\t\022\026\n\016raw_public_k"
-      "ey\030\002 \001(\014\"\243\002\n\tEosSignTx\022\021\n\taddress_n\030\001 \003("
-      "\r\022\020\n\010chain_id\030\002 \001(\014\022=\n\006header\030\003 \001(\0132-.hw"
-      ".trezor.messages.eos.EosSignTx.EosTxHead"
-      "er\022\023\n\013num_actions\030\004 \001(\r\032\234\001\n\013EosTxHeader\022"
-      "\022\n\nexpiration\030\001 \002(\r\022\025\n\rref_block_num\030\002 \002"
-      "(\r\022\030\n\020ref_block_prefix\030\003 \002(\r\022\033\n\023max_net_"
-      "usage_words\030\004 \002(\r\022\030\n\020max_cpu_usage_ms\030\005 "
-      "\002(\r\022\021\n\tdelay_sec\030\006 \002(\r\"\'\n\022EosTxActionReq"
-      "uest\022\021\n\tdata_size\030\001 \001(\r\"\226\033\n\016EosTxActionA"
-      "ck\022F\n\006common\030\001 \001(\01326.hw.trezor.messages."
-      "eos.EosTxActionAck.EosActionCommon\022J\n\010tr"
-      "ansfer\030\002 \001(\01328.hw.trezor.messages.eos.Eo"
-      "sTxActionAck.EosActionTransfer\022J\n\010delega"
-      "te\030\003 \001(\01328.hw.trezor.messages.eos.EosTxA"
-      "ctionAck.EosActionDelegate\022N\n\nundelegate"
-      "\030\004 \001(\0132:.hw.trezor.messages.eos.EosTxAct"
-      "ionAck.EosActionUndelegate\022F\n\006refund\030\005 \001"
-      "(\01326.hw.trezor.messages.eos.EosTxActionA"
-      "ck.EosActionRefund\022G\n\007buy_ram\030\006 \001(\01326.hw"
-      ".trezor.messages.eos.EosTxActionAck.EosA"
-      "ctionBuyRam\022R\n\rbuy_ram_bytes\030\007 \001(\0132;.hw."
-      "trezor.messages.eos.EosTxActionAck.EosAc"
-      "tionBuyRamBytes\022I\n\010sell_ram\030\010 \001(\01327.hw.t"
-      "rezor.messages.eos.EosTxActionAck.EosAct"
-      "ionSellRam\022S\n\rvote_producer\030\t \001(\0132<.hw.t"
-      "rezor.messages.eos.EosTxActionAck.EosAct"
-      "ionVoteProducer\022O\n\013update_auth\030\n \001(\0132:.h"
-      "w.trezor.messages.eos.EosTxActionAck.Eos"
-      "ActionUpdateAuth\022O\n\013delete_auth\030\013 \001(\0132:."
-      "hw.trezor.messages.eos.EosTxActionAck.Eo"
-      "sActionDeleteAuth\022K\n\tlink_auth\030\014 \001(\01328.h"
-      "w.trezor.messages.eos.EosTxActionAck.Eos"
-      "ActionLinkAuth\022O\n\013unlink_auth\030\r \001(\0132:.hw"
-      ".trezor.messages.eos.EosTxActionAck.EosA"
-      "ctionUnlinkAuth\022O\n\013new_account\030\016 \001(\0132:.h"
-      "w.trezor.messages.eos.EosTxActionAck.Eos"
-      "ActionNewAccount\022H\n\007unknown\030\017 \001(\01327.hw.t"
-      "rezor.messages.eos.EosTxActionAck.EosAct"
-      "ionUnknown\032*\n\010EosAsset\022\016\n\006amount\030\001 \001(\022\022\016"
-      "\n\006symbol\030\002 \001(\004\0327\n\022EosPermissionLevel\022\r\n\005"
-      "actor\030\001 \001(\004\022\022\n\npermission\030\002 \001(\004\032S\n\023EosAu"
-      "thorizationKey\022\014\n\004type\030\001 \001(\r\022\013\n\003key\030\002 \001("
-      "\014\022\021\n\taddress_n\030\003 \003(\r\022\016\n\006weight\030\004 \001(\r\032u\n\027"
-      "EosAuthorizationAccount\022J\n\007account\030\001 \001(\013"
-      "29.hw.trezor.messages.eos.EosTxActionAck"
-      ".EosPermissionLevel\022\016\n\006weight\030\002 \001(\r\0328\n\024E"
-      "osAuthorizationWait\022\020\n\010wait_sec\030\001 \001(\r\022\016\n"
-      "\006weight\030\002 \001(\r\032\215\002\n\020EosAuthorization\022\021\n\tth"
-      "reshold\030\001 \001(\r\022H\n\004keys\030\002 \003(\0132:.hw.trezor."
-      "messages.eos.EosTxActionAck.EosAuthoriza"
-      "tionKey\022P\n\010accounts\030\003 \003(\0132>.hw.trezor.me"
-      "ssages.eos.EosTxActionAck.EosAuthorizati"
-      "onAccount\022J\n\005waits\030\004 \003(\0132;.hw.trezor.mes"
-      "sages.eos.EosTxActionAck.EosAuthorizatio"
-      "nWait\032\202\001\n\017EosActionCommon\022\017\n\007account\030\001 \001"
-      "(\004\022\014\n\004name\030\002 \001(\004\022P\n\rauthorization\030\003 \003(\0132"
-      "9.hw.trezor.messages.eos.EosTxActionAck."
-      "EosPermissionLevel\032\206\001\n\021EosActionTransfer"
-      "\022\016\n\006sender\030\001 \001(\004\022\020\n\010receiver\030\002 \001(\004\022A\n\010qu"
-      "antity\030\003 \001(\0132/.hw.trezor.messages.eos.Eo"
-      "sTxActionAck.EosAsset\022\014\n\004memo\030\004 \001(\t\032\325\001\n\021"
-      "EosActionDelegate\022\016\n\006sender\030\001 \001(\004\022\020\n\010rec"
-      "eiver\030\002 \001(\004\022E\n\014net_quantity\030\003 \001(\0132/.hw.t"
-      "rezor.messages.eos.EosTxActionAck.EosAss"
-      "et\022E\n\014cpu_quantity\030\004 \001(\0132/.hw.trezor.mes"
-      "sages.eos.EosTxActionAck.EosAsset\022\020\n\010tra"
-      "nsfer\030\005 \001(\010\032\305\001\n\023EosActionUndelegate\022\016\n\006s"
-      "ender\030\001 \001(\004\022\020\n\010receiver\030\002 \001(\004\022E\n\014net_qua"
-      "ntity\030\003 \001(\0132/.hw.trezor.messages.eos.Eos"
-      "TxActionAck.EosAsset\022E\n\014cpu_quantity\030\004 \001"
-      "(\0132/.hw.trezor.messages.eos.EosTxActionA"
-      "ck.EosAsset\032 \n\017EosActionRefund\022\r\n\005owner\030"
-      "\001 \001(\004\032u\n\017EosActionBuyRam\022\r\n\005payer\030\001 \001(\004\022"
-      "\020\n\010receiver\030\002 \001(\004\022A\n\010quantity\030\003 \001(\0132/.hw"
-      ".trezor.messages.eos.EosTxActionAck.EosA"
-      "sset\032F\n\024EosActionBuyRamBytes\022\r\n\005payer\030\001 "
-      "\001(\004\022\020\n\010receiver\030\002 \001(\004\022\r\n\005bytes\030\003 \001(\r\0322\n\020"
-      "EosActionSellRam\022\017\n\007account\030\001 \001(\004\022\r\n\005byt"
-      "es\030\002 \001(\004\032H\n\025EosActionVoteProducer\022\r\n\005vot"
-      "er\030\001 \001(\004\022\r\n\005proxy\030\002 \001(\004\022\021\n\tproducers\030\003 \003"
-      "(\004\032\221\001\n\023EosActionUpdateAuth\022\017\n\007account\030\001 "
-      "\001(\004\022\022\n\npermission\030\002 \001(\004\022\016\n\006parent\030\003 \001(\004\022"
-      "E\n\004auth\030\004 \001(\01327.hw.trezor.messages.eos.E"
-      "osTxActionAck.EosAuthorization\032:\n\023EosAct"
-      "ionDeleteAuth\022\017\n\007account\030\001 \001(\004\022\022\n\npermis"
-      "sion\030\002 \001(\004\032U\n\021EosActionLinkAuth\022\017\n\007accou"
-      "nt\030\001 \001(\004\022\014\n\004code\030\002 \001(\004\022\014\n\004type\030\003 \001(\004\022\023\n\013"
-      "requirement\030\004 \001(\004\032B\n\023EosActionUnlinkAuth"
-      "\022\017\n\007account\030\001 \001(\004\022\014\n\004code\030\002 \001(\004\022\014\n\004type\030"
-      "\003 \001(\004\032\305\001\n\023EosActionNewAccount\022\017\n\007creator"
-      "\030\001 \001(\004\022\014\n\004name\030\002 \001(\004\022F\n\005owner\030\003 \001(\01327.hw"
-      ".trezor.messages.eos.EosTxActionAck.EosA"
-      "uthorization\022G\n\006active\030\004 \001(\01327.hw.trezor"
-      ".messages.eos.EosTxActionAck.EosAuthoriz"
-      "ation\0329\n\020EosActionUnknown\022\021\n\tdata_size\030\001"
-      " \001(\r\022\022\n\ndata_chunk\030\002 \001(\014\"L\n\013EosSignedTx\022"
-      "\023\n\013signature_v\030\001 \001(\r\022\023\n\013signature_r\030\002 \001("
-      "\014\022\023\n\013signature_s\030\003 \001(\014B7\n#com.satoshilab"
-      "s.trezor.lib.protobufB\020TrezorMessageEos"
+void AddDescriptors_messages_2deos_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 4119);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "messages-eos.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_messages_2deos_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_messages_2deos_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_messages_2deos_2eproto = []() { AddDescriptors_messages_2deos_2eproto(); return true; }();
 namespace hw {
 namespace trezor {
 namespace messages {
@@ -1191,21 +1143,26 @@ namespace eos {
 
 void EosGetPublicKey::InitAsDefaultInstance() {
 }
+class EosGetPublicKey::HasBitSetters {
+ public:
+  static void set_has_show_display(EosGetPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosGetPublicKey::kAddressNFieldNumber;
 const int EosGetPublicKey::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosGetPublicKey::EosGetPublicKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosGetPublicKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosGetPublicKey)
 }
 EosGetPublicKey::EosGetPublicKey(const EosGetPublicKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -1228,13 +1185,8 @@ void EosGetPublicKey::SharedDtor() {
 void EosGetPublicKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosGetPublicKey::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosGetPublicKey& EosGetPublicKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosGetPublicKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosGetPublicKey_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1251,9 +1203,69 @@ void EosGetPublicKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosGetPublicKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosGetPublicKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool show_display = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosGetPublicKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosGetPublicKey)
   for (;;) {
@@ -1263,14 +1275,11 @@ bool EosGetPublicKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1282,9 +1291,8 @@ bool EosGetPublicKey::MergePartialFromCodedStream(
 
       // optional bool show_display = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -1313,6 +1321,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosGetPublicKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1340,8 +1349,7 @@ void EosGetPublicKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosGetPublicKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosGetPublicKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1373,6 +1381,10 @@ size_t EosGetPublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1383,7 +1395,8 @@ size_t EosGetPublicKey::ByteSizeLong() const {
   }
 
   // optional bool show_display = 2;
-  if (has_show_display()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -1396,9 +1409,9 @@ void EosGetPublicKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosGetPublicKey)
   GOOGLE_DCHECK_NE(&from, this);
   const EosGetPublicKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosGetPublicKey>(
+      ::google::protobuf::DynamicCastToGenerated<EosGetPublicKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosGetPublicKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1444,15 +1457,15 @@ void EosGetPublicKey::Swap(EosGetPublicKey* other) {
 }
 void EosGetPublicKey::InternalSwap(EosGetPublicKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosGetPublicKey::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1460,21 +1473,29 @@ void EosGetPublicKey::InternalSwap(EosGetPublicKey* other) {
 
 void EosPublicKey::InitAsDefaultInstance() {
 }
+class EosPublicKey::HasBitSetters {
+ public:
+  static void set_has_wif_public_key(EosPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_raw_public_key(EosPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosPublicKey::kWifPublicKeyFieldNumber;
 const int EosPublicKey::kRawPublicKeyFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosPublicKey::EosPublicKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosPublicKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosPublicKey)
 }
 EosPublicKey::EosPublicKey(const EosPublicKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   wif_public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1489,6 +1510,8 @@ EosPublicKey::EosPublicKey(const EosPublicKey& from)
 }
 
 void EosPublicKey::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosPublicKey_messages_2deos_2eproto.base);
   wif_public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   raw_public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1506,13 +1529,8 @@ void EosPublicKey::SharedDtor() {
 void EosPublicKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosPublicKey::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosPublicKey& EosPublicKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosPublicKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosPublicKey_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1524,7 +1542,7 @@ void EosPublicKey::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       wif_public_key_.ClearNonDefaultToEmptyNoArena();
     }
@@ -1536,9 +1554,77 @@ void EosPublicKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosPublicKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosPublicKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string wif_public_key = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.eos.EosPublicKey.wif_public_key");
+        object = msg->mutable_wif_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes raw_public_key = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_raw_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosPublicKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosPublicKey)
   for (;;) {
@@ -1548,8 +1634,7 @@ bool EosPublicKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string wif_public_key = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_wif_public_key()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1564,8 +1649,7 @@ bool EosPublicKey::MergePartialFromCodedStream(
 
       // optional bytes raw_public_key = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_raw_public_key()));
         } else {
@@ -1593,6 +1677,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosPublicKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1625,8 +1710,7 @@ void EosPublicKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosPublicKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosPublicKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1667,16 +1751,21 @@ size_t EosPublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string wif_public_key = 1;
-    if (has_wif_public_key()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->wif_public_key());
     }
 
     // optional bytes raw_public_key = 2;
-    if (has_raw_public_key()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->raw_public_key());
@@ -1692,9 +1781,9 @@ void EosPublicKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosPublicKey)
   GOOGLE_DCHECK_NE(&from, this);
   const EosPublicKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosPublicKey>(
+      ::google::protobuf::DynamicCastToGenerated<EosPublicKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosPublicKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1711,13 +1800,13 @@ void EosPublicKey::MergeFrom(const EosPublicKey& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_wif_public_key();
+      _has_bits_[0] |= 0x00000001u;
       wif_public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.wif_public_key_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_raw_public_key();
+      _has_bits_[0] |= 0x00000002u;
       raw_public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.raw_public_key_);
     }
   }
@@ -1747,17 +1836,17 @@ void EosPublicKey::Swap(EosPublicKey* other) {
 }
 void EosPublicKey::InternalSwap(EosPublicKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   wif_public_key_.Swap(&other->wif_public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   raw_public_key_.Swap(&other->raw_public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosPublicKey::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1765,6 +1854,28 @@ void EosPublicKey::InternalSwap(EosPublicKey* other) {
 
 void EosSignTx_EosTxHeader::InitAsDefaultInstance() {
 }
+class EosSignTx_EosTxHeader::HasBitSetters {
+ public:
+  static void set_has_expiration(EosSignTx_EosTxHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_ref_block_num(EosSignTx_EosTxHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_ref_block_prefix(EosSignTx_EosTxHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_max_net_usage_words(EosSignTx_EosTxHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_max_cpu_usage_ms(EosSignTx_EosTxHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_delay_sec(EosSignTx_EosTxHeader* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosSignTx_EosTxHeader::kExpirationFieldNumber;
 const int EosSignTx_EosTxHeader::kRefBlockNumFieldNumber;
@@ -1775,15 +1886,13 @@ const int EosSignTx_EosTxHeader::kDelaySecFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosSignTx_EosTxHeader::EosSignTx_EosTxHeader()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosSignTx_EosTxHeader.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosSignTx.EosTxHeader)
 }
 EosSignTx_EosTxHeader::EosSignTx_EosTxHeader(const EosSignTx_EosTxHeader& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&expiration_, &from.expiration_,
@@ -1809,13 +1918,8 @@ void EosSignTx_EosTxHeader::SharedDtor() {
 void EosSignTx_EosTxHeader::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosSignTx_EosTxHeader::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosSignTx_EosTxHeader& EosSignTx_EosTxHeader::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosSignTx_EosTxHeader.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosSignTx_EosTxHeader_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1827,7 +1931,7 @@ void EosSignTx_EosTxHeader::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 63u) {
+  if (cached_has_bits & 0x0000003fu) {
     ::memset(&expiration_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&delay_sec_) -
         reinterpret_cast<char*>(&expiration_)) + sizeof(delay_sec_));
@@ -1836,9 +1940,81 @@ void EosSignTx_EosTxHeader::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosSignTx_EosTxHeader::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosSignTx_EosTxHeader*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // required uint32 expiration = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_expiration(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // required uint32 ref_block_num = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_ref_block_num(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // required uint32 ref_block_prefix = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_ref_block_prefix(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // required uint32 max_net_usage_words = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_max_net_usage_words(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // required uint32 max_cpu_usage_ms = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_max_cpu_usage_ms(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // required uint32 delay_sec = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_delay_sec(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosSignTx_EosTxHeader::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosSignTx.EosTxHeader)
   for (;;) {
@@ -1848,9 +2024,8 @@ bool EosSignTx_EosTxHeader::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required uint32 expiration = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_expiration();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_expiration(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &expiration_)));
@@ -1862,9 +2037,8 @@ bool EosSignTx_EosTxHeader::MergePartialFromCodedStream(
 
       // required uint32 ref_block_num = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_ref_block_num();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_ref_block_num(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &ref_block_num_)));
@@ -1876,9 +2050,8 @@ bool EosSignTx_EosTxHeader::MergePartialFromCodedStream(
 
       // required uint32 ref_block_prefix = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_ref_block_prefix();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_ref_block_prefix(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &ref_block_prefix_)));
@@ -1890,9 +2063,8 @@ bool EosSignTx_EosTxHeader::MergePartialFromCodedStream(
 
       // required uint32 max_net_usage_words = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_max_net_usage_words();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_max_net_usage_words(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &max_net_usage_words_)));
@@ -1904,9 +2076,8 @@ bool EosSignTx_EosTxHeader::MergePartialFromCodedStream(
 
       // required uint32 max_cpu_usage_ms = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_max_cpu_usage_ms();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_max_cpu_usage_ms(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &max_cpu_usage_ms_)));
@@ -1918,9 +2089,8 @@ bool EosSignTx_EosTxHeader::MergePartialFromCodedStream(
 
       // required uint32 delay_sec = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_delay_sec();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_delay_sec(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &delay_sec_)));
@@ -1949,6 +2119,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosSignTx_EosTxHeader::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1995,8 +2166,7 @@ void EosSignTx_EosTxHeader::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosSignTx_EosTxHeader::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosSignTx.EosTxHeader)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2131,6 +2301,10 @@ size_t EosSignTx_EosTxHeader::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2140,9 +2314,9 @@ void EosSignTx_EosTxHeader::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosSignTx.EosTxHeader)
   GOOGLE_DCHECK_NE(&from, this);
   const EosSignTx_EosTxHeader* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosSignTx_EosTxHeader>(
+      ::google::protobuf::DynamicCastToGenerated<EosSignTx_EosTxHeader>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosSignTx.EosTxHeader)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2159,7 +2333,7 @@ void EosSignTx_EosTxHeader::MergeFrom(const EosSignTx_EosTxHeader& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 63u) {
+  if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
       expiration_ = from.expiration_;
     }
@@ -2207,19 +2381,19 @@ void EosSignTx_EosTxHeader::Swap(EosSignTx_EosTxHeader* other) {
 }
 void EosSignTx_EosTxHeader::InternalSwap(EosSignTx_EosTxHeader* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(expiration_, other->expiration_);
   swap(ref_block_num_, other->ref_block_num_);
   swap(ref_block_prefix_, other->ref_block_prefix_);
   swap(max_net_usage_words_, other->max_net_usage_words_);
   swap(max_cpu_usage_ms_, other->max_cpu_usage_ms_);
   swap(delay_sec_, other->delay_sec_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosSignTx_EosTxHeader::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2229,6 +2403,24 @@ void EosSignTx::InitAsDefaultInstance() {
   ::hw::trezor::messages::eos::_EosSignTx_default_instance_._instance.get_mutable()->header_ = const_cast< ::hw::trezor::messages::eos::EosSignTx_EosTxHeader*>(
       ::hw::trezor::messages::eos::EosSignTx_EosTxHeader::internal_default_instance());
 }
+class EosSignTx::HasBitSetters {
+ public:
+  static void set_has_chain_id(EosSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::hw::trezor::messages::eos::EosSignTx_EosTxHeader& header(const EosSignTx* msg);
+  static void set_has_header(EosSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_num_actions(EosSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
+const ::hw::trezor::messages::eos::EosSignTx_EosTxHeader&
+EosSignTx::HasBitSetters::header(const EosSignTx* msg) {
+  return *msg->header_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosSignTx::kAddressNFieldNumber;
 const int EosSignTx::kChainIdFieldNumber;
@@ -2237,15 +2429,13 @@ const int EosSignTx::kNumActionsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosSignTx::EosSignTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosSignTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosSignTx)
 }
 EosSignTx::EosSignTx(const EosSignTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -2256,13 +2446,15 @@ EosSignTx::EosSignTx(const EosSignTx& from)
   if (from.has_header()) {
     header_ = new ::hw::trezor::messages::eos::EosSignTx_EosTxHeader(*from.header_);
   } else {
-    header_ = NULL;
+    header_ = nullptr;
   }
   num_actions_ = from.num_actions_;
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.eos.EosSignTx)
 }
 
 void EosSignTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosSignTx_messages_2deos_2eproto.base);
   chain_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&header_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&num_actions_) -
@@ -2282,13 +2474,8 @@ void EosSignTx::SharedDtor() {
 void EosSignTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosSignTx::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosSignTx& EosSignTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosSignTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosSignTx_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2301,12 +2488,12 @@ void EosSignTx::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       chain_id_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(header_ != NULL);
+      GOOGLE_DCHECK(header_ != nullptr);
       header_->Clear();
     }
   }
@@ -2315,9 +2502,101 @@ void EosSignTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosSignTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosSignTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bytes chain_id = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_chain_id();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosSignTx.EosTxHeader header = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosSignTx_EosTxHeader::_InternalParse;
+        object = msg->mutable_header();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional uint32 num_actions = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_num_actions(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosSignTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosSignTx)
   for (;;) {
@@ -2327,14 +2606,11 @@ bool EosSignTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -2346,8 +2622,7 @@ bool EosSignTx::MergePartialFromCodedStream(
 
       // optional bytes chain_id = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_chain_id()));
         } else {
@@ -2358,8 +2633,7 @@ bool EosSignTx::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosSignTx.EosTxHeader header = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_header()));
         } else {
@@ -2370,9 +2644,8 @@ bool EosSignTx::MergePartialFromCodedStream(
 
       // optional uint32 num_actions = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_num_actions();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_num_actions(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &num_actions_)));
@@ -2401,6 +2674,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosSignTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2424,7 +2698,7 @@ void EosSignTx::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.eos.EosSignTx.EosTxHeader header = 3;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_header(), output);
+      3, HasBitSetters::header(this), output);
   }
 
   // optional uint32 num_actions = 4;
@@ -2440,8 +2714,7 @@ void EosSignTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosSignTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosSignTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2462,7 +2735,7 @@ void EosSignTx::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_header(), deterministic, target);
+        3, HasBitSetters::header(this), target);
   }
 
   // optional uint32 num_actions = 4;
@@ -2487,6 +2760,10 @@ size_t EosSignTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -2496,23 +2773,24 @@ size_t EosSignTx::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 7u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional bytes chain_id = 2;
-    if (has_chain_id()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->chain_id());
     }
 
     // optional .hw.trezor.messages.eos.EosSignTx.EosTxHeader header = 3;
-    if (has_header()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *header_);
     }
 
     // optional uint32 num_actions = 4;
-    if (has_num_actions()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->num_actions());
@@ -2528,9 +2806,9 @@ void EosSignTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosSignTx)
   GOOGLE_DCHECK_NE(&from, this);
   const EosSignTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosSignTx>(
+      ::google::protobuf::DynamicCastToGenerated<EosSignTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosSignTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2548,9 +2826,9 @@ void EosSignTx::MergeFrom(const EosSignTx& from) {
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_chain_id();
+      _has_bits_[0] |= 0x00000001u;
       chain_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.chain_id_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -2590,18 +2868,18 @@ void EosSignTx::Swap(EosSignTx* other) {
 }
 void EosSignTx::InternalSwap(EosSignTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   chain_id_.Swap(&other->chain_id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(header_, other->header_);
   swap(num_actions_, other->num_actions_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosSignTx::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2609,20 +2887,25 @@ void EosSignTx::InternalSwap(EosSignTx* other) {
 
 void EosTxActionRequest::InitAsDefaultInstance() {
 }
+class EosTxActionRequest::HasBitSetters {
+ public:
+  static void set_has_data_size(EosTxActionRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionRequest::kDataSizeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionRequest::EosTxActionRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionRequest)
 }
 EosTxActionRequest::EosTxActionRequest(const EosTxActionRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   data_size_ = from.data_size_;
@@ -2644,13 +2927,8 @@ void EosTxActionRequest::SharedDtor() {
 void EosTxActionRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionRequest::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionRequest& EosTxActionRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionRequest_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2666,9 +2944,46 @@ void EosTxActionRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 data_size = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_data_size(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionRequest)
   for (;;) {
@@ -2678,9 +2993,8 @@ bool EosTxActionRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 data_size = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_data_size();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_data_size(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &data_size_)));
@@ -2709,6 +3023,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2730,8 +3045,7 @@ void EosTxActionRequest::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2759,8 +3073,13 @@ size_t EosTxActionRequest::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional uint32 data_size = 1;
-  if (has_data_size()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->data_size());
@@ -2775,9 +3094,9 @@ void EosTxActionRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionRequest>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2822,14 +3141,14 @@ void EosTxActionRequest::Swap(EosTxActionRequest* other) {
 }
 void EosTxActionRequest::InternalSwap(EosTxActionRequest* other) {
   using std::swap;
-  swap(data_size_, other->data_size_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(data_size_, other->data_size_);
 }
 
 ::google::protobuf::Metadata EosTxActionRequest::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2837,21 +3156,29 @@ void EosTxActionRequest::InternalSwap(EosTxActionRequest* other) {
 
 void EosTxActionAck_EosAsset::InitAsDefaultInstance() {
 }
+class EosTxActionAck_EosAsset::HasBitSetters {
+ public:
+  static void set_has_amount(EosTxActionAck_EosAsset* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_symbol(EosTxActionAck_EosAsset* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosAsset::kAmountFieldNumber;
 const int EosTxActionAck_EosAsset::kSymbolFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosAsset::EosTxActionAck_EosAsset()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAsset.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosAsset)
 }
 EosTxActionAck_EosAsset::EosTxActionAck_EosAsset(const EosTxActionAck_EosAsset& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&amount_, &from.amount_,
@@ -2877,13 +3204,8 @@ void EosTxActionAck_EosAsset::SharedDtor() {
 void EosTxActionAck_EosAsset::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosAsset::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosAsset& EosTxActionAck_EosAsset::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAsset.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosAsset_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2895,7 +3217,7 @@ void EosTxActionAck_EosAsset::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&amount_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&symbol_) -
         reinterpret_cast<char*>(&amount_)) + sizeof(symbol_));
@@ -2904,9 +3226,53 @@ void EosTxActionAck_EosAsset::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosAsset::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosAsset*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional sint64 amount = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarintZigZag64(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 symbol = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_symbol(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosAsset::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosAsset)
   for (;;) {
@@ -2916,9 +3282,8 @@ bool EosTxActionAck_EosAsset::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional sint64 amount = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_SINT64>(
                  input, &amount_)));
@@ -2930,9 +3295,8 @@ bool EosTxActionAck_EosAsset::MergePartialFromCodedStream(
 
       // optional uint64 symbol = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_symbol();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_symbol(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &symbol_)));
@@ -2961,6 +3325,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosAsset::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2987,8 +3352,7 @@ void EosTxActionAck_EosAsset::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosAsset::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosAsset)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3021,16 +3385,21 @@ size_t EosTxActionAck_EosAsset::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional sint64 amount = 1;
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::SInt64Size(
           this->amount());
     }
 
     // optional uint64 symbol = 2;
-    if (has_symbol()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->symbol());
@@ -3046,9 +3415,9 @@ void EosTxActionAck_EosAsset::MergeFrom(const ::google::protobuf::Message& from)
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosAsset)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosAsset* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosAsset>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosAsset>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosAsset)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3065,7 +3434,7 @@ void EosTxActionAck_EosAsset::MergeFrom(const EosTxActionAck_EosAsset& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       amount_ = from.amount_;
     }
@@ -3100,15 +3469,15 @@ void EosTxActionAck_EosAsset::Swap(EosTxActionAck_EosAsset* other) {
 }
 void EosTxActionAck_EosAsset::InternalSwap(EosTxActionAck_EosAsset* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(amount_, other->amount_);
   swap(symbol_, other->symbol_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosAsset::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3116,21 +3485,29 @@ void EosTxActionAck_EosAsset::InternalSwap(EosTxActionAck_EosAsset* other) {
 
 void EosTxActionAck_EosPermissionLevel::InitAsDefaultInstance() {
 }
+class EosTxActionAck_EosPermissionLevel::HasBitSetters {
+ public:
+  static void set_has_actor(EosTxActionAck_EosPermissionLevel* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_permission(EosTxActionAck_EosPermissionLevel* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosPermissionLevel::kActorFieldNumber;
 const int EosTxActionAck_EosPermissionLevel::kPermissionFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosPermissionLevel::EosTxActionAck_EosPermissionLevel()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosPermissionLevel.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosPermissionLevel)
 }
 EosTxActionAck_EosPermissionLevel::EosTxActionAck_EosPermissionLevel(const EosTxActionAck_EosPermissionLevel& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&actor_, &from.actor_,
@@ -3156,13 +3533,8 @@ void EosTxActionAck_EosPermissionLevel::SharedDtor() {
 void EosTxActionAck_EosPermissionLevel::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosPermissionLevel::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosPermissionLevel& EosTxActionAck_EosPermissionLevel::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosPermissionLevel.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosPermissionLevel_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3174,7 +3546,7 @@ void EosTxActionAck_EosPermissionLevel::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&actor_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&permission_) -
         reinterpret_cast<char*>(&actor_)) + sizeof(permission_));
@@ -3183,9 +3555,53 @@ void EosTxActionAck_EosPermissionLevel::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosPermissionLevel::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosPermissionLevel*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 actor = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_actor(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 permission = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_permission(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosPermissionLevel::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosPermissionLevel)
   for (;;) {
@@ -3195,9 +3611,8 @@ bool EosTxActionAck_EosPermissionLevel::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 actor = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_actor();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_actor(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &actor_)));
@@ -3209,9 +3624,8 @@ bool EosTxActionAck_EosPermissionLevel::MergePartialFromCodedStream(
 
       // optional uint64 permission = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_permission();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_permission(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &permission_)));
@@ -3240,6 +3654,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosPermissionLevel::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3266,8 +3681,7 @@ void EosTxActionAck_EosPermissionLevel::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosPermissionLevel::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosPermissionLevel)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3300,16 +3714,21 @@ size_t EosTxActionAck_EosPermissionLevel::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint64 actor = 1;
-    if (has_actor()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->actor());
     }
 
     // optional uint64 permission = 2;
-    if (has_permission()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->permission());
@@ -3325,9 +3744,9 @@ void EosTxActionAck_EosPermissionLevel::MergeFrom(const ::google::protobuf::Mess
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosPermissionLevel)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosPermissionLevel* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosPermissionLevel>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosPermissionLevel>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosPermissionLevel)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3344,7 +3763,7 @@ void EosTxActionAck_EosPermissionLevel::MergeFrom(const EosTxActionAck_EosPermis
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       actor_ = from.actor_;
     }
@@ -3379,15 +3798,15 @@ void EosTxActionAck_EosPermissionLevel::Swap(EosTxActionAck_EosPermissionLevel* 
 }
 void EosTxActionAck_EosPermissionLevel::InternalSwap(EosTxActionAck_EosPermissionLevel* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(actor_, other->actor_);
   swap(permission_, other->permission_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosPermissionLevel::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3395,6 +3814,19 @@ void EosTxActionAck_EosPermissionLevel::InternalSwap(EosTxActionAck_EosPermissio
 
 void EosTxActionAck_EosAuthorizationKey::InitAsDefaultInstance() {
 }
+class EosTxActionAck_EosAuthorizationKey::HasBitSetters {
+ public:
+  static void set_has_type(EosTxActionAck_EosAuthorizationKey* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_key(EosTxActionAck_EosAuthorizationKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_weight(EosTxActionAck_EosAuthorizationKey* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosAuthorizationKey::kTypeFieldNumber;
 const int EosTxActionAck_EosAuthorizationKey::kKeyFieldNumber;
@@ -3403,15 +3835,13 @@ const int EosTxActionAck_EosAuthorizationKey::kWeightFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosAuthorizationKey::EosTxActionAck_EosAuthorizationKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAuthorizationKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationKey)
 }
 EosTxActionAck_EosAuthorizationKey::EosTxActionAck_EosAuthorizationKey(const EosTxActionAck_EosAuthorizationKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -3426,6 +3856,8 @@ EosTxActionAck_EosAuthorizationKey::EosTxActionAck_EosAuthorizationKey(const Eos
 }
 
 void EosTxActionAck_EosAuthorizationKey::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosTxActionAck_EosAuthorizationKey_messages_2deos_2eproto.base);
   key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&type_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&weight_) -
@@ -3444,13 +3876,8 @@ void EosTxActionAck_EosAuthorizationKey::SharedDtor() {
 void EosTxActionAck_EosAuthorizationKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosAuthorizationKey::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosAuthorizationKey& EosTxActionAck_EosAuthorizationKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAuthorizationKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosAuthorizationKey_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3466,7 +3893,7 @@ void EosTxActionAck_EosAuthorizationKey::Clear() {
   if (cached_has_bits & 0x00000001u) {
     key_.ClearNonDefaultToEmptyNoArena();
   }
-  if (cached_has_bits & 6u) {
+  if (cached_has_bits & 0x00000006u) {
     ::memset(&type_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&weight_) -
         reinterpret_cast<char*>(&type_)) + sizeof(weight_));
@@ -3475,9 +3902,95 @@ void EosTxActionAck_EosAuthorizationKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosAuthorizationKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosAuthorizationKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 type = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes key = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // repeated uint32 address_n = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 24) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 24 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional uint32 weight = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_weight(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosAuthorizationKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationKey)
   for (;;) {
@@ -3487,9 +4000,8 @@ bool EosTxActionAck_EosAuthorizationKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 type = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &type_)));
@@ -3501,8 +4013,7 @@ bool EosTxActionAck_EosAuthorizationKey::MergePartialFromCodedStream(
 
       // optional bytes key = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_key()));
         } else {
@@ -3513,14 +4024,11 @@ bool EosTxActionAck_EosAuthorizationKey::MergePartialFromCodedStream(
 
       // repeated uint32 address_n = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 24u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -3532,9 +4040,8 @@ bool EosTxActionAck_EosAuthorizationKey::MergePartialFromCodedStream(
 
       // optional uint32 weight = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_weight();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_weight(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &weight_)));
@@ -3563,6 +4070,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosAuthorizationKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3601,8 +4109,7 @@ void EosTxActionAck_EosAuthorizationKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosAuthorizationKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3646,6 +4153,10 @@ size_t EosTxActionAck_EosAuthorizationKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 3;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -3655,23 +4166,24 @@ size_t EosTxActionAck_EosAuthorizationKey::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 7u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional bytes key = 2;
-    if (has_key()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->key());
     }
 
     // optional uint32 type = 1;
-    if (has_type()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->type());
     }
 
     // optional uint32 weight = 4;
-    if (has_weight()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->weight());
@@ -3687,9 +4199,9 @@ void EosTxActionAck_EosAuthorizationKey::MergeFrom(const ::google::protobuf::Mes
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationKey)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosAuthorizationKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosAuthorizationKey>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosAuthorizationKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3707,9 +4219,9 @@ void EosTxActionAck_EosAuthorizationKey::MergeFrom(const EosTxActionAck_EosAutho
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_key();
+      _has_bits_[0] |= 0x00000001u;
       key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.key_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -3746,18 +4258,18 @@ void EosTxActionAck_EosAuthorizationKey::Swap(EosTxActionAck_EosAuthorizationKey
 }
 void EosTxActionAck_EosAuthorizationKey::InternalSwap(EosTxActionAck_EosAuthorizationKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   key_.Swap(&other->key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(type_, other->type_);
   swap(weight_, other->weight_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosAuthorizationKey::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3767,33 +4279,48 @@ void EosTxActionAck_EosAuthorizationAccount::InitAsDefaultInstance() {
   ::hw::trezor::messages::eos::_EosTxActionAck_EosAuthorizationAccount_default_instance_._instance.get_mutable()->account_ = const_cast< ::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel*>(
       ::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel::internal_default_instance());
 }
+class EosTxActionAck_EosAuthorizationAccount::HasBitSetters {
+ public:
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel& account(const EosTxActionAck_EosAuthorizationAccount* msg);
+  static void set_has_account(EosTxActionAck_EosAuthorizationAccount* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_weight(EosTxActionAck_EosAuthorizationAccount* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
+const ::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel&
+EosTxActionAck_EosAuthorizationAccount::HasBitSetters::account(const EosTxActionAck_EosAuthorizationAccount* msg) {
+  return *msg->account_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosAuthorizationAccount::kAccountFieldNumber;
 const int EosTxActionAck_EosAuthorizationAccount::kWeightFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosAuthorizationAccount::EosTxActionAck_EosAuthorizationAccount()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAuthorizationAccount.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationAccount)
 }
 EosTxActionAck_EosAuthorizationAccount::EosTxActionAck_EosAuthorizationAccount(const EosTxActionAck_EosAuthorizationAccount& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_account()) {
     account_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel(*from.account_);
   } else {
-    account_ = NULL;
+    account_ = nullptr;
   }
   weight_ = from.weight_;
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationAccount)
 }
 
 void EosTxActionAck_EosAuthorizationAccount::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosTxActionAck_EosAuthorizationAccount_messages_2deos_2eproto.base);
   ::memset(&account_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&weight_) -
       reinterpret_cast<char*>(&account_)) + sizeof(weight_));
@@ -3811,13 +4338,8 @@ void EosTxActionAck_EosAuthorizationAccount::SharedDtor() {
 void EosTxActionAck_EosAuthorizationAccount::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosAuthorizationAccount::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosAuthorizationAccount& EosTxActionAck_EosAuthorizationAccount::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAuthorizationAccount.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosAuthorizationAccount_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3830,7 +4352,7 @@ void EosTxActionAck_EosAuthorizationAccount::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(account_ != NULL);
+    GOOGLE_DCHECK(account_ != nullptr);
     account_->Clear();
   }
   weight_ = 0u;
@@ -3838,9 +4360,62 @@ void EosTxActionAck_EosAuthorizationAccount::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosAuthorizationAccount::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosAuthorizationAccount*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosPermissionLevel account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel::_InternalParse;
+        object = msg->mutable_account();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional uint32 weight = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_weight(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosAuthorizationAccount::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationAccount)
   for (;;) {
@@ -3850,8 +4425,7 @@ bool EosTxActionAck_EosAuthorizationAccount::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosPermissionLevel account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_account()));
         } else {
@@ -3862,9 +4436,8 @@ bool EosTxActionAck_EosAuthorizationAccount::MergePartialFromCodedStream(
 
       // optional uint32 weight = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_weight();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_weight(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &weight_)));
@@ -3893,6 +4466,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosAuthorizationAccount::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3904,7 +4478,7 @@ void EosTxActionAck_EosAuthorizationAccount::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosPermissionLevel account = 1;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_account(), output);
+      1, HasBitSetters::account(this), output);
   }
 
   // optional uint32 weight = 2;
@@ -3920,8 +4494,7 @@ void EosTxActionAck_EosAuthorizationAccount::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosAuthorizationAccount::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationAccount)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3931,7 +4504,7 @@ void EosTxActionAck_EosAuthorizationAccount::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_account(), deterministic, target);
+        1, HasBitSetters::account(this), target);
   }
 
   // optional uint32 weight = 2;
@@ -3956,16 +4529,21 @@ size_t EosTxActionAck_EosAuthorizationAccount::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosPermissionLevel account = 1;
-    if (has_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *account_);
     }
 
     // optional uint32 weight = 2;
-    if (has_weight()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->weight());
@@ -3981,9 +4559,9 @@ void EosTxActionAck_EosAuthorizationAccount::MergeFrom(const ::google::protobuf:
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationAccount)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosAuthorizationAccount* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosAuthorizationAccount>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosAuthorizationAccount>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationAccount)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4000,7 +4578,7 @@ void EosTxActionAck_EosAuthorizationAccount::MergeFrom(const EosTxActionAck_EosA
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       mutable_account()->::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel::MergeFrom(from.account());
     }
@@ -4035,15 +4613,15 @@ void EosTxActionAck_EosAuthorizationAccount::Swap(EosTxActionAck_EosAuthorizatio
 }
 void EosTxActionAck_EosAuthorizationAccount::InternalSwap(EosTxActionAck_EosAuthorizationAccount* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(account_, other->account_);
   swap(weight_, other->weight_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosAuthorizationAccount::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4051,21 +4629,29 @@ void EosTxActionAck_EosAuthorizationAccount::InternalSwap(EosTxActionAck_EosAuth
 
 void EosTxActionAck_EosAuthorizationWait::InitAsDefaultInstance() {
 }
+class EosTxActionAck_EosAuthorizationWait::HasBitSetters {
+ public:
+  static void set_has_wait_sec(EosTxActionAck_EosAuthorizationWait* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_weight(EosTxActionAck_EosAuthorizationWait* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosAuthorizationWait::kWaitSecFieldNumber;
 const int EosTxActionAck_EosAuthorizationWait::kWeightFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosAuthorizationWait::EosTxActionAck_EosAuthorizationWait()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAuthorizationWait.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationWait)
 }
 EosTxActionAck_EosAuthorizationWait::EosTxActionAck_EosAuthorizationWait(const EosTxActionAck_EosAuthorizationWait& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&wait_sec_, &from.wait_sec_,
@@ -4091,13 +4677,8 @@ void EosTxActionAck_EosAuthorizationWait::SharedDtor() {
 void EosTxActionAck_EosAuthorizationWait::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosAuthorizationWait::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosAuthorizationWait& EosTxActionAck_EosAuthorizationWait::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAuthorizationWait.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosAuthorizationWait_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4109,7 +4690,7 @@ void EosTxActionAck_EosAuthorizationWait::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&wait_sec_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&weight_) -
         reinterpret_cast<char*>(&wait_sec_)) + sizeof(weight_));
@@ -4118,9 +4699,53 @@ void EosTxActionAck_EosAuthorizationWait::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosAuthorizationWait::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosAuthorizationWait*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 wait_sec = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_wait_sec(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 weight = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_weight(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosAuthorizationWait::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationWait)
   for (;;) {
@@ -4130,9 +4755,8 @@ bool EosTxActionAck_EosAuthorizationWait::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 wait_sec = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_wait_sec();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_wait_sec(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &wait_sec_)));
@@ -4144,9 +4768,8 @@ bool EosTxActionAck_EosAuthorizationWait::MergePartialFromCodedStream(
 
       // optional uint32 weight = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_weight();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_weight(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &weight_)));
@@ -4175,6 +4798,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosAuthorizationWait::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4201,8 +4825,7 @@ void EosTxActionAck_EosAuthorizationWait::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosAuthorizationWait::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationWait)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4235,16 +4858,21 @@ size_t EosTxActionAck_EosAuthorizationWait::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint32 wait_sec = 1;
-    if (has_wait_sec()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->wait_sec());
     }
 
     // optional uint32 weight = 2;
-    if (has_weight()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->weight());
@@ -4260,9 +4888,9 @@ void EosTxActionAck_EosAuthorizationWait::MergeFrom(const ::google::protobuf::Me
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationWait)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosAuthorizationWait* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosAuthorizationWait>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosAuthorizationWait>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationWait)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4279,7 +4907,7 @@ void EosTxActionAck_EosAuthorizationWait::MergeFrom(const EosTxActionAck_EosAuth
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       wait_sec_ = from.wait_sec_;
     }
@@ -4314,15 +4942,15 @@ void EosTxActionAck_EosAuthorizationWait::Swap(EosTxActionAck_EosAuthorizationWa
 }
 void EosTxActionAck_EosAuthorizationWait::InternalSwap(EosTxActionAck_EosAuthorizationWait* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(wait_sec_, other->wait_sec_);
   swap(weight_, other->weight_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosAuthorizationWait::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4330,6 +4958,13 @@ void EosTxActionAck_EosAuthorizationWait::InternalSwap(EosTxActionAck_EosAuthori
 
 void EosTxActionAck_EosAuthorization::InitAsDefaultInstance() {
 }
+class EosTxActionAck_EosAuthorization::HasBitSetters {
+ public:
+  static void set_has_threshold(EosTxActionAck_EosAuthorization* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosAuthorization::kThresholdFieldNumber;
 const int EosTxActionAck_EosAuthorization::kKeysFieldNumber;
@@ -4338,15 +4973,13 @@ const int EosTxActionAck_EosAuthorization::kWaitsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosAuthorization::EosTxActionAck_EosAuthorization()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAuthorization.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosAuthorization)
 }
 EosTxActionAck_EosAuthorization::EosTxActionAck_EosAuthorization(const EosTxActionAck_EosAuthorization& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       keys_(from.keys_),
       accounts_(from.accounts_),
@@ -4357,6 +4990,8 @@ EosTxActionAck_EosAuthorization::EosTxActionAck_EosAuthorization(const EosTxActi
 }
 
 void EosTxActionAck_EosAuthorization::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosTxActionAck_EosAuthorization_messages_2deos_2eproto.base);
   threshold_ = 0u;
 }
 
@@ -4371,13 +5006,8 @@ void EosTxActionAck_EosAuthorization::SharedDtor() {
 void EosTxActionAck_EosAuthorization::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosAuthorization::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosAuthorization& EosTxActionAck_EosAuthorization::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosAuthorization.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosAuthorization_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4396,9 +5026,97 @@ void EosTxActionAck_EosAuthorization::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosAuthorization::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosAuthorization*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 threshold = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_threshold(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated .hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationKey keys = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey::_InternalParse;
+          object = msg->add_keys();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 18 && (ptr += 1));
+        break;
+      }
+      // repeated .hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationAccount accounts = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount::_InternalParse;
+          object = msg->add_accounts();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 26 && (ptr += 1));
+        break;
+      }
+      // repeated .hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationWait waits = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait::_InternalParse;
+          object = msg->add_waits();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 34 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosAuthorization::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosAuthorization)
   for (;;) {
@@ -4408,9 +5126,8 @@ bool EosTxActionAck_EosAuthorization::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 threshold = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_threshold();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_threshold(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &threshold_)));
@@ -4422,8 +5139,7 @@ bool EosTxActionAck_EosAuthorization::MergePartialFromCodedStream(
 
       // repeated .hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationKey keys = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_keys()));
         } else {
@@ -4434,8 +5150,7 @@ bool EosTxActionAck_EosAuthorization::MergePartialFromCodedStream(
 
       // repeated .hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationAccount accounts = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_accounts()));
         } else {
@@ -4446,8 +5161,7 @@ bool EosTxActionAck_EosAuthorization::MergePartialFromCodedStream(
 
       // repeated .hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationWait waits = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_waits()));
         } else {
@@ -4475,6 +5189,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosAuthorization::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4523,8 +5238,7 @@ void EosTxActionAck_EosAuthorization::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosAuthorization::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosAuthorization)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4540,7 +5254,7 @@ void EosTxActionAck_EosAuthorization::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->keys_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->keys(static_cast<int>(i)), deterministic, target);
+        2, this->keys(static_cast<int>(i)), target);
   }
 
   // repeated .hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationAccount accounts = 3;
@@ -4548,7 +5262,7 @@ void EosTxActionAck_EosAuthorization::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->accounts_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->accounts(static_cast<int>(i)), deterministic, target);
+        3, this->accounts(static_cast<int>(i)), target);
   }
 
   // repeated .hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationWait waits = 4;
@@ -4556,7 +5270,7 @@ void EosTxActionAck_EosAuthorization::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->waits_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->waits(static_cast<int>(i)), deterministic, target);
+        4, this->waits(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4576,6 +5290,10 @@ size_t EosTxActionAck_EosAuthorization::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .hw.trezor.messages.eos.EosTxActionAck.EosAuthorizationKey keys = 2;
   {
     unsigned int count = static_cast<unsigned int>(this->keys_size());
@@ -4610,7 +5328,8 @@ size_t EosTxActionAck_EosAuthorization::ByteSizeLong() const {
   }
 
   // optional uint32 threshold = 1;
-  if (has_threshold()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->threshold());
@@ -4625,9 +5344,9 @@ void EosTxActionAck_EosAuthorization::MergeFrom(const ::google::protobuf::Messag
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosAuthorization)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosAuthorization* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosAuthorization>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosAuthorization>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosAuthorization)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4675,17 +5394,17 @@ void EosTxActionAck_EosAuthorization::Swap(EosTxActionAck_EosAuthorization* othe
 }
 void EosTxActionAck_EosAuthorization::InternalSwap(EosTxActionAck_EosAuthorization* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&keys_)->InternalSwap(CastToBase(&other->keys_));
   CastToBase(&accounts_)->InternalSwap(CastToBase(&other->accounts_));
   CastToBase(&waits_)->InternalSwap(CastToBase(&other->waits_));
   swap(threshold_, other->threshold_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosAuthorization::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4693,6 +5412,16 @@ void EosTxActionAck_EosAuthorization::InternalSwap(EosTxActionAck_EosAuthorizati
 
 void EosTxActionAck_EosActionCommon::InitAsDefaultInstance() {
 }
+class EosTxActionAck_EosActionCommon::HasBitSetters {
+ public:
+  static void set_has_account(EosTxActionAck_EosActionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_name(EosTxActionAck_EosActionCommon* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionCommon::kAccountFieldNumber;
 const int EosTxActionAck_EosActionCommon::kNameFieldNumber;
@@ -4700,15 +5429,13 @@ const int EosTxActionAck_EosActionCommon::kAuthorizationFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionCommon::EosTxActionAck_EosActionCommon()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionCommon.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionCommon)
 }
 EosTxActionAck_EosActionCommon::EosTxActionAck_EosActionCommon(const EosTxActionAck_EosActionCommon& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       authorization_(from.authorization_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -4719,6 +5446,8 @@ EosTxActionAck_EosActionCommon::EosTxActionAck_EosActionCommon(const EosTxAction
 }
 
 void EosTxActionAck_EosActionCommon::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosTxActionAck_EosActionCommon_messages_2deos_2eproto.base);
   ::memset(&account_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&name_) -
       reinterpret_cast<char*>(&account_)) + sizeof(name_));
@@ -4735,13 +5464,8 @@ void EosTxActionAck_EosActionCommon::SharedDtor() {
 void EosTxActionAck_EosActionCommon::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionCommon::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionCommon& EosTxActionAck_EosActionCommon::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionCommon.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionCommon_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4754,7 +5478,7 @@ void EosTxActionAck_EosActionCommon::Clear() {
 
   authorization_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&account_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&name_) -
         reinterpret_cast<char*>(&account_)) + sizeof(name_));
@@ -4763,9 +5487,72 @@ void EosTxActionAck_EosActionCommon::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionCommon::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionCommon*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_account(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 name = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_name(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated .hw.trezor.messages.eos.EosTxActionAck.EosPermissionLevel authorization = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel::_InternalParse;
+          object = msg->add_authorization();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 26 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionCommon::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionCommon)
   for (;;) {
@@ -4775,9 +5562,8 @@ bool EosTxActionAck_EosActionCommon::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_account();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_account(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &account_)));
@@ -4789,9 +5575,8 @@ bool EosTxActionAck_EosActionCommon::MergePartialFromCodedStream(
 
       // optional uint64 name = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_name();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_name(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &name_)));
@@ -4803,8 +5588,7 @@ bool EosTxActionAck_EosActionCommon::MergePartialFromCodedStream(
 
       // repeated .hw.trezor.messages.eos.EosTxActionAck.EosPermissionLevel authorization = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_authorization()));
         } else {
@@ -4832,6 +5616,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionCommon::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4867,8 +5652,7 @@ void EosTxActionAck_EosActionCommon::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionCommon::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionCommon)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4889,7 +5673,7 @@ void EosTxActionAck_EosActionCommon::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->authorization_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->authorization(static_cast<int>(i)), deterministic, target);
+        3, this->authorization(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4909,6 +5693,10 @@ size_t EosTxActionAck_EosActionCommon::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .hw.trezor.messages.eos.EosTxActionAck.EosPermissionLevel authorization = 3;
   {
     unsigned int count = static_cast<unsigned int>(this->authorization_size());
@@ -4920,16 +5708,17 @@ size_t EosTxActionAck_EosActionCommon::ByteSizeLong() const {
     }
   }
 
-  if (_has_bits_[0 / 32] & 3u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint64 account = 1;
-    if (has_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->account());
     }
 
     // optional uint64 name = 2;
-    if (has_name()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->name());
@@ -4945,9 +5734,9 @@ void EosTxActionAck_EosActionCommon::MergeFrom(const ::google::protobuf::Message
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionCommon)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionCommon* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionCommon>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionCommon>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionCommon)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4965,7 +5754,7 @@ void EosTxActionAck_EosActionCommon::MergeFrom(const EosTxActionAck_EosActionCom
 
   authorization_.MergeFrom(from.authorization_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       account_ = from.account_;
     }
@@ -5000,16 +5789,16 @@ void EosTxActionAck_EosActionCommon::Swap(EosTxActionAck_EosActionCommon* other)
 }
 void EosTxActionAck_EosActionCommon::InternalSwap(EosTxActionAck_EosActionCommon* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&authorization_)->InternalSwap(CastToBase(&other->authorization_));
   swap(account_, other->account_);
   swap(name_, other->name_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionCommon::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5019,6 +5808,27 @@ void EosTxActionAck_EosActionTransfer::InitAsDefaultInstance() {
   ::hw::trezor::messages::eos::_EosTxActionAck_EosActionTransfer_default_instance_._instance.get_mutable()->quantity_ = const_cast< ::hw::trezor::messages::eos::EosTxActionAck_EosAsset*>(
       ::hw::trezor::messages::eos::EosTxActionAck_EosAsset::internal_default_instance());
 }
+class EosTxActionAck_EosActionTransfer::HasBitSetters {
+ public:
+  static void set_has_sender(EosTxActionAck_EosActionTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_receiver(EosTxActionAck_EosActionTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosAsset& quantity(const EosTxActionAck_EosActionTransfer* msg);
+  static void set_has_quantity(EosTxActionAck_EosActionTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_memo(EosTxActionAck_EosActionTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::hw::trezor::messages::eos::EosTxActionAck_EosAsset&
+EosTxActionAck_EosActionTransfer::HasBitSetters::quantity(const EosTxActionAck_EosActionTransfer* msg) {
+  return *msg->quantity_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionTransfer::kSenderFieldNumber;
 const int EosTxActionAck_EosActionTransfer::kReceiverFieldNumber;
@@ -5027,15 +5837,13 @@ const int EosTxActionAck_EosActionTransfer::kMemoFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionTransfer::EosTxActionAck_EosActionTransfer()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionTransfer.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionTransfer)
 }
 EosTxActionAck_EosActionTransfer::EosTxActionAck_EosActionTransfer(const EosTxActionAck_EosActionTransfer& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   memo_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -5045,7 +5853,7 @@ EosTxActionAck_EosActionTransfer::EosTxActionAck_EosActionTransfer(const EosTxAc
   if (from.has_quantity()) {
     quantity_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosAsset(*from.quantity_);
   } else {
-    quantity_ = NULL;
+    quantity_ = nullptr;
   }
   ::memcpy(&sender_, &from.sender_,
     static_cast<size_t>(reinterpret_cast<char*>(&receiver_) -
@@ -5054,6 +5862,8 @@ EosTxActionAck_EosActionTransfer::EosTxActionAck_EosActionTransfer(const EosTxAc
 }
 
 void EosTxActionAck_EosActionTransfer::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosTxActionAck_EosActionTransfer_messages_2deos_2eproto.base);
   memo_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&quantity_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&receiver_) -
@@ -5073,13 +5883,8 @@ void EosTxActionAck_EosActionTransfer::SharedDtor() {
 void EosTxActionAck_EosActionTransfer::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionTransfer::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionTransfer& EosTxActionAck_EosActionTransfer::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionTransfer.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionTransfer_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5091,16 +5896,16 @@ void EosTxActionAck_EosActionTransfer::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       memo_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(quantity_ != NULL);
+      GOOGLE_DCHECK(quantity_ != nullptr);
       quantity_->Clear();
     }
   }
-  if (cached_has_bits & 12u) {
+  if (cached_has_bits & 0x0000000cu) {
     ::memset(&sender_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&receiver_) -
         reinterpret_cast<char*>(&sender_)) + sizeof(receiver_));
@@ -5109,9 +5914,89 @@ void EosTxActionAck_EosActionTransfer::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionTransfer::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionTransfer*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 sender = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_sender(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 receiver = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_receiver(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset quantity = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosAsset::_InternalParse;
+        object = msg->mutable_quantity();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional string memo = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.eos.EosTxActionAck.EosActionTransfer.memo");
+        object = msg->mutable_memo();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionTransfer::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionTransfer)
   for (;;) {
@@ -5121,9 +6006,8 @@ bool EosTxActionAck_EosActionTransfer::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 sender = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_sender();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_sender(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &sender_)));
@@ -5135,9 +6019,8 @@ bool EosTxActionAck_EosActionTransfer::MergePartialFromCodedStream(
 
       // optional uint64 receiver = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_receiver();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_receiver(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &receiver_)));
@@ -5149,8 +6032,7 @@ bool EosTxActionAck_EosActionTransfer::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset quantity = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_quantity()));
         } else {
@@ -5161,8 +6043,7 @@ bool EosTxActionAck_EosActionTransfer::MergePartialFromCodedStream(
 
       // optional string memo = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_memo()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -5194,6 +6075,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionTransfer::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5215,7 +6097,7 @@ void EosTxActionAck_EosActionTransfer::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset quantity = 3;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_quantity(), output);
+      3, HasBitSetters::quantity(this), output);
   }
 
   // optional string memo = 4;
@@ -5236,8 +6118,7 @@ void EosTxActionAck_EosActionTransfer::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionTransfer::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionTransfer)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5257,7 +6138,7 @@ void EosTxActionAck_EosActionTransfer::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_quantity(), deterministic, target);
+        3, HasBitSetters::quantity(this), target);
   }
 
   // optional string memo = 4;
@@ -5288,30 +6169,35 @@ size_t EosTxActionAck_EosActionTransfer::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional string memo = 4;
-    if (has_memo()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->memo());
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset quantity = 3;
-    if (has_quantity()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *quantity_);
     }
 
     // optional uint64 sender = 1;
-    if (has_sender()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->sender());
     }
 
     // optional uint64 receiver = 2;
-    if (has_receiver()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->receiver());
@@ -5327,9 +6213,9 @@ void EosTxActionAck_EosActionTransfer::MergeFrom(const ::google::protobuf::Messa
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionTransfer)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionTransfer* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionTransfer>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionTransfer>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionTransfer)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5346,9 +6232,9 @@ void EosTxActionAck_EosActionTransfer::MergeFrom(const EosTxActionAck_EosActionT
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_memo();
+      _has_bits_[0] |= 0x00000001u;
       memo_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.memo_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -5388,18 +6274,18 @@ void EosTxActionAck_EosActionTransfer::Swap(EosTxActionAck_EosActionTransfer* ot
 }
 void EosTxActionAck_EosActionTransfer::InternalSwap(EosTxActionAck_EosActionTransfer* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   memo_.Swap(&other->memo_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(quantity_, other->quantity_);
   swap(sender_, other->sender_);
   swap(receiver_, other->receiver_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionTransfer::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5411,6 +6297,35 @@ void EosTxActionAck_EosActionDelegate::InitAsDefaultInstance() {
   ::hw::trezor::messages::eos::_EosTxActionAck_EosActionDelegate_default_instance_._instance.get_mutable()->cpu_quantity_ = const_cast< ::hw::trezor::messages::eos::EosTxActionAck_EosAsset*>(
       ::hw::trezor::messages::eos::EosTxActionAck_EosAsset::internal_default_instance());
 }
+class EosTxActionAck_EosActionDelegate::HasBitSetters {
+ public:
+  static void set_has_sender(EosTxActionAck_EosActionDelegate* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_receiver(EosTxActionAck_EosActionDelegate* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosAsset& net_quantity(const EosTxActionAck_EosActionDelegate* msg);
+  static void set_has_net_quantity(EosTxActionAck_EosActionDelegate* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosAsset& cpu_quantity(const EosTxActionAck_EosActionDelegate* msg);
+  static void set_has_cpu_quantity(EosTxActionAck_EosActionDelegate* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_transfer(EosTxActionAck_EosActionDelegate* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+};
+
+const ::hw::trezor::messages::eos::EosTxActionAck_EosAsset&
+EosTxActionAck_EosActionDelegate::HasBitSetters::net_quantity(const EosTxActionAck_EosActionDelegate* msg) {
+  return *msg->net_quantity_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosAsset&
+EosTxActionAck_EosActionDelegate::HasBitSetters::cpu_quantity(const EosTxActionAck_EosActionDelegate* msg) {
+  return *msg->cpu_quantity_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionDelegate::kSenderFieldNumber;
 const int EosTxActionAck_EosActionDelegate::kReceiverFieldNumber;
@@ -5420,26 +6335,24 @@ const int EosTxActionAck_EosActionDelegate::kTransferFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionDelegate::EosTxActionAck_EosActionDelegate()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionDelegate.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionDelegate)
 }
 EosTxActionAck_EosActionDelegate::EosTxActionAck_EosActionDelegate(const EosTxActionAck_EosActionDelegate& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_net_quantity()) {
     net_quantity_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosAsset(*from.net_quantity_);
   } else {
-    net_quantity_ = NULL;
+    net_quantity_ = nullptr;
   }
   if (from.has_cpu_quantity()) {
     cpu_quantity_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosAsset(*from.cpu_quantity_);
   } else {
-    cpu_quantity_ = NULL;
+    cpu_quantity_ = nullptr;
   }
   ::memcpy(&sender_, &from.sender_,
     static_cast<size_t>(reinterpret_cast<char*>(&transfer_) -
@@ -5448,6 +6361,8 @@ EosTxActionAck_EosActionDelegate::EosTxActionAck_EosActionDelegate(const EosTxAc
 }
 
 void EosTxActionAck_EosActionDelegate::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosTxActionAck_EosActionDelegate_messages_2deos_2eproto.base);
   ::memset(&net_quantity_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&transfer_) -
       reinterpret_cast<char*>(&net_quantity_)) + sizeof(transfer_));
@@ -5466,13 +6381,8 @@ void EosTxActionAck_EosActionDelegate::SharedDtor() {
 void EosTxActionAck_EosActionDelegate::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionDelegate::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionDelegate& EosTxActionAck_EosActionDelegate::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionDelegate.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionDelegate_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5484,17 +6394,17 @@ void EosTxActionAck_EosActionDelegate::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(net_quantity_ != NULL);
+      GOOGLE_DCHECK(net_quantity_ != nullptr);
       net_quantity_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(cpu_quantity_ != NULL);
+      GOOGLE_DCHECK(cpu_quantity_ != nullptr);
       cpu_quantity_->Clear();
     }
   }
-  if (cached_has_bits & 28u) {
+  if (cached_has_bits & 0x0000001cu) {
     ::memset(&sender_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&transfer_) -
         reinterpret_cast<char*>(&sender_)) + sizeof(transfer_));
@@ -5503,9 +6413,89 @@ void EosTxActionAck_EosActionDelegate::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionDelegate::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionDelegate*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 sender = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_sender(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 receiver = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_receiver(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset net_quantity = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosAsset::_InternalParse;
+        object = msg->mutable_net_quantity();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset cpu_quantity = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosAsset::_InternalParse;
+        object = msg->mutable_cpu_quantity();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional bool transfer = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_transfer(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionDelegate::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionDelegate)
   for (;;) {
@@ -5515,9 +6505,8 @@ bool EosTxActionAck_EosActionDelegate::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 sender = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_sender();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_sender(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &sender_)));
@@ -5529,9 +6518,8 @@ bool EosTxActionAck_EosActionDelegate::MergePartialFromCodedStream(
 
       // optional uint64 receiver = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_receiver();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_receiver(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &receiver_)));
@@ -5543,8 +6531,7 @@ bool EosTxActionAck_EosActionDelegate::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset net_quantity = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_net_quantity()));
         } else {
@@ -5555,8 +6542,7 @@ bool EosTxActionAck_EosActionDelegate::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset cpu_quantity = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_cpu_quantity()));
         } else {
@@ -5567,9 +6553,8 @@ bool EosTxActionAck_EosActionDelegate::MergePartialFromCodedStream(
 
       // optional bool transfer = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_transfer();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_transfer(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &transfer_)));
@@ -5598,6 +6583,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionDelegate::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5619,13 +6605,13 @@ void EosTxActionAck_EosActionDelegate::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset net_quantity = 3;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_net_quantity(), output);
+      3, HasBitSetters::net_quantity(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset cpu_quantity = 4;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_cpu_quantity(), output);
+      4, HasBitSetters::cpu_quantity(this), output);
   }
 
   // optional bool transfer = 5;
@@ -5641,8 +6627,7 @@ void EosTxActionAck_EosActionDelegate::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionDelegate::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionDelegate)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5662,14 +6647,14 @@ void EosTxActionAck_EosActionDelegate::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_net_quantity(), deterministic, target);
+        3, HasBitSetters::net_quantity(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset cpu_quantity = 4;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_cpu_quantity(), deterministic, target);
+        4, HasBitSetters::cpu_quantity(this), target);
   }
 
   // optional bool transfer = 5;
@@ -5694,37 +6679,42 @@ size_t EosTxActionAck_EosActionDelegate::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 31u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000001fu) {
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset net_quantity = 3;
-    if (has_net_quantity()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *net_quantity_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset cpu_quantity = 4;
-    if (has_cpu_quantity()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *cpu_quantity_);
     }
 
     // optional uint64 sender = 1;
-    if (has_sender()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->sender());
     }
 
     // optional uint64 receiver = 2;
-    if (has_receiver()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->receiver());
     }
 
     // optional bool transfer = 5;
-    if (has_transfer()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 + 1;
     }
 
@@ -5738,9 +6728,9 @@ void EosTxActionAck_EosActionDelegate::MergeFrom(const ::google::protobuf::Messa
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionDelegate)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionDelegate* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionDelegate>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionDelegate>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionDelegate)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5757,7 +6747,7 @@ void EosTxActionAck_EosActionDelegate::MergeFrom(const EosTxActionAck_EosActionD
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
       mutable_net_quantity()->::hw::trezor::messages::eos::EosTxActionAck_EosAsset::MergeFrom(from.net_quantity());
     }
@@ -5801,18 +6791,18 @@ void EosTxActionAck_EosActionDelegate::Swap(EosTxActionAck_EosActionDelegate* ot
 }
 void EosTxActionAck_EosActionDelegate::InternalSwap(EosTxActionAck_EosActionDelegate* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(net_quantity_, other->net_quantity_);
   swap(cpu_quantity_, other->cpu_quantity_);
   swap(sender_, other->sender_);
   swap(receiver_, other->receiver_);
   swap(transfer_, other->transfer_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionDelegate::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5824,6 +6814,32 @@ void EosTxActionAck_EosActionUndelegate::InitAsDefaultInstance() {
   ::hw::trezor::messages::eos::_EosTxActionAck_EosActionUndelegate_default_instance_._instance.get_mutable()->cpu_quantity_ = const_cast< ::hw::trezor::messages::eos::EosTxActionAck_EosAsset*>(
       ::hw::trezor::messages::eos::EosTxActionAck_EosAsset::internal_default_instance());
 }
+class EosTxActionAck_EosActionUndelegate::HasBitSetters {
+ public:
+  static void set_has_sender(EosTxActionAck_EosActionUndelegate* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_receiver(EosTxActionAck_EosActionUndelegate* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosAsset& net_quantity(const EosTxActionAck_EosActionUndelegate* msg);
+  static void set_has_net_quantity(EosTxActionAck_EosActionUndelegate* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosAsset& cpu_quantity(const EosTxActionAck_EosActionUndelegate* msg);
+  static void set_has_cpu_quantity(EosTxActionAck_EosActionUndelegate* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
+const ::hw::trezor::messages::eos::EosTxActionAck_EosAsset&
+EosTxActionAck_EosActionUndelegate::HasBitSetters::net_quantity(const EosTxActionAck_EosActionUndelegate* msg) {
+  return *msg->net_quantity_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosAsset&
+EosTxActionAck_EosActionUndelegate::HasBitSetters::cpu_quantity(const EosTxActionAck_EosActionUndelegate* msg) {
+  return *msg->cpu_quantity_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionUndelegate::kSenderFieldNumber;
 const int EosTxActionAck_EosActionUndelegate::kReceiverFieldNumber;
@@ -5832,26 +6848,24 @@ const int EosTxActionAck_EosActionUndelegate::kCpuQuantityFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionUndelegate::EosTxActionAck_EosActionUndelegate()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionUndelegate.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionUndelegate)
 }
 EosTxActionAck_EosActionUndelegate::EosTxActionAck_EosActionUndelegate(const EosTxActionAck_EosActionUndelegate& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_net_quantity()) {
     net_quantity_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosAsset(*from.net_quantity_);
   } else {
-    net_quantity_ = NULL;
+    net_quantity_ = nullptr;
   }
   if (from.has_cpu_quantity()) {
     cpu_quantity_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosAsset(*from.cpu_quantity_);
   } else {
-    cpu_quantity_ = NULL;
+    cpu_quantity_ = nullptr;
   }
   ::memcpy(&sender_, &from.sender_,
     static_cast<size_t>(reinterpret_cast<char*>(&receiver_) -
@@ -5860,6 +6874,8 @@ EosTxActionAck_EosActionUndelegate::EosTxActionAck_EosActionUndelegate(const Eos
 }
 
 void EosTxActionAck_EosActionUndelegate::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosTxActionAck_EosActionUndelegate_messages_2deos_2eproto.base);
   ::memset(&net_quantity_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&receiver_) -
       reinterpret_cast<char*>(&net_quantity_)) + sizeof(receiver_));
@@ -5878,13 +6894,8 @@ void EosTxActionAck_EosActionUndelegate::SharedDtor() {
 void EosTxActionAck_EosActionUndelegate::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionUndelegate::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionUndelegate& EosTxActionAck_EosActionUndelegate::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionUndelegate.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionUndelegate_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5896,17 +6907,17 @@ void EosTxActionAck_EosActionUndelegate::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(net_quantity_ != NULL);
+      GOOGLE_DCHECK(net_quantity_ != nullptr);
       net_quantity_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(cpu_quantity_ != NULL);
+      GOOGLE_DCHECK(cpu_quantity_ != nullptr);
       cpu_quantity_->Clear();
     }
   }
-  if (cached_has_bits & 12u) {
+  if (cached_has_bits & 0x0000000cu) {
     ::memset(&sender_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&receiver_) -
         reinterpret_cast<char*>(&sender_)) + sizeof(receiver_));
@@ -5915,9 +6926,82 @@ void EosTxActionAck_EosActionUndelegate::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionUndelegate::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionUndelegate*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 sender = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_sender(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 receiver = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_receiver(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset net_quantity = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosAsset::_InternalParse;
+        object = msg->mutable_net_quantity();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset cpu_quantity = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosAsset::_InternalParse;
+        object = msg->mutable_cpu_quantity();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionUndelegate::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionUndelegate)
   for (;;) {
@@ -5927,9 +7011,8 @@ bool EosTxActionAck_EosActionUndelegate::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 sender = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_sender();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_sender(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &sender_)));
@@ -5941,9 +7024,8 @@ bool EosTxActionAck_EosActionUndelegate::MergePartialFromCodedStream(
 
       // optional uint64 receiver = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_receiver();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_receiver(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &receiver_)));
@@ -5955,8 +7037,7 @@ bool EosTxActionAck_EosActionUndelegate::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset net_quantity = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_net_quantity()));
         } else {
@@ -5967,8 +7048,7 @@ bool EosTxActionAck_EosActionUndelegate::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset cpu_quantity = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_cpu_quantity()));
         } else {
@@ -5996,6 +7076,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionUndelegate::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6017,13 +7098,13 @@ void EosTxActionAck_EosActionUndelegate::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset net_quantity = 3;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_net_quantity(), output);
+      3, HasBitSetters::net_quantity(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset cpu_quantity = 4;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_cpu_quantity(), output);
+      4, HasBitSetters::cpu_quantity(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6034,8 +7115,7 @@ void EosTxActionAck_EosActionUndelegate::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionUndelegate::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionUndelegate)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6055,14 +7135,14 @@ void EosTxActionAck_EosActionUndelegate::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_net_quantity(), deterministic, target);
+        3, HasBitSetters::net_quantity(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset cpu_quantity = 4;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_cpu_quantity(), deterministic, target);
+        4, HasBitSetters::cpu_quantity(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6082,30 +7162,35 @@ size_t EosTxActionAck_EosActionUndelegate::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset net_quantity = 3;
-    if (has_net_quantity()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *net_quantity_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset cpu_quantity = 4;
-    if (has_cpu_quantity()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *cpu_quantity_);
     }
 
     // optional uint64 sender = 1;
-    if (has_sender()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->sender());
     }
 
     // optional uint64 receiver = 2;
-    if (has_receiver()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->receiver());
@@ -6121,9 +7206,9 @@ void EosTxActionAck_EosActionUndelegate::MergeFrom(const ::google::protobuf::Mes
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionUndelegate)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionUndelegate* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionUndelegate>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionUndelegate>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionUndelegate)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6140,7 +7225,7 @@ void EosTxActionAck_EosActionUndelegate::MergeFrom(const EosTxActionAck_EosActio
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       mutable_net_quantity()->::hw::trezor::messages::eos::EosTxActionAck_EosAsset::MergeFrom(from.net_quantity());
     }
@@ -6181,17 +7266,17 @@ void EosTxActionAck_EosActionUndelegate::Swap(EosTxActionAck_EosActionUndelegate
 }
 void EosTxActionAck_EosActionUndelegate::InternalSwap(EosTxActionAck_EosActionUndelegate* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(net_quantity_, other->net_quantity_);
   swap(cpu_quantity_, other->cpu_quantity_);
   swap(sender_, other->sender_);
   swap(receiver_, other->receiver_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionUndelegate::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6199,20 +7284,25 @@ void EosTxActionAck_EosActionUndelegate::InternalSwap(EosTxActionAck_EosActionUn
 
 void EosTxActionAck_EosActionRefund::InitAsDefaultInstance() {
 }
+class EosTxActionAck_EosActionRefund::HasBitSetters {
+ public:
+  static void set_has_owner(EosTxActionAck_EosActionRefund* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionRefund::kOwnerFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionRefund::EosTxActionAck_EosActionRefund()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionRefund.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionRefund)
 }
 EosTxActionAck_EosActionRefund::EosTxActionAck_EosActionRefund(const EosTxActionAck_EosActionRefund& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   owner_ = from.owner_;
@@ -6220,7 +7310,7 @@ EosTxActionAck_EosActionRefund::EosTxActionAck_EosActionRefund(const EosTxAction
 }
 
 void EosTxActionAck_EosActionRefund::SharedCtor() {
-  owner_ = GOOGLE_ULONGLONG(0);
+  owner_ = PROTOBUF_ULONGLONG(0);
 }
 
 EosTxActionAck_EosActionRefund::~EosTxActionAck_EosActionRefund() {
@@ -6234,13 +7324,8 @@ void EosTxActionAck_EosActionRefund::SharedDtor() {
 void EosTxActionAck_EosActionRefund::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionRefund::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionRefund& EosTxActionAck_EosActionRefund::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionRefund.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionRefund_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6251,14 +7336,51 @@ void EosTxActionAck_EosActionRefund::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  owner_ = GOOGLE_ULONGLONG(0);
+  owner_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionRefund::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionRefund*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 owner = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_owner(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionRefund::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionRefund)
   for (;;) {
@@ -6268,9 +7390,8 @@ bool EosTxActionAck_EosActionRefund::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 owner = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_owner();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_owner(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &owner_)));
@@ -6299,6 +7420,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionRefund::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6320,8 +7442,7 @@ void EosTxActionAck_EosActionRefund::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionRefund::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionRefund)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6349,8 +7470,13 @@ size_t EosTxActionAck_EosActionRefund::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional uint64 owner = 1;
-  if (has_owner()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt64Size(
         this->owner());
@@ -6365,9 +7491,9 @@ void EosTxActionAck_EosActionRefund::MergeFrom(const ::google::protobuf::Message
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionRefund)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionRefund* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionRefund>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionRefund>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionRefund)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6412,14 +7538,14 @@ void EosTxActionAck_EosActionRefund::Swap(EosTxActionAck_EosActionRefund* other)
 }
 void EosTxActionAck_EosActionRefund::InternalSwap(EosTxActionAck_EosActionRefund* other) {
   using std::swap;
-  swap(owner_, other->owner_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(owner_, other->owner_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionRefund::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6429,6 +7555,24 @@ void EosTxActionAck_EosActionBuyRam::InitAsDefaultInstance() {
   ::hw::trezor::messages::eos::_EosTxActionAck_EosActionBuyRam_default_instance_._instance.get_mutable()->quantity_ = const_cast< ::hw::trezor::messages::eos::EosTxActionAck_EosAsset*>(
       ::hw::trezor::messages::eos::EosTxActionAck_EosAsset::internal_default_instance());
 }
+class EosTxActionAck_EosActionBuyRam::HasBitSetters {
+ public:
+  static void set_has_payer(EosTxActionAck_EosActionBuyRam* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_receiver(EosTxActionAck_EosActionBuyRam* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosAsset& quantity(const EosTxActionAck_EosActionBuyRam* msg);
+  static void set_has_quantity(EosTxActionAck_EosActionBuyRam* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::hw::trezor::messages::eos::EosTxActionAck_EosAsset&
+EosTxActionAck_EosActionBuyRam::HasBitSetters::quantity(const EosTxActionAck_EosActionBuyRam* msg) {
+  return *msg->quantity_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionBuyRam::kPayerFieldNumber;
 const int EosTxActionAck_EosActionBuyRam::kReceiverFieldNumber;
@@ -6436,21 +7580,19 @@ const int EosTxActionAck_EosActionBuyRam::kQuantityFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionBuyRam::EosTxActionAck_EosActionBuyRam()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionBuyRam.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRam)
 }
 EosTxActionAck_EosActionBuyRam::EosTxActionAck_EosActionBuyRam(const EosTxActionAck_EosActionBuyRam& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_quantity()) {
     quantity_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosAsset(*from.quantity_);
   } else {
-    quantity_ = NULL;
+    quantity_ = nullptr;
   }
   ::memcpy(&payer_, &from.payer_,
     static_cast<size_t>(reinterpret_cast<char*>(&receiver_) -
@@ -6459,6 +7601,8 @@ EosTxActionAck_EosActionBuyRam::EosTxActionAck_EosActionBuyRam(const EosTxAction
 }
 
 void EosTxActionAck_EosActionBuyRam::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosTxActionAck_EosActionBuyRam_messages_2deos_2eproto.base);
   ::memset(&quantity_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&receiver_) -
       reinterpret_cast<char*>(&quantity_)) + sizeof(receiver_));
@@ -6476,13 +7620,8 @@ void EosTxActionAck_EosActionBuyRam::SharedDtor() {
 void EosTxActionAck_EosActionBuyRam::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionBuyRam::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionBuyRam& EosTxActionAck_EosActionBuyRam::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionBuyRam.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionBuyRam_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6495,10 +7634,10 @@ void EosTxActionAck_EosActionBuyRam::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(quantity_ != NULL);
+    GOOGLE_DCHECK(quantity_ != nullptr);
     quantity_->Clear();
   }
-  if (cached_has_bits & 6u) {
+  if (cached_has_bits & 0x00000006u) {
     ::memset(&payer_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&receiver_) -
         reinterpret_cast<char*>(&payer_)) + sizeof(receiver_));
@@ -6507,9 +7646,69 @@ void EosTxActionAck_EosActionBuyRam::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionBuyRam::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionBuyRam*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 payer = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_payer(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 receiver = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_receiver(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset quantity = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosAsset::_InternalParse;
+        object = msg->mutable_quantity();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionBuyRam::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRam)
   for (;;) {
@@ -6519,9 +7718,8 @@ bool EosTxActionAck_EosActionBuyRam::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 payer = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_payer();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_payer(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &payer_)));
@@ -6533,9 +7731,8 @@ bool EosTxActionAck_EosActionBuyRam::MergePartialFromCodedStream(
 
       // optional uint64 receiver = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_receiver();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_receiver(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &receiver_)));
@@ -6547,8 +7744,7 @@ bool EosTxActionAck_EosActionBuyRam::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset quantity = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_quantity()));
         } else {
@@ -6576,6 +7772,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionBuyRam::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6597,7 +7794,7 @@ void EosTxActionAck_EosActionBuyRam::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset quantity = 3;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_quantity(), output);
+      3, HasBitSetters::quantity(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6608,8 +7805,7 @@ void EosTxActionAck_EosActionBuyRam::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionBuyRam::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRam)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6629,7 +7825,7 @@ void EosTxActionAck_EosActionBuyRam::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_quantity(), deterministic, target);
+        3, HasBitSetters::quantity(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6649,23 +7845,28 @@ size_t EosTxActionAck_EosActionBuyRam::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosAsset quantity = 3;
-    if (has_quantity()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *quantity_);
     }
 
     // optional uint64 payer = 1;
-    if (has_payer()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->payer());
     }
 
     // optional uint64 receiver = 2;
-    if (has_receiver()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->receiver());
@@ -6681,9 +7882,9 @@ void EosTxActionAck_EosActionBuyRam::MergeFrom(const ::google::protobuf::Message
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRam)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionBuyRam* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionBuyRam>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionBuyRam>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRam)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6700,7 +7901,7 @@ void EosTxActionAck_EosActionBuyRam::MergeFrom(const EosTxActionAck_EosActionBuy
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       mutable_quantity()->::hw::trezor::messages::eos::EosTxActionAck_EosAsset::MergeFrom(from.quantity());
     }
@@ -6738,16 +7939,16 @@ void EosTxActionAck_EosActionBuyRam::Swap(EosTxActionAck_EosActionBuyRam* other)
 }
 void EosTxActionAck_EosActionBuyRam::InternalSwap(EosTxActionAck_EosActionBuyRam* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(quantity_, other->quantity_);
   swap(payer_, other->payer_);
   swap(receiver_, other->receiver_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionBuyRam::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6755,6 +7956,19 @@ void EosTxActionAck_EosActionBuyRam::InternalSwap(EosTxActionAck_EosActionBuyRam
 
 void EosTxActionAck_EosActionBuyRamBytes::InitAsDefaultInstance() {
 }
+class EosTxActionAck_EosActionBuyRamBytes::HasBitSetters {
+ public:
+  static void set_has_payer(EosTxActionAck_EosActionBuyRamBytes* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_receiver(EosTxActionAck_EosActionBuyRamBytes* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_bytes(EosTxActionAck_EosActionBuyRamBytes* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionBuyRamBytes::kPayerFieldNumber;
 const int EosTxActionAck_EosActionBuyRamBytes::kReceiverFieldNumber;
@@ -6762,15 +7976,13 @@ const int EosTxActionAck_EosActionBuyRamBytes::kBytesFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionBuyRamBytes::EosTxActionAck_EosActionBuyRamBytes()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionBuyRamBytes.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRamBytes)
 }
 EosTxActionAck_EosActionBuyRamBytes::EosTxActionAck_EosActionBuyRamBytes(const EosTxActionAck_EosActionBuyRamBytes& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&payer_, &from.payer_,
@@ -6796,13 +8008,8 @@ void EosTxActionAck_EosActionBuyRamBytes::SharedDtor() {
 void EosTxActionAck_EosActionBuyRamBytes::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionBuyRamBytes::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionBuyRamBytes& EosTxActionAck_EosActionBuyRamBytes::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionBuyRamBytes.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionBuyRamBytes_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6814,7 +8021,7 @@ void EosTxActionAck_EosActionBuyRamBytes::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     ::memset(&payer_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&bytes_) -
         reinterpret_cast<char*>(&payer_)) + sizeof(bytes_));
@@ -6823,9 +8030,60 @@ void EosTxActionAck_EosActionBuyRamBytes::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionBuyRamBytes::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionBuyRamBytes*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 payer = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_payer(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 receiver = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_receiver(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 bytes = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_bytes(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionBuyRamBytes::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRamBytes)
   for (;;) {
@@ -6835,9 +8093,8 @@ bool EosTxActionAck_EosActionBuyRamBytes::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 payer = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_payer();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_payer(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &payer_)));
@@ -6849,9 +8106,8 @@ bool EosTxActionAck_EosActionBuyRamBytes::MergePartialFromCodedStream(
 
       // optional uint64 receiver = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_receiver();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_receiver(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &receiver_)));
@@ -6863,9 +8119,8 @@ bool EosTxActionAck_EosActionBuyRamBytes::MergePartialFromCodedStream(
 
       // optional uint32 bytes = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_bytes();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_bytes(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &bytes_)));
@@ -6894,6 +8149,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionBuyRamBytes::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6925,8 +8181,7 @@ void EosTxActionAck_EosActionBuyRamBytes::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionBuyRamBytes::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRamBytes)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6964,23 +8219,28 @@ size_t EosTxActionAck_EosActionBuyRamBytes::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional uint64 payer = 1;
-    if (has_payer()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->payer());
     }
 
     // optional uint64 receiver = 2;
-    if (has_receiver()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->receiver());
     }
 
     // optional uint32 bytes = 3;
-    if (has_bytes()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->bytes());
@@ -6996,9 +8256,9 @@ void EosTxActionAck_EosActionBuyRamBytes::MergeFrom(const ::google::protobuf::Me
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRamBytes)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionBuyRamBytes* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionBuyRamBytes>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionBuyRamBytes>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRamBytes)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7015,7 +8275,7 @@ void EosTxActionAck_EosActionBuyRamBytes::MergeFrom(const EosTxActionAck_EosActi
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       payer_ = from.payer_;
     }
@@ -7053,16 +8313,16 @@ void EosTxActionAck_EosActionBuyRamBytes::Swap(EosTxActionAck_EosActionBuyRamByt
 }
 void EosTxActionAck_EosActionBuyRamBytes::InternalSwap(EosTxActionAck_EosActionBuyRamBytes* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(payer_, other->payer_);
   swap(receiver_, other->receiver_);
   swap(bytes_, other->bytes_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionBuyRamBytes::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7070,21 +8330,29 @@ void EosTxActionAck_EosActionBuyRamBytes::InternalSwap(EosTxActionAck_EosActionB
 
 void EosTxActionAck_EosActionSellRam::InitAsDefaultInstance() {
 }
+class EosTxActionAck_EosActionSellRam::HasBitSetters {
+ public:
+  static void set_has_account(EosTxActionAck_EosActionSellRam* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_bytes(EosTxActionAck_EosActionSellRam* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionSellRam::kAccountFieldNumber;
 const int EosTxActionAck_EosActionSellRam::kBytesFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionSellRam::EosTxActionAck_EosActionSellRam()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionSellRam.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionSellRam)
 }
 EosTxActionAck_EosActionSellRam::EosTxActionAck_EosActionSellRam(const EosTxActionAck_EosActionSellRam& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&account_, &from.account_,
@@ -7110,13 +8378,8 @@ void EosTxActionAck_EosActionSellRam::SharedDtor() {
 void EosTxActionAck_EosActionSellRam::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionSellRam::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionSellRam& EosTxActionAck_EosActionSellRam::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionSellRam.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionSellRam_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -7128,7 +8391,7 @@ void EosTxActionAck_EosActionSellRam::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&account_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&bytes_) -
         reinterpret_cast<char*>(&account_)) + sizeof(bytes_));
@@ -7137,9 +8400,53 @@ void EosTxActionAck_EosActionSellRam::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionSellRam::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionSellRam*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_account(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 bytes = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_bytes(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionSellRam::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionSellRam)
   for (;;) {
@@ -7149,9 +8456,8 @@ bool EosTxActionAck_EosActionSellRam::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_account();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_account(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &account_)));
@@ -7163,9 +8469,8 @@ bool EosTxActionAck_EosActionSellRam::MergePartialFromCodedStream(
 
       // optional uint64 bytes = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_bytes();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_bytes(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &bytes_)));
@@ -7194,6 +8499,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionSellRam::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7220,8 +8526,7 @@ void EosTxActionAck_EosActionSellRam::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionSellRam::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionSellRam)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7254,16 +8559,21 @@ size_t EosTxActionAck_EosActionSellRam::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint64 account = 1;
-    if (has_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->account());
     }
 
     // optional uint64 bytes = 2;
-    if (has_bytes()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->bytes());
@@ -7279,9 +8589,9 @@ void EosTxActionAck_EosActionSellRam::MergeFrom(const ::google::protobuf::Messag
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionSellRam)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionSellRam* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionSellRam>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionSellRam>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionSellRam)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7298,7 +8608,7 @@ void EosTxActionAck_EosActionSellRam::MergeFrom(const EosTxActionAck_EosActionSe
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       account_ = from.account_;
     }
@@ -7333,15 +8643,15 @@ void EosTxActionAck_EosActionSellRam::Swap(EosTxActionAck_EosActionSellRam* othe
 }
 void EosTxActionAck_EosActionSellRam::InternalSwap(EosTxActionAck_EosActionSellRam* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(account_, other->account_);
   swap(bytes_, other->bytes_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionSellRam::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7349,6 +8659,16 @@ void EosTxActionAck_EosActionSellRam::InternalSwap(EosTxActionAck_EosActionSellR
 
 void EosTxActionAck_EosActionVoteProducer::InitAsDefaultInstance() {
 }
+class EosTxActionAck_EosActionVoteProducer::HasBitSetters {
+ public:
+  static void set_has_voter(EosTxActionAck_EosActionVoteProducer* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_proxy(EosTxActionAck_EosActionVoteProducer* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionVoteProducer::kVoterFieldNumber;
 const int EosTxActionAck_EosActionVoteProducer::kProxyFieldNumber;
@@ -7356,15 +8676,13 @@ const int EosTxActionAck_EosActionVoteProducer::kProducersFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionVoteProducer::EosTxActionAck_EosActionVoteProducer()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionVoteProducer.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionVoteProducer)
 }
 EosTxActionAck_EosActionVoteProducer::EosTxActionAck_EosActionVoteProducer(const EosTxActionAck_EosActionVoteProducer& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       producers_(from.producers_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -7391,13 +8709,8 @@ void EosTxActionAck_EosActionVoteProducer::SharedDtor() {
 void EosTxActionAck_EosActionVoteProducer::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionVoteProducer::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionVoteProducer& EosTxActionAck_EosActionVoteProducer::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionVoteProducer.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionVoteProducer_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -7410,7 +8723,7 @@ void EosTxActionAck_EosActionVoteProducer::Clear() {
 
   producers_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&voter_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&proxy_) -
         reinterpret_cast<char*>(&voter_)) + sizeof(proxy_));
@@ -7419,9 +8732,76 @@ void EosTxActionAck_EosActionVoteProducer::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionVoteProducer::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionVoteProducer*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 voter = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_voter(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 proxy = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_proxy(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated uint64 producers = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 24) {
+          do {
+            msg->add_producers(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 24 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt64Parser;
+        object = msg->mutable_producers();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionVoteProducer::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionVoteProducer)
   for (;;) {
@@ -7431,9 +8811,8 @@ bool EosTxActionAck_EosActionVoteProducer::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 voter = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_voter();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_voter(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &voter_)));
@@ -7445,9 +8824,8 @@ bool EosTxActionAck_EosActionVoteProducer::MergePartialFromCodedStream(
 
       // optional uint64 proxy = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_proxy();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_proxy(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &proxy_)));
@@ -7459,14 +8837,11 @@ bool EosTxActionAck_EosActionVoteProducer::MergePartialFromCodedStream(
 
       // repeated uint64 producers = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  1, 24u, input, this->mutable_producers())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, this->mutable_producers())));
@@ -7495,6 +8870,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionVoteProducer::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7527,8 +8903,7 @@ void EosTxActionAck_EosActionVoteProducer::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionVoteProducer::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionVoteProducer)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7565,6 +8940,10 @@ size_t EosTxActionAck_EosActionVoteProducer::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint64 producers = 3;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -7574,16 +8953,17 @@ size_t EosTxActionAck_EosActionVoteProducer::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 3u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint64 voter = 1;
-    if (has_voter()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->voter());
     }
 
     // optional uint64 proxy = 2;
-    if (has_proxy()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->proxy());
@@ -7599,9 +8979,9 @@ void EosTxActionAck_EosActionVoteProducer::MergeFrom(const ::google::protobuf::M
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionVoteProducer)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionVoteProducer* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionVoteProducer>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionVoteProducer>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionVoteProducer)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7619,7 +8999,7 @@ void EosTxActionAck_EosActionVoteProducer::MergeFrom(const EosTxActionAck_EosAct
 
   producers_.MergeFrom(from.producers_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       voter_ = from.voter_;
     }
@@ -7654,16 +9034,16 @@ void EosTxActionAck_EosActionVoteProducer::Swap(EosTxActionAck_EosActionVoteProd
 }
 void EosTxActionAck_EosActionVoteProducer::InternalSwap(EosTxActionAck_EosActionVoteProducer* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   producers_.InternalSwap(&other->producers_);
   swap(voter_, other->voter_);
   swap(proxy_, other->proxy_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionVoteProducer::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7673,6 +9053,27 @@ void EosTxActionAck_EosActionUpdateAuth::InitAsDefaultInstance() {
   ::hw::trezor::messages::eos::_EosTxActionAck_EosActionUpdateAuth_default_instance_._instance.get_mutable()->auth_ = const_cast< ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization*>(
       ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization::internal_default_instance());
 }
+class EosTxActionAck_EosActionUpdateAuth::HasBitSetters {
+ public:
+  static void set_has_account(EosTxActionAck_EosActionUpdateAuth* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_permission(EosTxActionAck_EosActionUpdateAuth* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_parent(EosTxActionAck_EosActionUpdateAuth* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization& auth(const EosTxActionAck_EosActionUpdateAuth* msg);
+  static void set_has_auth(EosTxActionAck_EosActionUpdateAuth* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization&
+EosTxActionAck_EosActionUpdateAuth::HasBitSetters::auth(const EosTxActionAck_EosActionUpdateAuth* msg) {
+  return *msg->auth_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionUpdateAuth::kAccountFieldNumber;
 const int EosTxActionAck_EosActionUpdateAuth::kPermissionFieldNumber;
@@ -7681,21 +9082,19 @@ const int EosTxActionAck_EosActionUpdateAuth::kAuthFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionUpdateAuth::EosTxActionAck_EosActionUpdateAuth()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionUpdateAuth.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionUpdateAuth)
 }
 EosTxActionAck_EosActionUpdateAuth::EosTxActionAck_EosActionUpdateAuth(const EosTxActionAck_EosActionUpdateAuth& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_auth()) {
     auth_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization(*from.auth_);
   } else {
-    auth_ = NULL;
+    auth_ = nullptr;
   }
   ::memcpy(&account_, &from.account_,
     static_cast<size_t>(reinterpret_cast<char*>(&parent_) -
@@ -7704,6 +9103,8 @@ EosTxActionAck_EosActionUpdateAuth::EosTxActionAck_EosActionUpdateAuth(const Eos
 }
 
 void EosTxActionAck_EosActionUpdateAuth::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosTxActionAck_EosActionUpdateAuth_messages_2deos_2eproto.base);
   ::memset(&auth_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&parent_) -
       reinterpret_cast<char*>(&auth_)) + sizeof(parent_));
@@ -7721,13 +9122,8 @@ void EosTxActionAck_EosActionUpdateAuth::SharedDtor() {
 void EosTxActionAck_EosActionUpdateAuth::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionUpdateAuth::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionUpdateAuth& EosTxActionAck_EosActionUpdateAuth::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionUpdateAuth.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionUpdateAuth_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -7740,10 +9136,10 @@ void EosTxActionAck_EosActionUpdateAuth::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(auth_ != NULL);
+    GOOGLE_DCHECK(auth_ != nullptr);
     auth_->Clear();
   }
-  if (cached_has_bits & 14u) {
+  if (cached_has_bits & 0x0000000eu) {
     ::memset(&account_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&parent_) -
         reinterpret_cast<char*>(&account_)) + sizeof(parent_));
@@ -7752,9 +9148,76 @@ void EosTxActionAck_EosActionUpdateAuth::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionUpdateAuth::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionUpdateAuth*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_account(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 permission = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_permission(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 parent = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_parent(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosAuthorization auth = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization::_InternalParse;
+        object = msg->mutable_auth();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionUpdateAuth::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionUpdateAuth)
   for (;;) {
@@ -7764,9 +9227,8 @@ bool EosTxActionAck_EosActionUpdateAuth::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_account();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_account(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &account_)));
@@ -7778,9 +9240,8 @@ bool EosTxActionAck_EosActionUpdateAuth::MergePartialFromCodedStream(
 
       // optional uint64 permission = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_permission();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_permission(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &permission_)));
@@ -7792,9 +9253,8 @@ bool EosTxActionAck_EosActionUpdateAuth::MergePartialFromCodedStream(
 
       // optional uint64 parent = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_parent();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_parent(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &parent_)));
@@ -7806,8 +9266,7 @@ bool EosTxActionAck_EosActionUpdateAuth::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosAuthorization auth = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_auth()));
         } else {
@@ -7835,6 +9294,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionUpdateAuth::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7861,7 +9321,7 @@ void EosTxActionAck_EosActionUpdateAuth::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosAuthorization auth = 4;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_auth(), output);
+      4, HasBitSetters::auth(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -7872,8 +9332,7 @@ void EosTxActionAck_EosActionUpdateAuth::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionUpdateAuth::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionUpdateAuth)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7898,7 +9357,7 @@ void EosTxActionAck_EosActionUpdateAuth::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_auth(), deterministic, target);
+        4, HasBitSetters::auth(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -7918,30 +9377,35 @@ size_t EosTxActionAck_EosActionUpdateAuth::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosAuthorization auth = 4;
-    if (has_auth()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *auth_);
     }
 
     // optional uint64 account = 1;
-    if (has_account()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->account());
     }
 
     // optional uint64 permission = 2;
-    if (has_permission()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->permission());
     }
 
     // optional uint64 parent = 3;
-    if (has_parent()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->parent());
@@ -7957,9 +9421,9 @@ void EosTxActionAck_EosActionUpdateAuth::MergeFrom(const ::google::protobuf::Mes
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionUpdateAuth)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionUpdateAuth* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionUpdateAuth>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionUpdateAuth>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionUpdateAuth)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7976,7 +9440,7 @@ void EosTxActionAck_EosActionUpdateAuth::MergeFrom(const EosTxActionAck_EosActio
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       mutable_auth()->::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization::MergeFrom(from.auth());
     }
@@ -8017,17 +9481,17 @@ void EosTxActionAck_EosActionUpdateAuth::Swap(EosTxActionAck_EosActionUpdateAuth
 }
 void EosTxActionAck_EosActionUpdateAuth::InternalSwap(EosTxActionAck_EosActionUpdateAuth* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(auth_, other->auth_);
   swap(account_, other->account_);
   swap(permission_, other->permission_);
   swap(parent_, other->parent_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionUpdateAuth::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -8035,21 +9499,29 @@ void EosTxActionAck_EosActionUpdateAuth::InternalSwap(EosTxActionAck_EosActionUp
 
 void EosTxActionAck_EosActionDeleteAuth::InitAsDefaultInstance() {
 }
+class EosTxActionAck_EosActionDeleteAuth::HasBitSetters {
+ public:
+  static void set_has_account(EosTxActionAck_EosActionDeleteAuth* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_permission(EosTxActionAck_EosActionDeleteAuth* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionDeleteAuth::kAccountFieldNumber;
 const int EosTxActionAck_EosActionDeleteAuth::kPermissionFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionDeleteAuth::EosTxActionAck_EosActionDeleteAuth()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionDeleteAuth.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionDeleteAuth)
 }
 EosTxActionAck_EosActionDeleteAuth::EosTxActionAck_EosActionDeleteAuth(const EosTxActionAck_EosActionDeleteAuth& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&account_, &from.account_,
@@ -8075,13 +9547,8 @@ void EosTxActionAck_EosActionDeleteAuth::SharedDtor() {
 void EosTxActionAck_EosActionDeleteAuth::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionDeleteAuth::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionDeleteAuth& EosTxActionAck_EosActionDeleteAuth::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionDeleteAuth.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionDeleteAuth_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -8093,7 +9560,7 @@ void EosTxActionAck_EosActionDeleteAuth::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     ::memset(&account_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&permission_) -
         reinterpret_cast<char*>(&account_)) + sizeof(permission_));
@@ -8102,9 +9569,53 @@ void EosTxActionAck_EosActionDeleteAuth::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionDeleteAuth::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionDeleteAuth*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_account(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 permission = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_permission(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionDeleteAuth::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionDeleteAuth)
   for (;;) {
@@ -8114,9 +9625,8 @@ bool EosTxActionAck_EosActionDeleteAuth::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_account();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_account(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &account_)));
@@ -8128,9 +9638,8 @@ bool EosTxActionAck_EosActionDeleteAuth::MergePartialFromCodedStream(
 
       // optional uint64 permission = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_permission();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_permission(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &permission_)));
@@ -8159,6 +9668,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionDeleteAuth::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -8185,8 +9695,7 @@ void EosTxActionAck_EosActionDeleteAuth::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionDeleteAuth::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionDeleteAuth)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8219,16 +9728,21 @@ size_t EosTxActionAck_EosActionDeleteAuth::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional uint64 account = 1;
-    if (has_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->account());
     }
 
     // optional uint64 permission = 2;
-    if (has_permission()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->permission());
@@ -8244,9 +9758,9 @@ void EosTxActionAck_EosActionDeleteAuth::MergeFrom(const ::google::protobuf::Mes
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionDeleteAuth)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionDeleteAuth* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionDeleteAuth>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionDeleteAuth>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionDeleteAuth)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -8263,7 +9777,7 @@ void EosTxActionAck_EosActionDeleteAuth::MergeFrom(const EosTxActionAck_EosActio
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       account_ = from.account_;
     }
@@ -8298,15 +9812,15 @@ void EosTxActionAck_EosActionDeleteAuth::Swap(EosTxActionAck_EosActionDeleteAuth
 }
 void EosTxActionAck_EosActionDeleteAuth::InternalSwap(EosTxActionAck_EosActionDeleteAuth* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(account_, other->account_);
   swap(permission_, other->permission_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionDeleteAuth::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -8314,6 +9828,22 @@ void EosTxActionAck_EosActionDeleteAuth::InternalSwap(EosTxActionAck_EosActionDe
 
 void EosTxActionAck_EosActionLinkAuth::InitAsDefaultInstance() {
 }
+class EosTxActionAck_EosActionLinkAuth::HasBitSetters {
+ public:
+  static void set_has_account(EosTxActionAck_EosActionLinkAuth* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_code(EosTxActionAck_EosActionLinkAuth* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_type(EosTxActionAck_EosActionLinkAuth* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_requirement(EosTxActionAck_EosActionLinkAuth* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionLinkAuth::kAccountFieldNumber;
 const int EosTxActionAck_EosActionLinkAuth::kCodeFieldNumber;
@@ -8322,15 +9852,13 @@ const int EosTxActionAck_EosActionLinkAuth::kRequirementFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionLinkAuth::EosTxActionAck_EosActionLinkAuth()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionLinkAuth.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionLinkAuth)
 }
 EosTxActionAck_EosActionLinkAuth::EosTxActionAck_EosActionLinkAuth(const EosTxActionAck_EosActionLinkAuth& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&account_, &from.account_,
@@ -8356,13 +9884,8 @@ void EosTxActionAck_EosActionLinkAuth::SharedDtor() {
 void EosTxActionAck_EosActionLinkAuth::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionLinkAuth::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionLinkAuth& EosTxActionAck_EosActionLinkAuth::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionLinkAuth.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionLinkAuth_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -8374,7 +9897,7 @@ void EosTxActionAck_EosActionLinkAuth::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     ::memset(&account_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&requirement_) -
         reinterpret_cast<char*>(&account_)) + sizeof(requirement_));
@@ -8383,9 +9906,67 @@ void EosTxActionAck_EosActionLinkAuth::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionLinkAuth::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionLinkAuth*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_account(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 code = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_code(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 type = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 requirement = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_requirement(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionLinkAuth::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionLinkAuth)
   for (;;) {
@@ -8395,9 +9976,8 @@ bool EosTxActionAck_EosActionLinkAuth::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_account();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_account(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &account_)));
@@ -8409,9 +9989,8 @@ bool EosTxActionAck_EosActionLinkAuth::MergePartialFromCodedStream(
 
       // optional uint64 code = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_code();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_code(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &code_)));
@@ -8423,9 +10002,8 @@ bool EosTxActionAck_EosActionLinkAuth::MergePartialFromCodedStream(
 
       // optional uint64 type = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &type_)));
@@ -8437,9 +10015,8 @@ bool EosTxActionAck_EosActionLinkAuth::MergePartialFromCodedStream(
 
       // optional uint64 requirement = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_requirement();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_requirement(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &requirement_)));
@@ -8468,6 +10045,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionLinkAuth::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -8504,8 +10082,7 @@ void EosTxActionAck_EosActionLinkAuth::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionLinkAuth::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionLinkAuth)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8548,30 +10125,35 @@ size_t EosTxActionAck_EosActionLinkAuth::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional uint64 account = 1;
-    if (has_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->account());
     }
 
     // optional uint64 code = 2;
-    if (has_code()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->code());
     }
 
     // optional uint64 type = 3;
-    if (has_type()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->type());
     }
 
     // optional uint64 requirement = 4;
-    if (has_requirement()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->requirement());
@@ -8587,9 +10169,9 @@ void EosTxActionAck_EosActionLinkAuth::MergeFrom(const ::google::protobuf::Messa
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionLinkAuth)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionLinkAuth* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionLinkAuth>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionLinkAuth>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionLinkAuth)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -8606,7 +10188,7 @@ void EosTxActionAck_EosActionLinkAuth::MergeFrom(const EosTxActionAck_EosActionL
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       account_ = from.account_;
     }
@@ -8647,17 +10229,17 @@ void EosTxActionAck_EosActionLinkAuth::Swap(EosTxActionAck_EosActionLinkAuth* ot
 }
 void EosTxActionAck_EosActionLinkAuth::InternalSwap(EosTxActionAck_EosActionLinkAuth* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(account_, other->account_);
   swap(code_, other->code_);
   swap(type_, other->type_);
   swap(requirement_, other->requirement_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionLinkAuth::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -8665,6 +10247,19 @@ void EosTxActionAck_EosActionLinkAuth::InternalSwap(EosTxActionAck_EosActionLink
 
 void EosTxActionAck_EosActionUnlinkAuth::InitAsDefaultInstance() {
 }
+class EosTxActionAck_EosActionUnlinkAuth::HasBitSetters {
+ public:
+  static void set_has_account(EosTxActionAck_EosActionUnlinkAuth* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_code(EosTxActionAck_EosActionUnlinkAuth* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_type(EosTxActionAck_EosActionUnlinkAuth* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionUnlinkAuth::kAccountFieldNumber;
 const int EosTxActionAck_EosActionUnlinkAuth::kCodeFieldNumber;
@@ -8672,15 +10267,13 @@ const int EosTxActionAck_EosActionUnlinkAuth::kTypeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionUnlinkAuth::EosTxActionAck_EosActionUnlinkAuth()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionUnlinkAuth.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionUnlinkAuth)
 }
 EosTxActionAck_EosActionUnlinkAuth::EosTxActionAck_EosActionUnlinkAuth(const EosTxActionAck_EosActionUnlinkAuth& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&account_, &from.account_,
@@ -8706,13 +10299,8 @@ void EosTxActionAck_EosActionUnlinkAuth::SharedDtor() {
 void EosTxActionAck_EosActionUnlinkAuth::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionUnlinkAuth::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionUnlinkAuth& EosTxActionAck_EosActionUnlinkAuth::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionUnlinkAuth.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionUnlinkAuth_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -8724,7 +10312,7 @@ void EosTxActionAck_EosActionUnlinkAuth::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     ::memset(&account_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&type_) -
         reinterpret_cast<char*>(&account_)) + sizeof(type_));
@@ -8733,9 +10321,60 @@ void EosTxActionAck_EosActionUnlinkAuth::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionUnlinkAuth::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionUnlinkAuth*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_account(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 code = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_code(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 type = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionUnlinkAuth::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionUnlinkAuth)
   for (;;) {
@@ -8745,9 +10384,8 @@ bool EosTxActionAck_EosActionUnlinkAuth::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_account();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_account(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &account_)));
@@ -8759,9 +10397,8 @@ bool EosTxActionAck_EosActionUnlinkAuth::MergePartialFromCodedStream(
 
       // optional uint64 code = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_code();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_code(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &code_)));
@@ -8773,9 +10410,8 @@ bool EosTxActionAck_EosActionUnlinkAuth::MergePartialFromCodedStream(
 
       // optional uint64 type = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &type_)));
@@ -8804,6 +10440,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionUnlinkAuth::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -8835,8 +10472,7 @@ void EosTxActionAck_EosActionUnlinkAuth::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionUnlinkAuth::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionUnlinkAuth)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8874,23 +10510,28 @@ size_t EosTxActionAck_EosActionUnlinkAuth::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional uint64 account = 1;
-    if (has_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->account());
     }
 
     // optional uint64 code = 2;
-    if (has_code()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->code());
     }
 
     // optional uint64 type = 3;
-    if (has_type()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->type());
@@ -8906,9 +10547,9 @@ void EosTxActionAck_EosActionUnlinkAuth::MergeFrom(const ::google::protobuf::Mes
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionUnlinkAuth)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionUnlinkAuth* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionUnlinkAuth>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionUnlinkAuth>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionUnlinkAuth)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -8925,7 +10566,7 @@ void EosTxActionAck_EosActionUnlinkAuth::MergeFrom(const EosTxActionAck_EosActio
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       account_ = from.account_;
     }
@@ -8963,16 +10604,16 @@ void EosTxActionAck_EosActionUnlinkAuth::Swap(EosTxActionAck_EosActionUnlinkAuth
 }
 void EosTxActionAck_EosActionUnlinkAuth::InternalSwap(EosTxActionAck_EosActionUnlinkAuth* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(account_, other->account_);
   swap(code_, other->code_);
   swap(type_, other->type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionUnlinkAuth::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -8984,6 +10625,32 @@ void EosTxActionAck_EosActionNewAccount::InitAsDefaultInstance() {
   ::hw::trezor::messages::eos::_EosTxActionAck_EosActionNewAccount_default_instance_._instance.get_mutable()->active_ = const_cast< ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization*>(
       ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization::internal_default_instance());
 }
+class EosTxActionAck_EosActionNewAccount::HasBitSetters {
+ public:
+  static void set_has_creator(EosTxActionAck_EosActionNewAccount* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_name(EosTxActionAck_EosActionNewAccount* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization& owner(const EosTxActionAck_EosActionNewAccount* msg);
+  static void set_has_owner(EosTxActionAck_EosActionNewAccount* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization& active(const EosTxActionAck_EosActionNewAccount* msg);
+  static void set_has_active(EosTxActionAck_EosActionNewAccount* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
+const ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization&
+EosTxActionAck_EosActionNewAccount::HasBitSetters::owner(const EosTxActionAck_EosActionNewAccount* msg) {
+  return *msg->owner_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization&
+EosTxActionAck_EosActionNewAccount::HasBitSetters::active(const EosTxActionAck_EosActionNewAccount* msg) {
+  return *msg->active_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionNewAccount::kCreatorFieldNumber;
 const int EosTxActionAck_EosActionNewAccount::kNameFieldNumber;
@@ -8992,26 +10659,24 @@ const int EosTxActionAck_EosActionNewAccount::kActiveFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionNewAccount::EosTxActionAck_EosActionNewAccount()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionNewAccount.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionNewAccount)
 }
 EosTxActionAck_EosActionNewAccount::EosTxActionAck_EosActionNewAccount(const EosTxActionAck_EosActionNewAccount& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_owner()) {
     owner_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization(*from.owner_);
   } else {
-    owner_ = NULL;
+    owner_ = nullptr;
   }
   if (from.has_active()) {
     active_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization(*from.active_);
   } else {
-    active_ = NULL;
+    active_ = nullptr;
   }
   ::memcpy(&creator_, &from.creator_,
     static_cast<size_t>(reinterpret_cast<char*>(&name_) -
@@ -9020,6 +10685,8 @@ EosTxActionAck_EosActionNewAccount::EosTxActionAck_EosActionNewAccount(const Eos
 }
 
 void EosTxActionAck_EosActionNewAccount::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosTxActionAck_EosActionNewAccount_messages_2deos_2eproto.base);
   ::memset(&owner_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&name_) -
       reinterpret_cast<char*>(&owner_)) + sizeof(name_));
@@ -9038,13 +10705,8 @@ void EosTxActionAck_EosActionNewAccount::SharedDtor() {
 void EosTxActionAck_EosActionNewAccount::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionNewAccount::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionNewAccount& EosTxActionAck_EosActionNewAccount::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionNewAccount.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionNewAccount_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -9056,17 +10718,17 @@ void EosTxActionAck_EosActionNewAccount::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(owner_ != NULL);
+      GOOGLE_DCHECK(owner_ != nullptr);
       owner_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(active_ != NULL);
+      GOOGLE_DCHECK(active_ != nullptr);
       active_->Clear();
     }
   }
-  if (cached_has_bits & 12u) {
+  if (cached_has_bits & 0x0000000cu) {
     ::memset(&creator_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&name_) -
         reinterpret_cast<char*>(&creator_)) + sizeof(name_));
@@ -9075,9 +10737,82 @@ void EosTxActionAck_EosActionNewAccount::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionNewAccount::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionNewAccount*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 creator = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_creator(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 name = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_name(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosAuthorization owner = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization::_InternalParse;
+        object = msg->mutable_owner();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosAuthorization active = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization::_InternalParse;
+        object = msg->mutable_active();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionNewAccount::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionNewAccount)
   for (;;) {
@@ -9087,9 +10822,8 @@ bool EosTxActionAck_EosActionNewAccount::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 creator = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_creator();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_creator(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &creator_)));
@@ -9101,9 +10835,8 @@ bool EosTxActionAck_EosActionNewAccount::MergePartialFromCodedStream(
 
       // optional uint64 name = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_name();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_name(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &name_)));
@@ -9115,8 +10848,7 @@ bool EosTxActionAck_EosActionNewAccount::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosAuthorization owner = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_owner()));
         } else {
@@ -9127,8 +10859,7 @@ bool EosTxActionAck_EosActionNewAccount::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosAuthorization active = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_active()));
         } else {
@@ -9156,6 +10887,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionNewAccount::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -9177,13 +10909,13 @@ void EosTxActionAck_EosActionNewAccount::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosAuthorization owner = 3;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_owner(), output);
+      3, HasBitSetters::owner(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosAuthorization active = 4;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_active(), output);
+      4, HasBitSetters::active(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -9194,8 +10926,7 @@ void EosTxActionAck_EosActionNewAccount::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionNewAccount::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionNewAccount)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -9215,14 +10946,14 @@ void EosTxActionAck_EosActionNewAccount::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_owner(), deterministic, target);
+        3, HasBitSetters::owner(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosAuthorization active = 4;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_active(), deterministic, target);
+        4, HasBitSetters::active(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -9242,30 +10973,35 @@ size_t EosTxActionAck_EosActionNewAccount::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosAuthorization owner = 3;
-    if (has_owner()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *owner_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosAuthorization active = 4;
-    if (has_active()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *active_);
     }
 
     // optional uint64 creator = 1;
-    if (has_creator()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->creator());
     }
 
     // optional uint64 name = 2;
-    if (has_name()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->name());
@@ -9281,9 +11017,9 @@ void EosTxActionAck_EosActionNewAccount::MergeFrom(const ::google::protobuf::Mes
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionNewAccount)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionNewAccount* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionNewAccount>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionNewAccount>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionNewAccount)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -9300,7 +11036,7 @@ void EosTxActionAck_EosActionNewAccount::MergeFrom(const EosTxActionAck_EosActio
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       mutable_owner()->::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization::MergeFrom(from.owner());
     }
@@ -9341,17 +11077,17 @@ void EosTxActionAck_EosActionNewAccount::Swap(EosTxActionAck_EosActionNewAccount
 }
 void EosTxActionAck_EosActionNewAccount::InternalSwap(EosTxActionAck_EosActionNewAccount* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(owner_, other->owner_);
   swap(active_, other->active_);
   swap(creator_, other->creator_);
   swap(name_, other->name_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionNewAccount::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -9359,21 +11095,29 @@ void EosTxActionAck_EosActionNewAccount::InternalSwap(EosTxActionAck_EosActionNe
 
 void EosTxActionAck_EosActionUnknown::InitAsDefaultInstance() {
 }
+class EosTxActionAck_EosActionUnknown::HasBitSetters {
+ public:
+  static void set_has_data_size(EosTxActionAck_EosActionUnknown* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_data_chunk(EosTxActionAck_EosActionUnknown* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck_EosActionUnknown::kDataSizeFieldNumber;
 const int EosTxActionAck_EosActionUnknown::kDataChunkFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck_EosActionUnknown::EosTxActionAck_EosActionUnknown()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionUnknown.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck.EosActionUnknown)
 }
 EosTxActionAck_EosActionUnknown::EosTxActionAck_EosActionUnknown(const EosTxActionAck_EosActionUnknown& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   data_chunk_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -9385,6 +11129,8 @@ EosTxActionAck_EosActionUnknown::EosTxActionAck_EosActionUnknown(const EosTxActi
 }
 
 void EosTxActionAck_EosActionUnknown::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosTxActionAck_EosActionUnknown_messages_2deos_2eproto.base);
   data_chunk_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   data_size_ = 0u;
 }
@@ -9401,13 +11147,8 @@ void EosTxActionAck_EosActionUnknown::SharedDtor() {
 void EosTxActionAck_EosActionUnknown::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck_EosActionUnknown::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck_EosActionUnknown& EosTxActionAck_EosActionUnknown::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck_EosActionUnknown.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_EosActionUnknown_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -9427,9 +11168,68 @@ void EosTxActionAck_EosActionUnknown::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck_EosActionUnknown::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck_EosActionUnknown*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 data_size = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_data_size(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes data_chunk = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_data_chunk();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck_EosActionUnknown::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck.EosActionUnknown)
   for (;;) {
@@ -9439,9 +11239,8 @@ bool EosTxActionAck_EosActionUnknown::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 data_size = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_data_size();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_data_size(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &data_size_)));
@@ -9453,8 +11252,7 @@ bool EosTxActionAck_EosActionUnknown::MergePartialFromCodedStream(
 
       // optional bytes data_chunk = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_data_chunk()));
         } else {
@@ -9482,6 +11280,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck_EosActionUnknown::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -9509,8 +11308,7 @@ void EosTxActionAck_EosActionUnknown::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck_EosActionUnknown::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck.EosActionUnknown)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -9545,16 +11343,21 @@ size_t EosTxActionAck_EosActionUnknown::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes data_chunk = 2;
-    if (has_data_chunk()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->data_chunk());
     }
 
     // optional uint32 data_size = 1;
-    if (has_data_size()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->data_size());
@@ -9570,9 +11373,9 @@ void EosTxActionAck_EosActionUnknown::MergeFrom(const ::google::protobuf::Messag
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck.EosActionUnknown)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck_EosActionUnknown* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck_EosActionUnknown>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck_EosActionUnknown>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck.EosActionUnknown)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -9589,9 +11392,9 @@ void EosTxActionAck_EosActionUnknown::MergeFrom(const EosTxActionAck_EosActionUn
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_data_chunk();
+      _has_bits_[0] |= 0x00000001u;
       data_chunk_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_chunk_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -9625,16 +11428,16 @@ void EosTxActionAck_EosActionUnknown::Swap(EosTxActionAck_EosActionUnknown* othe
 }
 void EosTxActionAck_EosActionUnknown::InternalSwap(EosTxActionAck_EosActionUnknown* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   data_chunk_.Swap(&other->data_chunk_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(data_size_, other->data_size_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck_EosActionUnknown::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -9672,6 +11475,130 @@ void EosTxActionAck::InitAsDefaultInstance() {
   ::hw::trezor::messages::eos::_EosTxActionAck_default_instance_._instance.get_mutable()->unknown_ = const_cast< ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown*>(
       ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown::internal_default_instance());
 }
+class EosTxActionAck::HasBitSetters {
+ public:
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon& common(const EosTxActionAck* msg);
+  static void set_has_common(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer& transfer(const EosTxActionAck* msg);
+  static void set_has_transfer(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate& delegate(const EosTxActionAck* msg);
+  static void set_has_delegate(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate& undelegate(const EosTxActionAck* msg);
+  static void set_has_undelegate(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund& refund(const EosTxActionAck* msg);
+  static void set_has_refund(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam& buy_ram(const EosTxActionAck* msg);
+  static void set_has_buy_ram(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes& buy_ram_bytes(const EosTxActionAck* msg);
+  static void set_has_buy_ram_bytes(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam& sell_ram(const EosTxActionAck* msg);
+  static void set_has_sell_ram(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer& vote_producer(const EosTxActionAck* msg);
+  static void set_has_vote_producer(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth& update_auth(const EosTxActionAck* msg);
+  static void set_has_update_auth(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00000200u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth& delete_auth(const EosTxActionAck* msg);
+  static void set_has_delete_auth(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00000400u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth& link_auth(const EosTxActionAck* msg);
+  static void set_has_link_auth(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00000800u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth& unlink_auth(const EosTxActionAck* msg);
+  static void set_has_unlink_auth(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00001000u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount& new_account(const EosTxActionAck* msg);
+  static void set_has_new_account(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00002000u;
+  }
+  static const ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown& unknown(const EosTxActionAck* msg);
+  static void set_has_unknown(EosTxActionAck* msg) {
+    msg->_has_bits_[0] |= 0x00004000u;
+  }
+};
+
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon&
+EosTxActionAck::HasBitSetters::common(const EosTxActionAck* msg) {
+  return *msg->common_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer&
+EosTxActionAck::HasBitSetters::transfer(const EosTxActionAck* msg) {
+  return *msg->transfer_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate&
+EosTxActionAck::HasBitSetters::delegate(const EosTxActionAck* msg) {
+  return *msg->delegate_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate&
+EosTxActionAck::HasBitSetters::undelegate(const EosTxActionAck* msg) {
+  return *msg->undelegate_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund&
+EosTxActionAck::HasBitSetters::refund(const EosTxActionAck* msg) {
+  return *msg->refund_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam&
+EosTxActionAck::HasBitSetters::buy_ram(const EosTxActionAck* msg) {
+  return *msg->buy_ram_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes&
+EosTxActionAck::HasBitSetters::buy_ram_bytes(const EosTxActionAck* msg) {
+  return *msg->buy_ram_bytes_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam&
+EosTxActionAck::HasBitSetters::sell_ram(const EosTxActionAck* msg) {
+  return *msg->sell_ram_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer&
+EosTxActionAck::HasBitSetters::vote_producer(const EosTxActionAck* msg) {
+  return *msg->vote_producer_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth&
+EosTxActionAck::HasBitSetters::update_auth(const EosTxActionAck* msg) {
+  return *msg->update_auth_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth&
+EosTxActionAck::HasBitSetters::delete_auth(const EosTxActionAck* msg) {
+  return *msg->delete_auth_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth&
+EosTxActionAck::HasBitSetters::link_auth(const EosTxActionAck* msg) {
+  return *msg->link_auth_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth&
+EosTxActionAck::HasBitSetters::unlink_auth(const EosTxActionAck* msg) {
+  return *msg->unlink_auth_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount&
+EosTxActionAck::HasBitSetters::new_account(const EosTxActionAck* msg) {
+  return *msg->new_account_;
+}
+const ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown&
+EosTxActionAck::HasBitSetters::unknown(const EosTxActionAck* msg) {
+  return *msg->unknown_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosTxActionAck::kCommonFieldNumber;
 const int EosTxActionAck::kTransferFieldNumber;
@@ -9691,96 +11618,96 @@ const int EosTxActionAck::kUnknownFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosTxActionAck::EosTxActionAck()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosTxActionAck)
 }
 EosTxActionAck::EosTxActionAck(const EosTxActionAck& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_common()) {
     common_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon(*from.common_);
   } else {
-    common_ = NULL;
+    common_ = nullptr;
   }
   if (from.has_transfer()) {
     transfer_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer(*from.transfer_);
   } else {
-    transfer_ = NULL;
+    transfer_ = nullptr;
   }
   if (from.has_delegate()) {
     delegate_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate(*from.delegate_);
   } else {
-    delegate_ = NULL;
+    delegate_ = nullptr;
   }
   if (from.has_undelegate()) {
     undelegate_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate(*from.undelegate_);
   } else {
-    undelegate_ = NULL;
+    undelegate_ = nullptr;
   }
   if (from.has_refund()) {
     refund_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund(*from.refund_);
   } else {
-    refund_ = NULL;
+    refund_ = nullptr;
   }
   if (from.has_buy_ram()) {
     buy_ram_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam(*from.buy_ram_);
   } else {
-    buy_ram_ = NULL;
+    buy_ram_ = nullptr;
   }
   if (from.has_buy_ram_bytes()) {
     buy_ram_bytes_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes(*from.buy_ram_bytes_);
   } else {
-    buy_ram_bytes_ = NULL;
+    buy_ram_bytes_ = nullptr;
   }
   if (from.has_sell_ram()) {
     sell_ram_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam(*from.sell_ram_);
   } else {
-    sell_ram_ = NULL;
+    sell_ram_ = nullptr;
   }
   if (from.has_vote_producer()) {
     vote_producer_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer(*from.vote_producer_);
   } else {
-    vote_producer_ = NULL;
+    vote_producer_ = nullptr;
   }
   if (from.has_update_auth()) {
     update_auth_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth(*from.update_auth_);
   } else {
-    update_auth_ = NULL;
+    update_auth_ = nullptr;
   }
   if (from.has_delete_auth()) {
     delete_auth_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth(*from.delete_auth_);
   } else {
-    delete_auth_ = NULL;
+    delete_auth_ = nullptr;
   }
   if (from.has_link_auth()) {
     link_auth_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth(*from.link_auth_);
   } else {
-    link_auth_ = NULL;
+    link_auth_ = nullptr;
   }
   if (from.has_unlink_auth()) {
     unlink_auth_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth(*from.unlink_auth_);
   } else {
-    unlink_auth_ = NULL;
+    unlink_auth_ = nullptr;
   }
   if (from.has_new_account()) {
     new_account_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount(*from.new_account_);
   } else {
-    new_account_ = NULL;
+    new_account_ = nullptr;
   }
   if (from.has_unknown()) {
     unknown_ = new ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown(*from.unknown_);
   } else {
-    unknown_ = NULL;
+    unknown_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.eos.EosTxActionAck)
 }
 
 void EosTxActionAck::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosTxActionAck_messages_2deos_2eproto.base);
   ::memset(&common_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&unknown_) -
       reinterpret_cast<char*>(&common_)) + sizeof(unknown_));
@@ -9812,13 +11739,8 @@ void EosTxActionAck::SharedDtor() {
 void EosTxActionAck::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosTxActionAck::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosTxActionAck& EosTxActionAck::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosTxActionAck.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosTxActionAck_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -9830,67 +11752,67 @@ void EosTxActionAck::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(common_ != NULL);
+      GOOGLE_DCHECK(common_ != nullptr);
       common_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(transfer_ != NULL);
+      GOOGLE_DCHECK(transfer_ != nullptr);
       transfer_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(delegate_ != NULL);
+      GOOGLE_DCHECK(delegate_ != nullptr);
       delegate_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(undelegate_ != NULL);
+      GOOGLE_DCHECK(undelegate_ != nullptr);
       undelegate_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(refund_ != NULL);
+      GOOGLE_DCHECK(refund_ != nullptr);
       refund_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(buy_ram_ != NULL);
+      GOOGLE_DCHECK(buy_ram_ != nullptr);
       buy_ram_->Clear();
     }
     if (cached_has_bits & 0x00000040u) {
-      GOOGLE_DCHECK(buy_ram_bytes_ != NULL);
+      GOOGLE_DCHECK(buy_ram_bytes_ != nullptr);
       buy_ram_bytes_->Clear();
     }
     if (cached_has_bits & 0x00000080u) {
-      GOOGLE_DCHECK(sell_ram_ != NULL);
+      GOOGLE_DCHECK(sell_ram_ != nullptr);
       sell_ram_->Clear();
     }
   }
-  if (cached_has_bits & 32512u) {
+  if (cached_has_bits & 0x00007f00u) {
     if (cached_has_bits & 0x00000100u) {
-      GOOGLE_DCHECK(vote_producer_ != NULL);
+      GOOGLE_DCHECK(vote_producer_ != nullptr);
       vote_producer_->Clear();
     }
     if (cached_has_bits & 0x00000200u) {
-      GOOGLE_DCHECK(update_auth_ != NULL);
+      GOOGLE_DCHECK(update_auth_ != nullptr);
       update_auth_->Clear();
     }
     if (cached_has_bits & 0x00000400u) {
-      GOOGLE_DCHECK(delete_auth_ != NULL);
+      GOOGLE_DCHECK(delete_auth_ != nullptr);
       delete_auth_->Clear();
     }
     if (cached_has_bits & 0x00000800u) {
-      GOOGLE_DCHECK(link_auth_ != NULL);
+      GOOGLE_DCHECK(link_auth_ != nullptr);
       link_auth_->Clear();
     }
     if (cached_has_bits & 0x00001000u) {
-      GOOGLE_DCHECK(unlink_auth_ != NULL);
+      GOOGLE_DCHECK(unlink_auth_ != nullptr);
       unlink_auth_->Clear();
     }
     if (cached_has_bits & 0x00002000u) {
-      GOOGLE_DCHECK(new_account_ != NULL);
+      GOOGLE_DCHECK(new_account_ != nullptr);
       new_account_->Clear();
     }
     if (cached_has_bits & 0x00004000u) {
-      GOOGLE_DCHECK(unknown_ != NULL);
+      GOOGLE_DCHECK(unknown_ != nullptr);
       unknown_->Clear();
     }
   }
@@ -9898,9 +11820,237 @@ void EosTxActionAck::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosTxActionAck::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosTxActionAck*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionCommon common = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon::_InternalParse;
+        object = msg->mutable_common();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionTransfer transfer = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer::_InternalParse;
+        object = msg->mutable_transfer();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionDelegate delegate = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate::_InternalParse;
+        object = msg->mutable_delegate();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUndelegate undelegate = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate::_InternalParse;
+        object = msg->mutable_undelegate();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionRefund refund = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund::_InternalParse;
+        object = msg->mutable_refund();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRam buy_ram = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam::_InternalParse;
+        object = msg->mutable_buy_ram();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRamBytes buy_ram_bytes = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 58) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes::_InternalParse;
+        object = msg->mutable_buy_ram_bytes();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionSellRam sell_ram = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 66) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam::_InternalParse;
+        object = msg->mutable_sell_ram();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionVoteProducer vote_producer = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 74) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer::_InternalParse;
+        object = msg->mutable_vote_producer();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUpdateAuth update_auth = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 82) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth::_InternalParse;
+        object = msg->mutable_update_auth();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionDeleteAuth delete_auth = 11;
+      case 11: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 90) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth::_InternalParse;
+        object = msg->mutable_delete_auth();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionLinkAuth link_auth = 12;
+      case 12: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 98) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth::_InternalParse;
+        object = msg->mutable_link_auth();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUnlinkAuth unlink_auth = 13;
+      case 13: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 106) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth::_InternalParse;
+        object = msg->mutable_unlink_auth();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionNewAccount new_account = 14;
+      case 14: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 114) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount::_InternalParse;
+        object = msg->mutable_new_account();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUnknown unknown = 15;
+      case 15: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 122) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown::_InternalParse;
+        object = msg->mutable_unknown();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosTxActionAck::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosTxActionAck)
   for (;;) {
@@ -9910,8 +12060,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionCommon common = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_common()));
         } else {
@@ -9922,8 +12071,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionTransfer transfer = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_transfer()));
         } else {
@@ -9934,8 +12082,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionDelegate delegate = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_delegate()));
         } else {
@@ -9946,8 +12093,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUndelegate undelegate = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_undelegate()));
         } else {
@@ -9958,8 +12104,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionRefund refund = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_refund()));
         } else {
@@ -9970,8 +12115,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRam buy_ram = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_buy_ram()));
         } else {
@@ -9982,8 +12126,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRamBytes buy_ram_bytes = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (58 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_buy_ram_bytes()));
         } else {
@@ -9994,8 +12137,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionSellRam sell_ram = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (66 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_sell_ram()));
         } else {
@@ -10006,8 +12148,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionVoteProducer vote_producer = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(74u /* 74 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (74 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_vote_producer()));
         } else {
@@ -10018,8 +12159,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUpdateAuth update_auth = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(82u /* 82 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (82 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_update_auth()));
         } else {
@@ -10030,8 +12170,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionDeleteAuth delete_auth = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (90 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_delete_auth()));
         } else {
@@ -10042,8 +12181,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionLinkAuth link_auth = 12;
       case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(98u /* 98 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (98 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_link_auth()));
         } else {
@@ -10054,8 +12192,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUnlinkAuth unlink_auth = 13;
       case 13: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(106u /* 106 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (106 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_unlink_auth()));
         } else {
@@ -10066,8 +12203,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionNewAccount new_account = 14;
       case 14: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(114u /* 114 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (114 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_new_account()));
         } else {
@@ -10078,8 +12214,7 @@ bool EosTxActionAck::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUnknown unknown = 15;
       case 15: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(122u /* 122 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (122 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_unknown()));
         } else {
@@ -10107,6 +12242,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosTxActionAck::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -10118,91 +12254,91 @@ void EosTxActionAck::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionCommon common = 1;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_common(), output);
+      1, HasBitSetters::common(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionTransfer transfer = 2;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_transfer(), output);
+      2, HasBitSetters::transfer(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionDelegate delegate = 3;
   if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_delegate(), output);
+      3, HasBitSetters::delegate(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUndelegate undelegate = 4;
   if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_undelegate(), output);
+      4, HasBitSetters::undelegate(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionRefund refund = 5;
   if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->_internal_refund(), output);
+      5, HasBitSetters::refund(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRam buy_ram = 6;
   if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, this->_internal_buy_ram(), output);
+      6, HasBitSetters::buy_ram(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRamBytes buy_ram_bytes = 7;
   if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, this->_internal_buy_ram_bytes(), output);
+      7, HasBitSetters::buy_ram_bytes(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionSellRam sell_ram = 8;
   if (cached_has_bits & 0x00000080u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      8, this->_internal_sell_ram(), output);
+      8, HasBitSetters::sell_ram(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionVoteProducer vote_producer = 9;
   if (cached_has_bits & 0x00000100u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      9, this->_internal_vote_producer(), output);
+      9, HasBitSetters::vote_producer(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUpdateAuth update_auth = 10;
   if (cached_has_bits & 0x00000200u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      10, this->_internal_update_auth(), output);
+      10, HasBitSetters::update_auth(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionDeleteAuth delete_auth = 11;
   if (cached_has_bits & 0x00000400u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      11, this->_internal_delete_auth(), output);
+      11, HasBitSetters::delete_auth(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionLinkAuth link_auth = 12;
   if (cached_has_bits & 0x00000800u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      12, this->_internal_link_auth(), output);
+      12, HasBitSetters::link_auth(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUnlinkAuth unlink_auth = 13;
   if (cached_has_bits & 0x00001000u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      13, this->_internal_unlink_auth(), output);
+      13, HasBitSetters::unlink_auth(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionNewAccount new_account = 14;
   if (cached_has_bits & 0x00002000u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      14, this->_internal_new_account(), output);
+      14, HasBitSetters::new_account(this), output);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUnknown unknown = 15;
   if (cached_has_bits & 0x00004000u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      15, this->_internal_unknown(), output);
+      15, HasBitSetters::unknown(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -10213,8 +12349,7 @@ void EosTxActionAck::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosTxActionAck::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosTxActionAck)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -10224,105 +12359,105 @@ void EosTxActionAck::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_common(), deterministic, target);
+        1, HasBitSetters::common(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionTransfer transfer = 2;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_transfer(), deterministic, target);
+        2, HasBitSetters::transfer(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionDelegate delegate = 3;
   if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_delegate(), deterministic, target);
+        3, HasBitSetters::delegate(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUndelegate undelegate = 4;
   if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_undelegate(), deterministic, target);
+        4, HasBitSetters::undelegate(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionRefund refund = 5;
   if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->_internal_refund(), deterministic, target);
+        5, HasBitSetters::refund(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRam buy_ram = 6;
   if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        6, this->_internal_buy_ram(), deterministic, target);
+        6, HasBitSetters::buy_ram(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRamBytes buy_ram_bytes = 7;
   if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        7, this->_internal_buy_ram_bytes(), deterministic, target);
+        7, HasBitSetters::buy_ram_bytes(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionSellRam sell_ram = 8;
   if (cached_has_bits & 0x00000080u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        8, this->_internal_sell_ram(), deterministic, target);
+        8, HasBitSetters::sell_ram(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionVoteProducer vote_producer = 9;
   if (cached_has_bits & 0x00000100u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        9, this->_internal_vote_producer(), deterministic, target);
+        9, HasBitSetters::vote_producer(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUpdateAuth update_auth = 10;
   if (cached_has_bits & 0x00000200u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        10, this->_internal_update_auth(), deterministic, target);
+        10, HasBitSetters::update_auth(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionDeleteAuth delete_auth = 11;
   if (cached_has_bits & 0x00000400u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        11, this->_internal_delete_auth(), deterministic, target);
+        11, HasBitSetters::delete_auth(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionLinkAuth link_auth = 12;
   if (cached_has_bits & 0x00000800u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        12, this->_internal_link_auth(), deterministic, target);
+        12, HasBitSetters::link_auth(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUnlinkAuth unlink_auth = 13;
   if (cached_has_bits & 0x00001000u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        13, this->_internal_unlink_auth(), deterministic, target);
+        13, HasBitSetters::unlink_auth(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionNewAccount new_account = 14;
   if (cached_has_bits & 0x00002000u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        14, this->_internal_new_account(), deterministic, target);
+        14, HasBitSetters::new_account(this), target);
   }
 
   // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUnknown unknown = 15;
   if (cached_has_bits & 0x00004000u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        15, this->_internal_unknown(), deterministic, target);
+        15, HasBitSetters::unknown(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -10342,109 +12477,114 @@ size_t EosTxActionAck::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 255u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionCommon common = 1;
-    if (has_common()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *common_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionTransfer transfer = 2;
-    if (has_transfer()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *transfer_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionDelegate delegate = 3;
-    if (has_delegate()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *delegate_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUndelegate undelegate = 4;
-    if (has_undelegate()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *undelegate_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionRefund refund = 5;
-    if (has_refund()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *refund_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRam buy_ram = 6;
-    if (has_buy_ram()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *buy_ram_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionBuyRamBytes buy_ram_bytes = 7;
-    if (has_buy_ram_bytes()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *buy_ram_bytes_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionSellRam sell_ram = 8;
-    if (has_sell_ram()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *sell_ram_);
     }
 
   }
-  if (_has_bits_[8 / 32] & 32512u) {
+  if (cached_has_bits & 0x00007f00u) {
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionVoteProducer vote_producer = 9;
-    if (has_vote_producer()) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *vote_producer_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUpdateAuth update_auth = 10;
-    if (has_update_auth()) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *update_auth_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionDeleteAuth delete_auth = 11;
-    if (has_delete_auth()) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *delete_auth_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionLinkAuth link_auth = 12;
-    if (has_link_auth()) {
+    if (cached_has_bits & 0x00000800u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *link_auth_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUnlinkAuth unlink_auth = 13;
-    if (has_unlink_auth()) {
+    if (cached_has_bits & 0x00001000u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *unlink_auth_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionNewAccount new_account = 14;
-    if (has_new_account()) {
+    if (cached_has_bits & 0x00002000u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *new_account_);
     }
 
     // optional .hw.trezor.messages.eos.EosTxActionAck.EosActionUnknown unknown = 15;
-    if (has_unknown()) {
+    if (cached_has_bits & 0x00004000u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *unknown_);
@@ -10460,9 +12600,9 @@ void EosTxActionAck::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosTxActionAck)
   GOOGLE_DCHECK_NE(&from, this);
   const EosTxActionAck* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosTxActionAck>(
+      ::google::protobuf::DynamicCastToGenerated<EosTxActionAck>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosTxActionAck)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -10479,7 +12619,7 @@ void EosTxActionAck::MergeFrom(const EosTxActionAck& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
       mutable_common()->::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon::MergeFrom(from.common());
     }
@@ -10505,7 +12645,7 @@ void EosTxActionAck::MergeFrom(const EosTxActionAck& from) {
       mutable_sell_ram()->::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam::MergeFrom(from.sell_ram());
     }
   }
-  if (cached_has_bits & 32512u) {
+  if (cached_has_bits & 0x00007f00u) {
     if (cached_has_bits & 0x00000100u) {
       mutable_vote_producer()->::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer::MergeFrom(from.vote_producer());
     }
@@ -10554,6 +12694,8 @@ void EosTxActionAck::Swap(EosTxActionAck* other) {
 }
 void EosTxActionAck::InternalSwap(EosTxActionAck* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(common_, other->common_);
   swap(transfer_, other->transfer_);
   swap(delegate_, other->delegate_);
@@ -10569,13 +12711,11 @@ void EosTxActionAck::InternalSwap(EosTxActionAck* other) {
   swap(unlink_auth_, other->unlink_auth_);
   swap(new_account_, other->new_account_);
   swap(unknown_, other->unknown_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosTxActionAck::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -10583,6 +12723,19 @@ void EosTxActionAck::InternalSwap(EosTxActionAck* other) {
 
 void EosSignedTx::InitAsDefaultInstance() {
 }
+class EosSignedTx::HasBitSetters {
+ public:
+  static void set_has_signature_v(EosSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_signature_r(EosSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_signature_s(EosSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EosSignedTx::kSignatureVFieldNumber;
 const int EosSignedTx::kSignatureRFieldNumber;
@@ -10590,15 +12743,13 @@ const int EosSignedTx::kSignatureSFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosSignedTx::EosSignedTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2deos_2eproto::scc_info_EosSignedTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.eos.EosSignedTx)
 }
 EosSignedTx::EosSignedTx(const EosSignedTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   signature_r_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -10614,6 +12765,8 @@ EosSignedTx::EosSignedTx(const EosSignedTx& from)
 }
 
 void EosSignedTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EosSignedTx_messages_2deos_2eproto.base);
   signature_r_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   signature_s_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   signature_v_ = 0u;
@@ -10632,13 +12785,8 @@ void EosSignedTx::SharedDtor() {
 void EosSignedTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EosSignedTx::descriptor() {
-  ::protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EosSignedTx& EosSignedTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2deos_2eproto::scc_info_EosSignedTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EosSignedTx_messages_2deos_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -10650,7 +12798,7 @@ void EosSignedTx::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       signature_r_.ClearNonDefaultToEmptyNoArena();
     }
@@ -10663,9 +12811,83 @@ void EosSignedTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EosSignedTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EosSignedTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 signature_v = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_signature_v(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes signature_r = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature_r();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes signature_s = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature_s();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EosSignedTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.eos.EosSignedTx)
   for (;;) {
@@ -10675,9 +12897,8 @@ bool EosSignedTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 signature_v = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_signature_v();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_signature_v(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &signature_v_)));
@@ -10689,8 +12910,7 @@ bool EosSignedTx::MergePartialFromCodedStream(
 
       // optional bytes signature_r = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature_r()));
         } else {
@@ -10701,8 +12921,7 @@ bool EosSignedTx::MergePartialFromCodedStream(
 
       // optional bytes signature_s = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature_s()));
         } else {
@@ -10730,6 +12949,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EosSignedTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -10763,8 +12983,7 @@ void EosSignedTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EosSignedTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.eos.EosSignedTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -10806,23 +13025,28 @@ size_t EosSignedTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional bytes signature_r = 2;
-    if (has_signature_r()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature_r());
     }
 
     // optional bytes signature_s = 3;
-    if (has_signature_s()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature_s());
     }
 
     // optional uint32 signature_v = 1;
-    if (has_signature_v()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->signature_v());
@@ -10838,9 +13062,9 @@ void EosSignedTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.eos.EosSignedTx)
   GOOGLE_DCHECK_NE(&from, this);
   const EosSignedTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EosSignedTx>(
+      ::google::protobuf::DynamicCastToGenerated<EosSignedTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.eos.EosSignedTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -10857,13 +13081,13 @@ void EosSignedTx::MergeFrom(const EosSignedTx& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_signature_r();
+      _has_bits_[0] |= 0x00000001u;
       signature_r_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_r_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_signature_s();
+      _has_bits_[0] |= 0x00000002u;
       signature_s_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_s_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -10897,18 +13121,18 @@ void EosSignedTx::Swap(EosSignedTx* other) {
 }
 void EosSignedTx::InternalSwap(EosSignedTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   signature_r_.Swap(&other->signature_r_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   signature_s_.Swap(&other->signature_s_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(signature_v_, other->signature_v_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EosSignedTx::GetMetadata() const {
-  protobuf_messages_2deos_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2deos_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2deos_2eproto);
+  return ::file_level_metadata_messages_2deos_2eproto[kIndexInFileMessages];
 }
 
 
@@ -10919,91 +13143,92 @@ void EosSignedTx::InternalSwap(EosSignedTx* other) {
 }  // namespace hw
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosGetPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosGetPublicKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosGetPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosGetPublicKey >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosGetPublicKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosPublicKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosPublicKey >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosPublicKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosSignTx_EosTxHeader* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosSignTx_EosTxHeader >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosSignTx_EosTxHeader* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosSignTx_EosTxHeader >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosSignTx_EosTxHeader >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosSignTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosSignTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosSignTx >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionRequest >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosAsset* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosAsset >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosAsset* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosAsset >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosAsset >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosPermissionLevel >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationAccount >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorizationWait >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosAuthorization >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionCommon >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionTransfer >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionDelegate >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionUndelegate >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionRefund >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRam >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionBuyRamBytes >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionSellRam >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionVoteProducer >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionUpdateAuth >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionDeleteAuth >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionLinkAuth >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnlinkAuth >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosTxActionAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosTxActionAck >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosTxActionAck >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::eos::EosSignedTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosSignedTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::eos::EosSignedTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::eos::EosSignedTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::eos::EosSignedTx >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

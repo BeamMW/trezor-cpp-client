@@ -6,132 +6,106 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_messages_2dbitcoin_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TxAck_TransactionType_TxOutputBinType;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TxRequest_TxRequestDetailsType;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TxRequest_TxRequestSerializedType;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_MultisigRedeemScriptType;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_MultisigRedeemScriptType_HDNodePathType;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TxAck_TransactionType_TxInputType;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TxAck_TransactionType_TxOutputType;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_TxAck_TransactionType;
-}  // namespace protobuf_messages_2dbitcoin_2eproto
-namespace protobuf_messages_2dcommon_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dcommon_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HDNodeType;
-}  // namespace protobuf_messages_2dcommon_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TxAck_TransactionType_TxOutputBinType_messages_2dbitcoin_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TxRequest_TxRequestDetailsType_messages_2dbitcoin_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TxRequest_TxRequestSerializedType_messages_2dbitcoin_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_MultisigRedeemScriptType_HDNodePathType_messages_2dbitcoin_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_MultisigRedeemScriptType_messages_2dbitcoin_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TxAck_TransactionType_TxInputType_messages_2dbitcoin_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TxAck_TransactionType_TxOutputType_messages_2dbitcoin_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_TxAck_TransactionType_messages_2dbitcoin_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dcommon_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HDNodeType_messages_2dcommon_2eproto;
 namespace hw {
 namespace trezor {
 namespace messages {
 namespace bitcoin {
 class MultisigRedeemScriptType_HDNodePathTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<MultisigRedeemScriptType_HDNodePathType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<MultisigRedeemScriptType_HDNodePathType> _instance;
 } _MultisigRedeemScriptType_HDNodePathType_default_instance_;
 class MultisigRedeemScriptTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<MultisigRedeemScriptType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<MultisigRedeemScriptType> _instance;
 } _MultisigRedeemScriptType_default_instance_;
 class GetPublicKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<GetPublicKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<GetPublicKey> _instance;
 } _GetPublicKey_default_instance_;
 class PublicKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<PublicKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<PublicKey> _instance;
 } _PublicKey_default_instance_;
 class GetAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<GetAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<GetAddress> _instance;
 } _GetAddress_default_instance_;
 class AddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<Address>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<Address> _instance;
 } _Address_default_instance_;
 class SignMessageDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<SignMessage>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<SignMessage> _instance;
 } _SignMessage_default_instance_;
 class MessageSignatureDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<MessageSignature>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<MessageSignature> _instance;
 } _MessageSignature_default_instance_;
 class VerifyMessageDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<VerifyMessage>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<VerifyMessage> _instance;
 } _VerifyMessage_default_instance_;
 class SignTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<SignTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<SignTx> _instance;
 } _SignTx_default_instance_;
 class TxRequest_TxRequestDetailsTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TxRequest_TxRequestDetailsType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TxRequest_TxRequestDetailsType> _instance;
 } _TxRequest_TxRequestDetailsType_default_instance_;
 class TxRequest_TxRequestSerializedTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TxRequest_TxRequestSerializedType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TxRequest_TxRequestSerializedType> _instance;
 } _TxRequest_TxRequestSerializedType_default_instance_;
 class TxRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TxRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TxRequest> _instance;
 } _TxRequest_default_instance_;
 class TxAck_TransactionType_TxInputTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TxAck_TransactionType_TxInputType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TxAck_TransactionType_TxInputType> _instance;
 } _TxAck_TransactionType_TxInputType_default_instance_;
 class TxAck_TransactionType_TxOutputBinTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TxAck_TransactionType_TxOutputBinType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TxAck_TransactionType_TxOutputBinType> _instance;
 } _TxAck_TransactionType_TxOutputBinType_default_instance_;
 class TxAck_TransactionType_TxOutputTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TxAck_TransactionType_TxOutputType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TxAck_TransactionType_TxOutputType> _instance;
 } _TxAck_TransactionType_TxOutputType_default_instance_;
 class TxAck_TransactionTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TxAck_TransactionType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TxAck_TransactionType> _instance;
 } _TxAck_TransactionType_default_instance_;
 class TxAckDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<TxAck>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<TxAck> _instance;
 } _TxAck_default_instance_;
 }  // namespace bitcoin
 }  // namespace messages
 }  // namespace trezor
 }  // namespace hw
-namespace protobuf_messages_2dbitcoin_2eproto {
-static void InitDefaultsMultisigRedeemScriptType_HDNodePathType() {
+static void InitDefaultsMultisigRedeemScriptType_HDNodePathType_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -142,11 +116,11 @@ static void InitDefaultsMultisigRedeemScriptType_HDNodePathType() {
   ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_MultisigRedeemScriptType_HDNodePathType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsMultisigRedeemScriptType_HDNodePathType}, {
-      &protobuf_messages_2dcommon_2eproto::scc_info_HDNodeType.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_MultisigRedeemScriptType_HDNodePathType_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsMultisigRedeemScriptType_HDNodePathType_messages_2dbitcoin_2eproto}, {
+      &scc_info_HDNodeType_messages_2dcommon_2eproto.base,}};
 
-static void InitDefaultsMultisigRedeemScriptType() {
+static void InitDefaultsMultisigRedeemScriptType_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -157,11 +131,11 @@ static void InitDefaultsMultisigRedeemScriptType() {
   ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_MultisigRedeemScriptType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsMultisigRedeemScriptType}, {
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_MultisigRedeemScriptType_HDNodePathType.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_MultisigRedeemScriptType_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsMultisigRedeemScriptType_messages_2dbitcoin_2eproto}, {
+      &scc_info_MultisigRedeemScriptType_HDNodePathType_messages_2dbitcoin_2eproto.base,}};
 
-static void InitDefaultsGetPublicKey() {
+static void InitDefaultsGetPublicKey_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::hw::trezor::messages::bitcoin::GetPublicKey::_i_give_permission_to_break_this_code_default_coin_name_.DefaultConstruct();
@@ -176,10 +150,10 @@ static void InitDefaultsGetPublicKey() {
   ::hw::trezor::messages::bitcoin::GetPublicKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_GetPublicKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsGetPublicKey}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_GetPublicKey_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsGetPublicKey_messages_2dbitcoin_2eproto}, {}};
 
-static void InitDefaultsPublicKey() {
+static void InitDefaultsPublicKey_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -190,11 +164,11 @@ static void InitDefaultsPublicKey() {
   ::hw::trezor::messages::bitcoin::PublicKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_PublicKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsPublicKey}, {
-      &protobuf_messages_2dcommon_2eproto::scc_info_HDNodeType.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_PublicKey_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsPublicKey_messages_2dbitcoin_2eproto}, {
+      &scc_info_HDNodeType_messages_2dcommon_2eproto.base,}};
 
-static void InitDefaultsGetAddress() {
+static void InitDefaultsGetAddress_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::hw::trezor::messages::bitcoin::GetAddress::_i_give_permission_to_break_this_code_default_coin_name_.DefaultConstruct();
@@ -209,11 +183,11 @@ static void InitDefaultsGetAddress() {
   ::hw::trezor::messages::bitcoin::GetAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_GetAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsGetAddress}, {
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_MultisigRedeemScriptType.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_GetAddress_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsGetAddress_messages_2dbitcoin_2eproto}, {
+      &scc_info_MultisigRedeemScriptType_messages_2dbitcoin_2eproto.base,}};
 
-static void InitDefaultsAddress() {
+static void InitDefaultsAddress_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -224,10 +198,10 @@ static void InitDefaultsAddress() {
   ::hw::trezor::messages::bitcoin::Address::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_Address =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_Address_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAddress_messages_2dbitcoin_2eproto}, {}};
 
-static void InitDefaultsSignMessage() {
+static void InitDefaultsSignMessage_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::hw::trezor::messages::bitcoin::SignMessage::_i_give_permission_to_break_this_code_default_coin_name_.DefaultConstruct();
@@ -242,10 +216,10 @@ static void InitDefaultsSignMessage() {
   ::hw::trezor::messages::bitcoin::SignMessage::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_SignMessage =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsSignMessage}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_SignMessage_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsSignMessage_messages_2dbitcoin_2eproto}, {}};
 
-static void InitDefaultsMessageSignature() {
+static void InitDefaultsMessageSignature_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -256,10 +230,10 @@ static void InitDefaultsMessageSignature() {
   ::hw::trezor::messages::bitcoin::MessageSignature::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_MessageSignature =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsMessageSignature}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_MessageSignature_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsMessageSignature_messages_2dbitcoin_2eproto}, {}};
 
-static void InitDefaultsVerifyMessage() {
+static void InitDefaultsVerifyMessage_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::hw::trezor::messages::bitcoin::VerifyMessage::_i_give_permission_to_break_this_code_default_coin_name_.DefaultConstruct();
@@ -274,10 +248,10 @@ static void InitDefaultsVerifyMessage() {
   ::hw::trezor::messages::bitcoin::VerifyMessage::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_VerifyMessage =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsVerifyMessage}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_VerifyMessage_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsVerifyMessage_messages_2dbitcoin_2eproto}, {}};
 
-static void InitDefaultsSignTx() {
+static void InitDefaultsSignTx_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::hw::trezor::messages::bitcoin::SignTx::_i_give_permission_to_break_this_code_default_coin_name_.DefaultConstruct();
@@ -292,10 +266,10 @@ static void InitDefaultsSignTx() {
   ::hw::trezor::messages::bitcoin::SignTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_SignTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsSignTx}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_SignTx_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsSignTx_messages_2dbitcoin_2eproto}, {}};
 
-static void InitDefaultsTxRequest_TxRequestDetailsType() {
+static void InitDefaultsTxRequest_TxRequestDetailsType_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -306,10 +280,10 @@ static void InitDefaultsTxRequest_TxRequestDetailsType() {
   ::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TxRequest_TxRequestDetailsType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTxRequest_TxRequestDetailsType}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TxRequest_TxRequestDetailsType_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTxRequest_TxRequestDetailsType_messages_2dbitcoin_2eproto}, {}};
 
-static void InitDefaultsTxRequest_TxRequestSerializedType() {
+static void InitDefaultsTxRequest_TxRequestSerializedType_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -320,10 +294,10 @@ static void InitDefaultsTxRequest_TxRequestSerializedType() {
   ::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TxRequest_TxRequestSerializedType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTxRequest_TxRequestSerializedType}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TxRequest_TxRequestSerializedType_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTxRequest_TxRequestSerializedType_messages_2dbitcoin_2eproto}, {}};
 
-static void InitDefaultsTxRequest() {
+static void InitDefaultsTxRequest_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -334,12 +308,12 @@ static void InitDefaultsTxRequest() {
   ::hw::trezor::messages::bitcoin::TxRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_TxRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsTxRequest}, {
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_TxRequest_TxRequestDetailsType.base,
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_TxRequest_TxRequestSerializedType.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_TxRequest_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsTxRequest_messages_2dbitcoin_2eproto}, {
+      &scc_info_TxRequest_TxRequestDetailsType_messages_2dbitcoin_2eproto.base,
+      &scc_info_TxRequest_TxRequestSerializedType_messages_2dbitcoin_2eproto.base,}};
 
-static void InitDefaultsTxAck_TransactionType_TxInputType() {
+static void InitDefaultsTxAck_TransactionType_TxInputType_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -350,11 +324,11 @@ static void InitDefaultsTxAck_TransactionType_TxInputType() {
   ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_TxAck_TransactionType_TxInputType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTxAck_TransactionType_TxInputType}, {
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_MultisigRedeemScriptType.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_TxAck_TransactionType_TxInputType_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTxAck_TransactionType_TxInputType_messages_2dbitcoin_2eproto}, {
+      &scc_info_MultisigRedeemScriptType_messages_2dbitcoin_2eproto.base,}};
 
-static void InitDefaultsTxAck_TransactionType_TxOutputBinType() {
+static void InitDefaultsTxAck_TransactionType_TxOutputBinType_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -365,10 +339,10 @@ static void InitDefaultsTxAck_TransactionType_TxOutputBinType() {
   ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_TxAck_TransactionType_TxOutputBinType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTxAck_TransactionType_TxOutputBinType}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_TxAck_TransactionType_TxOutputBinType_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsTxAck_TransactionType_TxOutputBinType_messages_2dbitcoin_2eproto}, {}};
 
-static void InitDefaultsTxAck_TransactionType_TxOutputType() {
+static void InitDefaultsTxAck_TransactionType_TxOutputType_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -379,11 +353,11 @@ static void InitDefaultsTxAck_TransactionType_TxOutputType() {
   ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_TxAck_TransactionType_TxOutputType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTxAck_TransactionType_TxOutputType}, {
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_MultisigRedeemScriptType.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_TxAck_TransactionType_TxOutputType_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTxAck_TransactionType_TxOutputType_messages_2dbitcoin_2eproto}, {
+      &scc_info_MultisigRedeemScriptType_messages_2dbitcoin_2eproto.base,}};
 
-static void InitDefaultsTxAck_TransactionType() {
+static void InitDefaultsTxAck_TransactionType_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -394,13 +368,13 @@ static void InitDefaultsTxAck_TransactionType() {
   ::hw::trezor::messages::bitcoin::TxAck_TransactionType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<3> scc_info_TxAck_TransactionType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsTxAck_TransactionType}, {
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_TxAck_TransactionType_TxInputType.base,
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_TxAck_TransactionType_TxOutputBinType.base,
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_TxAck_TransactionType_TxOutputType.base,}};
+::google::protobuf::internal::SCCInfo<3> scc_info_TxAck_TransactionType_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsTxAck_TransactionType_messages_2dbitcoin_2eproto}, {
+      &scc_info_TxAck_TransactionType_TxInputType_messages_2dbitcoin_2eproto.base,
+      &scc_info_TxAck_TransactionType_TxOutputBinType_messages_2dbitcoin_2eproto.base,
+      &scc_info_TxAck_TransactionType_TxOutputType_messages_2dbitcoin_2eproto.base,}};
 
-static void InitDefaultsTxAck() {
+static void InitDefaultsTxAck_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -411,150 +385,151 @@ static void InitDefaultsTxAck() {
   ::hw::trezor::messages::bitcoin::TxAck::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_TxAck =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTxAck}, {
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_TxAck_TransactionType.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_TxAck_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsTxAck_messages_2dbitcoin_2eproto}, {
+      &scc_info_TxAck_TransactionType_messages_2dbitcoin_2eproto.base,}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_MultisigRedeemScriptType_HDNodePathType.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_MultisigRedeemScriptType.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_GetPublicKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_PublicKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_GetAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_Address.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_SignMessage.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_MessageSignature.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_VerifyMessage.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_SignTx.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TxRequest_TxRequestDetailsType.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TxRequest_TxRequestSerializedType.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TxRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TxAck_TransactionType_TxInputType.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TxAck_TransactionType_TxOutputBinType.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TxAck_TransactionType_TxOutputType.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TxAck_TransactionType.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_TxAck.base);
+void InitDefaults_messages_2dbitcoin_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_MultisigRedeemScriptType_HDNodePathType_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_MultisigRedeemScriptType_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_GetPublicKey_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_PublicKey_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_GetAddress_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_Address_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_SignMessage_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_MessageSignature_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_VerifyMessage_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_SignTx_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TxRequest_TxRequestDetailsType_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TxRequest_TxRequestSerializedType_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TxRequest_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TxAck_TransactionType_TxInputType_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TxAck_TransactionType_TxOutputBinType_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TxAck_TransactionType_TxOutputType_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TxAck_TransactionType_messages_2dbitcoin_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_TxAck_messages_2dbitcoin_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[18];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[3];
+::google::protobuf::Metadata file_level_metadata_messages_2dbitcoin_2eproto[18];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors_messages_2dbitcoin_2eproto[3];
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2dbitcoin_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_messages_2dbitcoin_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType, node_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType, node_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType, address_n_),
   0,
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, pubkeys_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, signatures_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, m_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, pubkeys_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, signatures_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, m_),
   ~0u,
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, ecdsa_curve_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, show_display_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, coin_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, script_type_),
-  ~0u,
-  0,
-  2,
-  1,
-  3,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::PublicKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::PublicKey, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::PublicKey, node_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::PublicKey, xpub_),
-  1,
-  0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetAddress, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetAddress, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetAddress, coin_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetAddress, show_display_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetAddress, multisig_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetAddress, script_type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, ecdsa_curve_name_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, show_display_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, coin_name_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, script_type_),
   ~0u,
   0,
   2,
   1,
   3,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::Address, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::Address, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::PublicKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::PublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::Address, address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::PublicKey, node_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::PublicKey, xpub_),
+  1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignMessage, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignMessage, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignMessage, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignMessage, message_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignMessage, coin_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignMessage, script_type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetAddress, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetAddress, coin_name_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetAddress, show_display_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetAddress, multisig_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetAddress, script_type_),
+  ~0u,
+  0,
+  2,
+  1,
+  3,
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::Address, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::Address, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::Address, address_),
+  0,
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignMessage, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignMessage, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignMessage, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignMessage, message_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignMessage, coin_name_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignMessage, script_type_),
   ~0u,
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MessageSignature, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MessageSignature, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MessageSignature, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MessageSignature, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MessageSignature, address_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MessageSignature, signature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MessageSignature, address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MessageSignature, signature_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::VerifyMessage, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::VerifyMessage, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::VerifyMessage, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::VerifyMessage, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::VerifyMessage, address_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::VerifyMessage, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::VerifyMessage, message_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::VerifyMessage, coin_name_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::VerifyMessage, address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::VerifyMessage, signature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::VerifyMessage, message_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::VerifyMessage, coin_name_),
   0,
   1,
   2,
   3,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, outputs_count_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, inputs_count_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, coin_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, version_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, lock_time_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, expiry_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, overwintered_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, version_group_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, outputs_count_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, inputs_count_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, coin_name_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, version_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, lock_time_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, expiry_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, overwintered_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, version_group_id_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, timestamp_),
   1,
   2,
   0,
@@ -564,58 +539,58 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   5,
   6,
   7,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType, request_index_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType, tx_hash_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType, extra_data_len_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType, extra_data_offset_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType, request_index_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType, tx_hash_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType, extra_data_len_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType, extra_data_offset_),
   1,
   0,
   2,
   3,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType, signature_index_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType, serialized_tx_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType, signature_index_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType, signature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType, serialized_tx_),
   2,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest, request_type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest, details_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest, serialized_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest, request_type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest, details_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest, serialized_),
   2,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, prev_hash_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, prev_index_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, script_sig_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, sequence_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, script_type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, multisig_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, amount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, decred_tree_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, decred_script_version_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, prev_block_hash_bip115_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, prev_block_height_bip115_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, prev_hash_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, prev_index_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, script_sig_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, sequence_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, script_type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, multisig_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, amount_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, decred_tree_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, decred_script_version_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, prev_block_hash_bip115_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType, prev_block_height_bip115_),
   ~0u,
   0,
   4,
@@ -628,31 +603,31 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   8,
   2,
   9,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType, amount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType, script_pubkey_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType, decred_script_version_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType, amount_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType, script_pubkey_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType, decred_script_version_),
   1,
   0,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, address_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, amount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, script_type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, multisig_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, op_return_data_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, decred_script_version_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, block_hash_bip115_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, block_height_bip115_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, amount_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, script_type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, multisig_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, op_return_data_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, decred_script_version_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, block_hash_bip115_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType, block_height_bip115_),
   0,
   ~0u,
   4,
@@ -662,24 +637,24 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   6,
   2,
   7,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, version_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, inputs_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, bin_outputs_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, lock_time_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, outputs_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, inputs_cnt_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, outputs_cnt_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, extra_data_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, extra_data_len_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, expiry_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, overwintered_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, version_group_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, version_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, inputs_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, bin_outputs_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, lock_time_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, outputs_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, inputs_cnt_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, outputs_cnt_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, extra_data_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, extra_data_len_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, expiry_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, overwintered_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, version_group_id_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, timestamp_),
   1,
   ~0u,
   ~0u,
@@ -693,15 +668,15 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   7,
   8,
   9,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck, tx_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck, tx_),
   0,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType)},
   { 9, 17, sizeof(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType)},
   { 20, 30, sizeof(::hw::trezor::messages::bitcoin::GetPublicKey)},
@@ -743,144 +718,128 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::bitcoin::_TxAck_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "messages-bitcoin.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2dbitcoin_2eproto = {
+  {}, AddDescriptors_messages_2dbitcoin_2eproto, "messages-bitcoin.proto", schemas,
+  file_default_instances, TableStruct_messages_2dbitcoin_2eproto::offsets,
+  file_level_metadata_messages_2dbitcoin_2eproto, 18, file_level_enum_descriptors_messages_2dbitcoin_2eproto, file_level_service_descriptors_messages_2dbitcoin_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_messages_2dbitcoin_2eproto[] =
+  "\n\026messages-bitcoin.proto\022\032hw.trezor.mess"
+  "ages.bitcoin\032\025messages-common.proto\"\351\001\n\030"
+  "MultisigRedeemScriptType\022T\n\007pubkeys\030\001 \003("
+  "\0132C.hw.trezor.messages.bitcoin.MultisigR"
+  "edeemScriptType.HDNodePathType\022\022\n\nsignat"
+  "ures\030\002 \003(\014\022\t\n\001m\030\003 \001(\r\032X\n\016HDNodePathType\022"
+  "3\n\004node\030\001 \002(\0132%.hw.trezor.messages.commo"
+  "n.HDNodeType\022\021\n\taddress_n\030\002 \003(\r\"\275\001\n\014GetP"
+  "ublicKey\022\021\n\taddress_n\030\001 \003(\r\022\030\n\020ecdsa_cur"
+  "ve_name\030\002 \001(\t\022\024\n\014show_display\030\003 \001(\010\022\032\n\tc"
+  "oin_name\030\004 \001(\t:\007Bitcoin\022N\n\013script_type\030\005"
+  " \001(\0162+.hw.trezor.messages.bitcoin.InputS"
+  "criptType:\014SPENDADDRESS\"N\n\tPublicKey\0223\n\004"
+  "node\030\001 \002(\0132%.hw.trezor.messages.common.H"
+  "DNodeType\022\014\n\004xpub\030\002 \001(\t\"\351\001\n\nGetAddress\022\021"
+  "\n\taddress_n\030\001 \003(\r\022\032\n\tcoin_name\030\002 \001(\t:\007Bi"
+  "tcoin\022\024\n\014show_display\030\003 \001(\010\022F\n\010multisig\030"
+  "\004 \001(\01324.hw.trezor.messages.bitcoin.Multi"
+  "sigRedeemScriptType\022N\n\013script_type\030\005 \001(\016"
+  "2+.hw.trezor.messages.bitcoin.InputScrip"
+  "tType:\014SPENDADDRESS\"\032\n\007Address\022\017\n\007addres"
+  "s\030\001 \002(\t\"\235\001\n\013SignMessage\022\021\n\taddress_n\030\001 \003"
+  "(\r\022\017\n\007message\030\002 \002(\014\022\032\n\tcoin_name\030\003 \001(\t:\007"
+  "Bitcoin\022N\n\013script_type\030\004 \001(\0162+.hw.trezor"
+  ".messages.bitcoin.InputScriptType:\014SPEND"
+  "ADDRESS\"6\n\020MessageSignature\022\017\n\007address\030\001"
+  " \001(\t\022\021\n\tsignature\030\002 \001(\014\"`\n\rVerifyMessage"
+  "\022\017\n\007address\030\001 \001(\t\022\021\n\tsignature\030\002 \001(\014\022\017\n\007"
+  "message\030\003 \001(\014\022\032\n\tcoin_name\030\004 \001(\t:\007Bitcoi"
+  "n\"\316\001\n\006SignTx\022\025\n\routputs_count\030\001 \002(\r\022\024\n\014i"
+  "nputs_count\030\002 \002(\r\022\032\n\tcoin_name\030\003 \001(\t:\007Bi"
+  "tcoin\022\022\n\007version\030\004 \001(\r:\0011\022\024\n\tlock_time\030\005"
+  " \001(\r:\0010\022\016\n\006expiry\030\006 \001(\r\022\024\n\014overwintered\030"
+  "\007 \001(\010\022\030\n\020version_group_id\030\010 \001(\r\022\021\n\ttimes"
+  "tamp\030\t \001(\r\"\234\004\n\tTxRequest\022G\n\014request_type"
+  "\030\001 \001(\01621.hw.trezor.messages.bitcoin.TxRe"
+  "quest.RequestType\022K\n\007details\030\002 \001(\0132:.hw."
+  "trezor.messages.bitcoin.TxRequest.TxRequ"
+  "estDetailsType\022Q\n\nserialized\030\003 \001(\0132=.hw."
+  "trezor.messages.bitcoin.TxRequest.TxRequ"
+  "estSerializedType\032q\n\024TxRequestDetailsTyp"
+  "e\022\025\n\rrequest_index\030\001 \001(\r\022\017\n\007tx_hash\030\002 \001("
+  "\014\022\026\n\016extra_data_len\030\003 \001(\r\022\031\n\021extra_data_"
+  "offset\030\004 \001(\r\032\\\n\027TxRequestSerializedType\022"
+  "\027\n\017signature_index\030\001 \001(\r\022\021\n\tsignature\030\002 "
+  "\001(\014\022\025\n\rserialized_tx\030\003 \001(\014\"U\n\013RequestTyp"
+  "e\022\013\n\007TXINPUT\020\000\022\014\n\010TXOUTPUT\020\001\022\n\n\006TXMETA\020\002"
+  "\022\016\n\nTXFINISHED\020\003\022\017\n\013TXEXTRADATA\020\004\"\375\013\n\005Tx"
+  "Ack\022=\n\002tx\030\001 \001(\01321.hw.trezor.messages.bit"
+  "coin.TxAck.TransactionType\032\264\013\n\017Transacti"
+  "onType\022\017\n\007version\030\001 \001(\r\022M\n\006inputs\030\002 \003(\0132"
+  "=.hw.trezor.messages.bitcoin.TxAck.Trans"
+  "actionType.TxInputType\022V\n\013bin_outputs\030\003 "
+  "\003(\0132A.hw.trezor.messages.bitcoin.TxAck.T"
+  "ransactionType.TxOutputBinType\022\021\n\tlock_t"
+  "ime\030\004 \001(\r\022O\n\007outputs\030\005 \003(\0132>.hw.trezor.m"
+  "essages.bitcoin.TxAck.TransactionType.Tx"
+  "OutputType\022\022\n\ninputs_cnt\030\006 \001(\r\022\023\n\013output"
+  "s_cnt\030\007 \001(\r\022\022\n\nextra_data\030\010 \001(\014\022\026\n\016extra"
+  "_data_len\030\t \001(\r\022\016\n\006expiry\030\n \001(\r\022\024\n\014overw"
+  "intered\030\013 \001(\010\022\030\n\020version_group_id\030\014 \001(\r\022"
+  "\021\n\ttimestamp\030\r \001(\r\032\227\003\n\013TxInputType\022\021\n\tad"
+  "dress_n\030\001 \003(\r\022\021\n\tprev_hash\030\002 \002(\014\022\022\n\nprev"
+  "_index\030\003 \002(\r\022\022\n\nscript_sig\030\004 \001(\014\022\034\n\010sequ"
+  "ence\030\005 \001(\r:\n4294967295\022N\n\013script_type\030\006 "
+  "\001(\0162+.hw.trezor.messages.bitcoin.InputSc"
+  "riptType:\014SPENDADDRESS\022F\n\010multisig\030\007 \001(\013"
+  "24.hw.trezor.messages.bitcoin.MultisigRe"
+  "deemScriptType\022\016\n\006amount\030\010 \001(\004\022\023\n\013decred"
+  "_tree\030\t \001(\r\022\035\n\025decred_script_version\030\n \001"
+  "(\r\022\036\n\026prev_block_hash_bip115\030\013 \001(\014\022 \n\030pr"
+  "ev_block_height_bip115\030\014 \001(\r\032W\n\017TxOutput"
+  "BinType\022\016\n\006amount\030\001 \002(\004\022\025\n\rscript_pubkey"
+  "\030\002 \002(\014\022\035\n\025decred_script_version\030\003 \001(\r\032\351\003"
+  "\n\014TxOutputType\022\017\n\007address\030\001 \001(\t\022\021\n\taddre"
+  "ss_n\030\002 \003(\r\022\016\n\006amount\030\003 \002(\004\022d\n\013script_typ"
+  "e\030\004 \002(\0162O.hw.trezor.messages.bitcoin.TxA"
+  "ck.TransactionType.TxOutputType.OutputSc"
+  "riptType\022F\n\010multisig\030\005 \001(\01324.hw.trezor.m"
+  "essages.bitcoin.MultisigRedeemScriptType"
+  "\022\026\n\016op_return_data\030\006 \001(\014\022\035\n\025decred_scrip"
+  "t_version\030\007 \001(\r\022\031\n\021block_hash_bip115\030\010 \001"
+  "(\014\022\033\n\023block_height_bip115\030\t \001(\r\"\207\001\n\020Outp"
+  "utScriptType\022\020\n\014PAYTOADDRESS\020\000\022\023\n\017PAYTOS"
+  "CRIPTHASH\020\001\022\021\n\rPAYTOMULTISIG\020\002\022\021\n\rPAYTOO"
+  "PRETURN\020\003\022\020\n\014PAYTOWITNESS\020\004\022\024\n\020PAYTOP2SH"
+  "WITNESS\020\005*l\n\017InputScriptType\022\020\n\014SPENDADD"
+  "RESS\020\000\022\021\n\rSPENDMULTISIG\020\001\022\014\n\010EXTERNAL\020\002\022"
+  "\020\n\014SPENDWITNESS\020\003\022\024\n\020SPENDP2SHWITNESS\020\004B"
+  ";\n#com.satoshilabs.trezor.lib.protobufB\024"
+  "TrezorMessageBitcoin"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dbitcoin_2eproto = {
+  false, InitDefaults_messages_2dbitcoin_2eproto, 
+  descriptor_table_protodef_messages_2dbitcoin_2eproto,
+  "messages-bitcoin.proto", &assign_descriptors_table_messages_2dbitcoin_2eproto, 3620,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 18);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\026messages-bitcoin.proto\022\032hw.trezor.mess"
-      "ages.bitcoin\032\025messages-common.proto\"\351\001\n\030"
-      "MultisigRedeemScriptType\022T\n\007pubkeys\030\001 \003("
-      "\0132C.hw.trezor.messages.bitcoin.MultisigR"
-      "edeemScriptType.HDNodePathType\022\022\n\nsignat"
-      "ures\030\002 \003(\014\022\t\n\001m\030\003 \001(\r\032X\n\016HDNodePathType\022"
-      "3\n\004node\030\001 \002(\0132%.hw.trezor.messages.commo"
-      "n.HDNodeType\022\021\n\taddress_n\030\002 \003(\r\"\275\001\n\014GetP"
-      "ublicKey\022\021\n\taddress_n\030\001 \003(\r\022\030\n\020ecdsa_cur"
-      "ve_name\030\002 \001(\t\022\024\n\014show_display\030\003 \001(\010\022\032\n\tc"
-      "oin_name\030\004 \001(\t:\007Bitcoin\022N\n\013script_type\030\005"
-      " \001(\0162+.hw.trezor.messages.bitcoin.InputS"
-      "criptType:\014SPENDADDRESS\"N\n\tPublicKey\0223\n\004"
-      "node\030\001 \002(\0132%.hw.trezor.messages.common.H"
-      "DNodeType\022\014\n\004xpub\030\002 \001(\t\"\351\001\n\nGetAddress\022\021"
-      "\n\taddress_n\030\001 \003(\r\022\032\n\tcoin_name\030\002 \001(\t:\007Bi"
-      "tcoin\022\024\n\014show_display\030\003 \001(\010\022F\n\010multisig\030"
-      "\004 \001(\01324.hw.trezor.messages.bitcoin.Multi"
-      "sigRedeemScriptType\022N\n\013script_type\030\005 \001(\016"
-      "2+.hw.trezor.messages.bitcoin.InputScrip"
-      "tType:\014SPENDADDRESS\"\032\n\007Address\022\017\n\007addres"
-      "s\030\001 \002(\t\"\235\001\n\013SignMessage\022\021\n\taddress_n\030\001 \003"
-      "(\r\022\017\n\007message\030\002 \002(\014\022\032\n\tcoin_name\030\003 \001(\t:\007"
-      "Bitcoin\022N\n\013script_type\030\004 \001(\0162+.hw.trezor"
-      ".messages.bitcoin.InputScriptType:\014SPEND"
-      "ADDRESS\"6\n\020MessageSignature\022\017\n\007address\030\001"
-      " \001(\t\022\021\n\tsignature\030\002 \001(\014\"`\n\rVerifyMessage"
-      "\022\017\n\007address\030\001 \001(\t\022\021\n\tsignature\030\002 \001(\014\022\017\n\007"
-      "message\030\003 \001(\014\022\032\n\tcoin_name\030\004 \001(\t:\007Bitcoi"
-      "n\"\316\001\n\006SignTx\022\025\n\routputs_count\030\001 \002(\r\022\024\n\014i"
-      "nputs_count\030\002 \002(\r\022\032\n\tcoin_name\030\003 \001(\t:\007Bi"
-      "tcoin\022\022\n\007version\030\004 \001(\r:\0011\022\024\n\tlock_time\030\005"
-      " \001(\r:\0010\022\016\n\006expiry\030\006 \001(\r\022\024\n\014overwintered\030"
-      "\007 \001(\010\022\030\n\020version_group_id\030\010 \001(\r\022\021\n\ttimes"
-      "tamp\030\t \001(\r\"\234\004\n\tTxRequest\022G\n\014request_type"
-      "\030\001 \001(\01621.hw.trezor.messages.bitcoin.TxRe"
-      "quest.RequestType\022K\n\007details\030\002 \001(\0132:.hw."
-      "trezor.messages.bitcoin.TxRequest.TxRequ"
-      "estDetailsType\022Q\n\nserialized\030\003 \001(\0132=.hw."
-      "trezor.messages.bitcoin.TxRequest.TxRequ"
-      "estSerializedType\032q\n\024TxRequestDetailsTyp"
-      "e\022\025\n\rrequest_index\030\001 \001(\r\022\017\n\007tx_hash\030\002 \001("
-      "\014\022\026\n\016extra_data_len\030\003 \001(\r\022\031\n\021extra_data_"
-      "offset\030\004 \001(\r\032\\\n\027TxRequestSerializedType\022"
-      "\027\n\017signature_index\030\001 \001(\r\022\021\n\tsignature\030\002 "
-      "\001(\014\022\025\n\rserialized_tx\030\003 \001(\014\"U\n\013RequestTyp"
-      "e\022\013\n\007TXINPUT\020\000\022\014\n\010TXOUTPUT\020\001\022\n\n\006TXMETA\020\002"
-      "\022\016\n\nTXFINISHED\020\003\022\017\n\013TXEXTRADATA\020\004\"\375\013\n\005Tx"
-      "Ack\022=\n\002tx\030\001 \001(\01321.hw.trezor.messages.bit"
-      "coin.TxAck.TransactionType\032\264\013\n\017Transacti"
-      "onType\022\017\n\007version\030\001 \001(\r\022M\n\006inputs\030\002 \003(\0132"
-      "=.hw.trezor.messages.bitcoin.TxAck.Trans"
-      "actionType.TxInputType\022V\n\013bin_outputs\030\003 "
-      "\003(\0132A.hw.trezor.messages.bitcoin.TxAck.T"
-      "ransactionType.TxOutputBinType\022\021\n\tlock_t"
-      "ime\030\004 \001(\r\022O\n\007outputs\030\005 \003(\0132>.hw.trezor.m"
-      "essages.bitcoin.TxAck.TransactionType.Tx"
-      "OutputType\022\022\n\ninputs_cnt\030\006 \001(\r\022\023\n\013output"
-      "s_cnt\030\007 \001(\r\022\022\n\nextra_data\030\010 \001(\014\022\026\n\016extra"
-      "_data_len\030\t \001(\r\022\016\n\006expiry\030\n \001(\r\022\024\n\014overw"
-      "intered\030\013 \001(\010\022\030\n\020version_group_id\030\014 \001(\r\022"
-      "\021\n\ttimestamp\030\r \001(\r\032\227\003\n\013TxInputType\022\021\n\tad"
-      "dress_n\030\001 \003(\r\022\021\n\tprev_hash\030\002 \002(\014\022\022\n\nprev"
-      "_index\030\003 \002(\r\022\022\n\nscript_sig\030\004 \001(\014\022\034\n\010sequ"
-      "ence\030\005 \001(\r:\n4294967295\022N\n\013script_type\030\006 "
-      "\001(\0162+.hw.trezor.messages.bitcoin.InputSc"
-      "riptType:\014SPENDADDRESS\022F\n\010multisig\030\007 \001(\013"
-      "24.hw.trezor.messages.bitcoin.MultisigRe"
-      "deemScriptType\022\016\n\006amount\030\010 \001(\004\022\023\n\013decred"
-      "_tree\030\t \001(\r\022\035\n\025decred_script_version\030\n \001"
-      "(\r\022\036\n\026prev_block_hash_bip115\030\013 \001(\014\022 \n\030pr"
-      "ev_block_height_bip115\030\014 \001(\r\032W\n\017TxOutput"
-      "BinType\022\016\n\006amount\030\001 \002(\004\022\025\n\rscript_pubkey"
-      "\030\002 \002(\014\022\035\n\025decred_script_version\030\003 \001(\r\032\351\003"
-      "\n\014TxOutputType\022\017\n\007address\030\001 \001(\t\022\021\n\taddre"
-      "ss_n\030\002 \003(\r\022\016\n\006amount\030\003 \002(\004\022d\n\013script_typ"
-      "e\030\004 \002(\0162O.hw.trezor.messages.bitcoin.TxA"
-      "ck.TransactionType.TxOutputType.OutputSc"
-      "riptType\022F\n\010multisig\030\005 \001(\01324.hw.trezor.m"
-      "essages.bitcoin.MultisigRedeemScriptType"
-      "\022\026\n\016op_return_data\030\006 \001(\014\022\035\n\025decred_scrip"
-      "t_version\030\007 \001(\r\022\031\n\021block_hash_bip115\030\010 \001"
-      "(\014\022\033\n\023block_height_bip115\030\t \001(\r\"\207\001\n\020Outp"
-      "utScriptType\022\020\n\014PAYTOADDRESS\020\000\022\023\n\017PAYTOS"
-      "CRIPTHASH\020\001\022\021\n\rPAYTOMULTISIG\020\002\022\021\n\rPAYTOO"
-      "PRETURN\020\003\022\020\n\014PAYTOWITNESS\020\004\022\024\n\020PAYTOP2SH"
-      "WITNESS\020\005*l\n\017InputScriptType\022\020\n\014SPENDADD"
-      "RESS\020\000\022\021\n\rSPENDMULTISIG\020\001\022\014\n\010EXTERNAL\020\002\022"
-      "\020\n\014SPENDWITNESS\020\003\022\024\n\020SPENDP2SHWITNESS\020\004B"
-      ";\n#com.satoshilabs.trezor.lib.protobufB\024"
-      "TrezorMessageBitcoin"
+void AddDescriptors_messages_2dbitcoin_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
+    ::AddDescriptors_messages_2dcommon_2eproto,
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 3620);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "messages-bitcoin.proto", &protobuf_RegisterTypes);
-  ::protobuf_messages_2dcommon_2eproto::AddDescriptors();
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_messages_2dbitcoin_2eproto, deps, 1);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_messages_2dbitcoin_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_messages_2dbitcoin_2eproto = []() { AddDescriptors_messages_2dbitcoin_2eproto(); return true; }();
 namespace hw {
 namespace trezor {
 namespace messages {
 namespace bitcoin {
 const ::google::protobuf::EnumDescriptor* TxRequest_RequestType_descriptor() {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_messages_2dbitcoin_2eproto::file_level_enum_descriptors[0];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return file_level_enum_descriptors_messages_2dbitcoin_2eproto[0];
 }
 bool TxRequest_RequestType_IsValid(int value) {
   switch (value) {
@@ -906,8 +865,8 @@ const TxRequest_RequestType TxRequest::RequestType_MAX;
 const int TxRequest::RequestType_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* TxAck_TransactionType_TxOutputType_OutputScriptType_descriptor() {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_messages_2dbitcoin_2eproto::file_level_enum_descriptors[1];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return file_level_enum_descriptors_messages_2dbitcoin_2eproto[1];
 }
 bool TxAck_TransactionType_TxOutputType_OutputScriptType_IsValid(int value) {
   switch (value) {
@@ -935,8 +894,8 @@ const TxAck_TransactionType_TxOutputType_OutputScriptType TxAck_TransactionType_
 const int TxAck_TransactionType_TxOutputType::OutputScriptType_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* InputScriptType_descriptor() {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_messages_2dbitcoin_2eproto::file_level_enum_descriptors[2];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return file_level_enum_descriptors_messages_2dbitcoin_2eproto[2];
 }
 bool InputScriptType_IsValid(int value) {
   switch (value) {
@@ -958,9 +917,21 @@ void MultisigRedeemScriptType_HDNodePathType::InitAsDefaultInstance() {
   ::hw::trezor::messages::bitcoin::_MultisigRedeemScriptType_HDNodePathType_default_instance_._instance.get_mutable()->node_ = const_cast< ::hw::trezor::messages::common::HDNodeType*>(
       ::hw::trezor::messages::common::HDNodeType::internal_default_instance());
 }
+class MultisigRedeemScriptType_HDNodePathType::HasBitSetters {
+ public:
+  static const ::hw::trezor::messages::common::HDNodeType& node(const MultisigRedeemScriptType_HDNodePathType* msg);
+  static void set_has_node(MultisigRedeemScriptType_HDNodePathType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::hw::trezor::messages::common::HDNodeType&
+MultisigRedeemScriptType_HDNodePathType::HasBitSetters::node(const MultisigRedeemScriptType_HDNodePathType* msg) {
+  return *msg->node_;
+}
 void MultisigRedeemScriptType_HDNodePathType::clear_node() {
-  if (node_ != NULL) node_->Clear();
-  clear_has_node();
+  if (node_ != nullptr) node_->Clear();
+  _has_bits_[0] &= ~0x00000001u;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int MultisigRedeemScriptType_HDNodePathType::kNodeFieldNumber;
@@ -968,28 +939,28 @@ const int MultisigRedeemScriptType_HDNodePathType::kAddressNFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 MultisigRedeemScriptType_HDNodePathType::MultisigRedeemScriptType_HDNodePathType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_MultisigRedeemScriptType_HDNodePathType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.HDNodePathType)
 }
 MultisigRedeemScriptType_HDNodePathType::MultisigRedeemScriptType_HDNodePathType(const MultisigRedeemScriptType_HDNodePathType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_node()) {
     node_ = new ::hw::trezor::messages::common::HDNodeType(*from.node_);
   } else {
-    node_ = NULL;
+    node_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.HDNodePathType)
 }
 
 void MultisigRedeemScriptType_HDNodePathType::SharedCtor() {
-  node_ = NULL;
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_MultisigRedeemScriptType_HDNodePathType_messages_2dbitcoin_2eproto.base);
+  node_ = nullptr;
 }
 
 MultisigRedeemScriptType_HDNodePathType::~MultisigRedeemScriptType_HDNodePathType() {
@@ -1004,13 +975,8 @@ void MultisigRedeemScriptType_HDNodePathType::SharedDtor() {
 void MultisigRedeemScriptType_HDNodePathType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* MultisigRedeemScriptType_HDNodePathType::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const MultisigRedeemScriptType_HDNodePathType& MultisigRedeemScriptType_HDNodePathType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_MultisigRedeemScriptType_HDNodePathType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_MultisigRedeemScriptType_HDNodePathType_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1024,16 +990,82 @@ void MultisigRedeemScriptType_HDNodePathType::Clear() {
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(node_ != NULL);
+    GOOGLE_DCHECK(node_ != nullptr);
     node_->Clear();
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* MultisigRedeemScriptType_HDNodePathType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<MultisigRedeemScriptType_HDNodePathType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // required .hw.trezor.messages.common.HDNodeType node = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::common::HDNodeType::_InternalParse;
+        object = msg->mutable_node();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // repeated uint32 address_n = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 16) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 16 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool MultisigRedeemScriptType_HDNodePathType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.HDNodePathType)
   for (;;) {
@@ -1043,8 +1075,7 @@ bool MultisigRedeemScriptType_HDNodePathType::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required .hw.trezor.messages.common.HDNodeType node = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_node()));
         } else {
@@ -1055,14 +1086,11 @@ bool MultisigRedeemScriptType_HDNodePathType::MergePartialFromCodedStream(
 
       // repeated uint32 address_n = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 16u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1091,6 +1119,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void MultisigRedeemScriptType_HDNodePathType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1102,7 +1131,7 @@ void MultisigRedeemScriptType_HDNodePathType::SerializeWithCachedSizes(
   // required .hw.trezor.messages.common.HDNodeType node = 1;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_node(), output);
+      1, HasBitSetters::node(this), output);
   }
 
   // repeated uint32 address_n = 2;
@@ -1119,8 +1148,7 @@ void MultisigRedeemScriptType_HDNodePathType::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* MultisigRedeemScriptType_HDNodePathType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.HDNodePathType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1130,7 +1158,7 @@ void MultisigRedeemScriptType_HDNodePathType::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_node(), deterministic, target);
+        1, HasBitSetters::node(this), target);
   }
 
   // repeated uint32 address_n = 2;
@@ -1160,6 +1188,10 @@ size_t MultisigRedeemScriptType_HDNodePathType::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *node_);
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 2;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1178,9 +1210,9 @@ void MultisigRedeemScriptType_HDNodePathType::MergeFrom(const ::google::protobuf
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.HDNodePathType)
   GOOGLE_DCHECK_NE(&from, this);
   const MultisigRedeemScriptType_HDNodePathType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const MultisigRedeemScriptType_HDNodePathType>(
+      ::google::protobuf::DynamicCastToGenerated<MultisigRedeemScriptType_HDNodePathType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.HDNodePathType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1230,15 +1262,15 @@ void MultisigRedeemScriptType_HDNodePathType::Swap(MultisigRedeemScriptType_HDNo
 }
 void MultisigRedeemScriptType_HDNodePathType::InternalSwap(MultisigRedeemScriptType_HDNodePathType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(node_, other->node_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata MultisigRedeemScriptType_HDNodePathType::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1246,6 +1278,13 @@ void MultisigRedeemScriptType_HDNodePathType::InternalSwap(MultisigRedeemScriptT
 
 void MultisigRedeemScriptType::InitAsDefaultInstance() {
 }
+class MultisigRedeemScriptType::HasBitSetters {
+ public:
+  static void set_has_m(MultisigRedeemScriptType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int MultisigRedeemScriptType::kPubkeysFieldNumber;
 const int MultisigRedeemScriptType::kSignaturesFieldNumber;
@@ -1253,15 +1292,13 @@ const int MultisigRedeemScriptType::kMFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 MultisigRedeemScriptType::MultisigRedeemScriptType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_MultisigRedeemScriptType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.MultisigRedeemScriptType)
 }
 MultisigRedeemScriptType::MultisigRedeemScriptType(const MultisigRedeemScriptType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       pubkeys_(from.pubkeys_),
       signatures_(from.signatures_) {
@@ -1271,6 +1308,8 @@ MultisigRedeemScriptType::MultisigRedeemScriptType(const MultisigRedeemScriptTyp
 }
 
 void MultisigRedeemScriptType::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_MultisigRedeemScriptType_messages_2dbitcoin_2eproto.base);
   m_ = 0u;
 }
 
@@ -1285,13 +1324,8 @@ void MultisigRedeemScriptType::SharedDtor() {
 void MultisigRedeemScriptType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* MultisigRedeemScriptType::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const MultisigRedeemScriptType& MultisigRedeemScriptType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_MultisigRedeemScriptType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_MultisigRedeemScriptType_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1309,9 +1343,87 @@ void MultisigRedeemScriptType::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* MultisigRedeemScriptType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<MultisigRedeemScriptType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated .hw.trezor.messages.bitcoin.MultisigRedeemScriptType.HDNodePathType pubkeys = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType::_InternalParse;
+          object = msg->add_pubkeys();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
+        break;
+      }
+      // repeated bytes signatures = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          object = msg->add_signatures();
+          if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+            parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+            goto string_till_end;
+          }
+          GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+          ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+          ptr += size;
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 18 && (ptr += 1));
+        break;
+      }
+      // optional uint32 m = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_m(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool MultisigRedeemScriptType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.MultisigRedeemScriptType)
   for (;;) {
@@ -1321,8 +1433,7 @@ bool MultisigRedeemScriptType::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .hw.trezor.messages.bitcoin.MultisigRedeemScriptType.HDNodePathType pubkeys = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_pubkeys()));
         } else {
@@ -1333,8 +1444,7 @@ bool MultisigRedeemScriptType::MergePartialFromCodedStream(
 
       // repeated bytes signatures = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->add_signatures()));
         } else {
@@ -1345,9 +1455,8 @@ bool MultisigRedeemScriptType::MergePartialFromCodedStream(
 
       // optional uint32 m = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_m();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_m(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &m_)));
@@ -1376,6 +1485,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void MultisigRedeemScriptType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1412,8 +1522,7 @@ void MultisigRedeemScriptType::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* MultisigRedeemScriptType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.MultisigRedeemScriptType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1423,7 +1532,7 @@ void MultisigRedeemScriptType::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->pubkeys_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->pubkeys(static_cast<int>(i)), deterministic, target);
+        1, this->pubkeys(static_cast<int>(i)), target);
   }
 
   // repeated bytes signatures = 2;
@@ -1455,6 +1564,10 @@ size_t MultisigRedeemScriptType::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .hw.trezor.messages.bitcoin.MultisigRedeemScriptType.HDNodePathType pubkeys = 1;
   {
     unsigned int count = static_cast<unsigned int>(this->pubkeys_size());
@@ -1475,7 +1588,8 @@ size_t MultisigRedeemScriptType::ByteSizeLong() const {
   }
 
   // optional uint32 m = 3;
-  if (has_m()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->m());
@@ -1490,9 +1604,9 @@ void MultisigRedeemScriptType::MergeFrom(const ::google::protobuf::Message& from
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.MultisigRedeemScriptType)
   GOOGLE_DCHECK_NE(&from, this);
   const MultisigRedeemScriptType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const MultisigRedeemScriptType>(
+      ::google::protobuf::DynamicCastToGenerated<MultisigRedeemScriptType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.MultisigRedeemScriptType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1540,16 +1654,16 @@ void MultisigRedeemScriptType::Swap(MultisigRedeemScriptType* other) {
 }
 void MultisigRedeemScriptType::InternalSwap(MultisigRedeemScriptType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&pubkeys_)->InternalSwap(CastToBase(&other->pubkeys_));
   signatures_.InternalSwap(CastToBase(&other->signatures_));
   swap(m_, other->m_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata MultisigRedeemScriptType::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1557,6 +1671,22 @@ void MultisigRedeemScriptType::InternalSwap(MultisigRedeemScriptType* other) {
 
 void GetPublicKey::InitAsDefaultInstance() {
 }
+class GetPublicKey::HasBitSetters {
+ public:
+  static void set_has_ecdsa_curve_name(GetPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_show_display(GetPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_coin_name(GetPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_script_type(GetPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+};
+
 ::google::protobuf::internal::ExplicitlyConstructed<::std::string> GetPublicKey::_i_give_permission_to_break_this_code_default_coin_name_;
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int GetPublicKey::kAddressNFieldNumber;
@@ -1567,15 +1697,13 @@ const int GetPublicKey::kScriptTypeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 GetPublicKey::GetPublicKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_GetPublicKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.GetPublicKey)
 }
 GetPublicKey::GetPublicKey(const GetPublicKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -1594,6 +1722,8 @@ GetPublicKey::GetPublicKey(const GetPublicKey& from)
 }
 
 void GetPublicKey::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_GetPublicKey_messages_2dbitcoin_2eproto.base);
   ecdsa_curve_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   coin_name_.UnsafeSetDefault(&::hw::trezor::messages::bitcoin::GetPublicKey::_i_give_permission_to_break_this_code_default_coin_name_.get());
   ::memset(&show_display_, 0, static_cast<size_t>(
@@ -1614,13 +1744,8 @@ void GetPublicKey::SharedDtor() {
 void GetPublicKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* GetPublicKey::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const GetPublicKey& GetPublicKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_GetPublicKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_GetPublicKey_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1633,7 +1758,7 @@ void GetPublicKey::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       ecdsa_curve_name_.ClearNonDefaultToEmptyNoArena();
     }
@@ -1641,7 +1766,7 @@ void GetPublicKey::Clear() {
       coin_name_.UnsafeMutablePointer()->assign(*&::hw::trezor::messages::bitcoin::GetPublicKey::_i_give_permission_to_break_this_code_default_coin_name_.get());
     }
   }
-  if (cached_has_bits & 12u) {
+  if (cached_has_bits & 0x0000000cu) {
     ::memset(&show_display_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&script_type_) -
         reinterpret_cast<char*>(&show_display_)) + sizeof(script_type_));
@@ -1650,9 +1775,117 @@ void GetPublicKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* GetPublicKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<GetPublicKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional string ecdsa_curve_name = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.bitcoin.GetPublicKey.ecdsa_curve_name");
+        object = msg->mutable_ecdsa_curve_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bool show_display = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string coin_name = 4 [default = "Bitcoin"];
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.bitcoin.GetPublicKey.coin_name");
+        object = msg->mutable_coin_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional .hw.trezor.messages.bitcoin.InputScriptType script_type = 5 [default = SPENDADDRESS];
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::bitcoin::InputScriptType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(5, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_script_type(static_cast<::hw::trezor::messages::bitcoin::InputScriptType>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool GetPublicKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.GetPublicKey)
   for (;;) {
@@ -1662,14 +1895,11 @@ bool GetPublicKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1681,8 +1911,7 @@ bool GetPublicKey::MergePartialFromCodedStream(
 
       // optional string ecdsa_curve_name = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_ecdsa_curve_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1697,9 +1926,8 @@ bool GetPublicKey::MergePartialFromCodedStream(
 
       // optional bool show_display = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -1711,8 +1939,7 @@ bool GetPublicKey::MergePartialFromCodedStream(
 
       // optional string coin_name = 4 [default = "Bitcoin"];
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_coin_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1727,9 +1954,8 @@ bool GetPublicKey::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.bitcoin.InputScriptType script_type = 5 [default = SPENDADDRESS];
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -1737,7 +1963,7 @@ bool GetPublicKey::MergePartialFromCodedStream(
             set_script_type(static_cast< ::hw::trezor::messages::bitcoin::InputScriptType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                5, static_cast< ::google::protobuf::uint64>(value));
+                5, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -1764,6 +1990,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void GetPublicKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1817,8 +2044,7 @@ void GetPublicKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* GetPublicKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.GetPublicKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1878,6 +2104,10 @@ size_t GetPublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1887,28 +2117,29 @@ size_t GetPublicKey::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 15u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional string ecdsa_curve_name = 2;
-    if (has_ecdsa_curve_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->ecdsa_curve_name());
     }
 
     // optional string coin_name = 4 [default = "Bitcoin"];
-    if (has_coin_name()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->coin_name());
     }
 
     // optional bool show_display = 3;
-    if (has_show_display()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 + 1;
     }
 
     // optional .hw.trezor.messages.bitcoin.InputScriptType script_type = 5 [default = SPENDADDRESS];
-    if (has_script_type()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->script_type());
     }
@@ -1923,9 +2154,9 @@ void GetPublicKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.GetPublicKey)
   GOOGLE_DCHECK_NE(&from, this);
   const GetPublicKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const GetPublicKey>(
+      ::google::protobuf::DynamicCastToGenerated<GetPublicKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.GetPublicKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1943,13 +2174,13 @@ void GetPublicKey::MergeFrom(const GetPublicKey& from) {
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_ecdsa_curve_name();
+      _has_bits_[0] |= 0x00000001u;
       ecdsa_curve_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.ecdsa_curve_name_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_coin_name();
+      _has_bits_[0] |= 0x00000002u;
       coin_name_.AssignWithDefault(&::hw::trezor::messages::bitcoin::GetPublicKey::_i_give_permission_to_break_this_code_default_coin_name_.get(), from.coin_name_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -1986,6 +2217,8 @@ void GetPublicKey::Swap(GetPublicKey* other) {
 }
 void GetPublicKey::InternalSwap(GetPublicKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   ecdsa_curve_name_.Swap(&other->ecdsa_curve_name_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -1993,13 +2226,11 @@ void GetPublicKey::InternalSwap(GetPublicKey* other) {
     GetArenaNoVirtual());
   swap(show_display_, other->show_display_);
   swap(script_type_, other->script_type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata GetPublicKey::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2009,9 +2240,24 @@ void PublicKey::InitAsDefaultInstance() {
   ::hw::trezor::messages::bitcoin::_PublicKey_default_instance_._instance.get_mutable()->node_ = const_cast< ::hw::trezor::messages::common::HDNodeType*>(
       ::hw::trezor::messages::common::HDNodeType::internal_default_instance());
 }
+class PublicKey::HasBitSetters {
+ public:
+  static const ::hw::trezor::messages::common::HDNodeType& node(const PublicKey* msg);
+  static void set_has_node(PublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_xpub(PublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::hw::trezor::messages::common::HDNodeType&
+PublicKey::HasBitSetters::node(const PublicKey* msg) {
+  return *msg->node_;
+}
 void PublicKey::clear_node() {
-  if (node_ != NULL) node_->Clear();
-  clear_has_node();
+  if (node_ != nullptr) node_->Clear();
+  _has_bits_[0] &= ~0x00000002u;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int PublicKey::kNodeFieldNumber;
@@ -2019,15 +2265,13 @@ const int PublicKey::kXpubFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 PublicKey::PublicKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_PublicKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.PublicKey)
 }
 PublicKey::PublicKey(const PublicKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   xpub_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2037,14 +2281,16 @@ PublicKey::PublicKey(const PublicKey& from)
   if (from.has_node()) {
     node_ = new ::hw::trezor::messages::common::HDNodeType(*from.node_);
   } else {
-    node_ = NULL;
+    node_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.bitcoin.PublicKey)
 }
 
 void PublicKey::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_PublicKey_messages_2dbitcoin_2eproto.base);
   xpub_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  node_ = NULL;
+  node_ = nullptr;
 }
 
 PublicKey::~PublicKey() {
@@ -2060,13 +2306,8 @@ void PublicKey::SharedDtor() {
 void PublicKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* PublicKey::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const PublicKey& PublicKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_PublicKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_PublicKey_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2078,12 +2319,12 @@ void PublicKey::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       xpub_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(node_ != NULL);
+      GOOGLE_DCHECK(node_ != nullptr);
       node_->Clear();
     }
   }
@@ -2091,9 +2332,75 @@ void PublicKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* PublicKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<PublicKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // required .hw.trezor.messages.common.HDNodeType node = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::common::HDNodeType::_InternalParse;
+        object = msg->mutable_node();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional string xpub = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.bitcoin.PublicKey.xpub");
+        object = msg->mutable_xpub();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool PublicKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.PublicKey)
   for (;;) {
@@ -2103,8 +2410,7 @@ bool PublicKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required .hw.trezor.messages.common.HDNodeType node = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_node()));
         } else {
@@ -2115,8 +2421,7 @@ bool PublicKey::MergePartialFromCodedStream(
 
       // optional string xpub = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_xpub()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2148,6 +2453,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void PublicKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2159,7 +2465,7 @@ void PublicKey::SerializeWithCachedSizes(
   // required .hw.trezor.messages.common.HDNodeType node = 1;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_node(), output);
+      1, HasBitSetters::node(this), output);
   }
 
   // optional string xpub = 2;
@@ -2180,8 +2486,7 @@ void PublicKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* PublicKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.PublicKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2191,7 +2496,7 @@ void PublicKey::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_node(), deterministic, target);
+        1, HasBitSetters::node(this), target);
   }
 
   // optional string xpub = 2;
@@ -2228,8 +2533,13 @@ size_t PublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *node_);
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string xpub = 2;
-  if (has_xpub()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->xpub());
@@ -2244,9 +2554,9 @@ void PublicKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.PublicKey)
   GOOGLE_DCHECK_NE(&from, this);
   const PublicKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const PublicKey>(
+      ::google::protobuf::DynamicCastToGenerated<PublicKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.PublicKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2263,9 +2573,9 @@ void PublicKey::MergeFrom(const PublicKey& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_xpub();
+      _has_bits_[0] |= 0x00000001u;
       xpub_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.xpub_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -2302,16 +2612,16 @@ void PublicKey::Swap(PublicKey* other) {
 }
 void PublicKey::InternalSwap(PublicKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   xpub_.Swap(&other->xpub_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(node_, other->node_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata PublicKey::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2320,6 +2630,27 @@ void PublicKey::InternalSwap(PublicKey* other) {
 void GetAddress::InitAsDefaultInstance() {
   ::hw::trezor::messages::bitcoin::_GetAddress_default_instance_._instance.get_mutable()->multisig_ = const_cast< ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType*>(
       ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType::internal_default_instance());
+}
+class GetAddress::HasBitSetters {
+ public:
+  static void set_has_coin_name(GetAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_show_display(GetAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static const ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType& multisig(const GetAddress* msg);
+  static void set_has_multisig(GetAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_script_type(GetAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+};
+
+const ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType&
+GetAddress::HasBitSetters::multisig(const GetAddress* msg) {
+  return *msg->multisig_;
 }
 ::google::protobuf::internal::ExplicitlyConstructed<::std::string> GetAddress::_i_give_permission_to_break_this_code_default_coin_name_;
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -2331,15 +2662,13 @@ const int GetAddress::kScriptTypeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 GetAddress::GetAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_GetAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.GetAddress)
 }
 GetAddress::GetAddress(const GetAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -2350,7 +2679,7 @@ GetAddress::GetAddress(const GetAddress& from)
   if (from.has_multisig()) {
     multisig_ = new ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType(*from.multisig_);
   } else {
-    multisig_ = NULL;
+    multisig_ = nullptr;
   }
   ::memcpy(&show_display_, &from.show_display_,
     static_cast<size_t>(reinterpret_cast<char*>(&script_type_) -
@@ -2359,6 +2688,8 @@ GetAddress::GetAddress(const GetAddress& from)
 }
 
 void GetAddress::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_GetAddress_messages_2dbitcoin_2eproto.base);
   coin_name_.UnsafeSetDefault(&::hw::trezor::messages::bitcoin::GetAddress::_i_give_permission_to_break_this_code_default_coin_name_.get());
   ::memset(&multisig_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&script_type_) -
@@ -2378,13 +2709,8 @@ void GetAddress::SharedDtor() {
 void GetAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* GetAddress::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const GetAddress& GetAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_GetAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_GetAddress_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2397,16 +2723,16 @@ void GetAddress::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       coin_name_.UnsafeMutablePointer()->assign(*&::hw::trezor::messages::bitcoin::GetAddress::_i_give_permission_to_break_this_code_default_coin_name_.get());
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(multisig_ != NULL);
+      GOOGLE_DCHECK(multisig_ != nullptr);
       multisig_->Clear();
     }
   }
-  if (cached_has_bits & 12u) {
+  if (cached_has_bits & 0x0000000cu) {
     ::memset(&show_display_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&script_type_) -
         reinterpret_cast<char*>(&show_display_)) + sizeof(script_type_));
@@ -2415,9 +2741,114 @@ void GetAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* GetAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<GetAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional string coin_name = 2 [default = "Bitcoin"];
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.bitcoin.GetAddress.coin_name");
+        object = msg->mutable_coin_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bool show_display = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.bitcoin.MultisigRedeemScriptType multisig = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType::_InternalParse;
+        object = msg->mutable_multisig();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.bitcoin.InputScriptType script_type = 5 [default = SPENDADDRESS];
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::bitcoin::InputScriptType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(5, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_script_type(static_cast<::hw::trezor::messages::bitcoin::InputScriptType>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool GetAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.GetAddress)
   for (;;) {
@@ -2427,14 +2858,11 @@ bool GetAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -2446,8 +2874,7 @@ bool GetAddress::MergePartialFromCodedStream(
 
       // optional string coin_name = 2 [default = "Bitcoin"];
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_coin_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2462,9 +2889,8 @@ bool GetAddress::MergePartialFromCodedStream(
 
       // optional bool show_display = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -2476,8 +2902,7 @@ bool GetAddress::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.bitcoin.MultisigRedeemScriptType multisig = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_multisig()));
         } else {
@@ -2488,9 +2913,8 @@ bool GetAddress::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.bitcoin.InputScriptType script_type = 5 [default = SPENDADDRESS];
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -2498,7 +2922,7 @@ bool GetAddress::MergePartialFromCodedStream(
             set_script_type(static_cast< ::hw::trezor::messages::bitcoin::InputScriptType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                5, static_cast< ::google::protobuf::uint64>(value));
+                5, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -2525,6 +2949,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void GetAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2557,7 +2982,7 @@ void GetAddress::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.bitcoin.MultisigRedeemScriptType multisig = 4;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_multisig(), output);
+      4, HasBitSetters::multisig(this), output);
   }
 
   // optional .hw.trezor.messages.bitcoin.InputScriptType script_type = 5 [default = SPENDADDRESS];
@@ -2574,8 +2999,7 @@ void GetAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* GetAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.GetAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2605,7 +3029,7 @@ void GetAddress::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_multisig(), deterministic, target);
+        4, HasBitSetters::multisig(this), target);
   }
 
   // optional .hw.trezor.messages.bitcoin.InputScriptType script_type = 5 [default = SPENDADDRESS];
@@ -2631,6 +3055,10 @@ size_t GetAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -2640,28 +3068,29 @@ size_t GetAddress::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 15u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional string coin_name = 2 [default = "Bitcoin"];
-    if (has_coin_name()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->coin_name());
     }
 
     // optional .hw.trezor.messages.bitcoin.MultisigRedeemScriptType multisig = 4;
-    if (has_multisig()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *multisig_);
     }
 
     // optional bool show_display = 3;
-    if (has_show_display()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 + 1;
     }
 
     // optional .hw.trezor.messages.bitcoin.InputScriptType script_type = 5 [default = SPENDADDRESS];
-    if (has_script_type()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->script_type());
     }
@@ -2676,9 +3105,9 @@ void GetAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.GetAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const GetAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const GetAddress>(
+      ::google::protobuf::DynamicCastToGenerated<GetAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.GetAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2696,9 +3125,9 @@ void GetAddress::MergeFrom(const GetAddress& from) {
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_coin_name();
+      _has_bits_[0] |= 0x00000001u;
       coin_name_.AssignWithDefault(&::hw::trezor::messages::bitcoin::GetAddress::_i_give_permission_to_break_this_code_default_coin_name_.get(), from.coin_name_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -2741,19 +3170,19 @@ void GetAddress::Swap(GetAddress* other) {
 }
 void GetAddress::InternalSwap(GetAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   coin_name_.Swap(&other->coin_name_, &::hw::trezor::messages::bitcoin::GetAddress::_i_give_permission_to_break_this_code_default_coin_name_.get(),
     GetArenaNoVirtual());
   swap(multisig_, other->multisig_);
   swap(show_display_, other->show_display_);
   swap(script_type_, other->script_type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata GetAddress::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2761,20 +3190,25 @@ void GetAddress::InternalSwap(GetAddress* other) {
 
 void Address::InitAsDefaultInstance() {
 }
+class Address::HasBitSetters {
+ public:
+  static void set_has_address(Address* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Address::kAddressFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Address::Address()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_Address.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.Address)
 }
 Address::Address(const Address& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2785,6 +3219,8 @@ Address::Address(const Address& from)
 }
 
 void Address::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_Address_messages_2dbitcoin_2eproto.base);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -2800,13 +3236,8 @@ void Address::SharedDtor() {
 void Address::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* Address::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const Address& Address::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_Address.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_Address_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2825,9 +3256,62 @@ void Address::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* Address::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<Address*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // required string address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.bitcoin.Address.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool Address::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.Address)
   for (;;) {
@@ -2837,8 +3321,7 @@ bool Address::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required string address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2870,6 +3353,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void Address::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2896,8 +3380,7 @@ void Address::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* Address::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.Address)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2937,6 +3420,10 @@ size_t Address::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->address());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2946,9 +3433,9 @@ void Address::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.Address)
   GOOGLE_DCHECK_NE(&from, this);
   const Address* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Address>(
+      ::google::protobuf::DynamicCastToGenerated<Address>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.Address)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2965,7 +3452,7 @@ void Address::MergeFrom(const Address& from) {
   (void) cached_has_bits;
 
   if (from.has_address()) {
-    set_has_address();
+    _has_bits_[0] |= 0x00000001u;
     address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
   }
 }
@@ -2995,15 +3482,15 @@ void Address::Swap(Address* other) {
 }
 void Address::InternalSwap(Address* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata Address::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3011,6 +3498,19 @@ void Address::InternalSwap(Address* other) {
 
 void SignMessage::InitAsDefaultInstance() {
 }
+class SignMessage::HasBitSetters {
+ public:
+  static void set_has_message(SignMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_coin_name(SignMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_script_type(SignMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 ::google::protobuf::internal::ExplicitlyConstructed<::std::string> SignMessage::_i_give_permission_to_break_this_code_default_coin_name_;
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SignMessage::kAddressNFieldNumber;
@@ -3020,15 +3520,13 @@ const int SignMessage::kScriptTypeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SignMessage::SignMessage()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_SignMessage.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.SignMessage)
 }
 SignMessage::SignMessage(const SignMessage& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -3045,6 +3543,8 @@ SignMessage::SignMessage(const SignMessage& from)
 }
 
 void SignMessage::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_SignMessage_messages_2dbitcoin_2eproto.base);
   message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   coin_name_.UnsafeSetDefault(&::hw::trezor::messages::bitcoin::SignMessage::_i_give_permission_to_break_this_code_default_coin_name_.get());
   script_type_ = 0;
@@ -3063,13 +3563,8 @@ void SignMessage::SharedDtor() {
 void SignMessage::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* SignMessage::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const SignMessage& SignMessage::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_SignMessage.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_SignMessage_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3082,7 +3577,7 @@ void SignMessage::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       message_.ClearNonDefaultToEmptyNoArena();
     }
@@ -3095,9 +3590,109 @@ void SignMessage::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* SignMessage::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<SignMessage*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // required bytes message = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_message();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string coin_name = 3 [default = "Bitcoin"];
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.bitcoin.SignMessage.coin_name");
+        object = msg->mutable_coin_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional .hw.trezor.messages.bitcoin.InputScriptType script_type = 4 [default = SPENDADDRESS];
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::bitcoin::InputScriptType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(4, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_script_type(static_cast<::hw::trezor::messages::bitcoin::InputScriptType>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool SignMessage::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.SignMessage)
   for (;;) {
@@ -3107,14 +3702,11 @@ bool SignMessage::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -3126,8 +3718,7 @@ bool SignMessage::MergePartialFromCodedStream(
 
       // required bytes message = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_message()));
         } else {
@@ -3138,8 +3729,7 @@ bool SignMessage::MergePartialFromCodedStream(
 
       // optional string coin_name = 3 [default = "Bitcoin"];
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_coin_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3154,9 +3744,8 @@ bool SignMessage::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.bitcoin.InputScriptType script_type = 4 [default = SPENDADDRESS];
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -3164,7 +3753,7 @@ bool SignMessage::MergePartialFromCodedStream(
             set_script_type(static_cast< ::hw::trezor::messages::bitcoin::InputScriptType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                4, static_cast< ::google::protobuf::uint64>(value));
+                4, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -3191,6 +3780,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void SignMessage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3235,8 +3825,7 @@ void SignMessage::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* SignMessage::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.SignMessage)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3293,6 +3882,10 @@ size_t SignMessage::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->message());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -3302,16 +3895,17 @@ size_t SignMessage::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 6u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000006u) {
     // optional string coin_name = 3 [default = "Bitcoin"];
-    if (has_coin_name()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->coin_name());
     }
 
     // optional .hw.trezor.messages.bitcoin.InputScriptType script_type = 4 [default = SPENDADDRESS];
-    if (has_script_type()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->script_type());
     }
@@ -3326,9 +3920,9 @@ void SignMessage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.SignMessage)
   GOOGLE_DCHECK_NE(&from, this);
   const SignMessage* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const SignMessage>(
+      ::google::protobuf::DynamicCastToGenerated<SignMessage>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.SignMessage)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3346,13 +3940,13 @@ void SignMessage::MergeFrom(const SignMessage& from) {
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_message();
+      _has_bits_[0] |= 0x00000001u;
       message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.message_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_coin_name();
+      _has_bits_[0] |= 0x00000002u;
       coin_name_.AssignWithDefault(&::hw::trezor::messages::bitcoin::SignMessage::_i_give_permission_to_break_this_code_default_coin_name_.get(), from.coin_name_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -3387,19 +3981,19 @@ void SignMessage::Swap(SignMessage* other) {
 }
 void SignMessage::InternalSwap(SignMessage* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   message_.Swap(&other->message_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   coin_name_.Swap(&other->coin_name_, &::hw::trezor::messages::bitcoin::SignMessage::_i_give_permission_to_break_this_code_default_coin_name_.get(),
     GetArenaNoVirtual());
   swap(script_type_, other->script_type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata SignMessage::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3407,21 +4001,29 @@ void SignMessage::InternalSwap(SignMessage* other) {
 
 void MessageSignature::InitAsDefaultInstance() {
 }
+class MessageSignature::HasBitSetters {
+ public:
+  static void set_has_address(MessageSignature* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_signature(MessageSignature* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int MessageSignature::kAddressFieldNumber;
 const int MessageSignature::kSignatureFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 MessageSignature::MessageSignature()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_MessageSignature.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.MessageSignature)
 }
 MessageSignature::MessageSignature(const MessageSignature& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3436,6 +4038,8 @@ MessageSignature::MessageSignature(const MessageSignature& from)
 }
 
 void MessageSignature::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_MessageSignature_messages_2dbitcoin_2eproto.base);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -3453,13 +4057,8 @@ void MessageSignature::SharedDtor() {
 void MessageSignature::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* MessageSignature::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const MessageSignature& MessageSignature::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_MessageSignature.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_MessageSignature_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3471,7 +4070,7 @@ void MessageSignature::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       address_.ClearNonDefaultToEmptyNoArena();
     }
@@ -3483,9 +4082,77 @@ void MessageSignature::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* MessageSignature::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<MessageSignature*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.bitcoin.MessageSignature.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes signature = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool MessageSignature::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.MessageSignature)
   for (;;) {
@@ -3495,8 +4162,7 @@ bool MessageSignature::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3511,8 +4177,7 @@ bool MessageSignature::MergePartialFromCodedStream(
 
       // optional bytes signature = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -3540,6 +4205,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void MessageSignature::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3572,8 +4238,7 @@ void MessageSignature::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* MessageSignature::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.MessageSignature)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3614,16 +4279,21 @@ size_t MessageSignature::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string address = 1;
-    if (has_address()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->address());
     }
 
     // optional bytes signature = 2;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
@@ -3639,9 +4309,9 @@ void MessageSignature::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.MessageSignature)
   GOOGLE_DCHECK_NE(&from, this);
   const MessageSignature* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const MessageSignature>(
+      ::google::protobuf::DynamicCastToGenerated<MessageSignature>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.MessageSignature)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3658,13 +4328,13 @@ void MessageSignature::MergeFrom(const MessageSignature& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_address();
+      _has_bits_[0] |= 0x00000001u;
       address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000002u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
   }
@@ -3694,17 +4364,17 @@ void MessageSignature::Swap(MessageSignature* other) {
 }
 void MessageSignature::InternalSwap(MessageSignature* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata MessageSignature::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3712,6 +4382,22 @@ void MessageSignature::InternalSwap(MessageSignature* other) {
 
 void VerifyMessage::InitAsDefaultInstance() {
 }
+class VerifyMessage::HasBitSetters {
+ public:
+  static void set_has_address(VerifyMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_signature(VerifyMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_message(VerifyMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_coin_name(VerifyMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+};
+
 ::google::protobuf::internal::ExplicitlyConstructed<::std::string> VerifyMessage::_i_give_permission_to_break_this_code_default_coin_name_;
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int VerifyMessage::kAddressFieldNumber;
@@ -3721,15 +4407,13 @@ const int VerifyMessage::kCoinNameFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 VerifyMessage::VerifyMessage()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_VerifyMessage.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.VerifyMessage)
 }
 VerifyMessage::VerifyMessage(const VerifyMessage& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3752,6 +4436,8 @@ VerifyMessage::VerifyMessage(const VerifyMessage& from)
 }
 
 void VerifyMessage::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_VerifyMessage_messages_2dbitcoin_2eproto.base);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3773,13 +4459,8 @@ void VerifyMessage::SharedDtor() {
 void VerifyMessage::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* VerifyMessage::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const VerifyMessage& VerifyMessage::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_VerifyMessage.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_VerifyMessage_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3791,7 +4472,7 @@ void VerifyMessage::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       address_.ClearNonDefaultToEmptyNoArena();
     }
@@ -3809,9 +4490,108 @@ void VerifyMessage::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* VerifyMessage::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<VerifyMessage*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.bitcoin.VerifyMessage.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes signature = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes message = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_message();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string coin_name = 4 [default = "Bitcoin"];
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.bitcoin.VerifyMessage.coin_name");
+        object = msg->mutable_coin_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool VerifyMessage::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.VerifyMessage)
   for (;;) {
@@ -3821,8 +4601,7 @@ bool VerifyMessage::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3837,8 +4616,7 @@ bool VerifyMessage::MergePartialFromCodedStream(
 
       // optional bytes signature = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -3849,8 +4627,7 @@ bool VerifyMessage::MergePartialFromCodedStream(
 
       // optional bytes message = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_message()));
         } else {
@@ -3861,8 +4638,7 @@ bool VerifyMessage::MergePartialFromCodedStream(
 
       // optional string coin_name = 4 [default = "Bitcoin"];
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_coin_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3894,6 +4670,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void VerifyMessage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3942,8 +4719,7 @@ void VerifyMessage::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* VerifyMessage::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.VerifyMessage)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4002,30 +4778,35 @@ size_t VerifyMessage::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional string address = 1;
-    if (has_address()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->address());
     }
 
     // optional bytes signature = 2;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
     }
 
     // optional bytes message = 3;
-    if (has_message()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->message());
     }
 
     // optional string coin_name = 4 [default = "Bitcoin"];
-    if (has_coin_name()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->coin_name());
@@ -4041,9 +4822,9 @@ void VerifyMessage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.VerifyMessage)
   GOOGLE_DCHECK_NE(&from, this);
   const VerifyMessage* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const VerifyMessage>(
+      ::google::protobuf::DynamicCastToGenerated<VerifyMessage>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.VerifyMessage)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4060,21 +4841,21 @@ void VerifyMessage::MergeFrom(const VerifyMessage& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_address();
+      _has_bits_[0] |= 0x00000001u;
       address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000002u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_message();
+      _has_bits_[0] |= 0x00000004u;
       message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.message_);
     }
     if (cached_has_bits & 0x00000008u) {
-      set_has_coin_name();
+      _has_bits_[0] |= 0x00000008u;
       coin_name_.AssignWithDefault(&::hw::trezor::messages::bitcoin::VerifyMessage::_i_give_permission_to_break_this_code_default_coin_name_.get(), from.coin_name_);
     }
   }
@@ -4104,6 +4885,8 @@ void VerifyMessage::Swap(VerifyMessage* other) {
 }
 void VerifyMessage::InternalSwap(VerifyMessage* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -4112,13 +4895,11 @@ void VerifyMessage::InternalSwap(VerifyMessage* other) {
     GetArenaNoVirtual());
   coin_name_.Swap(&other->coin_name_, &::hw::trezor::messages::bitcoin::VerifyMessage::_i_give_permission_to_break_this_code_default_coin_name_.get(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata VerifyMessage::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4126,6 +4907,37 @@ void VerifyMessage::InternalSwap(VerifyMessage* other) {
 
 void SignTx::InitAsDefaultInstance() {
 }
+class SignTx::HasBitSetters {
+ public:
+  static void set_has_outputs_count(SignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_inputs_count(SignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_coin_name(SignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_version(SignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static void set_has_lock_time(SignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_expiry(SignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_overwintered(SignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_version_group_id(SignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_timestamp(SignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+};
+
 ::google::protobuf::internal::ExplicitlyConstructed<::std::string> SignTx::_i_give_permission_to_break_this_code_default_coin_name_;
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int SignTx::kOutputsCountFieldNumber;
@@ -4140,15 +4952,13 @@ const int SignTx::kTimestampFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SignTx::SignTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_SignTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.SignTx)
 }
 SignTx::SignTx(const SignTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   coin_name_.UnsafeSetDefault(&::hw::trezor::messages::bitcoin::SignTx::_i_give_permission_to_break_this_code_default_coin_name_.get());
@@ -4162,6 +4972,8 @@ SignTx::SignTx(const SignTx& from)
 }
 
 void SignTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_SignTx_messages_2dbitcoin_2eproto.base);
   coin_name_.UnsafeSetDefault(&::hw::trezor::messages::bitcoin::SignTx::_i_give_permission_to_break_this_code_default_coin_name_.get());
   ::memset(&outputs_count_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&timestamp_) -
@@ -4181,13 +4993,8 @@ void SignTx::SharedDtor() {
 void SignTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* SignTx::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const SignTx& SignTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_SignTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_SignTx_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4202,7 +5009,7 @@ void SignTx::Clear() {
   if (cached_has_bits & 0x00000001u) {
     coin_name_.UnsafeMutablePointer()->assign(*&::hw::trezor::messages::bitcoin::SignTx::_i_give_permission_to_break_this_code_default_coin_name_.get());
   }
-  if (cached_has_bits & 254u) {
+  if (cached_has_bits & 0x000000feu) {
     ::memset(&outputs_count_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&timestamp_) -
         reinterpret_cast<char*>(&outputs_count_)) + sizeof(timestamp_));
@@ -4212,9 +5019,118 @@ void SignTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* SignTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<SignTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // required uint32 outputs_count = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_outputs_count(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // required uint32 inputs_count = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_inputs_count(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string coin_name = 3 [default = "Bitcoin"];
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.bitcoin.SignTx.coin_name");
+        object = msg->mutable_coin_name();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 version = 4 [default = 1];
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_version(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 lock_time = 5 [default = 0];
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_lock_time(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 expiry = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_expiry(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool overwintered = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_overwintered(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 version_group_id = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 64) goto handle_unusual;
+        msg->set_version_group_id(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 timestamp = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 72) goto handle_unusual;
+        msg->set_timestamp(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool SignTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.SignTx)
   for (;;) {
@@ -4224,9 +5140,8 @@ bool SignTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required uint32 outputs_count = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_outputs_count();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_outputs_count(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &outputs_count_)));
@@ -4238,9 +5153,8 @@ bool SignTx::MergePartialFromCodedStream(
 
       // required uint32 inputs_count = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_inputs_count();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_inputs_count(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &inputs_count_)));
@@ -4252,8 +5166,7 @@ bool SignTx::MergePartialFromCodedStream(
 
       // optional string coin_name = 3 [default = "Bitcoin"];
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_coin_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4268,9 +5181,8 @@ bool SignTx::MergePartialFromCodedStream(
 
       // optional uint32 version = 4 [default = 1];
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_version();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_version(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &version_)));
@@ -4282,9 +5194,8 @@ bool SignTx::MergePartialFromCodedStream(
 
       // optional uint32 lock_time = 5 [default = 0];
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_lock_time();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_lock_time(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &lock_time_)));
@@ -4296,9 +5207,8 @@ bool SignTx::MergePartialFromCodedStream(
 
       // optional uint32 expiry = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_expiry();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_expiry(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &expiry_)));
@@ -4310,9 +5220,8 @@ bool SignTx::MergePartialFromCodedStream(
 
       // optional bool overwintered = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_overwintered();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_overwintered(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &overwintered_)));
@@ -4324,9 +5233,8 @@ bool SignTx::MergePartialFromCodedStream(
 
       // optional uint32 version_group_id = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
-          set_has_version_group_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (64 & 0xFF)) {
+          HasBitSetters::set_has_version_group_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &version_group_id_)));
@@ -4338,9 +5246,8 @@ bool SignTx::MergePartialFromCodedStream(
 
       // optional uint32 timestamp = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
-          set_has_timestamp();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (72 & 0xFF)) {
+          HasBitSetters::set_has_timestamp(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &timestamp_)));
@@ -4369,6 +5276,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void SignTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4435,8 +5343,7 @@ void SignTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* SignTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.SignTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4544,42 +5451,47 @@ size_t SignTx::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string coin_name = 3 [default = "Bitcoin"];
-  if (has_coin_name()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->coin_name());
   }
 
-  if (_has_bits_[0 / 32] & 248u) {
+  if (cached_has_bits & 0x000000f8u) {
     // optional uint32 lock_time = 5 [default = 0];
-    if (has_lock_time()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->lock_time());
     }
 
     // optional uint32 expiry = 6;
-    if (has_expiry()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->expiry());
     }
 
     // optional bool overwintered = 7;
-    if (has_overwintered()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 + 1;
     }
 
     // optional uint32 version_group_id = 8;
-    if (has_version_group_id()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->version_group_id());
     }
 
     // optional uint32 timestamp = 9;
-    if (has_timestamp()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->timestamp());
@@ -4587,7 +5499,7 @@ size_t SignTx::ByteSizeLong() const {
 
   }
   // optional uint32 version = 4 [default = 1];
-  if (has_version()) {
+  if (cached_has_bits & 0x00000100u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->version());
@@ -4602,9 +5514,9 @@ void SignTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.SignTx)
   GOOGLE_DCHECK_NE(&from, this);
   const SignTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const SignTx>(
+      ::google::protobuf::DynamicCastToGenerated<SignTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.SignTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4621,9 +5533,9 @@ void SignTx::MergeFrom(const SignTx& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_coin_name();
+      _has_bits_[0] |= 0x00000001u;
       coin_name_.AssignWithDefault(&::hw::trezor::messages::bitcoin::SignTx::_i_give_permission_to_break_this_code_default_coin_name_.get(), from.coin_name_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -4679,6 +5591,8 @@ void SignTx::Swap(SignTx* other) {
 }
 void SignTx::InternalSwap(SignTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   coin_name_.Swap(&other->coin_name_, &::hw::trezor::messages::bitcoin::SignTx::_i_give_permission_to_break_this_code_default_coin_name_.get(),
     GetArenaNoVirtual());
   swap(outputs_count_, other->outputs_count_);
@@ -4689,13 +5603,11 @@ void SignTx::InternalSwap(SignTx* other) {
   swap(version_group_id_, other->version_group_id_);
   swap(timestamp_, other->timestamp_);
   swap(version_, other->version_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata SignTx::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4703,6 +5615,22 @@ void SignTx::InternalSwap(SignTx* other) {
 
 void TxRequest_TxRequestDetailsType::InitAsDefaultInstance() {
 }
+class TxRequest_TxRequestDetailsType::HasBitSetters {
+ public:
+  static void set_has_request_index(TxRequest_TxRequestDetailsType* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_tx_hash(TxRequest_TxRequestDetailsType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_extra_data_len(TxRequest_TxRequestDetailsType* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_extra_data_offset(TxRequest_TxRequestDetailsType* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TxRequest_TxRequestDetailsType::kRequestIndexFieldNumber;
 const int TxRequest_TxRequestDetailsType::kTxHashFieldNumber;
@@ -4711,15 +5639,13 @@ const int TxRequest_TxRequestDetailsType::kExtraDataOffsetFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TxRequest_TxRequestDetailsType::TxRequest_TxRequestDetailsType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_TxRequest_TxRequestDetailsType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.TxRequest.TxRequestDetailsType)
 }
 TxRequest_TxRequestDetailsType::TxRequest_TxRequestDetailsType(const TxRequest_TxRequestDetailsType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   tx_hash_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4733,6 +5659,8 @@ TxRequest_TxRequestDetailsType::TxRequest_TxRequestDetailsType(const TxRequest_T
 }
 
 void TxRequest_TxRequestDetailsType::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TxRequest_TxRequestDetailsType_messages_2dbitcoin_2eproto.base);
   tx_hash_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&request_index_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&extra_data_offset_) -
@@ -4751,13 +5679,8 @@ void TxRequest_TxRequestDetailsType::SharedDtor() {
 void TxRequest_TxRequestDetailsType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TxRequest_TxRequestDetailsType::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TxRequest_TxRequestDetailsType& TxRequest_TxRequestDetailsType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_TxRequest_TxRequestDetailsType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TxRequest_TxRequestDetailsType_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4772,7 +5695,7 @@ void TxRequest_TxRequestDetailsType::Clear() {
   if (cached_has_bits & 0x00000001u) {
     tx_hash_.ClearNonDefaultToEmptyNoArena();
   }
-  if (cached_has_bits & 14u) {
+  if (cached_has_bits & 0x0000000eu) {
     ::memset(&request_index_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&extra_data_offset_) -
         reinterpret_cast<char*>(&request_index_)) + sizeof(extra_data_offset_));
@@ -4781,9 +5704,82 @@ void TxRequest_TxRequestDetailsType::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TxRequest_TxRequestDetailsType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TxRequest_TxRequestDetailsType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 request_index = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_request_index(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes tx_hash = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_tx_hash();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 extra_data_len = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_extra_data_len(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 extra_data_offset = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_extra_data_offset(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TxRequest_TxRequestDetailsType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.TxRequest.TxRequestDetailsType)
   for (;;) {
@@ -4793,9 +5789,8 @@ bool TxRequest_TxRequestDetailsType::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 request_index = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_request_index();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_request_index(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &request_index_)));
@@ -4807,8 +5802,7 @@ bool TxRequest_TxRequestDetailsType::MergePartialFromCodedStream(
 
       // optional bytes tx_hash = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_tx_hash()));
         } else {
@@ -4819,9 +5813,8 @@ bool TxRequest_TxRequestDetailsType::MergePartialFromCodedStream(
 
       // optional uint32 extra_data_len = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_extra_data_len();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_extra_data_len(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &extra_data_len_)));
@@ -4833,9 +5826,8 @@ bool TxRequest_TxRequestDetailsType::MergePartialFromCodedStream(
 
       // optional uint32 extra_data_offset = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_extra_data_offset();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_extra_data_offset(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &extra_data_offset_)));
@@ -4864,6 +5856,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TxRequest_TxRequestDetailsType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4901,8 +5894,7 @@ void TxRequest_TxRequestDetailsType::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TxRequest_TxRequestDetailsType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.TxRequest.TxRequestDetailsType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4947,30 +5939,35 @@ size_t TxRequest_TxRequestDetailsType::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional bytes tx_hash = 2;
-    if (has_tx_hash()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->tx_hash());
     }
 
     // optional uint32 request_index = 1;
-    if (has_request_index()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->request_index());
     }
 
     // optional uint32 extra_data_len = 3;
-    if (has_extra_data_len()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->extra_data_len());
     }
 
     // optional uint32 extra_data_offset = 4;
-    if (has_extra_data_offset()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->extra_data_offset());
@@ -4986,9 +5983,9 @@ void TxRequest_TxRequestDetailsType::MergeFrom(const ::google::protobuf::Message
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.TxRequest.TxRequestDetailsType)
   GOOGLE_DCHECK_NE(&from, this);
   const TxRequest_TxRequestDetailsType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TxRequest_TxRequestDetailsType>(
+      ::google::protobuf::DynamicCastToGenerated<TxRequest_TxRequestDetailsType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.TxRequest.TxRequestDetailsType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5005,9 +6002,9 @@ void TxRequest_TxRequestDetailsType::MergeFrom(const TxRequest_TxRequestDetailsT
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_tx_hash();
+      _has_bits_[0] |= 0x00000001u;
       tx_hash_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.tx_hash_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -5047,18 +6044,18 @@ void TxRequest_TxRequestDetailsType::Swap(TxRequest_TxRequestDetailsType* other)
 }
 void TxRequest_TxRequestDetailsType::InternalSwap(TxRequest_TxRequestDetailsType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   tx_hash_.Swap(&other->tx_hash_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(request_index_, other->request_index_);
   swap(extra_data_len_, other->extra_data_len_);
   swap(extra_data_offset_, other->extra_data_offset_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TxRequest_TxRequestDetailsType::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5066,6 +6063,19 @@ void TxRequest_TxRequestDetailsType::InternalSwap(TxRequest_TxRequestDetailsType
 
 void TxRequest_TxRequestSerializedType::InitAsDefaultInstance() {
 }
+class TxRequest_TxRequestSerializedType::HasBitSetters {
+ public:
+  static void set_has_signature_index(TxRequest_TxRequestSerializedType* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_signature(TxRequest_TxRequestSerializedType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_serialized_tx(TxRequest_TxRequestSerializedType* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TxRequest_TxRequestSerializedType::kSignatureIndexFieldNumber;
 const int TxRequest_TxRequestSerializedType::kSignatureFieldNumber;
@@ -5073,15 +6083,13 @@ const int TxRequest_TxRequestSerializedType::kSerializedTxFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TxRequest_TxRequestSerializedType::TxRequest_TxRequestSerializedType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_TxRequest_TxRequestSerializedType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.TxRequest.TxRequestSerializedType)
 }
 TxRequest_TxRequestSerializedType::TxRequest_TxRequestSerializedType(const TxRequest_TxRequestSerializedType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -5097,6 +6105,8 @@ TxRequest_TxRequestSerializedType::TxRequest_TxRequestSerializedType(const TxReq
 }
 
 void TxRequest_TxRequestSerializedType::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TxRequest_TxRequestSerializedType_messages_2dbitcoin_2eproto.base);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   serialized_tx_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   signature_index_ = 0u;
@@ -5115,13 +6125,8 @@ void TxRequest_TxRequestSerializedType::SharedDtor() {
 void TxRequest_TxRequestSerializedType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TxRequest_TxRequestSerializedType::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TxRequest_TxRequestSerializedType& TxRequest_TxRequestSerializedType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_TxRequest_TxRequestSerializedType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TxRequest_TxRequestSerializedType_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5133,7 +6138,7 @@ void TxRequest_TxRequestSerializedType::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       signature_.ClearNonDefaultToEmptyNoArena();
     }
@@ -5146,9 +6151,83 @@ void TxRequest_TxRequestSerializedType::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TxRequest_TxRequestSerializedType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TxRequest_TxRequestSerializedType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 signature_index = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_signature_index(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes signature = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes serialized_tx = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_serialized_tx();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TxRequest_TxRequestSerializedType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.TxRequest.TxRequestSerializedType)
   for (;;) {
@@ -5158,9 +6237,8 @@ bool TxRequest_TxRequestSerializedType::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 signature_index = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_signature_index();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_signature_index(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &signature_index_)));
@@ -5172,8 +6250,7 @@ bool TxRequest_TxRequestSerializedType::MergePartialFromCodedStream(
 
       // optional bytes signature = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -5184,8 +6261,7 @@ bool TxRequest_TxRequestSerializedType::MergePartialFromCodedStream(
 
       // optional bytes serialized_tx = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_serialized_tx()));
         } else {
@@ -5213,6 +6289,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TxRequest_TxRequestSerializedType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5246,8 +6323,7 @@ void TxRequest_TxRequestSerializedType::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TxRequest_TxRequestSerializedType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.TxRequest.TxRequestSerializedType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5289,23 +6365,28 @@ size_t TxRequest_TxRequestSerializedType::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional bytes signature = 2;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
     }
 
     // optional bytes serialized_tx = 3;
-    if (has_serialized_tx()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->serialized_tx());
     }
 
     // optional uint32 signature_index = 1;
-    if (has_signature_index()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->signature_index());
@@ -5321,9 +6402,9 @@ void TxRequest_TxRequestSerializedType::MergeFrom(const ::google::protobuf::Mess
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.TxRequest.TxRequestSerializedType)
   GOOGLE_DCHECK_NE(&from, this);
   const TxRequest_TxRequestSerializedType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TxRequest_TxRequestSerializedType>(
+      ::google::protobuf::DynamicCastToGenerated<TxRequest_TxRequestSerializedType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.TxRequest.TxRequestSerializedType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5340,13 +6421,13 @@ void TxRequest_TxRequestSerializedType::MergeFrom(const TxRequest_TxRequestSeria
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000001u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_serialized_tx();
+      _has_bits_[0] |= 0x00000002u;
       serialized_tx_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.serialized_tx_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -5380,18 +6461,18 @@ void TxRequest_TxRequestSerializedType::Swap(TxRequest_TxRequestSerializedType* 
 }
 void TxRequest_TxRequestSerializedType::InternalSwap(TxRequest_TxRequestSerializedType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   serialized_tx_.Swap(&other->serialized_tx_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(signature_index_, other->signature_index_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TxRequest_TxRequestSerializedType::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5403,6 +6484,29 @@ void TxRequest::InitAsDefaultInstance() {
   ::hw::trezor::messages::bitcoin::_TxRequest_default_instance_._instance.get_mutable()->serialized_ = const_cast< ::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType*>(
       ::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType::internal_default_instance());
 }
+class TxRequest::HasBitSetters {
+ public:
+  static void set_has_request_type(TxRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static const ::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType& details(const TxRequest* msg);
+  static void set_has_details(TxRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType& serialized(const TxRequest* msg);
+  static void set_has_serialized(TxRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
+const ::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType&
+TxRequest::HasBitSetters::details(const TxRequest* msg) {
+  return *msg->details_;
+}
+const ::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType&
+TxRequest::HasBitSetters::serialized(const TxRequest* msg) {
+  return *msg->serialized_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TxRequest::kRequestTypeFieldNumber;
 const int TxRequest::kDetailsFieldNumber;
@@ -5410,32 +6514,32 @@ const int TxRequest::kSerializedFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TxRequest::TxRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_TxRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.TxRequest)
 }
 TxRequest::TxRequest(const TxRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_details()) {
     details_ = new ::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType(*from.details_);
   } else {
-    details_ = NULL;
+    details_ = nullptr;
   }
   if (from.has_serialized()) {
     serialized_ = new ::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType(*from.serialized_);
   } else {
-    serialized_ = NULL;
+    serialized_ = nullptr;
   }
   request_type_ = from.request_type_;
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.bitcoin.TxRequest)
 }
 
 void TxRequest::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TxRequest_messages_2dbitcoin_2eproto.base);
   ::memset(&details_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&request_type_) -
       reinterpret_cast<char*>(&details_)) + sizeof(request_type_));
@@ -5454,13 +6558,8 @@ void TxRequest::SharedDtor() {
 void TxRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TxRequest::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TxRequest& TxRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_TxRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TxRequest_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5472,13 +6571,13 @@ void TxRequest::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(details_ != NULL);
+      GOOGLE_DCHECK(details_ != nullptr);
       details_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(serialized_ != NULL);
+      GOOGLE_DCHECK(serialized_ != nullptr);
       serialized_->Clear();
     }
   }
@@ -5487,9 +6586,80 @@ void TxRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TxRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TxRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.bitcoin.TxRequest.RequestType request_type = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::bitcoin::TxRequest_RequestType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(1, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_request_type(static_cast<::hw::trezor::messages::bitcoin::TxRequest_RequestType>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.bitcoin.TxRequest.TxRequestDetailsType details = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType::_InternalParse;
+        object = msg->mutable_details();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.bitcoin.TxRequest.TxRequestSerializedType serialized = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType::_InternalParse;
+        object = msg->mutable_serialized();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TxRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.TxRequest)
   for (;;) {
@@ -5499,9 +6669,8 @@ bool TxRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.bitcoin.TxRequest.RequestType request_type = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -5509,7 +6678,7 @@ bool TxRequest::MergePartialFromCodedStream(
             set_request_type(static_cast< ::hw::trezor::messages::bitcoin::TxRequest_RequestType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                1, static_cast< ::google::protobuf::uint64>(value));
+                1, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -5519,8 +6688,7 @@ bool TxRequest::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.bitcoin.TxRequest.TxRequestDetailsType details = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_details()));
         } else {
@@ -5531,8 +6699,7 @@ bool TxRequest::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.bitcoin.TxRequest.TxRequestSerializedType serialized = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_serialized()));
         } else {
@@ -5560,6 +6727,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TxRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5577,13 +6745,13 @@ void TxRequest::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.bitcoin.TxRequest.TxRequestDetailsType details = 2;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_details(), output);
+      2, HasBitSetters::details(this), output);
   }
 
   // optional .hw.trezor.messages.bitcoin.TxRequest.TxRequestSerializedType serialized = 3;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_serialized(), output);
+      3, HasBitSetters::serialized(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -5594,8 +6762,7 @@ void TxRequest::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TxRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.TxRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5611,14 +6778,14 @@ void TxRequest::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_details(), deterministic, target);
+        2, HasBitSetters::details(this), target);
   }
 
   // optional .hw.trezor.messages.bitcoin.TxRequest.TxRequestSerializedType serialized = 3;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_serialized(), deterministic, target);
+        3, HasBitSetters::serialized(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -5638,23 +6805,28 @@ size_t TxRequest::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional .hw.trezor.messages.bitcoin.TxRequest.TxRequestDetailsType details = 2;
-    if (has_details()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *details_);
     }
 
     // optional .hw.trezor.messages.bitcoin.TxRequest.TxRequestSerializedType serialized = 3;
-    if (has_serialized()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *serialized_);
     }
 
     // optional .hw.trezor.messages.bitcoin.TxRequest.RequestType request_type = 1;
-    if (has_request_type()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->request_type());
     }
@@ -5669,9 +6841,9 @@ void TxRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.TxRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const TxRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TxRequest>(
+      ::google::protobuf::DynamicCastToGenerated<TxRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.TxRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5688,7 +6860,7 @@ void TxRequest::MergeFrom(const TxRequest& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       mutable_details()->::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType::MergeFrom(from.details());
     }
@@ -5726,16 +6898,16 @@ void TxRequest::Swap(TxRequest* other) {
 }
 void TxRequest::InternalSwap(TxRequest* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(details_, other->details_);
   swap(serialized_, other->serialized_);
   swap(request_type_, other->request_type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TxRequest::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5744,6 +6916,48 @@ void TxRequest::InternalSwap(TxRequest* other) {
 void TxAck_TransactionType_TxInputType::InitAsDefaultInstance() {
   ::hw::trezor::messages::bitcoin::_TxAck_TransactionType_TxInputType_default_instance_._instance.get_mutable()->multisig_ = const_cast< ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType*>(
       ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType::internal_default_instance());
+}
+class TxAck_TransactionType_TxInputType::HasBitSetters {
+ public:
+  static void set_has_prev_hash(TxAck_TransactionType_TxInputType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_prev_index(TxAck_TransactionType_TxInputType* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_script_sig(TxAck_TransactionType_TxInputType* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_sequence(TxAck_TransactionType_TxInputType* msg) {
+    msg->_has_bits_[0] |= 0x00000400u;
+  }
+  static void set_has_script_type(TxAck_TransactionType_TxInputType* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static const ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType& multisig(const TxAck_TransactionType_TxInputType* msg);
+  static void set_has_multisig(TxAck_TransactionType_TxInputType* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_amount(TxAck_TransactionType_TxInputType* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_decred_tree(TxAck_TransactionType_TxInputType* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static void set_has_decred_script_version(TxAck_TransactionType_TxInputType* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static void set_has_prev_block_hash_bip115(TxAck_TransactionType_TxInputType* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_prev_block_height_bip115(TxAck_TransactionType_TxInputType* msg) {
+    msg->_has_bits_[0] |= 0x00000200u;
+  }
+};
+
+const ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType&
+TxAck_TransactionType_TxInputType::HasBitSetters::multisig(const TxAck_TransactionType_TxInputType* msg) {
+  return *msg->multisig_;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TxAck_TransactionType_TxInputType::kAddressNFieldNumber;
@@ -5761,15 +6975,13 @@ const int TxAck_TransactionType_TxInputType::kPrevBlockHeightBip115FieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TxAck_TransactionType_TxInputType::TxAck_TransactionType_TxInputType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_TxAck_TransactionType_TxInputType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxInputType)
 }
 TxAck_TransactionType_TxInputType::TxAck_TransactionType_TxInputType(const TxAck_TransactionType_TxInputType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -5788,7 +7000,7 @@ TxAck_TransactionType_TxInputType::TxAck_TransactionType_TxInputType(const TxAck
   if (from.has_multisig()) {
     multisig_ = new ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType(*from.multisig_);
   } else {
-    multisig_ = NULL;
+    multisig_ = nullptr;
   }
   ::memcpy(&prev_index_, &from.prev_index_,
     static_cast<size_t>(reinterpret_cast<char*>(&sequence_) -
@@ -5797,6 +7009,8 @@ TxAck_TransactionType_TxInputType::TxAck_TransactionType_TxInputType(const TxAck
 }
 
 void TxAck_TransactionType_TxInputType::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TxAck_TransactionType_TxInputType_messages_2dbitcoin_2eproto.base);
   prev_hash_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   script_sig_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   prev_block_hash_bip115_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -5821,13 +7035,8 @@ void TxAck_TransactionType_TxInputType::SharedDtor() {
 void TxAck_TransactionType_TxInputType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TxAck_TransactionType_TxInputType::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TxAck_TransactionType_TxInputType& TxAck_TransactionType_TxInputType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_TxAck_TransactionType_TxInputType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TxAck_TransactionType_TxInputType_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5840,7 +7049,7 @@ void TxAck_TransactionType_TxInputType::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       prev_hash_.ClearNonDefaultToEmptyNoArena();
     }
@@ -5851,16 +7060,16 @@ void TxAck_TransactionType_TxInputType::Clear() {
       prev_block_hash_bip115_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(multisig_ != NULL);
+      GOOGLE_DCHECK(multisig_ != nullptr);
       multisig_->Clear();
     }
   }
-  if (cached_has_bits & 240u) {
+  if (cached_has_bits & 0x000000f0u) {
     ::memset(&prev_index_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&decred_tree_) -
         reinterpret_cast<char*>(&prev_index_)) + sizeof(decred_tree_));
   }
-  if (cached_has_bits & 1792u) {
+  if (cached_has_bits & 0x00000700u) {
     ::memset(&decred_script_version_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&prev_block_height_bip115_) -
         reinterpret_cast<char*>(&decred_script_version_)) + sizeof(prev_block_height_bip115_));
@@ -5870,9 +7079,178 @@ void TxAck_TransactionType_TxInputType::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TxAck_TransactionType_TxInputType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TxAck_TransactionType_TxInputType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // required bytes prev_hash = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_prev_hash();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // required uint32 prev_index = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_prev_index(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes script_sig = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_script_sig();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 sequence = 5 [default = 4294967295];
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_sequence(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.bitcoin.InputScriptType script_type = 6 [default = SPENDADDRESS];
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::bitcoin::InputScriptType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(6, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_script_type(static_cast<::hw::trezor::messages::bitcoin::InputScriptType>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.bitcoin.MultisigRedeemScriptType multisig = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 58) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType::_InternalParse;
+        object = msg->mutable_multisig();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional uint64 amount = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 64) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 decred_tree = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 72) goto handle_unusual;
+        msg->set_decred_tree(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 decred_script_version = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 80) goto handle_unusual;
+        msg->set_decred_script_version(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes prev_block_hash_bip115 = 11;
+      case 11: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 90) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_prev_block_hash_bip115();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 prev_block_height_bip115 = 12;
+      case 12: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 96) goto handle_unusual;
+        msg->set_prev_block_height_bip115(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TxAck_TransactionType_TxInputType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxInputType)
   for (;;) {
@@ -5882,14 +7260,11 @@ bool TxAck_TransactionType_TxInputType::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -5901,8 +7276,7 @@ bool TxAck_TransactionType_TxInputType::MergePartialFromCodedStream(
 
       // required bytes prev_hash = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_prev_hash()));
         } else {
@@ -5913,9 +7287,8 @@ bool TxAck_TransactionType_TxInputType::MergePartialFromCodedStream(
 
       // required uint32 prev_index = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_prev_index();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_prev_index(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &prev_index_)));
@@ -5927,8 +7300,7 @@ bool TxAck_TransactionType_TxInputType::MergePartialFromCodedStream(
 
       // optional bytes script_sig = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_script_sig()));
         } else {
@@ -5939,9 +7311,8 @@ bool TxAck_TransactionType_TxInputType::MergePartialFromCodedStream(
 
       // optional uint32 sequence = 5 [default = 4294967295];
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_sequence();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_sequence(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &sequence_)));
@@ -5953,9 +7324,8 @@ bool TxAck_TransactionType_TxInputType::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.bitcoin.InputScriptType script_type = 6 [default = SPENDADDRESS];
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -5963,7 +7333,7 @@ bool TxAck_TransactionType_TxInputType::MergePartialFromCodedStream(
             set_script_type(static_cast< ::hw::trezor::messages::bitcoin::InputScriptType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                6, static_cast< ::google::protobuf::uint64>(value));
+                6, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -5973,8 +7343,7 @@ bool TxAck_TransactionType_TxInputType::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.bitcoin.MultisigRedeemScriptType multisig = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (58 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_multisig()));
         } else {
@@ -5985,9 +7354,8 @@ bool TxAck_TransactionType_TxInputType::MergePartialFromCodedStream(
 
       // optional uint64 amount = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (64 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &amount_)));
@@ -5999,9 +7367,8 @@ bool TxAck_TransactionType_TxInputType::MergePartialFromCodedStream(
 
       // optional uint32 decred_tree = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
-          set_has_decred_tree();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (72 & 0xFF)) {
+          HasBitSetters::set_has_decred_tree(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &decred_tree_)));
@@ -6013,9 +7380,8 @@ bool TxAck_TransactionType_TxInputType::MergePartialFromCodedStream(
 
       // optional uint32 decred_script_version = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(80u /* 80 & 0xFF */)) {
-          set_has_decred_script_version();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (80 & 0xFF)) {
+          HasBitSetters::set_has_decred_script_version(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &decred_script_version_)));
@@ -6027,8 +7393,7 @@ bool TxAck_TransactionType_TxInputType::MergePartialFromCodedStream(
 
       // optional bytes prev_block_hash_bip115 = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (90 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_prev_block_hash_bip115()));
         } else {
@@ -6039,9 +7404,8 @@ bool TxAck_TransactionType_TxInputType::MergePartialFromCodedStream(
 
       // optional uint32 prev_block_height_bip115 = 12;
       case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(96u /* 96 & 0xFF */)) {
-          set_has_prev_block_height_bip115();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (96 & 0xFF)) {
+          HasBitSetters::set_has_prev_block_height_bip115(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &prev_block_height_bip115_)));
@@ -6070,6 +7434,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TxAck_TransactionType_TxInputType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6115,7 +7480,7 @@ void TxAck_TransactionType_TxInputType::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.bitcoin.MultisigRedeemScriptType multisig = 7;
   if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, this->_internal_multisig(), output);
+      7, HasBitSetters::multisig(this), output);
   }
 
   // optional uint64 amount = 8;
@@ -6152,8 +7517,7 @@ void TxAck_TransactionType_TxInputType::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TxAck_TransactionType_TxInputType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxInputType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6197,7 +7561,7 @@ void TxAck_TransactionType_TxInputType::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        7, this->_internal_multisig(), deterministic, target);
+        7, HasBitSetters::multisig(this), target);
   }
 
   // optional uint64 amount = 8;
@@ -6278,6 +7642,10 @@ size_t TxAck_TransactionType_TxInputType::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -6287,68 +7655,69 @@ size_t TxAck_TransactionType_TxInputType::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 14u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000eu) {
     // optional bytes script_sig = 4;
-    if (has_script_sig()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->script_sig());
     }
 
     // optional bytes prev_block_hash_bip115 = 11;
-    if (has_prev_block_hash_bip115()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->prev_block_hash_bip115());
     }
 
     // optional .hw.trezor.messages.bitcoin.MultisigRedeemScriptType multisig = 7;
-    if (has_multisig()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *multisig_);
     }
 
   }
-  if (_has_bits_[0 / 32] & 224u) {
+  if (cached_has_bits & 0x000000e0u) {
     // optional .hw.trezor.messages.bitcoin.InputScriptType script_type = 6 [default = SPENDADDRESS];
-    if (has_script_type()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->script_type());
     }
 
     // optional uint64 amount = 8;
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->amount());
     }
 
     // optional uint32 decred_tree = 9;
-    if (has_decred_tree()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->decred_tree());
     }
 
   }
-  if (_has_bits_[8 / 32] & 1792u) {
+  if (cached_has_bits & 0x00000700u) {
     // optional uint32 decred_script_version = 10;
-    if (has_decred_script_version()) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->decred_script_version());
     }
 
     // optional uint32 prev_block_height_bip115 = 12;
-    if (has_prev_block_height_bip115()) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->prev_block_height_bip115());
     }
 
     // optional uint32 sequence = 5 [default = 4294967295];
-    if (has_sequence()) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->sequence());
@@ -6364,9 +7733,9 @@ void TxAck_TransactionType_TxInputType::MergeFrom(const ::google::protobuf::Mess
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxInputType)
   GOOGLE_DCHECK_NE(&from, this);
   const TxAck_TransactionType_TxInputType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TxAck_TransactionType_TxInputType>(
+      ::google::protobuf::DynamicCastToGenerated<TxAck_TransactionType_TxInputType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxInputType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6384,17 +7753,17 @@ void TxAck_TransactionType_TxInputType::MergeFrom(const TxAck_TransactionType_Tx
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_prev_hash();
+      _has_bits_[0] |= 0x00000001u;
       prev_hash_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.prev_hash_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_script_sig();
+      _has_bits_[0] |= 0x00000002u;
       script_sig_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.script_sig_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_prev_block_hash_bip115();
+      _has_bits_[0] |= 0x00000004u;
       prev_block_hash_bip115_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.prev_block_hash_bip115_);
     }
     if (cached_has_bits & 0x00000008u) {
@@ -6414,7 +7783,7 @@ void TxAck_TransactionType_TxInputType::MergeFrom(const TxAck_TransactionType_Tx
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 1792u) {
+  if (cached_has_bits & 0x00000700u) {
     if (cached_has_bits & 0x00000100u) {
       decred_script_version_ = from.decred_script_version_;
     }
@@ -6456,6 +7825,8 @@ void TxAck_TransactionType_TxInputType::Swap(TxAck_TransactionType_TxInputType* 
 }
 void TxAck_TransactionType_TxInputType::InternalSwap(TxAck_TransactionType_TxInputType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   prev_hash_.Swap(&other->prev_hash_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -6471,13 +7842,11 @@ void TxAck_TransactionType_TxInputType::InternalSwap(TxAck_TransactionType_TxInp
   swap(decred_script_version_, other->decred_script_version_);
   swap(prev_block_height_bip115_, other->prev_block_height_bip115_);
   swap(sequence_, other->sequence_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TxAck_TransactionType_TxInputType::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6485,6 +7854,19 @@ void TxAck_TransactionType_TxInputType::InternalSwap(TxAck_TransactionType_TxInp
 
 void TxAck_TransactionType_TxOutputBinType::InitAsDefaultInstance() {
 }
+class TxAck_TransactionType_TxOutputBinType::HasBitSetters {
+ public:
+  static void set_has_amount(TxAck_TransactionType_TxOutputBinType* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_script_pubkey(TxAck_TransactionType_TxOutputBinType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_decred_script_version(TxAck_TransactionType_TxOutputBinType* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TxAck_TransactionType_TxOutputBinType::kAmountFieldNumber;
 const int TxAck_TransactionType_TxOutputBinType::kScriptPubkeyFieldNumber;
@@ -6492,15 +7874,13 @@ const int TxAck_TransactionType_TxOutputBinType::kDecredScriptVersionFieldNumber
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TxAck_TransactionType_TxOutputBinType::TxAck_TransactionType_TxOutputBinType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_TxAck_TransactionType_TxOutputBinType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputBinType)
 }
 TxAck_TransactionType_TxOutputBinType::TxAck_TransactionType_TxOutputBinType(const TxAck_TransactionType_TxOutputBinType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   script_pubkey_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -6514,6 +7894,8 @@ TxAck_TransactionType_TxOutputBinType::TxAck_TransactionType_TxOutputBinType(con
 }
 
 void TxAck_TransactionType_TxOutputBinType::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TxAck_TransactionType_TxOutputBinType_messages_2dbitcoin_2eproto.base);
   script_pubkey_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&amount_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&decred_script_version_) -
@@ -6532,13 +7914,8 @@ void TxAck_TransactionType_TxOutputBinType::SharedDtor() {
 void TxAck_TransactionType_TxOutputBinType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TxAck_TransactionType_TxOutputBinType::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TxAck_TransactionType_TxOutputBinType& TxAck_TransactionType_TxOutputBinType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_TxAck_TransactionType_TxOutputBinType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TxAck_TransactionType_TxOutputBinType_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6553,7 +7930,7 @@ void TxAck_TransactionType_TxOutputBinType::Clear() {
   if (cached_has_bits & 0x00000001u) {
     script_pubkey_.ClearNonDefaultToEmptyNoArena();
   }
-  if (cached_has_bits & 6u) {
+  if (cached_has_bits & 0x00000006u) {
     ::memset(&amount_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&decred_script_version_) -
         reinterpret_cast<char*>(&amount_)) + sizeof(decred_script_version_));
@@ -6562,9 +7939,75 @@ void TxAck_TransactionType_TxOutputBinType::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TxAck_TransactionType_TxOutputBinType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TxAck_TransactionType_TxOutputBinType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // required uint64 amount = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // required bytes script_pubkey = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_script_pubkey();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 decred_script_version = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_decred_script_version(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TxAck_TransactionType_TxOutputBinType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputBinType)
   for (;;) {
@@ -6574,9 +8017,8 @@ bool TxAck_TransactionType_TxOutputBinType::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required uint64 amount = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &amount_)));
@@ -6588,8 +8030,7 @@ bool TxAck_TransactionType_TxOutputBinType::MergePartialFromCodedStream(
 
       // required bytes script_pubkey = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_script_pubkey()));
         } else {
@@ -6600,9 +8041,8 @@ bool TxAck_TransactionType_TxOutputBinType::MergePartialFromCodedStream(
 
       // optional uint32 decred_script_version = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_decred_script_version();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_decred_script_version(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &decred_script_version_)));
@@ -6631,6 +8071,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TxAck_TransactionType_TxOutputBinType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6663,8 +8104,7 @@ void TxAck_TransactionType_TxOutputBinType::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TxAck_TransactionType_TxOutputBinType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputBinType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6738,8 +8178,13 @@ size_t TxAck_TransactionType_TxOutputBinType::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional uint32 decred_script_version = 3;
-  if (has_decred_script_version()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000004u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->decred_script_version());
@@ -6754,9 +8199,9 @@ void TxAck_TransactionType_TxOutputBinType::MergeFrom(const ::google::protobuf::
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputBinType)
   GOOGLE_DCHECK_NE(&from, this);
   const TxAck_TransactionType_TxOutputBinType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TxAck_TransactionType_TxOutputBinType>(
+      ::google::protobuf::DynamicCastToGenerated<TxAck_TransactionType_TxOutputBinType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputBinType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6773,9 +8218,9 @@ void TxAck_TransactionType_TxOutputBinType::MergeFrom(const TxAck_TransactionTyp
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_script_pubkey();
+      _has_bits_[0] |= 0x00000001u;
       script_pubkey_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.script_pubkey_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -6813,17 +8258,17 @@ void TxAck_TransactionType_TxOutputBinType::Swap(TxAck_TransactionType_TxOutputB
 }
 void TxAck_TransactionType_TxOutputBinType::InternalSwap(TxAck_TransactionType_TxOutputBinType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   script_pubkey_.Swap(&other->script_pubkey_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(amount_, other->amount_);
   swap(decred_script_version_, other->decred_script_version_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TxAck_TransactionType_TxOutputBinType::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6832,6 +8277,39 @@ void TxAck_TransactionType_TxOutputBinType::InternalSwap(TxAck_TransactionType_T
 void TxAck_TransactionType_TxOutputType::InitAsDefaultInstance() {
   ::hw::trezor::messages::bitcoin::_TxAck_TransactionType_TxOutputType_default_instance_._instance.get_mutable()->multisig_ = const_cast< ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType*>(
       ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType::internal_default_instance());
+}
+class TxAck_TransactionType_TxOutputType::HasBitSetters {
+ public:
+  static void set_has_address(TxAck_TransactionType_TxOutputType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_amount(TxAck_TransactionType_TxOutputType* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_script_type(TxAck_TransactionType_TxOutputType* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static const ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType& multisig(const TxAck_TransactionType_TxOutputType* msg);
+  static void set_has_multisig(TxAck_TransactionType_TxOutputType* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_op_return_data(TxAck_TransactionType_TxOutputType* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_decred_script_version(TxAck_TransactionType_TxOutputType* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_block_hash_bip115(TxAck_TransactionType_TxOutputType* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_block_height_bip115(TxAck_TransactionType_TxOutputType* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+};
+
+const ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType&
+TxAck_TransactionType_TxOutputType::HasBitSetters::multisig(const TxAck_TransactionType_TxOutputType* msg) {
+  return *msg->multisig_;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TxAck_TransactionType_TxOutputType::kAddressFieldNumber;
@@ -6846,15 +8324,13 @@ const int TxAck_TransactionType_TxOutputType::kBlockHeightBip115FieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TxAck_TransactionType_TxOutputType::TxAck_TransactionType_TxOutputType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_TxAck_TransactionType_TxOutputType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputType)
 }
 TxAck_TransactionType_TxOutputType::TxAck_TransactionType_TxOutputType(const TxAck_TransactionType_TxOutputType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -6873,7 +8349,7 @@ TxAck_TransactionType_TxOutputType::TxAck_TransactionType_TxOutputType(const TxA
   if (from.has_multisig()) {
     multisig_ = new ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType(*from.multisig_);
   } else {
-    multisig_ = NULL;
+    multisig_ = nullptr;
   }
   ::memcpy(&amount_, &from.amount_,
     static_cast<size_t>(reinterpret_cast<char*>(&block_height_bip115_) -
@@ -6882,6 +8358,8 @@ TxAck_TransactionType_TxOutputType::TxAck_TransactionType_TxOutputType(const TxA
 }
 
 void TxAck_TransactionType_TxOutputType::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TxAck_TransactionType_TxOutputType_messages_2dbitcoin_2eproto.base);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   op_return_data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   block_hash_bip115_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -6905,13 +8383,8 @@ void TxAck_TransactionType_TxOutputType::SharedDtor() {
 void TxAck_TransactionType_TxOutputType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TxAck_TransactionType_TxOutputType::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TxAck_TransactionType_TxOutputType& TxAck_TransactionType_TxOutputType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_TxAck_TransactionType_TxOutputType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TxAck_TransactionType_TxOutputType_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6924,7 +8397,7 @@ void TxAck_TransactionType_TxOutputType::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       address_.ClearNonDefaultToEmptyNoArena();
     }
@@ -6935,11 +8408,11 @@ void TxAck_TransactionType_TxOutputType::Clear() {
       block_hash_bip115_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(multisig_ != NULL);
+      GOOGLE_DCHECK(multisig_ != nullptr);
       multisig_->Clear();
     }
   }
-  if (cached_has_bits & 240u) {
+  if (cached_has_bits & 0x000000f0u) {
     ::memset(&amount_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&block_height_bip115_) -
         reinterpret_cast<char*>(&amount_)) + sizeof(block_height_bip115_));
@@ -6948,9 +8421,158 @@ void TxAck_TransactionType_TxOutputType::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TxAck_TransactionType_TxOutputType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TxAck_TransactionType_TxOutputType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputType.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // repeated uint32 address_n = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 16) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 16 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // required uint64 amount = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // required .hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputType.OutputScriptType script_type = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType_OutputScriptType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(4, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_script_type(static_cast<::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType_OutputScriptType>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.bitcoin.MultisigRedeemScriptType multisig = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType::_InternalParse;
+        object = msg->mutable_multisig();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional bytes op_return_data = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_op_return_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 decred_script_version = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_decred_script_version(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes block_hash_bip115 = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 66) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_block_hash_bip115();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 block_height_bip115 = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 72) goto handle_unusual;
+        msg->set_block_height_bip115(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TxAck_TransactionType_TxOutputType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputType)
   for (;;) {
@@ -6960,8 +8582,7 @@ bool TxAck_TransactionType_TxOutputType::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -6976,14 +8597,11 @@ bool TxAck_TransactionType_TxOutputType::MergePartialFromCodedStream(
 
       // repeated uint32 address_n = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 16u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -6995,9 +8613,8 @@ bool TxAck_TransactionType_TxOutputType::MergePartialFromCodedStream(
 
       // required uint64 amount = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &amount_)));
@@ -7009,9 +8626,8 @@ bool TxAck_TransactionType_TxOutputType::MergePartialFromCodedStream(
 
       // required .hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputType.OutputScriptType script_type = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -7019,7 +8635,7 @@ bool TxAck_TransactionType_TxOutputType::MergePartialFromCodedStream(
             set_script_type(static_cast< ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType_OutputScriptType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                4, static_cast< ::google::protobuf::uint64>(value));
+                4, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -7029,8 +8645,7 @@ bool TxAck_TransactionType_TxOutputType::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.bitcoin.MultisigRedeemScriptType multisig = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_multisig()));
         } else {
@@ -7041,8 +8656,7 @@ bool TxAck_TransactionType_TxOutputType::MergePartialFromCodedStream(
 
       // optional bytes op_return_data = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_op_return_data()));
         } else {
@@ -7053,9 +8667,8 @@ bool TxAck_TransactionType_TxOutputType::MergePartialFromCodedStream(
 
       // optional uint32 decred_script_version = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_decred_script_version();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_decred_script_version(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &decred_script_version_)));
@@ -7067,8 +8680,7 @@ bool TxAck_TransactionType_TxOutputType::MergePartialFromCodedStream(
 
       // optional bytes block_hash_bip115 = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (66 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_block_hash_bip115()));
         } else {
@@ -7079,9 +8691,8 @@ bool TxAck_TransactionType_TxOutputType::MergePartialFromCodedStream(
 
       // optional uint32 block_height_bip115 = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
-          set_has_block_height_bip115();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (72 & 0xFF)) {
+          HasBitSetters::set_has_block_height_bip115(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &block_height_bip115_)));
@@ -7110,6 +8721,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TxAck_TransactionType_TxOutputType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7148,7 +8760,7 @@ void TxAck_TransactionType_TxOutputType::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.bitcoin.MultisigRedeemScriptType multisig = 5;
   if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->_internal_multisig(), output);
+      5, HasBitSetters::multisig(this), output);
   }
 
   // optional bytes op_return_data = 6;
@@ -7181,8 +8793,7 @@ void TxAck_TransactionType_TxOutputType::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TxAck_TransactionType_TxOutputType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7218,7 +8829,7 @@ void TxAck_TransactionType_TxOutputType::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->_internal_multisig(), deterministic, target);
+        5, HasBitSetters::multisig(this), target);
   }
 
   // optional bytes op_return_data = 6;
@@ -7294,6 +8905,10 @@ size_t TxAck_TransactionType_TxOutputType::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 2;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -7303,46 +8918,47 @@ size_t TxAck_TransactionType_TxOutputType::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 15u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional string address = 1;
-    if (has_address()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->address());
     }
 
     // optional bytes op_return_data = 6;
-    if (has_op_return_data()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->op_return_data());
     }
 
     // optional bytes block_hash_bip115 = 8;
-    if (has_block_hash_bip115()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->block_hash_bip115());
     }
 
     // optional .hw.trezor.messages.bitcoin.MultisigRedeemScriptType multisig = 5;
-    if (has_multisig()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *multisig_);
     }
 
   }
-  if (_has_bits_[0 / 32] & 192u) {
+  if (cached_has_bits & 0x000000c0u) {
     // optional uint32 decred_script_version = 7;
-    if (has_decred_script_version()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->decred_script_version());
     }
 
     // optional uint32 block_height_bip115 = 9;
-    if (has_block_height_bip115()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->block_height_bip115());
@@ -7358,9 +8974,9 @@ void TxAck_TransactionType_TxOutputType::MergeFrom(const ::google::protobuf::Mes
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputType)
   GOOGLE_DCHECK_NE(&from, this);
   const TxAck_TransactionType_TxOutputType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TxAck_TransactionType_TxOutputType>(
+      ::google::protobuf::DynamicCastToGenerated<TxAck_TransactionType_TxOutputType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7378,17 +8994,17 @@ void TxAck_TransactionType_TxOutputType::MergeFrom(const TxAck_TransactionType_T
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_address();
+      _has_bits_[0] |= 0x00000001u;
       address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_op_return_data();
+      _has_bits_[0] |= 0x00000002u;
       op_return_data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.op_return_data_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_block_hash_bip115();
+      _has_bits_[0] |= 0x00000004u;
       block_hash_bip115_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.block_hash_bip115_);
     }
     if (cached_has_bits & 0x00000008u) {
@@ -7438,6 +9054,8 @@ void TxAck_TransactionType_TxOutputType::Swap(TxAck_TransactionType_TxOutputType
 }
 void TxAck_TransactionType_TxOutputType::InternalSwap(TxAck_TransactionType_TxOutputType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -7450,13 +9068,11 @@ void TxAck_TransactionType_TxOutputType::InternalSwap(TxAck_TransactionType_TxOu
   swap(script_type_, other->script_type_);
   swap(decred_script_version_, other->decred_script_version_);
   swap(block_height_bip115_, other->block_height_bip115_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TxAck_TransactionType_TxOutputType::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7464,6 +9080,40 @@ void TxAck_TransactionType_TxOutputType::InternalSwap(TxAck_TransactionType_TxOu
 
 void TxAck_TransactionType::InitAsDefaultInstance() {
 }
+class TxAck_TransactionType::HasBitSetters {
+ public:
+  static void set_has_version(TxAck_TransactionType* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_lock_time(TxAck_TransactionType* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_inputs_cnt(TxAck_TransactionType* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_outputs_cnt(TxAck_TransactionType* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_extra_data(TxAck_TransactionType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_extra_data_len(TxAck_TransactionType* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_expiry(TxAck_TransactionType* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_overwintered(TxAck_TransactionType* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static void set_has_version_group_id(TxAck_TransactionType* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static void set_has_timestamp(TxAck_TransactionType* msg) {
+    msg->_has_bits_[0] |= 0x00000200u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TxAck_TransactionType::kVersionFieldNumber;
 const int TxAck_TransactionType::kInputsFieldNumber;
@@ -7481,15 +9131,13 @@ const int TxAck_TransactionType::kTimestampFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TxAck_TransactionType::TxAck_TransactionType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_TxAck_TransactionType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.TxAck.TransactionType)
 }
 TxAck_TransactionType::TxAck_TransactionType(const TxAck_TransactionType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       inputs_(from.inputs_),
       bin_outputs_(from.bin_outputs_),
@@ -7506,6 +9154,8 @@ TxAck_TransactionType::TxAck_TransactionType(const TxAck_TransactionType& from)
 }
 
 void TxAck_TransactionType::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TxAck_TransactionType_messages_2dbitcoin_2eproto.base);
   extra_data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&version_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&timestamp_) -
@@ -7524,13 +9174,8 @@ void TxAck_TransactionType::SharedDtor() {
 void TxAck_TransactionType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TxAck_TransactionType::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TxAck_TransactionType& TxAck_TransactionType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_TxAck_TransactionType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TxAck_TransactionType_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -7548,12 +9193,12 @@ void TxAck_TransactionType::Clear() {
   if (cached_has_bits & 0x00000001u) {
     extra_data_.ClearNonDefaultToEmptyNoArena();
   }
-  if (cached_has_bits & 254u) {
+  if (cached_has_bits & 0x000000feu) {
     ::memset(&version_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&overwintered_) -
         reinterpret_cast<char*>(&version_)) + sizeof(overwintered_));
   }
-  if (cached_has_bits & 768u) {
+  if (cached_has_bits & 0x00000300u) {
     ::memset(&version_group_id_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&timestamp_) -
         reinterpret_cast<char*>(&version_group_id_)) + sizeof(timestamp_));
@@ -7562,9 +9207,172 @@ void TxAck_TransactionType::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TxAck_TransactionType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TxAck_TransactionType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 version = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_version(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated .hw.trezor.messages.bitcoin.TxAck.TransactionType.TxInputType inputs = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType::_InternalParse;
+          object = msg->add_inputs();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 18 && (ptr += 1));
+        break;
+      }
+      // repeated .hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputBinType bin_outputs = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType::_InternalParse;
+          object = msg->add_bin_outputs();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 26 && (ptr += 1));
+        break;
+      }
+      // optional uint32 lock_time = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_lock_time(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated .hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputType outputs = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType::_InternalParse;
+          object = msg->add_outputs();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 42 && (ptr += 1));
+        break;
+      }
+      // optional uint32 inputs_cnt = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_inputs_cnt(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 outputs_cnt = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_outputs_cnt(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes extra_data = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 66) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_extra_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 extra_data_len = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 72) goto handle_unusual;
+        msg->set_extra_data_len(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 expiry = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 80) goto handle_unusual;
+        msg->set_expiry(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool overwintered = 11;
+      case 11: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 88) goto handle_unusual;
+        msg->set_overwintered(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 version_group_id = 12;
+      case 12: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 96) goto handle_unusual;
+        msg->set_version_group_id(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 timestamp = 13;
+      case 13: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 104) goto handle_unusual;
+        msg->set_timestamp(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TxAck_TransactionType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.TxAck.TransactionType)
   for (;;) {
@@ -7574,9 +9382,8 @@ bool TxAck_TransactionType::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 version = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_version();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_version(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &version_)));
@@ -7588,8 +9395,7 @@ bool TxAck_TransactionType::MergePartialFromCodedStream(
 
       // repeated .hw.trezor.messages.bitcoin.TxAck.TransactionType.TxInputType inputs = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_inputs()));
         } else {
@@ -7600,8 +9406,7 @@ bool TxAck_TransactionType::MergePartialFromCodedStream(
 
       // repeated .hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputBinType bin_outputs = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_bin_outputs()));
         } else {
@@ -7612,9 +9417,8 @@ bool TxAck_TransactionType::MergePartialFromCodedStream(
 
       // optional uint32 lock_time = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_lock_time();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_lock_time(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &lock_time_)));
@@ -7626,8 +9430,7 @@ bool TxAck_TransactionType::MergePartialFromCodedStream(
 
       // repeated .hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputType outputs = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_outputs()));
         } else {
@@ -7638,9 +9441,8 @@ bool TxAck_TransactionType::MergePartialFromCodedStream(
 
       // optional uint32 inputs_cnt = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_inputs_cnt();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_inputs_cnt(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &inputs_cnt_)));
@@ -7652,9 +9454,8 @@ bool TxAck_TransactionType::MergePartialFromCodedStream(
 
       // optional uint32 outputs_cnt = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_outputs_cnt();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_outputs_cnt(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &outputs_cnt_)));
@@ -7666,8 +9467,7 @@ bool TxAck_TransactionType::MergePartialFromCodedStream(
 
       // optional bytes extra_data = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(66u /* 66 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (66 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_extra_data()));
         } else {
@@ -7678,9 +9478,8 @@ bool TxAck_TransactionType::MergePartialFromCodedStream(
 
       // optional uint32 extra_data_len = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
-          set_has_extra_data_len();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (72 & 0xFF)) {
+          HasBitSetters::set_has_extra_data_len(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &extra_data_len_)));
@@ -7692,9 +9491,8 @@ bool TxAck_TransactionType::MergePartialFromCodedStream(
 
       // optional uint32 expiry = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(80u /* 80 & 0xFF */)) {
-          set_has_expiry();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (80 & 0xFF)) {
+          HasBitSetters::set_has_expiry(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &expiry_)));
@@ -7706,9 +9504,8 @@ bool TxAck_TransactionType::MergePartialFromCodedStream(
 
       // optional bool overwintered = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(88u /* 88 & 0xFF */)) {
-          set_has_overwintered();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (88 & 0xFF)) {
+          HasBitSetters::set_has_overwintered(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &overwintered_)));
@@ -7720,9 +9517,8 @@ bool TxAck_TransactionType::MergePartialFromCodedStream(
 
       // optional uint32 version_group_id = 12;
       case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(96u /* 96 & 0xFF */)) {
-          set_has_version_group_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (96 & 0xFF)) {
+          HasBitSetters::set_has_version_group_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &version_group_id_)));
@@ -7734,9 +9530,8 @@ bool TxAck_TransactionType::MergePartialFromCodedStream(
 
       // optional uint32 timestamp = 13;
       case 13: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(104u /* 104 & 0xFF */)) {
-          set_has_timestamp();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (104 & 0xFF)) {
+          HasBitSetters::set_has_timestamp(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &timestamp_)));
@@ -7765,6 +9560,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TxAck_TransactionType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7859,8 +9655,7 @@ void TxAck_TransactionType::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TxAck_TransactionType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.TxAck.TransactionType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7876,7 +9671,7 @@ void TxAck_TransactionType::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->inputs_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->inputs(static_cast<int>(i)), deterministic, target);
+        2, this->inputs(static_cast<int>(i)), target);
   }
 
   // repeated .hw.trezor.messages.bitcoin.TxAck.TransactionType.TxOutputBinType bin_outputs = 3;
@@ -7884,7 +9679,7 @@ void TxAck_TransactionType::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->bin_outputs_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->bin_outputs(static_cast<int>(i)), deterministic, target);
+        3, this->bin_outputs(static_cast<int>(i)), target);
   }
 
   // optional uint32 lock_time = 4;
@@ -7897,7 +9692,7 @@ void TxAck_TransactionType::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->outputs_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->outputs(static_cast<int>(i)), deterministic, target);
+        5, this->outputs(static_cast<int>(i)), target);
   }
 
   // optional uint32 inputs_cnt = 6;
@@ -7959,6 +9754,10 @@ size_t TxAck_TransactionType::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .hw.trezor.messages.bitcoin.TxAck.TransactionType.TxInputType inputs = 2;
   {
     unsigned int count = static_cast<unsigned int>(this->inputs_size());
@@ -7992,72 +9791,73 @@ size_t TxAck_TransactionType::ByteSizeLong() const {
     }
   }
 
-  if (_has_bits_[0 / 32] & 255u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional bytes extra_data = 8;
-    if (has_extra_data()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->extra_data());
     }
 
     // optional uint32 version = 1;
-    if (has_version()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->version());
     }
 
     // optional uint32 lock_time = 4;
-    if (has_lock_time()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->lock_time());
     }
 
     // optional uint32 inputs_cnt = 6;
-    if (has_inputs_cnt()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->inputs_cnt());
     }
 
     // optional uint32 outputs_cnt = 7;
-    if (has_outputs_cnt()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->outputs_cnt());
     }
 
     // optional uint32 extra_data_len = 9;
-    if (has_extra_data_len()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->extra_data_len());
     }
 
     // optional uint32 expiry = 10;
-    if (has_expiry()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->expiry());
     }
 
     // optional bool overwintered = 11;
-    if (has_overwintered()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 + 1;
     }
 
   }
-  if (_has_bits_[8 / 32] & 768u) {
+  if (cached_has_bits & 0x00000300u) {
     // optional uint32 version_group_id = 12;
-    if (has_version_group_id()) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->version_group_id());
     }
 
     // optional uint32 timestamp = 13;
-    if (has_timestamp()) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->timestamp());
@@ -8073,9 +9873,9 @@ void TxAck_TransactionType::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.TxAck.TransactionType)
   GOOGLE_DCHECK_NE(&from, this);
   const TxAck_TransactionType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TxAck_TransactionType>(
+      ::google::protobuf::DynamicCastToGenerated<TxAck_TransactionType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.TxAck.TransactionType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -8095,9 +9895,9 @@ void TxAck_TransactionType::MergeFrom(const TxAck_TransactionType& from) {
   bin_outputs_.MergeFrom(from.bin_outputs_);
   outputs_.MergeFrom(from.outputs_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_extra_data();
+      _has_bits_[0] |= 0x00000001u;
       extra_data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.extra_data_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -8123,7 +9923,7 @@ void TxAck_TransactionType::MergeFrom(const TxAck_TransactionType& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 768u) {
+  if (cached_has_bits & 0x00000300u) {
     if (cached_has_bits & 0x00000100u) {
       version_group_id_ = from.version_group_id_;
     }
@@ -8161,6 +9961,8 @@ void TxAck_TransactionType::Swap(TxAck_TransactionType* other) {
 }
 void TxAck_TransactionType::InternalSwap(TxAck_TransactionType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&inputs_)->InternalSwap(CastToBase(&other->inputs_));
   CastToBase(&bin_outputs_)->InternalSwap(CastToBase(&other->bin_outputs_));
   CastToBase(&outputs_)->InternalSwap(CastToBase(&other->outputs_));
@@ -8175,13 +9977,11 @@ void TxAck_TransactionType::InternalSwap(TxAck_TransactionType* other) {
   swap(overwintered_, other->overwintered_);
   swap(version_group_id_, other->version_group_id_);
   swap(timestamp_, other->timestamp_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata TxAck_TransactionType::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -8191,32 +9991,44 @@ void TxAck::InitAsDefaultInstance() {
   ::hw::trezor::messages::bitcoin::_TxAck_default_instance_._instance.get_mutable()->tx_ = const_cast< ::hw::trezor::messages::bitcoin::TxAck_TransactionType*>(
       ::hw::trezor::messages::bitcoin::TxAck_TransactionType::internal_default_instance());
 }
+class TxAck::HasBitSetters {
+ public:
+  static const ::hw::trezor::messages::bitcoin::TxAck_TransactionType& tx(const TxAck* msg);
+  static void set_has_tx(TxAck* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::hw::trezor::messages::bitcoin::TxAck_TransactionType&
+TxAck::HasBitSetters::tx(const TxAck* msg) {
+  return *msg->tx_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TxAck::kTxFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TxAck::TxAck()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dbitcoin_2eproto::scc_info_TxAck.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.bitcoin.TxAck)
 }
 TxAck::TxAck(const TxAck& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_tx()) {
     tx_ = new ::hw::trezor::messages::bitcoin::TxAck_TransactionType(*from.tx_);
   } else {
-    tx_ = NULL;
+    tx_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.bitcoin.TxAck)
 }
 
 void TxAck::SharedCtor() {
-  tx_ = NULL;
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_TxAck_messages_2dbitcoin_2eproto.base);
+  tx_ = nullptr;
 }
 
 TxAck::~TxAck() {
@@ -8231,13 +10043,8 @@ void TxAck::SharedDtor() {
 void TxAck::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* TxAck::descriptor() {
-  ::protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const TxAck& TxAck::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dbitcoin_2eproto::scc_info_TxAck.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_TxAck_messages_2dbitcoin_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -8250,16 +10057,62 @@ void TxAck::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(tx_ != NULL);
+    GOOGLE_DCHECK(tx_ != nullptr);
     tx_->Clear();
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* TxAck::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<TxAck*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.bitcoin.TxAck.TransactionType tx = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::bitcoin::TxAck_TransactionType::_InternalParse;
+        object = msg->mutable_tx();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool TxAck::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.bitcoin.TxAck)
   for (;;) {
@@ -8269,8 +10122,7 @@ bool TxAck::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.bitcoin.TxAck.TransactionType tx = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_tx()));
         } else {
@@ -8298,6 +10150,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void TxAck::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -8309,7 +10162,7 @@ void TxAck::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.bitcoin.TxAck.TransactionType tx = 1;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_tx(), output);
+      1, HasBitSetters::tx(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -8320,8 +10173,7 @@ void TxAck::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* TxAck::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.bitcoin.TxAck)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -8331,7 +10183,7 @@ void TxAck::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_tx(), deterministic, target);
+        1, HasBitSetters::tx(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -8351,8 +10203,13 @@ size_t TxAck::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional .hw.trezor.messages.bitcoin.TxAck.TransactionType tx = 1;
-  if (has_tx()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *tx_);
@@ -8367,9 +10224,9 @@ void TxAck::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.bitcoin.TxAck)
   GOOGLE_DCHECK_NE(&from, this);
   const TxAck* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const TxAck>(
+      ::google::protobuf::DynamicCastToGenerated<TxAck>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.bitcoin.TxAck)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -8417,14 +10274,14 @@ void TxAck::Swap(TxAck* other) {
 }
 void TxAck::InternalSwap(TxAck* other) {
   using std::swap;
-  swap(tx_, other->tx_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(tx_, other->tx_);
 }
 
 ::google::protobuf::Metadata TxAck::GetMetadata() const {
-  protobuf_messages_2dbitcoin_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dbitcoin_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbitcoin_2eproto);
+  return ::file_level_metadata_messages_2dbitcoin_2eproto[kIndexInFileMessages];
 }
 
 
@@ -8435,61 +10292,62 @@ void TxAck::InternalSwap(TxAck* other) {
 }  // namespace hw
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::GetPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::GetPublicKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::GetPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::GetPublicKey >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::GetPublicKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::PublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::PublicKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::PublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::PublicKey >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::PublicKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::GetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::GetAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::GetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::GetAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::GetAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::Address* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::Address >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::Address* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::Address >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::Address >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::SignMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::SignMessage >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::SignMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::SignMessage >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::SignMessage >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::MessageSignature* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::MessageSignature >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::MessageSignature* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::MessageSignature >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::MessageSignature >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::VerifyMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::VerifyMessage >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::VerifyMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::VerifyMessage >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::VerifyMessage >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::SignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::SignTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::SignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::SignTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::SignTx >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::TxRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::TxRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxRequest >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::TxRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::TxAck_TransactionType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxAck_TransactionType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::TxAck_TransactionType* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxAck_TransactionType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::TxAck_TransactionType >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::bitcoin::TxAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxAck >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::bitcoin::TxAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::bitcoin::TxAck >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::bitcoin::TxAck >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

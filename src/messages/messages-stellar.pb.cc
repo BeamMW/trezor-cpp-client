@@ -6,117 +6,94 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_messages_2dstellar_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dstellar_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_StellarAssetType;
-}  // namespace protobuf_messages_2dstellar_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dstellar_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_StellarAssetType_messages_2dstellar_2eproto;
 namespace hw {
 namespace trezor {
 namespace messages {
 namespace stellar {
 class StellarAssetTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarAssetType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarAssetType> _instance;
 } _StellarAssetType_default_instance_;
 class StellarGetAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarGetAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarGetAddress> _instance;
 } _StellarGetAddress_default_instance_;
 class StellarAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarAddress> _instance;
 } _StellarAddress_default_instance_;
 class StellarSignTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarSignTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarSignTx> _instance;
 } _StellarSignTx_default_instance_;
 class StellarTxOpRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarTxOpRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarTxOpRequest> _instance;
 } _StellarTxOpRequest_default_instance_;
 class StellarPaymentOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarPaymentOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarPaymentOp> _instance;
 } _StellarPaymentOp_default_instance_;
 class StellarCreateAccountOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarCreateAccountOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarCreateAccountOp> _instance;
 } _StellarCreateAccountOp_default_instance_;
 class StellarPathPaymentOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarPathPaymentOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarPathPaymentOp> _instance;
 } _StellarPathPaymentOp_default_instance_;
 class StellarManageOfferOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarManageOfferOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarManageOfferOp> _instance;
 } _StellarManageOfferOp_default_instance_;
 class StellarCreatePassiveOfferOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarCreatePassiveOfferOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarCreatePassiveOfferOp> _instance;
 } _StellarCreatePassiveOfferOp_default_instance_;
 class StellarSetOptionsOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarSetOptionsOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarSetOptionsOp> _instance;
 } _StellarSetOptionsOp_default_instance_;
 class StellarChangeTrustOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarChangeTrustOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarChangeTrustOp> _instance;
 } _StellarChangeTrustOp_default_instance_;
 class StellarAllowTrustOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarAllowTrustOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarAllowTrustOp> _instance;
 } _StellarAllowTrustOp_default_instance_;
 class StellarAccountMergeOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarAccountMergeOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarAccountMergeOp> _instance;
 } _StellarAccountMergeOp_default_instance_;
 class StellarManageDataOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarManageDataOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarManageDataOp> _instance;
 } _StellarManageDataOp_default_instance_;
 class StellarBumpSequenceOpDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarBumpSequenceOp>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarBumpSequenceOp> _instance;
 } _StellarBumpSequenceOp_default_instance_;
 class StellarSignedTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<StellarSignedTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<StellarSignedTx> _instance;
 } _StellarSignedTx_default_instance_;
 }  // namespace stellar
 }  // namespace messages
 }  // namespace trezor
 }  // namespace hw
-namespace protobuf_messages_2dstellar_2eproto {
-static void InitDefaultsStellarAssetType() {
+static void InitDefaultsStellarAssetType_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -127,10 +104,10 @@ static void InitDefaultsStellarAssetType() {
   ::hw::trezor::messages::stellar::StellarAssetType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_StellarAssetType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarAssetType}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_StellarAssetType_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarAssetType_messages_2dstellar_2eproto}, {}};
 
-static void InitDefaultsStellarGetAddress() {
+static void InitDefaultsStellarGetAddress_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -141,10 +118,10 @@ static void InitDefaultsStellarGetAddress() {
   ::hw::trezor::messages::stellar::StellarGetAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_StellarGetAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarGetAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_StellarGetAddress_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarGetAddress_messages_2dstellar_2eproto}, {}};
 
-static void InitDefaultsStellarAddress() {
+static void InitDefaultsStellarAddress_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -155,10 +132,10 @@ static void InitDefaultsStellarAddress() {
   ::hw::trezor::messages::stellar::StellarAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_StellarAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_StellarAddress_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarAddress_messages_2dstellar_2eproto}, {}};
 
-static void InitDefaultsStellarSignTx() {
+static void InitDefaultsStellarSignTx_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -169,10 +146,10 @@ static void InitDefaultsStellarSignTx() {
   ::hw::trezor::messages::stellar::StellarSignTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_StellarSignTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarSignTx}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_StellarSignTx_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarSignTx_messages_2dstellar_2eproto}, {}};
 
-static void InitDefaultsStellarTxOpRequest() {
+static void InitDefaultsStellarTxOpRequest_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -183,10 +160,10 @@ static void InitDefaultsStellarTxOpRequest() {
   ::hw::trezor::messages::stellar::StellarTxOpRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_StellarTxOpRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarTxOpRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_StellarTxOpRequest_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarTxOpRequest_messages_2dstellar_2eproto}, {}};
 
-static void InitDefaultsStellarPaymentOp() {
+static void InitDefaultsStellarPaymentOp_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -197,11 +174,11 @@ static void InitDefaultsStellarPaymentOp() {
   ::hw::trezor::messages::stellar::StellarPaymentOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_StellarPaymentOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsStellarPaymentOp}, {
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarAssetType.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_StellarPaymentOp_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsStellarPaymentOp_messages_2dstellar_2eproto}, {
+      &scc_info_StellarAssetType_messages_2dstellar_2eproto.base,}};
 
-static void InitDefaultsStellarCreateAccountOp() {
+static void InitDefaultsStellarCreateAccountOp_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -212,10 +189,10 @@ static void InitDefaultsStellarCreateAccountOp() {
   ::hw::trezor::messages::stellar::StellarCreateAccountOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_StellarCreateAccountOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarCreateAccountOp}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_StellarCreateAccountOp_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarCreateAccountOp_messages_2dstellar_2eproto}, {}};
 
-static void InitDefaultsStellarPathPaymentOp() {
+static void InitDefaultsStellarPathPaymentOp_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -226,11 +203,11 @@ static void InitDefaultsStellarPathPaymentOp() {
   ::hw::trezor::messages::stellar::StellarPathPaymentOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_StellarPathPaymentOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsStellarPathPaymentOp}, {
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarAssetType.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_StellarPathPaymentOp_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsStellarPathPaymentOp_messages_2dstellar_2eproto}, {
+      &scc_info_StellarAssetType_messages_2dstellar_2eproto.base,}};
 
-static void InitDefaultsStellarManageOfferOp() {
+static void InitDefaultsStellarManageOfferOp_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -241,11 +218,11 @@ static void InitDefaultsStellarManageOfferOp() {
   ::hw::trezor::messages::stellar::StellarManageOfferOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_StellarManageOfferOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsStellarManageOfferOp}, {
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarAssetType.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_StellarManageOfferOp_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsStellarManageOfferOp_messages_2dstellar_2eproto}, {
+      &scc_info_StellarAssetType_messages_2dstellar_2eproto.base,}};
 
-static void InitDefaultsStellarCreatePassiveOfferOp() {
+static void InitDefaultsStellarCreatePassiveOfferOp_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -256,11 +233,11 @@ static void InitDefaultsStellarCreatePassiveOfferOp() {
   ::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_StellarCreatePassiveOfferOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsStellarCreatePassiveOfferOp}, {
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarAssetType.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_StellarCreatePassiveOfferOp_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsStellarCreatePassiveOfferOp_messages_2dstellar_2eproto}, {
+      &scc_info_StellarAssetType_messages_2dstellar_2eproto.base,}};
 
-static void InitDefaultsStellarSetOptionsOp() {
+static void InitDefaultsStellarSetOptionsOp_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -271,10 +248,10 @@ static void InitDefaultsStellarSetOptionsOp() {
   ::hw::trezor::messages::stellar::StellarSetOptionsOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_StellarSetOptionsOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarSetOptionsOp}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_StellarSetOptionsOp_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarSetOptionsOp_messages_2dstellar_2eproto}, {}};
 
-static void InitDefaultsStellarChangeTrustOp() {
+static void InitDefaultsStellarChangeTrustOp_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -285,11 +262,11 @@ static void InitDefaultsStellarChangeTrustOp() {
   ::hw::trezor::messages::stellar::StellarChangeTrustOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_StellarChangeTrustOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsStellarChangeTrustOp}, {
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarAssetType.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_StellarChangeTrustOp_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsStellarChangeTrustOp_messages_2dstellar_2eproto}, {
+      &scc_info_StellarAssetType_messages_2dstellar_2eproto.base,}};
 
-static void InitDefaultsStellarAllowTrustOp() {
+static void InitDefaultsStellarAllowTrustOp_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -300,10 +277,10 @@ static void InitDefaultsStellarAllowTrustOp() {
   ::hw::trezor::messages::stellar::StellarAllowTrustOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_StellarAllowTrustOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarAllowTrustOp}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_StellarAllowTrustOp_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarAllowTrustOp_messages_2dstellar_2eproto}, {}};
 
-static void InitDefaultsStellarAccountMergeOp() {
+static void InitDefaultsStellarAccountMergeOp_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -314,10 +291,10 @@ static void InitDefaultsStellarAccountMergeOp() {
   ::hw::trezor::messages::stellar::StellarAccountMergeOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_StellarAccountMergeOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarAccountMergeOp}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_StellarAccountMergeOp_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarAccountMergeOp_messages_2dstellar_2eproto}, {}};
 
-static void InitDefaultsStellarManageDataOp() {
+static void InitDefaultsStellarManageDataOp_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -328,10 +305,10 @@ static void InitDefaultsStellarManageDataOp() {
   ::hw::trezor::messages::stellar::StellarManageDataOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_StellarManageDataOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarManageDataOp}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_StellarManageDataOp_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarManageDataOp_messages_2dstellar_2eproto}, {}};
 
-static void InitDefaultsStellarBumpSequenceOp() {
+static void InitDefaultsStellarBumpSequenceOp_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -342,10 +319,10 @@ static void InitDefaultsStellarBumpSequenceOp() {
   ::hw::trezor::messages::stellar::StellarBumpSequenceOp::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_StellarBumpSequenceOp =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarBumpSequenceOp}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_StellarBumpSequenceOp_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarBumpSequenceOp_messages_2dstellar_2eproto}, {}};
 
-static void InitDefaultsStellarSignedTx() {
+static void InitDefaultsStellarSignedTx_messages_2dstellar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -356,76 +333,78 @@ static void InitDefaultsStellarSignedTx() {
   ::hw::trezor::messages::stellar::StellarSignedTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_StellarSignedTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarSignedTx}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_StellarSignedTx_messages_2dstellar_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsStellarSignedTx_messages_2dstellar_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarAssetType.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarGetAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarSignTx.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarTxOpRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarPaymentOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarCreateAccountOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarPathPaymentOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarManageOfferOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarCreatePassiveOfferOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarSetOptionsOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarChangeTrustOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarAllowTrustOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarAccountMergeOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarManageDataOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarBumpSequenceOp.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_StellarSignedTx.base);
+void InitDefaults_messages_2dstellar_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarAssetType_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarGetAddress_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarAddress_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarSignTx_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarTxOpRequest_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarPaymentOp_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarCreateAccountOp_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarPathPaymentOp_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarManageOfferOp_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarCreatePassiveOfferOp_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarSetOptionsOp_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarChangeTrustOp_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarAllowTrustOp_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarAccountMergeOp_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarManageDataOp_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarBumpSequenceOp_messages_2dstellar_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_StellarSignedTx_messages_2dstellar_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[17];
+::google::protobuf::Metadata file_level_metadata_messages_2dstellar_2eproto[17];
+constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_messages_2dstellar_2eproto = nullptr;
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2dstellar_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAssetType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAssetType, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_messages_2dstellar_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAssetType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAssetType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAssetType, type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAssetType, code_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAssetType, issuer_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAssetType, type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAssetType, code_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAssetType, issuer_),
   2,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarGetAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarGetAddress, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarGetAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarGetAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarGetAddress, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarGetAddress, show_display_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarGetAddress, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarGetAddress, show_display_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAddress, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAddress, address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAddress, address_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, network_passphrase_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, source_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, fee_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, sequence_number_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, timebounds_start_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, timebounds_end_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, memo_type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, memo_text_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, memo_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, memo_hash_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, num_operations_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, network_passphrase_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, source_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, fee_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, sequence_number_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, timebounds_start_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, timebounds_end_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, memo_type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, memo_text_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, memo_id_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, memo_hash_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignTx, num_operations_),
   ~0u,
   0,
   1,
@@ -438,47 +417,47 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   9,
   3,
   10,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarTxOpRequest, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarTxOpRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarTxOpRequest, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarTxOpRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPaymentOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPaymentOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPaymentOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPaymentOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPaymentOp, source_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPaymentOp, destination_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPaymentOp, asset_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPaymentOp, amount_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPaymentOp, source_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPaymentOp, destination_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPaymentOp, asset_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPaymentOp, amount_),
   0,
   1,
   2,
   3,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreateAccountOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreateAccountOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreateAccountOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreateAccountOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreateAccountOp, source_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreateAccountOp, new_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreateAccountOp, starting_balance_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreateAccountOp, source_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreateAccountOp, new_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreateAccountOp, starting_balance_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, source_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, send_asset_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, send_max_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, destination_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, destination_asset_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, destination_amount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, paths_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, source_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, send_asset_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, send_max_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, destination_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, destination_asset_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, destination_amount_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarPathPaymentOp, paths_),
   0,
   2,
   4,
@@ -486,18 +465,18 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   3,
   5,
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, source_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, selling_asset_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, buying_asset_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, amount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, price_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, price_d_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, offer_id_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, source_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, selling_asset_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, buying_asset_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, amount_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, price_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, price_d_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageOfferOp, offer_id_),
   0,
   1,
   2,
@@ -505,40 +484,40 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   4,
   5,
   6,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, source_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, selling_asset_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, buying_asset_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, amount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, price_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, price_d_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, source_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, selling_asset_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, buying_asset_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, amount_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, price_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp, price_d_),
   0,
   1,
   2,
   3,
   4,
   5,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, source_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, inflation_destination_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, clear_flags_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, set_flags_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, master_weight_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, low_threshold_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, medium_threshold_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, high_threshold_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, home_domain_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, signer_type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, signer_key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, signer_weight_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, source_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, inflation_destination_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, clear_flags_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, set_flags_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, master_weight_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, low_threshold_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, medium_threshold_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, high_threshold_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, home_domain_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, signer_type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, signer_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSetOptionsOp, signer_weight_),
   0,
   1,
   4,
@@ -551,72 +530,72 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   10,
   3,
   11,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarChangeTrustOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarChangeTrustOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarChangeTrustOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarChangeTrustOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarChangeTrustOp, source_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarChangeTrustOp, asset_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarChangeTrustOp, limit_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarChangeTrustOp, source_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarChangeTrustOp, asset_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarChangeTrustOp, limit_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAllowTrustOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAllowTrustOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAllowTrustOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAllowTrustOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAllowTrustOp, source_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAllowTrustOp, trusted_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAllowTrustOp, asset_type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAllowTrustOp, asset_code_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAllowTrustOp, is_authorized_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAllowTrustOp, source_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAllowTrustOp, trusted_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAllowTrustOp, asset_type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAllowTrustOp, asset_code_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAllowTrustOp, is_authorized_),
   0,
   1,
   3,
   2,
   4,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAccountMergeOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAccountMergeOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAccountMergeOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAccountMergeOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAccountMergeOp, source_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAccountMergeOp, destination_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAccountMergeOp, source_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarAccountMergeOp, destination_account_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageDataOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageDataOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageDataOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageDataOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageDataOp, source_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageDataOp, key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageDataOp, value_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageDataOp, source_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageDataOp, key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarManageDataOp, value_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarBumpSequenceOp, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarBumpSequenceOp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarBumpSequenceOp, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarBumpSequenceOp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarBumpSequenceOp, source_account_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarBumpSequenceOp, bump_to_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarBumpSequenceOp, source_account_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarBumpSequenceOp, bump_to_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignedTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignedTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignedTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignedTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignedTx, public_key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignedTx, signature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignedTx, public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::stellar::StellarSignedTx, signature_),
   0,
   1,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 8, sizeof(::hw::trezor::messages::stellar::StellarAssetType)},
   { 11, 18, sizeof(::hw::trezor::messages::stellar::StellarGetAddress)},
   { 20, 26, sizeof(::hw::trezor::messages::stellar::StellarAddress)},
@@ -656,108 +635,92 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::stellar::_StellarSignedTx_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "messages-stellar.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2dstellar_2eproto = {
+  {}, AddDescriptors_messages_2dstellar_2eproto, "messages-stellar.proto", schemas,
+  file_default_instances, TableStruct_messages_2dstellar_2eproto::offsets,
+  file_level_metadata_messages_2dstellar_2eproto, 17, file_level_enum_descriptors_messages_2dstellar_2eproto, file_level_service_descriptors_messages_2dstellar_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_messages_2dstellar_2eproto[] =
+  "\n\026messages-stellar.proto\022\032hw.trezor.mess"
+  "ages.stellar\">\n\020StellarAssetType\022\014\n\004type"
+  "\030\001 \001(\r\022\014\n\004code\030\002 \001(\t\022\016\n\006issuer\030\003 \001(\t\"<\n\021"
+  "StellarGetAddress\022\021\n\taddress_n\030\001 \003(\r\022\024\n\014"
+  "show_display\030\002 \001(\010\"!\n\016StellarAddress\022\017\n\007"
+  "address\030\001 \001(\t\"\220\002\n\rStellarSignTx\022\021\n\taddre"
+  "ss_n\030\002 \003(\r\022\032\n\022network_passphrase\030\003 \001(\t\022\026"
+  "\n\016source_account\030\004 \001(\t\022\013\n\003fee\030\005 \001(\r\022\027\n\017s"
+  "equence_number\030\006 \001(\004\022\030\n\020timebounds_start"
+  "\030\010 \001(\r\022\026\n\016timebounds_end\030\t \001(\r\022\021\n\tmemo_t"
+  "ype\030\n \001(\r\022\021\n\tmemo_text\030\013 \001(\t\022\017\n\007memo_id\030"
+  "\014 \001(\004\022\021\n\tmemo_hash\030\r \001(\014\022\026\n\016num_operatio"
+  "ns\030\016 \001(\r\"\024\n\022StellarTxOpRequest\"\224\001\n\020Stell"
+  "arPaymentOp\022\026\n\016source_account\030\001 \001(\t\022\033\n\023d"
+  "estination_account\030\002 \001(\t\022;\n\005asset\030\003 \001(\0132"
+  ",.hw.trezor.messages.stellar.StellarAsse"
+  "tType\022\016\n\006amount\030\004 \001(\022\"_\n\026StellarCreateAc"
+  "countOp\022\026\n\016source_account\030\001 \001(\t\022\023\n\013new_a"
+  "ccount\030\002 \001(\t\022\030\n\020starting_balance\030\003 \001(\022\"\301"
+  "\002\n\024StellarPathPaymentOp\022\026\n\016source_accoun"
+  "t\030\001 \001(\t\022@\n\nsend_asset\030\002 \001(\0132,.hw.trezor."
+  "messages.stellar.StellarAssetType\022\020\n\010sen"
+  "d_max\030\003 \001(\022\022\033\n\023destination_account\030\004 \001(\t"
+  "\022G\n\021destination_asset\030\005 \001(\0132,.hw.trezor."
+  "messages.stellar.StellarAssetType\022\032\n\022des"
+  "tination_amount\030\006 \001(\022\022;\n\005paths\030\007 \003(\0132,.h"
+  "w.trezor.messages.stellar.StellarAssetTy"
+  "pe\"\373\001\n\024StellarManageOfferOp\022\026\n\016source_ac"
+  "count\030\001 \001(\t\022C\n\rselling_asset\030\002 \001(\0132,.hw."
+  "trezor.messages.stellar.StellarAssetType"
+  "\022B\n\014buying_asset\030\003 \001(\0132,.hw.trezor.messa"
+  "ges.stellar.StellarAssetType\022\016\n\006amount\030\004"
+  " \001(\022\022\017\n\007price_n\030\005 \001(\r\022\017\n\007price_d\030\006 \001(\r\022\020"
+  "\n\010offer_id\030\007 \001(\004\"\360\001\n\033StellarCreatePassiv"
+  "eOfferOp\022\026\n\016source_account\030\001 \001(\t\022C\n\rsell"
+  "ing_asset\030\002 \001(\0132,.hw.trezor.messages.ste"
+  "llar.StellarAssetType\022B\n\014buying_asset\030\003 "
+  "\001(\0132,.hw.trezor.messages.stellar.Stellar"
+  "AssetType\022\016\n\006amount\030\004 \001(\022\022\017\n\007price_n\030\005 \001"
+  "(\r\022\017\n\007price_d\030\006 \001(\r\"\261\002\n\023StellarSetOption"
+  "sOp\022\026\n\016source_account\030\001 \001(\t\022%\n\035inflation"
+  "_destination_account\030\002 \001(\t\022\023\n\013clear_flag"
+  "s\030\003 \001(\r\022\021\n\tset_flags\030\004 \001(\r\022\025\n\rmaster_wei"
+  "ght\030\005 \001(\r\022\025\n\rlow_threshold\030\006 \001(\r\022\030\n\020medi"
+  "um_threshold\030\007 \001(\r\022\026\n\016high_threshold\030\010 \001"
+  "(\r\022\023\n\013home_domain\030\t \001(\t\022\023\n\013signer_type\030\n"
+  " \001(\r\022\022\n\nsigner_key\030\013 \001(\014\022\025\n\rsigner_weigh"
+  "t\030\014 \001(\r\"z\n\024StellarChangeTrustOp\022\026\n\016sourc"
+  "e_account\030\001 \001(\t\022;\n\005asset\030\002 \001(\0132,.hw.trez"
+  "or.messages.stellar.StellarAssetType\022\r\n\005"
+  "limit\030\003 \001(\004\"\205\001\n\023StellarAllowTrustOp\022\026\n\016s"
+  "ource_account\030\001 \001(\t\022\027\n\017trusted_account\030\002"
+  " \001(\t\022\022\n\nasset_type\030\003 \001(\r\022\022\n\nasset_code\030\004"
+  " \001(\t\022\025\n\ris_authorized\030\005 \001(\r\"L\n\025StellarAc"
+  "countMergeOp\022\026\n\016source_account\030\001 \001(\t\022\033\n\023"
+  "destination_account\030\002 \001(\t\"I\n\023StellarMana"
+  "geDataOp\022\026\n\016source_account\030\001 \001(\t\022\013\n\003key\030"
+  "\002 \001(\t\022\r\n\005value\030\003 \001(\014\"@\n\025StellarBumpSeque"
+  "nceOp\022\026\n\016source_account\030\001 \001(\t\022\017\n\007bump_to"
+  "\030\002 \001(\004\"8\n\017StellarSignedTx\022\022\n\npublic_key\030"
+  "\001 \001(\014\022\021\n\tsignature\030\002 \001(\014B;\n#com.satoshil"
+  "abs.trezor.lib.protobufB\024TrezorMessageSt"
+  "ellar"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dstellar_2eproto = {
+  false, InitDefaults_messages_2dstellar_2eproto, 
+  descriptor_table_protodef_messages_2dstellar_2eproto,
+  "messages-stellar.proto", &assign_descriptors_table_messages_2dstellar_2eproto, 2485,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 17);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\026messages-stellar.proto\022\032hw.trezor.mess"
-      "ages.stellar\">\n\020StellarAssetType\022\014\n\004type"
-      "\030\001 \001(\r\022\014\n\004code\030\002 \001(\t\022\016\n\006issuer\030\003 \001(\t\"<\n\021"
-      "StellarGetAddress\022\021\n\taddress_n\030\001 \003(\r\022\024\n\014"
-      "show_display\030\002 \001(\010\"!\n\016StellarAddress\022\017\n\007"
-      "address\030\001 \001(\t\"\220\002\n\rStellarSignTx\022\021\n\taddre"
-      "ss_n\030\002 \003(\r\022\032\n\022network_passphrase\030\003 \001(\t\022\026"
-      "\n\016source_account\030\004 \001(\t\022\013\n\003fee\030\005 \001(\r\022\027\n\017s"
-      "equence_number\030\006 \001(\004\022\030\n\020timebounds_start"
-      "\030\010 \001(\r\022\026\n\016timebounds_end\030\t \001(\r\022\021\n\tmemo_t"
-      "ype\030\n \001(\r\022\021\n\tmemo_text\030\013 \001(\t\022\017\n\007memo_id\030"
-      "\014 \001(\004\022\021\n\tmemo_hash\030\r \001(\014\022\026\n\016num_operatio"
-      "ns\030\016 \001(\r\"\024\n\022StellarTxOpRequest\"\224\001\n\020Stell"
-      "arPaymentOp\022\026\n\016source_account\030\001 \001(\t\022\033\n\023d"
-      "estination_account\030\002 \001(\t\022;\n\005asset\030\003 \001(\0132"
-      ",.hw.trezor.messages.stellar.StellarAsse"
-      "tType\022\016\n\006amount\030\004 \001(\022\"_\n\026StellarCreateAc"
-      "countOp\022\026\n\016source_account\030\001 \001(\t\022\023\n\013new_a"
-      "ccount\030\002 \001(\t\022\030\n\020starting_balance\030\003 \001(\022\"\301"
-      "\002\n\024StellarPathPaymentOp\022\026\n\016source_accoun"
-      "t\030\001 \001(\t\022@\n\nsend_asset\030\002 \001(\0132,.hw.trezor."
-      "messages.stellar.StellarAssetType\022\020\n\010sen"
-      "d_max\030\003 \001(\022\022\033\n\023destination_account\030\004 \001(\t"
-      "\022G\n\021destination_asset\030\005 \001(\0132,.hw.trezor."
-      "messages.stellar.StellarAssetType\022\032\n\022des"
-      "tination_amount\030\006 \001(\022\022;\n\005paths\030\007 \003(\0132,.h"
-      "w.trezor.messages.stellar.StellarAssetTy"
-      "pe\"\373\001\n\024StellarManageOfferOp\022\026\n\016source_ac"
-      "count\030\001 \001(\t\022C\n\rselling_asset\030\002 \001(\0132,.hw."
-      "trezor.messages.stellar.StellarAssetType"
-      "\022B\n\014buying_asset\030\003 \001(\0132,.hw.trezor.messa"
-      "ges.stellar.StellarAssetType\022\016\n\006amount\030\004"
-      " \001(\022\022\017\n\007price_n\030\005 \001(\r\022\017\n\007price_d\030\006 \001(\r\022\020"
-      "\n\010offer_id\030\007 \001(\004\"\360\001\n\033StellarCreatePassiv"
-      "eOfferOp\022\026\n\016source_account\030\001 \001(\t\022C\n\rsell"
-      "ing_asset\030\002 \001(\0132,.hw.trezor.messages.ste"
-      "llar.StellarAssetType\022B\n\014buying_asset\030\003 "
-      "\001(\0132,.hw.trezor.messages.stellar.Stellar"
-      "AssetType\022\016\n\006amount\030\004 \001(\022\022\017\n\007price_n\030\005 \001"
-      "(\r\022\017\n\007price_d\030\006 \001(\r\"\261\002\n\023StellarSetOption"
-      "sOp\022\026\n\016source_account\030\001 \001(\t\022%\n\035inflation"
-      "_destination_account\030\002 \001(\t\022\023\n\013clear_flag"
-      "s\030\003 \001(\r\022\021\n\tset_flags\030\004 \001(\r\022\025\n\rmaster_wei"
-      "ght\030\005 \001(\r\022\025\n\rlow_threshold\030\006 \001(\r\022\030\n\020medi"
-      "um_threshold\030\007 \001(\r\022\026\n\016high_threshold\030\010 \001"
-      "(\r\022\023\n\013home_domain\030\t \001(\t\022\023\n\013signer_type\030\n"
-      " \001(\r\022\022\n\nsigner_key\030\013 \001(\014\022\025\n\rsigner_weigh"
-      "t\030\014 \001(\r\"z\n\024StellarChangeTrustOp\022\026\n\016sourc"
-      "e_account\030\001 \001(\t\022;\n\005asset\030\002 \001(\0132,.hw.trez"
-      "or.messages.stellar.StellarAssetType\022\r\n\005"
-      "limit\030\003 \001(\004\"\205\001\n\023StellarAllowTrustOp\022\026\n\016s"
-      "ource_account\030\001 \001(\t\022\027\n\017trusted_account\030\002"
-      " \001(\t\022\022\n\nasset_type\030\003 \001(\r\022\022\n\nasset_code\030\004"
-      " \001(\t\022\025\n\ris_authorized\030\005 \001(\r\"L\n\025StellarAc"
-      "countMergeOp\022\026\n\016source_account\030\001 \001(\t\022\033\n\023"
-      "destination_account\030\002 \001(\t\"I\n\023StellarMana"
-      "geDataOp\022\026\n\016source_account\030\001 \001(\t\022\013\n\003key\030"
-      "\002 \001(\t\022\r\n\005value\030\003 \001(\014\"@\n\025StellarBumpSeque"
-      "nceOp\022\026\n\016source_account\030\001 \001(\t\022\017\n\007bump_to"
-      "\030\002 \001(\004\"8\n\017StellarSignedTx\022\022\n\npublic_key\030"
-      "\001 \001(\014\022\021\n\tsignature\030\002 \001(\014B;\n#com.satoshil"
-      "abs.trezor.lib.protobufB\024TrezorMessageSt"
-      "ellar"
+void AddDescriptors_messages_2dstellar_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 2485);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "messages-stellar.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_messages_2dstellar_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_messages_2dstellar_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_messages_2dstellar_2eproto = []() { AddDescriptors_messages_2dstellar_2eproto(); return true; }();
 namespace hw {
 namespace trezor {
 namespace messages {
@@ -767,6 +730,19 @@ namespace stellar {
 
 void StellarAssetType::InitAsDefaultInstance() {
 }
+class StellarAssetType::HasBitSetters {
+ public:
+  static void set_has_type(StellarAssetType* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_code(StellarAssetType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_issuer(StellarAssetType* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarAssetType::kTypeFieldNumber;
 const int StellarAssetType::kCodeFieldNumber;
@@ -774,15 +750,13 @@ const int StellarAssetType::kIssuerFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarAssetType::StellarAssetType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarAssetType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarAssetType)
 }
 StellarAssetType::StellarAssetType(const StellarAssetType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   code_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -798,6 +772,8 @@ StellarAssetType::StellarAssetType(const StellarAssetType& from)
 }
 
 void StellarAssetType::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarAssetType_messages_2dstellar_2eproto.base);
   code_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   issuer_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   type_ = 0u;
@@ -816,13 +792,8 @@ void StellarAssetType::SharedDtor() {
 void StellarAssetType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarAssetType::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarAssetType& StellarAssetType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarAssetType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarAssetType_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -834,7 +805,7 @@ void StellarAssetType::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       code_.ClearNonDefaultToEmptyNoArena();
     }
@@ -847,9 +818,85 @@ void StellarAssetType::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarAssetType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarAssetType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 type = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string code = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarAssetType.code");
+        object = msg->mutable_code();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string issuer = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarAssetType.issuer");
+        object = msg->mutable_issuer();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarAssetType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarAssetType)
   for (;;) {
@@ -859,9 +906,8 @@ bool StellarAssetType::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 type = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &type_)));
@@ -873,8 +919,7 @@ bool StellarAssetType::MergePartialFromCodedStream(
 
       // optional string code = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_code()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -889,8 +934,7 @@ bool StellarAssetType::MergePartialFromCodedStream(
 
       // optional string issuer = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_issuer()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -922,6 +966,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarAssetType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -963,8 +1008,7 @@ void StellarAssetType::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarAssetType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarAssetType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1014,23 +1058,28 @@ size_t StellarAssetType::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string code = 2;
-    if (has_code()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->code());
     }
 
     // optional string issuer = 3;
-    if (has_issuer()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->issuer());
     }
 
     // optional uint32 type = 1;
-    if (has_type()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->type());
@@ -1046,9 +1095,9 @@ void StellarAssetType::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarAssetType)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarAssetType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarAssetType>(
+      ::google::protobuf::DynamicCastToGenerated<StellarAssetType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarAssetType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1065,13 +1114,13 @@ void StellarAssetType::MergeFrom(const StellarAssetType& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_code();
+      _has_bits_[0] |= 0x00000001u;
       code_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.code_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_issuer();
+      _has_bits_[0] |= 0x00000002u;
       issuer_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.issuer_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -1105,18 +1154,18 @@ void StellarAssetType::Swap(StellarAssetType* other) {
 }
 void StellarAssetType::InternalSwap(StellarAssetType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   code_.Swap(&other->code_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   issuer_.Swap(&other->issuer_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(type_, other->type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarAssetType::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1124,21 +1173,26 @@ void StellarAssetType::InternalSwap(StellarAssetType* other) {
 
 void StellarGetAddress::InitAsDefaultInstance() {
 }
+class StellarGetAddress::HasBitSetters {
+ public:
+  static void set_has_show_display(StellarGetAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarGetAddress::kAddressNFieldNumber;
 const int StellarGetAddress::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarGetAddress::StellarGetAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarGetAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarGetAddress)
 }
 StellarGetAddress::StellarGetAddress(const StellarGetAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -1161,13 +1215,8 @@ void StellarGetAddress::SharedDtor() {
 void StellarGetAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarGetAddress::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarGetAddress& StellarGetAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarGetAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarGetAddress_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1184,9 +1233,69 @@ void StellarGetAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarGetAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarGetAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool show_display = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarGetAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarGetAddress)
   for (;;) {
@@ -1196,14 +1305,11 @@ bool StellarGetAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1215,9 +1321,8 @@ bool StellarGetAddress::MergePartialFromCodedStream(
 
       // optional bool show_display = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -1246,6 +1351,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarGetAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1273,8 +1379,7 @@ void StellarGetAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarGetAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarGetAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1306,6 +1411,10 @@ size_t StellarGetAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1316,7 +1425,8 @@ size_t StellarGetAddress::ByteSizeLong() const {
   }
 
   // optional bool show_display = 2;
-  if (has_show_display()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -1329,9 +1439,9 @@ void StellarGetAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarGetAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarGetAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarGetAddress>(
+      ::google::protobuf::DynamicCastToGenerated<StellarGetAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarGetAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1377,15 +1487,15 @@ void StellarGetAddress::Swap(StellarGetAddress* other) {
 }
 void StellarGetAddress::InternalSwap(StellarGetAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarGetAddress::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1393,20 +1503,25 @@ void StellarGetAddress::InternalSwap(StellarGetAddress* other) {
 
 void StellarAddress::InitAsDefaultInstance() {
 }
+class StellarAddress::HasBitSetters {
+ public:
+  static void set_has_address(StellarAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarAddress::kAddressFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarAddress::StellarAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarAddress)
 }
 StellarAddress::StellarAddress(const StellarAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1417,6 +1532,8 @@ StellarAddress::StellarAddress(const StellarAddress& from)
 }
 
 void StellarAddress::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarAddress_messages_2dstellar_2eproto.base);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1432,13 +1549,8 @@ void StellarAddress::SharedDtor() {
 void StellarAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarAddress::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarAddress& StellarAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarAddress_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1457,9 +1569,62 @@ void StellarAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarAddress.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarAddress)
   for (;;) {
@@ -1469,8 +1634,7 @@ bool StellarAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1502,6 +1666,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1528,8 +1693,7 @@ void StellarAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1563,8 +1727,13 @@ size_t StellarAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string address = 1;
-  if (has_address()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->address());
@@ -1579,9 +1748,9 @@ void StellarAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarAddress>(
+      ::google::protobuf::DynamicCastToGenerated<StellarAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1598,7 +1767,7 @@ void StellarAddress::MergeFrom(const StellarAddress& from) {
   (void) cached_has_bits;
 
   if (from.has_address()) {
-    set_has_address();
+    _has_bits_[0] |= 0x00000001u;
     address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
   }
 }
@@ -1627,15 +1796,15 @@ void StellarAddress::Swap(StellarAddress* other) {
 }
 void StellarAddress::InternalSwap(StellarAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarAddress::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1643,6 +1812,43 @@ void StellarAddress::InternalSwap(StellarAddress* other) {
 
 void StellarSignTx::InitAsDefaultInstance() {
 }
+class StellarSignTx::HasBitSetters {
+ public:
+  static void set_has_network_passphrase(StellarSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_source_account(StellarSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_fee(StellarSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_sequence_number(StellarSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_timebounds_start(StellarSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_timebounds_end(StellarSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static void set_has_memo_type(StellarSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static void set_has_memo_text(StellarSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_memo_id(StellarSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000200u;
+  }
+  static void set_has_memo_hash(StellarSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_num_operations(StellarSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000400u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarSignTx::kAddressNFieldNumber;
 const int StellarSignTx::kNetworkPassphraseFieldNumber;
@@ -1659,15 +1865,13 @@ const int StellarSignTx::kNumOperationsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarSignTx::StellarSignTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarSignTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarSignTx)
 }
 StellarSignTx::StellarSignTx(const StellarSignTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -1694,6 +1898,8 @@ StellarSignTx::StellarSignTx(const StellarSignTx& from)
 }
 
 void StellarSignTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarSignTx_messages_2dstellar_2eproto.base);
   network_passphrase_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   memo_text_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1718,13 +1924,8 @@ void StellarSignTx::SharedDtor() {
 void StellarSignTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarSignTx::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarSignTx& StellarSignTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarSignTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarSignTx_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1737,7 +1938,7 @@ void StellarSignTx::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       network_passphrase_.ClearNonDefaultToEmptyNoArena();
     }
@@ -1751,12 +1952,12 @@ void StellarSignTx::Clear() {
       memo_hash_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 240u) {
+  if (cached_has_bits & 0x000000f0u) {
     ::memset(&sequence_number_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&timebounds_end_) -
         reinterpret_cast<char*>(&sequence_number_)) + sizeof(timebounds_end_));
   }
-  if (cached_has_bits & 1792u) {
+  if (cached_has_bits & 0x00000700u) {
     ::memset(&memo_type_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&num_operations_) -
         reinterpret_cast<char*>(&memo_type_)) + sizeof(num_operations_));
@@ -1765,9 +1966,178 @@ void StellarSignTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarSignTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarSignTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 16) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 16 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional string network_passphrase = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarSignTx.network_passphrase");
+        object = msg->mutable_network_passphrase();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string source_account = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarSignTx.source_account");
+        object = msg->mutable_source_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 fee = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_fee(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 sequence_number = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_sequence_number(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 timebounds_start = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 64) goto handle_unusual;
+        msg->set_timebounds_start(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 timebounds_end = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 72) goto handle_unusual;
+        msg->set_timebounds_end(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 memo_type = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 80) goto handle_unusual;
+        msg->set_memo_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string memo_text = 11;
+      case 11: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 90) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarSignTx.memo_text");
+        object = msg->mutable_memo_text();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint64 memo_id = 12;
+      case 12: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 96) goto handle_unusual;
+        msg->set_memo_id(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes memo_hash = 13;
+      case 13: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 106) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_memo_hash();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 num_operations = 14;
+      case 14: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 112) goto handle_unusual;
+        msg->set_num_operations(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarSignTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarSignTx)
   for (;;) {
@@ -1777,14 +2147,11 @@ bool StellarSignTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 16u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1796,8 +2163,7 @@ bool StellarSignTx::MergePartialFromCodedStream(
 
       // optional string network_passphrase = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_network_passphrase()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1812,8 +2178,7 @@ bool StellarSignTx::MergePartialFromCodedStream(
 
       // optional string source_account = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_source_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1828,9 +2193,8 @@ bool StellarSignTx::MergePartialFromCodedStream(
 
       // optional uint32 fee = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_fee();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_fee(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &fee_)));
@@ -1842,9 +2206,8 @@ bool StellarSignTx::MergePartialFromCodedStream(
 
       // optional uint64 sequence_number = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_sequence_number();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_sequence_number(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &sequence_number_)));
@@ -1856,9 +2219,8 @@ bool StellarSignTx::MergePartialFromCodedStream(
 
       // optional uint32 timebounds_start = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
-          set_has_timebounds_start();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (64 & 0xFF)) {
+          HasBitSetters::set_has_timebounds_start(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &timebounds_start_)));
@@ -1870,9 +2232,8 @@ bool StellarSignTx::MergePartialFromCodedStream(
 
       // optional uint32 timebounds_end = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
-          set_has_timebounds_end();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (72 & 0xFF)) {
+          HasBitSetters::set_has_timebounds_end(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &timebounds_end_)));
@@ -1884,9 +2245,8 @@ bool StellarSignTx::MergePartialFromCodedStream(
 
       // optional uint32 memo_type = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(80u /* 80 & 0xFF */)) {
-          set_has_memo_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (80 & 0xFF)) {
+          HasBitSetters::set_has_memo_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &memo_type_)));
@@ -1898,8 +2258,7 @@ bool StellarSignTx::MergePartialFromCodedStream(
 
       // optional string memo_text = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (90 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_memo_text()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1914,9 +2273,8 @@ bool StellarSignTx::MergePartialFromCodedStream(
 
       // optional uint64 memo_id = 12;
       case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(96u /* 96 & 0xFF */)) {
-          set_has_memo_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (96 & 0xFF)) {
+          HasBitSetters::set_has_memo_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &memo_id_)));
@@ -1928,8 +2286,7 @@ bool StellarSignTx::MergePartialFromCodedStream(
 
       // optional bytes memo_hash = 13;
       case 13: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(106u /* 106 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (106 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_memo_hash()));
         } else {
@@ -1940,9 +2297,8 @@ bool StellarSignTx::MergePartialFromCodedStream(
 
       // optional uint32 num_operations = 14;
       case 14: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(112u /* 112 & 0xFF */)) {
-          set_has_num_operations();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (112 & 0xFF)) {
+          HasBitSetters::set_has_num_operations(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &num_operations_)));
@@ -1971,6 +2327,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarSignTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2064,8 +2421,7 @@ void StellarSignTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarSignTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarSignTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2167,6 +2523,10 @@ size_t StellarSignTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 2;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -2176,81 +2536,82 @@ size_t StellarSignTx::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 255u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional string network_passphrase = 3;
-    if (has_network_passphrase()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->network_passphrase());
     }
 
     // optional string source_account = 4;
-    if (has_source_account()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->source_account());
     }
 
     // optional string memo_text = 11;
-    if (has_memo_text()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->memo_text());
     }
 
     // optional bytes memo_hash = 13;
-    if (has_memo_hash()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->memo_hash());
     }
 
     // optional uint64 sequence_number = 6;
-    if (has_sequence_number()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->sequence_number());
     }
 
     // optional uint32 fee = 5;
-    if (has_fee()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->fee());
     }
 
     // optional uint32 timebounds_start = 8;
-    if (has_timebounds_start()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->timebounds_start());
     }
 
     // optional uint32 timebounds_end = 9;
-    if (has_timebounds_end()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->timebounds_end());
     }
 
   }
-  if (_has_bits_[8 / 32] & 1792u) {
+  if (cached_has_bits & 0x00000700u) {
     // optional uint32 memo_type = 10;
-    if (has_memo_type()) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->memo_type());
     }
 
     // optional uint64 memo_id = 12;
-    if (has_memo_id()) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->memo_id());
     }
 
     // optional uint32 num_operations = 14;
-    if (has_num_operations()) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->num_operations());
@@ -2266,9 +2627,9 @@ void StellarSignTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarSignTx)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarSignTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarSignTx>(
+      ::google::protobuf::DynamicCastToGenerated<StellarSignTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarSignTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2286,21 +2647,21 @@ void StellarSignTx::MergeFrom(const StellarSignTx& from) {
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_network_passphrase();
+      _has_bits_[0] |= 0x00000001u;
       network_passphrase_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.network_passphrase_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_source_account();
+      _has_bits_[0] |= 0x00000002u;
       source_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_account_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_memo_text();
+      _has_bits_[0] |= 0x00000004u;
       memo_text_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.memo_text_);
     }
     if (cached_has_bits & 0x00000008u) {
-      set_has_memo_hash();
+      _has_bits_[0] |= 0x00000008u;
       memo_hash_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.memo_hash_);
     }
     if (cached_has_bits & 0x00000010u) {
@@ -2317,7 +2678,7 @@ void StellarSignTx::MergeFrom(const StellarSignTx& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 1792u) {
+  if (cached_has_bits & 0x00000700u) {
     if (cached_has_bits & 0x00000100u) {
       memo_type_ = from.memo_type_;
     }
@@ -2355,6 +2716,8 @@ void StellarSignTx::Swap(StellarSignTx* other) {
 }
 void StellarSignTx::InternalSwap(StellarSignTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   network_passphrase_.Swap(&other->network_passphrase_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -2371,13 +2734,11 @@ void StellarSignTx::InternalSwap(StellarSignTx* other) {
   swap(memo_type_, other->memo_type_);
   swap(memo_id_, other->memo_id_);
   swap(num_operations_, other->num_operations_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarSignTx::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2385,19 +2746,21 @@ void StellarSignTx::InternalSwap(StellarSignTx* other) {
 
 void StellarTxOpRequest::InitAsDefaultInstance() {
 }
+class StellarTxOpRequest::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarTxOpRequest::StellarTxOpRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarTxOpRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarTxOpRequest)
 }
 StellarTxOpRequest::StellarTxOpRequest(const StellarTxOpRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.stellar.StellarTxOpRequest)
@@ -2417,13 +2780,8 @@ void StellarTxOpRequest::SharedDtor() {
 void StellarTxOpRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarTxOpRequest::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarTxOpRequest& StellarTxOpRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarTxOpRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarTxOpRequest_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2438,9 +2796,38 @@ void StellarTxOpRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarTxOpRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarTxOpRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      default: {
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarTxOpRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarTxOpRequest)
   for (;;) {
@@ -2462,6 +2849,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarTxOpRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2477,8 +2865,7 @@ void StellarTxOpRequest::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarTxOpRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarTxOpRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2500,6 +2887,10 @@ size_t StellarTxOpRequest::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2509,9 +2900,9 @@ void StellarTxOpRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarTxOpRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarTxOpRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarTxOpRequest>(
+      ::google::protobuf::DynamicCastToGenerated<StellarTxOpRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarTxOpRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2553,13 +2944,13 @@ void StellarTxOpRequest::Swap(StellarTxOpRequest* other) {
 }
 void StellarTxOpRequest::InternalSwap(StellarTxOpRequest* other) {
   using std::swap;
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
 }
 
 ::google::protobuf::Metadata StellarTxOpRequest::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2569,6 +2960,27 @@ void StellarPaymentOp::InitAsDefaultInstance() {
   ::hw::trezor::messages::stellar::_StellarPaymentOp_default_instance_._instance.get_mutable()->asset_ = const_cast< ::hw::trezor::messages::stellar::StellarAssetType*>(
       ::hw::trezor::messages::stellar::StellarAssetType::internal_default_instance());
 }
+class StellarPaymentOp::HasBitSetters {
+ public:
+  static void set_has_source_account(StellarPaymentOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_destination_account(StellarPaymentOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static const ::hw::trezor::messages::stellar::StellarAssetType& asset(const StellarPaymentOp* msg);
+  static void set_has_asset(StellarPaymentOp* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_amount(StellarPaymentOp* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+};
+
+const ::hw::trezor::messages::stellar::StellarAssetType&
+StellarPaymentOp::HasBitSetters::asset(const StellarPaymentOp* msg) {
+  return *msg->asset_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarPaymentOp::kSourceAccountFieldNumber;
 const int StellarPaymentOp::kDestinationAccountFieldNumber;
@@ -2577,15 +2989,13 @@ const int StellarPaymentOp::kAmountFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarPaymentOp::StellarPaymentOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarPaymentOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarPaymentOp)
 }
 StellarPaymentOp::StellarPaymentOp(const StellarPaymentOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2599,13 +3009,15 @@ StellarPaymentOp::StellarPaymentOp(const StellarPaymentOp& from)
   if (from.has_asset()) {
     asset_ = new ::hw::trezor::messages::stellar::StellarAssetType(*from.asset_);
   } else {
-    asset_ = NULL;
+    asset_ = nullptr;
   }
   amount_ = from.amount_;
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.stellar.StellarPaymentOp)
 }
 
 void StellarPaymentOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarPaymentOp_messages_2dstellar_2eproto.base);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   destination_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&asset_, 0, static_cast<size_t>(
@@ -2627,13 +3039,8 @@ void StellarPaymentOp::SharedDtor() {
 void StellarPaymentOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarPaymentOp::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarPaymentOp& StellarPaymentOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarPaymentOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarPaymentOp_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2645,7 +3052,7 @@ void StellarPaymentOp::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       source_account_.ClearNonDefaultToEmptyNoArena();
     }
@@ -2653,18 +3060,107 @@ void StellarPaymentOp::Clear() {
       destination_account_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(asset_ != NULL);
+      GOOGLE_DCHECK(asset_ != nullptr);
       asset_->Clear();
     }
   }
-  amount_ = GOOGLE_LONGLONG(0);
+  amount_ = PROTOBUF_LONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarPaymentOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarPaymentOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string source_account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarPaymentOp.source_account");
+        object = msg->mutable_source_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string destination_account = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarPaymentOp.destination_account");
+        object = msg->mutable_destination_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional .hw.trezor.messages.stellar.StellarAssetType asset = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::stellar::StellarAssetType::_InternalParse;
+        object = msg->mutable_asset();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional sint64 amount = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarintZigZag64(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarPaymentOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarPaymentOp)
   for (;;) {
@@ -2674,8 +3170,7 @@ bool StellarPaymentOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string source_account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_source_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2690,8 +3185,7 @@ bool StellarPaymentOp::MergePartialFromCodedStream(
 
       // optional string destination_account = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_destination_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2706,8 +3200,7 @@ bool StellarPaymentOp::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.stellar.StellarAssetType asset = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_asset()));
         } else {
@@ -2718,9 +3211,8 @@ bool StellarPaymentOp::MergePartialFromCodedStream(
 
       // optional sint64 amount = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_SINT64>(
                  input, &amount_)));
@@ -2749,6 +3241,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarPaymentOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2780,7 +3273,7 @@ void StellarPaymentOp::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.stellar.StellarAssetType asset = 3;
   if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_asset(), output);
+      3, HasBitSetters::asset(this), output);
   }
 
   // optional sint64 amount = 4;
@@ -2796,8 +3289,7 @@ void StellarPaymentOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarPaymentOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarPaymentOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2829,7 +3321,7 @@ void StellarPaymentOp::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_asset(), deterministic, target);
+        3, HasBitSetters::asset(this), target);
   }
 
   // optional sint64 amount = 4;
@@ -2854,30 +3346,35 @@ size_t StellarPaymentOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional string source_account = 1;
-    if (has_source_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->source_account());
     }
 
     // optional string destination_account = 2;
-    if (has_destination_account()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->destination_account());
     }
 
     // optional .hw.trezor.messages.stellar.StellarAssetType asset = 3;
-    if (has_asset()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *asset_);
     }
 
     // optional sint64 amount = 4;
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::SInt64Size(
           this->amount());
@@ -2893,9 +3390,9 @@ void StellarPaymentOp::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarPaymentOp)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarPaymentOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarPaymentOp>(
+      ::google::protobuf::DynamicCastToGenerated<StellarPaymentOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarPaymentOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2912,13 +3409,13 @@ void StellarPaymentOp::MergeFrom(const StellarPaymentOp& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_source_account();
+      _has_bits_[0] |= 0x00000001u;
       source_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_account_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_destination_account();
+      _has_bits_[0] |= 0x00000002u;
       destination_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.destination_account_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -2955,19 +3452,19 @@ void StellarPaymentOp::Swap(StellarPaymentOp* other) {
 }
 void StellarPaymentOp::InternalSwap(StellarPaymentOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   source_account_.Swap(&other->source_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   destination_account_.Swap(&other->destination_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(asset_, other->asset_);
   swap(amount_, other->amount_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarPaymentOp::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2975,6 +3472,19 @@ void StellarPaymentOp::InternalSwap(StellarPaymentOp* other) {
 
 void StellarCreateAccountOp::InitAsDefaultInstance() {
 }
+class StellarCreateAccountOp::HasBitSetters {
+ public:
+  static void set_has_source_account(StellarCreateAccountOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_new_account(StellarCreateAccountOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_starting_balance(StellarCreateAccountOp* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarCreateAccountOp::kSourceAccountFieldNumber;
 const int StellarCreateAccountOp::kNewAccountFieldNumber;
@@ -2982,15 +3492,13 @@ const int StellarCreateAccountOp::kStartingBalanceFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarCreateAccountOp::StellarCreateAccountOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarCreateAccountOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarCreateAccountOp)
 }
 StellarCreateAccountOp::StellarCreateAccountOp(const StellarCreateAccountOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3006,9 +3514,11 @@ StellarCreateAccountOp::StellarCreateAccountOp(const StellarCreateAccountOp& fro
 }
 
 void StellarCreateAccountOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarCreateAccountOp_messages_2dstellar_2eproto.base);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   new_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  starting_balance_ = GOOGLE_LONGLONG(0);
+  starting_balance_ = PROTOBUF_LONGLONG(0);
 }
 
 StellarCreateAccountOp::~StellarCreateAccountOp() {
@@ -3024,13 +3534,8 @@ void StellarCreateAccountOp::SharedDtor() {
 void StellarCreateAccountOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarCreateAccountOp::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarCreateAccountOp& StellarCreateAccountOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarCreateAccountOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarCreateAccountOp_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3042,7 +3547,7 @@ void StellarCreateAccountOp::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       source_account_.ClearNonDefaultToEmptyNoArena();
     }
@@ -3050,14 +3555,90 @@ void StellarCreateAccountOp::Clear() {
       new_account_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  starting_balance_ = GOOGLE_LONGLONG(0);
+  starting_balance_ = PROTOBUF_LONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarCreateAccountOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarCreateAccountOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string source_account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarCreateAccountOp.source_account");
+        object = msg->mutable_source_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string new_account = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarCreateAccountOp.new_account");
+        object = msg->mutable_new_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional sint64 starting_balance = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_starting_balance(::google::protobuf::internal::ReadVarintZigZag64(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarCreateAccountOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarCreateAccountOp)
   for (;;) {
@@ -3067,8 +3648,7 @@ bool StellarCreateAccountOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string source_account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_source_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3083,8 +3663,7 @@ bool StellarCreateAccountOp::MergePartialFromCodedStream(
 
       // optional string new_account = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_new_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3099,9 +3678,8 @@ bool StellarCreateAccountOp::MergePartialFromCodedStream(
 
       // optional sint64 starting_balance = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_starting_balance();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_starting_balance(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_SINT64>(
                  input, &starting_balance_)));
@@ -3130,6 +3708,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarCreateAccountOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3171,8 +3750,7 @@ void StellarCreateAccountOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarCreateAccountOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarCreateAccountOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3222,23 +3800,28 @@ size_t StellarCreateAccountOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string source_account = 1;
-    if (has_source_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->source_account());
     }
 
     // optional string new_account = 2;
-    if (has_new_account()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->new_account());
     }
 
     // optional sint64 starting_balance = 3;
-    if (has_starting_balance()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::SInt64Size(
           this->starting_balance());
@@ -3254,9 +3837,9 @@ void StellarCreateAccountOp::MergeFrom(const ::google::protobuf::Message& from) 
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarCreateAccountOp)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarCreateAccountOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarCreateAccountOp>(
+      ::google::protobuf::DynamicCastToGenerated<StellarCreateAccountOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarCreateAccountOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3273,13 +3856,13 @@ void StellarCreateAccountOp::MergeFrom(const StellarCreateAccountOp& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_source_account();
+      _has_bits_[0] |= 0x00000001u;
       source_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_account_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_new_account();
+      _has_bits_[0] |= 0x00000002u;
       new_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.new_account_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -3313,18 +3896,18 @@ void StellarCreateAccountOp::Swap(StellarCreateAccountOp* other) {
 }
 void StellarCreateAccountOp::InternalSwap(StellarCreateAccountOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   source_account_.Swap(&other->source_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   new_account_.Swap(&other->new_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(starting_balance_, other->starting_balance_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarCreateAccountOp::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3335,6 +3918,38 @@ void StellarPathPaymentOp::InitAsDefaultInstance() {
       ::hw::trezor::messages::stellar::StellarAssetType::internal_default_instance());
   ::hw::trezor::messages::stellar::_StellarPathPaymentOp_default_instance_._instance.get_mutable()->destination_asset_ = const_cast< ::hw::trezor::messages::stellar::StellarAssetType*>(
       ::hw::trezor::messages::stellar::StellarAssetType::internal_default_instance());
+}
+class StellarPathPaymentOp::HasBitSetters {
+ public:
+  static void set_has_source_account(StellarPathPaymentOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::hw::trezor::messages::stellar::StellarAssetType& send_asset(const StellarPathPaymentOp* msg);
+  static void set_has_send_asset(StellarPathPaymentOp* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_send_max(StellarPathPaymentOp* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_destination_account(StellarPathPaymentOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static const ::hw::trezor::messages::stellar::StellarAssetType& destination_asset(const StellarPathPaymentOp* msg);
+  static void set_has_destination_asset(StellarPathPaymentOp* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_destination_amount(StellarPathPaymentOp* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+};
+
+const ::hw::trezor::messages::stellar::StellarAssetType&
+StellarPathPaymentOp::HasBitSetters::send_asset(const StellarPathPaymentOp* msg) {
+  return *msg->send_asset_;
+}
+const ::hw::trezor::messages::stellar::StellarAssetType&
+StellarPathPaymentOp::HasBitSetters::destination_asset(const StellarPathPaymentOp* msg) {
+  return *msg->destination_asset_;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarPathPaymentOp::kSourceAccountFieldNumber;
@@ -3347,15 +3962,13 @@ const int StellarPathPaymentOp::kPathsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarPathPaymentOp::StellarPathPaymentOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarPathPaymentOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarPathPaymentOp)
 }
 StellarPathPaymentOp::StellarPathPaymentOp(const StellarPathPaymentOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       paths_(from.paths_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -3370,12 +3983,12 @@ StellarPathPaymentOp::StellarPathPaymentOp(const StellarPathPaymentOp& from)
   if (from.has_send_asset()) {
     send_asset_ = new ::hw::trezor::messages::stellar::StellarAssetType(*from.send_asset_);
   } else {
-    send_asset_ = NULL;
+    send_asset_ = nullptr;
   }
   if (from.has_destination_asset()) {
     destination_asset_ = new ::hw::trezor::messages::stellar::StellarAssetType(*from.destination_asset_);
   } else {
-    destination_asset_ = NULL;
+    destination_asset_ = nullptr;
   }
   ::memcpy(&send_max_, &from.send_max_,
     static_cast<size_t>(reinterpret_cast<char*>(&destination_amount_) -
@@ -3384,6 +3997,8 @@ StellarPathPaymentOp::StellarPathPaymentOp(const StellarPathPaymentOp& from)
 }
 
 void StellarPathPaymentOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarPathPaymentOp_messages_2dstellar_2eproto.base);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   destination_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&send_asset_, 0, static_cast<size_t>(
@@ -3406,13 +4021,8 @@ void StellarPathPaymentOp::SharedDtor() {
 void StellarPathPaymentOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarPathPaymentOp::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarPathPaymentOp& StellarPathPaymentOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarPathPaymentOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarPathPaymentOp_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3425,7 +4035,7 @@ void StellarPathPaymentOp::Clear() {
 
   paths_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       source_account_.ClearNonDefaultToEmptyNoArena();
     }
@@ -3433,15 +4043,15 @@ void StellarPathPaymentOp::Clear() {
       destination_account_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(send_asset_ != NULL);
+      GOOGLE_DCHECK(send_asset_ != nullptr);
       send_asset_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(destination_asset_ != NULL);
+      GOOGLE_DCHECK(destination_asset_ != nullptr);
       destination_asset_->Clear();
     }
   }
-  if (cached_has_bits & 48u) {
+  if (cached_has_bits & 0x00000030u) {
     ::memset(&send_max_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&destination_amount_) -
         reinterpret_cast<char*>(&send_max_)) + sizeof(destination_amount_));
@@ -3450,9 +4060,134 @@ void StellarPathPaymentOp::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarPathPaymentOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarPathPaymentOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string source_account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarPathPaymentOp.source_account");
+        object = msg->mutable_source_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional .hw.trezor.messages.stellar.StellarAssetType send_asset = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::stellar::StellarAssetType::_InternalParse;
+        object = msg->mutable_send_asset();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional sint64 send_max = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_send_max(::google::protobuf::internal::ReadVarintZigZag64(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string destination_account = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarPathPaymentOp.destination_account");
+        object = msg->mutable_destination_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional .hw.trezor.messages.stellar.StellarAssetType destination_asset = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::stellar::StellarAssetType::_InternalParse;
+        object = msg->mutable_destination_asset();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional sint64 destination_amount = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_destination_amount(::google::protobuf::internal::ReadVarintZigZag64(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated .hw.trezor.messages.stellar.StellarAssetType paths = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 58) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::hw::trezor::messages::stellar::StellarAssetType::_InternalParse;
+          object = msg->add_paths();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 58 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarPathPaymentOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarPathPaymentOp)
   for (;;) {
@@ -3462,8 +4197,7 @@ bool StellarPathPaymentOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string source_account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_source_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3478,8 +4212,7 @@ bool StellarPathPaymentOp::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.stellar.StellarAssetType send_asset = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_send_asset()));
         } else {
@@ -3490,9 +4223,8 @@ bool StellarPathPaymentOp::MergePartialFromCodedStream(
 
       // optional sint64 send_max = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_send_max();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_send_max(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_SINT64>(
                  input, &send_max_)));
@@ -3504,8 +4236,7 @@ bool StellarPathPaymentOp::MergePartialFromCodedStream(
 
       // optional string destination_account = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_destination_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3520,8 +4251,7 @@ bool StellarPathPaymentOp::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.stellar.StellarAssetType destination_asset = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_destination_asset()));
         } else {
@@ -3532,9 +4262,8 @@ bool StellarPathPaymentOp::MergePartialFromCodedStream(
 
       // optional sint64 destination_amount = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_destination_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_destination_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_SINT64>(
                  input, &destination_amount_)));
@@ -3546,8 +4275,7 @@ bool StellarPathPaymentOp::MergePartialFromCodedStream(
 
       // repeated .hw.trezor.messages.stellar.StellarAssetType paths = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (58 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_paths()));
         } else {
@@ -3575,6 +4303,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarPathPaymentOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3596,7 +4325,7 @@ void StellarPathPaymentOp::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.stellar.StellarAssetType send_asset = 2;
   if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_send_asset(), output);
+      2, HasBitSetters::send_asset(this), output);
   }
 
   // optional sint64 send_max = 3;
@@ -3617,7 +4346,7 @@ void StellarPathPaymentOp::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.stellar.StellarAssetType destination_asset = 5;
   if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->_internal_destination_asset(), output);
+      5, HasBitSetters::destination_asset(this), output);
   }
 
   // optional sint64 destination_amount = 6;
@@ -3642,8 +4371,7 @@ void StellarPathPaymentOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarPathPaymentOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarPathPaymentOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3664,7 +4392,7 @@ void StellarPathPaymentOp::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_send_asset(), deterministic, target);
+        2, HasBitSetters::send_asset(this), target);
   }
 
   // optional sint64 send_max = 3;
@@ -3687,7 +4415,7 @@ void StellarPathPaymentOp::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->_internal_destination_asset(), deterministic, target);
+        5, HasBitSetters::destination_asset(this), target);
   }
 
   // optional sint64 destination_amount = 6;
@@ -3700,7 +4428,7 @@ void StellarPathPaymentOp::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->paths_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        7, this->paths(static_cast<int>(i)), deterministic, target);
+        7, this->paths(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3720,6 +4448,10 @@ size_t StellarPathPaymentOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .hw.trezor.messages.stellar.StellarAssetType paths = 7;
   {
     unsigned int count = static_cast<unsigned int>(this->paths_size());
@@ -3731,44 +4463,45 @@ size_t StellarPathPaymentOp::ByteSizeLong() const {
     }
   }
 
-  if (_has_bits_[0 / 32] & 63u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000003fu) {
     // optional string source_account = 1;
-    if (has_source_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->source_account());
     }
 
     // optional string destination_account = 4;
-    if (has_destination_account()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->destination_account());
     }
 
     // optional .hw.trezor.messages.stellar.StellarAssetType send_asset = 2;
-    if (has_send_asset()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *send_asset_);
     }
 
     // optional .hw.trezor.messages.stellar.StellarAssetType destination_asset = 5;
-    if (has_destination_asset()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *destination_asset_);
     }
 
     // optional sint64 send_max = 3;
-    if (has_send_max()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::SInt64Size(
           this->send_max());
     }
 
     // optional sint64 destination_amount = 6;
-    if (has_destination_amount()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::SInt64Size(
           this->destination_amount());
@@ -3784,9 +4517,9 @@ void StellarPathPaymentOp::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarPathPaymentOp)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarPathPaymentOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarPathPaymentOp>(
+      ::google::protobuf::DynamicCastToGenerated<StellarPathPaymentOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarPathPaymentOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3804,13 +4537,13 @@ void StellarPathPaymentOp::MergeFrom(const StellarPathPaymentOp& from) {
 
   paths_.MergeFrom(from.paths_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 63u) {
+  if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_source_account();
+      _has_bits_[0] |= 0x00000001u;
       source_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_account_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_destination_account();
+      _has_bits_[0] |= 0x00000002u;
       destination_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.destination_account_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -3853,6 +4586,8 @@ void StellarPathPaymentOp::Swap(StellarPathPaymentOp* other) {
 }
 void StellarPathPaymentOp::InternalSwap(StellarPathPaymentOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&paths_)->InternalSwap(CastToBase(&other->paths_));
   source_account_.Swap(&other->source_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -3862,13 +4597,11 @@ void StellarPathPaymentOp::InternalSwap(StellarPathPaymentOp* other) {
   swap(destination_asset_, other->destination_asset_);
   swap(send_max_, other->send_max_);
   swap(destination_amount_, other->destination_amount_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarPathPaymentOp::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3879,6 +4612,41 @@ void StellarManageOfferOp::InitAsDefaultInstance() {
       ::hw::trezor::messages::stellar::StellarAssetType::internal_default_instance());
   ::hw::trezor::messages::stellar::_StellarManageOfferOp_default_instance_._instance.get_mutable()->buying_asset_ = const_cast< ::hw::trezor::messages::stellar::StellarAssetType*>(
       ::hw::trezor::messages::stellar::StellarAssetType::internal_default_instance());
+}
+class StellarManageOfferOp::HasBitSetters {
+ public:
+  static void set_has_source_account(StellarManageOfferOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::hw::trezor::messages::stellar::StellarAssetType& selling_asset(const StellarManageOfferOp* msg);
+  static void set_has_selling_asset(StellarManageOfferOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static const ::hw::trezor::messages::stellar::StellarAssetType& buying_asset(const StellarManageOfferOp* msg);
+  static void set_has_buying_asset(StellarManageOfferOp* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_amount(StellarManageOfferOp* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_price_n(StellarManageOfferOp* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_price_d(StellarManageOfferOp* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_offer_id(StellarManageOfferOp* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+};
+
+const ::hw::trezor::messages::stellar::StellarAssetType&
+StellarManageOfferOp::HasBitSetters::selling_asset(const StellarManageOfferOp* msg) {
+  return *msg->selling_asset_;
+}
+const ::hw::trezor::messages::stellar::StellarAssetType&
+StellarManageOfferOp::HasBitSetters::buying_asset(const StellarManageOfferOp* msg) {
+  return *msg->buying_asset_;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarManageOfferOp::kSourceAccountFieldNumber;
@@ -3891,15 +4659,13 @@ const int StellarManageOfferOp::kOfferIdFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarManageOfferOp::StellarManageOfferOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarManageOfferOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarManageOfferOp)
 }
 StellarManageOfferOp::StellarManageOfferOp(const StellarManageOfferOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3909,12 +4675,12 @@ StellarManageOfferOp::StellarManageOfferOp(const StellarManageOfferOp& from)
   if (from.has_selling_asset()) {
     selling_asset_ = new ::hw::trezor::messages::stellar::StellarAssetType(*from.selling_asset_);
   } else {
-    selling_asset_ = NULL;
+    selling_asset_ = nullptr;
   }
   if (from.has_buying_asset()) {
     buying_asset_ = new ::hw::trezor::messages::stellar::StellarAssetType(*from.buying_asset_);
   } else {
-    buying_asset_ = NULL;
+    buying_asset_ = nullptr;
   }
   ::memcpy(&amount_, &from.amount_,
     static_cast<size_t>(reinterpret_cast<char*>(&offer_id_) -
@@ -3923,6 +4689,8 @@ StellarManageOfferOp::StellarManageOfferOp(const StellarManageOfferOp& from)
 }
 
 void StellarManageOfferOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarManageOfferOp_messages_2dstellar_2eproto.base);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&selling_asset_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&offer_id_) -
@@ -3943,13 +4711,8 @@ void StellarManageOfferOp::SharedDtor() {
 void StellarManageOfferOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarManageOfferOp::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarManageOfferOp& StellarManageOfferOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarManageOfferOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarManageOfferOp_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3961,20 +4724,20 @@ void StellarManageOfferOp::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       source_account_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(selling_asset_ != NULL);
+      GOOGLE_DCHECK(selling_asset_ != nullptr);
       selling_asset_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(buying_asset_ != NULL);
+      GOOGLE_DCHECK(buying_asset_ != nullptr);
       buying_asset_->Clear();
     }
   }
-  if (cached_has_bits & 120u) {
+  if (cached_has_bits & 0x00000078u) {
     ::memset(&amount_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&offer_id_) -
         reinterpret_cast<char*>(&amount_)) + sizeof(offer_id_));
@@ -3983,9 +4746,116 @@ void StellarManageOfferOp::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarManageOfferOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarManageOfferOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string source_account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarManageOfferOp.source_account");
+        object = msg->mutable_source_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional .hw.trezor.messages.stellar.StellarAssetType selling_asset = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::stellar::StellarAssetType::_InternalParse;
+        object = msg->mutable_selling_asset();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.stellar.StellarAssetType buying_asset = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::stellar::StellarAssetType::_InternalParse;
+        object = msg->mutable_buying_asset();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional sint64 amount = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarintZigZag64(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 price_n = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_price_n(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 price_d = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_price_d(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 offer_id = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_offer_id(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarManageOfferOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarManageOfferOp)
   for (;;) {
@@ -3995,8 +4865,7 @@ bool StellarManageOfferOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string source_account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_source_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4011,8 +4880,7 @@ bool StellarManageOfferOp::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.stellar.StellarAssetType selling_asset = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_selling_asset()));
         } else {
@@ -4023,8 +4891,7 @@ bool StellarManageOfferOp::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.stellar.StellarAssetType buying_asset = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_buying_asset()));
         } else {
@@ -4035,9 +4902,8 @@ bool StellarManageOfferOp::MergePartialFromCodedStream(
 
       // optional sint64 amount = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_SINT64>(
                  input, &amount_)));
@@ -4049,9 +4915,8 @@ bool StellarManageOfferOp::MergePartialFromCodedStream(
 
       // optional uint32 price_n = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_price_n();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_price_n(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &price_n_)));
@@ -4063,9 +4928,8 @@ bool StellarManageOfferOp::MergePartialFromCodedStream(
 
       // optional uint32 price_d = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_price_d();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_price_d(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &price_d_)));
@@ -4077,9 +4941,8 @@ bool StellarManageOfferOp::MergePartialFromCodedStream(
 
       // optional uint64 offer_id = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_offer_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_offer_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &offer_id_)));
@@ -4108,6 +4971,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarManageOfferOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4129,13 +4993,13 @@ void StellarManageOfferOp::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.stellar.StellarAssetType selling_asset = 2;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_selling_asset(), output);
+      2, HasBitSetters::selling_asset(this), output);
   }
 
   // optional .hw.trezor.messages.stellar.StellarAssetType buying_asset = 3;
   if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_buying_asset(), output);
+      3, HasBitSetters::buying_asset(this), output);
   }
 
   // optional sint64 amount = 4;
@@ -4166,8 +5030,7 @@ void StellarManageOfferOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarManageOfferOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarManageOfferOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4188,14 +5051,14 @@ void StellarManageOfferOp::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_selling_asset(), deterministic, target);
+        2, HasBitSetters::selling_asset(this), target);
   }
 
   // optional .hw.trezor.messages.stellar.StellarAssetType buying_asset = 3;
   if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_buying_asset(), deterministic, target);
+        3, HasBitSetters::buying_asset(this), target);
   }
 
   // optional sint64 amount = 4;
@@ -4235,51 +5098,56 @@ size_t StellarManageOfferOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 127u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000007fu) {
     // optional string source_account = 1;
-    if (has_source_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->source_account());
     }
 
     // optional .hw.trezor.messages.stellar.StellarAssetType selling_asset = 2;
-    if (has_selling_asset()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *selling_asset_);
     }
 
     // optional .hw.trezor.messages.stellar.StellarAssetType buying_asset = 3;
-    if (has_buying_asset()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *buying_asset_);
     }
 
     // optional sint64 amount = 4;
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::SInt64Size(
           this->amount());
     }
 
     // optional uint32 price_n = 5;
-    if (has_price_n()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->price_n());
     }
 
     // optional uint32 price_d = 6;
-    if (has_price_d()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->price_d());
     }
 
     // optional uint64 offer_id = 7;
-    if (has_offer_id()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->offer_id());
@@ -4295,9 +5163,9 @@ void StellarManageOfferOp::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarManageOfferOp)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarManageOfferOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarManageOfferOp>(
+      ::google::protobuf::DynamicCastToGenerated<StellarManageOfferOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarManageOfferOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4314,9 +5182,9 @@ void StellarManageOfferOp::MergeFrom(const StellarManageOfferOp& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 127u) {
+  if (cached_has_bits & 0x0000007fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_source_account();
+      _has_bits_[0] |= 0x00000001u;
       source_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_account_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -4365,6 +5233,8 @@ void StellarManageOfferOp::Swap(StellarManageOfferOp* other) {
 }
 void StellarManageOfferOp::InternalSwap(StellarManageOfferOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   source_account_.Swap(&other->source_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(selling_asset_, other->selling_asset_);
@@ -4373,13 +5243,11 @@ void StellarManageOfferOp::InternalSwap(StellarManageOfferOp* other) {
   swap(price_n_, other->price_n_);
   swap(price_d_, other->price_d_);
   swap(offer_id_, other->offer_id_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarManageOfferOp::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4391,6 +5259,38 @@ void StellarCreatePassiveOfferOp::InitAsDefaultInstance() {
   ::hw::trezor::messages::stellar::_StellarCreatePassiveOfferOp_default_instance_._instance.get_mutable()->buying_asset_ = const_cast< ::hw::trezor::messages::stellar::StellarAssetType*>(
       ::hw::trezor::messages::stellar::StellarAssetType::internal_default_instance());
 }
+class StellarCreatePassiveOfferOp::HasBitSetters {
+ public:
+  static void set_has_source_account(StellarCreatePassiveOfferOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::hw::trezor::messages::stellar::StellarAssetType& selling_asset(const StellarCreatePassiveOfferOp* msg);
+  static void set_has_selling_asset(StellarCreatePassiveOfferOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static const ::hw::trezor::messages::stellar::StellarAssetType& buying_asset(const StellarCreatePassiveOfferOp* msg);
+  static void set_has_buying_asset(StellarCreatePassiveOfferOp* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_amount(StellarCreatePassiveOfferOp* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_price_n(StellarCreatePassiveOfferOp* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_price_d(StellarCreatePassiveOfferOp* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+};
+
+const ::hw::trezor::messages::stellar::StellarAssetType&
+StellarCreatePassiveOfferOp::HasBitSetters::selling_asset(const StellarCreatePassiveOfferOp* msg) {
+  return *msg->selling_asset_;
+}
+const ::hw::trezor::messages::stellar::StellarAssetType&
+StellarCreatePassiveOfferOp::HasBitSetters::buying_asset(const StellarCreatePassiveOfferOp* msg) {
+  return *msg->buying_asset_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarCreatePassiveOfferOp::kSourceAccountFieldNumber;
 const int StellarCreatePassiveOfferOp::kSellingAssetFieldNumber;
@@ -4401,15 +5301,13 @@ const int StellarCreatePassiveOfferOp::kPriceDFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarCreatePassiveOfferOp::StellarCreatePassiveOfferOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarCreatePassiveOfferOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarCreatePassiveOfferOp)
 }
 StellarCreatePassiveOfferOp::StellarCreatePassiveOfferOp(const StellarCreatePassiveOfferOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4419,12 +5317,12 @@ StellarCreatePassiveOfferOp::StellarCreatePassiveOfferOp(const StellarCreatePass
   if (from.has_selling_asset()) {
     selling_asset_ = new ::hw::trezor::messages::stellar::StellarAssetType(*from.selling_asset_);
   } else {
-    selling_asset_ = NULL;
+    selling_asset_ = nullptr;
   }
   if (from.has_buying_asset()) {
     buying_asset_ = new ::hw::trezor::messages::stellar::StellarAssetType(*from.buying_asset_);
   } else {
-    buying_asset_ = NULL;
+    buying_asset_ = nullptr;
   }
   ::memcpy(&amount_, &from.amount_,
     static_cast<size_t>(reinterpret_cast<char*>(&price_d_) -
@@ -4433,6 +5331,8 @@ StellarCreatePassiveOfferOp::StellarCreatePassiveOfferOp(const StellarCreatePass
 }
 
 void StellarCreatePassiveOfferOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarCreatePassiveOfferOp_messages_2dstellar_2eproto.base);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&selling_asset_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&price_d_) -
@@ -4453,13 +5353,8 @@ void StellarCreatePassiveOfferOp::SharedDtor() {
 void StellarCreatePassiveOfferOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarCreatePassiveOfferOp::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarCreatePassiveOfferOp& StellarCreatePassiveOfferOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarCreatePassiveOfferOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarCreatePassiveOfferOp_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4471,20 +5366,20 @@ void StellarCreatePassiveOfferOp::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       source_account_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(selling_asset_ != NULL);
+      GOOGLE_DCHECK(selling_asset_ != nullptr);
       selling_asset_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(buying_asset_ != NULL);
+      GOOGLE_DCHECK(buying_asset_ != nullptr);
       buying_asset_->Clear();
     }
   }
-  if (cached_has_bits & 56u) {
+  if (cached_has_bits & 0x00000038u) {
     ::memset(&amount_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&price_d_) -
         reinterpret_cast<char*>(&amount_)) + sizeof(price_d_));
@@ -4493,9 +5388,109 @@ void StellarCreatePassiveOfferOp::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarCreatePassiveOfferOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarCreatePassiveOfferOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string source_account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarCreatePassiveOfferOp.source_account");
+        object = msg->mutable_source_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional .hw.trezor.messages.stellar.StellarAssetType selling_asset = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::stellar::StellarAssetType::_InternalParse;
+        object = msg->mutable_selling_asset();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.stellar.StellarAssetType buying_asset = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::stellar::StellarAssetType::_InternalParse;
+        object = msg->mutable_buying_asset();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional sint64 amount = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarintZigZag64(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 price_n = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_price_n(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 price_d = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_price_d(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarCreatePassiveOfferOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarCreatePassiveOfferOp)
   for (;;) {
@@ -4505,8 +5500,7 @@ bool StellarCreatePassiveOfferOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string source_account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_source_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4521,8 +5515,7 @@ bool StellarCreatePassiveOfferOp::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.stellar.StellarAssetType selling_asset = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_selling_asset()));
         } else {
@@ -4533,8 +5526,7 @@ bool StellarCreatePassiveOfferOp::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.stellar.StellarAssetType buying_asset = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_buying_asset()));
         } else {
@@ -4545,9 +5537,8 @@ bool StellarCreatePassiveOfferOp::MergePartialFromCodedStream(
 
       // optional sint64 amount = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_SINT64>(
                  input, &amount_)));
@@ -4559,9 +5550,8 @@ bool StellarCreatePassiveOfferOp::MergePartialFromCodedStream(
 
       // optional uint32 price_n = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_price_n();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_price_n(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &price_n_)));
@@ -4573,9 +5563,8 @@ bool StellarCreatePassiveOfferOp::MergePartialFromCodedStream(
 
       // optional uint32 price_d = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_price_d();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_price_d(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &price_d_)));
@@ -4604,6 +5593,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarCreatePassiveOfferOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4625,13 +5615,13 @@ void StellarCreatePassiveOfferOp::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.stellar.StellarAssetType selling_asset = 2;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_selling_asset(), output);
+      2, HasBitSetters::selling_asset(this), output);
   }
 
   // optional .hw.trezor.messages.stellar.StellarAssetType buying_asset = 3;
   if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_buying_asset(), output);
+      3, HasBitSetters::buying_asset(this), output);
   }
 
   // optional sint64 amount = 4;
@@ -4657,8 +5647,7 @@ void StellarCreatePassiveOfferOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarCreatePassiveOfferOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarCreatePassiveOfferOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4679,14 +5668,14 @@ void StellarCreatePassiveOfferOp::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_selling_asset(), deterministic, target);
+        2, HasBitSetters::selling_asset(this), target);
   }
 
   // optional .hw.trezor.messages.stellar.StellarAssetType buying_asset = 3;
   if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_buying_asset(), deterministic, target);
+        3, HasBitSetters::buying_asset(this), target);
   }
 
   // optional sint64 amount = 4;
@@ -4721,44 +5710,49 @@ size_t StellarCreatePassiveOfferOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 63u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000003fu) {
     // optional string source_account = 1;
-    if (has_source_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->source_account());
     }
 
     // optional .hw.trezor.messages.stellar.StellarAssetType selling_asset = 2;
-    if (has_selling_asset()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *selling_asset_);
     }
 
     // optional .hw.trezor.messages.stellar.StellarAssetType buying_asset = 3;
-    if (has_buying_asset()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *buying_asset_);
     }
 
     // optional sint64 amount = 4;
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::SInt64Size(
           this->amount());
     }
 
     // optional uint32 price_n = 5;
-    if (has_price_n()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->price_n());
     }
 
     // optional uint32 price_d = 6;
-    if (has_price_d()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->price_d());
@@ -4774,9 +5768,9 @@ void StellarCreatePassiveOfferOp::MergeFrom(const ::google::protobuf::Message& f
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarCreatePassiveOfferOp)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarCreatePassiveOfferOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarCreatePassiveOfferOp>(
+      ::google::protobuf::DynamicCastToGenerated<StellarCreatePassiveOfferOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarCreatePassiveOfferOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4793,9 +5787,9 @@ void StellarCreatePassiveOfferOp::MergeFrom(const StellarCreatePassiveOfferOp& f
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 63u) {
+  if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_source_account();
+      _has_bits_[0] |= 0x00000001u;
       source_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_account_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -4841,6 +5835,8 @@ void StellarCreatePassiveOfferOp::Swap(StellarCreatePassiveOfferOp* other) {
 }
 void StellarCreatePassiveOfferOp::InternalSwap(StellarCreatePassiveOfferOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   source_account_.Swap(&other->source_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(selling_asset_, other->selling_asset_);
@@ -4848,13 +5844,11 @@ void StellarCreatePassiveOfferOp::InternalSwap(StellarCreatePassiveOfferOp* othe
   swap(amount_, other->amount_);
   swap(price_n_, other->price_n_);
   swap(price_d_, other->price_d_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarCreatePassiveOfferOp::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4862,6 +5856,46 @@ void StellarCreatePassiveOfferOp::InternalSwap(StellarCreatePassiveOfferOp* othe
 
 void StellarSetOptionsOp::InitAsDefaultInstance() {
 }
+class StellarSetOptionsOp::HasBitSetters {
+ public:
+  static void set_has_source_account(StellarSetOptionsOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_inflation_destination_account(StellarSetOptionsOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_clear_flags(StellarSetOptionsOp* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_set_flags(StellarSetOptionsOp* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_master_weight(StellarSetOptionsOp* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_low_threshold(StellarSetOptionsOp* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static void set_has_medium_threshold(StellarSetOptionsOp* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+  static void set_has_high_threshold(StellarSetOptionsOp* msg) {
+    msg->_has_bits_[0] |= 0x00000200u;
+  }
+  static void set_has_home_domain(StellarSetOptionsOp* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_signer_type(StellarSetOptionsOp* msg) {
+    msg->_has_bits_[0] |= 0x00000400u;
+  }
+  static void set_has_signer_key(StellarSetOptionsOp* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_signer_weight(StellarSetOptionsOp* msg) {
+    msg->_has_bits_[0] |= 0x00000800u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarSetOptionsOp::kSourceAccountFieldNumber;
 const int StellarSetOptionsOp::kInflationDestinationAccountFieldNumber;
@@ -4878,15 +5912,13 @@ const int StellarSetOptionsOp::kSignerWeightFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarSetOptionsOp::StellarSetOptionsOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarSetOptionsOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarSetOptionsOp)
 }
 StellarSetOptionsOp::StellarSetOptionsOp(const StellarSetOptionsOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4912,6 +5944,8 @@ StellarSetOptionsOp::StellarSetOptionsOp(const StellarSetOptionsOp& from)
 }
 
 void StellarSetOptionsOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarSetOptionsOp_messages_2dstellar_2eproto.base);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   inflation_destination_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   home_domain_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4936,13 +5970,8 @@ void StellarSetOptionsOp::SharedDtor() {
 void StellarSetOptionsOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarSetOptionsOp::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarSetOptionsOp& StellarSetOptionsOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarSetOptionsOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarSetOptionsOp_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4954,7 +5983,7 @@ void StellarSetOptionsOp::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       source_account_.ClearNonDefaultToEmptyNoArena();
     }
@@ -4968,12 +5997,12 @@ void StellarSetOptionsOp::Clear() {
       signer_key_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 240u) {
+  if (cached_has_bits & 0x000000f0u) {
     ::memset(&clear_flags_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&low_threshold_) -
         reinterpret_cast<char*>(&clear_flags_)) + sizeof(low_threshold_));
   }
-  if (cached_has_bits & 3840u) {
+  if (cached_has_bits & 0x00000f00u) {
     ::memset(&medium_threshold_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&signer_weight_) -
         reinterpret_cast<char*>(&medium_threshold_)) + sizeof(signer_weight_));
@@ -4982,9 +6011,165 @@ void StellarSetOptionsOp::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarSetOptionsOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarSetOptionsOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string source_account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarSetOptionsOp.source_account");
+        object = msg->mutable_source_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string inflation_destination_account = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarSetOptionsOp.inflation_destination_account");
+        object = msg->mutable_inflation_destination_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 clear_flags = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_clear_flags(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 set_flags = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_set_flags(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 master_weight = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_master_weight(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 low_threshold = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_low_threshold(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 medium_threshold = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 56) goto handle_unusual;
+        msg->set_medium_threshold(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 high_threshold = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 64) goto handle_unusual;
+        msg->set_high_threshold(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string home_domain = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 74) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarSetOptionsOp.home_domain");
+        object = msg->mutable_home_domain();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 signer_type = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 80) goto handle_unusual;
+        msg->set_signer_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes signer_key = 11;
+      case 11: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 90) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signer_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 signer_weight = 12;
+      case 12: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 96) goto handle_unusual;
+        msg->set_signer_weight(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarSetOptionsOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarSetOptionsOp)
   for (;;) {
@@ -4994,8 +6179,7 @@ bool StellarSetOptionsOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string source_account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_source_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -5010,8 +6194,7 @@ bool StellarSetOptionsOp::MergePartialFromCodedStream(
 
       // optional string inflation_destination_account = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_inflation_destination_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -5026,9 +6209,8 @@ bool StellarSetOptionsOp::MergePartialFromCodedStream(
 
       // optional uint32 clear_flags = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_clear_flags();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_clear_flags(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &clear_flags_)));
@@ -5040,9 +6222,8 @@ bool StellarSetOptionsOp::MergePartialFromCodedStream(
 
       // optional uint32 set_flags = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_set_flags();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_set_flags(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &set_flags_)));
@@ -5054,9 +6235,8 @@ bool StellarSetOptionsOp::MergePartialFromCodedStream(
 
       // optional uint32 master_weight = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_master_weight();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_master_weight(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &master_weight_)));
@@ -5068,9 +6248,8 @@ bool StellarSetOptionsOp::MergePartialFromCodedStream(
 
       // optional uint32 low_threshold = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-          set_has_low_threshold();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_low_threshold(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &low_threshold_)));
@@ -5082,9 +6261,8 @@ bool StellarSetOptionsOp::MergePartialFromCodedStream(
 
       // optional uint32 medium_threshold = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
-          set_has_medium_threshold();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (56 & 0xFF)) {
+          HasBitSetters::set_has_medium_threshold(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &medium_threshold_)));
@@ -5096,9 +6274,8 @@ bool StellarSetOptionsOp::MergePartialFromCodedStream(
 
       // optional uint32 high_threshold = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
-          set_has_high_threshold();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (64 & 0xFF)) {
+          HasBitSetters::set_has_high_threshold(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &high_threshold_)));
@@ -5110,8 +6287,7 @@ bool StellarSetOptionsOp::MergePartialFromCodedStream(
 
       // optional string home_domain = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(74u /* 74 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (74 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_home_domain()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -5126,9 +6302,8 @@ bool StellarSetOptionsOp::MergePartialFromCodedStream(
 
       // optional uint32 signer_type = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(80u /* 80 & 0xFF */)) {
-          set_has_signer_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (80 & 0xFF)) {
+          HasBitSetters::set_has_signer_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &signer_type_)));
@@ -5140,8 +6315,7 @@ bool StellarSetOptionsOp::MergePartialFromCodedStream(
 
       // optional bytes signer_key = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (90 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signer_key()));
         } else {
@@ -5152,9 +6326,8 @@ bool StellarSetOptionsOp::MergePartialFromCodedStream(
 
       // optional uint32 signer_weight = 12;
       case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(96u /* 96 & 0xFF */)) {
-          set_has_signer_weight();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (96 & 0xFF)) {
+          HasBitSetters::set_has_signer_weight(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &signer_weight_)));
@@ -5183,6 +6356,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarSetOptionsOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5275,8 +6449,7 @@ void StellarSetOptionsOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarSetOptionsOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarSetOptionsOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5379,88 +6552,93 @@ size_t StellarSetOptionsOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 255u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional string source_account = 1;
-    if (has_source_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->source_account());
     }
 
     // optional string inflation_destination_account = 2;
-    if (has_inflation_destination_account()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->inflation_destination_account());
     }
 
     // optional string home_domain = 9;
-    if (has_home_domain()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->home_domain());
     }
 
     // optional bytes signer_key = 11;
-    if (has_signer_key()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signer_key());
     }
 
     // optional uint32 clear_flags = 3;
-    if (has_clear_flags()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->clear_flags());
     }
 
     // optional uint32 set_flags = 4;
-    if (has_set_flags()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->set_flags());
     }
 
     // optional uint32 master_weight = 5;
-    if (has_master_weight()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->master_weight());
     }
 
     // optional uint32 low_threshold = 6;
-    if (has_low_threshold()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->low_threshold());
     }
 
   }
-  if (_has_bits_[8 / 32] & 3840u) {
+  if (cached_has_bits & 0x00000f00u) {
     // optional uint32 medium_threshold = 7;
-    if (has_medium_threshold()) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->medium_threshold());
     }
 
     // optional uint32 high_threshold = 8;
-    if (has_high_threshold()) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->high_threshold());
     }
 
     // optional uint32 signer_type = 10;
-    if (has_signer_type()) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->signer_type());
     }
 
     // optional uint32 signer_weight = 12;
-    if (has_signer_weight()) {
+    if (cached_has_bits & 0x00000800u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->signer_weight());
@@ -5476,9 +6654,9 @@ void StellarSetOptionsOp::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarSetOptionsOp)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarSetOptionsOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarSetOptionsOp>(
+      ::google::protobuf::DynamicCastToGenerated<StellarSetOptionsOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarSetOptionsOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5495,21 +6673,21 @@ void StellarSetOptionsOp::MergeFrom(const StellarSetOptionsOp& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_source_account();
+      _has_bits_[0] |= 0x00000001u;
       source_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_account_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_inflation_destination_account();
+      _has_bits_[0] |= 0x00000002u;
       inflation_destination_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.inflation_destination_account_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_home_domain();
+      _has_bits_[0] |= 0x00000004u;
       home_domain_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.home_domain_);
     }
     if (cached_has_bits & 0x00000008u) {
-      set_has_signer_key();
+      _has_bits_[0] |= 0x00000008u;
       signer_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signer_key_);
     }
     if (cached_has_bits & 0x00000010u) {
@@ -5526,7 +6704,7 @@ void StellarSetOptionsOp::MergeFrom(const StellarSetOptionsOp& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 3840u) {
+  if (cached_has_bits & 0x00000f00u) {
     if (cached_has_bits & 0x00000100u) {
       medium_threshold_ = from.medium_threshold_;
     }
@@ -5567,6 +6745,8 @@ void StellarSetOptionsOp::Swap(StellarSetOptionsOp* other) {
 }
 void StellarSetOptionsOp::InternalSwap(StellarSetOptionsOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   source_account_.Swap(&other->source_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   inflation_destination_account_.Swap(&other->inflation_destination_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -5583,13 +6763,11 @@ void StellarSetOptionsOp::InternalSwap(StellarSetOptionsOp* other) {
   swap(high_threshold_, other->high_threshold_);
   swap(signer_type_, other->signer_type_);
   swap(signer_weight_, other->signer_weight_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarSetOptionsOp::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5599,6 +6777,24 @@ void StellarChangeTrustOp::InitAsDefaultInstance() {
   ::hw::trezor::messages::stellar::_StellarChangeTrustOp_default_instance_._instance.get_mutable()->asset_ = const_cast< ::hw::trezor::messages::stellar::StellarAssetType*>(
       ::hw::trezor::messages::stellar::StellarAssetType::internal_default_instance());
 }
+class StellarChangeTrustOp::HasBitSetters {
+ public:
+  static void set_has_source_account(StellarChangeTrustOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::hw::trezor::messages::stellar::StellarAssetType& asset(const StellarChangeTrustOp* msg);
+  static void set_has_asset(StellarChangeTrustOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_limit(StellarChangeTrustOp* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
+const ::hw::trezor::messages::stellar::StellarAssetType&
+StellarChangeTrustOp::HasBitSetters::asset(const StellarChangeTrustOp* msg) {
+  return *msg->asset_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarChangeTrustOp::kSourceAccountFieldNumber;
 const int StellarChangeTrustOp::kAssetFieldNumber;
@@ -5606,15 +6802,13 @@ const int StellarChangeTrustOp::kLimitFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarChangeTrustOp::StellarChangeTrustOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarChangeTrustOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarChangeTrustOp)
 }
 StellarChangeTrustOp::StellarChangeTrustOp(const StellarChangeTrustOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -5624,13 +6818,15 @@ StellarChangeTrustOp::StellarChangeTrustOp(const StellarChangeTrustOp& from)
   if (from.has_asset()) {
     asset_ = new ::hw::trezor::messages::stellar::StellarAssetType(*from.asset_);
   } else {
-    asset_ = NULL;
+    asset_ = nullptr;
   }
   limit_ = from.limit_;
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.stellar.StellarChangeTrustOp)
 }
 
 void StellarChangeTrustOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarChangeTrustOp_messages_2dstellar_2eproto.base);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&asset_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&limit_) -
@@ -5650,13 +6846,8 @@ void StellarChangeTrustOp::SharedDtor() {
 void StellarChangeTrustOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarChangeTrustOp::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarChangeTrustOp& StellarChangeTrustOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarChangeTrustOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarChangeTrustOp_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5668,23 +6859,96 @@ void StellarChangeTrustOp::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       source_account_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(asset_ != NULL);
+      GOOGLE_DCHECK(asset_ != nullptr);
       asset_->Clear();
     }
   }
-  limit_ = GOOGLE_ULONGLONG(0);
+  limit_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarChangeTrustOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarChangeTrustOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string source_account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarChangeTrustOp.source_account");
+        object = msg->mutable_source_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional .hw.trezor.messages.stellar.StellarAssetType asset = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::stellar::StellarAssetType::_InternalParse;
+        object = msg->mutable_asset();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional uint64 limit = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_limit(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarChangeTrustOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarChangeTrustOp)
   for (;;) {
@@ -5694,8 +6958,7 @@ bool StellarChangeTrustOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string source_account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_source_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -5710,8 +6973,7 @@ bool StellarChangeTrustOp::MergePartialFromCodedStream(
 
       // optional .hw.trezor.messages.stellar.StellarAssetType asset = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_asset()));
         } else {
@@ -5722,9 +6984,8 @@ bool StellarChangeTrustOp::MergePartialFromCodedStream(
 
       // optional uint64 limit = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_limit();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_limit(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &limit_)));
@@ -5753,6 +7014,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarChangeTrustOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5774,7 +7036,7 @@ void StellarChangeTrustOp::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.stellar.StellarAssetType asset = 2;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_asset(), output);
+      2, HasBitSetters::asset(this), output);
   }
 
   // optional uint64 limit = 3;
@@ -5790,8 +7052,7 @@ void StellarChangeTrustOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarChangeTrustOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarChangeTrustOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5812,7 +7073,7 @@ void StellarChangeTrustOp::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_asset(), deterministic, target);
+        2, HasBitSetters::asset(this), target);
   }
 
   // optional uint64 limit = 3;
@@ -5837,23 +7098,28 @@ size_t StellarChangeTrustOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string source_account = 1;
-    if (has_source_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->source_account());
     }
 
     // optional .hw.trezor.messages.stellar.StellarAssetType asset = 2;
-    if (has_asset()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *asset_);
     }
 
     // optional uint64 limit = 3;
-    if (has_limit()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->limit());
@@ -5869,9 +7135,9 @@ void StellarChangeTrustOp::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarChangeTrustOp)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarChangeTrustOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarChangeTrustOp>(
+      ::google::protobuf::DynamicCastToGenerated<StellarChangeTrustOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarChangeTrustOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5888,9 +7154,9 @@ void StellarChangeTrustOp::MergeFrom(const StellarChangeTrustOp& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_source_account();
+      _has_bits_[0] |= 0x00000001u;
       source_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_account_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -5927,17 +7193,17 @@ void StellarChangeTrustOp::Swap(StellarChangeTrustOp* other) {
 }
 void StellarChangeTrustOp::InternalSwap(StellarChangeTrustOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   source_account_.Swap(&other->source_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(asset_, other->asset_);
   swap(limit_, other->limit_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarChangeTrustOp::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5945,6 +7211,25 @@ void StellarChangeTrustOp::InternalSwap(StellarChangeTrustOp* other) {
 
 void StellarAllowTrustOp::InitAsDefaultInstance() {
 }
+class StellarAllowTrustOp::HasBitSetters {
+ public:
+  static void set_has_source_account(StellarAllowTrustOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_trusted_account(StellarAllowTrustOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_asset_type(StellarAllowTrustOp* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_asset_code(StellarAllowTrustOp* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_is_authorized(StellarAllowTrustOp* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarAllowTrustOp::kSourceAccountFieldNumber;
 const int StellarAllowTrustOp::kTrustedAccountFieldNumber;
@@ -5954,15 +7239,13 @@ const int StellarAllowTrustOp::kIsAuthorizedFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarAllowTrustOp::StellarAllowTrustOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarAllowTrustOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarAllowTrustOp)
 }
 StellarAllowTrustOp::StellarAllowTrustOp(const StellarAllowTrustOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -5984,6 +7267,8 @@ StellarAllowTrustOp::StellarAllowTrustOp(const StellarAllowTrustOp& from)
 }
 
 void StellarAllowTrustOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarAllowTrustOp_messages_2dstellar_2eproto.base);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   trusted_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   asset_code_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -6006,13 +7291,8 @@ void StellarAllowTrustOp::SharedDtor() {
 void StellarAllowTrustOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarAllowTrustOp::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarAllowTrustOp& StellarAllowTrustOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarAllowTrustOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarAllowTrustOp_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6024,7 +7304,7 @@ void StellarAllowTrustOp::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       source_account_.ClearNonDefaultToEmptyNoArena();
     }
@@ -6035,7 +7315,7 @@ void StellarAllowTrustOp::Clear() {
       asset_code_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 24u) {
+  if (cached_has_bits & 0x00000018u) {
     ::memset(&asset_type_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&is_authorized_) -
         reinterpret_cast<char*>(&asset_type_)) + sizeof(is_authorized_));
@@ -6044,9 +7324,108 @@ void StellarAllowTrustOp::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarAllowTrustOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarAllowTrustOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string source_account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarAllowTrustOp.source_account");
+        object = msg->mutable_source_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string trusted_account = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarAllowTrustOp.trusted_account");
+        object = msg->mutable_trusted_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 asset_type = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_asset_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string asset_code = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarAllowTrustOp.asset_code");
+        object = msg->mutable_asset_code();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 is_authorized = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_is_authorized(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarAllowTrustOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarAllowTrustOp)
   for (;;) {
@@ -6056,8 +7435,7 @@ bool StellarAllowTrustOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string source_account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_source_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -6072,8 +7450,7 @@ bool StellarAllowTrustOp::MergePartialFromCodedStream(
 
       // optional string trusted_account = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_trusted_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -6088,9 +7465,8 @@ bool StellarAllowTrustOp::MergePartialFromCodedStream(
 
       // optional uint32 asset_type = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_asset_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_asset_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &asset_type_)));
@@ -6102,8 +7478,7 @@ bool StellarAllowTrustOp::MergePartialFromCodedStream(
 
       // optional string asset_code = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_asset_code()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -6118,9 +7493,8 @@ bool StellarAllowTrustOp::MergePartialFromCodedStream(
 
       // optional uint32 is_authorized = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_is_authorized();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_is_authorized(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &is_authorized_)));
@@ -6149,6 +7523,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarAllowTrustOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6205,8 +7580,7 @@ void StellarAllowTrustOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarAllowTrustOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarAllowTrustOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6272,37 +7646,42 @@ size_t StellarAllowTrustOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 31u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000001fu) {
     // optional string source_account = 1;
-    if (has_source_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->source_account());
     }
 
     // optional string trusted_account = 2;
-    if (has_trusted_account()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->trusted_account());
     }
 
     // optional string asset_code = 4;
-    if (has_asset_code()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->asset_code());
     }
 
     // optional uint32 asset_type = 3;
-    if (has_asset_type()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->asset_type());
     }
 
     // optional uint32 is_authorized = 5;
-    if (has_is_authorized()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->is_authorized());
@@ -6318,9 +7697,9 @@ void StellarAllowTrustOp::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarAllowTrustOp)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarAllowTrustOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarAllowTrustOp>(
+      ::google::protobuf::DynamicCastToGenerated<StellarAllowTrustOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarAllowTrustOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6337,17 +7716,17 @@ void StellarAllowTrustOp::MergeFrom(const StellarAllowTrustOp& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 31u) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_source_account();
+      _has_bits_[0] |= 0x00000001u;
       source_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_account_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_trusted_account();
+      _has_bits_[0] |= 0x00000002u;
       trusted_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.trusted_account_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_asset_code();
+      _has_bits_[0] |= 0x00000004u;
       asset_code_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.asset_code_);
     }
     if (cached_has_bits & 0x00000008u) {
@@ -6384,6 +7763,8 @@ void StellarAllowTrustOp::Swap(StellarAllowTrustOp* other) {
 }
 void StellarAllowTrustOp::InternalSwap(StellarAllowTrustOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   source_account_.Swap(&other->source_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   trusted_account_.Swap(&other->trusted_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -6392,13 +7773,11 @@ void StellarAllowTrustOp::InternalSwap(StellarAllowTrustOp* other) {
     GetArenaNoVirtual());
   swap(asset_type_, other->asset_type_);
   swap(is_authorized_, other->is_authorized_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarAllowTrustOp::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6406,21 +7785,29 @@ void StellarAllowTrustOp::InternalSwap(StellarAllowTrustOp* other) {
 
 void StellarAccountMergeOp::InitAsDefaultInstance() {
 }
+class StellarAccountMergeOp::HasBitSetters {
+ public:
+  static void set_has_source_account(StellarAccountMergeOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_destination_account(StellarAccountMergeOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarAccountMergeOp::kSourceAccountFieldNumber;
 const int StellarAccountMergeOp::kDestinationAccountFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarAccountMergeOp::StellarAccountMergeOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarAccountMergeOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarAccountMergeOp)
 }
 StellarAccountMergeOp::StellarAccountMergeOp(const StellarAccountMergeOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -6435,6 +7822,8 @@ StellarAccountMergeOp::StellarAccountMergeOp(const StellarAccountMergeOp& from)
 }
 
 void StellarAccountMergeOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarAccountMergeOp_messages_2dstellar_2eproto.base);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   destination_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -6452,13 +7841,8 @@ void StellarAccountMergeOp::SharedDtor() {
 void StellarAccountMergeOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarAccountMergeOp::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarAccountMergeOp& StellarAccountMergeOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarAccountMergeOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarAccountMergeOp_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6470,7 +7854,7 @@ void StellarAccountMergeOp::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       source_account_.ClearNonDefaultToEmptyNoArena();
     }
@@ -6482,9 +7866,78 @@ void StellarAccountMergeOp::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarAccountMergeOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarAccountMergeOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string source_account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarAccountMergeOp.source_account");
+        object = msg->mutable_source_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string destination_account = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarAccountMergeOp.destination_account");
+        object = msg->mutable_destination_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarAccountMergeOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarAccountMergeOp)
   for (;;) {
@@ -6494,8 +7947,7 @@ bool StellarAccountMergeOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string source_account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_source_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -6510,8 +7962,7 @@ bool StellarAccountMergeOp::MergePartialFromCodedStream(
 
       // optional string destination_account = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_destination_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -6543,6 +7994,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarAccountMergeOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6579,8 +8031,7 @@ void StellarAccountMergeOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarAccountMergeOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarAccountMergeOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6625,16 +8076,21 @@ size_t StellarAccountMergeOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string source_account = 1;
-    if (has_source_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->source_account());
     }
 
     // optional string destination_account = 2;
-    if (has_destination_account()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->destination_account());
@@ -6650,9 +8106,9 @@ void StellarAccountMergeOp::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarAccountMergeOp)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarAccountMergeOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarAccountMergeOp>(
+      ::google::protobuf::DynamicCastToGenerated<StellarAccountMergeOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarAccountMergeOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6669,13 +8125,13 @@ void StellarAccountMergeOp::MergeFrom(const StellarAccountMergeOp& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_source_account();
+      _has_bits_[0] |= 0x00000001u;
       source_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_account_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_destination_account();
+      _has_bits_[0] |= 0x00000002u;
       destination_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.destination_account_);
     }
   }
@@ -6705,17 +8161,17 @@ void StellarAccountMergeOp::Swap(StellarAccountMergeOp* other) {
 }
 void StellarAccountMergeOp::InternalSwap(StellarAccountMergeOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   source_account_.Swap(&other->source_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   destination_account_.Swap(&other->destination_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarAccountMergeOp::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6723,6 +8179,19 @@ void StellarAccountMergeOp::InternalSwap(StellarAccountMergeOp* other) {
 
 void StellarManageDataOp::InitAsDefaultInstance() {
 }
+class StellarManageDataOp::HasBitSetters {
+ public:
+  static void set_has_source_account(StellarManageDataOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_key(StellarManageDataOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_value(StellarManageDataOp* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarManageDataOp::kSourceAccountFieldNumber;
 const int StellarManageDataOp::kKeyFieldNumber;
@@ -6730,15 +8199,13 @@ const int StellarManageDataOp::kValueFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarManageDataOp::StellarManageDataOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarManageDataOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarManageDataOp)
 }
 StellarManageDataOp::StellarManageDataOp(const StellarManageDataOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -6757,6 +8224,8 @@ StellarManageDataOp::StellarManageDataOp(const StellarManageDataOp& from)
 }
 
 void StellarManageDataOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarManageDataOp_messages_2dstellar_2eproto.base);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -6776,13 +8245,8 @@ void StellarManageDataOp::SharedDtor() {
 void StellarManageDataOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarManageDataOp::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarManageDataOp& StellarManageDataOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarManageDataOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarManageDataOp_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6794,7 +8258,7 @@ void StellarManageDataOp::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       source_account_.ClearNonDefaultToEmptyNoArena();
     }
@@ -6809,9 +8273,93 @@ void StellarManageDataOp::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarManageDataOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarManageDataOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string source_account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarManageDataOp.source_account");
+        object = msg->mutable_source_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string key = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarManageDataOp.key");
+        object = msg->mutable_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes value = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_value();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarManageDataOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarManageDataOp)
   for (;;) {
@@ -6821,8 +8369,7 @@ bool StellarManageDataOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string source_account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_source_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -6837,8 +8384,7 @@ bool StellarManageDataOp::MergePartialFromCodedStream(
 
       // optional string key = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_key()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -6853,8 +8399,7 @@ bool StellarManageDataOp::MergePartialFromCodedStream(
 
       // optional bytes value = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_value()));
         } else {
@@ -6882,6 +8427,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarManageDataOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6924,8 +8470,7 @@ void StellarManageDataOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarManageDataOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarManageDataOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6977,23 +8522,28 @@ size_t StellarManageDataOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string source_account = 1;
-    if (has_source_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->source_account());
     }
 
     // optional string key = 2;
-    if (has_key()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->key());
     }
 
     // optional bytes value = 3;
-    if (has_value()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->value());
@@ -7009,9 +8559,9 @@ void StellarManageDataOp::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarManageDataOp)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarManageDataOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarManageDataOp>(
+      ::google::protobuf::DynamicCastToGenerated<StellarManageDataOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarManageDataOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7028,17 +8578,17 @@ void StellarManageDataOp::MergeFrom(const StellarManageDataOp& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_source_account();
+      _has_bits_[0] |= 0x00000001u;
       source_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_account_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_key();
+      _has_bits_[0] |= 0x00000002u;
       key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.key_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_value();
+      _has_bits_[0] |= 0x00000004u;
       value_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.value_);
     }
   }
@@ -7068,19 +8618,19 @@ void StellarManageDataOp::Swap(StellarManageDataOp* other) {
 }
 void StellarManageDataOp::InternalSwap(StellarManageDataOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   source_account_.Swap(&other->source_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   key_.Swap(&other->key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   value_.Swap(&other->value_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarManageDataOp::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7088,21 +8638,29 @@ void StellarManageDataOp::InternalSwap(StellarManageDataOp* other) {
 
 void StellarBumpSequenceOp::InitAsDefaultInstance() {
 }
+class StellarBumpSequenceOp::HasBitSetters {
+ public:
+  static void set_has_source_account(StellarBumpSequenceOp* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_bump_to(StellarBumpSequenceOp* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarBumpSequenceOp::kSourceAccountFieldNumber;
 const int StellarBumpSequenceOp::kBumpToFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarBumpSequenceOp::StellarBumpSequenceOp()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarBumpSequenceOp.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarBumpSequenceOp)
 }
 StellarBumpSequenceOp::StellarBumpSequenceOp(const StellarBumpSequenceOp& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -7114,8 +8672,10 @@ StellarBumpSequenceOp::StellarBumpSequenceOp(const StellarBumpSequenceOp& from)
 }
 
 void StellarBumpSequenceOp::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarBumpSequenceOp_messages_2dstellar_2eproto.base);
   source_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  bump_to_ = GOOGLE_ULONGLONG(0);
+  bump_to_ = PROTOBUF_ULONGLONG(0);
 }
 
 StellarBumpSequenceOp::~StellarBumpSequenceOp() {
@@ -7130,13 +8690,8 @@ void StellarBumpSequenceOp::SharedDtor() {
 void StellarBumpSequenceOp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarBumpSequenceOp::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarBumpSequenceOp& StellarBumpSequenceOp::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarBumpSequenceOp.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarBumpSequenceOp_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -7151,14 +8706,74 @@ void StellarBumpSequenceOp::Clear() {
   if (cached_has_bits & 0x00000001u) {
     source_account_.ClearNonDefaultToEmptyNoArena();
   }
-  bump_to_ = GOOGLE_ULONGLONG(0);
+  bump_to_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarBumpSequenceOp::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarBumpSequenceOp*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string source_account = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.stellar.StellarBumpSequenceOp.source_account");
+        object = msg->mutable_source_account();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint64 bump_to = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_bump_to(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarBumpSequenceOp::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarBumpSequenceOp)
   for (;;) {
@@ -7168,8 +8783,7 @@ bool StellarBumpSequenceOp::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string source_account = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_source_account()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -7184,9 +8798,8 @@ bool StellarBumpSequenceOp::MergePartialFromCodedStream(
 
       // optional uint64 bump_to = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_bump_to();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_bump_to(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &bump_to_)));
@@ -7215,6 +8828,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarBumpSequenceOp::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7246,8 +8860,7 @@ void StellarBumpSequenceOp::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarBumpSequenceOp::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarBumpSequenceOp)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7286,16 +8899,21 @@ size_t StellarBumpSequenceOp::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string source_account = 1;
-    if (has_source_account()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->source_account());
     }
 
     // optional uint64 bump_to = 2;
-    if (has_bump_to()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->bump_to());
@@ -7311,9 +8929,9 @@ void StellarBumpSequenceOp::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarBumpSequenceOp)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarBumpSequenceOp* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarBumpSequenceOp>(
+      ::google::protobuf::DynamicCastToGenerated<StellarBumpSequenceOp>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarBumpSequenceOp)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7330,9 +8948,9 @@ void StellarBumpSequenceOp::MergeFrom(const StellarBumpSequenceOp& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_source_account();
+      _has_bits_[0] |= 0x00000001u;
       source_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_account_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -7366,16 +8984,16 @@ void StellarBumpSequenceOp::Swap(StellarBumpSequenceOp* other) {
 }
 void StellarBumpSequenceOp::InternalSwap(StellarBumpSequenceOp* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   source_account_.Swap(&other->source_account_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(bump_to_, other->bump_to_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarBumpSequenceOp::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7383,21 +9001,29 @@ void StellarBumpSequenceOp::InternalSwap(StellarBumpSequenceOp* other) {
 
 void StellarSignedTx::InitAsDefaultInstance() {
 }
+class StellarSignedTx::HasBitSetters {
+ public:
+  static void set_has_public_key(StellarSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_signature(StellarSignedTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int StellarSignedTx::kPublicKeyFieldNumber;
 const int StellarSignedTx::kSignatureFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 StellarSignedTx::StellarSignedTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dstellar_2eproto::scc_info_StellarSignedTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.stellar.StellarSignedTx)
 }
 StellarSignedTx::StellarSignedTx(const StellarSignedTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -7412,6 +9038,8 @@ StellarSignedTx::StellarSignedTx(const StellarSignedTx& from)
 }
 
 void StellarSignedTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_StellarSignedTx_messages_2dstellar_2eproto.base);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -7429,13 +9057,8 @@ void StellarSignedTx::SharedDtor() {
 void StellarSignedTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* StellarSignedTx::descriptor() {
-  ::protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const StellarSignedTx& StellarSignedTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dstellar_2eproto::scc_info_StellarSignedTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_StellarSignedTx_messages_2dstellar_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -7447,7 +9070,7 @@ void StellarSignedTx::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       public_key_.ClearNonDefaultToEmptyNoArena();
     }
@@ -7459,9 +9082,76 @@ void StellarSignedTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* StellarSignedTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<StellarSignedTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes public_key = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes signature = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool StellarSignedTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.stellar.StellarSignedTx)
   for (;;) {
@@ -7471,8 +9161,7 @@ bool StellarSignedTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes public_key = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_public_key()));
         } else {
@@ -7483,8 +9172,7 @@ bool StellarSignedTx::MergePartialFromCodedStream(
 
       // optional bytes signature = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -7512,6 +9200,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void StellarSignedTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -7540,8 +9229,7 @@ void StellarSignedTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* StellarSignedTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.stellar.StellarSignedTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -7578,16 +9266,21 @@ size_t StellarSignedTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes public_key = 1;
-    if (has_public_key()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->public_key());
     }
 
     // optional bytes signature = 2;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
@@ -7603,9 +9296,9 @@ void StellarSignedTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.stellar.StellarSignedTx)
   GOOGLE_DCHECK_NE(&from, this);
   const StellarSignedTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const StellarSignedTx>(
+      ::google::protobuf::DynamicCastToGenerated<StellarSignedTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.stellar.StellarSignedTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -7622,13 +9315,13 @@ void StellarSignedTx::MergeFrom(const StellarSignedTx& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_public_key();
+      _has_bits_[0] |= 0x00000001u;
       public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000002u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
   }
@@ -7658,17 +9351,17 @@ void StellarSignedTx::Swap(StellarSignedTx* other) {
 }
 void StellarSignedTx::InternalSwap(StellarSignedTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata StellarSignedTx::GetMetadata() const {
-  protobuf_messages_2dstellar_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dstellar_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dstellar_2eproto);
+  return ::file_level_metadata_messages_2dstellar_2eproto[kIndexInFileMessages];
 }
 
 
@@ -7679,58 +9372,59 @@ void StellarSignedTx::InternalSwap(StellarSignedTx* other) {
 }  // namespace hw
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarAssetType* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarAssetType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarAssetType* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarAssetType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarAssetType >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarGetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarGetAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarGetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarGetAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarGetAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarSignTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarSignTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarSignTx >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarTxOpRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarTxOpRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarTxOpRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarTxOpRequest >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarTxOpRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarPaymentOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarPaymentOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarPaymentOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarPaymentOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarPaymentOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarCreateAccountOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarCreateAccountOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarCreateAccountOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarCreateAccountOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarCreateAccountOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarPathPaymentOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarPathPaymentOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarPathPaymentOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarPathPaymentOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarPathPaymentOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarManageOfferOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarManageOfferOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarManageOfferOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarManageOfferOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarManageOfferOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarCreatePassiveOfferOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarSetOptionsOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarSetOptionsOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarSetOptionsOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarSetOptionsOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarSetOptionsOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarChangeTrustOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarChangeTrustOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarChangeTrustOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarChangeTrustOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarChangeTrustOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarAllowTrustOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarAllowTrustOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarAllowTrustOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarAllowTrustOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarAllowTrustOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarAccountMergeOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarAccountMergeOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarAccountMergeOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarAccountMergeOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarAccountMergeOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarManageDataOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarManageDataOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarManageDataOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarManageDataOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarManageDataOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarBumpSequenceOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarBumpSequenceOp >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarBumpSequenceOp* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarBumpSequenceOp >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarBumpSequenceOp >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::stellar::StellarSignedTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarSignedTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::stellar::StellarSignedTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::stellar::StellarSignedTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::stellar::StellarSignedTx >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

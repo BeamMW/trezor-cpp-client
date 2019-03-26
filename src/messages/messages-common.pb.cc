@@ -6,18 +6,15 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
 namespace hw {
 namespace trezor {
@@ -25,65 +22,53 @@ namespace messages {
 namespace common {
 class SuccessDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<Success>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<Success> _instance;
 } _Success_default_instance_;
 class FailureDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<Failure>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<Failure> _instance;
 } _Failure_default_instance_;
 class ButtonRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ButtonRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ButtonRequest> _instance;
 } _ButtonRequest_default_instance_;
 class ButtonAckDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ButtonAck>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ButtonAck> _instance;
 } _ButtonAck_default_instance_;
 class PinMatrixRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<PinMatrixRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<PinMatrixRequest> _instance;
 } _PinMatrixRequest_default_instance_;
 class PinMatrixAckDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<PinMatrixAck>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<PinMatrixAck> _instance;
 } _PinMatrixAck_default_instance_;
 class PassphraseRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<PassphraseRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<PassphraseRequest> _instance;
 } _PassphraseRequest_default_instance_;
 class PassphraseAckDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<PassphraseAck>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<PassphraseAck> _instance;
 } _PassphraseAck_default_instance_;
 class PassphraseStateRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<PassphraseStateRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<PassphraseStateRequest> _instance;
 } _PassphraseStateRequest_default_instance_;
 class PassphraseStateAckDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<PassphraseStateAck>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<PassphraseStateAck> _instance;
 } _PassphraseStateAck_default_instance_;
 class HDNodeTypeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<HDNodeType>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<HDNodeType> _instance;
 } _HDNodeType_default_instance_;
 }  // namespace common
 }  // namespace messages
 }  // namespace trezor
 }  // namespace hw
-namespace protobuf_messages_2dcommon_2eproto {
-static void InitDefaultsSuccess() {
+static void InitDefaultsSuccess_messages_2dcommon_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -94,10 +79,10 @@ static void InitDefaultsSuccess() {
   ::hw::trezor::messages::common::Success::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_Success =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsSuccess}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_Success_messages_2dcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsSuccess_messages_2dcommon_2eproto}, {}};
 
-static void InitDefaultsFailure() {
+static void InitDefaultsFailure_messages_2dcommon_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -108,10 +93,10 @@ static void InitDefaultsFailure() {
   ::hw::trezor::messages::common::Failure::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_Failure =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsFailure}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_Failure_messages_2dcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsFailure_messages_2dcommon_2eproto}, {}};
 
-static void InitDefaultsButtonRequest() {
+static void InitDefaultsButtonRequest_messages_2dcommon_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -122,10 +107,10 @@ static void InitDefaultsButtonRequest() {
   ::hw::trezor::messages::common::ButtonRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ButtonRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsButtonRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_ButtonRequest_messages_2dcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsButtonRequest_messages_2dcommon_2eproto}, {}};
 
-static void InitDefaultsButtonAck() {
+static void InitDefaultsButtonAck_messages_2dcommon_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -136,10 +121,10 @@ static void InitDefaultsButtonAck() {
   ::hw::trezor::messages::common::ButtonAck::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ButtonAck =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsButtonAck}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_ButtonAck_messages_2dcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsButtonAck_messages_2dcommon_2eproto}, {}};
 
-static void InitDefaultsPinMatrixRequest() {
+static void InitDefaultsPinMatrixRequest_messages_2dcommon_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -150,10 +135,10 @@ static void InitDefaultsPinMatrixRequest() {
   ::hw::trezor::messages::common::PinMatrixRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_PinMatrixRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsPinMatrixRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_PinMatrixRequest_messages_2dcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsPinMatrixRequest_messages_2dcommon_2eproto}, {}};
 
-static void InitDefaultsPinMatrixAck() {
+static void InitDefaultsPinMatrixAck_messages_2dcommon_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -164,10 +149,10 @@ static void InitDefaultsPinMatrixAck() {
   ::hw::trezor::messages::common::PinMatrixAck::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_PinMatrixAck =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsPinMatrixAck}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_PinMatrixAck_messages_2dcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsPinMatrixAck_messages_2dcommon_2eproto}, {}};
 
-static void InitDefaultsPassphraseRequest() {
+static void InitDefaultsPassphraseRequest_messages_2dcommon_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -178,10 +163,10 @@ static void InitDefaultsPassphraseRequest() {
   ::hw::trezor::messages::common::PassphraseRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_PassphraseRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsPassphraseRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_PassphraseRequest_messages_2dcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsPassphraseRequest_messages_2dcommon_2eproto}, {}};
 
-static void InitDefaultsPassphraseAck() {
+static void InitDefaultsPassphraseAck_messages_2dcommon_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -192,10 +177,10 @@ static void InitDefaultsPassphraseAck() {
   ::hw::trezor::messages::common::PassphraseAck::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_PassphraseAck =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsPassphraseAck}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_PassphraseAck_messages_2dcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsPassphraseAck_messages_2dcommon_2eproto}, {}};
 
-static void InitDefaultsPassphraseStateRequest() {
+static void InitDefaultsPassphraseStateRequest_messages_2dcommon_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -206,10 +191,10 @@ static void InitDefaultsPassphraseStateRequest() {
   ::hw::trezor::messages::common::PassphraseStateRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_PassphraseStateRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsPassphraseStateRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_PassphraseStateRequest_messages_2dcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsPassphraseStateRequest_messages_2dcommon_2eproto}, {}};
 
-static void InitDefaultsPassphraseStateAck() {
+static void InitDefaultsPassphraseStateAck_messages_2dcommon_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -220,10 +205,10 @@ static void InitDefaultsPassphraseStateAck() {
   ::hw::trezor::messages::common::PassphraseStateAck::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_PassphraseStateAck =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsPassphraseStateAck}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_PassphraseStateAck_messages_2dcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsPassphraseStateAck_messages_2dcommon_2eproto}, {}};
 
-static void InitDefaultsHDNodeType() {
+static void InitDefaultsHDNodeType_messages_2dcommon_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -234,110 +219,111 @@ static void InitDefaultsHDNodeType() {
   ::hw::trezor::messages::common::HDNodeType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_HDNodeType =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsHDNodeType}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_HDNodeType_messages_2dcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsHDNodeType_messages_2dcommon_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_Success.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_Failure.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ButtonRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ButtonAck.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_PinMatrixRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_PinMatrixAck.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_PassphraseRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_PassphraseAck.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_PassphraseStateRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_PassphraseStateAck.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_HDNodeType.base);
+void InitDefaults_messages_2dcommon_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_Success_messages_2dcommon_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_Failure_messages_2dcommon_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ButtonRequest_messages_2dcommon_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ButtonAck_messages_2dcommon_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_PinMatrixRequest_messages_2dcommon_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_PinMatrixAck_messages_2dcommon_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_PassphraseRequest_messages_2dcommon_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_PassphraseAck_messages_2dcommon_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_PassphraseStateRequest_messages_2dcommon_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_PassphraseStateAck_messages_2dcommon_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_HDNodeType_messages_2dcommon_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[11];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[3];
+::google::protobuf::Metadata file_level_metadata_messages_2dcommon_2eproto[11];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors_messages_2dcommon_2eproto[3];
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2dcommon_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::Success, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::Success, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_messages_2dcommon_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::Success, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::Success, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::Success, message_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::Success, message_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::Failure, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::Failure, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::Failure, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::Failure, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::Failure, code_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::Failure, message_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::Failure, code_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::Failure, message_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::ButtonRequest, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::ButtonRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::ButtonRequest, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::ButtonRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::ButtonRequest, code_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::ButtonRequest, data_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::ButtonRequest, code_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::ButtonRequest, data_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::ButtonAck, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::ButtonAck, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::ButtonAck, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::ButtonAck, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PinMatrixRequest, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PinMatrixRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PinMatrixRequest, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PinMatrixRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PinMatrixRequest, type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PinMatrixRequest, type_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PinMatrixAck, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PinMatrixAck, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PinMatrixAck, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PinMatrixAck, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PinMatrixAck, pin_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PinMatrixAck, pin_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseRequest, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseRequest, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseRequest, on_device_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseRequest, on_device_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseAck, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseAck, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseAck, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseAck, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseAck, passphrase_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseAck, state_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseAck, passphrase_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseAck, state_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseStateRequest, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseStateRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseStateRequest, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseStateRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseStateRequest, state_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseStateRequest, state_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseStateAck, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseStateAck, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseStateAck, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::PassphraseStateAck, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, depth_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, fingerprint_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, child_num_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, chain_code_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, private_key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, public_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, depth_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, fingerprint_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, child_num_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, chain_code_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, private_key_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::HDNodeType, public_key_),
   3,
   4,
   5,
@@ -345,7 +331,7 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   1,
   2,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 6, sizeof(::hw::trezor::messages::common::Success)},
   { 7, 14, sizeof(::hw::trezor::messages::common::Failure)},
   { 16, 23, sizeof(::hw::trezor::messages::common::ButtonRequest)},
@@ -373,95 +359,79 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::common::_HDNodeType_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "messages-common.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2dcommon_2eproto = {
+  {}, AddDescriptors_messages_2dcommon_2eproto, "messages-common.proto", schemas,
+  file_default_instances, TableStruct_messages_2dcommon_2eproto::offsets,
+  file_level_metadata_messages_2dcommon_2eproto, 11, file_level_enum_descriptors_messages_2dcommon_2eproto, file_level_service_descriptors_messages_2dcommon_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_messages_2dcommon_2eproto[] =
+  "\n\025messages-common.proto\022\031hw.trezor.messa"
+  "ges.common\"\032\n\007Success\022\017\n\007message\030\001 \001(\t\"\306"
+  "\003\n\007Failure\022<\n\004code\030\001 \001(\0162..hw.trezor.mes"
+  "sages.common.Failure.FailureType\022\017\n\007mess"
+  "age\030\002 \001(\t\"\353\002\n\013FailureType\022\035\n\031Failure_Une"
+  "xpectedMessage\020\001\022\032\n\026Failure_ButtonExpect"
+  "ed\020\002\022\025\n\021Failure_DataError\020\003\022\033\n\027Failure_A"
+  "ctionCancelled\020\004\022\027\n\023Failure_PinExpected\020"
+  "\005\022\030\n\024Failure_PinCancelled\020\006\022\026\n\022Failure_P"
+  "inInvalid\020\007\022\034\n\030Failure_InvalidSignature\020"
+  "\010\022\030\n\024Failure_ProcessError\020\t\022\032\n\026Failure_N"
+  "otEnoughFunds\020\n\022\032\n\026Failure_NotInitialize"
+  "d\020\013\022\027\n\023Failure_PinMismatch\020\014\022\031\n\025Failure_"
+  "FirmwareError\020c\"\332\004\n\rButtonRequest\022H\n\004cod"
+  "e\030\001 \001(\0162:.hw.trezor.messages.common.Butt"
+  "onRequest.ButtonRequestType\022\014\n\004data\030\002 \001("
+  "\t\"\360\003\n\021ButtonRequestType\022\027\n\023ButtonRequest"
+  "_Other\020\001\022\"\n\036ButtonRequest_FeeOverThresho"
+  "ld\020\002\022\037\n\033ButtonRequest_ConfirmOutput\020\003\022\035\n"
+  "\031ButtonRequest_ResetDevice\020\004\022\035\n\031ButtonRe"
+  "quest_ConfirmWord\020\005\022\034\n\030ButtonRequest_Wip"
+  "eDevice\020\006\022\035\n\031ButtonRequest_ProtectCall\020\007"
+  "\022\030\n\024ButtonRequest_SignTx\020\010\022\037\n\033ButtonRequ"
+  "est_FirmwareCheck\020\t\022\031\n\025ButtonRequest_Add"
+  "ress\020\n\022\033\n\027ButtonRequest_PublicKey\020\013\022#\n\037B"
+  "uttonRequest_MnemonicWordCount\020\014\022\037\n\033Butt"
+  "onRequest_MnemonicInput\020\r\022 \n\034ButtonReque"
+  "st_PassphraseType\020\016\022\'\n#ButtonRequest_Unk"
+  "nownDerivationPath\020\017\"\013\n\tButtonAck\"\343\001\n\020Pi"
+  "nMatrixRequest\022N\n\004type\030\001 \001(\0162@.hw.trezor"
+  ".messages.common.PinMatrixRequest.PinMat"
+  "rixRequestType\"\177\n\024PinMatrixRequestType\022 "
+  "\n\034PinMatrixRequestType_Current\020\001\022!\n\035PinM"
+  "atrixRequestType_NewFirst\020\002\022\"\n\036PinMatrix"
+  "RequestType_NewSecond\020\003\"\033\n\014PinMatrixAck\022"
+  "\013\n\003pin\030\001 \002(\t\"&\n\021PassphraseRequest\022\021\n\ton_"
+  "device\030\001 \001(\010\"2\n\rPassphraseAck\022\022\n\npassphr"
+  "ase\030\001 \001(\t\022\r\n\005state\030\002 \001(\014\"\'\n\026PassphraseSt"
+  "ateRequest\022\r\n\005state\030\001 \001(\014\"\024\n\022PassphraseS"
+  "tateAck\"\200\001\n\nHDNodeType\022\r\n\005depth\030\001 \002(\r\022\023\n"
+  "\013fingerprint\030\002 \002(\r\022\021\n\tchild_num\030\003 \002(\r\022\022\n"
+  "\nchain_code\030\004 \002(\014\022\023\n\013private_key\030\005 \001(\014\022\022"
+  "\n\npublic_key\030\006 \001(\014"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dcommon_2eproto = {
+  false, InitDefaults_messages_2dcommon_2eproto, 
+  descriptor_table_protodef_messages_2dcommon_2eproto,
+  "messages-common.proto", &assign_descriptors_table_messages_2dcommon_2eproto, 1698,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 11);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\025messages-common.proto\022\031hw.trezor.messa"
-      "ges.common\"\032\n\007Success\022\017\n\007message\030\001 \001(\t\"\306"
-      "\003\n\007Failure\022<\n\004code\030\001 \001(\0162..hw.trezor.mes"
-      "sages.common.Failure.FailureType\022\017\n\007mess"
-      "age\030\002 \001(\t\"\353\002\n\013FailureType\022\035\n\031Failure_Une"
-      "xpectedMessage\020\001\022\032\n\026Failure_ButtonExpect"
-      "ed\020\002\022\025\n\021Failure_DataError\020\003\022\033\n\027Failure_A"
-      "ctionCancelled\020\004\022\027\n\023Failure_PinExpected\020"
-      "\005\022\030\n\024Failure_PinCancelled\020\006\022\026\n\022Failure_P"
-      "inInvalid\020\007\022\034\n\030Failure_InvalidSignature\020"
-      "\010\022\030\n\024Failure_ProcessError\020\t\022\032\n\026Failure_N"
-      "otEnoughFunds\020\n\022\032\n\026Failure_NotInitialize"
-      "d\020\013\022\027\n\023Failure_PinMismatch\020\014\022\031\n\025Failure_"
-      "FirmwareError\020c\"\332\004\n\rButtonRequest\022H\n\004cod"
-      "e\030\001 \001(\0162:.hw.trezor.messages.common.Butt"
-      "onRequest.ButtonRequestType\022\014\n\004data\030\002 \001("
-      "\t\"\360\003\n\021ButtonRequestType\022\027\n\023ButtonRequest"
-      "_Other\020\001\022\"\n\036ButtonRequest_FeeOverThresho"
-      "ld\020\002\022\037\n\033ButtonRequest_ConfirmOutput\020\003\022\035\n"
-      "\031ButtonRequest_ResetDevice\020\004\022\035\n\031ButtonRe"
-      "quest_ConfirmWord\020\005\022\034\n\030ButtonRequest_Wip"
-      "eDevice\020\006\022\035\n\031ButtonRequest_ProtectCall\020\007"
-      "\022\030\n\024ButtonRequest_SignTx\020\010\022\037\n\033ButtonRequ"
-      "est_FirmwareCheck\020\t\022\031\n\025ButtonRequest_Add"
-      "ress\020\n\022\033\n\027ButtonRequest_PublicKey\020\013\022#\n\037B"
-      "uttonRequest_MnemonicWordCount\020\014\022\037\n\033Butt"
-      "onRequest_MnemonicInput\020\r\022 \n\034ButtonReque"
-      "st_PassphraseType\020\016\022\'\n#ButtonRequest_Unk"
-      "nownDerivationPath\020\017\"\013\n\tButtonAck\"\343\001\n\020Pi"
-      "nMatrixRequest\022N\n\004type\030\001 \001(\0162@.hw.trezor"
-      ".messages.common.PinMatrixRequest.PinMat"
-      "rixRequestType\"\177\n\024PinMatrixRequestType\022 "
-      "\n\034PinMatrixRequestType_Current\020\001\022!\n\035PinM"
-      "atrixRequestType_NewFirst\020\002\022\"\n\036PinMatrix"
-      "RequestType_NewSecond\020\003\"\033\n\014PinMatrixAck\022"
-      "\013\n\003pin\030\001 \002(\t\"&\n\021PassphraseRequest\022\021\n\ton_"
-      "device\030\001 \001(\010\"2\n\rPassphraseAck\022\022\n\npassphr"
-      "ase\030\001 \001(\t\022\r\n\005state\030\002 \001(\014\"\'\n\026PassphraseSt"
-      "ateRequest\022\r\n\005state\030\001 \001(\014\"\024\n\022PassphraseS"
-      "tateAck\"\200\001\n\nHDNodeType\022\r\n\005depth\030\001 \002(\r\022\023\n"
-      "\013fingerprint\030\002 \002(\r\022\021\n\tchild_num\030\003 \002(\r\022\022\n"
-      "\nchain_code\030\004 \002(\014\022\023\n\013private_key\030\005 \001(\014\022\022"
-      "\n\npublic_key\030\006 \001(\014"
+void AddDescriptors_messages_2dcommon_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1698);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "messages-common.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_messages_2dcommon_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_messages_2dcommon_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_messages_2dcommon_2eproto = []() { AddDescriptors_messages_2dcommon_2eproto(); return true; }();
 namespace hw {
 namespace trezor {
 namespace messages {
 namespace common {
 const ::google::protobuf::EnumDescriptor* Failure_FailureType_descriptor() {
-  protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_messages_2dcommon_2eproto::file_level_enum_descriptors[0];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dcommon_2eproto);
+  return file_level_enum_descriptors_messages_2dcommon_2eproto[0];
 }
 bool Failure_FailureType_IsValid(int value) {
   switch (value) {
@@ -503,8 +473,8 @@ const Failure_FailureType Failure::FailureType_MAX;
 const int Failure::FailureType_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* ButtonRequest_ButtonRequestType_descriptor() {
-  protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_messages_2dcommon_2eproto::file_level_enum_descriptors[1];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dcommon_2eproto);
+  return file_level_enum_descriptors_messages_2dcommon_2eproto[1];
 }
 bool ButtonRequest_ButtonRequestType_IsValid(int value) {
   switch (value) {
@@ -550,8 +520,8 @@ const ButtonRequest_ButtonRequestType ButtonRequest::ButtonRequestType_MAX;
 const int ButtonRequest::ButtonRequestType_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* PinMatrixRequest_PinMatrixRequestType_descriptor() {
-  protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_messages_2dcommon_2eproto::file_level_enum_descriptors[2];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dcommon_2eproto);
+  return file_level_enum_descriptors_messages_2dcommon_2eproto[2];
 }
 bool PinMatrixRequest_PinMatrixRequestType_IsValid(int value) {
   switch (value) {
@@ -577,20 +547,25 @@ const int PinMatrixRequest::PinMatrixRequestType_ARRAYSIZE;
 
 void Success::InitAsDefaultInstance() {
 }
+class Success::HasBitSetters {
+ public:
+  static void set_has_message(Success* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Success::kMessageFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Success::Success()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcommon_2eproto::scc_info_Success.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.common.Success)
 }
 Success::Success(const Success& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -601,6 +576,8 @@ Success::Success(const Success& from)
 }
 
 void Success::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_Success_messages_2dcommon_2eproto.base);
   message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -616,13 +593,8 @@ void Success::SharedDtor() {
 void Success::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* Success::descriptor() {
-  ::protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const Success& Success::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcommon_2eproto::scc_info_Success.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_Success_messages_2dcommon_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -641,9 +613,62 @@ void Success::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* Success::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<Success*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string message = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.common.Success.message");
+        object = msg->mutable_message();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool Success::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.common.Success)
   for (;;) {
@@ -653,8 +678,7 @@ bool Success::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string message = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_message()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -686,6 +710,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void Success::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -712,8 +737,7 @@ void Success::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* Success::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.common.Success)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -747,8 +771,13 @@ size_t Success::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string message = 1;
-  if (has_message()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->message());
@@ -763,9 +792,9 @@ void Success::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.common.Success)
   GOOGLE_DCHECK_NE(&from, this);
   const Success* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Success>(
+      ::google::protobuf::DynamicCastToGenerated<Success>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.common.Success)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -782,7 +811,7 @@ void Success::MergeFrom(const Success& from) {
   (void) cached_has_bits;
 
   if (from.has_message()) {
-    set_has_message();
+    _has_bits_[0] |= 0x00000001u;
     message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.message_);
   }
 }
@@ -811,15 +840,15 @@ void Success::Swap(Success* other) {
 }
 void Success::InternalSwap(Success* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   message_.Swap(&other->message_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata Success::GetMetadata() const {
-  protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcommon_2eproto);
+  return ::file_level_metadata_messages_2dcommon_2eproto[kIndexInFileMessages];
 }
 
 
@@ -827,21 +856,29 @@ void Success::InternalSwap(Success* other) {
 
 void Failure::InitAsDefaultInstance() {
 }
+class Failure::HasBitSetters {
+ public:
+  static void set_has_code(Failure* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_message(Failure* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Failure::kCodeFieldNumber;
 const int Failure::kMessageFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Failure::Failure()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcommon_2eproto::scc_info_Failure.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.common.Failure)
 }
 Failure::Failure(const Failure& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -853,6 +890,8 @@ Failure::Failure(const Failure& from)
 }
 
 void Failure::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_Failure_messages_2dcommon_2eproto.base);
   message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   code_ = 1;
 }
@@ -869,13 +908,8 @@ void Failure::SharedDtor() {
 void Failure::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* Failure::descriptor() {
-  ::protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const Failure& Failure::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcommon_2eproto::scc_info_Failure.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_Failure_messages_2dcommon_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -887,7 +921,7 @@ void Failure::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       message_.ClearNonDefaultToEmptyNoArena();
     }
@@ -897,9 +931,74 @@ void Failure::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* Failure::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<Failure*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.common.Failure.FailureType code = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::common::Failure_FailureType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(1, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_code(static_cast<::hw::trezor::messages::common::Failure_FailureType>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string message = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.common.Failure.message");
+        object = msg->mutable_message();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool Failure::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.common.Failure)
   for (;;) {
@@ -909,9 +1008,8 @@ bool Failure::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.common.Failure.FailureType code = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -919,7 +1017,7 @@ bool Failure::MergePartialFromCodedStream(
             set_code(static_cast< ::hw::trezor::messages::common::Failure_FailureType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                1, static_cast< ::google::protobuf::uint64>(value));
+                1, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -929,8 +1027,7 @@ bool Failure::MergePartialFromCodedStream(
 
       // optional string message = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_message()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -962,6 +1059,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void Failure::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -994,8 +1092,7 @@ void Failure::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* Failure::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.common.Failure)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1035,16 +1132,21 @@ size_t Failure::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string message = 2;
-    if (has_message()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->message());
     }
 
     // optional .hw.trezor.messages.common.Failure.FailureType code = 1;
-    if (has_code()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->code());
     }
@@ -1059,9 +1161,9 @@ void Failure::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.common.Failure)
   GOOGLE_DCHECK_NE(&from, this);
   const Failure* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Failure>(
+      ::google::protobuf::DynamicCastToGenerated<Failure>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.common.Failure)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1078,9 +1180,9 @@ void Failure::MergeFrom(const Failure& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_message();
+      _has_bits_[0] |= 0x00000001u;
       message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.message_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -1114,16 +1216,16 @@ void Failure::Swap(Failure* other) {
 }
 void Failure::InternalSwap(Failure* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   message_.Swap(&other->message_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(code_, other->code_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata Failure::GetMetadata() const {
-  protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcommon_2eproto);
+  return ::file_level_metadata_messages_2dcommon_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1131,21 +1233,29 @@ void Failure::InternalSwap(Failure* other) {
 
 void ButtonRequest::InitAsDefaultInstance() {
 }
+class ButtonRequest::HasBitSetters {
+ public:
+  static void set_has_code(ButtonRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_data(ButtonRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ButtonRequest::kCodeFieldNumber;
 const int ButtonRequest::kDataFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ButtonRequest::ButtonRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcommon_2eproto::scc_info_ButtonRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.common.ButtonRequest)
 }
 ButtonRequest::ButtonRequest(const ButtonRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1157,6 +1267,8 @@ ButtonRequest::ButtonRequest(const ButtonRequest& from)
 }
 
 void ButtonRequest::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_ButtonRequest_messages_2dcommon_2eproto.base);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   code_ = 1;
 }
@@ -1173,13 +1285,8 @@ void ButtonRequest::SharedDtor() {
 void ButtonRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ButtonRequest::descriptor() {
-  ::protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ButtonRequest& ButtonRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcommon_2eproto::scc_info_ButtonRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ButtonRequest_messages_2dcommon_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1191,7 +1298,7 @@ void ButtonRequest::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       data_.ClearNonDefaultToEmptyNoArena();
     }
@@ -1201,9 +1308,74 @@ void ButtonRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ButtonRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ButtonRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.common.ButtonRequest.ButtonRequestType code = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::common::ButtonRequest_ButtonRequestType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(1, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_code(static_cast<::hw::trezor::messages::common::ButtonRequest_ButtonRequestType>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string data = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.common.ButtonRequest.data");
+        object = msg->mutable_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ButtonRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.common.ButtonRequest)
   for (;;) {
@@ -1213,9 +1385,8 @@ bool ButtonRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.common.ButtonRequest.ButtonRequestType code = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -1223,7 +1394,7 @@ bool ButtonRequest::MergePartialFromCodedStream(
             set_code(static_cast< ::hw::trezor::messages::common::ButtonRequest_ButtonRequestType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                1, static_cast< ::google::protobuf::uint64>(value));
+                1, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -1233,8 +1404,7 @@ bool ButtonRequest::MergePartialFromCodedStream(
 
       // optional string data = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_data()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1266,6 +1436,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ButtonRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1298,8 +1469,7 @@ void ButtonRequest::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* ButtonRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.common.ButtonRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1339,16 +1509,21 @@ size_t ButtonRequest::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string data = 2;
-    if (has_data()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->data());
     }
 
     // optional .hw.trezor.messages.common.ButtonRequest.ButtonRequestType code = 1;
-    if (has_code()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->code());
     }
@@ -1363,9 +1538,9 @@ void ButtonRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.common.ButtonRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const ButtonRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ButtonRequest>(
+      ::google::protobuf::DynamicCastToGenerated<ButtonRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.common.ButtonRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1382,9 +1557,9 @@ void ButtonRequest::MergeFrom(const ButtonRequest& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_data();
+      _has_bits_[0] |= 0x00000001u;
       data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -1418,16 +1593,16 @@ void ButtonRequest::Swap(ButtonRequest* other) {
 }
 void ButtonRequest::InternalSwap(ButtonRequest* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   data_.Swap(&other->data_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(code_, other->code_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ButtonRequest::GetMetadata() const {
-  protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcommon_2eproto);
+  return ::file_level_metadata_messages_2dcommon_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1435,19 +1610,21 @@ void ButtonRequest::InternalSwap(ButtonRequest* other) {
 
 void ButtonAck::InitAsDefaultInstance() {
 }
+class ButtonAck::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ButtonAck::ButtonAck()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcommon_2eproto::scc_info_ButtonAck.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.common.ButtonAck)
 }
 ButtonAck::ButtonAck(const ButtonAck& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.common.ButtonAck)
@@ -1467,13 +1644,8 @@ void ButtonAck::SharedDtor() {
 void ButtonAck::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ButtonAck::descriptor() {
-  ::protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ButtonAck& ButtonAck::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcommon_2eproto::scc_info_ButtonAck.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ButtonAck_messages_2dcommon_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1488,9 +1660,38 @@ void ButtonAck::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ButtonAck::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ButtonAck*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      default: {
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ButtonAck::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.common.ButtonAck)
   for (;;) {
@@ -1512,6 +1713,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ButtonAck::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1527,8 +1729,7 @@ void ButtonAck::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* ButtonAck::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.common.ButtonAck)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1550,6 +1751,10 @@ size_t ButtonAck::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1559,9 +1764,9 @@ void ButtonAck::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.common.ButtonAck)
   GOOGLE_DCHECK_NE(&from, this);
   const ButtonAck* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ButtonAck>(
+      ::google::protobuf::DynamicCastToGenerated<ButtonAck>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.common.ButtonAck)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1603,13 +1808,13 @@ void ButtonAck::Swap(ButtonAck* other) {
 }
 void ButtonAck::InternalSwap(ButtonAck* other) {
   using std::swap;
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
 }
 
 ::google::protobuf::Metadata ButtonAck::GetMetadata() const {
-  protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcommon_2eproto);
+  return ::file_level_metadata_messages_2dcommon_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1617,20 +1822,25 @@ void ButtonAck::InternalSwap(ButtonAck* other) {
 
 void PinMatrixRequest::InitAsDefaultInstance() {
 }
+class PinMatrixRequest::HasBitSetters {
+ public:
+  static void set_has_type(PinMatrixRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int PinMatrixRequest::kTypeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 PinMatrixRequest::PinMatrixRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcommon_2eproto::scc_info_PinMatrixRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.common.PinMatrixRequest)
 }
 PinMatrixRequest::PinMatrixRequest(const PinMatrixRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   type_ = from.type_;
@@ -1652,13 +1862,8 @@ void PinMatrixRequest::SharedDtor() {
 void PinMatrixRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* PinMatrixRequest::descriptor() {
-  ::protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const PinMatrixRequest& PinMatrixRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcommon_2eproto::scc_info_PinMatrixRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_PinMatrixRequest_messages_2dcommon_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1674,9 +1879,51 @@ void PinMatrixRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* PinMatrixRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<PinMatrixRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.common.PinMatrixRequest.PinMatrixRequestType type = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::common::PinMatrixRequest_PinMatrixRequestType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(1, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_type(static_cast<::hw::trezor::messages::common::PinMatrixRequest_PinMatrixRequestType>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool PinMatrixRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.common.PinMatrixRequest)
   for (;;) {
@@ -1686,9 +1933,8 @@ bool PinMatrixRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.common.PinMatrixRequest.PinMatrixRequestType type = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -1696,7 +1942,7 @@ bool PinMatrixRequest::MergePartialFromCodedStream(
             set_type(static_cast< ::hw::trezor::messages::common::PinMatrixRequest_PinMatrixRequestType >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                1, static_cast< ::google::protobuf::uint64>(value));
+                1, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -1723,6 +1969,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void PinMatrixRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1745,8 +1992,7 @@ void PinMatrixRequest::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* PinMatrixRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.common.PinMatrixRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1775,8 +2021,13 @@ size_t PinMatrixRequest::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional .hw.trezor.messages.common.PinMatrixRequest.PinMatrixRequestType type = 1;
-  if (has_type()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
   }
@@ -1790,9 +2041,9 @@ void PinMatrixRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.common.PinMatrixRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const PinMatrixRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const PinMatrixRequest>(
+      ::google::protobuf::DynamicCastToGenerated<PinMatrixRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.common.PinMatrixRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1837,14 +2088,14 @@ void PinMatrixRequest::Swap(PinMatrixRequest* other) {
 }
 void PinMatrixRequest::InternalSwap(PinMatrixRequest* other) {
   using std::swap;
-  swap(type_, other->type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(type_, other->type_);
 }
 
 ::google::protobuf::Metadata PinMatrixRequest::GetMetadata() const {
-  protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcommon_2eproto);
+  return ::file_level_metadata_messages_2dcommon_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1852,20 +2103,25 @@ void PinMatrixRequest::InternalSwap(PinMatrixRequest* other) {
 
 void PinMatrixAck::InitAsDefaultInstance() {
 }
+class PinMatrixAck::HasBitSetters {
+ public:
+  static void set_has_pin(PinMatrixAck* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int PinMatrixAck::kPinFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 PinMatrixAck::PinMatrixAck()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcommon_2eproto::scc_info_PinMatrixAck.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.common.PinMatrixAck)
 }
 PinMatrixAck::PinMatrixAck(const PinMatrixAck& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   pin_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1876,6 +2132,8 @@ PinMatrixAck::PinMatrixAck(const PinMatrixAck& from)
 }
 
 void PinMatrixAck::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_PinMatrixAck_messages_2dcommon_2eproto.base);
   pin_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1891,13 +2149,8 @@ void PinMatrixAck::SharedDtor() {
 void PinMatrixAck::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* PinMatrixAck::descriptor() {
-  ::protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const PinMatrixAck& PinMatrixAck::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcommon_2eproto::scc_info_PinMatrixAck.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_PinMatrixAck_messages_2dcommon_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1916,9 +2169,62 @@ void PinMatrixAck::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* PinMatrixAck::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<PinMatrixAck*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // required string pin = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.common.PinMatrixAck.pin");
+        object = msg->mutable_pin();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool PinMatrixAck::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.common.PinMatrixAck)
   for (;;) {
@@ -1928,8 +2234,7 @@ bool PinMatrixAck::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required string pin = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_pin()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1961,6 +2266,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void PinMatrixAck::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1987,8 +2293,7 @@ void PinMatrixAck::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* PinMatrixAck::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.common.PinMatrixAck)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2028,6 +2333,10 @@ size_t PinMatrixAck::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->pin());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2037,9 +2346,9 @@ void PinMatrixAck::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.common.PinMatrixAck)
   GOOGLE_DCHECK_NE(&from, this);
   const PinMatrixAck* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const PinMatrixAck>(
+      ::google::protobuf::DynamicCastToGenerated<PinMatrixAck>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.common.PinMatrixAck)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2056,7 +2365,7 @@ void PinMatrixAck::MergeFrom(const PinMatrixAck& from) {
   (void) cached_has_bits;
 
   if (from.has_pin()) {
-    set_has_pin();
+    _has_bits_[0] |= 0x00000001u;
     pin_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.pin_);
   }
 }
@@ -2086,15 +2395,15 @@ void PinMatrixAck::Swap(PinMatrixAck* other) {
 }
 void PinMatrixAck::InternalSwap(PinMatrixAck* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   pin_.Swap(&other->pin_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata PinMatrixAck::GetMetadata() const {
-  protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcommon_2eproto);
+  return ::file_level_metadata_messages_2dcommon_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2102,20 +2411,25 @@ void PinMatrixAck::InternalSwap(PinMatrixAck* other) {
 
 void PassphraseRequest::InitAsDefaultInstance() {
 }
+class PassphraseRequest::HasBitSetters {
+ public:
+  static void set_has_on_device(PassphraseRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int PassphraseRequest::kOnDeviceFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 PassphraseRequest::PassphraseRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcommon_2eproto::scc_info_PassphraseRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.common.PassphraseRequest)
 }
 PassphraseRequest::PassphraseRequest(const PassphraseRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   on_device_ = from.on_device_;
@@ -2137,13 +2451,8 @@ void PassphraseRequest::SharedDtor() {
 void PassphraseRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* PassphraseRequest::descriptor() {
-  ::protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const PassphraseRequest& PassphraseRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcommon_2eproto::scc_info_PassphraseRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_PassphraseRequest_messages_2dcommon_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2159,9 +2468,46 @@ void PassphraseRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* PassphraseRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<PassphraseRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bool on_device = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_on_device(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool PassphraseRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.common.PassphraseRequest)
   for (;;) {
@@ -2171,9 +2517,8 @@ bool PassphraseRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bool on_device = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_on_device();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_on_device(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &on_device_)));
@@ -2202,6 +2547,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void PassphraseRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2223,8 +2569,7 @@ void PassphraseRequest::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* PassphraseRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.common.PassphraseRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2252,8 +2597,13 @@ size_t PassphraseRequest::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional bool on_device = 1;
-  if (has_on_device()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -2266,9 +2616,9 @@ void PassphraseRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.common.PassphraseRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const PassphraseRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const PassphraseRequest>(
+      ::google::protobuf::DynamicCastToGenerated<PassphraseRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.common.PassphraseRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2313,14 +2663,14 @@ void PassphraseRequest::Swap(PassphraseRequest* other) {
 }
 void PassphraseRequest::InternalSwap(PassphraseRequest* other) {
   using std::swap;
-  swap(on_device_, other->on_device_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(on_device_, other->on_device_);
 }
 
 ::google::protobuf::Metadata PassphraseRequest::GetMetadata() const {
-  protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcommon_2eproto);
+  return ::file_level_metadata_messages_2dcommon_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2328,21 +2678,29 @@ void PassphraseRequest::InternalSwap(PassphraseRequest* other) {
 
 void PassphraseAck::InitAsDefaultInstance() {
 }
+class PassphraseAck::HasBitSetters {
+ public:
+  static void set_has_passphrase(PassphraseAck* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_state(PassphraseAck* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int PassphraseAck::kPassphraseFieldNumber;
 const int PassphraseAck::kStateFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 PassphraseAck::PassphraseAck()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcommon_2eproto::scc_info_PassphraseAck.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.common.PassphraseAck)
 }
 PassphraseAck::PassphraseAck(const PassphraseAck& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   passphrase_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2357,6 +2715,8 @@ PassphraseAck::PassphraseAck(const PassphraseAck& from)
 }
 
 void PassphraseAck::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_PassphraseAck_messages_2dcommon_2eproto.base);
   passphrase_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   state_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -2374,13 +2734,8 @@ void PassphraseAck::SharedDtor() {
 void PassphraseAck::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* PassphraseAck::descriptor() {
-  ::protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const PassphraseAck& PassphraseAck::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcommon_2eproto::scc_info_PassphraseAck.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_PassphraseAck_messages_2dcommon_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2392,7 +2747,7 @@ void PassphraseAck::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       passphrase_.ClearNonDefaultToEmptyNoArena();
     }
@@ -2404,9 +2759,77 @@ void PassphraseAck::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* PassphraseAck::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<PassphraseAck*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string passphrase = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.common.PassphraseAck.passphrase");
+        object = msg->mutable_passphrase();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes state = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_state();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool PassphraseAck::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.common.PassphraseAck)
   for (;;) {
@@ -2416,8 +2839,7 @@ bool PassphraseAck::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string passphrase = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_passphrase()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2432,8 +2854,7 @@ bool PassphraseAck::MergePartialFromCodedStream(
 
       // optional bytes state = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_state()));
         } else {
@@ -2461,6 +2882,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void PassphraseAck::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2493,8 +2915,7 @@ void PassphraseAck::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* PassphraseAck::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.common.PassphraseAck)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2535,16 +2956,21 @@ size_t PassphraseAck::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string passphrase = 1;
-    if (has_passphrase()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->passphrase());
     }
 
     // optional bytes state = 2;
-    if (has_state()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->state());
@@ -2560,9 +2986,9 @@ void PassphraseAck::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.common.PassphraseAck)
   GOOGLE_DCHECK_NE(&from, this);
   const PassphraseAck* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const PassphraseAck>(
+      ::google::protobuf::DynamicCastToGenerated<PassphraseAck>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.common.PassphraseAck)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2579,13 +3005,13 @@ void PassphraseAck::MergeFrom(const PassphraseAck& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_passphrase();
+      _has_bits_[0] |= 0x00000001u;
       passphrase_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.passphrase_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_state();
+      _has_bits_[0] |= 0x00000002u;
       state_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.state_);
     }
   }
@@ -2615,17 +3041,17 @@ void PassphraseAck::Swap(PassphraseAck* other) {
 }
 void PassphraseAck::InternalSwap(PassphraseAck* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   passphrase_.Swap(&other->passphrase_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   state_.Swap(&other->state_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata PassphraseAck::GetMetadata() const {
-  protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcommon_2eproto);
+  return ::file_level_metadata_messages_2dcommon_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2633,20 +3059,25 @@ void PassphraseAck::InternalSwap(PassphraseAck* other) {
 
 void PassphraseStateRequest::InitAsDefaultInstance() {
 }
+class PassphraseStateRequest::HasBitSetters {
+ public:
+  static void set_has_state(PassphraseStateRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int PassphraseStateRequest::kStateFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 PassphraseStateRequest::PassphraseStateRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcommon_2eproto::scc_info_PassphraseStateRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.common.PassphraseStateRequest)
 }
 PassphraseStateRequest::PassphraseStateRequest(const PassphraseStateRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   state_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2657,6 +3088,8 @@ PassphraseStateRequest::PassphraseStateRequest(const PassphraseStateRequest& fro
 }
 
 void PassphraseStateRequest::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_PassphraseStateRequest_messages_2dcommon_2eproto.base);
   state_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -2672,13 +3105,8 @@ void PassphraseStateRequest::SharedDtor() {
 void PassphraseStateRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* PassphraseStateRequest::descriptor() {
-  ::protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const PassphraseStateRequest& PassphraseStateRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcommon_2eproto::scc_info_PassphraseStateRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_PassphraseStateRequest_messages_2dcommon_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2697,9 +3125,61 @@ void PassphraseStateRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* PassphraseStateRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<PassphraseStateRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes state = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_state();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool PassphraseStateRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.common.PassphraseStateRequest)
   for (;;) {
@@ -2709,8 +3189,7 @@ bool PassphraseStateRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes state = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_state()));
         } else {
@@ -2738,6 +3217,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void PassphraseStateRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2760,8 +3240,7 @@ void PassphraseStateRequest::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* PassphraseStateRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.common.PassphraseStateRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2791,8 +3270,13 @@ size_t PassphraseStateRequest::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional bytes state = 1;
-  if (has_state()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->state());
@@ -2807,9 +3291,9 @@ void PassphraseStateRequest::MergeFrom(const ::google::protobuf::Message& from) 
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.common.PassphraseStateRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const PassphraseStateRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const PassphraseStateRequest>(
+      ::google::protobuf::DynamicCastToGenerated<PassphraseStateRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.common.PassphraseStateRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2826,7 +3310,7 @@ void PassphraseStateRequest::MergeFrom(const PassphraseStateRequest& from) {
   (void) cached_has_bits;
 
   if (from.has_state()) {
-    set_has_state();
+    _has_bits_[0] |= 0x00000001u;
     state_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.state_);
   }
 }
@@ -2855,15 +3339,15 @@ void PassphraseStateRequest::Swap(PassphraseStateRequest* other) {
 }
 void PassphraseStateRequest::InternalSwap(PassphraseStateRequest* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   state_.Swap(&other->state_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata PassphraseStateRequest::GetMetadata() const {
-  protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcommon_2eproto);
+  return ::file_level_metadata_messages_2dcommon_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2871,19 +3355,21 @@ void PassphraseStateRequest::InternalSwap(PassphraseStateRequest* other) {
 
 void PassphraseStateAck::InitAsDefaultInstance() {
 }
+class PassphraseStateAck::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 PassphraseStateAck::PassphraseStateAck()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcommon_2eproto::scc_info_PassphraseStateAck.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.common.PassphraseStateAck)
 }
 PassphraseStateAck::PassphraseStateAck(const PassphraseStateAck& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.common.PassphraseStateAck)
@@ -2903,13 +3389,8 @@ void PassphraseStateAck::SharedDtor() {
 void PassphraseStateAck::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* PassphraseStateAck::descriptor() {
-  ::protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const PassphraseStateAck& PassphraseStateAck::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcommon_2eproto::scc_info_PassphraseStateAck.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_PassphraseStateAck_messages_2dcommon_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2924,9 +3405,38 @@ void PassphraseStateAck::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* PassphraseStateAck::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<PassphraseStateAck*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      default: {
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool PassphraseStateAck::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.common.PassphraseStateAck)
   for (;;) {
@@ -2948,6 +3458,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void PassphraseStateAck::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2963,8 +3474,7 @@ void PassphraseStateAck::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* PassphraseStateAck::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.common.PassphraseStateAck)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2986,6 +3496,10 @@ size_t PassphraseStateAck::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2995,9 +3509,9 @@ void PassphraseStateAck::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.common.PassphraseStateAck)
   GOOGLE_DCHECK_NE(&from, this);
   const PassphraseStateAck* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const PassphraseStateAck>(
+      ::google::protobuf::DynamicCastToGenerated<PassphraseStateAck>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.common.PassphraseStateAck)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3039,13 +3553,13 @@ void PassphraseStateAck::Swap(PassphraseStateAck* other) {
 }
 void PassphraseStateAck::InternalSwap(PassphraseStateAck* other) {
   using std::swap;
-  swap(_has_bits_[0], other->_has_bits_[0]);
   _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
 }
 
 ::google::protobuf::Metadata PassphraseStateAck::GetMetadata() const {
-  protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcommon_2eproto);
+  return ::file_level_metadata_messages_2dcommon_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3053,6 +3567,28 @@ void PassphraseStateAck::InternalSwap(PassphraseStateAck* other) {
 
 void HDNodeType::InitAsDefaultInstance() {
 }
+class HDNodeType::HasBitSetters {
+ public:
+  static void set_has_depth(HDNodeType* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_fingerprint(HDNodeType* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_child_num(HDNodeType* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_chain_code(HDNodeType* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_private_key(HDNodeType* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_public_key(HDNodeType* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int HDNodeType::kDepthFieldNumber;
 const int HDNodeType::kFingerprintFieldNumber;
@@ -3063,15 +3599,13 @@ const int HDNodeType::kPublicKeyFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 HDNodeType::HDNodeType()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dcommon_2eproto::scc_info_HDNodeType.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.common.HDNodeType)
 }
 HDNodeType::HDNodeType(const HDNodeType& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   chain_code_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3093,6 +3627,8 @@ HDNodeType::HDNodeType(const HDNodeType& from)
 }
 
 void HDNodeType::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_HDNodeType_messages_2dcommon_2eproto.base);
   chain_code_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   private_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3115,13 +3651,8 @@ void HDNodeType::SharedDtor() {
 void HDNodeType::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* HDNodeType::descriptor() {
-  ::protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const HDNodeType& HDNodeType::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dcommon_2eproto::scc_info_HDNodeType.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_HDNodeType_messages_2dcommon_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3133,7 +3664,7 @@ void HDNodeType::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       chain_code_.ClearNonDefaultToEmptyNoArena();
     }
@@ -3144,7 +3675,7 @@ void HDNodeType::Clear() {
       public_key_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 56u) {
+  if (cached_has_bits & 0x00000038u) {
     ::memset(&depth_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&child_num_) -
         reinterpret_cast<char*>(&depth_)) + sizeof(child_num_));
@@ -3153,9 +3684,112 @@ void HDNodeType::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* HDNodeType::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<HDNodeType*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // required uint32 depth = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_depth(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // required uint32 fingerprint = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_fingerprint(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // required uint32 child_num = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_child_num(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // required bytes chain_code = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_chain_code();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes private_key = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_private_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes public_key = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool HDNodeType::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.common.HDNodeType)
   for (;;) {
@@ -3165,9 +3799,8 @@ bool HDNodeType::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required uint32 depth = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_depth();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_depth(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &depth_)));
@@ -3179,9 +3812,8 @@ bool HDNodeType::MergePartialFromCodedStream(
 
       // required uint32 fingerprint = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_fingerprint();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_fingerprint(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &fingerprint_)));
@@ -3193,9 +3825,8 @@ bool HDNodeType::MergePartialFromCodedStream(
 
       // required uint32 child_num = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_child_num();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_child_num(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &child_num_)));
@@ -3207,8 +3838,7 @@ bool HDNodeType::MergePartialFromCodedStream(
 
       // required bytes chain_code = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_chain_code()));
         } else {
@@ -3219,8 +3849,7 @@ bool HDNodeType::MergePartialFromCodedStream(
 
       // optional bytes private_key = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_private_key()));
         } else {
@@ -3231,8 +3860,7 @@ bool HDNodeType::MergePartialFromCodedStream(
 
       // optional bytes public_key = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_public_key()));
         } else {
@@ -3260,6 +3888,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void HDNodeType::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3309,8 +3938,7 @@ void HDNodeType::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* HDNodeType::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.common.HDNodeType)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3427,16 +4055,21 @@ size_t HDNodeType::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  if (_has_bits_[0 / 32] & 6u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000006u) {
     // optional bytes private_key = 5;
-    if (has_private_key()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->private_key());
     }
 
     // optional bytes public_key = 6;
-    if (has_public_key()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->public_key());
@@ -3452,9 +4085,9 @@ void HDNodeType::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.common.HDNodeType)
   GOOGLE_DCHECK_NE(&from, this);
   const HDNodeType* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const HDNodeType>(
+      ::google::protobuf::DynamicCastToGenerated<HDNodeType>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.common.HDNodeType)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3471,17 +4104,17 @@ void HDNodeType::MergeFrom(const HDNodeType& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 63u) {
+  if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_chain_code();
+      _has_bits_[0] |= 0x00000001u;
       chain_code_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.chain_code_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_private_key();
+      _has_bits_[0] |= 0x00000002u;
       private_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.private_key_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_public_key();
+      _has_bits_[0] |= 0x00000004u;
       public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
     }
     if (cached_has_bits & 0x00000008u) {
@@ -3522,6 +4155,8 @@ void HDNodeType::Swap(HDNodeType* other) {
 }
 void HDNodeType::InternalSwap(HDNodeType* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   chain_code_.Swap(&other->chain_code_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   private_key_.Swap(&other->private_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -3531,13 +4166,11 @@ void HDNodeType::InternalSwap(HDNodeType* other) {
   swap(depth_, other->depth_);
   swap(fingerprint_, other->fingerprint_);
   swap(child_num_, other->child_num_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata HDNodeType::GetMetadata() const {
-  protobuf_messages_2dcommon_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dcommon_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dcommon_2eproto);
+  return ::file_level_metadata_messages_2dcommon_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3548,40 +4181,41 @@ void HDNodeType::InternalSwap(HDNodeType* other) {
 }  // namespace hw
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::common::Success* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::Success >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::common::Success* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::Success >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::common::Success >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::common::Failure* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::Failure >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::common::Failure* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::Failure >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::common::Failure >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::common::ButtonRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::ButtonRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::common::ButtonRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::ButtonRequest >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::common::ButtonRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::common::ButtonAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::ButtonAck >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::common::ButtonAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::ButtonAck >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::common::ButtonAck >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::common::PinMatrixRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::PinMatrixRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::common::PinMatrixRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::PinMatrixRequest >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::common::PinMatrixRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::common::PinMatrixAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::PinMatrixAck >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::common::PinMatrixAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::PinMatrixAck >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::common::PinMatrixAck >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::common::PassphraseRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::PassphraseRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::common::PassphraseRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::PassphraseRequest >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::common::PassphraseRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::common::PassphraseAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::PassphraseAck >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::common::PassphraseAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::PassphraseAck >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::common::PassphraseAck >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::common::PassphraseStateRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::PassphraseStateRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::common::PassphraseStateRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::PassphraseStateRequest >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::common::PassphraseStateRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::common::PassphraseStateAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::PassphraseStateAck >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::common::PassphraseStateAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::PassphraseStateAck >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::common::PassphraseStateAck >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::common::HDNodeType* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::HDNodeType >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::common::HDNodeType* Arena::CreateMaybeMessage< ::hw::trezor::messages::common::HDNodeType >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::common::HDNodeType >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

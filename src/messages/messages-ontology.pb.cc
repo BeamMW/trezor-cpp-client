@@ -6,125 +6,100 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_messages_2dontology_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dontology_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dontology_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignOntIdRegister_OntologyOntIdRegister;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dontology_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignTransfer_OntologyTransfer;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dontology_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignWithdrawOng_OntologyWithdrawOng;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dontology_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_OntologyTransaction_OntologyTxAttribute;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dontology_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dontology_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_OntologyTransaction;
-}  // namespace protobuf_messages_2dontology_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dontology_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute_messages_2dontology_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dontology_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignOntIdRegister_OntologyOntIdRegister_messages_2dontology_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dontology_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignTransfer_OntologyTransfer_messages_2dontology_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dontology_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignWithdrawOng_OntologyWithdrawOng_messages_2dontology_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dontology_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_OntologyTransaction_OntologyTxAttribute_messages_2dontology_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dontology_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_messages_2dontology_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dontology_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_OntologyTransaction_messages_2dontology_2eproto;
 class OntologyTransaction_OntologyTxAttributeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologyTransaction_OntologyTxAttribute>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologyTransaction_OntologyTxAttribute> _instance;
 } _OntologyTransaction_OntologyTxAttribute_default_instance_;
 class OntologyTransactionDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologyTransaction>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologyTransaction> _instance;
 } _OntologyTransaction_default_instance_;
 class OntologyGetPublicKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologyGetPublicKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologyGetPublicKey> _instance;
 } _OntologyGetPublicKey_default_instance_;
 class OntologyPublicKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologyPublicKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologyPublicKey> _instance;
 } _OntologyPublicKey_default_instance_;
 class OntologyGetAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologyGetAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologyGetAddress> _instance;
 } _OntologyGetAddress_default_instance_;
 class OntologyAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologyAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologyAddress> _instance;
 } _OntologyAddress_default_instance_;
 class OntologySignTransfer_OntologyTransferDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignTransfer_OntologyTransfer>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignTransfer_OntologyTransfer> _instance;
 } _OntologySignTransfer_OntologyTransfer_default_instance_;
 class OntologySignTransferDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignTransfer>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignTransfer> _instance;
 } _OntologySignTransfer_default_instance_;
 class OntologySignedTransferDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignedTransfer>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignedTransfer> _instance;
 } _OntologySignedTransfer_default_instance_;
 class OntologySignWithdrawOng_OntologyWithdrawOngDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignWithdrawOng_OntologyWithdrawOng>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignWithdrawOng_OntologyWithdrawOng> _instance;
 } _OntologySignWithdrawOng_OntologyWithdrawOng_default_instance_;
 class OntologySignWithdrawOngDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignWithdrawOng>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignWithdrawOng> _instance;
 } _OntologySignWithdrawOng_default_instance_;
 class OntologySignedWithdrawOngDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignedWithdrawOng>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignedWithdrawOng> _instance;
 } _OntologySignedWithdrawOng_default_instance_;
 class OntologySignOntIdRegister_OntologyOntIdRegisterDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignOntIdRegister_OntologyOntIdRegister>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignOntIdRegister_OntologyOntIdRegister> _instance;
 } _OntologySignOntIdRegister_OntologyOntIdRegister_default_instance_;
 class OntologySignOntIdRegisterDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignOntIdRegister>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignOntIdRegister> _instance;
 } _OntologySignOntIdRegister_default_instance_;
 class OntologySignedOntIdRegisterDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignedOntIdRegister>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignedOntIdRegister> _instance;
 } _OntologySignedOntIdRegister_default_instance_;
 class OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttributeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute> _instance;
 } _OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute_default_instance_;
 class OntologySignOntIdAddAttributes_OntologyOntIdAddAttributesDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes> _instance;
 } _OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_default_instance_;
 class OntologySignOntIdAddAttributesDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignOntIdAddAttributes>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignOntIdAddAttributes> _instance;
 } _OntologySignOntIdAddAttributes_default_instance_;
 class OntologySignedOntIdAddAttributesDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignedOntIdAddAttributes>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<OntologySignedOntIdAddAttributes> _instance;
 } _OntologySignedOntIdAddAttributes_default_instance_;
-namespace protobuf_messages_2dontology_2eproto {
-static void InitDefaultsOntologyTransaction_OntologyTxAttribute() {
+static void InitDefaultsOntologyTransaction_OntologyTxAttribute_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -135,10 +110,10 @@ static void InitDefaultsOntologyTransaction_OntologyTxAttribute() {
   ::OntologyTransaction_OntologyTxAttribute::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OntologyTransaction_OntologyTxAttribute =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologyTransaction_OntologyTxAttribute}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OntologyTransaction_OntologyTxAttribute_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologyTransaction_OntologyTxAttribute_messages_2dontology_2eproto}, {}};
 
-static void InitDefaultsOntologyTransaction() {
+static void InitDefaultsOntologyTransaction_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -149,11 +124,11 @@ static void InitDefaultsOntologyTransaction() {
   ::OntologyTransaction::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_OntologyTransaction =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsOntologyTransaction}, {
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologyTransaction_OntologyTxAttribute.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_OntologyTransaction_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsOntologyTransaction_messages_2dontology_2eproto}, {
+      &scc_info_OntologyTransaction_OntologyTxAttribute_messages_2dontology_2eproto.base,}};
 
-static void InitDefaultsOntologyGetPublicKey() {
+static void InitDefaultsOntologyGetPublicKey_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -164,10 +139,10 @@ static void InitDefaultsOntologyGetPublicKey() {
   ::OntologyGetPublicKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OntologyGetPublicKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologyGetPublicKey}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OntologyGetPublicKey_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologyGetPublicKey_messages_2dontology_2eproto}, {}};
 
-static void InitDefaultsOntologyPublicKey() {
+static void InitDefaultsOntologyPublicKey_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -178,10 +153,10 @@ static void InitDefaultsOntologyPublicKey() {
   ::OntologyPublicKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OntologyPublicKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologyPublicKey}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OntologyPublicKey_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologyPublicKey_messages_2dontology_2eproto}, {}};
 
-static void InitDefaultsOntologyGetAddress() {
+static void InitDefaultsOntologyGetAddress_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -192,10 +167,10 @@ static void InitDefaultsOntologyGetAddress() {
   ::OntologyGetAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OntologyGetAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologyGetAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OntologyGetAddress_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologyGetAddress_messages_2dontology_2eproto}, {}};
 
-static void InitDefaultsOntologyAddress() {
+static void InitDefaultsOntologyAddress_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -206,10 +181,10 @@ static void InitDefaultsOntologyAddress() {
   ::OntologyAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OntologyAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologyAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OntologyAddress_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologyAddress_messages_2dontology_2eproto}, {}};
 
-static void InitDefaultsOntologySignTransfer_OntologyTransfer() {
+static void InitDefaultsOntologySignTransfer_OntologyTransfer_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -220,10 +195,10 @@ static void InitDefaultsOntologySignTransfer_OntologyTransfer() {
   ::OntologySignTransfer_OntologyTransfer::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignTransfer_OntologyTransfer =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignTransfer_OntologyTransfer}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignTransfer_OntologyTransfer_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignTransfer_OntologyTransfer_messages_2dontology_2eproto}, {}};
 
-static void InitDefaultsOntologySignTransfer() {
+static void InitDefaultsOntologySignTransfer_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -234,12 +209,12 @@ static void InitDefaultsOntologySignTransfer() {
   ::OntologySignTransfer::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_OntologySignTransfer =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsOntologySignTransfer}, {
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologyTransaction.base,
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignTransfer_OntologyTransfer.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_OntologySignTransfer_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsOntologySignTransfer_messages_2dontology_2eproto}, {
+      &scc_info_OntologyTransaction_messages_2dontology_2eproto.base,
+      &scc_info_OntologySignTransfer_OntologyTransfer_messages_2dontology_2eproto.base,}};
 
-static void InitDefaultsOntologySignedTransfer() {
+static void InitDefaultsOntologySignedTransfer_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -250,10 +225,10 @@ static void InitDefaultsOntologySignedTransfer() {
   ::OntologySignedTransfer::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignedTransfer =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignedTransfer}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignedTransfer_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignedTransfer_messages_2dontology_2eproto}, {}};
 
-static void InitDefaultsOntologySignWithdrawOng_OntologyWithdrawOng() {
+static void InitDefaultsOntologySignWithdrawOng_OntologyWithdrawOng_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -264,10 +239,10 @@ static void InitDefaultsOntologySignWithdrawOng_OntologyWithdrawOng() {
   ::OntologySignWithdrawOng_OntologyWithdrawOng::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignWithdrawOng_OntologyWithdrawOng =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignWithdrawOng_OntologyWithdrawOng}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignWithdrawOng_OntologyWithdrawOng_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignWithdrawOng_OntologyWithdrawOng_messages_2dontology_2eproto}, {}};
 
-static void InitDefaultsOntologySignWithdrawOng() {
+static void InitDefaultsOntologySignWithdrawOng_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -278,12 +253,12 @@ static void InitDefaultsOntologySignWithdrawOng() {
   ::OntologySignWithdrawOng::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_OntologySignWithdrawOng =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsOntologySignWithdrawOng}, {
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologyTransaction.base,
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignWithdrawOng_OntologyWithdrawOng.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_OntologySignWithdrawOng_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsOntologySignWithdrawOng_messages_2dontology_2eproto}, {
+      &scc_info_OntologyTransaction_messages_2dontology_2eproto.base,
+      &scc_info_OntologySignWithdrawOng_OntologyWithdrawOng_messages_2dontology_2eproto.base,}};
 
-static void InitDefaultsOntologySignedWithdrawOng() {
+static void InitDefaultsOntologySignedWithdrawOng_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -294,10 +269,10 @@ static void InitDefaultsOntologySignedWithdrawOng() {
   ::OntologySignedWithdrawOng::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignedWithdrawOng =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignedWithdrawOng}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignedWithdrawOng_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignedWithdrawOng_messages_2dontology_2eproto}, {}};
 
-static void InitDefaultsOntologySignOntIdRegister_OntologyOntIdRegister() {
+static void InitDefaultsOntologySignOntIdRegister_OntologyOntIdRegister_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -308,10 +283,10 @@ static void InitDefaultsOntologySignOntIdRegister_OntologyOntIdRegister() {
   ::OntologySignOntIdRegister_OntologyOntIdRegister::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignOntIdRegister_OntologyOntIdRegister =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignOntIdRegister_OntologyOntIdRegister}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignOntIdRegister_OntologyOntIdRegister_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignOntIdRegister_OntologyOntIdRegister_messages_2dontology_2eproto}, {}};
 
-static void InitDefaultsOntologySignOntIdRegister() {
+static void InitDefaultsOntologySignOntIdRegister_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -322,12 +297,12 @@ static void InitDefaultsOntologySignOntIdRegister() {
   ::OntologySignOntIdRegister::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_OntologySignOntIdRegister =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsOntologySignOntIdRegister}, {
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologyTransaction.base,
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignOntIdRegister_OntologyOntIdRegister.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_OntologySignOntIdRegister_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsOntologySignOntIdRegister_messages_2dontology_2eproto}, {
+      &scc_info_OntologyTransaction_messages_2dontology_2eproto.base,
+      &scc_info_OntologySignOntIdRegister_OntologyOntIdRegister_messages_2dontology_2eproto.base,}};
 
-static void InitDefaultsOntologySignedOntIdRegister() {
+static void InitDefaultsOntologySignedOntIdRegister_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -338,10 +313,10 @@ static void InitDefaultsOntologySignedOntIdRegister() {
   ::OntologySignedOntIdRegister::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignedOntIdRegister =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignedOntIdRegister}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignedOntIdRegister_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignedOntIdRegister_messages_2dontology_2eproto}, {}};
 
-static void InitDefaultsOntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute() {
+static void InitDefaultsOntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -352,10 +327,10 @@ static void InitDefaultsOntologySignOntIdAddAttributes_OntologyOntIdAddAttribute
   ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute_messages_2dontology_2eproto}, {}};
 
-static void InitDefaultsOntologySignOntIdAddAttributes_OntologyOntIdAddAttributes() {
+static void InitDefaultsOntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -366,11 +341,11 @@ static void InitDefaultsOntologySignOntIdAddAttributes_OntologyOntIdAddAttribute
   ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsOntologySignOntIdAddAttributes_OntologyOntIdAddAttributes}, {
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsOntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_messages_2dontology_2eproto}, {
+      &scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute_messages_2dontology_2eproto.base,}};
 
-static void InitDefaultsOntologySignOntIdAddAttributes() {
+static void InitDefaultsOntologySignOntIdAddAttributes_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -381,12 +356,12 @@ static void InitDefaultsOntologySignOntIdAddAttributes() {
   ::OntologySignOntIdAddAttributes::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<2> scc_info_OntologySignOntIdAddAttributes =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsOntologySignOntIdAddAttributes}, {
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologyTransaction.base,
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_OntologySignOntIdAddAttributes_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsOntologySignOntIdAddAttributes_messages_2dontology_2eproto}, {
+      &scc_info_OntologyTransaction_messages_2dontology_2eproto.base,
+      &scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_messages_2dontology_2eproto.base,}};
 
-static void InitDefaultsOntologySignedOntIdAddAttributes() {
+static void InitDefaultsOntologySignedOntIdAddAttributes_messages_2dontology_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -397,56 +372,57 @@ static void InitDefaultsOntologySignedOntIdAddAttributes() {
   ::OntologySignedOntIdAddAttributes::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignedOntIdAddAttributes =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignedOntIdAddAttributes}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_OntologySignedOntIdAddAttributes_messages_2dontology_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsOntologySignedOntIdAddAttributes_messages_2dontology_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologyTransaction_OntologyTxAttribute.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologyTransaction.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologyGetPublicKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologyPublicKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologyGetAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologyAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignTransfer_OntologyTransfer.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignTransfer.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignedTransfer.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignWithdrawOng_OntologyWithdrawOng.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignWithdrawOng.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignedWithdrawOng.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignOntIdRegister_OntologyOntIdRegister.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignOntIdRegister.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignedOntIdRegister.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignOntIdAddAttributes.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignedOntIdAddAttributes.base);
+void InitDefaults_messages_2dontology_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologyTransaction_OntologyTxAttribute_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologyTransaction_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologyGetPublicKey_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologyPublicKey_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologyGetAddress_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologyAddress_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignTransfer_OntologyTransfer_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignTransfer_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignedTransfer_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignWithdrawOng_OntologyWithdrawOng_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignWithdrawOng_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignedWithdrawOng_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignOntIdRegister_OntologyOntIdRegister_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignOntIdRegister_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignedOntIdRegister_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignOntIdAddAttributes_messages_2dontology_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_OntologySignedOntIdAddAttributes_messages_2dontology_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[19];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+::google::protobuf::Metadata file_level_metadata_messages_2dontology_2eproto[19];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors_messages_2dontology_2eproto[1];
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2dontology_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyTransaction_OntologyTxAttribute, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyTransaction_OntologyTxAttribute, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_messages_2dontology_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::OntologyTransaction_OntologyTxAttribute, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologyTransaction_OntologyTxAttribute, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyTransaction_OntologyTxAttribute, usage_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyTransaction_OntologyTxAttribute, data_),
+  PROTOBUF_FIELD_OFFSET(::OntologyTransaction_OntologyTxAttribute, usage_),
+  PROTOBUF_FIELD_OFFSET(::OntologyTransaction_OntologyTxAttribute, data_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyTransaction, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyTransaction, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologyTransaction, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologyTransaction, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyTransaction, version_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyTransaction, type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyTransaction, nonce_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyTransaction, gas_price_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyTransaction, gas_limit_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyTransaction, payer_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyTransaction, tx_attributes_),
+  PROTOBUF_FIELD_OFFSET(::OntologyTransaction, version_),
+  PROTOBUF_FIELD_OFFSET(::OntologyTransaction, type_),
+  PROTOBUF_FIELD_OFFSET(::OntologyTransaction, nonce_),
+  PROTOBUF_FIELD_OFFSET(::OntologyTransaction, gas_price_),
+  PROTOBUF_FIELD_OFFSET(::OntologyTransaction, gas_limit_),
+  PROTOBUF_FIELD_OFFSET(::OntologyTransaction, payer_),
+  PROTOBUF_FIELD_OFFSET(::OntologyTransaction, tx_attributes_),
   1,
   2,
   5,
@@ -454,175 +430,175 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   4,
   0,
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyGetPublicKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyGetPublicKey, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologyGetPublicKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologyGetPublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyGetPublicKey, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyGetPublicKey, show_display_),
+  PROTOBUF_FIELD_OFFSET(::OntologyGetPublicKey, address_n_),
+  PROTOBUF_FIELD_OFFSET(::OntologyGetPublicKey, show_display_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyPublicKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyPublicKey, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologyPublicKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologyPublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyPublicKey, public_key_),
+  PROTOBUF_FIELD_OFFSET(::OntologyPublicKey, public_key_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyGetAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyGetAddress, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologyGetAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologyGetAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyGetAddress, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyGetAddress, show_display_),
+  PROTOBUF_FIELD_OFFSET(::OntologyGetAddress, address_n_),
+  PROTOBUF_FIELD_OFFSET(::OntologyGetAddress, show_display_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyAddress, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologyAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologyAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologyAddress, address_),
+  PROTOBUF_FIELD_OFFSET(::OntologyAddress, address_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignTransfer_OntologyTransfer, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignTransfer_OntologyTransfer, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignTransfer_OntologyTransfer, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignTransfer_OntologyTransfer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignTransfer_OntologyTransfer, asset_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignTransfer_OntologyTransfer, amount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignTransfer_OntologyTransfer, from_address_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignTransfer_OntologyTransfer, to_address_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignTransfer_OntologyTransfer, asset_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignTransfer_OntologyTransfer, amount_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignTransfer_OntologyTransfer, from_address_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignTransfer_OntologyTransfer, to_address_),
   3,
   2,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignTransfer, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignTransfer, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignTransfer, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignTransfer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignTransfer, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignTransfer, transaction_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignTransfer, transfer_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignTransfer, address_n_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignTransfer, transaction_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignTransfer, transfer_),
   ~0u,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedTransfer, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedTransfer, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedTransfer, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedTransfer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedTransfer, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedTransfer, payload_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedTransfer, signature_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedTransfer, payload_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignWithdrawOng_OntologyWithdrawOng, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignWithdrawOng_OntologyWithdrawOng, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignWithdrawOng_OntologyWithdrawOng, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignWithdrawOng_OntologyWithdrawOng, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignWithdrawOng_OntologyWithdrawOng, amount_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignWithdrawOng_OntologyWithdrawOng, from_address_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignWithdrawOng_OntologyWithdrawOng, to_address_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignWithdrawOng_OntologyWithdrawOng, amount_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignWithdrawOng_OntologyWithdrawOng, from_address_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignWithdrawOng_OntologyWithdrawOng, to_address_),
   2,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignWithdrawOng, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignWithdrawOng, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignWithdrawOng, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignWithdrawOng, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignWithdrawOng, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignWithdrawOng, transaction_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignWithdrawOng, withdraw_ong_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignWithdrawOng, address_n_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignWithdrawOng, transaction_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignWithdrawOng, withdraw_ong_),
   ~0u,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedWithdrawOng, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedWithdrawOng, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedWithdrawOng, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedWithdrawOng, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedWithdrawOng, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedWithdrawOng, payload_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedWithdrawOng, signature_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedWithdrawOng, payload_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdRegister_OntologyOntIdRegister, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdRegister_OntologyOntIdRegister, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdRegister_OntologyOntIdRegister, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdRegister_OntologyOntIdRegister, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdRegister_OntologyOntIdRegister, ont_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdRegister_OntologyOntIdRegister, public_key_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdRegister_OntologyOntIdRegister, ont_id_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdRegister_OntologyOntIdRegister, public_key_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdRegister, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdRegister, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdRegister, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdRegister, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdRegister, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdRegister, transaction_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdRegister, ont_id_register_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdRegister, address_n_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdRegister, transaction_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdRegister, ont_id_register_),
   ~0u,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedOntIdRegister, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedOntIdRegister, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedOntIdRegister, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedOntIdRegister, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedOntIdRegister, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedOntIdRegister, payload_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedOntIdRegister, signature_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedOntIdRegister, payload_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute, key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute, type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute, value_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute, key_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute, type_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute, value_),
   0,
   1,
   2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes, ont_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes, public_key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes, ont_id_attributes_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes, ont_id_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes, public_key_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes, ont_id_attributes_),
   0,
   1,
   ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes, transaction_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignOntIdAddAttributes, ont_id_add_attributes_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes, address_n_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes, transaction_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignOntIdAddAttributes, ont_id_add_attributes_),
   ~0u,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedOntIdAddAttributes, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedOntIdAddAttributes, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedOntIdAddAttributes, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedOntIdAddAttributes, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedOntIdAddAttributes, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::OntologySignedOntIdAddAttributes, payload_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedOntIdAddAttributes, signature_),
+  PROTOBUF_FIELD_OFFSET(::OntologySignedOntIdAddAttributes, payload_),
   0,
   1,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::OntologyTransaction_OntologyTxAttribute)},
   { 9, 21, sizeof(::OntologyTransaction)},
   { 28, 35, sizeof(::OntologyGetPublicKey)},
@@ -666,99 +642,83 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::_OntologySignedOntIdAddAttributes_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "messages-ontology.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2dontology_2eproto = {
+  {}, AddDescriptors_messages_2dontology_2eproto, "messages-ontology.proto", schemas,
+  file_default_instances, TableStruct_messages_2dontology_2eproto::offsets,
+  file_level_metadata_messages_2dontology_2eproto, 19, file_level_enum_descriptors_messages_2dontology_2eproto, file_level_service_descriptors_messages_2dontology_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_messages_2dontology_2eproto[] =
+  "\n\027messages-ontology.proto\"\355\001\n\023OntologyTr"
+  "ansaction\022\017\n\007version\030\001 \001(\r\022\014\n\004type\030\002 \001(\r"
+  "\022\r\n\005nonce\030\003 \001(\r\022\021\n\tgas_price\030\004 \001(\004\022\021\n\tga"
+  "s_limit\030\005 \001(\004\022\r\n\005payer\030\006 \001(\t\022\?\n\rtx_attri"
+  "butes\030\007 \003(\0132(.OntologyTransaction.Ontolo"
+  "gyTxAttribute\0322\n\023OntologyTxAttribute\022\r\n\005"
+  "usage\030\001 \001(\r\022\014\n\004data\030\002 \001(\014\"\?\n\024OntologyGet"
+  "PublicKey\022\021\n\taddress_n\030\001 \003(\r\022\024\n\014show_dis"
+  "play\030\002 \001(\010\"\'\n\021OntologyPublicKey\022\022\n\npubli"
+  "c_key\030\001 \001(\014\"=\n\022OntologyGetAddress\022\021\n\tadd"
+  "ress_n\030\001 \003(\r\022\024\n\014show_display\030\002 \001(\010\"\"\n\017On"
+  "tologyAddress\022\017\n\007address\030\001 \001(\t\"\305\002\n\024Ontol"
+  "ogySignTransfer\022\021\n\taddress_n\030\001 \003(\r\022)\n\013tr"
+  "ansaction\030\002 \001(\0132\024.OntologyTransaction\0228\n"
+  "\010transfer\030\003 \001(\0132&.OntologySignTransfer.O"
+  "ntologyTransfer\032\264\001\n\020OntologyTransfer\022C\n\005"
+  "asset\030\001 \001(\01624.OntologySignTransfer.Ontol"
+  "ogyTransfer.OntologyAsset\022\016\n\006amount\030\002 \001("
+  "\004\022\024\n\014from_address\030\003 \001(\t\022\022\n\nto_address\030\004 "
+  "\001(\t\"!\n\rOntologyAsset\022\007\n\003ONT\020\001\022\007\n\003ONG\020\002\"<"
+  "\n\026OntologySignedTransfer\022\021\n\tsignature\030\001 "
+  "\001(\014\022\017\n\007payload\030\002 \001(\014\"\354\001\n\027OntologySignWit"
+  "hdrawOng\022\021\n\taddress_n\030\001 \003(\r\022)\n\013transacti"
+  "on\030\002 \001(\0132\024.OntologyTransaction\022B\n\014withdr"
+  "aw_ong\030\003 \001(\0132,.OntologySignWithdrawOng.O"
+  "ntologyWithdrawOng\032O\n\023OntologyWithdrawOn"
+  "g\022\016\n\006amount\030\001 \001(\004\022\024\n\014from_address\030\002 \001(\t\022"
+  "\022\n\nto_address\030\003 \001(\t\"\?\n\031OntologySignedWit"
+  "hdrawOng\022\021\n\tsignature\030\001 \001(\014\022\017\n\007payload\030\002"
+  " \001(\014\"\341\001\n\031OntologySignOntIdRegister\022\021\n\tad"
+  "dress_n\030\001 \003(\r\022)\n\013transaction\030\002 \001(\0132\024.Ont"
+  "ologyTransaction\022I\n\017ont_id_register\030\003 \001("
+  "\01320.OntologySignOntIdRegister.OntologyOn"
+  "tIdRegister\032;\n\025OntologyOntIdRegister\022\016\n\006"
+  "ont_id\030\001 \001(\t\022\022\n\npublic_key\030\002 \001(\014\"A\n\033Onto"
+  "logySignedOntIdRegister\022\021\n\tsignature\030\001 \001"
+  "(\014\022\017\n\007payload\030\002 \001(\014\"\256\003\n\036OntologySignOntI"
+  "dAddAttributes\022\021\n\taddress_n\030\001 \003(\r\022)\n\013tra"
+  "nsaction\030\002 \001(\0132\024.OntologyTransaction\022Y\n\025"
+  "ont_id_add_attributes\030\003 \001(\0132:.OntologySi"
+  "gnOntIdAddAttributes.OntologyOntIdAddAtt"
+  "ributes\032\362\001\n\032OntologyOntIdAddAttributes\022\016"
+  "\n\006ont_id\030\001 \001(\t\022\022\n\npublic_key\030\002 \001(\014\022l\n\021on"
+  "t_id_attributes\030\003 \003(\0132Q.OntologySignOntI"
+  "dAddAttributes.OntologyOntIdAddAttribute"
+  "s.OntologyOntIdAttribute\032B\n\026OntologyOntI"
+  "dAttribute\022\013\n\003key\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\r\n"
+  "\005value\030\003 \001(\t\"F\n OntologySignedOntIdAddAt"
+  "tributes\022\021\n\tsignature\030\001 \001(\014\022\017\n\007payload\030\002"
+  " \001(\014B<\n#com.satoshilabs.trezor.lib.proto"
+  "bufB\025TrezorMessageOntology"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dontology_2eproto = {
+  false, InitDefaults_messages_2dontology_2eproto, 
+  descriptor_table_protodef_messages_2dontology_2eproto,
+  "messages-ontology.proto", &assign_descriptors_table_messages_2dontology_2eproto, 2026,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 19);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\027messages-ontology.proto\"\355\001\n\023OntologyTr"
-      "ansaction\022\017\n\007version\030\001 \001(\r\022\014\n\004type\030\002 \001(\r"
-      "\022\r\n\005nonce\030\003 \001(\r\022\021\n\tgas_price\030\004 \001(\004\022\021\n\tga"
-      "s_limit\030\005 \001(\004\022\r\n\005payer\030\006 \001(\t\022\?\n\rtx_attri"
-      "butes\030\007 \003(\0132(.OntologyTransaction.Ontolo"
-      "gyTxAttribute\0322\n\023OntologyTxAttribute\022\r\n\005"
-      "usage\030\001 \001(\r\022\014\n\004data\030\002 \001(\014\"\?\n\024OntologyGet"
-      "PublicKey\022\021\n\taddress_n\030\001 \003(\r\022\024\n\014show_dis"
-      "play\030\002 \001(\010\"\'\n\021OntologyPublicKey\022\022\n\npubli"
-      "c_key\030\001 \001(\014\"=\n\022OntologyGetAddress\022\021\n\tadd"
-      "ress_n\030\001 \003(\r\022\024\n\014show_display\030\002 \001(\010\"\"\n\017On"
-      "tologyAddress\022\017\n\007address\030\001 \001(\t\"\305\002\n\024Ontol"
-      "ogySignTransfer\022\021\n\taddress_n\030\001 \003(\r\022)\n\013tr"
-      "ansaction\030\002 \001(\0132\024.OntologyTransaction\0228\n"
-      "\010transfer\030\003 \001(\0132&.OntologySignTransfer.O"
-      "ntologyTransfer\032\264\001\n\020OntologyTransfer\022C\n\005"
-      "asset\030\001 \001(\01624.OntologySignTransfer.Ontol"
-      "ogyTransfer.OntologyAsset\022\016\n\006amount\030\002 \001("
-      "\004\022\024\n\014from_address\030\003 \001(\t\022\022\n\nto_address\030\004 "
-      "\001(\t\"!\n\rOntologyAsset\022\007\n\003ONT\020\001\022\007\n\003ONG\020\002\"<"
-      "\n\026OntologySignedTransfer\022\021\n\tsignature\030\001 "
-      "\001(\014\022\017\n\007payload\030\002 \001(\014\"\354\001\n\027OntologySignWit"
-      "hdrawOng\022\021\n\taddress_n\030\001 \003(\r\022)\n\013transacti"
-      "on\030\002 \001(\0132\024.OntologyTransaction\022B\n\014withdr"
-      "aw_ong\030\003 \001(\0132,.OntologySignWithdrawOng.O"
-      "ntologyWithdrawOng\032O\n\023OntologyWithdrawOn"
-      "g\022\016\n\006amount\030\001 \001(\004\022\024\n\014from_address\030\002 \001(\t\022"
-      "\022\n\nto_address\030\003 \001(\t\"\?\n\031OntologySignedWit"
-      "hdrawOng\022\021\n\tsignature\030\001 \001(\014\022\017\n\007payload\030\002"
-      " \001(\014\"\341\001\n\031OntologySignOntIdRegister\022\021\n\tad"
-      "dress_n\030\001 \003(\r\022)\n\013transaction\030\002 \001(\0132\024.Ont"
-      "ologyTransaction\022I\n\017ont_id_register\030\003 \001("
-      "\01320.OntologySignOntIdRegister.OntologyOn"
-      "tIdRegister\032;\n\025OntologyOntIdRegister\022\016\n\006"
-      "ont_id\030\001 \001(\t\022\022\n\npublic_key\030\002 \001(\014\"A\n\033Onto"
-      "logySignedOntIdRegister\022\021\n\tsignature\030\001 \001"
-      "(\014\022\017\n\007payload\030\002 \001(\014\"\256\003\n\036OntologySignOntI"
-      "dAddAttributes\022\021\n\taddress_n\030\001 \003(\r\022)\n\013tra"
-      "nsaction\030\002 \001(\0132\024.OntologyTransaction\022Y\n\025"
-      "ont_id_add_attributes\030\003 \001(\0132:.OntologySi"
-      "gnOntIdAddAttributes.OntologyOntIdAddAtt"
-      "ributes\032\362\001\n\032OntologyOntIdAddAttributes\022\016"
-      "\n\006ont_id\030\001 \001(\t\022\022\n\npublic_key\030\002 \001(\014\022l\n\021on"
-      "t_id_attributes\030\003 \003(\0132Q.OntologySignOntI"
-      "dAddAttributes.OntologyOntIdAddAttribute"
-      "s.OntologyOntIdAttribute\032B\n\026OntologyOntI"
-      "dAttribute\022\013\n\003key\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\r\n"
-      "\005value\030\003 \001(\t\"F\n OntologySignedOntIdAddAt"
-      "tributes\022\021\n\tsignature\030\001 \001(\014\022\017\n\007payload\030\002"
-      " \001(\014B<\n#com.satoshilabs.trezor.lib.proto"
-      "bufB\025TrezorMessageOntology"
+void AddDescriptors_messages_2dontology_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 2026);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "messages-ontology.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_messages_2dontology_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_messages_2dontology_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_messages_2dontology_2eproto = []() { AddDescriptors_messages_2dontology_2eproto(); return true; }();
 const ::google::protobuf::EnumDescriptor* OntologySignTransfer_OntologyTransfer_OntologyAsset_descriptor() {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_messages_2dontology_2eproto::file_level_enum_descriptors[0];
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dontology_2eproto);
+  return file_level_enum_descriptors_messages_2dontology_2eproto[0];
 }
 bool OntologySignTransfer_OntologyTransfer_OntologyAsset_IsValid(int value) {
   switch (value) {
@@ -782,21 +742,29 @@ const int OntologySignTransfer_OntologyTransfer::OntologyAsset_ARRAYSIZE;
 
 void OntologyTransaction_OntologyTxAttribute::InitAsDefaultInstance() {
 }
+class OntologyTransaction_OntologyTxAttribute::HasBitSetters {
+ public:
+  static void set_has_usage(OntologyTransaction_OntologyTxAttribute* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_data(OntologyTransaction_OntologyTxAttribute* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologyTransaction_OntologyTxAttribute::kUsageFieldNumber;
 const int OntologyTransaction_OntologyTxAttribute::kDataFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologyTransaction_OntologyTxAttribute::OntologyTransaction_OntologyTxAttribute()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologyTransaction_OntologyTxAttribute.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologyTransaction.OntologyTxAttribute)
 }
 OntologyTransaction_OntologyTxAttribute::OntologyTransaction_OntologyTxAttribute(const OntologyTransaction_OntologyTxAttribute& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -808,6 +776,8 @@ OntologyTransaction_OntologyTxAttribute::OntologyTransaction_OntologyTxAttribute
 }
 
 void OntologyTransaction_OntologyTxAttribute::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologyTransaction_OntologyTxAttribute_messages_2dontology_2eproto.base);
   data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   usage_ = 0u;
 }
@@ -824,13 +794,8 @@ void OntologyTransaction_OntologyTxAttribute::SharedDtor() {
 void OntologyTransaction_OntologyTxAttribute::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologyTransaction_OntologyTxAttribute::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologyTransaction_OntologyTxAttribute& OntologyTransaction_OntologyTxAttribute::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologyTransaction_OntologyTxAttribute.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologyTransaction_OntologyTxAttribute_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -850,9 +815,68 @@ void OntologyTransaction_OntologyTxAttribute::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologyTransaction_OntologyTxAttribute::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologyTransaction_OntologyTxAttribute*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 usage = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_usage(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes data = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_data();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologyTransaction_OntologyTxAttribute::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologyTransaction.OntologyTxAttribute)
   for (;;) {
@@ -862,9 +886,8 @@ bool OntologyTransaction_OntologyTxAttribute::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 usage = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_usage();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_usage(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &usage_)));
@@ -876,8 +899,7 @@ bool OntologyTransaction_OntologyTxAttribute::MergePartialFromCodedStream(
 
       // optional bytes data = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_data()));
         } else {
@@ -905,6 +927,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologyTransaction_OntologyTxAttribute::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -932,8 +955,7 @@ void OntologyTransaction_OntologyTxAttribute::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologyTransaction_OntologyTxAttribute::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologyTransaction.OntologyTxAttribute)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -968,16 +990,21 @@ size_t OntologyTransaction_OntologyTxAttribute::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes data = 2;
-    if (has_data()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->data());
     }
 
     // optional uint32 usage = 1;
-    if (has_usage()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->usage());
@@ -993,9 +1020,9 @@ void OntologyTransaction_OntologyTxAttribute::MergeFrom(const ::google::protobuf
 // @@protoc_insertion_point(generalized_merge_from_start:OntologyTransaction.OntologyTxAttribute)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologyTransaction_OntologyTxAttribute* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologyTransaction_OntologyTxAttribute>(
+      ::google::protobuf::DynamicCastToGenerated<OntologyTransaction_OntologyTxAttribute>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologyTransaction.OntologyTxAttribute)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1012,9 +1039,9 @@ void OntologyTransaction_OntologyTxAttribute::MergeFrom(const OntologyTransactio
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_data();
+      _has_bits_[0] |= 0x00000001u;
       data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -1048,16 +1075,16 @@ void OntologyTransaction_OntologyTxAttribute::Swap(OntologyTransaction_OntologyT
 }
 void OntologyTransaction_OntologyTxAttribute::InternalSwap(OntologyTransaction_OntologyTxAttribute* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   data_.Swap(&other->data_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(usage_, other->usage_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologyTransaction_OntologyTxAttribute::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1065,6 +1092,28 @@ void OntologyTransaction_OntologyTxAttribute::InternalSwap(OntologyTransaction_O
 
 void OntologyTransaction::InitAsDefaultInstance() {
 }
+class OntologyTransaction::HasBitSetters {
+ public:
+  static void set_has_version(OntologyTransaction* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_type(OntologyTransaction* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_nonce(OntologyTransaction* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_gas_price(OntologyTransaction* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_gas_limit(OntologyTransaction* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_payer(OntologyTransaction* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologyTransaction::kVersionFieldNumber;
 const int OntologyTransaction::kTypeFieldNumber;
@@ -1076,15 +1125,13 @@ const int OntologyTransaction::kTxAttributesFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologyTransaction::OntologyTransaction()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologyTransaction.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologyTransaction)
 }
 OntologyTransaction::OntologyTransaction(const OntologyTransaction& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       tx_attributes_(from.tx_attributes_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -1099,6 +1146,8 @@ OntologyTransaction::OntologyTransaction(const OntologyTransaction& from)
 }
 
 void OntologyTransaction::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologyTransaction_messages_2dontology_2eproto.base);
   payer_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&version_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&nonce_) -
@@ -1117,13 +1166,8 @@ void OntologyTransaction::SharedDtor() {
 void OntologyTransaction::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologyTransaction::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologyTransaction& OntologyTransaction::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologyTransaction.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologyTransaction_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1139,7 +1183,7 @@ void OntologyTransaction::Clear() {
   if (cached_has_bits & 0x00000001u) {
     payer_.ClearNonDefaultToEmptyNoArena();
   }
-  if (cached_has_bits & 62u) {
+  if (cached_has_bits & 0x0000003eu) {
     ::memset(&version_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&nonce_) -
         reinterpret_cast<char*>(&version_)) + sizeof(nonce_));
@@ -1148,9 +1192,113 @@ void OntologyTransaction::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologyTransaction::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologyTransaction*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 version = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_version(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 type = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 nonce = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_nonce(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 gas_price = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_gas_price(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 gas_limit = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_gas_limit(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string payer = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("OntologyTransaction.payer");
+        object = msg->mutable_payer();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // repeated .OntologyTransaction.OntologyTxAttribute tx_attributes = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 58) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::OntologyTransaction_OntologyTxAttribute::_InternalParse;
+          object = msg->add_tx_attributes();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 58 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologyTransaction::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologyTransaction)
   for (;;) {
@@ -1160,9 +1308,8 @@ bool OntologyTransaction::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 version = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_version();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_version(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &version_)));
@@ -1174,9 +1321,8 @@ bool OntologyTransaction::MergePartialFromCodedStream(
 
       // optional uint32 type = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &type_)));
@@ -1188,9 +1334,8 @@ bool OntologyTransaction::MergePartialFromCodedStream(
 
       // optional uint32 nonce = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_nonce();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_nonce(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &nonce_)));
@@ -1202,9 +1347,8 @@ bool OntologyTransaction::MergePartialFromCodedStream(
 
       // optional uint64 gas_price = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_gas_price();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_gas_price(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &gas_price_)));
@@ -1216,9 +1360,8 @@ bool OntologyTransaction::MergePartialFromCodedStream(
 
       // optional uint64 gas_limit = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(40u /* 40 & 0xFF */)) {
-          set_has_gas_limit();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_gas_limit(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &gas_limit_)));
@@ -1230,8 +1373,7 @@ bool OntologyTransaction::MergePartialFromCodedStream(
 
       // optional string payer = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_payer()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1246,8 +1388,7 @@ bool OntologyTransaction::MergePartialFromCodedStream(
 
       // repeated .OntologyTransaction.OntologyTxAttribute tx_attributes = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (58 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_tx_attributes()));
         } else {
@@ -1275,6 +1416,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologyTransaction::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1335,8 +1477,7 @@ void OntologyTransaction::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologyTransaction::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologyTransaction)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1383,7 +1524,7 @@ void OntologyTransaction::SerializeWithCachedSizes(
       n = static_cast<unsigned int>(this->tx_attributes_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        7, this->tx_attributes(static_cast<int>(i)), deterministic, target);
+        7, this->tx_attributes(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1403,6 +1544,10 @@ size_t OntologyTransaction::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .OntologyTransaction.OntologyTxAttribute tx_attributes = 7;
   {
     unsigned int count = static_cast<unsigned int>(this->tx_attributes_size());
@@ -1414,44 +1559,45 @@ size_t OntologyTransaction::ByteSizeLong() const {
     }
   }
 
-  if (_has_bits_[0 / 32] & 63u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000003fu) {
     // optional string payer = 6;
-    if (has_payer()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->payer());
     }
 
     // optional uint32 version = 1;
-    if (has_version()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->version());
     }
 
     // optional uint32 type = 2;
-    if (has_type()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->type());
     }
 
     // optional uint64 gas_price = 4;
-    if (has_gas_price()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->gas_price());
     }
 
     // optional uint64 gas_limit = 5;
-    if (has_gas_limit()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->gas_limit());
     }
 
     // optional uint32 nonce = 3;
-    if (has_nonce()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->nonce());
@@ -1467,9 +1613,9 @@ void OntologyTransaction::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:OntologyTransaction)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologyTransaction* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologyTransaction>(
+      ::google::protobuf::DynamicCastToGenerated<OntologyTransaction>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologyTransaction)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1487,9 +1633,9 @@ void OntologyTransaction::MergeFrom(const OntologyTransaction& from) {
 
   tx_attributes_.MergeFrom(from.tx_attributes_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 63u) {
+  if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_payer();
+      _has_bits_[0] |= 0x00000001u;
       payer_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.payer_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -1535,6 +1681,8 @@ void OntologyTransaction::Swap(OntologyTransaction* other) {
 }
 void OntologyTransaction::InternalSwap(OntologyTransaction* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&tx_attributes_)->InternalSwap(CastToBase(&other->tx_attributes_));
   payer_.Swap(&other->payer_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -1543,13 +1691,11 @@ void OntologyTransaction::InternalSwap(OntologyTransaction* other) {
   swap(gas_price_, other->gas_price_);
   swap(gas_limit_, other->gas_limit_);
   swap(nonce_, other->nonce_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologyTransaction::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1557,21 +1703,26 @@ void OntologyTransaction::InternalSwap(OntologyTransaction* other) {
 
 void OntologyGetPublicKey::InitAsDefaultInstance() {
 }
+class OntologyGetPublicKey::HasBitSetters {
+ public:
+  static void set_has_show_display(OntologyGetPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologyGetPublicKey::kAddressNFieldNumber;
 const int OntologyGetPublicKey::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologyGetPublicKey::OntologyGetPublicKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologyGetPublicKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologyGetPublicKey)
 }
 OntologyGetPublicKey::OntologyGetPublicKey(const OntologyGetPublicKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -1594,13 +1745,8 @@ void OntologyGetPublicKey::SharedDtor() {
 void OntologyGetPublicKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologyGetPublicKey::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologyGetPublicKey& OntologyGetPublicKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologyGetPublicKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologyGetPublicKey_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1617,9 +1763,69 @@ void OntologyGetPublicKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologyGetPublicKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologyGetPublicKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool show_display = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologyGetPublicKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologyGetPublicKey)
   for (;;) {
@@ -1629,14 +1835,11 @@ bool OntologyGetPublicKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1648,9 +1851,8 @@ bool OntologyGetPublicKey::MergePartialFromCodedStream(
 
       // optional bool show_display = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -1679,6 +1881,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologyGetPublicKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1706,8 +1909,7 @@ void OntologyGetPublicKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologyGetPublicKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologyGetPublicKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1739,6 +1941,10 @@ size_t OntologyGetPublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1749,7 +1955,8 @@ size_t OntologyGetPublicKey::ByteSizeLong() const {
   }
 
   // optional bool show_display = 2;
-  if (has_show_display()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -1762,9 +1969,9 @@ void OntologyGetPublicKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:OntologyGetPublicKey)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologyGetPublicKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologyGetPublicKey>(
+      ::google::protobuf::DynamicCastToGenerated<OntologyGetPublicKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologyGetPublicKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1810,15 +2017,15 @@ void OntologyGetPublicKey::Swap(OntologyGetPublicKey* other) {
 }
 void OntologyGetPublicKey::InternalSwap(OntologyGetPublicKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologyGetPublicKey::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1826,20 +2033,25 @@ void OntologyGetPublicKey::InternalSwap(OntologyGetPublicKey* other) {
 
 void OntologyPublicKey::InitAsDefaultInstance() {
 }
+class OntologyPublicKey::HasBitSetters {
+ public:
+  static void set_has_public_key(OntologyPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologyPublicKey::kPublicKeyFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologyPublicKey::OntologyPublicKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologyPublicKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologyPublicKey)
 }
 OntologyPublicKey::OntologyPublicKey(const OntologyPublicKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1850,6 +2062,8 @@ OntologyPublicKey::OntologyPublicKey(const OntologyPublicKey& from)
 }
 
 void OntologyPublicKey::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologyPublicKey_messages_2dontology_2eproto.base);
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1865,13 +2079,8 @@ void OntologyPublicKey::SharedDtor() {
 void OntologyPublicKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologyPublicKey::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologyPublicKey& OntologyPublicKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologyPublicKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologyPublicKey_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1890,9 +2099,61 @@ void OntologyPublicKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologyPublicKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologyPublicKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes public_key = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologyPublicKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologyPublicKey)
   for (;;) {
@@ -1902,8 +2163,7 @@ bool OntologyPublicKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes public_key = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_public_key()));
         } else {
@@ -1931,6 +2191,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologyPublicKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1953,8 +2214,7 @@ void OntologyPublicKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologyPublicKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologyPublicKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1984,8 +2244,13 @@ size_t OntologyPublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional bytes public_key = 1;
-  if (has_public_key()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->public_key());
@@ -2000,9 +2265,9 @@ void OntologyPublicKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:OntologyPublicKey)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologyPublicKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologyPublicKey>(
+      ::google::protobuf::DynamicCastToGenerated<OntologyPublicKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologyPublicKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2019,7 +2284,7 @@ void OntologyPublicKey::MergeFrom(const OntologyPublicKey& from) {
   (void) cached_has_bits;
 
   if (from.has_public_key()) {
-    set_has_public_key();
+    _has_bits_[0] |= 0x00000001u;
     public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
   }
 }
@@ -2048,15 +2313,15 @@ void OntologyPublicKey::Swap(OntologyPublicKey* other) {
 }
 void OntologyPublicKey::InternalSwap(OntologyPublicKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologyPublicKey::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2064,21 +2329,26 @@ void OntologyPublicKey::InternalSwap(OntologyPublicKey* other) {
 
 void OntologyGetAddress::InitAsDefaultInstance() {
 }
+class OntologyGetAddress::HasBitSetters {
+ public:
+  static void set_has_show_display(OntologyGetAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologyGetAddress::kAddressNFieldNumber;
 const int OntologyGetAddress::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologyGetAddress::OntologyGetAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologyGetAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologyGetAddress)
 }
 OntologyGetAddress::OntologyGetAddress(const OntologyGetAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -2101,13 +2371,8 @@ void OntologyGetAddress::SharedDtor() {
 void OntologyGetAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologyGetAddress::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologyGetAddress& OntologyGetAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologyGetAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologyGetAddress_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2124,9 +2389,69 @@ void OntologyGetAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologyGetAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologyGetAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool show_display = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologyGetAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologyGetAddress)
   for (;;) {
@@ -2136,14 +2461,11 @@ bool OntologyGetAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -2155,9 +2477,8 @@ bool OntologyGetAddress::MergePartialFromCodedStream(
 
       // optional bool show_display = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -2186,6 +2507,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologyGetAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2213,8 +2535,7 @@ void OntologyGetAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologyGetAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologyGetAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2246,6 +2567,10 @@ size_t OntologyGetAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -2256,7 +2581,8 @@ size_t OntologyGetAddress::ByteSizeLong() const {
   }
 
   // optional bool show_display = 2;
-  if (has_show_display()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -2269,9 +2595,9 @@ void OntologyGetAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:OntologyGetAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologyGetAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologyGetAddress>(
+      ::google::protobuf::DynamicCastToGenerated<OntologyGetAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologyGetAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2317,15 +2643,15 @@ void OntologyGetAddress::Swap(OntologyGetAddress* other) {
 }
 void OntologyGetAddress::InternalSwap(OntologyGetAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologyGetAddress::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2333,20 +2659,25 @@ void OntologyGetAddress::InternalSwap(OntologyGetAddress* other) {
 
 void OntologyAddress::InitAsDefaultInstance() {
 }
+class OntologyAddress::HasBitSetters {
+ public:
+  static void set_has_address(OntologyAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologyAddress::kAddressFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologyAddress::OntologyAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologyAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologyAddress)
 }
 OntologyAddress::OntologyAddress(const OntologyAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2357,6 +2688,8 @@ OntologyAddress::OntologyAddress(const OntologyAddress& from)
 }
 
 void OntologyAddress::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologyAddress_messages_2dontology_2eproto.base);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -2372,13 +2705,8 @@ void OntologyAddress::SharedDtor() {
 void OntologyAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologyAddress::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologyAddress& OntologyAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologyAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologyAddress_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2397,9 +2725,62 @@ void OntologyAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologyAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologyAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string address = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("OntologyAddress.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologyAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologyAddress)
   for (;;) {
@@ -2409,8 +2790,7 @@ bool OntologyAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string address = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2442,6 +2822,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologyAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2468,8 +2849,7 @@ void OntologyAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologyAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologyAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2503,8 +2883,13 @@ size_t OntologyAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string address = 1;
-  if (has_address()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->address());
@@ -2519,9 +2904,9 @@ void OntologyAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:OntologyAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologyAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologyAddress>(
+      ::google::protobuf::DynamicCastToGenerated<OntologyAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologyAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2538,7 +2923,7 @@ void OntologyAddress::MergeFrom(const OntologyAddress& from) {
   (void) cached_has_bits;
 
   if (from.has_address()) {
-    set_has_address();
+    _has_bits_[0] |= 0x00000001u;
     address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
   }
 }
@@ -2567,15 +2952,15 @@ void OntologyAddress::Swap(OntologyAddress* other) {
 }
 void OntologyAddress::InternalSwap(OntologyAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologyAddress::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2583,6 +2968,22 @@ void OntologyAddress::InternalSwap(OntologyAddress* other) {
 
 void OntologySignTransfer_OntologyTransfer::InitAsDefaultInstance() {
 }
+class OntologySignTransfer_OntologyTransfer::HasBitSetters {
+ public:
+  static void set_has_asset(OntologySignTransfer_OntologyTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_amount(OntologySignTransfer_OntologyTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_from_address(OntologySignTransfer_OntologyTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_to_address(OntologySignTransfer_OntologyTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologySignTransfer_OntologyTransfer::kAssetFieldNumber;
 const int OntologySignTransfer_OntologyTransfer::kAmountFieldNumber;
@@ -2591,15 +2992,13 @@ const int OntologySignTransfer_OntologyTransfer::kToAddressFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologySignTransfer_OntologyTransfer::OntologySignTransfer_OntologyTransfer()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignTransfer_OntologyTransfer.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologySignTransfer.OntologyTransfer)
 }
 OntologySignTransfer_OntologyTransfer::OntologySignTransfer_OntologyTransfer(const OntologySignTransfer_OntologyTransfer& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   from_address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2617,9 +3016,11 @@ OntologySignTransfer_OntologyTransfer::OntologySignTransfer_OntologyTransfer(con
 }
 
 void OntologySignTransfer_OntologyTransfer::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologySignTransfer_OntologyTransfer_messages_2dontology_2eproto.base);
   from_address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   to_address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  amount_ = GOOGLE_ULONGLONG(0);
+  amount_ = PROTOBUF_ULONGLONG(0);
   asset_ = 1;
 }
 
@@ -2636,13 +3037,8 @@ void OntologySignTransfer_OntologyTransfer::SharedDtor() {
 void OntologySignTransfer_OntologyTransfer::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologySignTransfer_OntologyTransfer::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologySignTransfer_OntologyTransfer& OntologySignTransfer_OntologyTransfer::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologySignTransfer_OntologyTransfer.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologySignTransfer_OntologyTransfer_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2654,7 +3050,7 @@ void OntologySignTransfer_OntologyTransfer::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       from_address_.ClearNonDefaultToEmptyNoArena();
     }
@@ -2662,17 +3058,105 @@ void OntologySignTransfer_OntologyTransfer::Clear() {
       to_address_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 12u) {
-    amount_ = GOOGLE_ULONGLONG(0);
+  if (cached_has_bits & 0x0000000cu) {
+    amount_ = PROTOBUF_ULONGLONG(0);
     asset_ = 1;
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologySignTransfer_OntologyTransfer::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologySignTransfer_OntologyTransfer*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .OntologySignTransfer.OntologyTransfer.OntologyAsset asset = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::OntologySignTransfer_OntologyTransfer_OntologyAsset_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(1, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_asset(static_cast<::OntologySignTransfer_OntologyTransfer_OntologyAsset>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint64 amount = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string from_address = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("OntologySignTransfer.OntologyTransfer.from_address");
+        object = msg->mutable_from_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string to_address = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("OntologySignTransfer.OntologyTransfer.to_address");
+        object = msg->mutable_to_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologySignTransfer_OntologyTransfer::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologySignTransfer.OntologyTransfer)
   for (;;) {
@@ -2682,9 +3166,8 @@ bool OntologySignTransfer_OntologyTransfer::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .OntologySignTransfer.OntologyTransfer.OntologyAsset asset = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          int value;
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
                  input, &value)));
@@ -2692,7 +3175,7 @@ bool OntologySignTransfer_OntologyTransfer::MergePartialFromCodedStream(
             set_asset(static_cast< ::OntologySignTransfer_OntologyTransfer_OntologyAsset >(value));
           } else {
             mutable_unknown_fields()->AddVarint(
-                1, static_cast< ::google::protobuf::uint64>(value));
+                1, static_cast<::google::protobuf::uint64>(value));
           }
         } else {
           goto handle_unusual;
@@ -2702,9 +3185,8 @@ bool OntologySignTransfer_OntologyTransfer::MergePartialFromCodedStream(
 
       // optional uint64 amount = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &amount_)));
@@ -2716,8 +3198,7 @@ bool OntologySignTransfer_OntologyTransfer::MergePartialFromCodedStream(
 
       // optional string from_address = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_from_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2732,8 +3213,7 @@ bool OntologySignTransfer_OntologyTransfer::MergePartialFromCodedStream(
 
       // optional string to_address = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_to_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2765,6 +3245,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologySignTransfer_OntologyTransfer::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2812,8 +3293,7 @@ void OntologySignTransfer_OntologyTransfer::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologySignTransfer_OntologyTransfer::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologySignTransfer.OntologyTransfer)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2869,30 +3349,35 @@ size_t OntologySignTransfer_OntologyTransfer::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional string from_address = 3;
-    if (has_from_address()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->from_address());
     }
 
     // optional string to_address = 4;
-    if (has_to_address()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->to_address());
     }
 
     // optional uint64 amount = 2;
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->amount());
     }
 
     // optional .OntologySignTransfer.OntologyTransfer.OntologyAsset asset = 1;
-    if (has_asset()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->asset());
     }
@@ -2907,9 +3392,9 @@ void OntologySignTransfer_OntologyTransfer::MergeFrom(const ::google::protobuf::
 // @@protoc_insertion_point(generalized_merge_from_start:OntologySignTransfer.OntologyTransfer)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologySignTransfer_OntologyTransfer* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologySignTransfer_OntologyTransfer>(
+      ::google::protobuf::DynamicCastToGenerated<OntologySignTransfer_OntologyTransfer>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologySignTransfer.OntologyTransfer)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2926,13 +3411,13 @@ void OntologySignTransfer_OntologyTransfer::MergeFrom(const OntologySignTransfer
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_from_address();
+      _has_bits_[0] |= 0x00000001u;
       from_address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.from_address_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_to_address();
+      _has_bits_[0] |= 0x00000002u;
       to_address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.to_address_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -2969,19 +3454,19 @@ void OntologySignTransfer_OntologyTransfer::Swap(OntologySignTransfer_OntologyTr
 }
 void OntologySignTransfer_OntologyTransfer::InternalSwap(OntologySignTransfer_OntologyTransfer* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   from_address_.Swap(&other->from_address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   to_address_.Swap(&other->to_address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(amount_, other->amount_);
   swap(asset_, other->asset_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologySignTransfer_OntologyTransfer::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2993,6 +3478,26 @@ void OntologySignTransfer::InitAsDefaultInstance() {
   ::_OntologySignTransfer_default_instance_._instance.get_mutable()->transfer_ = const_cast< ::OntologySignTransfer_OntologyTransfer*>(
       ::OntologySignTransfer_OntologyTransfer::internal_default_instance());
 }
+class OntologySignTransfer::HasBitSetters {
+ public:
+  static const ::OntologyTransaction& transaction(const OntologySignTransfer* msg);
+  static void set_has_transaction(OntologySignTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::OntologySignTransfer_OntologyTransfer& transfer(const OntologySignTransfer* msg);
+  static void set_has_transfer(OntologySignTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
+const ::OntologyTransaction&
+OntologySignTransfer::HasBitSetters::transaction(const OntologySignTransfer* msg) {
+  return *msg->transaction_;
+}
+const ::OntologySignTransfer_OntologyTransfer&
+OntologySignTransfer::HasBitSetters::transfer(const OntologySignTransfer* msg) {
+  return *msg->transfer_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologySignTransfer::kAddressNFieldNumber;
 const int OntologySignTransfer::kTransactionFieldNumber;
@@ -3000,32 +3505,32 @@ const int OntologySignTransfer::kTransferFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologySignTransfer::OntologySignTransfer()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignTransfer.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologySignTransfer)
 }
 OntologySignTransfer::OntologySignTransfer(const OntologySignTransfer& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_transaction()) {
     transaction_ = new ::OntologyTransaction(*from.transaction_);
   } else {
-    transaction_ = NULL;
+    transaction_ = nullptr;
   }
   if (from.has_transfer()) {
     transfer_ = new ::OntologySignTransfer_OntologyTransfer(*from.transfer_);
   } else {
-    transfer_ = NULL;
+    transfer_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:OntologySignTransfer)
 }
 
 void OntologySignTransfer::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologySignTransfer_messages_2dontology_2eproto.base);
   ::memset(&transaction_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&transfer_) -
       reinterpret_cast<char*>(&transaction_)) + sizeof(transfer_));
@@ -3044,13 +3549,8 @@ void OntologySignTransfer::SharedDtor() {
 void OntologySignTransfer::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologySignTransfer::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologySignTransfer& OntologySignTransfer::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologySignTransfer.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologySignTransfer_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3063,13 +3563,13 @@ void OntologySignTransfer::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(transaction_ != NULL);
+      GOOGLE_DCHECK(transaction_ != nullptr);
       transaction_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(transfer_ != NULL);
+      GOOGLE_DCHECK(transfer_ != nullptr);
       transfer_->Clear();
     }
   }
@@ -3077,9 +3577,88 @@ void OntologySignTransfer::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologySignTransfer::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologySignTransfer*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional .OntologyTransaction transaction = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::OntologyTransaction::_InternalParse;
+        object = msg->mutable_transaction();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .OntologySignTransfer.OntologyTransfer transfer = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::OntologySignTransfer_OntologyTransfer::_InternalParse;
+        object = msg->mutable_transfer();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologySignTransfer::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologySignTransfer)
   for (;;) {
@@ -3089,14 +3668,11 @@ bool OntologySignTransfer::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -3108,8 +3684,7 @@ bool OntologySignTransfer::MergePartialFromCodedStream(
 
       // optional .OntologyTransaction transaction = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_transaction()));
         } else {
@@ -3120,8 +3695,7 @@ bool OntologySignTransfer::MergePartialFromCodedStream(
 
       // optional .OntologySignTransfer.OntologyTransfer transfer = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_transfer()));
         } else {
@@ -3149,6 +3723,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologySignTransfer::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3166,13 +3741,13 @@ void OntologySignTransfer::SerializeWithCachedSizes(
   // optional .OntologyTransaction transaction = 2;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_transaction(), output);
+      2, HasBitSetters::transaction(this), output);
   }
 
   // optional .OntologySignTransfer.OntologyTransfer transfer = 3;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_transfer(), output);
+      3, HasBitSetters::transfer(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3183,8 +3758,7 @@ void OntologySignTransfer::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologySignTransfer::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologySignTransfer)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3198,14 +3772,14 @@ void OntologySignTransfer::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_transaction(), deterministic, target);
+        2, HasBitSetters::transaction(this), target);
   }
 
   // optional .OntologySignTransfer.OntologyTransfer transfer = 3;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_transfer(), deterministic, target);
+        3, HasBitSetters::transfer(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -3225,6 +3799,10 @@ size_t OntologySignTransfer::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -3234,16 +3812,17 @@ size_t OntologySignTransfer::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 3u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional .OntologyTransaction transaction = 2;
-    if (has_transaction()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *transaction_);
     }
 
     // optional .OntologySignTransfer.OntologyTransfer transfer = 3;
-    if (has_transfer()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *transfer_);
@@ -3259,9 +3838,9 @@ void OntologySignTransfer::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:OntologySignTransfer)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologySignTransfer* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologySignTransfer>(
+      ::google::protobuf::DynamicCastToGenerated<OntologySignTransfer>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologySignTransfer)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3279,7 +3858,7 @@ void OntologySignTransfer::MergeFrom(const OntologySignTransfer& from) {
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       mutable_transaction()->::OntologyTransaction::MergeFrom(from.transaction());
     }
@@ -3313,16 +3892,16 @@ void OntologySignTransfer::Swap(OntologySignTransfer* other) {
 }
 void OntologySignTransfer::InternalSwap(OntologySignTransfer* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(transaction_, other->transaction_);
   swap(transfer_, other->transfer_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologySignTransfer::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3330,21 +3909,29 @@ void OntologySignTransfer::InternalSwap(OntologySignTransfer* other) {
 
 void OntologySignedTransfer::InitAsDefaultInstance() {
 }
+class OntologySignedTransfer::HasBitSetters {
+ public:
+  static void set_has_signature(OntologySignedTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_payload(OntologySignedTransfer* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologySignedTransfer::kSignatureFieldNumber;
 const int OntologySignedTransfer::kPayloadFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologySignedTransfer::OntologySignedTransfer()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignedTransfer.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologySignedTransfer)
 }
 OntologySignedTransfer::OntologySignedTransfer(const OntologySignedTransfer& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3359,6 +3946,8 @@ OntologySignedTransfer::OntologySignedTransfer(const OntologySignedTransfer& fro
 }
 
 void OntologySignedTransfer::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologySignedTransfer_messages_2dontology_2eproto.base);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   payload_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -3376,13 +3965,8 @@ void OntologySignedTransfer::SharedDtor() {
 void OntologySignedTransfer::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologySignedTransfer::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologySignedTransfer& OntologySignedTransfer::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologySignedTransfer.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologySignedTransfer_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3394,7 +3978,7 @@ void OntologySignedTransfer::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       signature_.ClearNonDefaultToEmptyNoArena();
     }
@@ -3406,9 +3990,76 @@ void OntologySignedTransfer::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologySignedTransfer::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologySignedTransfer*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes signature = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes payload = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_payload();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologySignedTransfer::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologySignedTransfer)
   for (;;) {
@@ -3418,8 +4069,7 @@ bool OntologySignedTransfer::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes signature = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -3430,8 +4080,7 @@ bool OntologySignedTransfer::MergePartialFromCodedStream(
 
       // optional bytes payload = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_payload()));
         } else {
@@ -3459,6 +4108,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologySignedTransfer::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3487,8 +4137,7 @@ void OntologySignedTransfer::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologySignedTransfer::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologySignedTransfer)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3525,16 +4174,21 @@ size_t OntologySignedTransfer::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes signature = 1;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
     }
 
     // optional bytes payload = 2;
-    if (has_payload()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->payload());
@@ -3550,9 +4204,9 @@ void OntologySignedTransfer::MergeFrom(const ::google::protobuf::Message& from) 
 // @@protoc_insertion_point(generalized_merge_from_start:OntologySignedTransfer)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologySignedTransfer* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologySignedTransfer>(
+      ::google::protobuf::DynamicCastToGenerated<OntologySignedTransfer>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologySignedTransfer)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3569,13 +4223,13 @@ void OntologySignedTransfer::MergeFrom(const OntologySignedTransfer& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000001u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_payload();
+      _has_bits_[0] |= 0x00000002u;
       payload_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.payload_);
     }
   }
@@ -3605,17 +4259,17 @@ void OntologySignedTransfer::Swap(OntologySignedTransfer* other) {
 }
 void OntologySignedTransfer::InternalSwap(OntologySignedTransfer* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   payload_.Swap(&other->payload_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologySignedTransfer::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3623,6 +4277,19 @@ void OntologySignedTransfer::InternalSwap(OntologySignedTransfer* other) {
 
 void OntologySignWithdrawOng_OntologyWithdrawOng::InitAsDefaultInstance() {
 }
+class OntologySignWithdrawOng_OntologyWithdrawOng::HasBitSetters {
+ public:
+  static void set_has_amount(OntologySignWithdrawOng_OntologyWithdrawOng* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_from_address(OntologySignWithdrawOng_OntologyWithdrawOng* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_to_address(OntologySignWithdrawOng_OntologyWithdrawOng* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologySignWithdrawOng_OntologyWithdrawOng::kAmountFieldNumber;
 const int OntologySignWithdrawOng_OntologyWithdrawOng::kFromAddressFieldNumber;
@@ -3630,15 +4297,13 @@ const int OntologySignWithdrawOng_OntologyWithdrawOng::kToAddressFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologySignWithdrawOng_OntologyWithdrawOng::OntologySignWithdrawOng_OntologyWithdrawOng()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignWithdrawOng_OntologyWithdrawOng.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologySignWithdrawOng.OntologyWithdrawOng)
 }
 OntologySignWithdrawOng_OntologyWithdrawOng::OntologySignWithdrawOng_OntologyWithdrawOng(const OntologySignWithdrawOng_OntologyWithdrawOng& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   from_address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3654,9 +4319,11 @@ OntologySignWithdrawOng_OntologyWithdrawOng::OntologySignWithdrawOng_OntologyWit
 }
 
 void OntologySignWithdrawOng_OntologyWithdrawOng::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologySignWithdrawOng_OntologyWithdrawOng_messages_2dontology_2eproto.base);
   from_address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   to_address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  amount_ = GOOGLE_ULONGLONG(0);
+  amount_ = PROTOBUF_ULONGLONG(0);
 }
 
 OntologySignWithdrawOng_OntologyWithdrawOng::~OntologySignWithdrawOng_OntologyWithdrawOng() {
@@ -3672,13 +4339,8 @@ void OntologySignWithdrawOng_OntologyWithdrawOng::SharedDtor() {
 void OntologySignWithdrawOng_OntologyWithdrawOng::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologySignWithdrawOng_OntologyWithdrawOng::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologySignWithdrawOng_OntologyWithdrawOng& OntologySignWithdrawOng_OntologyWithdrawOng::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologySignWithdrawOng_OntologyWithdrawOng.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologySignWithdrawOng_OntologyWithdrawOng_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3690,7 +4352,7 @@ void OntologySignWithdrawOng_OntologyWithdrawOng::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       from_address_.ClearNonDefaultToEmptyNoArena();
     }
@@ -3698,14 +4360,90 @@ void OntologySignWithdrawOng_OntologyWithdrawOng::Clear() {
       to_address_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  amount_ = GOOGLE_ULONGLONG(0);
+  amount_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologySignWithdrawOng_OntologyWithdrawOng::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologySignWithdrawOng_OntologyWithdrawOng*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint64 amount = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_amount(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string from_address = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("OntologySignWithdrawOng.OntologyWithdrawOng.from_address");
+        object = msg->mutable_from_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string to_address = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("OntologySignWithdrawOng.OntologyWithdrawOng.to_address");
+        object = msg->mutable_to_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologySignWithdrawOng_OntologyWithdrawOng::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologySignWithdrawOng.OntologyWithdrawOng)
   for (;;) {
@@ -3715,9 +4453,8 @@ bool OntologySignWithdrawOng_OntologyWithdrawOng::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint64 amount = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_amount();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_amount(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &amount_)));
@@ -3729,8 +4466,7 @@ bool OntologySignWithdrawOng_OntologyWithdrawOng::MergePartialFromCodedStream(
 
       // optional string from_address = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_from_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3745,8 +4481,7 @@ bool OntologySignWithdrawOng_OntologyWithdrawOng::MergePartialFromCodedStream(
 
       // optional string to_address = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_to_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3778,6 +4513,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologySignWithdrawOng_OntologyWithdrawOng::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3819,8 +4555,7 @@ void OntologySignWithdrawOng_OntologyWithdrawOng::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologySignWithdrawOng_OntologyWithdrawOng::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologySignWithdrawOng.OntologyWithdrawOng)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3870,23 +4605,28 @@ size_t OntologySignWithdrawOng_OntologyWithdrawOng::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string from_address = 2;
-    if (has_from_address()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->from_address());
     }
 
     // optional string to_address = 3;
-    if (has_to_address()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->to_address());
     }
 
     // optional uint64 amount = 1;
-    if (has_amount()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt64Size(
           this->amount());
@@ -3902,9 +4642,9 @@ void OntologySignWithdrawOng_OntologyWithdrawOng::MergeFrom(const ::google::prot
 // @@protoc_insertion_point(generalized_merge_from_start:OntologySignWithdrawOng.OntologyWithdrawOng)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologySignWithdrawOng_OntologyWithdrawOng* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologySignWithdrawOng_OntologyWithdrawOng>(
+      ::google::protobuf::DynamicCastToGenerated<OntologySignWithdrawOng_OntologyWithdrawOng>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologySignWithdrawOng.OntologyWithdrawOng)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3921,13 +4661,13 @@ void OntologySignWithdrawOng_OntologyWithdrawOng::MergeFrom(const OntologySignWi
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_from_address();
+      _has_bits_[0] |= 0x00000001u;
       from_address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.from_address_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_to_address();
+      _has_bits_[0] |= 0x00000002u;
       to_address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.to_address_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -3961,18 +4701,18 @@ void OntologySignWithdrawOng_OntologyWithdrawOng::Swap(OntologySignWithdrawOng_O
 }
 void OntologySignWithdrawOng_OntologyWithdrawOng::InternalSwap(OntologySignWithdrawOng_OntologyWithdrawOng* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   from_address_.Swap(&other->from_address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   to_address_.Swap(&other->to_address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(amount_, other->amount_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologySignWithdrawOng_OntologyWithdrawOng::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3984,6 +4724,26 @@ void OntologySignWithdrawOng::InitAsDefaultInstance() {
   ::_OntologySignWithdrawOng_default_instance_._instance.get_mutable()->withdraw_ong_ = const_cast< ::OntologySignWithdrawOng_OntologyWithdrawOng*>(
       ::OntologySignWithdrawOng_OntologyWithdrawOng::internal_default_instance());
 }
+class OntologySignWithdrawOng::HasBitSetters {
+ public:
+  static const ::OntologyTransaction& transaction(const OntologySignWithdrawOng* msg);
+  static void set_has_transaction(OntologySignWithdrawOng* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::OntologySignWithdrawOng_OntologyWithdrawOng& withdraw_ong(const OntologySignWithdrawOng* msg);
+  static void set_has_withdraw_ong(OntologySignWithdrawOng* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
+const ::OntologyTransaction&
+OntologySignWithdrawOng::HasBitSetters::transaction(const OntologySignWithdrawOng* msg) {
+  return *msg->transaction_;
+}
+const ::OntologySignWithdrawOng_OntologyWithdrawOng&
+OntologySignWithdrawOng::HasBitSetters::withdraw_ong(const OntologySignWithdrawOng* msg) {
+  return *msg->withdraw_ong_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologySignWithdrawOng::kAddressNFieldNumber;
 const int OntologySignWithdrawOng::kTransactionFieldNumber;
@@ -3991,32 +4751,32 @@ const int OntologySignWithdrawOng::kWithdrawOngFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologySignWithdrawOng::OntologySignWithdrawOng()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignWithdrawOng.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologySignWithdrawOng)
 }
 OntologySignWithdrawOng::OntologySignWithdrawOng(const OntologySignWithdrawOng& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_transaction()) {
     transaction_ = new ::OntologyTransaction(*from.transaction_);
   } else {
-    transaction_ = NULL;
+    transaction_ = nullptr;
   }
   if (from.has_withdraw_ong()) {
     withdraw_ong_ = new ::OntologySignWithdrawOng_OntologyWithdrawOng(*from.withdraw_ong_);
   } else {
-    withdraw_ong_ = NULL;
+    withdraw_ong_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:OntologySignWithdrawOng)
 }
 
 void OntologySignWithdrawOng::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologySignWithdrawOng_messages_2dontology_2eproto.base);
   ::memset(&transaction_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&withdraw_ong_) -
       reinterpret_cast<char*>(&transaction_)) + sizeof(withdraw_ong_));
@@ -4035,13 +4795,8 @@ void OntologySignWithdrawOng::SharedDtor() {
 void OntologySignWithdrawOng::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologySignWithdrawOng::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologySignWithdrawOng& OntologySignWithdrawOng::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologySignWithdrawOng.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologySignWithdrawOng_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4054,13 +4809,13 @@ void OntologySignWithdrawOng::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(transaction_ != NULL);
+      GOOGLE_DCHECK(transaction_ != nullptr);
       transaction_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(withdraw_ong_ != NULL);
+      GOOGLE_DCHECK(withdraw_ong_ != nullptr);
       withdraw_ong_->Clear();
     }
   }
@@ -4068,9 +4823,88 @@ void OntologySignWithdrawOng::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologySignWithdrawOng::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologySignWithdrawOng*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional .OntologyTransaction transaction = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::OntologyTransaction::_InternalParse;
+        object = msg->mutable_transaction();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .OntologySignWithdrawOng.OntologyWithdrawOng withdraw_ong = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::OntologySignWithdrawOng_OntologyWithdrawOng::_InternalParse;
+        object = msg->mutable_withdraw_ong();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologySignWithdrawOng::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologySignWithdrawOng)
   for (;;) {
@@ -4080,14 +4914,11 @@ bool OntologySignWithdrawOng::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -4099,8 +4930,7 @@ bool OntologySignWithdrawOng::MergePartialFromCodedStream(
 
       // optional .OntologyTransaction transaction = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_transaction()));
         } else {
@@ -4111,8 +4941,7 @@ bool OntologySignWithdrawOng::MergePartialFromCodedStream(
 
       // optional .OntologySignWithdrawOng.OntologyWithdrawOng withdraw_ong = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_withdraw_ong()));
         } else {
@@ -4140,6 +4969,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologySignWithdrawOng::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4157,13 +4987,13 @@ void OntologySignWithdrawOng::SerializeWithCachedSizes(
   // optional .OntologyTransaction transaction = 2;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_transaction(), output);
+      2, HasBitSetters::transaction(this), output);
   }
 
   // optional .OntologySignWithdrawOng.OntologyWithdrawOng withdraw_ong = 3;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_withdraw_ong(), output);
+      3, HasBitSetters::withdraw_ong(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4174,8 +5004,7 @@ void OntologySignWithdrawOng::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologySignWithdrawOng::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologySignWithdrawOng)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4189,14 +5018,14 @@ void OntologySignWithdrawOng::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_transaction(), deterministic, target);
+        2, HasBitSetters::transaction(this), target);
   }
 
   // optional .OntologySignWithdrawOng.OntologyWithdrawOng withdraw_ong = 3;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_withdraw_ong(), deterministic, target);
+        3, HasBitSetters::withdraw_ong(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -4216,6 +5045,10 @@ size_t OntologySignWithdrawOng::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -4225,16 +5058,17 @@ size_t OntologySignWithdrawOng::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 3u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional .OntologyTransaction transaction = 2;
-    if (has_transaction()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *transaction_);
     }
 
     // optional .OntologySignWithdrawOng.OntologyWithdrawOng withdraw_ong = 3;
-    if (has_withdraw_ong()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *withdraw_ong_);
@@ -4250,9 +5084,9 @@ void OntologySignWithdrawOng::MergeFrom(const ::google::protobuf::Message& from)
 // @@protoc_insertion_point(generalized_merge_from_start:OntologySignWithdrawOng)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologySignWithdrawOng* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologySignWithdrawOng>(
+      ::google::protobuf::DynamicCastToGenerated<OntologySignWithdrawOng>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologySignWithdrawOng)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4270,7 +5104,7 @@ void OntologySignWithdrawOng::MergeFrom(const OntologySignWithdrawOng& from) {
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       mutable_transaction()->::OntologyTransaction::MergeFrom(from.transaction());
     }
@@ -4304,16 +5138,16 @@ void OntologySignWithdrawOng::Swap(OntologySignWithdrawOng* other) {
 }
 void OntologySignWithdrawOng::InternalSwap(OntologySignWithdrawOng* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(transaction_, other->transaction_);
   swap(withdraw_ong_, other->withdraw_ong_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologySignWithdrawOng::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4321,21 +5155,29 @@ void OntologySignWithdrawOng::InternalSwap(OntologySignWithdrawOng* other) {
 
 void OntologySignedWithdrawOng::InitAsDefaultInstance() {
 }
+class OntologySignedWithdrawOng::HasBitSetters {
+ public:
+  static void set_has_signature(OntologySignedWithdrawOng* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_payload(OntologySignedWithdrawOng* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologySignedWithdrawOng::kSignatureFieldNumber;
 const int OntologySignedWithdrawOng::kPayloadFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologySignedWithdrawOng::OntologySignedWithdrawOng()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignedWithdrawOng.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologySignedWithdrawOng)
 }
 OntologySignedWithdrawOng::OntologySignedWithdrawOng(const OntologySignedWithdrawOng& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4350,6 +5192,8 @@ OntologySignedWithdrawOng::OntologySignedWithdrawOng(const OntologySignedWithdra
 }
 
 void OntologySignedWithdrawOng::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologySignedWithdrawOng_messages_2dontology_2eproto.base);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   payload_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -4367,13 +5211,8 @@ void OntologySignedWithdrawOng::SharedDtor() {
 void OntologySignedWithdrawOng::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologySignedWithdrawOng::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologySignedWithdrawOng& OntologySignedWithdrawOng::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologySignedWithdrawOng.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologySignedWithdrawOng_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4385,7 +5224,7 @@ void OntologySignedWithdrawOng::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       signature_.ClearNonDefaultToEmptyNoArena();
     }
@@ -4397,9 +5236,76 @@ void OntologySignedWithdrawOng::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologySignedWithdrawOng::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologySignedWithdrawOng*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes signature = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes payload = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_payload();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologySignedWithdrawOng::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologySignedWithdrawOng)
   for (;;) {
@@ -4409,8 +5315,7 @@ bool OntologySignedWithdrawOng::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes signature = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -4421,8 +5326,7 @@ bool OntologySignedWithdrawOng::MergePartialFromCodedStream(
 
       // optional bytes payload = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_payload()));
         } else {
@@ -4450,6 +5354,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologySignedWithdrawOng::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4478,8 +5383,7 @@ void OntologySignedWithdrawOng::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologySignedWithdrawOng::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologySignedWithdrawOng)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4516,16 +5420,21 @@ size_t OntologySignedWithdrawOng::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes signature = 1;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
     }
 
     // optional bytes payload = 2;
-    if (has_payload()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->payload());
@@ -4541,9 +5450,9 @@ void OntologySignedWithdrawOng::MergeFrom(const ::google::protobuf::Message& fro
 // @@protoc_insertion_point(generalized_merge_from_start:OntologySignedWithdrawOng)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologySignedWithdrawOng* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologySignedWithdrawOng>(
+      ::google::protobuf::DynamicCastToGenerated<OntologySignedWithdrawOng>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologySignedWithdrawOng)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4560,13 +5469,13 @@ void OntologySignedWithdrawOng::MergeFrom(const OntologySignedWithdrawOng& from)
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000001u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_payload();
+      _has_bits_[0] |= 0x00000002u;
       payload_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.payload_);
     }
   }
@@ -4596,17 +5505,17 @@ void OntologySignedWithdrawOng::Swap(OntologySignedWithdrawOng* other) {
 }
 void OntologySignedWithdrawOng::InternalSwap(OntologySignedWithdrawOng* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   payload_.Swap(&other->payload_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologySignedWithdrawOng::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4614,21 +5523,29 @@ void OntologySignedWithdrawOng::InternalSwap(OntologySignedWithdrawOng* other) {
 
 void OntologySignOntIdRegister_OntologyOntIdRegister::InitAsDefaultInstance() {
 }
+class OntologySignOntIdRegister_OntologyOntIdRegister::HasBitSetters {
+ public:
+  static void set_has_ont_id(OntologySignOntIdRegister_OntologyOntIdRegister* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_public_key(OntologySignOntIdRegister_OntologyOntIdRegister* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologySignOntIdRegister_OntologyOntIdRegister::kOntIdFieldNumber;
 const int OntologySignOntIdRegister_OntologyOntIdRegister::kPublicKeyFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologySignOntIdRegister_OntologyOntIdRegister::OntologySignOntIdRegister_OntologyOntIdRegister()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignOntIdRegister_OntologyOntIdRegister.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologySignOntIdRegister.OntologyOntIdRegister)
 }
 OntologySignOntIdRegister_OntologyOntIdRegister::OntologySignOntIdRegister_OntologyOntIdRegister(const OntologySignOntIdRegister_OntologyOntIdRegister& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ont_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -4643,6 +5560,8 @@ OntologySignOntIdRegister_OntologyOntIdRegister::OntologySignOntIdRegister_Ontol
 }
 
 void OntologySignOntIdRegister_OntologyOntIdRegister::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologySignOntIdRegister_OntologyOntIdRegister_messages_2dontology_2eproto.base);
   ont_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -4660,13 +5579,8 @@ void OntologySignOntIdRegister_OntologyOntIdRegister::SharedDtor() {
 void OntologySignOntIdRegister_OntologyOntIdRegister::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologySignOntIdRegister_OntologyOntIdRegister::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologySignOntIdRegister_OntologyOntIdRegister& OntologySignOntIdRegister_OntologyOntIdRegister::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologySignOntIdRegister_OntologyOntIdRegister.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologySignOntIdRegister_OntologyOntIdRegister_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4678,7 +5592,7 @@ void OntologySignOntIdRegister_OntologyOntIdRegister::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       ont_id_.ClearNonDefaultToEmptyNoArena();
     }
@@ -4690,9 +5604,77 @@ void OntologySignOntIdRegister_OntologyOntIdRegister::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologySignOntIdRegister_OntologyOntIdRegister::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologySignOntIdRegister_OntologyOntIdRegister*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string ont_id = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("OntologySignOntIdRegister.OntologyOntIdRegister.ont_id");
+        object = msg->mutable_ont_id();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes public_key = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologySignOntIdRegister_OntologyOntIdRegister::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologySignOntIdRegister.OntologyOntIdRegister)
   for (;;) {
@@ -4702,8 +5684,7 @@ bool OntologySignOntIdRegister_OntologyOntIdRegister::MergePartialFromCodedStrea
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string ont_id = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_ont_id()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4718,8 +5699,7 @@ bool OntologySignOntIdRegister_OntologyOntIdRegister::MergePartialFromCodedStrea
 
       // optional bytes public_key = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_public_key()));
         } else {
@@ -4747,6 +5727,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologySignOntIdRegister_OntologyOntIdRegister::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -4779,8 +5760,7 @@ void OntologySignOntIdRegister_OntologyOntIdRegister::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologySignOntIdRegister_OntologyOntIdRegister::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologySignOntIdRegister.OntologyOntIdRegister)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4821,16 +5801,21 @@ size_t OntologySignOntIdRegister_OntologyOntIdRegister::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string ont_id = 1;
-    if (has_ont_id()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->ont_id());
     }
 
     // optional bytes public_key = 2;
-    if (has_public_key()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->public_key());
@@ -4846,9 +5831,9 @@ void OntologySignOntIdRegister_OntologyOntIdRegister::MergeFrom(const ::google::
 // @@protoc_insertion_point(generalized_merge_from_start:OntologySignOntIdRegister.OntologyOntIdRegister)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologySignOntIdRegister_OntologyOntIdRegister* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologySignOntIdRegister_OntologyOntIdRegister>(
+      ::google::protobuf::DynamicCastToGenerated<OntologySignOntIdRegister_OntologyOntIdRegister>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologySignOntIdRegister.OntologyOntIdRegister)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -4865,13 +5850,13 @@ void OntologySignOntIdRegister_OntologyOntIdRegister::MergeFrom(const OntologySi
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_ont_id();
+      _has_bits_[0] |= 0x00000001u;
       ont_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.ont_id_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_public_key();
+      _has_bits_[0] |= 0x00000002u;
       public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
     }
   }
@@ -4901,17 +5886,17 @@ void OntologySignOntIdRegister_OntologyOntIdRegister::Swap(OntologySignOntIdRegi
 }
 void OntologySignOntIdRegister_OntologyOntIdRegister::InternalSwap(OntologySignOntIdRegister_OntologyOntIdRegister* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   ont_id_.Swap(&other->ont_id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologySignOntIdRegister_OntologyOntIdRegister::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -4923,6 +5908,26 @@ void OntologySignOntIdRegister::InitAsDefaultInstance() {
   ::_OntologySignOntIdRegister_default_instance_._instance.get_mutable()->ont_id_register_ = const_cast< ::OntologySignOntIdRegister_OntologyOntIdRegister*>(
       ::OntologySignOntIdRegister_OntologyOntIdRegister::internal_default_instance());
 }
+class OntologySignOntIdRegister::HasBitSetters {
+ public:
+  static const ::OntologyTransaction& transaction(const OntologySignOntIdRegister* msg);
+  static void set_has_transaction(OntologySignOntIdRegister* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::OntologySignOntIdRegister_OntologyOntIdRegister& ont_id_register(const OntologySignOntIdRegister* msg);
+  static void set_has_ont_id_register(OntologySignOntIdRegister* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
+const ::OntologyTransaction&
+OntologySignOntIdRegister::HasBitSetters::transaction(const OntologySignOntIdRegister* msg) {
+  return *msg->transaction_;
+}
+const ::OntologySignOntIdRegister_OntologyOntIdRegister&
+OntologySignOntIdRegister::HasBitSetters::ont_id_register(const OntologySignOntIdRegister* msg) {
+  return *msg->ont_id_register_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologySignOntIdRegister::kAddressNFieldNumber;
 const int OntologySignOntIdRegister::kTransactionFieldNumber;
@@ -4930,32 +5935,32 @@ const int OntologySignOntIdRegister::kOntIdRegisterFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologySignOntIdRegister::OntologySignOntIdRegister()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignOntIdRegister.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologySignOntIdRegister)
 }
 OntologySignOntIdRegister::OntologySignOntIdRegister(const OntologySignOntIdRegister& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_transaction()) {
     transaction_ = new ::OntologyTransaction(*from.transaction_);
   } else {
-    transaction_ = NULL;
+    transaction_ = nullptr;
   }
   if (from.has_ont_id_register()) {
     ont_id_register_ = new ::OntologySignOntIdRegister_OntologyOntIdRegister(*from.ont_id_register_);
   } else {
-    ont_id_register_ = NULL;
+    ont_id_register_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:OntologySignOntIdRegister)
 }
 
 void OntologySignOntIdRegister::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologySignOntIdRegister_messages_2dontology_2eproto.base);
   ::memset(&transaction_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&ont_id_register_) -
       reinterpret_cast<char*>(&transaction_)) + sizeof(ont_id_register_));
@@ -4974,13 +5979,8 @@ void OntologySignOntIdRegister::SharedDtor() {
 void OntologySignOntIdRegister::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologySignOntIdRegister::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologySignOntIdRegister& OntologySignOntIdRegister::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologySignOntIdRegister.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologySignOntIdRegister_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -4993,13 +5993,13 @@ void OntologySignOntIdRegister::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(transaction_ != NULL);
+      GOOGLE_DCHECK(transaction_ != nullptr);
       transaction_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(ont_id_register_ != NULL);
+      GOOGLE_DCHECK(ont_id_register_ != nullptr);
       ont_id_register_->Clear();
     }
   }
@@ -5007,9 +6007,88 @@ void OntologySignOntIdRegister::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologySignOntIdRegister::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologySignOntIdRegister*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional .OntologyTransaction transaction = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::OntologyTransaction::_InternalParse;
+        object = msg->mutable_transaction();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .OntologySignOntIdRegister.OntologyOntIdRegister ont_id_register = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::OntologySignOntIdRegister_OntologyOntIdRegister::_InternalParse;
+        object = msg->mutable_ont_id_register();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologySignOntIdRegister::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologySignOntIdRegister)
   for (;;) {
@@ -5019,14 +6098,11 @@ bool OntologySignOntIdRegister::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -5038,8 +6114,7 @@ bool OntologySignOntIdRegister::MergePartialFromCodedStream(
 
       // optional .OntologyTransaction transaction = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_transaction()));
         } else {
@@ -5050,8 +6125,7 @@ bool OntologySignOntIdRegister::MergePartialFromCodedStream(
 
       // optional .OntologySignOntIdRegister.OntologyOntIdRegister ont_id_register = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_ont_id_register()));
         } else {
@@ -5079,6 +6153,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologySignOntIdRegister::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5096,13 +6171,13 @@ void OntologySignOntIdRegister::SerializeWithCachedSizes(
   // optional .OntologyTransaction transaction = 2;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_transaction(), output);
+      2, HasBitSetters::transaction(this), output);
   }
 
   // optional .OntologySignOntIdRegister.OntologyOntIdRegister ont_id_register = 3;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_ont_id_register(), output);
+      3, HasBitSetters::ont_id_register(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -5113,8 +6188,7 @@ void OntologySignOntIdRegister::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologySignOntIdRegister::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologySignOntIdRegister)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5128,14 +6202,14 @@ void OntologySignOntIdRegister::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_transaction(), deterministic, target);
+        2, HasBitSetters::transaction(this), target);
   }
 
   // optional .OntologySignOntIdRegister.OntologyOntIdRegister ont_id_register = 3;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_ont_id_register(), deterministic, target);
+        3, HasBitSetters::ont_id_register(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -5155,6 +6229,10 @@ size_t OntologySignOntIdRegister::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -5164,16 +6242,17 @@ size_t OntologySignOntIdRegister::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 3u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional .OntologyTransaction transaction = 2;
-    if (has_transaction()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *transaction_);
     }
 
     // optional .OntologySignOntIdRegister.OntologyOntIdRegister ont_id_register = 3;
-    if (has_ont_id_register()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *ont_id_register_);
@@ -5189,9 +6268,9 @@ void OntologySignOntIdRegister::MergeFrom(const ::google::protobuf::Message& fro
 // @@protoc_insertion_point(generalized_merge_from_start:OntologySignOntIdRegister)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologySignOntIdRegister* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologySignOntIdRegister>(
+      ::google::protobuf::DynamicCastToGenerated<OntologySignOntIdRegister>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologySignOntIdRegister)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5209,7 +6288,7 @@ void OntologySignOntIdRegister::MergeFrom(const OntologySignOntIdRegister& from)
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       mutable_transaction()->::OntologyTransaction::MergeFrom(from.transaction());
     }
@@ -5243,16 +6322,16 @@ void OntologySignOntIdRegister::Swap(OntologySignOntIdRegister* other) {
 }
 void OntologySignOntIdRegister::InternalSwap(OntologySignOntIdRegister* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(transaction_, other->transaction_);
   swap(ont_id_register_, other->ont_id_register_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologySignOntIdRegister::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5260,21 +6339,29 @@ void OntologySignOntIdRegister::InternalSwap(OntologySignOntIdRegister* other) {
 
 void OntologySignedOntIdRegister::InitAsDefaultInstance() {
 }
+class OntologySignedOntIdRegister::HasBitSetters {
+ public:
+  static void set_has_signature(OntologySignedOntIdRegister* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_payload(OntologySignedOntIdRegister* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologySignedOntIdRegister::kSignatureFieldNumber;
 const int OntologySignedOntIdRegister::kPayloadFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologySignedOntIdRegister::OntologySignedOntIdRegister()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignedOntIdRegister.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologySignedOntIdRegister)
 }
 OntologySignedOntIdRegister::OntologySignedOntIdRegister(const OntologySignedOntIdRegister& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -5289,6 +6376,8 @@ OntologySignedOntIdRegister::OntologySignedOntIdRegister(const OntologySignedOnt
 }
 
 void OntologySignedOntIdRegister::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologySignedOntIdRegister_messages_2dontology_2eproto.base);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   payload_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -5306,13 +6395,8 @@ void OntologySignedOntIdRegister::SharedDtor() {
 void OntologySignedOntIdRegister::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologySignedOntIdRegister::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologySignedOntIdRegister& OntologySignedOntIdRegister::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologySignedOntIdRegister.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologySignedOntIdRegister_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5324,7 +6408,7 @@ void OntologySignedOntIdRegister::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       signature_.ClearNonDefaultToEmptyNoArena();
     }
@@ -5336,9 +6420,76 @@ void OntologySignedOntIdRegister::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologySignedOntIdRegister::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologySignedOntIdRegister*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes signature = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes payload = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_payload();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologySignedOntIdRegister::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologySignedOntIdRegister)
   for (;;) {
@@ -5348,8 +6499,7 @@ bool OntologySignedOntIdRegister::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes signature = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -5360,8 +6510,7 @@ bool OntologySignedOntIdRegister::MergePartialFromCodedStream(
 
       // optional bytes payload = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_payload()));
         } else {
@@ -5389,6 +6538,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologySignedOntIdRegister::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5417,8 +6567,7 @@ void OntologySignedOntIdRegister::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologySignedOntIdRegister::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologySignedOntIdRegister)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5455,16 +6604,21 @@ size_t OntologySignedOntIdRegister::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes signature = 1;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
     }
 
     // optional bytes payload = 2;
-    if (has_payload()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->payload());
@@ -5480,9 +6634,9 @@ void OntologySignedOntIdRegister::MergeFrom(const ::google::protobuf::Message& f
 // @@protoc_insertion_point(generalized_merge_from_start:OntologySignedOntIdRegister)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologySignedOntIdRegister* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologySignedOntIdRegister>(
+      ::google::protobuf::DynamicCastToGenerated<OntologySignedOntIdRegister>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologySignedOntIdRegister)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5499,13 +6653,13 @@ void OntologySignedOntIdRegister::MergeFrom(const OntologySignedOntIdRegister& f
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000001u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_payload();
+      _has_bits_[0] |= 0x00000002u;
       payload_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.payload_);
     }
   }
@@ -5535,17 +6689,17 @@ void OntologySignedOntIdRegister::Swap(OntologySignedOntIdRegister* other) {
 }
 void OntologySignedOntIdRegister::InternalSwap(OntologySignedOntIdRegister* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   payload_.Swap(&other->payload_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologySignedOntIdRegister::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5553,6 +6707,19 @@ void OntologySignedOntIdRegister::InternalSwap(OntologySignedOntIdRegister* othe
 
 void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::InitAsDefaultInstance() {
 }
+class OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::HasBitSetters {
+ public:
+  static void set_has_key(OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_type(OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_value(OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::kKeyFieldNumber;
 const int OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::kTypeFieldNumber;
@@ -5560,15 +6727,13 @@ const int OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntI
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes.OntologyOntIdAttribute)
 }
 OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute(const OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -5587,6 +6752,8 @@ OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute
 }
 
 void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute_messages_2dontology_2eproto.base);
   key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -5606,13 +6773,8 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttr
 void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute& OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5624,7 +6786,7 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttr
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       key_.ClearNonDefaultToEmptyNoArena();
     }
@@ -5639,9 +6801,94 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttr
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string key = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes.OntologyOntIdAttribute.key");
+        object = msg->mutable_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string type = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes.OntologyOntIdAttribute.type");
+        object = msg->mutable_type();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string value = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes.OntologyOntIdAttribute.value");
+        object = msg->mutable_value();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes.OntologyOntIdAttribute)
   for (;;) {
@@ -5651,8 +6898,7 @@ bool OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttr
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string key = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_key()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -5667,8 +6913,7 @@ bool OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttr
 
       // optional string type = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_type()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -5683,8 +6928,7 @@ bool OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttr
 
       // optional string value = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_value()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -5716,6 +6960,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -5762,8 +7007,7 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttr
 }
 
 ::google::protobuf::uint8* OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes.OntologyOntIdAttribute)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -5819,23 +7063,28 @@ size_t OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAt
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional string key = 1;
-    if (has_key()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->key());
     }
 
     // optional string type = 2;
-    if (has_type()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->type());
     }
 
     // optional string value = 3;
-    if (has_value()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->value());
@@ -5851,9 +7100,9 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttr
 // @@protoc_insertion_point(generalized_merge_from_start:OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes.OntologyOntIdAttribute)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute>(
+      ::google::protobuf::DynamicCastToGenerated<OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes.OntologyOntIdAttribute)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -5870,17 +7119,17 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttr
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_key();
+      _has_bits_[0] |= 0x00000001u;
       key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.key_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_type();
+      _has_bits_[0] |= 0x00000002u;
       type_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.type_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_value();
+      _has_bits_[0] |= 0x00000004u;
       value_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.value_);
     }
   }
@@ -5910,19 +7159,19 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttr
 }
 void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::InternalSwap(OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   key_.Swap(&other->key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   type_.Swap(&other->type_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   value_.Swap(&other->value_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -5930,6 +7179,16 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttr
 
 void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::InitAsDefaultInstance() {
 }
+class OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::HasBitSetters {
+ public:
+  static void set_has_ont_id(OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_public_key(OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::kOntIdFieldNumber;
 const int OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::kPublicKeyFieldNumber;
@@ -5937,15 +7196,13 @@ const int OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::kOntIdAttri
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes)
 }
 OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes(const OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       ont_id_attributes_(from.ont_id_attributes_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -5961,6 +7218,8 @@ OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::OntologySignOntIdAddA
 }
 
 void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_messages_2dontology_2eproto.base);
   ont_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -5978,13 +7237,8 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::SharedDtor() {
 void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes& OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -5997,7 +7251,7 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::Clear() {
 
   ont_id_attributes_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       ont_id_.ClearNonDefaultToEmptyNoArena();
     }
@@ -6009,9 +7263,93 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string ont_id = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes.ont_id");
+        object = msg->mutable_ont_id();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes public_key = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_public_key();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // repeated .OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes.OntologyOntIdAttribute ont_id_attributes = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute::_InternalParse;
+          object = msg->add_ont_id_attributes();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 26 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes)
   for (;;) {
@@ -6021,8 +7359,7 @@ bool OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::MergePartialFrom
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string ont_id = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_ont_id()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -6037,8 +7374,7 @@ bool OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::MergePartialFrom
 
       // optional bytes public_key = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_public_key()));
         } else {
@@ -6049,8 +7385,7 @@ bool OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::MergePartialFrom
 
       // repeated .OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes.OntologyOntIdAttribute ont_id_attributes = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                 input, add_ont_id_attributes()));
         } else {
@@ -6078,6 +7413,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6119,8 +7455,7 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::SerializeWithCac
 }
 
 ::google::protobuf::uint8* OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6149,7 +7484,7 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::SerializeWithCac
       n = static_cast<unsigned int>(this->ont_id_attributes_size()); i < n; i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->ont_id_attributes(static_cast<int>(i)), deterministic, target);
+        3, this->ont_id_attributes(static_cast<int>(i)), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6169,6 +7504,10 @@ size_t OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::ByteSizeLong()
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated .OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes.OntologyOntIdAttribute ont_id_attributes = 3;
   {
     unsigned int count = static_cast<unsigned int>(this->ont_id_attributes_size());
@@ -6180,16 +7519,17 @@ size_t OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::ByteSizeLong()
     }
   }
 
-  if (_has_bits_[0 / 32] & 3u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string ont_id = 1;
-    if (has_ont_id()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->ont_id());
     }
 
     // optional bytes public_key = 2;
-    if (has_public_key()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->public_key());
@@ -6205,9 +7545,9 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::MergeFrom(const 
 // @@protoc_insertion_point(generalized_merge_from_start:OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes>(
+      ::google::protobuf::DynamicCastToGenerated<OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6225,13 +7565,13 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::MergeFrom(const 
 
   ont_id_attributes_.MergeFrom(from.ont_id_attributes_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_ont_id();
+      _has_bits_[0] |= 0x00000001u;
       ont_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.ont_id_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_public_key();
+      _has_bits_[0] |= 0x00000002u;
       public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
     }
   }
@@ -6261,18 +7601,18 @@ void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::Swap(OntologySig
 }
 void OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::InternalSwap(OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&ont_id_attributes_)->InternalSwap(CastToBase(&other->ont_id_attributes_));
   ont_id_.Swap(&other->ont_id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6284,6 +7624,26 @@ void OntologySignOntIdAddAttributes::InitAsDefaultInstance() {
   ::_OntologySignOntIdAddAttributes_default_instance_._instance.get_mutable()->ont_id_add_attributes_ = const_cast< ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes*>(
       ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::internal_default_instance());
 }
+class OntologySignOntIdAddAttributes::HasBitSetters {
+ public:
+  static const ::OntologyTransaction& transaction(const OntologySignOntIdAddAttributes* msg);
+  static void set_has_transaction(OntologySignOntIdAddAttributes* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static const ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes& ont_id_add_attributes(const OntologySignOntIdAddAttributes* msg);
+  static void set_has_ont_id_add_attributes(OntologySignOntIdAddAttributes* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
+const ::OntologyTransaction&
+OntologySignOntIdAddAttributes::HasBitSetters::transaction(const OntologySignOntIdAddAttributes* msg) {
+  return *msg->transaction_;
+}
+const ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes&
+OntologySignOntIdAddAttributes::HasBitSetters::ont_id_add_attributes(const OntologySignOntIdAddAttributes* msg) {
+  return *msg->ont_id_add_attributes_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologySignOntIdAddAttributes::kAddressNFieldNumber;
 const int OntologySignOntIdAddAttributes::kTransactionFieldNumber;
@@ -6291,32 +7651,32 @@ const int OntologySignOntIdAddAttributes::kOntIdAddAttributesFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologySignOntIdAddAttributes::OntologySignOntIdAddAttributes()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignOntIdAddAttributes.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologySignOntIdAddAttributes)
 }
 OntologySignOntIdAddAttributes::OntologySignOntIdAddAttributes(const OntologySignOntIdAddAttributes& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_transaction()) {
     transaction_ = new ::OntologyTransaction(*from.transaction_);
   } else {
-    transaction_ = NULL;
+    transaction_ = nullptr;
   }
   if (from.has_ont_id_add_attributes()) {
     ont_id_add_attributes_ = new ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes(*from.ont_id_add_attributes_);
   } else {
-    ont_id_add_attributes_ = NULL;
+    ont_id_add_attributes_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:OntologySignOntIdAddAttributes)
 }
 
 void OntologySignOntIdAddAttributes::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologySignOntIdAddAttributes_messages_2dontology_2eproto.base);
   ::memset(&transaction_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&ont_id_add_attributes_) -
       reinterpret_cast<char*>(&transaction_)) + sizeof(ont_id_add_attributes_));
@@ -6335,13 +7695,8 @@ void OntologySignOntIdAddAttributes::SharedDtor() {
 void OntologySignOntIdAddAttributes::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologySignOntIdAddAttributes::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologySignOntIdAddAttributes& OntologySignOntIdAddAttributes::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologySignOntIdAddAttributes.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologySignOntIdAddAttributes_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6354,13 +7709,13 @@ void OntologySignOntIdAddAttributes::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(transaction_ != NULL);
+      GOOGLE_DCHECK(transaction_ != nullptr);
       transaction_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(ont_id_add_attributes_ != NULL);
+      GOOGLE_DCHECK(ont_id_add_attributes_ != nullptr);
       ont_id_add_attributes_->Clear();
     }
   }
@@ -6368,9 +7723,88 @@ void OntologySignOntIdAddAttributes::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologySignOntIdAddAttributes::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologySignOntIdAddAttributes*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional .OntologyTransaction transaction = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::OntologyTransaction::_InternalParse;
+        object = msg->mutable_transaction();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes ont_id_add_attributes = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes::_InternalParse;
+        object = msg->mutable_ont_id_add_attributes();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologySignOntIdAddAttributes::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologySignOntIdAddAttributes)
   for (;;) {
@@ -6380,14 +7814,11 @@ bool OntologySignOntIdAddAttributes::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -6399,8 +7830,7 @@ bool OntologySignOntIdAddAttributes::MergePartialFromCodedStream(
 
       // optional .OntologyTransaction transaction = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_transaction()));
         } else {
@@ -6411,8 +7841,7 @@ bool OntologySignOntIdAddAttributes::MergePartialFromCodedStream(
 
       // optional .OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes ont_id_add_attributes = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_ont_id_add_attributes()));
         } else {
@@ -6440,6 +7869,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologySignOntIdAddAttributes::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6457,13 +7887,13 @@ void OntologySignOntIdAddAttributes::SerializeWithCachedSizes(
   // optional .OntologyTransaction transaction = 2;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_transaction(), output);
+      2, HasBitSetters::transaction(this), output);
   }
 
   // optional .OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes ont_id_add_attributes = 3;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_ont_id_add_attributes(), output);
+      3, HasBitSetters::ont_id_add_attributes(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6474,8 +7904,7 @@ void OntologySignOntIdAddAttributes::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologySignOntIdAddAttributes::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologySignOntIdAddAttributes)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6489,14 +7918,14 @@ void OntologySignOntIdAddAttributes::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_transaction(), deterministic, target);
+        2, HasBitSetters::transaction(this), target);
   }
 
   // optional .OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes ont_id_add_attributes = 3;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_ont_id_add_attributes(), deterministic, target);
+        3, HasBitSetters::ont_id_add_attributes(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6516,6 +7945,10 @@ size_t OntologySignOntIdAddAttributes::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -6525,16 +7958,17 @@ size_t OntologySignOntIdAddAttributes::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 3u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional .OntologyTransaction transaction = 2;
-    if (has_transaction()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *transaction_);
     }
 
     // optional .OntologySignOntIdAddAttributes.OntologyOntIdAddAttributes ont_id_add_attributes = 3;
-    if (has_ont_id_add_attributes()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *ont_id_add_attributes_);
@@ -6550,9 +7984,9 @@ void OntologySignOntIdAddAttributes::MergeFrom(const ::google::protobuf::Message
 // @@protoc_insertion_point(generalized_merge_from_start:OntologySignOntIdAddAttributes)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologySignOntIdAddAttributes* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologySignOntIdAddAttributes>(
+      ::google::protobuf::DynamicCastToGenerated<OntologySignOntIdAddAttributes>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologySignOntIdAddAttributes)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6570,7 +8004,7 @@ void OntologySignOntIdAddAttributes::MergeFrom(const OntologySignOntIdAddAttribu
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       mutable_transaction()->::OntologyTransaction::MergeFrom(from.transaction());
     }
@@ -6604,16 +8038,16 @@ void OntologySignOntIdAddAttributes::Swap(OntologySignOntIdAddAttributes* other)
 }
 void OntologySignOntIdAddAttributes::InternalSwap(OntologySignOntIdAddAttributes* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(transaction_, other->transaction_);
   swap(ont_id_add_attributes_, other->ont_id_add_attributes_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologySignOntIdAddAttributes::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
@@ -6621,21 +8055,29 @@ void OntologySignOntIdAddAttributes::InternalSwap(OntologySignOntIdAddAttributes
 
 void OntologySignedOntIdAddAttributes::InitAsDefaultInstance() {
 }
+class OntologySignedOntIdAddAttributes::HasBitSetters {
+ public:
+  static void set_has_signature(OntologySignedOntIdAddAttributes* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_payload(OntologySignedOntIdAddAttributes* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int OntologySignedOntIdAddAttributes::kSignatureFieldNumber;
 const int OntologySignedOntIdAddAttributes::kPayloadFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 OntologySignedOntIdAddAttributes::OntologySignedOntIdAddAttributes()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dontology_2eproto::scc_info_OntologySignedOntIdAddAttributes.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:OntologySignedOntIdAddAttributes)
 }
 OntologySignedOntIdAddAttributes::OntologySignedOntIdAddAttributes(const OntologySignedOntIdAddAttributes& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -6650,6 +8092,8 @@ OntologySignedOntIdAddAttributes::OntologySignedOntIdAddAttributes(const Ontolog
 }
 
 void OntologySignedOntIdAddAttributes::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_OntologySignedOntIdAddAttributes_messages_2dontology_2eproto.base);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   payload_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -6667,13 +8111,8 @@ void OntologySignedOntIdAddAttributes::SharedDtor() {
 void OntologySignedOntIdAddAttributes::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* OntologySignedOntIdAddAttributes::descriptor() {
-  ::protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const OntologySignedOntIdAddAttributes& OntologySignedOntIdAddAttributes::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dontology_2eproto::scc_info_OntologySignedOntIdAddAttributes.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_OntologySignedOntIdAddAttributes_messages_2dontology_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -6685,7 +8124,7 @@ void OntologySignedOntIdAddAttributes::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       signature_.ClearNonDefaultToEmptyNoArena();
     }
@@ -6697,9 +8136,76 @@ void OntologySignedOntIdAddAttributes::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* OntologySignedOntIdAddAttributes::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<OntologySignedOntIdAddAttributes*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes signature = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes payload = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_payload();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool OntologySignedOntIdAddAttributes::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:OntologySignedOntIdAddAttributes)
   for (;;) {
@@ -6709,8 +8215,7 @@ bool OntologySignedOntIdAddAttributes::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes signature = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -6721,8 +8226,7 @@ bool OntologySignedOntIdAddAttributes::MergePartialFromCodedStream(
 
       // optional bytes payload = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_payload()));
         } else {
@@ -6750,6 +8254,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void OntologySignedOntIdAddAttributes::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -6778,8 +8283,7 @@ void OntologySignedOntIdAddAttributes::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* OntologySignedOntIdAddAttributes::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:OntologySignedOntIdAddAttributes)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -6816,16 +8320,21 @@ size_t OntologySignedOntIdAddAttributes::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes signature = 1;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
     }
 
     // optional bytes payload = 2;
-    if (has_payload()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->payload());
@@ -6841,9 +8350,9 @@ void OntologySignedOntIdAddAttributes::MergeFrom(const ::google::protobuf::Messa
 // @@protoc_insertion_point(generalized_merge_from_start:OntologySignedOntIdAddAttributes)
   GOOGLE_DCHECK_NE(&from, this);
   const OntologySignedOntIdAddAttributes* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const OntologySignedOntIdAddAttributes>(
+      ::google::protobuf::DynamicCastToGenerated<OntologySignedOntIdAddAttributes>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:OntologySignedOntIdAddAttributes)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -6860,13 +8369,13 @@ void OntologySignedOntIdAddAttributes::MergeFrom(const OntologySignedOntIdAddAtt
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000001u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_payload();
+      _has_bits_[0] |= 0x00000002u;
       payload_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.payload_);
     }
   }
@@ -6896,81 +8405,82 @@ void OntologySignedOntIdAddAttributes::Swap(OntologySignedOntIdAddAttributes* ot
 }
 void OntologySignedOntIdAddAttributes::InternalSwap(OntologySignedOntIdAddAttributes* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   payload_.Swap(&other->payload_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata OntologySignedOntIdAddAttributes::GetMetadata() const {
-  protobuf_messages_2dontology_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dontology_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dontology_2eproto);
+  return ::file_level_metadata_messages_2dontology_2eproto[kIndexInFileMessages];
 }
 
 
 // @@protoc_insertion_point(namespace_scope)
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologyTransaction_OntologyTxAttribute* Arena::CreateMaybeMessage< ::OntologyTransaction_OntologyTxAttribute >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologyTransaction_OntologyTxAttribute* Arena::CreateMaybeMessage< ::OntologyTransaction_OntologyTxAttribute >(Arena* arena) {
   return Arena::CreateInternal< ::OntologyTransaction_OntologyTxAttribute >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologyTransaction* Arena::CreateMaybeMessage< ::OntologyTransaction >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologyTransaction* Arena::CreateMaybeMessage< ::OntologyTransaction >(Arena* arena) {
   return Arena::CreateInternal< ::OntologyTransaction >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologyGetPublicKey* Arena::CreateMaybeMessage< ::OntologyGetPublicKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologyGetPublicKey* Arena::CreateMaybeMessage< ::OntologyGetPublicKey >(Arena* arena) {
   return Arena::CreateInternal< ::OntologyGetPublicKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologyPublicKey* Arena::CreateMaybeMessage< ::OntologyPublicKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologyPublicKey* Arena::CreateMaybeMessage< ::OntologyPublicKey >(Arena* arena) {
   return Arena::CreateInternal< ::OntologyPublicKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologyGetAddress* Arena::CreateMaybeMessage< ::OntologyGetAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologyGetAddress* Arena::CreateMaybeMessage< ::OntologyGetAddress >(Arena* arena) {
   return Arena::CreateInternal< ::OntologyGetAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologyAddress* Arena::CreateMaybeMessage< ::OntologyAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologyAddress* Arena::CreateMaybeMessage< ::OntologyAddress >(Arena* arena) {
   return Arena::CreateInternal< ::OntologyAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologySignTransfer_OntologyTransfer* Arena::CreateMaybeMessage< ::OntologySignTransfer_OntologyTransfer >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologySignTransfer_OntologyTransfer* Arena::CreateMaybeMessage< ::OntologySignTransfer_OntologyTransfer >(Arena* arena) {
   return Arena::CreateInternal< ::OntologySignTransfer_OntologyTransfer >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologySignTransfer* Arena::CreateMaybeMessage< ::OntologySignTransfer >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologySignTransfer* Arena::CreateMaybeMessage< ::OntologySignTransfer >(Arena* arena) {
   return Arena::CreateInternal< ::OntologySignTransfer >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologySignedTransfer* Arena::CreateMaybeMessage< ::OntologySignedTransfer >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologySignedTransfer* Arena::CreateMaybeMessage< ::OntologySignedTransfer >(Arena* arena) {
   return Arena::CreateInternal< ::OntologySignedTransfer >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologySignWithdrawOng_OntologyWithdrawOng* Arena::CreateMaybeMessage< ::OntologySignWithdrawOng_OntologyWithdrawOng >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologySignWithdrawOng_OntologyWithdrawOng* Arena::CreateMaybeMessage< ::OntologySignWithdrawOng_OntologyWithdrawOng >(Arena* arena) {
   return Arena::CreateInternal< ::OntologySignWithdrawOng_OntologyWithdrawOng >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologySignWithdrawOng* Arena::CreateMaybeMessage< ::OntologySignWithdrawOng >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologySignWithdrawOng* Arena::CreateMaybeMessage< ::OntologySignWithdrawOng >(Arena* arena) {
   return Arena::CreateInternal< ::OntologySignWithdrawOng >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologySignedWithdrawOng* Arena::CreateMaybeMessage< ::OntologySignedWithdrawOng >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologySignedWithdrawOng* Arena::CreateMaybeMessage< ::OntologySignedWithdrawOng >(Arena* arena) {
   return Arena::CreateInternal< ::OntologySignedWithdrawOng >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologySignOntIdRegister_OntologyOntIdRegister* Arena::CreateMaybeMessage< ::OntologySignOntIdRegister_OntologyOntIdRegister >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologySignOntIdRegister_OntologyOntIdRegister* Arena::CreateMaybeMessage< ::OntologySignOntIdRegister_OntologyOntIdRegister >(Arena* arena) {
   return Arena::CreateInternal< ::OntologySignOntIdRegister_OntologyOntIdRegister >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologySignOntIdRegister* Arena::CreateMaybeMessage< ::OntologySignOntIdRegister >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologySignOntIdRegister* Arena::CreateMaybeMessage< ::OntologySignOntIdRegister >(Arena* arena) {
   return Arena::CreateInternal< ::OntologySignOntIdRegister >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologySignedOntIdRegister* Arena::CreateMaybeMessage< ::OntologySignedOntIdRegister >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologySignedOntIdRegister* Arena::CreateMaybeMessage< ::OntologySignedOntIdRegister >(Arena* arena) {
   return Arena::CreateInternal< ::OntologySignedOntIdRegister >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute* Arena::CreateMaybeMessage< ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute* Arena::CreateMaybeMessage< ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute >(Arena* arena) {
   return Arena::CreateInternal< ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes_OntologyOntIdAttribute >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes* Arena::CreateMaybeMessage< ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes* Arena::CreateMaybeMessage< ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes >(Arena* arena) {
   return Arena::CreateInternal< ::OntologySignOntIdAddAttributes_OntologyOntIdAddAttributes >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologySignOntIdAddAttributes* Arena::CreateMaybeMessage< ::OntologySignOntIdAddAttributes >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologySignOntIdAddAttributes* Arena::CreateMaybeMessage< ::OntologySignOntIdAddAttributes >(Arena* arena) {
   return Arena::CreateInternal< ::OntologySignOntIdAddAttributes >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::OntologySignedOntIdAddAttributes* Arena::CreateMaybeMessage< ::OntologySignedOntIdAddAttributes >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::OntologySignedOntIdAddAttributes* Arena::CreateMaybeMessage< ::OntologySignedOntIdAddAttributes >(Arena* arena) {
   return Arena::CreateInternal< ::OntologySignedOntIdAddAttributes >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

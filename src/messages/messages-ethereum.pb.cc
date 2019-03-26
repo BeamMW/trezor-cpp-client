@@ -6,82 +6,66 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_messages_2dcommon_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_messages_2dcommon_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HDNodeType;
-}  // namespace protobuf_messages_2dcommon_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dcommon_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HDNodeType_messages_2dcommon_2eproto;
 namespace hw {
 namespace trezor {
 namespace messages {
 namespace ethereum {
 class EthereumGetPublicKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EthereumGetPublicKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EthereumGetPublicKey> _instance;
 } _EthereumGetPublicKey_default_instance_;
 class EthereumPublicKeyDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EthereumPublicKey>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EthereumPublicKey> _instance;
 } _EthereumPublicKey_default_instance_;
 class EthereumGetAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EthereumGetAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EthereumGetAddress> _instance;
 } _EthereumGetAddress_default_instance_;
 class EthereumAddressDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EthereumAddress>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EthereumAddress> _instance;
 } _EthereumAddress_default_instance_;
 class EthereumSignTxDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EthereumSignTx>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EthereumSignTx> _instance;
 } _EthereumSignTx_default_instance_;
 class EthereumTxRequestDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EthereumTxRequest>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EthereumTxRequest> _instance;
 } _EthereumTxRequest_default_instance_;
 class EthereumTxAckDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EthereumTxAck>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EthereumTxAck> _instance;
 } _EthereumTxAck_default_instance_;
 class EthereumSignMessageDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EthereumSignMessage>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EthereumSignMessage> _instance;
 } _EthereumSignMessage_default_instance_;
 class EthereumMessageSignatureDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EthereumMessageSignature>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EthereumMessageSignature> _instance;
 } _EthereumMessageSignature_default_instance_;
 class EthereumVerifyMessageDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<EthereumVerifyMessage>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<EthereumVerifyMessage> _instance;
 } _EthereumVerifyMessage_default_instance_;
 }  // namespace ethereum
 }  // namespace messages
 }  // namespace trezor
 }  // namespace hw
-namespace protobuf_messages_2dethereum_2eproto {
-static void InitDefaultsEthereumGetPublicKey() {
+static void InitDefaultsEthereumGetPublicKey_messages_2dethereum_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -92,10 +76,10 @@ static void InitDefaultsEthereumGetPublicKey() {
   ::hw::trezor::messages::ethereum::EthereumGetPublicKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EthereumGetPublicKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumGetPublicKey}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EthereumGetPublicKey_messages_2dethereum_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumGetPublicKey_messages_2dethereum_2eproto}, {}};
 
-static void InitDefaultsEthereumPublicKey() {
+static void InitDefaultsEthereumPublicKey_messages_2dethereum_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -106,11 +90,11 @@ static void InitDefaultsEthereumPublicKey() {
   ::hw::trezor::messages::ethereum::EthereumPublicKey::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_EthereumPublicKey =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEthereumPublicKey}, {
-      &protobuf_messages_2dcommon_2eproto::scc_info_HDNodeType.base,}};
+::google::protobuf::internal::SCCInfo<1> scc_info_EthereumPublicKey_messages_2dethereum_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsEthereumPublicKey_messages_2dethereum_2eproto}, {
+      &scc_info_HDNodeType_messages_2dcommon_2eproto.base,}};
 
-static void InitDefaultsEthereumGetAddress() {
+static void InitDefaultsEthereumGetAddress_messages_2dethereum_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -121,10 +105,10 @@ static void InitDefaultsEthereumGetAddress() {
   ::hw::trezor::messages::ethereum::EthereumGetAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EthereumGetAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumGetAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EthereumGetAddress_messages_2dethereum_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumGetAddress_messages_2dethereum_2eproto}, {}};
 
-static void InitDefaultsEthereumAddress() {
+static void InitDefaultsEthereumAddress_messages_2dethereum_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -135,10 +119,10 @@ static void InitDefaultsEthereumAddress() {
   ::hw::trezor::messages::ethereum::EthereumAddress::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EthereumAddress =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumAddress}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EthereumAddress_messages_2dethereum_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumAddress_messages_2dethereum_2eproto}, {}};
 
-static void InitDefaultsEthereumSignTx() {
+static void InitDefaultsEthereumSignTx_messages_2dethereum_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -149,10 +133,10 @@ static void InitDefaultsEthereumSignTx() {
   ::hw::trezor::messages::ethereum::EthereumSignTx::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EthereumSignTx =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumSignTx}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EthereumSignTx_messages_2dethereum_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumSignTx_messages_2dethereum_2eproto}, {}};
 
-static void InitDefaultsEthereumTxRequest() {
+static void InitDefaultsEthereumTxRequest_messages_2dethereum_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -163,10 +147,10 @@ static void InitDefaultsEthereumTxRequest() {
   ::hw::trezor::messages::ethereum::EthereumTxRequest::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EthereumTxRequest =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumTxRequest}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EthereumTxRequest_messages_2dethereum_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumTxRequest_messages_2dethereum_2eproto}, {}};
 
-static void InitDefaultsEthereumTxAck() {
+static void InitDefaultsEthereumTxAck_messages_2dethereum_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -177,10 +161,10 @@ static void InitDefaultsEthereumTxAck() {
   ::hw::trezor::messages::ethereum::EthereumTxAck::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EthereumTxAck =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumTxAck}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EthereumTxAck_messages_2dethereum_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumTxAck_messages_2dethereum_2eproto}, {}};
 
-static void InitDefaultsEthereumSignMessage() {
+static void InitDefaultsEthereumSignMessage_messages_2dethereum_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -191,10 +175,10 @@ static void InitDefaultsEthereumSignMessage() {
   ::hw::trezor::messages::ethereum::EthereumSignMessage::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EthereumSignMessage =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumSignMessage}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EthereumSignMessage_messages_2dethereum_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumSignMessage_messages_2dethereum_2eproto}, {}};
 
-static void InitDefaultsEthereumMessageSignature() {
+static void InitDefaultsEthereumMessageSignature_messages_2dethereum_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -205,10 +189,10 @@ static void InitDefaultsEthereumMessageSignature() {
   ::hw::trezor::messages::ethereum::EthereumMessageSignature::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EthereumMessageSignature =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumMessageSignature}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EthereumMessageSignature_messages_2dethereum_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumMessageSignature_messages_2dethereum_2eproto}, {}};
 
-static void InitDefaultsEthereumVerifyMessage() {
+static void InitDefaultsEthereumVerifyMessage_messages_2dethereum_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -219,74 +203,76 @@ static void InitDefaultsEthereumVerifyMessage() {
   ::hw::trezor::messages::ethereum::EthereumVerifyMessage::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_EthereumVerifyMessage =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumVerifyMessage}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_EthereumVerifyMessage_messages_2dethereum_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsEthereumVerifyMessage_messages_2dethereum_2eproto}, {}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_EthereumGetPublicKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EthereumPublicKey.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EthereumGetAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EthereumAddress.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EthereumSignTx.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EthereumTxRequest.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EthereumTxAck.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EthereumSignMessage.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EthereumMessageSignature.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_EthereumVerifyMessage.base);
+void InitDefaults_messages_2dethereum_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_EthereumGetPublicKey_messages_2dethereum_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EthereumPublicKey_messages_2dethereum_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EthereumGetAddress_messages_2dethereum_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EthereumAddress_messages_2dethereum_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EthereumSignTx_messages_2dethereum_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EthereumTxRequest_messages_2dethereum_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EthereumTxAck_messages_2dethereum_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EthereumSignMessage_messages_2dethereum_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EthereumMessageSignature_messages_2dethereum_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_EthereumVerifyMessage_messages_2dethereum_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[10];
+::google::protobuf::Metadata file_level_metadata_messages_2dethereum_2eproto[10];
+constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_messages_2dethereum_2eproto = nullptr;
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2dethereum_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetPublicKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetPublicKey, _internal_metadata_),
+const ::google::protobuf::uint32 TableStruct_messages_2dethereum_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetPublicKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetPublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetPublicKey, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetPublicKey, show_display_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetPublicKey, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetPublicKey, show_display_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumPublicKey, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumPublicKey, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumPublicKey, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumPublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumPublicKey, node_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumPublicKey, xpub_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumPublicKey, node_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumPublicKey, xpub_),
   1,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetAddress, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetAddress, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetAddress, show_display_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetAddress, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumGetAddress, show_display_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumAddress, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumAddress, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumAddress, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumAddress, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumAddress, address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumAddress, address_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, nonce_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, gas_price_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, gas_limit_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, to_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, value_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, data_initial_chunk_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, data_length_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, chain_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, tx_type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, nonce_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, gas_price_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, gas_limit_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, to_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, value_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, data_initial_chunk_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, data_length_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, chain_id_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignTx, tx_type_),
   ~0u,
   0,
   1,
@@ -297,57 +283,57 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   6,
   7,
   8,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxRequest, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxRequest, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxRequest, data_length_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxRequest, signature_v_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxRequest, signature_r_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxRequest, signature_s_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxRequest, data_length_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxRequest, signature_v_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxRequest, signature_r_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxRequest, signature_s_),
   2,
   3,
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxAck, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxAck, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxAck, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxAck, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxAck, data_chunk_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumTxAck, data_chunk_),
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignMessage, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignMessage, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignMessage, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignMessage, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignMessage, address_n_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignMessage, message_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignMessage, address_n_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumSignMessage, message_),
   ~0u,
   0,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumMessageSignature, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumMessageSignature, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumMessageSignature, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumMessageSignature, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumMessageSignature, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumMessageSignature, address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumMessageSignature, signature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumMessageSignature, address_),
   0,
   1,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumVerifyMessage, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumVerifyMessage, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumVerifyMessage, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumVerifyMessage, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumVerifyMessage, signature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumVerifyMessage, message_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumVerifyMessage, address_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumVerifyMessage, signature_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumVerifyMessage, message_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::ethereum::EthereumVerifyMessage, address_),
   0,
   1,
   2,
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::hw::trezor::messages::ethereum::EthereumGetPublicKey)},
   { 9, 16, sizeof(::hw::trezor::messages::ethereum::EthereumPublicKey)},
   { 18, 25, sizeof(::hw::trezor::messages::ethereum::EthereumGetAddress)},
@@ -373,70 +359,54 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::ethereum::_EthereumVerifyMessage_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "messages-ethereum.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2dethereum_2eproto = {
+  {}, AddDescriptors_messages_2dethereum_2eproto, "messages-ethereum.proto", schemas,
+  file_default_instances, TableStruct_messages_2dethereum_2eproto::offsets,
+  file_level_metadata_messages_2dethereum_2eproto, 10, file_level_enum_descriptors_messages_2dethereum_2eproto, file_level_service_descriptors_messages_2dethereum_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_messages_2dethereum_2eproto[] =
+  "\n\027messages-ethereum.proto\022\033hw.trezor.mes"
+  "sages.ethereum\032\025messages-common.proto\"\?\n"
+  "\024EthereumGetPublicKey\022\021\n\taddress_n\030\001 \003(\r"
+  "\022\024\n\014show_display\030\002 \001(\010\"V\n\021EthereumPublic"
+  "Key\0223\n\004node\030\001 \001(\0132%.hw.trezor.messages.c"
+  "ommon.HDNodeType\022\014\n\004xpub\030\002 \001(\t\"=\n\022Ethere"
+  "umGetAddress\022\021\n\taddress_n\030\001 \003(\r\022\024\n\014show_"
+  "display\030\002 \001(\010\"\"\n\017EthereumAddress\022\017\n\007addr"
+  "ess\030\002 \001(\t\"\307\001\n\016EthereumSignTx\022\021\n\taddress_"
+  "n\030\001 \003(\r\022\r\n\005nonce\030\002 \001(\014\022\021\n\tgas_price\030\003 \001("
+  "\014\022\021\n\tgas_limit\030\004 \001(\014\022\n\n\002to\030\013 \001(\t\022\r\n\005valu"
+  "e\030\006 \001(\014\022\032\n\022data_initial_chunk\030\007 \001(\014\022\023\n\013d"
+  "ata_length\030\010 \001(\r\022\020\n\010chain_id\030\t \001(\r\022\017\n\007tx"
+  "_type\030\n \001(\r\"g\n\021EthereumTxRequest\022\023\n\013data"
+  "_length\030\001 \001(\r\022\023\n\013signature_v\030\002 \001(\r\022\023\n\013si"
+  "gnature_r\030\003 \001(\014\022\023\n\013signature_s\030\004 \001(\014\"#\n\r"
+  "EthereumTxAck\022\022\n\ndata_chunk\030\001 \001(\014\"9\n\023Eth"
+  "ereumSignMessage\022\021\n\taddress_n\030\001 \003(\r\022\017\n\007m"
+  "essage\030\002 \001(\014\">\n\030EthereumMessageSignature"
+  "\022\021\n\tsignature\030\002 \001(\014\022\017\n\007address\030\003 \001(\t\"L\n\025"
+  "EthereumVerifyMessage\022\021\n\tsignature\030\002 \001(\014"
+  "\022\017\n\007message\030\003 \001(\014\022\017\n\007address\030\004 \001(\tB<\n#co"
+  "m.satoshilabs.trezor.lib.protobufB\025Trezo"
+  "rMessageEthereum"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dethereum_2eproto = {
+  false, InitDefaults_messages_2dethereum_2eproto, 
+  descriptor_table_protodef_messages_2dethereum_2eproto,
+  "messages-ethereum.proto", &assign_descriptors_table_messages_2dethereum_2eproto, 936,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 10);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\027messages-ethereum.proto\022\033hw.trezor.mes"
-      "sages.ethereum\032\025messages-common.proto\"\?\n"
-      "\024EthereumGetPublicKey\022\021\n\taddress_n\030\001 \003(\r"
-      "\022\024\n\014show_display\030\002 \001(\010\"V\n\021EthereumPublic"
-      "Key\0223\n\004node\030\001 \001(\0132%.hw.trezor.messages.c"
-      "ommon.HDNodeType\022\014\n\004xpub\030\002 \001(\t\"=\n\022Ethere"
-      "umGetAddress\022\021\n\taddress_n\030\001 \003(\r\022\024\n\014show_"
-      "display\030\002 \001(\010\"\"\n\017EthereumAddress\022\017\n\007addr"
-      "ess\030\002 \001(\t\"\307\001\n\016EthereumSignTx\022\021\n\taddress_"
-      "n\030\001 \003(\r\022\r\n\005nonce\030\002 \001(\014\022\021\n\tgas_price\030\003 \001("
-      "\014\022\021\n\tgas_limit\030\004 \001(\014\022\n\n\002to\030\013 \001(\t\022\r\n\005valu"
-      "e\030\006 \001(\014\022\032\n\022data_initial_chunk\030\007 \001(\014\022\023\n\013d"
-      "ata_length\030\010 \001(\r\022\020\n\010chain_id\030\t \001(\r\022\017\n\007tx"
-      "_type\030\n \001(\r\"g\n\021EthereumTxRequest\022\023\n\013data"
-      "_length\030\001 \001(\r\022\023\n\013signature_v\030\002 \001(\r\022\023\n\013si"
-      "gnature_r\030\003 \001(\014\022\023\n\013signature_s\030\004 \001(\014\"#\n\r"
-      "EthereumTxAck\022\022\n\ndata_chunk\030\001 \001(\014\"9\n\023Eth"
-      "ereumSignMessage\022\021\n\taddress_n\030\001 \003(\r\022\017\n\007m"
-      "essage\030\002 \001(\014\">\n\030EthereumMessageSignature"
-      "\022\021\n\tsignature\030\002 \001(\014\022\017\n\007address\030\003 \001(\t\"L\n\025"
-      "EthereumVerifyMessage\022\021\n\tsignature\030\002 \001(\014"
-      "\022\017\n\007message\030\003 \001(\014\022\017\n\007address\030\004 \001(\tB<\n#co"
-      "m.satoshilabs.trezor.lib.protobufB\025Trezo"
-      "rMessageEthereum"
+void AddDescriptors_messages_2dethereum_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
+    ::AddDescriptors_messages_2dcommon_2eproto,
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 936);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "messages-ethereum.proto", &protobuf_RegisterTypes);
-  ::protobuf_messages_2dcommon_2eproto::AddDescriptors();
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_messages_2dethereum_2eproto, deps, 1);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_messages_2dethereum_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_messages_2dethereum_2eproto = []() { AddDescriptors_messages_2dethereum_2eproto(); return true; }();
 namespace hw {
 namespace trezor {
 namespace messages {
@@ -446,21 +416,26 @@ namespace ethereum {
 
 void EthereumGetPublicKey::InitAsDefaultInstance() {
 }
+class EthereumGetPublicKey::HasBitSetters {
+ public:
+  static void set_has_show_display(EthereumGetPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EthereumGetPublicKey::kAddressNFieldNumber;
 const int EthereumGetPublicKey::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EthereumGetPublicKey::EthereumGetPublicKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dethereum_2eproto::scc_info_EthereumGetPublicKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ethereum.EthereumGetPublicKey)
 }
 EthereumGetPublicKey::EthereumGetPublicKey(const EthereumGetPublicKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -483,13 +458,8 @@ void EthereumGetPublicKey::SharedDtor() {
 void EthereumGetPublicKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EthereumGetPublicKey::descriptor() {
-  ::protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EthereumGetPublicKey& EthereumGetPublicKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dethereum_2eproto::scc_info_EthereumGetPublicKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EthereumGetPublicKey_messages_2dethereum_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -506,9 +476,69 @@ void EthereumGetPublicKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EthereumGetPublicKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EthereumGetPublicKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool show_display = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EthereumGetPublicKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ethereum.EthereumGetPublicKey)
   for (;;) {
@@ -518,14 +548,11 @@ bool EthereumGetPublicKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -537,9 +564,8 @@ bool EthereumGetPublicKey::MergePartialFromCodedStream(
 
       // optional bool show_display = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -568,6 +594,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EthereumGetPublicKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -595,8 +622,7 @@ void EthereumGetPublicKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EthereumGetPublicKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ethereum.EthereumGetPublicKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -628,6 +654,10 @@ size_t EthereumGetPublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -638,7 +668,8 @@ size_t EthereumGetPublicKey::ByteSizeLong() const {
   }
 
   // optional bool show_display = 2;
-  if (has_show_display()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -651,9 +682,9 @@ void EthereumGetPublicKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ethereum.EthereumGetPublicKey)
   GOOGLE_DCHECK_NE(&from, this);
   const EthereumGetPublicKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EthereumGetPublicKey>(
+      ::google::protobuf::DynamicCastToGenerated<EthereumGetPublicKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ethereum.EthereumGetPublicKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -699,15 +730,15 @@ void EthereumGetPublicKey::Swap(EthereumGetPublicKey* other) {
 }
 void EthereumGetPublicKey::InternalSwap(EthereumGetPublicKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EthereumGetPublicKey::GetMetadata() const {
-  protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dethereum_2eproto);
+  return ::file_level_metadata_messages_2dethereum_2eproto[kIndexInFileMessages];
 }
 
 
@@ -717,9 +748,24 @@ void EthereumPublicKey::InitAsDefaultInstance() {
   ::hw::trezor::messages::ethereum::_EthereumPublicKey_default_instance_._instance.get_mutable()->node_ = const_cast< ::hw::trezor::messages::common::HDNodeType*>(
       ::hw::trezor::messages::common::HDNodeType::internal_default_instance());
 }
+class EthereumPublicKey::HasBitSetters {
+ public:
+  static const ::hw::trezor::messages::common::HDNodeType& node(const EthereumPublicKey* msg);
+  static void set_has_node(EthereumPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_xpub(EthereumPublicKey* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+const ::hw::trezor::messages::common::HDNodeType&
+EthereumPublicKey::HasBitSetters::node(const EthereumPublicKey* msg) {
+  return *msg->node_;
+}
 void EthereumPublicKey::clear_node() {
-  if (node_ != NULL) node_->Clear();
-  clear_has_node();
+  if (node_ != nullptr) node_->Clear();
+  _has_bits_[0] &= ~0x00000002u;
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EthereumPublicKey::kNodeFieldNumber;
@@ -727,15 +773,13 @@ const int EthereumPublicKey::kXpubFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EthereumPublicKey::EthereumPublicKey()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dethereum_2eproto::scc_info_EthereumPublicKey.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ethereum.EthereumPublicKey)
 }
 EthereumPublicKey::EthereumPublicKey(const EthereumPublicKey& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   xpub_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -745,14 +789,16 @@ EthereumPublicKey::EthereumPublicKey(const EthereumPublicKey& from)
   if (from.has_node()) {
     node_ = new ::hw::trezor::messages::common::HDNodeType(*from.node_);
   } else {
-    node_ = NULL;
+    node_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.ethereum.EthereumPublicKey)
 }
 
 void EthereumPublicKey::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EthereumPublicKey_messages_2dethereum_2eproto.base);
   xpub_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  node_ = NULL;
+  node_ = nullptr;
 }
 
 EthereumPublicKey::~EthereumPublicKey() {
@@ -768,13 +814,8 @@ void EthereumPublicKey::SharedDtor() {
 void EthereumPublicKey::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EthereumPublicKey::descriptor() {
-  ::protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EthereumPublicKey& EthereumPublicKey::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dethereum_2eproto::scc_info_EthereumPublicKey.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EthereumPublicKey_messages_2dethereum_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -786,12 +827,12 @@ void EthereumPublicKey::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       xpub_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(node_ != NULL);
+      GOOGLE_DCHECK(node_ != nullptr);
       node_->Clear();
     }
   }
@@ -799,9 +840,75 @@ void EthereumPublicKey::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EthereumPublicKey::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EthereumPublicKey*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.common.HDNodeType node = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::common::HDNodeType::_InternalParse;
+        object = msg->mutable_node();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional string xpub = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.ethereum.EthereumPublicKey.xpub");
+        object = msg->mutable_xpub();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EthereumPublicKey::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ethereum.EthereumPublicKey)
   for (;;) {
@@ -811,8 +918,7 @@ bool EthereumPublicKey::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .hw.trezor.messages.common.HDNodeType node = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_node()));
         } else {
@@ -823,8 +929,7 @@ bool EthereumPublicKey::MergePartialFromCodedStream(
 
       // optional string xpub = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_xpub()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -856,6 +961,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EthereumPublicKey::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -867,7 +973,7 @@ void EthereumPublicKey::SerializeWithCachedSizes(
   // optional .hw.trezor.messages.common.HDNodeType node = 1;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_node(), output);
+      1, HasBitSetters::node(this), output);
   }
 
   // optional string xpub = 2;
@@ -888,8 +994,7 @@ void EthereumPublicKey::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EthereumPublicKey::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ethereum.EthereumPublicKey)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -899,7 +1004,7 @@ void EthereumPublicKey::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_node(), deterministic, target);
+        1, HasBitSetters::node(this), target);
   }
 
   // optional string xpub = 2;
@@ -930,16 +1035,21 @@ size_t EthereumPublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional string xpub = 2;
-    if (has_xpub()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->xpub());
     }
 
     // optional .hw.trezor.messages.common.HDNodeType node = 1;
-    if (has_node()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *node_);
@@ -955,9 +1065,9 @@ void EthereumPublicKey::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ethereum.EthereumPublicKey)
   GOOGLE_DCHECK_NE(&from, this);
   const EthereumPublicKey* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EthereumPublicKey>(
+      ::google::protobuf::DynamicCastToGenerated<EthereumPublicKey>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ethereum.EthereumPublicKey)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -974,9 +1084,9 @@ void EthereumPublicKey::MergeFrom(const EthereumPublicKey& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_xpub();
+      _has_bits_[0] |= 0x00000001u;
       xpub_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.xpub_);
     }
     if (cached_has_bits & 0x00000002u) {
@@ -1012,16 +1122,16 @@ void EthereumPublicKey::Swap(EthereumPublicKey* other) {
 }
 void EthereumPublicKey::InternalSwap(EthereumPublicKey* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   xpub_.Swap(&other->xpub_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(node_, other->node_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EthereumPublicKey::GetMetadata() const {
-  protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dethereum_2eproto);
+  return ::file_level_metadata_messages_2dethereum_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1029,21 +1139,26 @@ void EthereumPublicKey::InternalSwap(EthereumPublicKey* other) {
 
 void EthereumGetAddress::InitAsDefaultInstance() {
 }
+class EthereumGetAddress::HasBitSetters {
+ public:
+  static void set_has_show_display(EthereumGetAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EthereumGetAddress::kAddressNFieldNumber;
 const int EthereumGetAddress::kShowDisplayFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EthereumGetAddress::EthereumGetAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dethereum_2eproto::scc_info_EthereumGetAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ethereum.EthereumGetAddress)
 }
 EthereumGetAddress::EthereumGetAddress(const EthereumGetAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -1066,13 +1181,8 @@ void EthereumGetAddress::SharedDtor() {
 void EthereumGetAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EthereumGetAddress::descriptor() {
-  ::protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EthereumGetAddress& EthereumGetAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dethereum_2eproto::scc_info_EthereumGetAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EthereumGetAddress_messages_2dethereum_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1089,9 +1199,69 @@ void EthereumGetAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EthereumGetAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EthereumGetAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bool show_display = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_show_display(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EthereumGetAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ethereum.EthereumGetAddress)
   for (;;) {
@@ -1101,14 +1271,11 @@ bool EthereumGetAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1120,9 +1287,8 @@ bool EthereumGetAddress::MergePartialFromCodedStream(
 
       // optional bool show_display = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_show_display();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_show_display(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, &show_display_)));
@@ -1151,6 +1317,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EthereumGetAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1178,8 +1345,7 @@ void EthereumGetAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EthereumGetAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ethereum.EthereumGetAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1211,6 +1377,10 @@ size_t EthereumGetAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -1221,7 +1391,8 @@ size_t EthereumGetAddress::ByteSizeLong() const {
   }
 
   // optional bool show_display = 2;
-  if (has_show_display()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 + 1;
   }
 
@@ -1234,9 +1405,9 @@ void EthereumGetAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ethereum.EthereumGetAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const EthereumGetAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EthereumGetAddress>(
+      ::google::protobuf::DynamicCastToGenerated<EthereumGetAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ethereum.EthereumGetAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1282,15 +1453,15 @@ void EthereumGetAddress::Swap(EthereumGetAddress* other) {
 }
 void EthereumGetAddress::InternalSwap(EthereumGetAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   swap(show_display_, other->show_display_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EthereumGetAddress::GetMetadata() const {
-  protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dethereum_2eproto);
+  return ::file_level_metadata_messages_2dethereum_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1298,20 +1469,25 @@ void EthereumGetAddress::InternalSwap(EthereumGetAddress* other) {
 
 void EthereumAddress::InitAsDefaultInstance() {
 }
+class EthereumAddress::HasBitSetters {
+ public:
+  static void set_has_address(EthereumAddress* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EthereumAddress::kAddressFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EthereumAddress::EthereumAddress()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dethereum_2eproto::scc_info_EthereumAddress.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ethereum.EthereumAddress)
 }
 EthereumAddress::EthereumAddress(const EthereumAddress& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1322,6 +1498,8 @@ EthereumAddress::EthereumAddress(const EthereumAddress& from)
 }
 
 void EthereumAddress::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EthereumAddress_messages_2dethereum_2eproto.base);
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1337,13 +1515,8 @@ void EthereumAddress::SharedDtor() {
 void EthereumAddress::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EthereumAddress::descriptor() {
-  ::protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EthereumAddress& EthereumAddress::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dethereum_2eproto::scc_info_EthereumAddress.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EthereumAddress_messages_2dethereum_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1362,9 +1535,62 @@ void EthereumAddress::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EthereumAddress::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EthereumAddress*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional string address = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.ethereum.EthereumAddress.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EthereumAddress::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ethereum.EthereumAddress)
   for (;;) {
@@ -1374,8 +1600,7 @@ bool EthereumAddress::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string address = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1407,6 +1632,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EthereumAddress::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1433,8 +1659,7 @@ void EthereumAddress::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EthereumAddress::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ethereum.EthereumAddress)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1468,8 +1693,13 @@ size_t EthereumAddress::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional string address = 2;
-  if (has_address()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->address());
@@ -1484,9 +1714,9 @@ void EthereumAddress::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ethereum.EthereumAddress)
   GOOGLE_DCHECK_NE(&from, this);
   const EthereumAddress* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EthereumAddress>(
+      ::google::protobuf::DynamicCastToGenerated<EthereumAddress>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ethereum.EthereumAddress)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1503,7 +1733,7 @@ void EthereumAddress::MergeFrom(const EthereumAddress& from) {
   (void) cached_has_bits;
 
   if (from.has_address()) {
-    set_has_address();
+    _has_bits_[0] |= 0x00000001u;
     address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
   }
 }
@@ -1532,15 +1762,15 @@ void EthereumAddress::Swap(EthereumAddress* other) {
 }
 void EthereumAddress::InternalSwap(EthereumAddress* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EthereumAddress::GetMetadata() const {
-  protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dethereum_2eproto);
+  return ::file_level_metadata_messages_2dethereum_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1548,6 +1778,37 @@ void EthereumAddress::InternalSwap(EthereumAddress* other) {
 
 void EthereumSignTx::InitAsDefaultInstance() {
 }
+class EthereumSignTx::HasBitSetters {
+ public:
+  static void set_has_nonce(EthereumSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_gas_price(EthereumSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_gas_limit(EthereumSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_to(EthereumSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_value(EthereumSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_data_initial_chunk(EthereumSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_data_length(EthereumSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000040u;
+  }
+  static void set_has_chain_id(EthereumSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000080u;
+  }
+  static void set_has_tx_type(EthereumSignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EthereumSignTx::kAddressNFieldNumber;
 const int EthereumSignTx::kNonceFieldNumber;
@@ -1562,15 +1823,13 @@ const int EthereumSignTx::kTxTypeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EthereumSignTx::EthereumSignTx()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dethereum_2eproto::scc_info_EthereumSignTx.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ethereum.EthereumSignTx)
 }
 EthereumSignTx::EthereumSignTx(const EthereumSignTx& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -1605,6 +1864,8 @@ EthereumSignTx::EthereumSignTx(const EthereumSignTx& from)
 }
 
 void EthereumSignTx::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EthereumSignTx_messages_2dethereum_2eproto.base);
   nonce_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   gas_price_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   gas_limit_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -1633,13 +1894,8 @@ void EthereumSignTx::SharedDtor() {
 void EthereumSignTx::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EthereumSignTx::descriptor() {
-  ::protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EthereumSignTx& EthereumSignTx::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dethereum_2eproto::scc_info_EthereumSignTx.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EthereumSignTx_messages_2dethereum_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1652,7 +1908,7 @@ void EthereumSignTx::Clear() {
 
   address_n_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 63u) {
+  if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
       nonce_.ClearNonDefaultToEmptyNoArena();
     }
@@ -1672,7 +1928,7 @@ void EthereumSignTx::Clear() {
       to_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 192u) {
+  if (cached_has_bits & 0x000000c0u) {
     ::memset(&data_length_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&chain_id_) -
         reinterpret_cast<char*>(&data_length_)) + sizeof(chain_id_));
@@ -1682,9 +1938,178 @@ void EthereumSignTx::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EthereumSignTx::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EthereumSignTx*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bytes nonce = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_nonce();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes gas_price = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_gas_price();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes gas_limit = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_gas_limit();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes value = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 50) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_value();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes data_initial_chunk = 7;
+      case 7: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 58) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_data_initial_chunk();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional uint32 data_length = 8;
+      case 8: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 64) goto handle_unusual;
+        msg->set_data_length(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 chain_id = 9;
+      case 9: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 72) goto handle_unusual;
+        msg->set_chain_id(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 tx_type = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 80) goto handle_unusual;
+        msg->set_tx_type(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional string to = 11;
+      case 11: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 90) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.ethereum.EthereumSignTx.to");
+        object = msg->mutable_to();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EthereumSignTx::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ethereum.EthereumSignTx)
   for (;;) {
@@ -1694,14 +2119,11 @@ bool EthereumSignTx::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -1713,8 +2135,7 @@ bool EthereumSignTx::MergePartialFromCodedStream(
 
       // optional bytes nonce = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_nonce()));
         } else {
@@ -1725,8 +2146,7 @@ bool EthereumSignTx::MergePartialFromCodedStream(
 
       // optional bytes gas_price = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_gas_price()));
         } else {
@@ -1737,8 +2157,7 @@ bool EthereumSignTx::MergePartialFromCodedStream(
 
       // optional bytes gas_limit = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_gas_limit()));
         } else {
@@ -1749,8 +2168,7 @@ bool EthereumSignTx::MergePartialFromCodedStream(
 
       // optional bytes value = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (50 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_value()));
         } else {
@@ -1761,8 +2179,7 @@ bool EthereumSignTx::MergePartialFromCodedStream(
 
       // optional bytes data_initial_chunk = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(58u /* 58 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (58 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_data_initial_chunk()));
         } else {
@@ -1773,9 +2190,8 @@ bool EthereumSignTx::MergePartialFromCodedStream(
 
       // optional uint32 data_length = 8;
       case 8: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(64u /* 64 & 0xFF */)) {
-          set_has_data_length();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (64 & 0xFF)) {
+          HasBitSetters::set_has_data_length(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &data_length_)));
@@ -1787,9 +2203,8 @@ bool EthereumSignTx::MergePartialFromCodedStream(
 
       // optional uint32 chain_id = 9;
       case 9: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(72u /* 72 & 0xFF */)) {
-          set_has_chain_id();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (72 & 0xFF)) {
+          HasBitSetters::set_has_chain_id(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &chain_id_)));
@@ -1801,9 +2216,8 @@ bool EthereumSignTx::MergePartialFromCodedStream(
 
       // optional uint32 tx_type = 10;
       case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(80u /* 80 & 0xFF */)) {
-          set_has_tx_type();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (80 & 0xFF)) {
+          HasBitSetters::set_has_tx_type(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &tx_type_)));
@@ -1815,8 +2229,7 @@ bool EthereumSignTx::MergePartialFromCodedStream(
 
       // optional string to = 11;
       case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(90u /* 90 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (90 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_to()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1848,6 +2261,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EthereumSignTx::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1925,8 +2339,7 @@ void EthereumSignTx::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EthereumSignTx::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ethereum.EthereumSignTx)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2014,6 +2427,10 @@ size_t EthereumSignTx::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -2023,58 +2440,59 @@ size_t EthereumSignTx::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  if (_has_bits_[0 / 32] & 255u) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     // optional bytes nonce = 2;
-    if (has_nonce()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->nonce());
     }
 
     // optional bytes gas_price = 3;
-    if (has_gas_price()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->gas_price());
     }
 
     // optional bytes gas_limit = 4;
-    if (has_gas_limit()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->gas_limit());
     }
 
     // optional bytes value = 6;
-    if (has_value()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->value());
     }
 
     // optional bytes data_initial_chunk = 7;
-    if (has_data_initial_chunk()) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->data_initial_chunk());
     }
 
     // optional string to = 11;
-    if (has_to()) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->to());
     }
 
     // optional uint32 data_length = 8;
-    if (has_data_length()) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->data_length());
     }
 
     // optional uint32 chain_id = 9;
-    if (has_chain_id()) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->chain_id());
@@ -2082,7 +2500,7 @@ size_t EthereumSignTx::ByteSizeLong() const {
 
   }
   // optional uint32 tx_type = 10;
-  if (has_tx_type()) {
+  if (cached_has_bits & 0x00000100u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::UInt32Size(
         this->tx_type());
@@ -2097,9 +2515,9 @@ void EthereumSignTx::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ethereum.EthereumSignTx)
   GOOGLE_DCHECK_NE(&from, this);
   const EthereumSignTx* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EthereumSignTx>(
+      ::google::protobuf::DynamicCastToGenerated<EthereumSignTx>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ethereum.EthereumSignTx)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2117,29 +2535,29 @@ void EthereumSignTx::MergeFrom(const EthereumSignTx& from) {
 
   address_n_.MergeFrom(from.address_n_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 255u) {
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_nonce();
+      _has_bits_[0] |= 0x00000001u;
       nonce_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.nonce_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_gas_price();
+      _has_bits_[0] |= 0x00000002u;
       gas_price_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.gas_price_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_gas_limit();
+      _has_bits_[0] |= 0x00000004u;
       gas_limit_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.gas_limit_);
     }
     if (cached_has_bits & 0x00000008u) {
-      set_has_value();
+      _has_bits_[0] |= 0x00000008u;
       value_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.value_);
     }
     if (cached_has_bits & 0x00000010u) {
-      set_has_data_initial_chunk();
+      _has_bits_[0] |= 0x00000010u;
       data_initial_chunk_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_initial_chunk_);
     }
     if (cached_has_bits & 0x00000020u) {
-      set_has_to();
+      _has_bits_[0] |= 0x00000020u;
       to_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.to_);
     }
     if (cached_has_bits & 0x00000040u) {
@@ -2179,6 +2597,8 @@ void EthereumSignTx::Swap(EthereumSignTx* other) {
 }
 void EthereumSignTx::InternalSwap(EthereumSignTx* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   nonce_.Swap(&other->nonce_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -2195,13 +2615,11 @@ void EthereumSignTx::InternalSwap(EthereumSignTx* other) {
   swap(data_length_, other->data_length_);
   swap(chain_id_, other->chain_id_);
   swap(tx_type_, other->tx_type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EthereumSignTx::GetMetadata() const {
-  protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dethereum_2eproto);
+  return ::file_level_metadata_messages_2dethereum_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2209,6 +2627,22 @@ void EthereumSignTx::InternalSwap(EthereumSignTx* other) {
 
 void EthereumTxRequest::InitAsDefaultInstance() {
 }
+class EthereumTxRequest::HasBitSetters {
+ public:
+  static void set_has_data_length(EthereumTxRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_signature_v(EthereumTxRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static void set_has_signature_r(EthereumTxRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_signature_s(EthereumTxRequest* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EthereumTxRequest::kDataLengthFieldNumber;
 const int EthereumTxRequest::kSignatureVFieldNumber;
@@ -2217,15 +2651,13 @@ const int EthereumTxRequest::kSignatureSFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EthereumTxRequest::EthereumTxRequest()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dethereum_2eproto::scc_info_EthereumTxRequest.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ethereum.EthereumTxRequest)
 }
 EthereumTxRequest::EthereumTxRequest(const EthereumTxRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   signature_r_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2243,6 +2675,8 @@ EthereumTxRequest::EthereumTxRequest(const EthereumTxRequest& from)
 }
 
 void EthereumTxRequest::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EthereumTxRequest_messages_2dethereum_2eproto.base);
   signature_r_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   signature_s_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&data_length_, 0, static_cast<size_t>(
@@ -2263,13 +2697,8 @@ void EthereumTxRequest::SharedDtor() {
 void EthereumTxRequest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EthereumTxRequest::descriptor() {
-  ::protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EthereumTxRequest& EthereumTxRequest::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dethereum_2eproto::scc_info_EthereumTxRequest.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EthereumTxRequest_messages_2dethereum_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2281,7 +2710,7 @@ void EthereumTxRequest::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       signature_r_.ClearNonDefaultToEmptyNoArena();
     }
@@ -2289,7 +2718,7 @@ void EthereumTxRequest::Clear() {
       signature_s_.ClearNonDefaultToEmptyNoArena();
     }
   }
-  if (cached_has_bits & 12u) {
+  if (cached_has_bits & 0x0000000cu) {
     ::memset(&data_length_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&signature_v_) -
         reinterpret_cast<char*>(&data_length_)) + sizeof(signature_v_));
@@ -2298,9 +2727,90 @@ void EthereumTxRequest::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EthereumTxRequest::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EthereumTxRequest*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional uint32 data_length = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_data_length(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 signature_v = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_signature_v(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bytes signature_r = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature_r();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes signature_s = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature_s();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EthereumTxRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ethereum.EthereumTxRequest)
   for (;;) {
@@ -2310,9 +2820,8 @@ bool EthereumTxRequest::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 data_length = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_data_length();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          HasBitSetters::set_has_data_length(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &data_length_)));
@@ -2324,9 +2833,8 @@ bool EthereumTxRequest::MergePartialFromCodedStream(
 
       // optional uint32 signature_v = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_signature_v();
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
+          HasBitSetters::set_has_signature_v(this);
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &signature_v_)));
@@ -2338,8 +2846,7 @@ bool EthereumTxRequest::MergePartialFromCodedStream(
 
       // optional bytes signature_r = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature_r()));
         } else {
@@ -2350,8 +2857,7 @@ bool EthereumTxRequest::MergePartialFromCodedStream(
 
       // optional bytes signature_s = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature_s()));
         } else {
@@ -2379,6 +2885,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EthereumTxRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2417,8 +2924,7 @@ void EthereumTxRequest::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EthereumTxRequest::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ethereum.EthereumTxRequest)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2465,30 +2971,35 @@ size_t EthereumTxRequest::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 15u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000000fu) {
     // optional bytes signature_r = 3;
-    if (has_signature_r()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature_r());
     }
 
     // optional bytes signature_s = 4;
-    if (has_signature_s()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature_s());
     }
 
     // optional uint32 data_length = 1;
-    if (has_data_length()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->data_length());
     }
 
     // optional uint32 signature_v = 2;
-    if (has_signature_v()) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->signature_v());
@@ -2504,9 +3015,9 @@ void EthereumTxRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ethereum.EthereumTxRequest)
   GOOGLE_DCHECK_NE(&from, this);
   const EthereumTxRequest* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EthereumTxRequest>(
+      ::google::protobuf::DynamicCastToGenerated<EthereumTxRequest>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ethereum.EthereumTxRequest)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2523,13 +3034,13 @@ void EthereumTxRequest::MergeFrom(const EthereumTxRequest& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 15u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_signature_r();
+      _has_bits_[0] |= 0x00000001u;
       signature_r_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_r_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_signature_s();
+      _has_bits_[0] |= 0x00000002u;
       signature_s_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_s_);
     }
     if (cached_has_bits & 0x00000004u) {
@@ -2566,19 +3077,19 @@ void EthereumTxRequest::Swap(EthereumTxRequest* other) {
 }
 void EthereumTxRequest::InternalSwap(EthereumTxRequest* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   signature_r_.Swap(&other->signature_r_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   signature_s_.Swap(&other->signature_s_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(data_length_, other->data_length_);
   swap(signature_v_, other->signature_v_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EthereumTxRequest::GetMetadata() const {
-  protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dethereum_2eproto);
+  return ::file_level_metadata_messages_2dethereum_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2586,20 +3097,25 @@ void EthereumTxRequest::InternalSwap(EthereumTxRequest* other) {
 
 void EthereumTxAck::InitAsDefaultInstance() {
 }
+class EthereumTxAck::HasBitSetters {
+ public:
+  static void set_has_data_chunk(EthereumTxAck* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EthereumTxAck::kDataChunkFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EthereumTxAck::EthereumTxAck()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dethereum_2eproto::scc_info_EthereumTxAck.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ethereum.EthereumTxAck)
 }
 EthereumTxAck::EthereumTxAck(const EthereumTxAck& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   data_chunk_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2610,6 +3126,8 @@ EthereumTxAck::EthereumTxAck(const EthereumTxAck& from)
 }
 
 void EthereumTxAck::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EthereumTxAck_messages_2dethereum_2eproto.base);
   data_chunk_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -2625,13 +3143,8 @@ void EthereumTxAck::SharedDtor() {
 void EthereumTxAck::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EthereumTxAck::descriptor() {
-  ::protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EthereumTxAck& EthereumTxAck::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dethereum_2eproto::scc_info_EthereumTxAck.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EthereumTxAck_messages_2dethereum_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2650,9 +3163,61 @@ void EthereumTxAck::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EthereumTxAck::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EthereumTxAck*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes data_chunk = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_data_chunk();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EthereumTxAck::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ethereum.EthereumTxAck)
   for (;;) {
@@ -2662,8 +3227,7 @@ bool EthereumTxAck::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes data_chunk = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_data_chunk()));
         } else {
@@ -2691,6 +3255,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EthereumTxAck::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2713,8 +3278,7 @@ void EthereumTxAck::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EthereumTxAck::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ethereum.EthereumTxAck)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2744,8 +3308,13 @@ size_t EthereumTxAck::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // optional bytes data_chunk = 1;
-  if (has_data_chunk()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->data_chunk());
@@ -2760,9 +3329,9 @@ void EthereumTxAck::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ethereum.EthereumTxAck)
   GOOGLE_DCHECK_NE(&from, this);
   const EthereumTxAck* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EthereumTxAck>(
+      ::google::protobuf::DynamicCastToGenerated<EthereumTxAck>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ethereum.EthereumTxAck)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2779,7 +3348,7 @@ void EthereumTxAck::MergeFrom(const EthereumTxAck& from) {
   (void) cached_has_bits;
 
   if (from.has_data_chunk()) {
-    set_has_data_chunk();
+    _has_bits_[0] |= 0x00000001u;
     data_chunk_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_chunk_);
   }
 }
@@ -2808,15 +3377,15 @@ void EthereumTxAck::Swap(EthereumTxAck* other) {
 }
 void EthereumTxAck::InternalSwap(EthereumTxAck* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   data_chunk_.Swap(&other->data_chunk_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EthereumTxAck::GetMetadata() const {
-  protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dethereum_2eproto);
+  return ::file_level_metadata_messages_2dethereum_2eproto[kIndexInFileMessages];
 }
 
 
@@ -2824,21 +3393,26 @@ void EthereumTxAck::InternalSwap(EthereumTxAck* other) {
 
 void EthereumSignMessage::InitAsDefaultInstance() {
 }
+class EthereumSignMessage::HasBitSetters {
+ public:
+  static void set_has_message(EthereumSignMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EthereumSignMessage::kAddressNFieldNumber;
 const int EthereumSignMessage::kMessageFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EthereumSignMessage::EthereumSignMessage()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dethereum_2eproto::scc_info_EthereumSignMessage.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ethereum.EthereumSignMessage)
 }
 EthereumSignMessage::EthereumSignMessage(const EthereumSignMessage& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -2850,6 +3424,8 @@ EthereumSignMessage::EthereumSignMessage(const EthereumSignMessage& from)
 }
 
 void EthereumSignMessage::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EthereumSignMessage_messages_2dethereum_2eproto.base);
   message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -2865,13 +3441,8 @@ void EthereumSignMessage::SharedDtor() {
 void EthereumSignMessage::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EthereumSignMessage::descriptor() {
-  ::protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EthereumSignMessage& EthereumSignMessage::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dethereum_2eproto::scc_info_EthereumSignMessage.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EthereumSignMessage_messages_2dethereum_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -2891,9 +3462,81 @@ void EthereumSignMessage::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EthereumSignMessage::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EthereumSignMessage*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated uint32 address_n = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 8) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 8 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional bytes message = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_message();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EthereumSignMessage::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ethereum.EthereumSignMessage)
   for (;;) {
@@ -2903,14 +3546,11 @@ bool EthereumSignMessage::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated uint32 address_n = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  1, 8u, input, this->mutable_address_n())));
-        } else if (
-            static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, this->mutable_address_n())));
@@ -2922,8 +3562,7 @@ bool EthereumSignMessage::MergePartialFromCodedStream(
 
       // optional bytes message = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_message()));
         } else {
@@ -2951,6 +3590,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EthereumSignMessage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -2979,8 +3619,7 @@ void EthereumSignMessage::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EthereumSignMessage::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ethereum.EthereumSignMessage)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3014,6 +3653,10 @@ size_t EthereumSignMessage::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // repeated uint32 address_n = 1;
   {
     size_t data_size = ::google::protobuf::internal::WireFormatLite::
@@ -3024,7 +3667,8 @@ size_t EthereumSignMessage::ByteSizeLong() const {
   }
 
   // optional bytes message = 2;
-  if (has_message()) {
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->message());
@@ -3039,9 +3683,9 @@ void EthereumSignMessage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ethereum.EthereumSignMessage)
   GOOGLE_DCHECK_NE(&from, this);
   const EthereumSignMessage* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EthereumSignMessage>(
+      ::google::protobuf::DynamicCastToGenerated<EthereumSignMessage>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ethereum.EthereumSignMessage)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3059,7 +3703,7 @@ void EthereumSignMessage::MergeFrom(const EthereumSignMessage& from) {
 
   address_n_.MergeFrom(from.address_n_);
   if (from.has_message()) {
-    set_has_message();
+    _has_bits_[0] |= 0x00000001u;
     message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.message_);
   }
 }
@@ -3088,16 +3732,16 @@ void EthereumSignMessage::Swap(EthereumSignMessage* other) {
 }
 void EthereumSignMessage::InternalSwap(EthereumSignMessage* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   address_n_.InternalSwap(&other->address_n_);
   message_.Swap(&other->message_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EthereumSignMessage::GetMetadata() const {
-  protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dethereum_2eproto);
+  return ::file_level_metadata_messages_2dethereum_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3105,21 +3749,29 @@ void EthereumSignMessage::InternalSwap(EthereumSignMessage* other) {
 
 void EthereumMessageSignature::InitAsDefaultInstance() {
 }
+class EthereumMessageSignature::HasBitSetters {
+ public:
+  static void set_has_signature(EthereumMessageSignature* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_address(EthereumMessageSignature* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EthereumMessageSignature::kSignatureFieldNumber;
 const int EthereumMessageSignature::kAddressFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EthereumMessageSignature::EthereumMessageSignature()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dethereum_2eproto::scc_info_EthereumMessageSignature.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ethereum.EthereumMessageSignature)
 }
 EthereumMessageSignature::EthereumMessageSignature(const EthereumMessageSignature& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3134,6 +3786,8 @@ EthereumMessageSignature::EthereumMessageSignature(const EthereumMessageSignatur
 }
 
 void EthereumMessageSignature::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EthereumMessageSignature_messages_2dethereum_2eproto.base);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -3151,13 +3805,8 @@ void EthereumMessageSignature::SharedDtor() {
 void EthereumMessageSignature::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EthereumMessageSignature::descriptor() {
-  ::protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EthereumMessageSignature& EthereumMessageSignature::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dethereum_2eproto::scc_info_EthereumMessageSignature.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EthereumMessageSignature_messages_2dethereum_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3169,7 +3818,7 @@ void EthereumMessageSignature::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       signature_.ClearNonDefaultToEmptyNoArena();
     }
@@ -3181,9 +3830,77 @@ void EthereumMessageSignature::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EthereumMessageSignature::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EthereumMessageSignature*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes signature = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string address = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.ethereum.EthereumMessageSignature.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EthereumMessageSignature::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ethereum.EthereumMessageSignature)
   for (;;) {
@@ -3193,8 +3910,7 @@ bool EthereumMessageSignature::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes signature = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -3205,8 +3921,7 @@ bool EthereumMessageSignature::MergePartialFromCodedStream(
 
       // optional string address = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3238,6 +3953,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EthereumMessageSignature::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3270,8 +3986,7 @@ void EthereumMessageSignature::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EthereumMessageSignature::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ethereum.EthereumMessageSignature)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3312,16 +4027,21 @@ size_t EthereumMessageSignature::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 3u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes signature = 2;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
     }
 
     // optional string address = 3;
-    if (has_address()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->address());
@@ -3337,9 +4057,9 @@ void EthereumMessageSignature::MergeFrom(const ::google::protobuf::Message& from
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ethereum.EthereumMessageSignature)
   GOOGLE_DCHECK_NE(&from, this);
   const EthereumMessageSignature* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EthereumMessageSignature>(
+      ::google::protobuf::DynamicCastToGenerated<EthereumMessageSignature>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ethereum.EthereumMessageSignature)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3356,13 +4076,13 @@ void EthereumMessageSignature::MergeFrom(const EthereumMessageSignature& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000001u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_address();
+      _has_bits_[0] |= 0x00000002u;
       address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
     }
   }
@@ -3392,17 +4112,17 @@ void EthereumMessageSignature::Swap(EthereumMessageSignature* other) {
 }
 void EthereumMessageSignature::InternalSwap(EthereumMessageSignature* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EthereumMessageSignature::GetMetadata() const {
-  protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dethereum_2eproto);
+  return ::file_level_metadata_messages_2dethereum_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3410,6 +4130,19 @@ void EthereumMessageSignature::InternalSwap(EthereumMessageSignature* other) {
 
 void EthereumVerifyMessage::InitAsDefaultInstance() {
 }
+class EthereumVerifyMessage::HasBitSetters {
+ public:
+  static void set_has_signature(EthereumVerifyMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_message(EthereumVerifyMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_address(EthereumVerifyMessage* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EthereumVerifyMessage::kSignatureFieldNumber;
 const int EthereumVerifyMessage::kMessageFieldNumber;
@@ -3417,15 +4150,13 @@ const int EthereumVerifyMessage::kAddressFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EthereumVerifyMessage::EthereumVerifyMessage()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_messages_2dethereum_2eproto::scc_info_EthereumVerifyMessage.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:hw.trezor.messages.ethereum.EthereumVerifyMessage)
 }
 EthereumVerifyMessage::EthereumVerifyMessage(const EthereumVerifyMessage& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3444,6 +4175,8 @@ EthereumVerifyMessage::EthereumVerifyMessage(const EthereumVerifyMessage& from)
 }
 
 void EthereumVerifyMessage::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_EthereumVerifyMessage_messages_2dethereum_2eproto.base);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -3463,13 +4196,8 @@ void EthereumVerifyMessage::SharedDtor() {
 void EthereumVerifyMessage::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* EthereumVerifyMessage::descriptor() {
-  ::protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const EthereumVerifyMessage& EthereumVerifyMessage::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_messages_2dethereum_2eproto::scc_info_EthereumVerifyMessage.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_EthereumVerifyMessage_messages_2dethereum_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -3481,7 +4209,7 @@ void EthereumVerifyMessage::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       signature_.ClearNonDefaultToEmptyNoArena();
     }
@@ -3496,9 +4224,92 @@ void EthereumVerifyMessage::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* EthereumVerifyMessage::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<EthereumVerifyMessage*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional bytes signature = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_signature();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes message = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_message();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional string address = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.ethereum.EthereumVerifyMessage.address");
+        object = msg->mutable_address();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool EthereumVerifyMessage::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:hw.trezor.messages.ethereum.EthereumVerifyMessage)
   for (;;) {
@@ -3508,8 +4319,7 @@ bool EthereumVerifyMessage::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional bytes signature = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_signature()));
         } else {
@@ -3520,8 +4330,7 @@ bool EthereumVerifyMessage::MergePartialFromCodedStream(
 
       // optional bytes message = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_message()));
         } else {
@@ -3532,8 +4341,7 @@ bool EthereumVerifyMessage::MergePartialFromCodedStream(
 
       // optional string address = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3565,6 +4373,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void EthereumVerifyMessage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -3603,8 +4412,7 @@ void EthereumVerifyMessage::SerializeWithCachedSizes(
 }
 
 ::google::protobuf::uint8* EthereumVerifyMessage::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.ethereum.EthereumVerifyMessage)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3652,23 +4460,28 @@ size_t EthereumVerifyMessage::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  if (_has_bits_[0 / 32] & 7u) {
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000007u) {
     // optional bytes signature = 2;
-    if (has_signature()) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->signature());
     }
 
     // optional bytes message = 3;
-    if (has_message()) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->message());
     }
 
     // optional string address = 4;
-    if (has_address()) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->address());
@@ -3684,9 +4497,9 @@ void EthereumVerifyMessage::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.ethereum.EthereumVerifyMessage)
   GOOGLE_DCHECK_NE(&from, this);
   const EthereumVerifyMessage* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const EthereumVerifyMessage>(
+      ::google::protobuf::DynamicCastToGenerated<EthereumVerifyMessage>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.ethereum.EthereumVerifyMessage)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -3703,17 +4516,17 @@ void EthereumVerifyMessage::MergeFrom(const EthereumVerifyMessage& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      set_has_signature();
+      _has_bits_[0] |= 0x00000001u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
     }
     if (cached_has_bits & 0x00000002u) {
-      set_has_message();
+      _has_bits_[0] |= 0x00000002u;
       message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.message_);
     }
     if (cached_has_bits & 0x00000004u) {
-      set_has_address();
+      _has_bits_[0] |= 0x00000004u;
       address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
     }
   }
@@ -3743,19 +4556,19 @@ void EthereumVerifyMessage::Swap(EthereumVerifyMessage* other) {
 }
 void EthereumVerifyMessage::InternalSwap(EthereumVerifyMessage* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   message_.Swap(&other->message_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   address_.Swap(&other->address_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata EthereumVerifyMessage::GetMetadata() const {
-  protobuf_messages_2dethereum_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_messages_2dethereum_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dethereum_2eproto);
+  return ::file_level_metadata_messages_2dethereum_2eproto[kIndexInFileMessages];
 }
 
 
@@ -3766,37 +4579,38 @@ void EthereumVerifyMessage::InternalSwap(EthereumVerifyMessage* other) {
 }  // namespace hw
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ethereum::EthereumGetPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumGetPublicKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ethereum::EthereumGetPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumGetPublicKey >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ethereum::EthereumGetPublicKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ethereum::EthereumPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumPublicKey >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ethereum::EthereumPublicKey* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumPublicKey >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ethereum::EthereumPublicKey >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ethereum::EthereumGetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumGetAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ethereum::EthereumGetAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumGetAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ethereum::EthereumGetAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ethereum::EthereumAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumAddress >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ethereum::EthereumAddress* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumAddress >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ethereum::EthereumAddress >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ethereum::EthereumSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumSignTx >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ethereum::EthereumSignTx* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumSignTx >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ethereum::EthereumSignTx >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ethereum::EthereumTxRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumTxRequest >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ethereum::EthereumTxRequest* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumTxRequest >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ethereum::EthereumTxRequest >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ethereum::EthereumTxAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumTxAck >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ethereum::EthereumTxAck* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumTxAck >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ethereum::EthereumTxAck >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ethereum::EthereumSignMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumSignMessage >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ethereum::EthereumSignMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumSignMessage >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ethereum::EthereumSignMessage >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ethereum::EthereumMessageSignature* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumMessageSignature >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ethereum::EthereumMessageSignature* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumMessageSignature >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ethereum::EthereumMessageSignature >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::hw::trezor::messages::ethereum::EthereumVerifyMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumVerifyMessage >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::ethereum::EthereumVerifyMessage* Arena::CreateMaybeMessage< ::hw::trezor::messages::ethereum::EthereumVerifyMessage >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::ethereum::EthereumVerifyMessage >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>
