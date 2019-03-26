@@ -38,7 +38,6 @@ opt_flags += [
     '-Wformat=2',
     '-Winit-self',
     '-Wlogical-op',
-    '-Wmissing-declarations',
     '-Wmissing-include-dirs',
     '-Wnoexcept',
     '-Wold-style-cast',
@@ -50,8 +49,9 @@ opt_flags += [
     '-Wstrict-null-sentinel',
     '-Wstrict-overflow=5',
     '-Wswitch-default',
-    '-Wundef',
     '-Wno-unused',
+#    '-Wundef',
+#    '-Wmissing-declarations',
 ]
 
 cpp_flags += opt_flags
