@@ -14,6 +14,7 @@ using namespace google::protobuf;
 #include "messages.pb.h"
 using namespace hw::trezor::messages::management;
 using namespace hw::trezor::messages::beam;
+using namespace hw::trezor::messages::common;
 using namespace hw::trezor::messages;
 
 template <typename T>
@@ -22,6 +23,27 @@ void print_bin(T msg)
     for (size_t i = 0; i < msg.size(); i++)
         printf("%02x", msg[i]);
     printf("\n");
+}
+
+void print_call_response(const Call &value)
+{
+    std::cout << "call.error = " << value.error << std::endl;
+    std::cout << "call.type = " << value.type
+              << " (" << get_message_type_name(value.type) << ")" << std::endl;
+    std::cout << "call.length = " << value.length << std::endl;
+    std::cout << "call.msg = ";
+    print_bin(value.msg);
+
+    if (MessageType::MessageType_Failure == value.type)
+    {
+        auto msg(value.to_message<Failure>());
+        std::cout << "FAIL REASON: " << msg.message() << std::endl;
+    }
+    else if (MessageType::MessageType_BeamOwnerKey == value.type)
+    {
+        auto msg(value.to_message<BeamOwnerKey>());
+        std::cout << "OWNER KEY: " << msg.key() << std::endl;
+    }
 }
 
 int main(void)
@@ -33,20 +55,18 @@ int main(void)
     auto packed = pack_message(bmsg);
 
     auto enumerates = client.enumerate();
-    auto session = client.acquire(enumerates[0].path, enumerates[0].session);
-    // auto call = client.call(session.session, "00010000000B0a0948692c2070696e6721");
-    auto call = client.call(session.session, packed);
-
-    std::cout << "BeamGetOwnerKey = " << packed << std::endl;
     std::cout << "enumerate.session = " << enumerates[0].session << std::endl;
+    auto session = client.acquire(enumerates[0].path, enumerates[0].session);
     std::cout << "acquire.session = " << session.session << std::endl;
-    std::cout << "call.error = " << call.error << std::endl;
-    std::cout << "call.type = " << call.type << std::endl;
-    std::cout << "call.length = " << call.length << std::endl;
-    std::cout << "call.msg = ";
-    print_bin(call.msg);
-    std::cout << std::endl;
-    std::cout << "discard_pin.expected = " << "0003 00000012 120e4669726d77617265206572726f720863" << std::endl;
+
+    auto call = client.call(session.session, packed);
+    print_call_response(call);
+    while (MessageType::MessageType_ButtonRequest == call.type)
+    {
+        call = client.call(session.session, pack_message(ButtonAck()));
+        print_call_response(call);
+    }
+
     curl_global_cleanup();
     return 0;
 }

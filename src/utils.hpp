@@ -49,3 +49,16 @@ std::string pack_message(const google::protobuf::Message &msg)
 
     return pack_message(msg_type, serialized_msg.size(), serialized_msg);
 }
+
+std::string get_message_type_name(int type)
+{
+    auto name = hw::trezor::messages::MessageType_descriptor()
+                    ->FindValueByNumber(type)
+                    ->name();
+
+    auto prefix = std::string("MessageType_");
+    auto i = name.find(prefix);
+    if (i != std::string::npos)
+        name.erase(i, prefix.length());
+    return name;
+}

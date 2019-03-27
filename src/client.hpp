@@ -37,15 +37,15 @@ class Client
         if (result.first.error.empty())
         {
             auto raw = result.second;
-            std::unique_ptr<unsigned char[]> bytes (new unsigned char[raw.length() / 2]);
+            std::unique_ptr<unsigned char[]> bytes(new unsigned char[raw.length() / 2]);
             hex2bin(raw.c_str(), raw.length(), bytes.get());
-            from_bytes(bytes.get(), response);
+            response.from_bytes(bytes.get());
         }
         else
         {
             response.error = result.first.error;
         }
-        
+
         return response;
     }
 
@@ -58,8 +58,11 @@ class Client
 
         try
         {
-            auto j = nlohmann::json::parse(result);
-            response = j.get<T>();
+            response = nlohmann::json::parse(result).get<T>();
+        }
+        catch (nlohmann::detail::parse_error e)
+        {
+            std::cout << "NOT JSON: " << result << std::endl;
         }
         catch (nlohmann::detail::exception e)
         {
