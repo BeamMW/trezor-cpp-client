@@ -17,7 +17,11 @@ class Client
 
     ~Client()
     {
-        curl_easy_cleanup(m_Curl);
+        if (m_Curl != nullptr)
+        {
+            curl_easy_cleanup(m_Curl);
+        }
+        m_Curl = nullptr;
     }
 
     std::vector<Enumerate> enumerate()
@@ -30,7 +34,7 @@ class Client
         return perform<Session>("/acquire/" + path + "/" + previousSession).first;
     }
 
-    Call call(std::string session, std::string hex)
+    Call call(std::string session, std::string hex) const
     {
         Call response;
         auto result = perform<Error>("/call/" + session, hex.c_str());
@@ -51,7 +55,7 @@ class Client
 
   protected:
     template <typename T>
-    std::pair<T, std::string> perform(std::string url, const char *body = nullptr)
+    std::pair<T, std::string> perform(std::string url, const char *body = nullptr) const
     {
         auto result = perform(url, body);
         T response;
@@ -73,7 +77,7 @@ class Client
         return std::make_pair(response, result);
     }
 
-    std::string perform(std::string url, const char *body = nullptr)
+    std::string perform(std::string url, const char *body = nullptr) const
     {
         if (!m_Curl)
             return {};

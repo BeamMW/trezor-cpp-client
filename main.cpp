@@ -1,9 +1,10 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-#include "client.hpp"
 #include <iomanip>
 #include <iterator>
+#include "client.hpp"
+#include "queue/call_queue.h"
 
 #include <google/protobuf/message.h>
 using namespace google::protobuf;
@@ -46,9 +47,19 @@ void print_call_response(const Call &value)
     }
 }
 
-int main(void)
+int main()
 {
     Client client;
+    CallQueue queue;
+    queue.setPopCallback([&](std::string session, const Call &call) {
+        print_call_response(call);
+        if (MessageType::MessageType_ButtonRequest == call.type)
+        {
+            queue.push(session, pack_message(ButtonAck()), [&](const std::string &in_session, const std::string &in_message) {
+                return client.call(in_session, in_message);
+            });
+        }
+    });
 
     BeamGetOwnerKey bmsg;
     bmsg.set_show_display(true);
@@ -59,14 +70,11 @@ int main(void)
     auto session = client.acquire(enumerates[0].path, enumerates[0].session);
     std::cout << "acquire.session = " << session.session << std::endl;
 
-    auto call = client.call(session.session, packed);
-    print_call_response(call);
-    while (MessageType::MessageType_ButtonRequest == call.type)
-    {
-        call = client.call(session.session, pack_message(ButtonAck()));
-        print_call_response(call);
-    }
+    queue.push(session.session, packed, [&](const std::string &session, const std::string &message) {
+        return client.call(session, message);
+    });
 
+    std::this_thread::sleep_for(std::chrono::milliseconds(100000));
     curl_global_cleanup();
     return 0;
 }
