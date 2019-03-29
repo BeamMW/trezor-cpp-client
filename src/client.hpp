@@ -15,6 +15,9 @@ class Client
     {
     }
 
+    Client(const Client &) = delete;            // disable copying
+    Client &operator=(const Client &) = delete; // disable assignment
+
     ~Client()
     {
         if (m_Curl != nullptr)
@@ -24,14 +27,19 @@ class Client
         m_Curl = nullptr;
     }
 
-    std::vector<Enumerate> enumerate()
+    std::vector<Enumerate> enumerate() const
     {
         return perform<std::vector<Enumerate>>("/enumerate").first;
     }
 
-    Session acquire(std::string path, std::string previousSession = "null")
+    Session acquire(std::string path, std::string previousSession = "null") const
     {
         return perform<Session>("/acquire/" + path + "/" + previousSession).first;
+    }
+
+    Session release(std::string session) const
+    {
+        return perform<Session>("/release/" + session).first;
     }
 
     Call call(std::string session, std::string hex) const
@@ -107,7 +115,7 @@ class Client
     }
 
   private:
-    CURL *m_Curl;
+    CURL *m_Curl = nullptr;
 
     static constexpr const char *TREZORD_HOST = "http://127.0.0.1:21325";
     static constexpr const char *TREZORD_ORIGIN_HEADER = "Origin: https://beam.trezor.io";

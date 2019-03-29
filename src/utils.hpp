@@ -62,3 +62,9 @@ std::string get_message_type_name(int type)
         name.erase(i, prefix.length());
     return name;
 }
+
+template <typename Parrent, typename Child>
+const Child &child_cast(const Parrent &message)
+{
+    return *dynamic_cast<const Child *>(&message);
+}
