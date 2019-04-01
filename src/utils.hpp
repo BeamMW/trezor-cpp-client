@@ -7,6 +7,8 @@
 #include <google/protobuf/message.h>
 #include "messages.pb.h"
 
+const uint16_t INTERNAL_ERROR = 999;
+
 extern "C" inline void hex2bin(const char *hexString, const size_t sizeString, unsigned char *outBytes)
 {
     uint32_t buffer = 0;
@@ -52,6 +54,9 @@ std::string pack_message(const google::protobuf::Message &msg)
 
 std::string get_message_type_name(int type)
 {
+    if (type == INTERNAL_ERROR)
+        return "CLIENT INTERNAL ERROR";
+
     auto name = hw::trezor::messages::MessageType_descriptor()
                     ->FindValueByNumber(type)
                     ->name();

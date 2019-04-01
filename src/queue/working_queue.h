@@ -130,5 +130,5 @@ class WorkingQueue : public Queue<InQueueItem<OUT, IN>>
     PopCallback<OUT, IN> m_globalPopCallback;
     std::atomic<unsigned long> m_PauseMillis;
 
-    std::atomic<bool> m_pushLock;
+    std::atomic_bool m_pushLock;
 };

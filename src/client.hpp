@@ -49,9 +49,17 @@ class Client
         if (result.first.error.empty())
         {
             auto raw = result.second;
-            std::unique_ptr<unsigned char[]> bytes(new unsigned char[raw.length() / 2]);
-            hex2bin(raw.c_str(), raw.length(), bytes.get());
-            response.from_bytes(bytes.get());
+            if (raw.size() > 0)
+            {
+                std::unique_ptr<unsigned char[]> bytes(new unsigned char[raw.length() / 2]);
+                hex2bin(raw.c_str(), raw.length(), bytes.get());
+                response.from_bytes(bytes.get());
+            }
+            else
+            {
+                response.type = INTERNAL_ERROR;
+                response.error = "response is empty";
+            }
         }
         else
         {

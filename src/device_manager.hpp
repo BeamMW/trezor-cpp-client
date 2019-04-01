@@ -12,15 +12,15 @@
 class DeviceManager
 {
 public:
-  using MessageCallback = std::function<void(const Message &)>;
+  using MessageCallback = std::function<void(const Message &, size_t)>;
 
   DeviceManager()
   {
-    m_worker.setGlobalPopCallback(
+    m_worker_queue.setGlobalPopCallback(
         [&](const std::string &session_pop, const Call &call) {
-          if (MessageType::MessageType_ButtonRequest == call.type)
+          if (MessageType_ButtonRequest == call.type)
           {
-            m_worker.push(session_pop, [&](const std::string &session) {
+            m_worker_queue.push(session_pop, [&](const std::string &session) {
               return m_client.call(session, pack_message(ButtonAck()));
             });
           }
@@ -30,26 +30,11 @@ public:
             if (released.session == m_session)
               m_session = "null";
 
-            switch (call.type)
-            {
-            case MessageType_Failure:
-              execute_callback<MessageType_Failure, Failure>(call);
-              break;
-            case MessageType_BeamOwnerKey:
-              execute_callback<MessageType_BeamOwnerKey, BeamOwnerKey>(call);
-              break;
-            default:
-              print_call_response(call);
-              break;
-            }
+            handle_response(call);
+
+            m_request_queue.unlockPop();
           }
         });
-  }
-
-  ~DeviceManager()
-  {
-    if (m_call_thread.joinable())
-      m_call_thread.join();
   }
 
   void init(const Enumerate &enumerate) throw()
@@ -62,6 +47,14 @@ public:
     m_is_real = enumerate.vendor && enumerate.product;
   }
 
+  void call_Ping(std::string text, bool button_protection)
+  {
+    Ping message;
+    message.set_message(text);
+    message.set_button_protection(button_protection);
+    call(pack_message(message));
+  }
+
   void call_BeamGetOwnerKey(bool show_display, MessageCallback callback)
   {
     m_callbacks[MessageType_BeamOwnerKey] = callback;
@@ -71,47 +64,85 @@ public:
     call(pack_message(message));
   }
 
-  void set_callback(int type, MessageCallback callback)
+  void callback_Failure(MessageCallback callback)
   {
-    m_callbacks[type] = callback;
+    m_callbacks[MessageType_Failure] = callback;
+  }
+
+  void callback_Success(MessageCallback callback)
+  {
+    m_callbacks[MessageType_Success] = callback;
   }
 
 protected:
+  void handle_response(const Call &call)
+  {
+    switch (call.type)
+    {
+    case MessageType_Failure:
+      execute_callback<MessageType_Failure, Failure>(call);
+      break;
+    case MessageType_Success:
+      execute_callback<MessageType_Success, Success>(call);
+      break;
+    case MessageType_BeamOwnerKey:
+      execute_callback<MessageType_BeamOwnerKey, BeamOwnerKey>(call);
+      break;
+    case INTERNAL_ERROR:
+    {
+      print_call_response(call);
+
+      m_session = "null";
+      m_request_queue.clear();
+      m_worker_queue.clear();
+
+      Failure error;
+      error.set_message(call.error);
+      auto callback = m_callbacks.find(MessageType_Failure);
+      if (callback != m_callbacks.end())
+        callback->second(error, m_request_queue.size());
+      break;
+    }
+    default:
+      break;
+    }
+  }
+
   template <int Type, typename MessageType>
   void execute_callback(const Call &call)
   {
     auto callback = m_callbacks.find(Type);
     if (callback != m_callbacks.end())
-    {
-      callback->second(call.to_message<MessageType>());
-    }
+      callback->second(call.to_message<MessageType>(), m_request_queue.size());
   }
 
   void call(std::string message) throw()
   {
-    if (m_session != "null")
-      throw std::runtime_error("previous session must be completed");
+    m_request_queue.push(m_request_queue.size(), [&, message](int size) {
+      if (m_session != "null")
+      {
+        throw std::runtime_error("previous session must be completed");
+        // return false; //TODO: decide which better (throw or return false)
+      }
 
-    if (m_call_thread.joinable())
-      m_call_thread.join();
-
-    m_call_thread = std::thread([&, message]() {
       auto acquired = m_client.acquire(m_path, m_session);
-
       if (acquired.error.empty())
       {
         m_session = acquired.session;
-        m_worker.push(m_session, [&, message](const std::string &session) {
+        m_worker_queue.push(m_session, [&, message](const std::string &session) {
           return m_client.call(session, message);
         });
+
+        m_request_queue.lockPop();
       }
+      return true;
     });
   }
 
 private:
   Client m_client;
-  WorkingQueue<Call, std::string> m_worker;
-  std::thread m_call_thread;
+  WorkingQueue<Call, std::string> m_worker_queue;
+  WorkingQueue<bool, size_t> m_request_queue;
 
   std::unordered_map<int, MessageCallback> m_callbacks;
   std::string m_path = "null";
