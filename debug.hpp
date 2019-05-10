@@ -18,11 +18,17 @@ using namespace hw::trezor::messages::common;
 using namespace hw::trezor::messages;
 
 template <typename T>
-void print_bin(T msg)
+void print_bin(T msg, size_t size)
 {
-  for (size_t i = 0; i < msg.size(); i++)
+  for (size_t i = 0; i < size; i++)
     printf("%02x", msg[i]);
   printf("\n");
+}
+
+template <typename T>
+void print_bin(T msg)
+{
+  print_bin(msg, msg.size());
 }
 
 void print_call_response(const Call &value)

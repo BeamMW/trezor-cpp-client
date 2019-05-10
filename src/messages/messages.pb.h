@@ -248,11 +248,14 @@ enum MessageType {
   MessageType_BeamGetPublicKey = 705,
   MessageType_BeamPublicKey = 706,
   MessageType_BeamGetOwnerKey = 707,
-  MessageType_BeamOwnerKey = 708
+  MessageType_BeamOwnerKey = 708,
+  MessageType_BeamGenerateKey = 709,
+  MessageType_BeamGenerateNonce = 710,
+  MessageType_BeamECCImage = 711
 };
 bool MessageType_IsValid(int value);
 const MessageType MessageType_MIN = MessageType_Initialize;
-const MessageType MessageType_MAX = MessageType_BeamOwnerKey;
+const MessageType MessageType_MAX = MessageType_BeamECCImage;
 const int MessageType_ARRAYSIZE = MessageType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* MessageType_descriptor();

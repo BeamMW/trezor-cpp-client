@@ -82,7 +82,7 @@ class Client
         }
         catch (nlohmann::detail::parse_error e)
         {
-            std::cout << "NOT JSON: " << result << std::endl;
+            // std::cout << "NOT JSON: " << result << std::endl;
         }
         catch (nlohmann::detail::exception e)
         {

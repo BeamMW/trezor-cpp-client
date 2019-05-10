@@ -56,6 +56,11 @@ int main()
                 std::cout << "BEAM OWNER KEY: " << child_cast<Message, BeamOwnerKey>(msg).key() << std::endl;
                 clear_flag(queue_size, is_alive_idx);
             });
+            trezor->call_BeamGenerateNonce(1, [&, is_alive_idx](const Message &msg, size_t queue_size) {
+                std::cout << "BEAM NONCE IN SLOT 1: ";
+                print_bin(reinterpret_cast<const uint8_t*>(child_cast<Message, BeamECCImage>(msg).image_x().c_str()), 32);
+                clear_flag(queue_size, is_alive_idx);
+            });
         }
         catch (std::runtime_error e)
         {

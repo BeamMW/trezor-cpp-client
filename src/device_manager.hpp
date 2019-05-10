@@ -64,6 +64,15 @@ public:
     call(pack_message(message));
   }
 
+  void call_BeamGenerateNonce(uint8_t slot, MessageCallback callback)
+  {
+    m_callbacks[MessageType_BeamECCImage] = callback;
+
+    BeamGenerateNonce message;
+    message.set_slot(slot);
+    call(pack_message(message));
+  }
+
   void callback_Failure(MessageCallback callback)
   {
     m_callbacks[MessageType_Failure] = callback;
@@ -87,6 +96,9 @@ protected:
       break;
     case MessageType_BeamOwnerKey:
       execute_callback<MessageType_BeamOwnerKey, BeamOwnerKey>(call);
+      break;
+    case MessageType_BeamECCImage:
+      execute_callback<MessageType_BeamECCImage, BeamECCImage>(call);
       break;
     case INTERNAL_ERROR:
     {
