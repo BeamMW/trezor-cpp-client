@@ -78,7 +78,8 @@ class Client
 
         try
         {
-            response = nlohmann::json::parse(result).get<T>();
+            // hmm, nlohmann::json doesn't work without str size on windows
+            response = nlohmann::json::parse(result.c_str(), result.c_str() + result.size()).get<T>();
         }
         catch (nlohmann::detail::parse_error e)
         {
