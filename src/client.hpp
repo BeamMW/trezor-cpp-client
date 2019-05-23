@@ -76,19 +76,22 @@ class Client
         auto result = perform(url, body);
         T response;
 
-        try
+        if (!result.empty())
         {
-            // hmm, nlohmann::json doesn't work without str size on windows
-            response = nlohmann::json::parse(result.c_str(), result.c_str() + result.size()).get<T>();
-        }
-        catch (nlohmann::detail::parse_error e)
-        {
-            // std::cout << "NOT JSON: " << result << std::endl;
-        }
-        catch (nlohmann::detail::exception e)
-        {
-            std::cout << "CATCHED: " << e.what() << std::endl
-                      << "WAS: " << result << std::endl;
+            try
+            {
+                // hmm, nlohmann::json doesn't work without str size on windows
+                response = nlohmann::json::parse(result.c_str(), result.c_str() + result.size()).get<T>();
+            }
+            catch (nlohmann::detail::parse_error e)
+            {
+                // std::cout << "NOT JSON: " << result << std::endl;
+            }
+            catch (nlohmann::detail::exception e)
+            {
+                std::cout << "CATCHED: " << e.what() << std::endl
+                          << "WAS: " << result << std::endl;
+            }
         }
 
         return std::make_pair(response, result);
