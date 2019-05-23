@@ -50,6 +50,8 @@ int main()
 
         try
         {
+            using namespace hw::trezor::messages::beam;
+            
             trezor->init(enumerate);
             trezor->call_Ping("hello beam", true);
             trezor->call_BeamGetOwnerKey(true, [&, is_alive_idx](const Message &msg, size_t queue_size) {

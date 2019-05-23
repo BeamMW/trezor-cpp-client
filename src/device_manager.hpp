@@ -57,6 +57,8 @@ public:
 
   void call_BeamGetOwnerKey(bool show_display, MessageCallback callback)
   {
+    using namespace hw::trezor::messages::beam;
+
     m_callbacks[MessageType_BeamOwnerKey] = callback;
 
     BeamGetOwnerKey message;
@@ -66,6 +68,8 @@ public:
 
   void call_BeamGenerateNonce(uint8_t slot, MessageCallback callback)
   {
+    using namespace hw::trezor::messages::beam;
+
     m_callbacks[MessageType_BeamECCImage] = callback;
 
     BeamGenerateNonce message;
@@ -75,6 +79,8 @@ public:
 
   void call_BeamGenerateKey(uint64_t idx, uint32_t type, uint32_t subIdx, uint64_t value, bool isCoinKey, MessageCallback callback)
   {
+    using namespace hw::trezor::messages::beam;
+
     m_callbacks[MessageType_BeamPublicKey] = callback;
 
     BeamGenerateKey message;
@@ -102,6 +108,8 @@ public:
 protected:
   void handle_response(const Call &call)
   {
+    using namespace hw::trezor::messages::beam;
+    
     switch (call.type)
     {
     case MessageType_Failure:

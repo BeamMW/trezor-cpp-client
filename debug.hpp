@@ -13,7 +13,10 @@ using namespace google::protobuf;
 #include "messages-beam.pb.h"
 #include "messages.pb.h"
 using namespace hw::trezor::messages::management;
-using namespace hw::trezor::messages::beam;
+
+// using this namespace conflicts with our code, so I commented it
+// using namespace hw::trezor::messages::beam;
+
 using namespace hw::trezor::messages::common;
 using namespace hw::trezor::messages;
 
