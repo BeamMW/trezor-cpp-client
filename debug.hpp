@@ -16,9 +16,9 @@ using namespace hw::trezor::messages::management;
 
 // using this namespace conflicts with our code, so I commented it
 // using namespace hw::trezor::messages::beam;
+// using namespace hw::trezor::messages;
 
 using namespace hw::trezor::messages::common;
-using namespace hw::trezor::messages;
 
 template <typename T>
 void print_bin(T msg, size_t size)

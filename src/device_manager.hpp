@@ -18,6 +18,7 @@ public:
   {
     m_worker_queue.setGlobalPopCallback(
         [&](const std::string &session_pop, const Call &call) {
+          using namespace hw::trezor::messages;
           if (MessageType_ButtonRequest == call.type)
           {
             m_worker_queue.push(session_pop, [&](const std::string &session) {
@@ -57,6 +58,7 @@ public:
 
   void call_BeamGetOwnerKey(bool show_display, MessageCallback callback)
   {
+    using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
 
     m_callbacks[MessageType_BeamOwnerKey] = callback;
@@ -68,6 +70,7 @@ public:
 
   void call_BeamGenerateNonce(uint8_t slot, MessageCallback callback)
   {
+    using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
 
     m_callbacks[MessageType_BeamECCImage] = callback;
@@ -79,6 +82,7 @@ public:
 
   void call_BeamGenerateKey(uint64_t idx, uint32_t type, uint32_t subIdx, uint64_t value, bool isCoinKey, MessageCallback callback)
   {
+    using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
 
     m_callbacks[MessageType_BeamPublicKey] = callback;
@@ -97,17 +101,20 @@ public:
 
   void callback_Failure(MessageCallback callback)
   {
+    using namespace hw::trezor::messages;
     m_callbacks[MessageType_Failure] = callback;
   }
 
   void callback_Success(MessageCallback callback)
   {
+    using namespace hw::trezor::messages;
     m_callbacks[MessageType_Success] = callback;
   }
 
 protected:
   void handle_response(const Call &call)
   {
+    using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
     
     switch (call.type)
