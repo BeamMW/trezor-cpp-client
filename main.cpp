@@ -38,12 +38,14 @@ int main()
             enumerate.session = "null";
         }
 
-        trezor->callback_Failure([&, is_alive_idx](const Message &msg, size_t queue_size) {
+        trezor->callback_Failure([&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+            std::cout << "SESSION: " << session << std::endl;
             std::cout << "FAIL REASON: " << child_cast<Message, Failure>(msg).message() << std::endl;
             clear_flag(queue_size, is_alive_idx);
         });
 
-        trezor->callback_Success([&, is_alive_idx](const Message &msg, size_t queue_size) {
+        trezor->callback_Success([&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+            std::cout << "SESSION: " << session << std::endl;
             std::cout << "SUCCESS: " << child_cast<Message, Success>(msg).message() << std::endl;
             clear_flag(queue_size, is_alive_idx);
         });
@@ -53,17 +55,36 @@ int main()
             using namespace hw::trezor::messages::beam;
             
             trezor->init(enumerate);
-            trezor->call_Ping("hello beam", true);
-            trezor->call_BeamGetOwnerKey(true, [&, is_alive_idx](const Message &msg, size_t queue_size) {
+            trezor->call_Ping("hello beam", true, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+                std::cout << "SESSION: " << session << std::endl;
+                std::cout << "PONG: " << child_cast<Message, Success>(msg).message() << std::endl;
+                clear_flag(queue_size, is_alive_idx);
+            });
+            trezor->call_BeamGetOwnerKey(true, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+                std::cout << "SESSION: " << session << std::endl;
                 std::cout << "BEAM OWNER KEY: " << child_cast<Message, BeamOwnerKey>(msg).key() << std::endl;
                 clear_flag(queue_size, is_alive_idx);
             });
-            trezor->call_BeamGenerateNonce(1, [&, is_alive_idx](const Message &msg, size_t queue_size) {
-                std::cout << "BEAM NONCE IN SLOT 1: ";
-                print_bin(reinterpret_cast<const uint8_t*>(child_cast<Message, BeamECCImage>(msg).image_x().c_str()), 32);
+            trezor->call_BeamGenerateNonce(1, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+                std::cout << "SESSION: " << session << std::endl;
+                std::cout << "BEAM NONCE IN SLOT 1: " << std::endl;
+                std::cout << "pub_x: ";
+                print_bin(reinterpret_cast<const uint8_t *>(child_cast<Message, BeamPublicKey>(msg).pub_x().c_str()), 32);
+                std::cout << "pub_y: ";
+                print_bin(reinterpret_cast<const uint8_t *>(child_cast<Message, BeamPublicKey>(msg).pub_y().c_str()), 1);
                 clear_flag(queue_size, is_alive_idx);
             });
-            trezor->call_BeamGenerateKey(0, 0, 0, 1, true, [&, is_alive_idx](const Message &msg, size_t queue_size) {
+            trezor->call_BeamGetNoncePublic(1, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+                std::cout << "SESSION: " << session << std::endl;
+                std::cout << "BEAM PUBLIC KEY OF NONCE IN SLOT 1:" << std::endl;
+                std::cout << "pub_x: ";
+                print_bin(reinterpret_cast<const uint8_t *>(child_cast<Message, BeamPublicKey>(msg).pub_x().c_str()), 32);
+                std::cout << "pub_y: ";
+                print_bin(reinterpret_cast<const uint8_t *>(child_cast<Message, BeamPublicKey>(msg).pub_y().c_str()), 1);
+                clear_flag(queue_size, is_alive_idx);
+            });
+            trezor->call_BeamGenerateKey(0, 0, 0, 1, true, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+                std::cout << "SESSION: " << session << std::endl;
                 std::cout << "BEAM GENERATED PUBLIC KEY:" << std::endl;
                 std::cout << "pub_x: ";
                 print_bin(reinterpret_cast<const uint8_t*>(child_cast<Message, BeamPublicKey>(msg).pub_x().c_str()), 32);

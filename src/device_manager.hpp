@@ -12,7 +12,7 @@
 class DeviceManager
 {
 public:
-  using MessageCallback = std::function<void(const Message &, size_t)>;
+  using MessageCallback = std::function<void(const Message &, std::string, size_t)>;
 
   DeviceManager()
   {
@@ -31,7 +31,7 @@ public:
             if (released.session == m_session)
               m_session = "null";
 
-            handle_response(call);
+            handle_response(call, released.session);
 
             m_request_queue.unlockPop();
           }
@@ -48,12 +48,15 @@ public:
     m_is_real = enumerate.vendor && enumerate.product;
   }
 
-  void call_Ping(std::string text, bool button_protection)
+  void call_Ping(std::string text, bool button_protection, MessageCallback callback)
   {
+    using namespace hw::trezor::messages;
+    using namespace hw::trezor::messages::beam;
+
     Ping message;
     message.set_message(text);
     message.set_button_protection(button_protection);
-    call(pack_message(message));
+    call(pack_message(message), MessageType_Success, callback);
   }
 
   void call_BeamGetOwnerKey(bool show_display, MessageCallback callback)
@@ -61,11 +64,9 @@ public:
     using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
 
-    m_callbacks[MessageType_BeamOwnerKey] = callback;
-
     BeamGetOwnerKey message;
     message.set_show_display(show_display);
-    call(pack_message(message));
+    call(pack_message(message), MessageType_BeamOwnerKey, callback);
   }
 
   void call_BeamGenerateNonce(uint8_t slot, MessageCallback callback)
@@ -73,19 +74,25 @@ public:
     using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
 
-    m_callbacks[MessageType_BeamECCImage] = callback;
-
     BeamGenerateNonce message;
     message.set_slot(slot);
-    call(pack_message(message));
+    call(pack_message(message), MessageType_BeamPublicKey, callback);
+  }
+
+  void call_BeamGetNoncePublic(uint8_t slot, MessageCallback callback)
+  {
+    using namespace hw::trezor::messages;
+    using namespace hw::trezor::messages::beam;
+
+    BeamGetNoncePublic message;
+    message.set_slot(slot);
+    call(pack_message(message), MessageType_BeamPublicKey, callback);
   }
 
   void call_BeamGenerateKey(uint64_t idx, uint32_t type, uint32_t subIdx, uint64_t value, bool isCoinKey, MessageCallback callback)
   {
     using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
-
-    m_callbacks[MessageType_BeamPublicKey] = callback;
 
     BeamGenerateKey message;
     auto kidv = message.mutable_kidv();
@@ -95,24 +102,26 @@ public:
     kidv->set_value(value);
     message.set_allocated_kidv(kidv);
     message.set_is_coin_key(isCoinKey);
-    call(pack_message(message));
+    call(pack_message(message), MessageType_BeamPublicKey, callback);
     message.release_kidv();
   }
 
   void callback_Failure(MessageCallback callback)
   {
     using namespace hw::trezor::messages;
-    m_callbacks[MessageType_Failure] = callback;
+    auto key = std::make_pair(MessageType_Failure, GLOBAL_SESSION_ID);
+    m_callbacks[key] = callback;
   }
 
   void callback_Success(MessageCallback callback)
   {
     using namespace hw::trezor::messages;
-    m_callbacks[MessageType_Success] = callback;
+    auto key = std::make_pair(MessageType_Success, GLOBAL_SESSION_ID);
+    m_callbacks[key] = callback;
   }
 
 protected:
-  void handle_response(const Call &call)
+  void handle_response(const Call &call, const std::string &session)
   {
     using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
@@ -120,19 +129,17 @@ protected:
     switch (call.type)
     {
     case MessageType_Failure:
-      execute_callback<MessageType_Failure, Failure>(call);
+      execute_callback<Failure>(call, GLOBAL_SESSION_ID);
       break;
     case MessageType_Success:
-      execute_callback<MessageType_Success, Success>(call);
+      if (!execute_callback<Success>(call, session))
+        execute_callback<Success>(call, GLOBAL_SESSION_ID);
       break;
     case MessageType_BeamOwnerKey:
-      execute_callback<MessageType_BeamOwnerKey, BeamOwnerKey>(call);
-      break;
-    case MessageType_BeamECCImage:
-      execute_callback<MessageType_BeamECCImage, BeamECCImage>(call);
+      execute_callback<BeamOwnerKey>(call, session);
       break;
     case MessageType_BeamPublicKey:
-      execute_callback<MessageType_BeamPublicKey, BeamPublicKey>(call);
+      execute_callback<BeamPublicKey>(call, session);
       break;
     case INTERNAL_ERROR:
     {
@@ -144,9 +151,7 @@ protected:
 
       Failure error;
       error.set_message(call.error);
-      auto callback = m_callbacks.find(MessageType_Failure);
-      if (callback != m_callbacks.end())
-        callback->second(error, m_request_queue.size());
+      execute_callback(error, MessageType_Failure, GLOBAL_SESSION_ID);
       break;
     }
     default:
@@ -154,17 +159,27 @@ protected:
     }
   }
 
-  template <int Type, typename MessageType>
-  void execute_callback(const Call &call)
+  bool execute_callback(const Message &msg, int type, const std::string &session)
   {
-    auto callback = m_callbacks.find(Type);
+    auto key = std::make_pair(type, session);
+    auto callback = m_callbacks.find(key);
     if (callback != m_callbacks.end())
-      callback->second(call.to_message<MessageType>(), m_request_queue.size());
+    {
+      callback->second(msg, session, m_request_queue.size());
+      return true;
+    }
+    return false;
   }
 
-  void call(std::string message) throw()
+  template <typename MessageType>
+  bool execute_callback(const Call &call, const std::string &session)
   {
-    m_request_queue.push(m_request_queue.size(), [&, message](size_t size) {
+    return execute_callback(call.to_message<MessageType>(), call.type, session);
+  }
+
+  void call(std::string message, int type, MessageCallback callback) throw()
+  {
+    m_request_queue.push(m_request_queue.size(), [&, message, type, callback](size_t size) {
       if (m_session != "null")
       {
         throw std::runtime_error("previous session must be completed");
@@ -175,6 +190,10 @@ protected:
       if (acquired.error.empty())
       {
         m_session = acquired.session;
+        if (callback) {
+          auto key = std::make_pair(type, m_session);
+          m_callbacks[key] = callback;
+        }
         m_worker_queue.push(m_session, [&, message](const std::string &session) {
           return m_client.call(session, message);
         });
@@ -186,11 +205,13 @@ protected:
   }
 
 private:
+  const std::string GLOBAL_SESSION_ID = "global";
+
   Client m_client;
   WorkingQueue<Call, std::string> m_worker_queue;
   WorkingQueue<bool, size_t> m_request_queue;
 
-  std::unordered_map<int, MessageCallback> m_callbacks;
+  std::unordered_map<std::pair<int, std::string>, MessageCallback, pair_hash> m_callbacks;
   std::string m_path = "null";
   std::string m_session = "null";
   bool m_is_real = false;

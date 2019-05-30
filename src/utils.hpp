@@ -9,6 +9,25 @@
 
 const uint16_t INTERNAL_ERROR = 999;
 
+struct pair_hash
+{
+    template <class T>
+    static inline void hash_combine(std::size_t &seed, const T &v)
+    {
+        std::hash<T> hasher;
+        seed ^= hasher(v) + 0x9e3779b9 + (seed << 6) + (seed >> 2);
+    }
+
+    template <class T1, class T2>
+    std::size_t operator()(const std::pair<T1, T2> &p) const
+    {
+        std::size_t seed = 0;
+        hash_combine(seed, p.first);
+        hash_combine(seed, p.second);
+        return seed;
+    }
+};
+
 extern "C" inline void hex2bin(const char *hexString, const size_t sizeString, unsigned char *outBytes)
 {
     uint32_t buffer = 0;
