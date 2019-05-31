@@ -5,6 +5,7 @@
 #include "device_manager.hpp"
 
 #include "debug.hpp"
+#include "hw_definitions.hpp"
 
 int main()
 {
@@ -69,9 +70,8 @@ int main()
                 std::cout << "SESSION: " << session << std::endl;
                 std::cout << "BEAM NONCE IN SLOT 1: " << std::endl;
                 std::cout << "pub_x: ";
-                print_bin(reinterpret_cast<const uint8_t *>(child_cast<Message, BeamPublicKey>(msg).pub_x().c_str()), 32);
-                std::cout << "pub_y: ";
-                print_bin(reinterpret_cast<const uint8_t *>(child_cast<Message, BeamPublicKey>(msg).pub_y().c_str()), 1);
+                print_bin(reinterpret_cast<const uint8_t *>(child_cast<Message, BeamECCPoint>(msg).x().c_str()), 32);
+                std::cout << "pub_y: " << child_cast<Message, BeamECCPoint>(msg).y() << std::endl;
                 clear_flag(queue_size, is_alive_idx);
             });
             trezor->call_BeamGetNoncePublic(1, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
@@ -90,6 +90,21 @@ int main()
                 print_bin(reinterpret_cast<const uint8_t*>(child_cast<Message, BeamPublicKey>(msg).pub_x().c_str()), 32);
                 std::cout << "pub_y: ";
                 print_bin(reinterpret_cast<const uint8_t*>(child_cast<Message, BeamPublicKey>(msg).pub_y().c_str()), 1);
+                clear_flag(queue_size, is_alive_idx);
+            });
+            trezor->call_BeamGenerateRangeproof(0, 0, 0, 1, false, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+                const uint8_t * rp_raw = reinterpret_cast<const uint8_t *>(child_cast<Message, BeamRangeproofData>(msg).data().c_str());
+                std::cout << "SESSION: " << session << std::endl;
+                std::cout << "BEAM GENERATED RANGEPROOF:" << std::endl;
+                std::cout << "first 64 of 688 bytes: ";
+                print_bin(rp_raw, 64);
+
+                rangeproof_confidential_t rp;
+                memcpy(&rp, rp_raw, sizeof(rangeproof_confidential_t));
+                std::cout << "mu:" << std::endl;
+                print_bin(reinterpret_cast<const uint8_t *>(&rp.mu), 32);
+                std::cout << "tDot:" << std::endl;
+                print_bin(reinterpret_cast<const uint8_t *>(&rp.tDot), 32);
                 clear_flag(queue_size, is_alive_idx);
             });
         }

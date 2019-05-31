@@ -37,7 +37,7 @@ public:
 
     BeamGenerateNonce message;
     message.set_slot(slot);
-    call(pack_message(message), MessageType_BeamPublicKey, callback);
+    call(pack_message(message), MessageType_BeamECCPoint, callback);
   }
 
   void call_BeamGetNoncePublic(uint8_t slot, MessageCallback callback)
@@ -67,6 +67,23 @@ public:
     message.release_kidv();
   }
 
+  void call_BeamGenerateRangeproof(uint64_t idx, uint32_t type, uint32_t subIdx, uint64_t value, bool isPublic, MessageCallback callback)
+  {
+    using namespace hw::trezor::messages;
+    using namespace hw::trezor::messages::beam;
+
+    BeamGenerateRangeproof message;
+    auto kidv = message.mutable_kidv();
+    kidv->set_idx(idx);
+    kidv->set_type(type);
+    kidv->set_sub_idx(subIdx);
+    kidv->set_value(value);
+    message.set_allocated_kidv(kidv);
+    message.set_is_public(isPublic);
+    call(pack_message(message), MessageType_BeamRangeproofData, callback);
+    message.release_kidv();
+  }
+
 protected:
   virtual void handle_custom_response(const Call &call, const std::string &session)
   {
@@ -80,6 +97,12 @@ protected:
       break;
     case MessageType_BeamPublicKey:
       execute_callback<BeamPublicKey>(call, session);
+      break;
+    case MessageType_BeamECCPoint:
+      execute_callback<BeamECCPoint>(call, session);
+      break;
+    case MessageType_BeamRangeproofData:
+      execute_callback<BeamRangeproofData>(call, session);
       break;
     default:
       break;
