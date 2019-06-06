@@ -56,7 +56,10 @@ std::string pack_message(int type, size_t length, const Container &msg)
     ss << std::setw(8) << std::hex << length;
     // Write message as a hex string
     for (size_t i = 0; i < length; i++)
-        ss << std::setw(2) << std::hex << static_cast<int>(msg[i]);
+    {
+        auto byte = static_cast<uint32_t>(static_cast<uint8_t>(msg[i]));
+        ss << std::setw(2) << std::hex << byte;
+    }
     return ss.str();
 }
 

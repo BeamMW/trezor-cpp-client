@@ -51,3 +51,29 @@ typedef struct
   scalar_t tDot;
   inner_product_t p_tag;
 } rangeproof_confidential_t;
+
+typedef struct
+{
+  uint64_t idx;
+  uint32_t type;
+  uint32_t sub_idx;
+  uint64_t value;
+} key_idv_t;
+
+typedef struct
+{
+  // Common kernel parameters
+  uint64_t fee;
+  uint64_t min_height;
+  uint64_t max_height;
+
+  // Aggregated data
+  point_t kernel_commitment;
+  point_t kernel_nonce;
+
+  // Nonce slot used
+  uint32_t nonce_slot;
+
+  // Additional explicit blinding factor that should be added
+  uint8_t offset[32];
+} transaction_data_t;
