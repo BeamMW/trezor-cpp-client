@@ -41,7 +41,7 @@ struct TableStruct_messages_2dbeam_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::google::protobuf::internal::ParseTable schema[24]
+  static const ::google::protobuf::internal::ParseTable schema[16]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
@@ -52,12 +52,6 @@ namespace hw {
 namespace trezor {
 namespace messages {
 namespace beam {
-class BeamConfirmResponseMessage;
-class BeamConfirmResponseMessageDefaultTypeInternal;
-extern BeamConfirmResponseMessageDefaultTypeInternal _BeamConfirmResponseMessage_default_instance_;
-class BeamDisplayMessage;
-class BeamDisplayMessageDefaultTypeInternal;
-extern BeamDisplayMessageDefaultTypeInternal _BeamDisplayMessage_default_instance_;
 class BeamECCPoint;
 class BeamECCPointDefaultTypeInternal;
 extern BeamECCPointDefaultTypeInternal _BeamECCPoint_default_instance_;
@@ -85,27 +79,12 @@ extern BeamKeyIDVDefaultTypeInternal _BeamKeyIDV_default_instance_;
 class BeamOwnerKey;
 class BeamOwnerKeyDefaultTypeInternal;
 extern BeamOwnerKeyDefaultTypeInternal _BeamOwnerKey_default_instance_;
-class BeamPublicKey;
-class BeamPublicKeyDefaultTypeInternal;
-extern BeamPublicKeyDefaultTypeInternal _BeamPublicKey_default_instance_;
 class BeamRangeproofData;
 class BeamRangeproofDataDefaultTypeInternal;
 extern BeamRangeproofDataDefaultTypeInternal _BeamRangeproofData_default_instance_;
 class BeamSignMessage;
 class BeamSignMessageDefaultTypeInternal;
 extern BeamSignMessageDefaultTypeInternal _BeamSignMessage_default_instance_;
-class BeamSignReceiveTx;
-class BeamSignReceiveTxDefaultTypeInternal;
-extern BeamSignReceiveTxDefaultTypeInternal _BeamSignReceiveTx_default_instance_;
-class BeamSignReceiveTx_BeamPayment;
-class BeamSignReceiveTx_BeamPaymentDefaultTypeInternal;
-extern BeamSignReceiveTx_BeamPaymentDefaultTypeInternal _BeamSignReceiveTx_BeamPayment_default_instance_;
-class BeamSignSendTx;
-class BeamSignSendTxDefaultTypeInternal;
-extern BeamSignSendTxDefaultTypeInternal _BeamSignSendTx_default_instance_;
-class BeamSignSendTx_BeamPayment;
-class BeamSignSendTx_BeamPaymentDefaultTypeInternal;
-extern BeamSignSendTx_BeamPaymentDefaultTypeInternal _BeamSignSendTx_BeamPayment_default_instance_;
 class BeamSignTransaction;
 class BeamSignTransactionDefaultTypeInternal;
 extern BeamSignTransactionDefaultTypeInternal _BeamSignTransaction_default_instance_;
@@ -115,9 +94,6 @@ extern BeamSignTransaction_BeamKernelParametersDefaultTypeInternal _BeamSignTran
 class BeamSignature;
 class BeamSignatureDefaultTypeInternal;
 extern BeamSignatureDefaultTypeInternal _BeamSignature_default_instance_;
-class BeamSignedMessage;
-class BeamSignedMessageDefaultTypeInternal;
-extern BeamSignedMessageDefaultTypeInternal _BeamSignedMessage_default_instance_;
 class BeamSignedTransaction;
 class BeamSignedTransactionDefaultTypeInternal;
 extern BeamSignedTransactionDefaultTypeInternal _BeamSignedTransaction_default_instance_;
@@ -130,8 +106,6 @@ extern BeamVerifyMessageDefaultTypeInternal _BeamVerifyMessage_default_instance_
 }  // namespace hw
 namespace google {
 namespace protobuf {
-template<> ::hw::trezor::messages::beam::BeamConfirmResponseMessage* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamConfirmResponseMessage>(Arena*);
-template<> ::hw::trezor::messages::beam::BeamDisplayMessage* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamDisplayMessage>(Arena*);
 template<> ::hw::trezor::messages::beam::BeamECCPoint* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamECCPoint>(Arena*);
 template<> ::hw::trezor::messages::beam::BeamGenerateKey* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamGenerateKey>(Arena*);
 template<> ::hw::trezor::messages::beam::BeamGenerateNonce* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamGenerateNonce>(Arena*);
@@ -141,17 +115,11 @@ template<> ::hw::trezor::messages::beam::BeamGetOwnerKey* Arena::CreateMaybeMess
 template<> ::hw::trezor::messages::beam::BeamGetPublicKey* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamGetPublicKey>(Arena*);
 template<> ::hw::trezor::messages::beam::BeamKeyIDV* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamKeyIDV>(Arena*);
 template<> ::hw::trezor::messages::beam::BeamOwnerKey* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamOwnerKey>(Arena*);
-template<> ::hw::trezor::messages::beam::BeamPublicKey* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamPublicKey>(Arena*);
 template<> ::hw::trezor::messages::beam::BeamRangeproofData* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamRangeproofData>(Arena*);
 template<> ::hw::trezor::messages::beam::BeamSignMessage* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamSignMessage>(Arena*);
-template<> ::hw::trezor::messages::beam::BeamSignReceiveTx* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamSignReceiveTx>(Arena*);
-template<> ::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment>(Arena*);
-template<> ::hw::trezor::messages::beam::BeamSignSendTx* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamSignSendTx>(Arena*);
-template<> ::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment>(Arena*);
 template<> ::hw::trezor::messages::beam::BeamSignTransaction* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamSignTransaction>(Arena*);
 template<> ::hw::trezor::messages::beam::BeamSignTransaction_BeamKernelParameters* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamSignTransaction_BeamKernelParameters>(Arena*);
 template<> ::hw::trezor::messages::beam::BeamSignature* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamSignature>(Arena*);
-template<> ::hw::trezor::messages::beam::BeamSignedMessage* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamSignedMessage>(Arena*);
 template<> ::hw::trezor::messages::beam::BeamSignedTransaction* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamSignedTransaction>(Arena*);
 template<> ::hw::trezor::messages::beam::BeamVerifyMessage* Arena::CreateMaybeMessage<::hw::trezor::messages::beam::BeamVerifyMessage>(Arena*);
 }  // namespace protobuf
@@ -979,280 +947,6 @@ class BeamSignature final :
 };
 // -------------------------------------------------------------------
 
-class BeamDisplayMessage final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.beam.BeamDisplayMessage) */ {
- public:
-  BeamDisplayMessage();
-  virtual ~BeamDisplayMessage();
-
-  BeamDisplayMessage(const BeamDisplayMessage& from);
-
-  inline BeamDisplayMessage& operator=(const BeamDisplayMessage& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  #if LANG_CXX11
-  BeamDisplayMessage(BeamDisplayMessage&& from) noexcept
-    : BeamDisplayMessage() {
-    *this = ::std::move(from);
-  }
-
-  inline BeamDisplayMessage& operator=(BeamDisplayMessage&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-  #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields();
-  }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields();
-  }
-
-  static const ::google::protobuf::Descriptor* descriptor() {
-    return default_instance().GetDescriptor();
-  }
-  static const BeamDisplayMessage& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const BeamDisplayMessage* internal_default_instance() {
-    return reinterpret_cast<const BeamDisplayMessage*>(
-               &_BeamDisplayMessage_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    6;
-
-  void Swap(BeamDisplayMessage* other);
-  friend void swap(BeamDisplayMessage& a, BeamDisplayMessage& b) {
-    a.Swap(&b);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline BeamDisplayMessage* New() const final {
-    return CreateMaybeMessage<BeamDisplayMessage>(nullptr);
-  }
-
-  BeamDisplayMessage* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<BeamDisplayMessage>(arena);
-  }
-  void CopyFrom(const ::google::protobuf::Message& from) final;
-  void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const BeamDisplayMessage& from);
-  void MergeFrom(const BeamDisplayMessage& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
-  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
-  #else
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) final;
-  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const final;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      ::google::protobuf::uint8* target) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(BeamDisplayMessage* other);
-  private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return nullptr;
-  }
-  inline void* MaybeArenaPtr() const {
-    return nullptr;
-  }
-  public:
-
-  ::google::protobuf::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  // optional string text = 1;
-  bool has_text() const;
-  void clear_text();
-  static const int kTextFieldNumber = 1;
-  const ::std::string& text() const;
-  void set_text(const ::std::string& value);
-  #if LANG_CXX11
-  void set_text(::std::string&& value);
-  #endif
-  void set_text(const char* value);
-  void set_text(const char* value, size_t size);
-  ::std::string* mutable_text();
-  ::std::string* release_text();
-  void set_allocated_text(::std::string* text);
-
-  // optional bool show_display = 2;
-  bool has_show_display() const;
-  void clear_show_display();
-  static const int kShowDisplayFieldNumber = 2;
-  bool show_display() const;
-  void set_show_display(bool value);
-
-  // @@protoc_insertion_point(class_scope:hw.trezor.messages.beam.BeamDisplayMessage)
- private:
-  class HasBitSetters;
-
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr text_;
-  bool show_display_;
-  friend struct ::TableStruct_messages_2dbeam_2eproto;
-};
-// -------------------------------------------------------------------
-
-class BeamConfirmResponseMessage final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.beam.BeamConfirmResponseMessage) */ {
- public:
-  BeamConfirmResponseMessage();
-  virtual ~BeamConfirmResponseMessage();
-
-  BeamConfirmResponseMessage(const BeamConfirmResponseMessage& from);
-
-  inline BeamConfirmResponseMessage& operator=(const BeamConfirmResponseMessage& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  #if LANG_CXX11
-  BeamConfirmResponseMessage(BeamConfirmResponseMessage&& from) noexcept
-    : BeamConfirmResponseMessage() {
-    *this = ::std::move(from);
-  }
-
-  inline BeamConfirmResponseMessage& operator=(BeamConfirmResponseMessage&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-  #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields();
-  }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields();
-  }
-
-  static const ::google::protobuf::Descriptor* descriptor() {
-    return default_instance().GetDescriptor();
-  }
-  static const BeamConfirmResponseMessage& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const BeamConfirmResponseMessage* internal_default_instance() {
-    return reinterpret_cast<const BeamConfirmResponseMessage*>(
-               &_BeamConfirmResponseMessage_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    7;
-
-  void Swap(BeamConfirmResponseMessage* other);
-  friend void swap(BeamConfirmResponseMessage& a, BeamConfirmResponseMessage& b) {
-    a.Swap(&b);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline BeamConfirmResponseMessage* New() const final {
-    return CreateMaybeMessage<BeamConfirmResponseMessage>(nullptr);
-  }
-
-  BeamConfirmResponseMessage* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<BeamConfirmResponseMessage>(arena);
-  }
-  void CopyFrom(const ::google::protobuf::Message& from) final;
-  void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const BeamConfirmResponseMessage& from);
-  void MergeFrom(const BeamConfirmResponseMessage& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
-  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
-  #else
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) final;
-  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const final;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      ::google::protobuf::uint8* target) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(BeamConfirmResponseMessage* other);
-  private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return nullptr;
-  }
-  inline void* MaybeArenaPtr() const {
-    return nullptr;
-  }
-  public:
-
-  ::google::protobuf::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  // optional string text = 1;
-  bool has_text() const;
-  void clear_text();
-  static const int kTextFieldNumber = 1;
-  const ::std::string& text() const;
-  void set_text(const ::std::string& value);
-  #if LANG_CXX11
-  void set_text(::std::string&& value);
-  #endif
-  void set_text(const char* value);
-  void set_text(const char* value, size_t size);
-  ::std::string* mutable_text();
-  ::std::string* release_text();
-  void set_allocated_text(::std::string* text);
-
-  // optional bool response = 2;
-  bool has_response() const;
-  void clear_response();
-  static const int kResponseFieldNumber = 2;
-  bool response() const;
-  void set_response(bool value);
-
-  // @@protoc_insertion_point(class_scope:hw.trezor.messages.beam.BeamConfirmResponseMessage)
- private:
-  class HasBitSetters;
-
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr text_;
-  bool response_;
-  friend struct ::TableStruct_messages_2dbeam_2eproto;
-};
-// -------------------------------------------------------------------
-
 class BeamSignMessage final :
     public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.beam.BeamSignMessage) */ {
  public:
@@ -1298,7 +992,7 @@ class BeamSignMessage final :
                &_BeamSignMessage_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    6;
 
   void Swap(BeamSignMessage* other);
   friend void swap(BeamSignMessage& a, BeamSignMessage& b) {
@@ -1370,10 +1064,24 @@ class BeamSignMessage final :
   ::std::string* release_msg();
   void set_allocated_msg(::std::string* msg);
 
-  // optional bool show_display = 2;
+  // optional uint64 kid_idx = 2;
+  bool has_kid_idx() const;
+  void clear_kid_idx();
+  static const int kKidIdxFieldNumber = 2;
+  ::google::protobuf::uint64 kid_idx() const;
+  void set_kid_idx(::google::protobuf::uint64 value);
+
+  // optional uint32 kid_sub_idx = 3;
+  bool has_kid_sub_idx() const;
+  void clear_kid_sub_idx();
+  static const int kKidSubIdxFieldNumber = 3;
+  ::google::protobuf::uint32 kid_sub_idx() const;
+  void set_kid_sub_idx(::google::protobuf::uint32 value);
+
+  // optional bool show_display = 4;
   bool has_show_display() const;
   void clear_show_display();
-  static const int kShowDisplayFieldNumber = 2;
+  static const int kShowDisplayFieldNumber = 4;
   bool show_display() const;
   void set_show_display(bool value);
 
@@ -1385,130 +1093,9 @@ class BeamSignMessage final :
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::internal::ArenaStringPtr msg_;
+  ::google::protobuf::uint64 kid_idx_;
+  ::google::protobuf::uint32 kid_sub_idx_;
   bool show_display_;
-  friend struct ::TableStruct_messages_2dbeam_2eproto;
-};
-// -------------------------------------------------------------------
-
-class BeamSignedMessage final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.beam.BeamSignedMessage) */ {
- public:
-  BeamSignedMessage();
-  virtual ~BeamSignedMessage();
-
-  BeamSignedMessage(const BeamSignedMessage& from);
-
-  inline BeamSignedMessage& operator=(const BeamSignedMessage& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  #if LANG_CXX11
-  BeamSignedMessage(BeamSignedMessage&& from) noexcept
-    : BeamSignedMessage() {
-    *this = ::std::move(from);
-  }
-
-  inline BeamSignedMessage& operator=(BeamSignedMessage&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-  #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields();
-  }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields();
-  }
-
-  static const ::google::protobuf::Descriptor* descriptor() {
-    return default_instance().GetDescriptor();
-  }
-  static const BeamSignedMessage& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const BeamSignedMessage* internal_default_instance() {
-    return reinterpret_cast<const BeamSignedMessage*>(
-               &_BeamSignedMessage_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    9;
-
-  void Swap(BeamSignedMessage* other);
-  friend void swap(BeamSignedMessage& a, BeamSignedMessage& b) {
-    a.Swap(&b);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline BeamSignedMessage* New() const final {
-    return CreateMaybeMessage<BeamSignedMessage>(nullptr);
-  }
-
-  BeamSignedMessage* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<BeamSignedMessage>(arena);
-  }
-  void CopyFrom(const ::google::protobuf::Message& from) final;
-  void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const BeamSignedMessage& from);
-  void MergeFrom(const BeamSignedMessage& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
-  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
-  #else
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) final;
-  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const final;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      ::google::protobuf::uint8* target) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(BeamSignedMessage* other);
-  private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return nullptr;
-  }
-  inline void* MaybeArenaPtr() const {
-    return nullptr;
-  }
-  public:
-
-  ::google::protobuf::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  // optional .hw.trezor.messages.beam.BeamSignature signature = 1;
-  bool has_signature() const;
-  void clear_signature();
-  static const int kSignatureFieldNumber = 1;
-  const ::hw::trezor::messages::beam::BeamSignature& signature() const;
-  ::hw::trezor::messages::beam::BeamSignature* release_signature();
-  ::hw::trezor::messages::beam::BeamSignature* mutable_signature();
-  void set_allocated_signature(::hw::trezor::messages::beam::BeamSignature* signature);
-
-  // @@protoc_insertion_point(class_scope:hw.trezor.messages.beam.BeamSignedMessage)
- private:
-  class HasBitSetters;
-
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  ::hw::trezor::messages::beam::BeamSignature* signature_;
   friend struct ::TableStruct_messages_2dbeam_2eproto;
 };
 // -------------------------------------------------------------------
@@ -1558,7 +1145,7 @@ class BeamVerifyMessage final :
                &_BeamVerifyMessage_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    7;
 
   void Swap(BeamVerifyMessage* other);
   friend void swap(BeamVerifyMessage& a, BeamVerifyMessage& b) {
@@ -1639,14 +1226,14 @@ class BeamVerifyMessage final :
   ::hw::trezor::messages::beam::BeamSignature* mutable_signature();
   void set_allocated_signature(::hw::trezor::messages::beam::BeamSignature* signature);
 
-  // optional .hw.trezor.messages.beam.BeamPublicKey public_key = 2;
+  // optional .hw.trezor.messages.beam.BeamECCPoint public_key = 2;
   bool has_public_key() const;
   void clear_public_key();
   static const int kPublicKeyFieldNumber = 2;
-  const ::hw::trezor::messages::beam::BeamPublicKey& public_key() const;
-  ::hw::trezor::messages::beam::BeamPublicKey* release_public_key();
-  ::hw::trezor::messages::beam::BeamPublicKey* mutable_public_key();
-  void set_allocated_public_key(::hw::trezor::messages::beam::BeamPublicKey* public_key);
+  const ::hw::trezor::messages::beam::BeamECCPoint& public_key() const;
+  ::hw::trezor::messages::beam::BeamECCPoint* release_public_key();
+  ::hw::trezor::messages::beam::BeamECCPoint* mutable_public_key();
+  void set_allocated_public_key(::hw::trezor::messages::beam::BeamECCPoint* public_key);
 
   // @@protoc_insertion_point(class_scope:hw.trezor.messages.beam.BeamVerifyMessage)
  private:
@@ -1657,7 +1244,7 @@ class BeamVerifyMessage final :
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::internal::ArenaStringPtr message_;
   ::hw::trezor::messages::beam::BeamSignature* signature_;
-  ::hw::trezor::messages::beam::BeamPublicKey* public_key_;
+  ::hw::trezor::messages::beam::BeamECCPoint* public_key_;
   friend struct ::TableStruct_messages_2dbeam_2eproto;
 };
 // -------------------------------------------------------------------
@@ -1707,7 +1294,7 @@ class BeamGetPublicKey final :
                &_BeamGetPublicKey_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    8;
 
   void Swap(BeamGetPublicKey* other);
   friend void swap(BeamGetPublicKey& a, BeamGetPublicKey& b) {
@@ -1764,10 +1351,24 @@ class BeamGetPublicKey final :
 
   // accessors -------------------------------------------------------
 
-  // optional bool show_display = 1;
+  // optional uint64 kid_idx = 1;
+  bool has_kid_idx() const;
+  void clear_kid_idx();
+  static const int kKidIdxFieldNumber = 1;
+  ::google::protobuf::uint64 kid_idx() const;
+  void set_kid_idx(::google::protobuf::uint64 value);
+
+  // optional uint32 kid_sub_idx = 2;
+  bool has_kid_sub_idx() const;
+  void clear_kid_sub_idx();
+  static const int kKidSubIdxFieldNumber = 2;
+  ::google::protobuf::uint32 kid_sub_idx() const;
+  void set_kid_sub_idx(::google::protobuf::uint32 value);
+
+  // optional bool show_display = 3;
   bool has_show_display() const;
   void clear_show_display();
-  static const int kShowDisplayFieldNumber = 1;
+  static const int kShowDisplayFieldNumber = 3;
   bool show_display() const;
   void set_show_display(bool value);
 
@@ -1778,152 +1379,9 @@ class BeamGetPublicKey final :
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::google::protobuf::uint64 kid_idx_;
+  ::google::protobuf::uint32 kid_sub_idx_;
   bool show_display_;
-  friend struct ::TableStruct_messages_2dbeam_2eproto;
-};
-// -------------------------------------------------------------------
-
-class BeamPublicKey final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.beam.BeamPublicKey) */ {
- public:
-  BeamPublicKey();
-  virtual ~BeamPublicKey();
-
-  BeamPublicKey(const BeamPublicKey& from);
-
-  inline BeamPublicKey& operator=(const BeamPublicKey& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  #if LANG_CXX11
-  BeamPublicKey(BeamPublicKey&& from) noexcept
-    : BeamPublicKey() {
-    *this = ::std::move(from);
-  }
-
-  inline BeamPublicKey& operator=(BeamPublicKey&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-  #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields();
-  }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields();
-  }
-
-  static const ::google::protobuf::Descriptor* descriptor() {
-    return default_instance().GetDescriptor();
-  }
-  static const BeamPublicKey& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const BeamPublicKey* internal_default_instance() {
-    return reinterpret_cast<const BeamPublicKey*>(
-               &_BeamPublicKey_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    12;
-
-  void Swap(BeamPublicKey* other);
-  friend void swap(BeamPublicKey& a, BeamPublicKey& b) {
-    a.Swap(&b);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline BeamPublicKey* New() const final {
-    return CreateMaybeMessage<BeamPublicKey>(nullptr);
-  }
-
-  BeamPublicKey* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<BeamPublicKey>(arena);
-  }
-  void CopyFrom(const ::google::protobuf::Message& from) final;
-  void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const BeamPublicKey& from);
-  void MergeFrom(const BeamPublicKey& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
-  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
-  #else
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) final;
-  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const final;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      ::google::protobuf::uint8* target) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(BeamPublicKey* other);
-  private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return nullptr;
-  }
-  inline void* MaybeArenaPtr() const {
-    return nullptr;
-  }
-  public:
-
-  ::google::protobuf::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  // optional bytes pub_x = 1;
-  bool has_pub_x() const;
-  void clear_pub_x();
-  static const int kPubXFieldNumber = 1;
-  const ::std::string& pub_x() const;
-  void set_pub_x(const ::std::string& value);
-  #if LANG_CXX11
-  void set_pub_x(::std::string&& value);
-  #endif
-  void set_pub_x(const char* value);
-  void set_pub_x(const void* value, size_t size);
-  ::std::string* mutable_pub_x();
-  ::std::string* release_pub_x();
-  void set_allocated_pub_x(::std::string* pub_x);
-
-  // optional bytes pub_y = 2;
-  bool has_pub_y() const;
-  void clear_pub_y();
-  static const int kPubYFieldNumber = 2;
-  const ::std::string& pub_y() const;
-  void set_pub_y(const ::std::string& value);
-  #if LANG_CXX11
-  void set_pub_y(::std::string&& value);
-  #endif
-  void set_pub_y(const char* value);
-  void set_pub_y(const void* value, size_t size);
-  ::std::string* mutable_pub_y();
-  ::std::string* release_pub_y();
-  void set_allocated_pub_y(::std::string* pub_y);
-
-  // @@protoc_insertion_point(class_scope:hw.trezor.messages.beam.BeamPublicKey)
- private:
-  class HasBitSetters;
-
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr pub_x_;
-  ::google::protobuf::internal::ArenaStringPtr pub_y_;
   friend struct ::TableStruct_messages_2dbeam_2eproto;
 };
 // -------------------------------------------------------------------
@@ -1973,7 +1431,7 @@ class BeamGetOwnerKey final :
                &_BeamGetOwnerKey_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    9;
 
   void Swap(BeamGetOwnerKey* other);
   friend void swap(BeamGetOwnerKey& a, BeamGetOwnerKey& b) {
@@ -2094,7 +1552,7 @@ class BeamOwnerKey final :
                &_BeamOwnerKey_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    10;
 
   void Swap(BeamOwnerKey* other);
   friend void swap(BeamOwnerKey& a, BeamOwnerKey& b) {
@@ -2223,7 +1681,7 @@ class BeamGenerateRangeproof final :
                &_BeamGenerateRangeproof_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    11;
 
   void Swap(BeamGenerateRangeproof* other);
   friend void swap(BeamGenerateRangeproof& a, BeamGenerateRangeproof& b) {
@@ -2354,7 +1812,7 @@ class BeamRangeproofData final :
                &_BeamRangeproofData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    12;
 
   void Swap(BeamRangeproofData* other);
   friend void swap(BeamRangeproofData& a, BeamRangeproofData& b) {
@@ -2491,7 +1949,7 @@ class BeamSignedTransaction final :
                &_BeamSignedTransaction_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    13;
 
   void Swap(BeamSignedTransaction* other);
   friend void swap(BeamSignedTransaction& a, BeamSignedTransaction& b) {
@@ -2620,7 +2078,7 @@ class BeamSignTransaction_BeamKernelParameters final :
                &_BeamSignTransaction_BeamKernelParameters_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    14;
 
   void Swap(BeamSignTransaction_BeamKernelParameters* other);
   friend void swap(BeamSignTransaction_BeamKernelParameters& a, BeamSignTransaction_BeamKernelParameters& b) {
@@ -2811,7 +2269,7 @@ class BeamSignTransaction final :
                &_BeamSignTransaction_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    15;
 
   void Swap(BeamSignTransaction* other);
   friend void swap(BeamSignTransaction& a, BeamSignTransaction& b) {
@@ -2937,614 +2395,6 @@ class BeamSignTransaction final :
   ::google::protobuf::internal::ArenaStringPtr offset_sk_;
   ::hw::trezor::messages::beam::BeamSignTransaction_BeamKernelParameters* kernel_params_;
   ::google::protobuf::uint32 nonce_slot_;
-  friend struct ::TableStruct_messages_2dbeam_2eproto;
-};
-// -------------------------------------------------------------------
-
-class BeamSignSendTx_BeamPayment final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.beam.BeamSignSendTx.BeamPayment) */ {
- public:
-  BeamSignSendTx_BeamPayment();
-  virtual ~BeamSignSendTx_BeamPayment();
-
-  BeamSignSendTx_BeamPayment(const BeamSignSendTx_BeamPayment& from);
-
-  inline BeamSignSendTx_BeamPayment& operator=(const BeamSignSendTx_BeamPayment& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  #if LANG_CXX11
-  BeamSignSendTx_BeamPayment(BeamSignSendTx_BeamPayment&& from) noexcept
-    : BeamSignSendTx_BeamPayment() {
-    *this = ::std::move(from);
-  }
-
-  inline BeamSignSendTx_BeamPayment& operator=(BeamSignSendTx_BeamPayment&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-  #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields();
-  }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields();
-  }
-
-  static const ::google::protobuf::Descriptor* descriptor() {
-    return default_instance().GetDescriptor();
-  }
-  static const BeamSignSendTx_BeamPayment& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const BeamSignSendTx_BeamPayment* internal_default_instance() {
-    return reinterpret_cast<const BeamSignSendTx_BeamPayment*>(
-               &_BeamSignSendTx_BeamPayment_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    20;
-
-  void Swap(BeamSignSendTx_BeamPayment* other);
-  friend void swap(BeamSignSendTx_BeamPayment& a, BeamSignSendTx_BeamPayment& b) {
-    a.Swap(&b);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline BeamSignSendTx_BeamPayment* New() const final {
-    return CreateMaybeMessage<BeamSignSendTx_BeamPayment>(nullptr);
-  }
-
-  BeamSignSendTx_BeamPayment* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<BeamSignSendTx_BeamPayment>(arena);
-  }
-  void CopyFrom(const ::google::protobuf::Message& from) final;
-  void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const BeamSignSendTx_BeamPayment& from);
-  void MergeFrom(const BeamSignSendTx_BeamPayment& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
-  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
-  #else
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) final;
-  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const final;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      ::google::protobuf::uint8* target) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(BeamSignSendTx_BeamPayment* other);
-  private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return nullptr;
-  }
-  inline void* MaybeArenaPtr() const {
-    return nullptr;
-  }
-  public:
-
-  ::google::protobuf::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  // optional string destination = 2;
-  bool has_destination() const;
-  void clear_destination();
-  static const int kDestinationFieldNumber = 2;
-  const ::std::string& destination() const;
-  void set_destination(const ::std::string& value);
-  #if LANG_CXX11
-  void set_destination(::std::string&& value);
-  #endif
-  void set_destination(const char* value);
-  void set_destination(const char* value, size_t size);
-  ::std::string* mutable_destination();
-  ::std::string* release_destination();
-  void set_allocated_destination(::std::string* destination);
-
-  // optional uint64 amount = 1;
-  bool has_amount() const;
-  void clear_amount();
-  static const int kAmountFieldNumber = 1;
-  ::google::protobuf::uint64 amount() const;
-  void set_amount(::google::protobuf::uint64 value);
-
-  // optional uint32 destination_tag = 3;
-  bool has_destination_tag() const;
-  void clear_destination_tag();
-  static const int kDestinationTagFieldNumber = 3;
-  ::google::protobuf::uint32 destination_tag() const;
-  void set_destination_tag(::google::protobuf::uint32 value);
-
-  // @@protoc_insertion_point(class_scope:hw.trezor.messages.beam.BeamSignSendTx.BeamPayment)
- private:
-  class HasBitSetters;
-
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr destination_;
-  ::google::protobuf::uint64 amount_;
-  ::google::protobuf::uint32 destination_tag_;
-  friend struct ::TableStruct_messages_2dbeam_2eproto;
-};
-// -------------------------------------------------------------------
-
-class BeamSignSendTx final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.beam.BeamSignSendTx) */ {
- public:
-  BeamSignSendTx();
-  virtual ~BeamSignSendTx();
-
-  BeamSignSendTx(const BeamSignSendTx& from);
-
-  inline BeamSignSendTx& operator=(const BeamSignSendTx& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  #if LANG_CXX11
-  BeamSignSendTx(BeamSignSendTx&& from) noexcept
-    : BeamSignSendTx() {
-    *this = ::std::move(from);
-  }
-
-  inline BeamSignSendTx& operator=(BeamSignSendTx&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-  #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields();
-  }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields();
-  }
-
-  static const ::google::protobuf::Descriptor* descriptor() {
-    return default_instance().GetDescriptor();
-  }
-  static const BeamSignSendTx& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const BeamSignSendTx* internal_default_instance() {
-    return reinterpret_cast<const BeamSignSendTx*>(
-               &_BeamSignSendTx_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    21;
-
-  void Swap(BeamSignSendTx* other);
-  friend void swap(BeamSignSendTx& a, BeamSignSendTx& b) {
-    a.Swap(&b);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline BeamSignSendTx* New() const final {
-    return CreateMaybeMessage<BeamSignSendTx>(nullptr);
-  }
-
-  BeamSignSendTx* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<BeamSignSendTx>(arena);
-  }
-  void CopyFrom(const ::google::protobuf::Message& from) final;
-  void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const BeamSignSendTx& from);
-  void MergeFrom(const BeamSignSendTx& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
-  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
-  #else
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) final;
-  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const final;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      ::google::protobuf::uint8* target) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(BeamSignSendTx* other);
-  private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return nullptr;
-  }
-  inline void* MaybeArenaPtr() const {
-    return nullptr;
-  }
-  public:
-
-  ::google::protobuf::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  typedef BeamSignSendTx_BeamPayment BeamPayment;
-
-  // accessors -------------------------------------------------------
-
-  // repeated uint32 address_n = 1;
-  int address_n_size() const;
-  void clear_address_n();
-  static const int kAddressNFieldNumber = 1;
-  ::google::protobuf::uint32 address_n(int index) const;
-  void set_address_n(int index, ::google::protobuf::uint32 value);
-  void add_address_n(::google::protobuf::uint32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
-      address_n() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
-      mutable_address_n();
-
-  // optional .hw.trezor.messages.beam.BeamSignSendTx.BeamPayment payment = 4;
-  bool has_payment() const;
-  void clear_payment();
-  static const int kPaymentFieldNumber = 4;
-  const ::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment& payment() const;
-  ::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment* release_payment();
-  ::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment* mutable_payment();
-  void set_allocated_payment(::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment* payment);
-
-  // optional uint64 fee = 2;
-  bool has_fee() const;
-  void clear_fee();
-  static const int kFeeFieldNumber = 2;
-  ::google::protobuf::uint64 fee() const;
-  void set_fee(::google::protobuf::uint64 value);
-
-  // optional uint32 flags = 3;
-  bool has_flags() const;
-  void clear_flags();
-  static const int kFlagsFieldNumber = 3;
-  ::google::protobuf::uint32 flags() const;
-  void set_flags(::google::protobuf::uint32 value);
-
-  // @@protoc_insertion_point(class_scope:hw.trezor.messages.beam.BeamSignSendTx)
- private:
-  class HasBitSetters;
-
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > address_n_;
-  ::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment* payment_;
-  ::google::protobuf::uint64 fee_;
-  ::google::protobuf::uint32 flags_;
-  friend struct ::TableStruct_messages_2dbeam_2eproto;
-};
-// -------------------------------------------------------------------
-
-class BeamSignReceiveTx_BeamPayment final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment) */ {
- public:
-  BeamSignReceiveTx_BeamPayment();
-  virtual ~BeamSignReceiveTx_BeamPayment();
-
-  BeamSignReceiveTx_BeamPayment(const BeamSignReceiveTx_BeamPayment& from);
-
-  inline BeamSignReceiveTx_BeamPayment& operator=(const BeamSignReceiveTx_BeamPayment& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  #if LANG_CXX11
-  BeamSignReceiveTx_BeamPayment(BeamSignReceiveTx_BeamPayment&& from) noexcept
-    : BeamSignReceiveTx_BeamPayment() {
-    *this = ::std::move(from);
-  }
-
-  inline BeamSignReceiveTx_BeamPayment& operator=(BeamSignReceiveTx_BeamPayment&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-  #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields();
-  }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields();
-  }
-
-  static const ::google::protobuf::Descriptor* descriptor() {
-    return default_instance().GetDescriptor();
-  }
-  static const BeamSignReceiveTx_BeamPayment& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const BeamSignReceiveTx_BeamPayment* internal_default_instance() {
-    return reinterpret_cast<const BeamSignReceiveTx_BeamPayment*>(
-               &_BeamSignReceiveTx_BeamPayment_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    22;
-
-  void Swap(BeamSignReceiveTx_BeamPayment* other);
-  friend void swap(BeamSignReceiveTx_BeamPayment& a, BeamSignReceiveTx_BeamPayment& b) {
-    a.Swap(&b);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline BeamSignReceiveTx_BeamPayment* New() const final {
-    return CreateMaybeMessage<BeamSignReceiveTx_BeamPayment>(nullptr);
-  }
-
-  BeamSignReceiveTx_BeamPayment* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<BeamSignReceiveTx_BeamPayment>(arena);
-  }
-  void CopyFrom(const ::google::protobuf::Message& from) final;
-  void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const BeamSignReceiveTx_BeamPayment& from);
-  void MergeFrom(const BeamSignReceiveTx_BeamPayment& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
-  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
-  #else
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) final;
-  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const final;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      ::google::protobuf::uint8* target) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(BeamSignReceiveTx_BeamPayment* other);
-  private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return nullptr;
-  }
-  inline void* MaybeArenaPtr() const {
-    return nullptr;
-  }
-  public:
-
-  ::google::protobuf::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  // optional string destination = 2;
-  bool has_destination() const;
-  void clear_destination();
-  static const int kDestinationFieldNumber = 2;
-  const ::std::string& destination() const;
-  void set_destination(const ::std::string& value);
-  #if LANG_CXX11
-  void set_destination(::std::string&& value);
-  #endif
-  void set_destination(const char* value);
-  void set_destination(const char* value, size_t size);
-  ::std::string* mutable_destination();
-  ::std::string* release_destination();
-  void set_allocated_destination(::std::string* destination);
-
-  // optional uint64 amount = 1;
-  bool has_amount() const;
-  void clear_amount();
-  static const int kAmountFieldNumber = 1;
-  ::google::protobuf::uint64 amount() const;
-  void set_amount(::google::protobuf::uint64 value);
-
-  // optional uint32 destination_tag = 3;
-  bool has_destination_tag() const;
-  void clear_destination_tag();
-  static const int kDestinationTagFieldNumber = 3;
-  ::google::protobuf::uint32 destination_tag() const;
-  void set_destination_tag(::google::protobuf::uint32 value);
-
-  // @@protoc_insertion_point(class_scope:hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment)
- private:
-  class HasBitSetters;
-
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr destination_;
-  ::google::protobuf::uint64 amount_;
-  ::google::protobuf::uint32 destination_tag_;
-  friend struct ::TableStruct_messages_2dbeam_2eproto;
-};
-// -------------------------------------------------------------------
-
-class BeamSignReceiveTx final :
-    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.beam.BeamSignReceiveTx) */ {
- public:
-  BeamSignReceiveTx();
-  virtual ~BeamSignReceiveTx();
-
-  BeamSignReceiveTx(const BeamSignReceiveTx& from);
-
-  inline BeamSignReceiveTx& operator=(const BeamSignReceiveTx& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  #if LANG_CXX11
-  BeamSignReceiveTx(BeamSignReceiveTx&& from) noexcept
-    : BeamSignReceiveTx() {
-    *this = ::std::move(from);
-  }
-
-  inline BeamSignReceiveTx& operator=(BeamSignReceiveTx&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-  #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
-    return _internal_metadata_.unknown_fields();
-  }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
-    return _internal_metadata_.mutable_unknown_fields();
-  }
-
-  static const ::google::protobuf::Descriptor* descriptor() {
-    return default_instance().GetDescriptor();
-  }
-  static const BeamSignReceiveTx& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const BeamSignReceiveTx* internal_default_instance() {
-    return reinterpret_cast<const BeamSignReceiveTx*>(
-               &_BeamSignReceiveTx_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    23;
-
-  void Swap(BeamSignReceiveTx* other);
-  friend void swap(BeamSignReceiveTx& a, BeamSignReceiveTx& b) {
-    a.Swap(&b);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline BeamSignReceiveTx* New() const final {
-    return CreateMaybeMessage<BeamSignReceiveTx>(nullptr);
-  }
-
-  BeamSignReceiveTx* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<BeamSignReceiveTx>(arena);
-  }
-  void CopyFrom(const ::google::protobuf::Message& from) final;
-  void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const BeamSignReceiveTx& from);
-  void MergeFrom(const BeamSignReceiveTx& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
-  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
-  #else
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) final;
-  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const final;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      ::google::protobuf::uint8* target) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(BeamSignReceiveTx* other);
-  private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return nullptr;
-  }
-  inline void* MaybeArenaPtr() const {
-    return nullptr;
-  }
-  public:
-
-  ::google::protobuf::Metadata GetMetadata() const final;
-
-  // nested types ----------------------------------------------------
-
-  typedef BeamSignReceiveTx_BeamPayment BeamPayment;
-
-  // accessors -------------------------------------------------------
-
-  // repeated uint32 address_n = 1;
-  int address_n_size() const;
-  void clear_address_n();
-  static const int kAddressNFieldNumber = 1;
-  ::google::protobuf::uint32 address_n(int index) const;
-  void set_address_n(int index, ::google::protobuf::uint32 value);
-  void add_address_n(::google::protobuf::uint32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
-      address_n() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
-      mutable_address_n();
-
-  // optional .hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment payment = 4;
-  bool has_payment() const;
-  void clear_payment();
-  static const int kPaymentFieldNumber = 4;
-  const ::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment& payment() const;
-  ::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment* release_payment();
-  ::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment* mutable_payment();
-  void set_allocated_payment(::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment* payment);
-
-  // optional .hw.trezor.messages.beam.BeamSignature signature = 5;
-  bool has_signature() const;
-  void clear_signature();
-  static const int kSignatureFieldNumber = 5;
-  const ::hw::trezor::messages::beam::BeamSignature& signature() const;
-  ::hw::trezor::messages::beam::BeamSignature* release_signature();
-  ::hw::trezor::messages::beam::BeamSignature* mutable_signature();
-  void set_allocated_signature(::hw::trezor::messages::beam::BeamSignature* signature);
-
-  // optional uint64 fee = 2;
-  bool has_fee() const;
-  void clear_fee();
-  static const int kFeeFieldNumber = 2;
-  ::google::protobuf::uint64 fee() const;
-  void set_fee(::google::protobuf::uint64 value);
-
-  // optional uint32 flags = 3;
-  bool has_flags() const;
-  void clear_flags();
-  static const int kFlagsFieldNumber = 3;
-  ::google::protobuf::uint32 flags() const;
-  void set_flags(::google::protobuf::uint32 value);
-
-  // @@protoc_insertion_point(class_scope:hw.trezor.messages.beam.BeamSignReceiveTx)
- private:
-  class HasBitSetters;
-
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
-  mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > address_n_;
-  ::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment* payment_;
-  ::hw::trezor::messages::beam::BeamSignature* signature_;
-  ::google::protobuf::uint64 fee_;
-  ::google::protobuf::uint32 flags_;
   friend struct ::TableStruct_messages_2dbeam_2eproto;
 };
 // ===================================================================
@@ -4013,170 +2863,6 @@ inline void BeamSignature::set_allocated_sign_k(::std::string* sign_k) {
 
 // -------------------------------------------------------------------
 
-// BeamDisplayMessage
-
-// optional string text = 1;
-inline bool BeamDisplayMessage::has_text() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-inline void BeamDisplayMessage::clear_text() {
-  text_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline const ::std::string& BeamDisplayMessage::text() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamDisplayMessage.text)
-  return text_.GetNoArena();
-}
-inline void BeamDisplayMessage::set_text(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000001u;
-  text_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamDisplayMessage.text)
-}
-#if LANG_CXX11
-inline void BeamDisplayMessage::set_text(::std::string&& value) {
-  _has_bits_[0] |= 0x00000001u;
-  text_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.beam.BeamDisplayMessage.text)
-}
-#endif
-inline void BeamDisplayMessage::set_text(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000001u;
-  text_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.beam.BeamDisplayMessage.text)
-}
-inline void BeamDisplayMessage::set_text(const char* value, size_t size) {
-  _has_bits_[0] |= 0x00000001u;
-  text_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.beam.BeamDisplayMessage.text)
-}
-inline ::std::string* BeamDisplayMessage::mutable_text() {
-  _has_bits_[0] |= 0x00000001u;
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.beam.BeamDisplayMessage.text)
-  return text_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* BeamDisplayMessage::release_text() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.beam.BeamDisplayMessage.text)
-  if (!has_text()) {
-    return nullptr;
-  }
-  _has_bits_[0] &= ~0x00000001u;
-  return text_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void BeamDisplayMessage::set_allocated_text(::std::string* text) {
-  if (text != nullptr) {
-    _has_bits_[0] |= 0x00000001u;
-  } else {
-    _has_bits_[0] &= ~0x00000001u;
-  }
-  text_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), text);
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamDisplayMessage.text)
-}
-
-// optional bool show_display = 2;
-inline bool BeamDisplayMessage::has_show_display() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-inline void BeamDisplayMessage::clear_show_display() {
-  show_display_ = false;
-  _has_bits_[0] &= ~0x00000002u;
-}
-inline bool BeamDisplayMessage::show_display() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamDisplayMessage.show_display)
-  return show_display_;
-}
-inline void BeamDisplayMessage::set_show_display(bool value) {
-  _has_bits_[0] |= 0x00000002u;
-  show_display_ = value;
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamDisplayMessage.show_display)
-}
-
-// -------------------------------------------------------------------
-
-// BeamConfirmResponseMessage
-
-// optional string text = 1;
-inline bool BeamConfirmResponseMessage::has_text() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-inline void BeamConfirmResponseMessage::clear_text() {
-  text_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline const ::std::string& BeamConfirmResponseMessage::text() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamConfirmResponseMessage.text)
-  return text_.GetNoArena();
-}
-inline void BeamConfirmResponseMessage::set_text(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000001u;
-  text_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamConfirmResponseMessage.text)
-}
-#if LANG_CXX11
-inline void BeamConfirmResponseMessage::set_text(::std::string&& value) {
-  _has_bits_[0] |= 0x00000001u;
-  text_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.beam.BeamConfirmResponseMessage.text)
-}
-#endif
-inline void BeamConfirmResponseMessage::set_text(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000001u;
-  text_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.beam.BeamConfirmResponseMessage.text)
-}
-inline void BeamConfirmResponseMessage::set_text(const char* value, size_t size) {
-  _has_bits_[0] |= 0x00000001u;
-  text_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.beam.BeamConfirmResponseMessage.text)
-}
-inline ::std::string* BeamConfirmResponseMessage::mutable_text() {
-  _has_bits_[0] |= 0x00000001u;
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.beam.BeamConfirmResponseMessage.text)
-  return text_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* BeamConfirmResponseMessage::release_text() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.beam.BeamConfirmResponseMessage.text)
-  if (!has_text()) {
-    return nullptr;
-  }
-  _has_bits_[0] &= ~0x00000001u;
-  return text_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void BeamConfirmResponseMessage::set_allocated_text(::std::string* text) {
-  if (text != nullptr) {
-    _has_bits_[0] |= 0x00000001u;
-  } else {
-    _has_bits_[0] &= ~0x00000001u;
-  }
-  text_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), text);
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamConfirmResponseMessage.text)
-}
-
-// optional bool response = 2;
-inline bool BeamConfirmResponseMessage::has_response() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-inline void BeamConfirmResponseMessage::clear_response() {
-  response_ = false;
-  _has_bits_[0] &= ~0x00000002u;
-}
-inline bool BeamConfirmResponseMessage::response() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamConfirmResponseMessage.response)
-  return response_;
-}
-inline void BeamConfirmResponseMessage::set_response(bool value) {
-  _has_bits_[0] |= 0x00000002u;
-  response_ = value;
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamConfirmResponseMessage.response)
-}
-
-// -------------------------------------------------------------------
-
 // BeamSignMessage
 
 // optional string msg = 1;
@@ -4239,75 +2925,58 @@ inline void BeamSignMessage::set_allocated_msg(::std::string* msg) {
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamSignMessage.msg)
 }
 
-// optional bool show_display = 2;
-inline bool BeamSignMessage::has_show_display() const {
+// optional uint64 kid_idx = 2;
+inline bool BeamSignMessage::has_kid_idx() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void BeamSignMessage::clear_kid_idx() {
+  kid_idx_ = PROTOBUF_ULONGLONG(0);
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline ::google::protobuf::uint64 BeamSignMessage::kid_idx() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignMessage.kid_idx)
+  return kid_idx_;
+}
+inline void BeamSignMessage::set_kid_idx(::google::protobuf::uint64 value) {
+  _has_bits_[0] |= 0x00000002u;
+  kid_idx_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignMessage.kid_idx)
+}
+
+// optional uint32 kid_sub_idx = 3;
+inline bool BeamSignMessage::has_kid_sub_idx() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void BeamSignMessage::clear_kid_sub_idx() {
+  kid_sub_idx_ = 0u;
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline ::google::protobuf::uint32 BeamSignMessage::kid_sub_idx() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignMessage.kid_sub_idx)
+  return kid_sub_idx_;
+}
+inline void BeamSignMessage::set_kid_sub_idx(::google::protobuf::uint32 value) {
+  _has_bits_[0] |= 0x00000004u;
+  kid_sub_idx_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignMessage.kid_sub_idx)
+}
+
+// optional bool show_display = 4;
+inline bool BeamSignMessage::has_show_display() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
 }
 inline void BeamSignMessage::clear_show_display() {
   show_display_ = false;
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000008u;
 }
 inline bool BeamSignMessage::show_display() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignMessage.show_display)
   return show_display_;
 }
 inline void BeamSignMessage::set_show_display(bool value) {
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000008u;
   show_display_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignMessage.show_display)
-}
-
-// -------------------------------------------------------------------
-
-// BeamSignedMessage
-
-// optional .hw.trezor.messages.beam.BeamSignature signature = 1;
-inline bool BeamSignedMessage::has_signature() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-inline void BeamSignedMessage::clear_signature() {
-  if (signature_ != nullptr) signature_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline const ::hw::trezor::messages::beam::BeamSignature& BeamSignedMessage::signature() const {
-  const ::hw::trezor::messages::beam::BeamSignature* p = signature_;
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignedMessage.signature)
-  return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::beam::BeamSignature*>(
-      &::hw::trezor::messages::beam::_BeamSignature_default_instance_);
-}
-inline ::hw::trezor::messages::beam::BeamSignature* BeamSignedMessage::release_signature() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.beam.BeamSignedMessage.signature)
-  _has_bits_[0] &= ~0x00000001u;
-  ::hw::trezor::messages::beam::BeamSignature* temp = signature_;
-  signature_ = nullptr;
-  return temp;
-}
-inline ::hw::trezor::messages::beam::BeamSignature* BeamSignedMessage::mutable_signature() {
-  _has_bits_[0] |= 0x00000001u;
-  if (signature_ == nullptr) {
-    auto* p = CreateMaybeMessage<::hw::trezor::messages::beam::BeamSignature>(GetArenaNoVirtual());
-    signature_ = p;
-  }
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.beam.BeamSignedMessage.signature)
-  return signature_;
-}
-inline void BeamSignedMessage::set_allocated_signature(::hw::trezor::messages::beam::BeamSignature* signature) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
-  if (message_arena == nullptr) {
-    delete signature_;
-  }
-  if (signature) {
-    ::google::protobuf::Arena* submessage_arena = nullptr;
-    if (message_arena != submessage_arena) {
-      signature = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, signature, submessage_arena);
-    }
-    _has_bits_[0] |= 0x00000001u;
-  } else {
-    _has_bits_[0] &= ~0x00000001u;
-  }
-  signature_ = signature;
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamSignedMessage.signature)
 }
 
 // -------------------------------------------------------------------
@@ -4363,7 +3032,7 @@ inline void BeamVerifyMessage::set_allocated_signature(::hw::trezor::messages::b
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamVerifyMessage.signature)
 }
 
-// optional .hw.trezor.messages.beam.BeamPublicKey public_key = 2;
+// optional .hw.trezor.messages.beam.BeamECCPoint public_key = 2;
 inline bool BeamVerifyMessage::has_public_key() const {
   return (_has_bits_[0] & 0x00000004u) != 0;
 }
@@ -4371,29 +3040,29 @@ inline void BeamVerifyMessage::clear_public_key() {
   if (public_key_ != nullptr) public_key_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-inline const ::hw::trezor::messages::beam::BeamPublicKey& BeamVerifyMessage::public_key() const {
-  const ::hw::trezor::messages::beam::BeamPublicKey* p = public_key_;
+inline const ::hw::trezor::messages::beam::BeamECCPoint& BeamVerifyMessage::public_key() const {
+  const ::hw::trezor::messages::beam::BeamECCPoint* p = public_key_;
   // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamVerifyMessage.public_key)
-  return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::beam::BeamPublicKey*>(
-      &::hw::trezor::messages::beam::_BeamPublicKey_default_instance_);
+  return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::beam::BeamECCPoint*>(
+      &::hw::trezor::messages::beam::_BeamECCPoint_default_instance_);
 }
-inline ::hw::trezor::messages::beam::BeamPublicKey* BeamVerifyMessage::release_public_key() {
+inline ::hw::trezor::messages::beam::BeamECCPoint* BeamVerifyMessage::release_public_key() {
   // @@protoc_insertion_point(field_release:hw.trezor.messages.beam.BeamVerifyMessage.public_key)
   _has_bits_[0] &= ~0x00000004u;
-  ::hw::trezor::messages::beam::BeamPublicKey* temp = public_key_;
+  ::hw::trezor::messages::beam::BeamECCPoint* temp = public_key_;
   public_key_ = nullptr;
   return temp;
 }
-inline ::hw::trezor::messages::beam::BeamPublicKey* BeamVerifyMessage::mutable_public_key() {
+inline ::hw::trezor::messages::beam::BeamECCPoint* BeamVerifyMessage::mutable_public_key() {
   _has_bits_[0] |= 0x00000004u;
   if (public_key_ == nullptr) {
-    auto* p = CreateMaybeMessage<::hw::trezor::messages::beam::BeamPublicKey>(GetArenaNoVirtual());
+    auto* p = CreateMaybeMessage<::hw::trezor::messages::beam::BeamECCPoint>(GetArenaNoVirtual());
     public_key_ = p;
   }
   // @@protoc_insertion_point(field_mutable:hw.trezor.messages.beam.BeamVerifyMessage.public_key)
   return public_key_;
 }
-inline void BeamVerifyMessage::set_allocated_public_key(::hw::trezor::messages::beam::BeamPublicKey* public_key) {
+inline void BeamVerifyMessage::set_allocated_public_key(::hw::trezor::messages::beam::BeamECCPoint* public_key) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
     delete public_key_;
@@ -4476,146 +3145,58 @@ inline void BeamVerifyMessage::set_allocated_message(::std::string* message) {
 
 // BeamGetPublicKey
 
-// optional bool show_display = 1;
-inline bool BeamGetPublicKey::has_show_display() const {
+// optional uint64 kid_idx = 1;
+inline bool BeamGetPublicKey::has_kid_idx() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void BeamGetPublicKey::clear_kid_idx() {
+  kid_idx_ = PROTOBUF_ULONGLONG(0);
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline ::google::protobuf::uint64 BeamGetPublicKey::kid_idx() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamGetPublicKey.kid_idx)
+  return kid_idx_;
+}
+inline void BeamGetPublicKey::set_kid_idx(::google::protobuf::uint64 value) {
+  _has_bits_[0] |= 0x00000001u;
+  kid_idx_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamGetPublicKey.kid_idx)
+}
+
+// optional uint32 kid_sub_idx = 2;
+inline bool BeamGetPublicKey::has_kid_sub_idx() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void BeamGetPublicKey::clear_kid_sub_idx() {
+  kid_sub_idx_ = 0u;
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline ::google::protobuf::uint32 BeamGetPublicKey::kid_sub_idx() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamGetPublicKey.kid_sub_idx)
+  return kid_sub_idx_;
+}
+inline void BeamGetPublicKey::set_kid_sub_idx(::google::protobuf::uint32 value) {
+  _has_bits_[0] |= 0x00000002u;
+  kid_sub_idx_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamGetPublicKey.kid_sub_idx)
+}
+
+// optional bool show_display = 3;
+inline bool BeamGetPublicKey::has_show_display() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
 }
 inline void BeamGetPublicKey::clear_show_display() {
   show_display_ = false;
-  _has_bits_[0] &= ~0x00000001u;
+  _has_bits_[0] &= ~0x00000004u;
 }
 inline bool BeamGetPublicKey::show_display() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamGetPublicKey.show_display)
   return show_display_;
 }
 inline void BeamGetPublicKey::set_show_display(bool value) {
-  _has_bits_[0] |= 0x00000001u;
+  _has_bits_[0] |= 0x00000004u;
   show_display_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamGetPublicKey.show_display)
-}
-
-// -------------------------------------------------------------------
-
-// BeamPublicKey
-
-// optional bytes pub_x = 1;
-inline bool BeamPublicKey::has_pub_x() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-inline void BeamPublicKey::clear_pub_x() {
-  pub_x_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline const ::std::string& BeamPublicKey::pub_x() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamPublicKey.pub_x)
-  return pub_x_.GetNoArena();
-}
-inline void BeamPublicKey::set_pub_x(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000001u;
-  pub_x_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamPublicKey.pub_x)
-}
-#if LANG_CXX11
-inline void BeamPublicKey::set_pub_x(::std::string&& value) {
-  _has_bits_[0] |= 0x00000001u;
-  pub_x_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.beam.BeamPublicKey.pub_x)
-}
-#endif
-inline void BeamPublicKey::set_pub_x(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000001u;
-  pub_x_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.beam.BeamPublicKey.pub_x)
-}
-inline void BeamPublicKey::set_pub_x(const void* value, size_t size) {
-  _has_bits_[0] |= 0x00000001u;
-  pub_x_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.beam.BeamPublicKey.pub_x)
-}
-inline ::std::string* BeamPublicKey::mutable_pub_x() {
-  _has_bits_[0] |= 0x00000001u;
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.beam.BeamPublicKey.pub_x)
-  return pub_x_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* BeamPublicKey::release_pub_x() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.beam.BeamPublicKey.pub_x)
-  if (!has_pub_x()) {
-    return nullptr;
-  }
-  _has_bits_[0] &= ~0x00000001u;
-  return pub_x_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void BeamPublicKey::set_allocated_pub_x(::std::string* pub_x) {
-  if (pub_x != nullptr) {
-    _has_bits_[0] |= 0x00000001u;
-  } else {
-    _has_bits_[0] &= ~0x00000001u;
-  }
-  pub_x_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), pub_x);
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamPublicKey.pub_x)
-}
-
-// optional bytes pub_y = 2;
-inline bool BeamPublicKey::has_pub_y() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-inline void BeamPublicKey::clear_pub_y() {
-  pub_y_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _has_bits_[0] &= ~0x00000002u;
-}
-inline const ::std::string& BeamPublicKey::pub_y() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamPublicKey.pub_y)
-  return pub_y_.GetNoArena();
-}
-inline void BeamPublicKey::set_pub_y(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000002u;
-  pub_y_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamPublicKey.pub_y)
-}
-#if LANG_CXX11
-inline void BeamPublicKey::set_pub_y(::std::string&& value) {
-  _has_bits_[0] |= 0x00000002u;
-  pub_y_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.beam.BeamPublicKey.pub_y)
-}
-#endif
-inline void BeamPublicKey::set_pub_y(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000002u;
-  pub_y_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.beam.BeamPublicKey.pub_y)
-}
-inline void BeamPublicKey::set_pub_y(const void* value, size_t size) {
-  _has_bits_[0] |= 0x00000002u;
-  pub_y_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.beam.BeamPublicKey.pub_y)
-}
-inline ::std::string* BeamPublicKey::mutable_pub_y() {
-  _has_bits_[0] |= 0x00000002u;
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.beam.BeamPublicKey.pub_y)
-  return pub_y_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* BeamPublicKey::release_pub_y() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.beam.BeamPublicKey.pub_y)
-  if (!has_pub_y()) {
-    return nullptr;
-  }
-  _has_bits_[0] &= ~0x00000002u;
-  return pub_y_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void BeamPublicKey::set_allocated_pub_y(::std::string* pub_y) {
-  if (pub_y != nullptr) {
-    _has_bits_[0] |= 0x00000002u;
-  } else {
-    _has_bits_[0] &= ~0x00000002u;
-  }
-  pub_y_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), pub_y);
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamPublicKey.pub_y)
 }
 
 // -------------------------------------------------------------------
@@ -5395,512 +3976,9 @@ inline void BeamSignTransaction::set_allocated_kernel_params(::hw::trezor::messa
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamSignTransaction.kernel_params)
 }
 
-// -------------------------------------------------------------------
-
-// BeamSignSendTx_BeamPayment
-
-// optional uint64 amount = 1;
-inline bool BeamSignSendTx_BeamPayment::has_amount() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-inline void BeamSignSendTx_BeamPayment::clear_amount() {
-  amount_ = PROTOBUF_ULONGLONG(0);
-  _has_bits_[0] &= ~0x00000002u;
-}
-inline ::google::protobuf::uint64 BeamSignSendTx_BeamPayment::amount() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignSendTx.BeamPayment.amount)
-  return amount_;
-}
-inline void BeamSignSendTx_BeamPayment::set_amount(::google::protobuf::uint64 value) {
-  _has_bits_[0] |= 0x00000002u;
-  amount_ = value;
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignSendTx.BeamPayment.amount)
-}
-
-// optional string destination = 2;
-inline bool BeamSignSendTx_BeamPayment::has_destination() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-inline void BeamSignSendTx_BeamPayment::clear_destination() {
-  destination_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline const ::std::string& BeamSignSendTx_BeamPayment::destination() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignSendTx.BeamPayment.destination)
-  return destination_.GetNoArena();
-}
-inline void BeamSignSendTx_BeamPayment::set_destination(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000001u;
-  destination_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignSendTx.BeamPayment.destination)
-}
-#if LANG_CXX11
-inline void BeamSignSendTx_BeamPayment::set_destination(::std::string&& value) {
-  _has_bits_[0] |= 0x00000001u;
-  destination_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.beam.BeamSignSendTx.BeamPayment.destination)
-}
-#endif
-inline void BeamSignSendTx_BeamPayment::set_destination(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000001u;
-  destination_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.beam.BeamSignSendTx.BeamPayment.destination)
-}
-inline void BeamSignSendTx_BeamPayment::set_destination(const char* value, size_t size) {
-  _has_bits_[0] |= 0x00000001u;
-  destination_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.beam.BeamSignSendTx.BeamPayment.destination)
-}
-inline ::std::string* BeamSignSendTx_BeamPayment::mutable_destination() {
-  _has_bits_[0] |= 0x00000001u;
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.beam.BeamSignSendTx.BeamPayment.destination)
-  return destination_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* BeamSignSendTx_BeamPayment::release_destination() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.beam.BeamSignSendTx.BeamPayment.destination)
-  if (!has_destination()) {
-    return nullptr;
-  }
-  _has_bits_[0] &= ~0x00000001u;
-  return destination_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void BeamSignSendTx_BeamPayment::set_allocated_destination(::std::string* destination) {
-  if (destination != nullptr) {
-    _has_bits_[0] |= 0x00000001u;
-  } else {
-    _has_bits_[0] &= ~0x00000001u;
-  }
-  destination_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), destination);
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamSignSendTx.BeamPayment.destination)
-}
-
-// optional uint32 destination_tag = 3;
-inline bool BeamSignSendTx_BeamPayment::has_destination_tag() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-inline void BeamSignSendTx_BeamPayment::clear_destination_tag() {
-  destination_tag_ = 0u;
-  _has_bits_[0] &= ~0x00000004u;
-}
-inline ::google::protobuf::uint32 BeamSignSendTx_BeamPayment::destination_tag() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignSendTx.BeamPayment.destination_tag)
-  return destination_tag_;
-}
-inline void BeamSignSendTx_BeamPayment::set_destination_tag(::google::protobuf::uint32 value) {
-  _has_bits_[0] |= 0x00000004u;
-  destination_tag_ = value;
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignSendTx.BeamPayment.destination_tag)
-}
-
-// -------------------------------------------------------------------
-
-// BeamSignSendTx
-
-// repeated uint32 address_n = 1;
-inline int BeamSignSendTx::address_n_size() const {
-  return address_n_.size();
-}
-inline void BeamSignSendTx::clear_address_n() {
-  address_n_.Clear();
-}
-inline ::google::protobuf::uint32 BeamSignSendTx::address_n(int index) const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignSendTx.address_n)
-  return address_n_.Get(index);
-}
-inline void BeamSignSendTx::set_address_n(int index, ::google::protobuf::uint32 value) {
-  address_n_.Set(index, value);
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignSendTx.address_n)
-}
-inline void BeamSignSendTx::add_address_n(::google::protobuf::uint32 value) {
-  address_n_.Add(value);
-  // @@protoc_insertion_point(field_add:hw.trezor.messages.beam.BeamSignSendTx.address_n)
-}
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
-BeamSignSendTx::address_n() const {
-  // @@protoc_insertion_point(field_list:hw.trezor.messages.beam.BeamSignSendTx.address_n)
-  return address_n_;
-}
-inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
-BeamSignSendTx::mutable_address_n() {
-  // @@protoc_insertion_point(field_mutable_list:hw.trezor.messages.beam.BeamSignSendTx.address_n)
-  return &address_n_;
-}
-
-// optional uint64 fee = 2;
-inline bool BeamSignSendTx::has_fee() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-inline void BeamSignSendTx::clear_fee() {
-  fee_ = PROTOBUF_ULONGLONG(0);
-  _has_bits_[0] &= ~0x00000002u;
-}
-inline ::google::protobuf::uint64 BeamSignSendTx::fee() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignSendTx.fee)
-  return fee_;
-}
-inline void BeamSignSendTx::set_fee(::google::protobuf::uint64 value) {
-  _has_bits_[0] |= 0x00000002u;
-  fee_ = value;
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignSendTx.fee)
-}
-
-// optional uint32 flags = 3;
-inline bool BeamSignSendTx::has_flags() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-inline void BeamSignSendTx::clear_flags() {
-  flags_ = 0u;
-  _has_bits_[0] &= ~0x00000004u;
-}
-inline ::google::protobuf::uint32 BeamSignSendTx::flags() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignSendTx.flags)
-  return flags_;
-}
-inline void BeamSignSendTx::set_flags(::google::protobuf::uint32 value) {
-  _has_bits_[0] |= 0x00000004u;
-  flags_ = value;
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignSendTx.flags)
-}
-
-// optional .hw.trezor.messages.beam.BeamSignSendTx.BeamPayment payment = 4;
-inline bool BeamSignSendTx::has_payment() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-inline void BeamSignSendTx::clear_payment() {
-  if (payment_ != nullptr) payment_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline const ::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment& BeamSignSendTx::payment() const {
-  const ::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment* p = payment_;
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignSendTx.payment)
-  return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment*>(
-      &::hw::trezor::messages::beam::_BeamSignSendTx_BeamPayment_default_instance_);
-}
-inline ::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment* BeamSignSendTx::release_payment() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.beam.BeamSignSendTx.payment)
-  _has_bits_[0] &= ~0x00000001u;
-  ::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment* temp = payment_;
-  payment_ = nullptr;
-  return temp;
-}
-inline ::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment* BeamSignSendTx::mutable_payment() {
-  _has_bits_[0] |= 0x00000001u;
-  if (payment_ == nullptr) {
-    auto* p = CreateMaybeMessage<::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment>(GetArenaNoVirtual());
-    payment_ = p;
-  }
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.beam.BeamSignSendTx.payment)
-  return payment_;
-}
-inline void BeamSignSendTx::set_allocated_payment(::hw::trezor::messages::beam::BeamSignSendTx_BeamPayment* payment) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
-  if (message_arena == nullptr) {
-    delete payment_;
-  }
-  if (payment) {
-    ::google::protobuf::Arena* submessage_arena = nullptr;
-    if (message_arena != submessage_arena) {
-      payment = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, payment, submessage_arena);
-    }
-    _has_bits_[0] |= 0x00000001u;
-  } else {
-    _has_bits_[0] &= ~0x00000001u;
-  }
-  payment_ = payment;
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamSignSendTx.payment)
-}
-
-// -------------------------------------------------------------------
-
-// BeamSignReceiveTx_BeamPayment
-
-// optional uint64 amount = 1;
-inline bool BeamSignReceiveTx_BeamPayment::has_amount() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-inline void BeamSignReceiveTx_BeamPayment::clear_amount() {
-  amount_ = PROTOBUF_ULONGLONG(0);
-  _has_bits_[0] &= ~0x00000002u;
-}
-inline ::google::protobuf::uint64 BeamSignReceiveTx_BeamPayment::amount() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment.amount)
-  return amount_;
-}
-inline void BeamSignReceiveTx_BeamPayment::set_amount(::google::protobuf::uint64 value) {
-  _has_bits_[0] |= 0x00000002u;
-  amount_ = value;
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment.amount)
-}
-
-// optional string destination = 2;
-inline bool BeamSignReceiveTx_BeamPayment::has_destination() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-inline void BeamSignReceiveTx_BeamPayment::clear_destination() {
-  destination_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline const ::std::string& BeamSignReceiveTx_BeamPayment::destination() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment.destination)
-  return destination_.GetNoArena();
-}
-inline void BeamSignReceiveTx_BeamPayment::set_destination(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000001u;
-  destination_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment.destination)
-}
-#if LANG_CXX11
-inline void BeamSignReceiveTx_BeamPayment::set_destination(::std::string&& value) {
-  _has_bits_[0] |= 0x00000001u;
-  destination_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment.destination)
-}
-#endif
-inline void BeamSignReceiveTx_BeamPayment::set_destination(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000001u;
-  destination_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment.destination)
-}
-inline void BeamSignReceiveTx_BeamPayment::set_destination(const char* value, size_t size) {
-  _has_bits_[0] |= 0x00000001u;
-  destination_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment.destination)
-}
-inline ::std::string* BeamSignReceiveTx_BeamPayment::mutable_destination() {
-  _has_bits_[0] |= 0x00000001u;
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment.destination)
-  return destination_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* BeamSignReceiveTx_BeamPayment::release_destination() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment.destination)
-  if (!has_destination()) {
-    return nullptr;
-  }
-  _has_bits_[0] &= ~0x00000001u;
-  return destination_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void BeamSignReceiveTx_BeamPayment::set_allocated_destination(::std::string* destination) {
-  if (destination != nullptr) {
-    _has_bits_[0] |= 0x00000001u;
-  } else {
-    _has_bits_[0] &= ~0x00000001u;
-  }
-  destination_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), destination);
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment.destination)
-}
-
-// optional uint32 destination_tag = 3;
-inline bool BeamSignReceiveTx_BeamPayment::has_destination_tag() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-inline void BeamSignReceiveTx_BeamPayment::clear_destination_tag() {
-  destination_tag_ = 0u;
-  _has_bits_[0] &= ~0x00000004u;
-}
-inline ::google::protobuf::uint32 BeamSignReceiveTx_BeamPayment::destination_tag() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment.destination_tag)
-  return destination_tag_;
-}
-inline void BeamSignReceiveTx_BeamPayment::set_destination_tag(::google::protobuf::uint32 value) {
-  _has_bits_[0] |= 0x00000004u;
-  destination_tag_ = value;
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment.destination_tag)
-}
-
-// -------------------------------------------------------------------
-
-// BeamSignReceiveTx
-
-// repeated uint32 address_n = 1;
-inline int BeamSignReceiveTx::address_n_size() const {
-  return address_n_.size();
-}
-inline void BeamSignReceiveTx::clear_address_n() {
-  address_n_.Clear();
-}
-inline ::google::protobuf::uint32 BeamSignReceiveTx::address_n(int index) const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignReceiveTx.address_n)
-  return address_n_.Get(index);
-}
-inline void BeamSignReceiveTx::set_address_n(int index, ::google::protobuf::uint32 value) {
-  address_n_.Set(index, value);
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignReceiveTx.address_n)
-}
-inline void BeamSignReceiveTx::add_address_n(::google::protobuf::uint32 value) {
-  address_n_.Add(value);
-  // @@protoc_insertion_point(field_add:hw.trezor.messages.beam.BeamSignReceiveTx.address_n)
-}
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
-BeamSignReceiveTx::address_n() const {
-  // @@protoc_insertion_point(field_list:hw.trezor.messages.beam.BeamSignReceiveTx.address_n)
-  return address_n_;
-}
-inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
-BeamSignReceiveTx::mutable_address_n() {
-  // @@protoc_insertion_point(field_mutable_list:hw.trezor.messages.beam.BeamSignReceiveTx.address_n)
-  return &address_n_;
-}
-
-// optional uint64 fee = 2;
-inline bool BeamSignReceiveTx::has_fee() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-inline void BeamSignReceiveTx::clear_fee() {
-  fee_ = PROTOBUF_ULONGLONG(0);
-  _has_bits_[0] &= ~0x00000004u;
-}
-inline ::google::protobuf::uint64 BeamSignReceiveTx::fee() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignReceiveTx.fee)
-  return fee_;
-}
-inline void BeamSignReceiveTx::set_fee(::google::protobuf::uint64 value) {
-  _has_bits_[0] |= 0x00000004u;
-  fee_ = value;
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignReceiveTx.fee)
-}
-
-// optional uint32 flags = 3;
-inline bool BeamSignReceiveTx::has_flags() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
-}
-inline void BeamSignReceiveTx::clear_flags() {
-  flags_ = 0u;
-  _has_bits_[0] &= ~0x00000008u;
-}
-inline ::google::protobuf::uint32 BeamSignReceiveTx::flags() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignReceiveTx.flags)
-  return flags_;
-}
-inline void BeamSignReceiveTx::set_flags(::google::protobuf::uint32 value) {
-  _has_bits_[0] |= 0x00000008u;
-  flags_ = value;
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.beam.BeamSignReceiveTx.flags)
-}
-
-// optional .hw.trezor.messages.beam.BeamSignReceiveTx.BeamPayment payment = 4;
-inline bool BeamSignReceiveTx::has_payment() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-inline void BeamSignReceiveTx::clear_payment() {
-  if (payment_ != nullptr) payment_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline const ::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment& BeamSignReceiveTx::payment() const {
-  const ::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment* p = payment_;
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignReceiveTx.payment)
-  return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment*>(
-      &::hw::trezor::messages::beam::_BeamSignReceiveTx_BeamPayment_default_instance_);
-}
-inline ::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment* BeamSignReceiveTx::release_payment() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.beam.BeamSignReceiveTx.payment)
-  _has_bits_[0] &= ~0x00000001u;
-  ::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment* temp = payment_;
-  payment_ = nullptr;
-  return temp;
-}
-inline ::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment* BeamSignReceiveTx::mutable_payment() {
-  _has_bits_[0] |= 0x00000001u;
-  if (payment_ == nullptr) {
-    auto* p = CreateMaybeMessage<::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment>(GetArenaNoVirtual());
-    payment_ = p;
-  }
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.beam.BeamSignReceiveTx.payment)
-  return payment_;
-}
-inline void BeamSignReceiveTx::set_allocated_payment(::hw::trezor::messages::beam::BeamSignReceiveTx_BeamPayment* payment) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
-  if (message_arena == nullptr) {
-    delete payment_;
-  }
-  if (payment) {
-    ::google::protobuf::Arena* submessage_arena = nullptr;
-    if (message_arena != submessage_arena) {
-      payment = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, payment, submessage_arena);
-    }
-    _has_bits_[0] |= 0x00000001u;
-  } else {
-    _has_bits_[0] &= ~0x00000001u;
-  }
-  payment_ = payment;
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamSignReceiveTx.payment)
-}
-
-// optional .hw.trezor.messages.beam.BeamSignature signature = 5;
-inline bool BeamSignReceiveTx::has_signature() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-inline void BeamSignReceiveTx::clear_signature() {
-  if (signature_ != nullptr) signature_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
-}
-inline const ::hw::trezor::messages::beam::BeamSignature& BeamSignReceiveTx::signature() const {
-  const ::hw::trezor::messages::beam::BeamSignature* p = signature_;
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamSignReceiveTx.signature)
-  return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::beam::BeamSignature*>(
-      &::hw::trezor::messages::beam::_BeamSignature_default_instance_);
-}
-inline ::hw::trezor::messages::beam::BeamSignature* BeamSignReceiveTx::release_signature() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.beam.BeamSignReceiveTx.signature)
-  _has_bits_[0] &= ~0x00000002u;
-  ::hw::trezor::messages::beam::BeamSignature* temp = signature_;
-  signature_ = nullptr;
-  return temp;
-}
-inline ::hw::trezor::messages::beam::BeamSignature* BeamSignReceiveTx::mutable_signature() {
-  _has_bits_[0] |= 0x00000002u;
-  if (signature_ == nullptr) {
-    auto* p = CreateMaybeMessage<::hw::trezor::messages::beam::BeamSignature>(GetArenaNoVirtual());
-    signature_ = p;
-  }
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.beam.BeamSignReceiveTx.signature)
-  return signature_;
-}
-inline void BeamSignReceiveTx::set_allocated_signature(::hw::trezor::messages::beam::BeamSignature* signature) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
-  if (message_arena == nullptr) {
-    delete signature_;
-  }
-  if (signature) {
-    ::google::protobuf::Arena* submessage_arena = nullptr;
-    if (message_arena != submessage_arena) {
-      signature = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, signature, submessage_arena);
-    }
-    _has_bits_[0] |= 0x00000002u;
-  } else {
-    _has_bits_[0] &= ~0x00000002u;
-  }
-  signature_ = signature;
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamSignReceiveTx.signature)
-}
-
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
