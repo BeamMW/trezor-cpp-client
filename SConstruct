@@ -51,7 +51,7 @@ opt_flags += [
     '-Wstrict-overflow=5',
     '-Wswitch-default',
     '-Wno-unused',
-    '-std=c++11'
+    '-std=c++14'
 #    '-Wundef',
 #    '-Wmissing-declarations',
 ]
