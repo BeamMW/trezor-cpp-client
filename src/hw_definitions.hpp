@@ -16,41 +16,36 @@ typedef struct
   uint32_t d[8];
 } scalar_t;
 
-typedef struct
-{
-  point_t LR[INNER_PRODUCT_N_CYCLES][2];
-  scalar_t condensed[2];
-} inner_product_t;
+typedef uint8_t scalar_packed_t[32];
 
 typedef struct
 {
-  // Bulletproof scheme
-
-  struct Part1
+  struct
   {
     point_t a;
     point_t s;
   } part1;
 
-  // <- y,z
-
-  struct Part2
+  struct
   {
     point_t t1;
     point_t t2;
   } part2;
 
-  // <- x
-
-  struct Part3
+  struct
   {
-    scalar_t tauX;
+    scalar_packed_t tauX;
   } part3;
 
-  scalar_t mu;
-  scalar_t tDot;
-  inner_product_t p_tag;
-} rangeproof_confidential_t;
+  struct
+  {
+    point_t LR[INNER_PRODUCT_N_CYCLES][2];
+    scalar_packed_t condensed[2];
+  } p_tag;
+
+  scalar_packed_t mu;
+  scalar_packed_t tDot;
+} rangeproof_confidential_packed_t;
 
 typedef struct
 {

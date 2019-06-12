@@ -104,12 +104,14 @@ int main()
                 std::cout << "first 64 of 688 bytes: ";
                 print_bin(rp_raw, 64);
 
-                rangeproof_confidential_t rp;
-                memcpy(&rp, rp_raw, sizeof(rangeproof_confidential_t));
+                rangeproof_confidential_packed_t rp;
+                memcpy(&rp, rp_raw, sizeof(rangeproof_confidential_packed_t));
                 std::cout << "mu:" << std::endl;
-                print_bin(reinterpret_cast<const uint8_t *>(&rp.mu), 32);
+                print_bin(rp.mu, 32);
                 std::cout << "tDot:" << std::endl;
-                print_bin(reinterpret_cast<const uint8_t *>(&rp.tDot), 32);
+                print_bin(rp.tDot, 32);
+                std::cout << "tauX:" << std::endl;
+                print_bin(rp.part3.tauX, 32);
                 std::cout << std::endl;
                 clear_flag(queue_size, is_alive_idx);
             });
