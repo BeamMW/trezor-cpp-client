@@ -29,7 +29,11 @@ int main()
     for (auto enumerate : enumerates)
     {
         trezors.push_back(std::unique_ptr<DeviceManager>(new DeviceManager()));
-        is_alive_flags.push_back(std::unique_ptr<std::atomic_flag>(new std::atomic_flag(1)));
+        {
+            auto af = std::make_unique<std::atomic_flag>();
+            af->test_and_set();
+            is_alive_flags.emplace_back(move(af));
+        }
         auto is_alive_idx = is_alive_flags.size() - 1;
         auto& trezor = trezors.back();
 
