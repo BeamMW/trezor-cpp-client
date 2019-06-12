@@ -40,7 +40,7 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 
 const char descriptor_table_protodef_messages_2eproto[] =
   "\n\016messages.proto\022\022hw.trezor.messages\032 go"
-  "ogle/protobuf/descriptor.proto*\276@\n\013Messa"
+  "ogle/protobuf/descriptor.proto*\344@\n\013Messa"
   "geType\022$\n\026MessageType_Initialize\020\000\032\010\220\265\030\001"
   "\260\265\030\001\022\032\n\020MessageType_Ping\020\001\032\004\220\265\030\001\022\035\n\023Mess"
   "ageType_Success\020\002\032\004\230\265\030\001\022\035\n\023MessageType_F"
@@ -234,36 +234,37 @@ const char descriptor_table_protodef_messages_2eproto[] =
   "pe_EosTxActionRequest\020\333\004\032\004\230\265\030\001\022%\n\032Messag"
   "eType_EosTxActionAck\020\334\004\032\004\220\265\030\001\022\"\n\027Message"
   "Type_EosSignedTx\020\335\004\032\004\230\265\030\001\022&\n\033MessageType"
-  "_BeamSignMessage\020\276\005\032\004\220\265\030\001\022(\n\035MessageType"
-  "_BeamVerifyMessage\020\300\005\032\004\220\265\030\001\022\'\n\034MessageTy"
-  "pe_BeamGetPublicKey\020\301\005\032\004\220\265\030\001\022&\n\033MessageT"
-  "ype_BeamGetOwnerKey\020\303\005\032\004\220\265\030\001\022#\n\030MessageT"
-  "ype_BeamOwnerKey\020\304\005\032\004\230\265\030\001\022&\n\033MessageType"
-  "_BeamGenerateKey\020\305\005\032\004\220\265\030\001\022(\n\035MessageType"
-  "_BeamGenerateNonce\020\306\005\032\004\220\265\030\001\022#\n\030MessageTy"
-  "pe_BeamECCPoint\020\307\005\032\004\230\265\030\001\022-\n\"MessageType_"
-  "BeamGenerateRangeproof\020\310\005\032\004\220\265\030\001\022)\n\036Messa"
-  "geType_BeamRangeproofData\020\311\005\032\004\230\265\030\001\022*\n\037Me"
-  "ssageType_BeamSignTransaction\020\312\005\032\004\220\265\030\001\022,"
-  "\n!MessageType_BeamSignedTransaction\020\313\005\032\004"
-  "\230\265\030\001\022)\n\036MessageType_BeamGetNoncePublic\020\314"
-  "\005\032\004\220\265\030\001:4\n\007wire_in\022!.google.protobuf.Enu"
-  "mValueOptions\030\322\206\003 \001(\010:5\n\010wire_out\022!.goog"
-  "le.protobuf.EnumValueOptions\030\323\206\003 \001(\010::\n\r"
-  "wire_debug_in\022!.google.protobuf.EnumValu"
-  "eOptions\030\324\206\003 \001(\010:;\n\016wire_debug_out\022!.goo"
-  "gle.protobuf.EnumValueOptions\030\325\206\003 \001(\010:6\n"
-  "\twire_tiny\022!.google.protobuf.EnumValueOp"
-  "tions\030\326\206\003 \001(\010:<\n\017wire_bootloader\022!.googl"
-  "e.protobuf.EnumValueOptions\030\327\206\003 \001(\010:8\n\013w"
-  "ire_no_fsm\022!.google.protobuf.EnumValueOp"
-  "tions\030\330\206\003 \001(\010B4\n#com.satoshilabs.trezor."
-  "lib.protobufB\rTrezorMessage"
+  "_BeamSignMessage\020\276\005\032\004\220\265\030\001\022$\n\031MessageType"
+  "_BeamSignature\020\277\005\032\004\230\265\030\001\022(\n\035MessageType_B"
+  "eamVerifyMessage\020\300\005\032\004\220\265\030\001\022\'\n\034MessageType"
+  "_BeamGetPublicKey\020\301\005\032\004\220\265\030\001\022&\n\033MessageTyp"
+  "e_BeamGetOwnerKey\020\303\005\032\004\220\265\030\001\022#\n\030MessageTyp"
+  "e_BeamOwnerKey\020\304\005\032\004\230\265\030\001\022&\n\033MessageType_B"
+  "eamGenerateKey\020\305\005\032\004\220\265\030\001\022(\n\035MessageType_B"
+  "eamGenerateNonce\020\306\005\032\004\220\265\030\001\022#\n\030MessageType"
+  "_BeamECCPoint\020\307\005\032\004\230\265\030\001\022-\n\"MessageType_Be"
+  "amGenerateRangeproof\020\310\005\032\004\220\265\030\001\022)\n\036Message"
+  "Type_BeamRangeproofData\020\311\005\032\004\230\265\030\001\022*\n\037Mess"
+  "ageType_BeamSignTransaction\020\312\005\032\004\220\265\030\001\022,\n!"
+  "MessageType_BeamSignedTransaction\020\313\005\032\004\230\265"
+  "\030\001\022)\n\036MessageType_BeamGetNoncePublic\020\314\005\032"
+  "\004\220\265\030\001:4\n\007wire_in\022!.google.protobuf.EnumV"
+  "alueOptions\030\322\206\003 \001(\010:5\n\010wire_out\022!.google"
+  ".protobuf.EnumValueOptions\030\323\206\003 \001(\010::\n\rwi"
+  "re_debug_in\022!.google.protobuf.EnumValueO"
+  "ptions\030\324\206\003 \001(\010:;\n\016wire_debug_out\022!.googl"
+  "e.protobuf.EnumValueOptions\030\325\206\003 \001(\010:6\n\tw"
+  "ire_tiny\022!.google.protobuf.EnumValueOpti"
+  "ons\030\326\206\003 \001(\010:<\n\017wire_bootloader\022!.google."
+  "protobuf.EnumValueOptions\030\327\206\003 \001(\010:8\n\013wir"
+  "e_no_fsm\022!.google.protobuf.EnumValueOpti"
+  "ons\030\330\206\003 \001(\010B4\n#com.satoshilabs.trezor.li"
+  "b.protobufB\rTrezorMessage"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_messages_2eproto = {
   false, InitDefaults_messages_2eproto, 
   descriptor_table_protodef_messages_2eproto,
-  "messages.proto", &assign_descriptors_table_messages_2eproto, 8787,
+  "messages.proto", &assign_descriptors_table_messages_2eproto, 8825,
 };
 
 void AddDescriptors_messages_2eproto() {
@@ -469,6 +470,7 @@ bool MessageType_IsValid(int value) {
     case 604:
     case 605:
     case 702:
+    case 703:
     case 704:
     case 705:
     case 707:

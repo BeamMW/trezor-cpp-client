@@ -18,8 +18,8 @@
 
 extern PROTOBUF_INTERNAL_EXPORT_messages_2dbeam_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_BeamECCPoint_messages_2dbeam_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_messages_2dbeam_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_BeamKeyIDV_messages_2dbeam_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_messages_2dbeam_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_BeamSignature_messages_2dbeam_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_messages_2dbeam_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_BeamSignTransaction_BeamKernelParameters_messages_2dbeam_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dbeam_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_BeamSignature_messages_2dbeam_2eproto;
 namespace hw {
 namespace trezor {
 namespace messages {
@@ -174,8 +174,9 @@ static void InitDefaultsBeamSignature_messages_2dbeam_2eproto() {
   ::hw::trezor::messages::beam::BeamSignature::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_BeamSignature_messages_2dbeam_2eproto =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsBeamSignature_messages_2dbeam_2eproto}, {}};
+::google::protobuf::internal::SCCInfo<1> scc_info_BeamSignature_messages_2dbeam_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsBeamSignature_messages_2dbeam_2eproto}, {
+      &scc_info_BeamECCPoint_messages_2dbeam_2eproto.base,}};
 
 static void InitDefaultsBeamSignMessage_messages_2dbeam_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -397,12 +398,10 @@ const ::google::protobuf::uint32 TableStruct_messages_2dbeam_2eproto::offsets[] 
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamSignature, nonce_pub_x_),
-  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamSignature, nonce_pub_y_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamSignature, nonce_pub_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamSignature, sign_k_),
-  0,
   1,
-  2,
+  0,
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamSignMessage, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamSignMessage, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -520,17 +519,17 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SE
   { 22, 28, sizeof(::hw::trezor::messages::beam::BeamGenerateNonce)},
   { 29, 35, sizeof(::hw::trezor::messages::beam::BeamGetNoncePublic)},
   { 36, 43, sizeof(::hw::trezor::messages::beam::BeamECCPoint)},
-  { 45, 53, sizeof(::hw::trezor::messages::beam::BeamSignature)},
-  { 56, 65, sizeof(::hw::trezor::messages::beam::BeamSignMessage)},
-  { 69, 77, sizeof(::hw::trezor::messages::beam::BeamVerifyMessage)},
-  { 80, 88, sizeof(::hw::trezor::messages::beam::BeamGetPublicKey)},
-  { 91, 97, sizeof(::hw::trezor::messages::beam::BeamGetOwnerKey)},
-  { 98, 104, sizeof(::hw::trezor::messages::beam::BeamOwnerKey)},
-  { 105, 112, sizeof(::hw::trezor::messages::beam::BeamGenerateRangeproof)},
-  { 114, 121, sizeof(::hw::trezor::messages::beam::BeamRangeproofData)},
-  { 123, 129, sizeof(::hw::trezor::messages::beam::BeamSignedTransaction)},
-  { 130, 143, sizeof(::hw::trezor::messages::beam::BeamSignTransaction_BeamKernelParameters)},
-  { 151, 161, sizeof(::hw::trezor::messages::beam::BeamSignTransaction)},
+  { 45, 52, sizeof(::hw::trezor::messages::beam::BeamSignature)},
+  { 54, 63, sizeof(::hw::trezor::messages::beam::BeamSignMessage)},
+  { 67, 75, sizeof(::hw::trezor::messages::beam::BeamVerifyMessage)},
+  { 78, 86, sizeof(::hw::trezor::messages::beam::BeamGetPublicKey)},
+  { 89, 95, sizeof(::hw::trezor::messages::beam::BeamGetOwnerKey)},
+  { 96, 102, sizeof(::hw::trezor::messages::beam::BeamOwnerKey)},
+  { 103, 110, sizeof(::hw::trezor::messages::beam::BeamGenerateRangeproof)},
+  { 112, 119, sizeof(::hw::trezor::messages::beam::BeamRangeproofData)},
+  { 121, 127, sizeof(::hw::trezor::messages::beam::BeamSignedTransaction)},
+  { 128, 141, sizeof(::hw::trezor::messages::beam::BeamSignTransaction_BeamKernelParameters)},
+  { 149, 159, sizeof(::hw::trezor::messages::beam::BeamSignTransaction)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -567,44 +566,44 @@ const char descriptor_table_protodef_messages_2dbeam_2eproto[] =
   "_key\030\002 \001(\010\"!\n\021BeamGenerateNonce\022\014\n\004slot\030"
   "\001 \001(\r\"\"\n\022BeamGetNoncePublic\022\014\n\004slot\030\001 \001("
   "\r\"$\n\014BeamECCPoint\022\t\n\001x\030\001 \001(\014\022\t\n\001y\030\002 \001(\010\""
-  "I\n\rBeamSignature\022\023\n\013nonce_pub_x\030\001 \001(\014\022\023\n"
-  "\013nonce_pub_y\030\002 \001(\014\022\016\n\006sign_k\030\003 \001(\014\"Z\n\017Be"
-  "amSignMessage\022\013\n\003msg\030\001 \001(\t\022\017\n\007kid_idx\030\002 "
-  "\001(\004\022\023\n\013kid_sub_idx\030\003 \001(\r\022\024\n\014show_display"
-  "\030\004 \001(\010\"\232\001\n\021BeamVerifyMessage\0229\n\tsignatur"
-  "e\030\001 \001(\0132&.hw.trezor.messages.beam.BeamSi"
-  "gnature\0229\n\npublic_key\030\002 \001(\0132%.hw.trezor."
-  "messages.beam.BeamECCPoint\022\017\n\007message\030\003 "
-  "\001(\014\"N\n\020BeamGetPublicKey\022\017\n\007kid_idx\030\001 \001(\004"
-  "\022\023\n\013kid_sub_idx\030\002 \001(\r\022\024\n\014show_display\030\003 "
-  "\001(\010\"\'\n\017BeamGetOwnerKey\022\024\n\014show_display\030\001"
-  " \001(\010\"\033\n\014BeamOwnerKey\022\013\n\003key\030\001 \001(\014\"^\n\026Bea"
-  "mGenerateRangeproof\0221\n\004kidv\030\001 \001(\0132#.hw.t"
-  "rezor.messages.beam.BeamKeyIDV\022\021\n\tis_pub"
-  "lic\030\002 \001(\010\"5\n\022BeamRangeproofData\022\014\n\004data\030"
-  "\001 \001(\014\022\021\n\tis_public\030\002 \001(\010\"*\n\025BeamSignedTr"
-  "ansaction\022\021\n\tsignature\030\001 \001(\014\"\264\004\n\023BeamSig"
-  "nTransaction\0223\n\006inputs\030\001 \003(\0132#.hw.trezor"
-  ".messages.beam.BeamKeyIDV\022\021\n\toffset_sk\030\002"
-  " \001(\014\0224\n\007outputs\030\003 \003(\0132#.hw.trezor.messag"
-  "es.beam.BeamKeyIDV\022\022\n\nnonce_slot\030\004 \001(\r\022X"
-  "\n\rkernel_params\030\005 \001(\0132A.hw.trezor.messag"
-  "es.beam.BeamSignTransaction.BeamKernelPa"
-  "rameters\032\260\002\n\024BeamKernelParameters\022\013\n\003fee"
-  "\030\001 \001(\004\0229\n\ncommitment\030\002 \001(\0132%.hw.trezor.m"
-  "essages.beam.BeamECCPoint\022\022\n\nmin_height\030"
-  "\004 \001(\004\022\022\n\nmax_height\030\005 \001(\004\022\026\n\016asset_emiss"
-  "ion\030\006 \001(\022\022\021\n\thash_lock\030\007 \001(\014\022=\n\016multisig"
-  "_nonce\030\010 \001(\0132%.hw.trezor.messages.beam.B"
-  "eamECCPoint\022>\n\017multisig_excess\030\t \001(\0132%.h"
-  "w.trezor.messages.beam.BeamECCPointB8\n#c"
-  "om.satoshilabs.trezor.lib.protobufB\021Trez"
-  "orMessageBeam"
+  "Y\n\rBeamSignature\0228\n\tnonce_pub\030\001 \001(\0132%.hw"
+  ".trezor.messages.beam.BeamECCPoint\022\016\n\006si"
+  "gn_k\030\002 \001(\014\"Z\n\017BeamSignMessage\022\013\n\003msg\030\001 \001"
+  "(\t\022\017\n\007kid_idx\030\002 \001(\004\022\023\n\013kid_sub_idx\030\003 \001(\r"
+  "\022\024\n\014show_display\030\004 \001(\010\"\232\001\n\021BeamVerifyMes"
+  "sage\0229\n\tsignature\030\001 \001(\0132&.hw.trezor.mess"
+  "ages.beam.BeamSignature\0229\n\npublic_key\030\002 "
+  "\001(\0132%.hw.trezor.messages.beam.BeamECCPoi"
+  "nt\022\017\n\007message\030\003 \001(\014\"N\n\020BeamGetPublicKey\022"
+  "\017\n\007kid_idx\030\001 \001(\004\022\023\n\013kid_sub_idx\030\002 \001(\r\022\024\n"
+  "\014show_display\030\003 \001(\010\"\'\n\017BeamGetOwnerKey\022\024"
+  "\n\014show_display\030\001 \001(\010\"\033\n\014BeamOwnerKey\022\013\n\003"
+  "key\030\001 \001(\014\"^\n\026BeamGenerateRangeproof\0221\n\004k"
+  "idv\030\001 \001(\0132#.hw.trezor.messages.beam.Beam"
+  "KeyIDV\022\021\n\tis_public\030\002 \001(\010\"5\n\022BeamRangepr"
+  "oofData\022\014\n\004data\030\001 \001(\014\022\021\n\tis_public\030\002 \001(\010"
+  "\"*\n\025BeamSignedTransaction\022\021\n\tsignature\030\001"
+  " \001(\014\"\264\004\n\023BeamSignTransaction\0223\n\006inputs\030\001"
+  " \003(\0132#.hw.trezor.messages.beam.BeamKeyID"
+  "V\022\021\n\toffset_sk\030\002 \001(\014\0224\n\007outputs\030\003 \003(\0132#."
+  "hw.trezor.messages.beam.BeamKeyIDV\022\022\n\nno"
+  "nce_slot\030\004 \001(\r\022X\n\rkernel_params\030\005 \001(\0132A."
+  "hw.trezor.messages.beam.BeamSignTransact"
+  "ion.BeamKernelParameters\032\260\002\n\024BeamKernelP"
+  "arameters\022\013\n\003fee\030\001 \001(\004\0229\n\ncommitment\030\002 \001"
+  "(\0132%.hw.trezor.messages.beam.BeamECCPoin"
+  "t\022\022\n\nmin_height\030\004 \001(\004\022\022\n\nmax_height\030\005 \001("
+  "\004\022\026\n\016asset_emission\030\006 \001(\022\022\021\n\thash_lock\030\007"
+  " \001(\014\022=\n\016multisig_nonce\030\010 \001(\0132%.hw.trezor"
+  ".messages.beam.BeamECCPoint\022>\n\017multisig_"
+  "excess\030\t \001(\0132%.hw.trezor.messages.beam.B"
+  "eamECCPointB8\n#com.satoshilabs.trezor.li"
+  "b.protobufB\021TrezorMessageBeam"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dbeam_2eproto = {
   false, InitDefaults_messages_2dbeam_2eproto, 
   descriptor_table_protodef_messages_2dbeam_2eproto,
-  "messages-beam.proto", &assign_descriptors_table_messages_2dbeam_2eproto, 1613,
+  "messages-beam.proto", &assign_descriptors_table_messages_2dbeam_2eproto, 1629,
 };
 
 void AddDescriptors_messages_2dbeam_2eproto() {
@@ -2279,23 +2278,26 @@ void BeamECCPoint::InternalSwap(BeamECCPoint* other) {
 // ===================================================================
 
 void BeamSignature::InitAsDefaultInstance() {
+  ::hw::trezor::messages::beam::_BeamSignature_default_instance_._instance.get_mutable()->nonce_pub_ = const_cast< ::hw::trezor::messages::beam::BeamECCPoint*>(
+      ::hw::trezor::messages::beam::BeamECCPoint::internal_default_instance());
 }
 class BeamSignature::HasBitSetters {
  public:
-  static void set_has_nonce_pub_x(BeamSignature* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
-  }
-  static void set_has_nonce_pub_y(BeamSignature* msg) {
+  static const ::hw::trezor::messages::beam::BeamECCPoint& nonce_pub(const BeamSignature* msg);
+  static void set_has_nonce_pub(BeamSignature* msg) {
     msg->_has_bits_[0] |= 0x00000002u;
   }
   static void set_has_sign_k(BeamSignature* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+    msg->_has_bits_[0] |= 0x00000001u;
   }
 };
 
+const ::hw::trezor::messages::beam::BeamECCPoint&
+BeamSignature::HasBitSetters::nonce_pub(const BeamSignature* msg) {
+  return *msg->nonce_pub_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int BeamSignature::kNoncePubXFieldNumber;
-const int BeamSignature::kNoncePubYFieldNumber;
+const int BeamSignature::kNoncePubFieldNumber;
 const int BeamSignature::kSignKFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
@@ -2309,17 +2311,14 @@ BeamSignature::BeamSignature(const BeamSignature& from)
       _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  nonce_pub_x_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_nonce_pub_x()) {
-    nonce_pub_x_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.nonce_pub_x_);
-  }
-  nonce_pub_y_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_nonce_pub_y()) {
-    nonce_pub_y_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.nonce_pub_y_);
-  }
   sign_k_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.has_sign_k()) {
     sign_k_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sign_k_);
+  }
+  if (from.has_nonce_pub()) {
+    nonce_pub_ = new ::hw::trezor::messages::beam::BeamECCPoint(*from.nonce_pub_);
+  } else {
+    nonce_pub_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.beam.BeamSignature)
 }
@@ -2327,9 +2326,8 @@ BeamSignature::BeamSignature(const BeamSignature& from)
 void BeamSignature::SharedCtor() {
   ::google::protobuf::internal::InitSCC(
       &scc_info_BeamSignature_messages_2dbeam_2eproto.base);
-  nonce_pub_x_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  nonce_pub_y_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   sign_k_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  nonce_pub_ = nullptr;
 }
 
 BeamSignature::~BeamSignature() {
@@ -2338,9 +2336,8 @@ BeamSignature::~BeamSignature() {
 }
 
 void BeamSignature::SharedDtor() {
-  nonce_pub_x_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  nonce_pub_y_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   sign_k_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete nonce_pub_;
 }
 
 void BeamSignature::SetCachedSize(int size) const {
@@ -2359,15 +2356,13 @@ void BeamSignature::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000007u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      nonce_pub_x_.ClearNonDefaultToEmptyNoArena();
+      sign_k_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      nonce_pub_y_.ClearNonDefaultToEmptyNoArena();
-    }
-    if (cached_has_bits & 0x00000004u) {
-      sign_k_.ClearNonDefaultToEmptyNoArena();
+      GOOGLE_DCHECK(nonce_pub_ != nullptr);
+      nonce_pub_->Clear();
     }
   }
   _has_bits_.Clear();
@@ -2387,39 +2382,22 @@ const char* BeamSignature::_InternalParse(const char* begin, const char* end, vo
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // optional bytes nonce_pub_x = 1;
+      // optional .hw.trezor.messages.beam.BeamECCPoint nonce_pub = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        object = msg->mutable_nonce_pub_x();
-        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
-          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
-          goto string_till_end;
-        }
-        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
-        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        parser_till_end = ::hw::trezor::messages::beam::BeamECCPoint::_InternalParse;
+        object = msg->mutable_nonce_pub();
+        if (size > end - ptr) goto len_delim_till_end;
         ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
         break;
       }
-      // optional bytes nonce_pub_y = 2;
+      // optional bytes sign_k = 2;
       case 2: {
         if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
-        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        object = msg->mutable_nonce_pub_y();
-        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
-          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
-          goto string_till_end;
-        }
-        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
-        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
-        ptr += size;
-        break;
-      }
-      // optional bytes sign_k = 3;
-      case 3: {
-        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         object = msg->mutable_sign_k();
@@ -2466,31 +2444,20 @@ bool BeamSignature::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional bytes nonce_pub_x = 1;
+      // optional .hw.trezor.messages.beam.BeamECCPoint nonce_pub = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
-                input, this->mutable_nonce_pub_x()));
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_nonce_pub()));
         } else {
           goto handle_unusual;
         }
         break;
       }
 
-      // optional bytes nonce_pub_y = 2;
+      // optional bytes sign_k = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
-                input, this->mutable_nonce_pub_y()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bytes sign_k = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_sign_k()));
         } else {
@@ -2527,22 +2494,16 @@ void BeamSignature::SerializeWithCachedSizes(
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  // optional bytes nonce_pub_x = 1;
+  // optional .hw.trezor.messages.beam.BeamECCPoint nonce_pub = 1;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, HasBitSetters::nonce_pub(this), output);
+  }
+
+  // optional bytes sign_k = 2;
   if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
-      1, this->nonce_pub_x(), output);
-  }
-
-  // optional bytes nonce_pub_y = 2;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
-      2, this->nonce_pub_y(), output);
-  }
-
-  // optional bytes sign_k = 3;
-  if (cached_has_bits & 0x00000004u) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
-      3, this->sign_k(), output);
+      2, this->sign_k(), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -2559,25 +2520,18 @@ void BeamSignature::SerializeWithCachedSizes(
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  // optional bytes nonce_pub_x = 1;
+  // optional .hw.trezor.messages.beam.BeamECCPoint nonce_pub = 1;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        1, HasBitSetters::nonce_pub(this), target);
+  }
+
+  // optional bytes sign_k = 2;
   if (cached_has_bits & 0x00000001u) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        1, this->nonce_pub_x(), target);
-  }
-
-  // optional bytes nonce_pub_y = 2;
-  if (cached_has_bits & 0x00000002u) {
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        2, this->nonce_pub_y(), target);
-  }
-
-  // optional bytes sign_k = 3;
-  if (cached_has_bits & 0x00000004u) {
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        3, this->sign_k(), target);
+        2, this->sign_k(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -2602,26 +2556,19 @@ size_t BeamSignature::ByteSizeLong() const {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000007u) {
-    // optional bytes nonce_pub_x = 1;
+  if (cached_has_bits & 0x00000003u) {
+    // optional bytes sign_k = 2;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
-          this->nonce_pub_x());
+          this->sign_k());
     }
 
-    // optional bytes nonce_pub_y = 2;
+    // optional .hw.trezor.messages.beam.BeamECCPoint nonce_pub = 1;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::BytesSize(
-          this->nonce_pub_y());
-    }
-
-    // optional bytes sign_k = 3;
-    if (cached_has_bits & 0x00000004u) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::BytesSize(
-          this->sign_k());
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *nonce_pub_);
     }
 
   }
@@ -2653,18 +2600,13 @@ void BeamSignature::MergeFrom(const BeamSignature& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 0x00000007u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       _has_bits_[0] |= 0x00000001u;
-      nonce_pub_x_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.nonce_pub_x_);
+      sign_k_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sign_k_);
     }
     if (cached_has_bits & 0x00000002u) {
-      _has_bits_[0] |= 0x00000002u;
-      nonce_pub_y_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.nonce_pub_y_);
-    }
-    if (cached_has_bits & 0x00000004u) {
-      _has_bits_[0] |= 0x00000004u;
-      sign_k_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sign_k_);
+      mutable_nonce_pub()->::hw::trezor::messages::beam::BeamECCPoint::MergeFrom(from.nonce_pub());
     }
   }
 }
@@ -2695,12 +2637,9 @@ void BeamSignature::InternalSwap(BeamSignature* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  nonce_pub_x_.Swap(&other->nonce_pub_x_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  nonce_pub_y_.Swap(&other->nonce_pub_y_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
   sign_k_.Swap(&other->sign_k_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
+  swap(nonce_pub_, other->nonce_pub_);
 }
 
 ::google::protobuf::Metadata BeamSignature::GetMetadata() const {

@@ -241,6 +241,7 @@ enum MessageType {
   MessageType_EosTxActionAck = 604,
   MessageType_EosSignedTx = 605,
   MessageType_BeamSignMessage = 702,
+  MessageType_BeamSignature = 703,
   MessageType_BeamVerifyMessage = 704,
   MessageType_BeamGetPublicKey = 705,
   MessageType_BeamGetOwnerKey = 707,
