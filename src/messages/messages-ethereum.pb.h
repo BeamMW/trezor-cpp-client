@@ -617,6 +617,21 @@ class EthereumAddress final :
 
   // accessors -------------------------------------------------------
 
+  // optional bytes old_address = 1 [deprecated = true];
+  PROTOBUF_DEPRECATED bool has_old_address() const;
+  PROTOBUF_DEPRECATED void clear_old_address();
+  PROTOBUF_DEPRECATED static const int kOldAddressFieldNumber = 1;
+  PROTOBUF_DEPRECATED const ::std::string& old_address() const;
+  PROTOBUF_DEPRECATED void set_old_address(const ::std::string& value);
+  #if LANG_CXX11
+  PROTOBUF_DEPRECATED void set_old_address(::std::string&& value);
+  #endif
+  PROTOBUF_DEPRECATED void set_old_address(const char* value);
+  PROTOBUF_DEPRECATED void set_old_address(const void* value, size_t size);
+  PROTOBUF_DEPRECATED ::std::string* mutable_old_address();
+  PROTOBUF_DEPRECATED ::std::string* release_old_address();
+  PROTOBUF_DEPRECATED void set_allocated_old_address(::std::string* old_address);
+
   // optional string address = 2;
   bool has_address() const;
   void clear_address();
@@ -639,6 +654,7 @@ class EthereumAddress final :
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::google::protobuf::internal::ArenaStringPtr old_address_;
   ::google::protobuf::internal::ArenaStringPtr address_;
   friend struct ::TableStruct_messages_2dethereum_2eproto;
 };
@@ -1850,26 +1866,86 @@ inline void EthereumGetAddress::set_show_display(bool value) {
 
 // EthereumAddress
 
+// optional bytes old_address = 1 [deprecated = true];
+inline bool EthereumAddress::has_old_address() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void EthereumAddress::clear_old_address() {
+  old_address_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline const ::std::string& EthereumAddress::old_address() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.ethereum.EthereumAddress.old_address)
+  return old_address_.GetNoArena();
+}
+inline void EthereumAddress::set_old_address(const ::std::string& value) {
+  _has_bits_[0] |= 0x00000001u;
+  old_address_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.ethereum.EthereumAddress.old_address)
+}
+#if LANG_CXX11
+inline void EthereumAddress::set_old_address(::std::string&& value) {
+  _has_bits_[0] |= 0x00000001u;
+  old_address_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.ethereum.EthereumAddress.old_address)
+}
+#endif
+inline void EthereumAddress::set_old_address(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000001u;
+  old_address_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.ethereum.EthereumAddress.old_address)
+}
+inline void EthereumAddress::set_old_address(const void* value, size_t size) {
+  _has_bits_[0] |= 0x00000001u;
+  old_address_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.ethereum.EthereumAddress.old_address)
+}
+inline ::std::string* EthereumAddress::mutable_old_address() {
+  _has_bits_[0] |= 0x00000001u;
+  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.ethereum.EthereumAddress.old_address)
+  return old_address_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* EthereumAddress::release_old_address() {
+  // @@protoc_insertion_point(field_release:hw.trezor.messages.ethereum.EthereumAddress.old_address)
+  if (!has_old_address()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000001u;
+  return old_address_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void EthereumAddress::set_allocated_old_address(::std::string* old_address) {
+  if (old_address != nullptr) {
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  old_address_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), old_address);
+  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.ethereum.EthereumAddress.old_address)
+}
+
 // optional string address = 2;
 inline bool EthereumAddress::has_address() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
+  return (_has_bits_[0] & 0x00000002u) != 0;
 }
 inline void EthereumAddress::clear_address() {
   address_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _has_bits_[0] &= ~0x00000001u;
+  _has_bits_[0] &= ~0x00000002u;
 }
 inline const ::std::string& EthereumAddress::address() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.ethereum.EthereumAddress.address)
   return address_.GetNoArena();
 }
 inline void EthereumAddress::set_address(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000001u;
+  _has_bits_[0] |= 0x00000002u;
   address_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:hw.trezor.messages.ethereum.EthereumAddress.address)
 }
 #if LANG_CXX11
 inline void EthereumAddress::set_address(::std::string&& value) {
-  _has_bits_[0] |= 0x00000001u;
+  _has_bits_[0] |= 0x00000002u;
   address_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.ethereum.EthereumAddress.address)
@@ -1877,18 +1953,18 @@ inline void EthereumAddress::set_address(::std::string&& value) {
 #endif
 inline void EthereumAddress::set_address(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000001u;
+  _has_bits_[0] |= 0x00000002u;
   address_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:hw.trezor.messages.ethereum.EthereumAddress.address)
 }
 inline void EthereumAddress::set_address(const char* value, size_t size) {
-  _has_bits_[0] |= 0x00000001u;
+  _has_bits_[0] |= 0x00000002u;
   address_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.ethereum.EthereumAddress.address)
 }
 inline ::std::string* EthereumAddress::mutable_address() {
-  _has_bits_[0] |= 0x00000001u;
+  _has_bits_[0] |= 0x00000002u;
   // @@protoc_insertion_point(field_mutable:hw.trezor.messages.ethereum.EthereumAddress.address)
   return address_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -1897,14 +1973,14 @@ inline ::std::string* EthereumAddress::release_address() {
   if (!has_address()) {
     return nullptr;
   }
-  _has_bits_[0] &= ~0x00000001u;
+  _has_bits_[0] &= ~0x00000002u;
   return address_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void EthereumAddress::set_allocated_address(::std::string* address) {
   if (address != nullptr) {
-    _has_bits_[0] |= 0x00000001u;
+    _has_bits_[0] |= 0x00000002u;
   } else {
-    _has_bits_[0] &= ~0x00000001u;
+    _has_bits_[0] &= ~0x00000002u;
   }
   address_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), address);
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.ethereum.EthereumAddress.address)

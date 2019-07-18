@@ -40,7 +40,7 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 
 const char descriptor_table_protodef_messages_2eproto[] =
   "\n\016messages.proto\022\022hw.trezor.messages\032 go"
-  "ogle/protobuf/descriptor.proto*\344@\n\013Messa"
+  "ogle/protobuf/descriptor.proto*\254>\n\013Messa"
   "geType\022$\n\026MessageType_Initialize\020\000\032\010\220\265\030\001"
   "\260\265\030\001\022\032\n\020MessageType_Ping\020\001\032\004\220\265\030\001\022\035\n\023Mess"
   "ageType_Success\020\002\032\004\230\265\030\001\022\035\n\023MessageType_F"
@@ -148,123 +148,115 @@ const char descriptor_table_protodef_messages_2eproto[] =
   "eOp\020\332\001\032\004\220\265\030\001\022*\n\037MessageType_StellarManag"
   "eDataOp\020\334\001\032\004\220\265\030\001\022,\n!MessageType_StellarB"
   "umpSequenceOp\020\335\001\032\004\220\265\030\001\022&\n\033MessageType_St"
-  "ellarSignedTx\020\346\001\032\004\230\265\030\001\022%\n\032MessageType_Tr"
-  "onGetAddress\020\372\001\032\004\220\265\030\001\022\"\n\027MessageType_Tro"
-  "nAddress\020\373\001\032\004\230\265\030\001\022!\n\026MessageType_TronSig"
-  "nTx\020\374\001\032\004\220\265\030\001\022#\n\030MessageType_TronSignedTx"
-  "\020\375\001\032\004\230\265\030\001\022$\n\031MessageType_CardanoSignTx\020\257"
-  "\002\032\004\220\265\030\001\022\'\n\034MessageType_CardanoTxRequest\020"
-  "\260\002\032\004\230\265\030\001\022*\n\037MessageType_CardanoGetPublic"
-  "Key\020\261\002\032\004\220\265\030\001\022\'\n\034MessageType_CardanoPubli"
-  "cKey\020\262\002\032\004\230\265\030\001\022(\n\035MessageType_CardanoGetA"
-  "ddress\020\263\002\032\004\220\265\030\001\022%\n\032MessageType_CardanoAd"
-  "dress\020\264\002\032\004\230\265\030\001\022#\n\030MessageType_CardanoTxA"
-  "ck\020\265\002\032\004\220\265\030\001\022&\n\033MessageType_CardanoSigned"
-  "Tx\020\266\002\032\004\230\265\030\001\022)\n\036MessageType_OntologyGetAd"
-  "dress\020\336\002\032\004\220\265\030\001\022&\n\033MessageType_OntologyAd"
-  "dress\020\337\002\032\004\230\265\030\001\022+\n MessageType_OntologyGe"
-  "tPublicKey\020\340\002\032\004\220\265\030\001\022(\n\035MessageType_Ontol"
-  "ogyPublicKey\020\341\002\032\004\230\265\030\001\022+\n MessageType_Ont"
-  "ologySignTransfer\020\342\002\032\004\220\265\030\001\022-\n\"MessageTyp"
-  "e_OntologySignedTransfer\020\343\002\032\004\230\265\030\001\022.\n#Mes"
-  "sageType_OntologySignWithdrawOng\020\344\002\032\004\220\265\030"
-  "\001\0220\n%MessageType_OntologySignedWithdrawO"
-  "ng\020\345\002\032\004\230\265\030\001\0220\n%MessageType_OntologySignO"
-  "ntIdRegister\020\346\002\032\004\220\265\030\001\0222\n\'MessageType_Ont"
-  "ologySignedOntIdRegister\020\347\002\032\004\230\265\030\001\0225\n*Mes"
-  "sageType_OntologySignOntIdAddAttributes\020"
-  "\350\002\032\004\220\265\030\001\0227\n,MessageType_OntologySignedOn"
-  "tIdAddAttributes\020\351\002\032\004\230\265\030\001\022\'\n\034MessageType"
-  "_RippleGetAddress\020\220\003\032\004\220\265\030\001\022$\n\031MessageTyp"
-  "e_RippleAddress\020\221\003\032\004\230\265\030\001\022#\n\030MessageType_"
-  "RippleSignTx\020\222\003\032\004\220\265\030\001\022%\n\032MessageType_Rip"
-  "pleSignedTx\020\223\003\032\004\220\265\030\001\0223\n(MessageType_Mone"
-  "roTransactionInitRequest\020\365\003\032\004\230\265\030\001\022/\n$Mes"
-  "sageType_MoneroTransactionInitAck\020\366\003\032\004\230\265"
-  "\030\001\0227\n,MessageType_MoneroTransactionSetIn"
-  "putRequest\020\367\003\032\004\230\265\030\001\0223\n(MessageType_Moner"
-  "oTransactionSetInputAck\020\370\003\032\004\230\265\030\001\022@\n5Mess"
-  "ageType_MoneroTransactionInputsPermutati"
-  "onRequest\020\371\003\032\004\230\265\030\001\022<\n1MessageType_Monero"
-  "TransactionInputsPermutationAck\020\372\003\032\004\230\265\030\001"
-  "\0228\n-MessageType_MoneroTransactionInputVi"
-  "niRequest\020\373\003\032\004\230\265\030\001\0224\n)MessageType_Monero"
-  "TransactionInputViniAck\020\374\003\032\004\230\265\030\001\022;\n0Mess"
-  "ageType_MoneroTransactionAllInputsSetReq"
-  "uest\020\375\003\032\004\230\265\030\001\0227\n,MessageType_MoneroTrans"
-  "actionAllInputsSetAck\020\376\003\032\004\230\265\030\001\0228\n-Messag"
-  "eType_MoneroTransactionSetOutputRequest\020"
-  "\377\003\032\004\230\265\030\001\0224\n)MessageType_MoneroTransactio"
-  "nSetOutputAck\020\200\004\032\004\230\265\030\001\0228\n-MessageType_Mo"
-  "neroTransactionAllOutSetRequest\020\201\004\032\004\230\265\030\001"
-  "\0224\n)MessageType_MoneroTransactionAllOutS"
-  "etAck\020\202\004\032\004\230\265\030\001\0228\n-MessageType_MoneroTran"
-  "sactionSignInputRequest\020\203\004\032\004\230\265\030\001\0224\n)Mess"
-  "ageType_MoneroTransactionSignInputAck\020\204\004"
-  "\032\004\230\265\030\001\0224\n)MessageType_MoneroTransactionF"
-  "inalRequest\020\205\004\032\004\230\265\030\001\0220\n%MessageType_Mone"
-  "roTransactionFinalAck\020\206\004\032\004\230\265\030\001\0226\n+Messag"
-  "eType_MoneroKeyImageExportInitRequest\020\222\004"
-  "\032\004\230\265\030\001\0222\n\'MessageType_MoneroKeyImageExpo"
-  "rtInitAck\020\223\004\032\004\230\265\030\001\0224\n)MessageType_Monero"
-  "KeyImageSyncStepRequest\020\224\004\032\004\230\265\030\001\0220\n%Mess"
-  "ageType_MoneroKeyImageSyncStepAck\020\225\004\032\004\230\265"
-  "\030\001\0225\n*MessageType_MoneroKeyImageSyncFina"
-  "lRequest\020\226\004\032\004\230\265\030\001\0221\n&MessageType_MoneroK"
-  "eyImageSyncFinalAck\020\227\004\032\004\230\265\030\001\022\'\n\034MessageT"
-  "ype_MoneroGetAddress\020\234\004\032\004\220\265\030\001\022$\n\031Message"
-  "Type_MoneroAddress\020\235\004\032\004\230\265\030\001\022(\n\035MessageTy"
-  "pe_MoneroGetWatchKey\020\236\004\032\004\220\265\030\001\022%\n\032Message"
-  "Type_MoneroWatchKey\020\237\004\032\004\230\265\030\001\022-\n\"MessageT"
-  "ype_DebugMoneroDiagRequest\020\242\004\032\004\220\265\030\001\022)\n\036M"
-  "essageType_DebugMoneroDiagAck\020\243\004\032\004\230\265\030\001\022,"
-  "\n!MessageType_MoneroGetTxKeyRequest\020\246\004\032\004"
-  "\220\265\030\001\022(\n\035MessageType_MoneroGetTxKeyAck\020\247\004"
-  "\032\004\230\265\030\001\0224\n)MessageType_MoneroLiveRefreshS"
-  "tartRequest\020\250\004\032\004\220\265\030\001\0220\n%MessageType_Mone"
-  "roLiveRefreshStartAck\020\251\004\032\004\230\265\030\001\0223\n(Messag"
-  "eType_MoneroLiveRefreshStepRequest\020\252\004\032\004\220"
-  "\265\030\001\022/\n$MessageType_MoneroLiveRefreshStep"
-  "Ack\020\253\004\032\004\230\265\030\001\0224\n)MessageType_MoneroLiveRe"
-  "freshFinalRequest\020\254\004\032\004\220\265\030\001\0220\n%MessageTyp"
-  "e_MoneroLiveRefreshFinalAck\020\255\004\032\004\230\265\030\001\022&\n\033"
-  "MessageType_EosGetPublicKey\020\330\004\032\004\220\265\030\001\022#\n\030"
-  "MessageType_EosPublicKey\020\331\004\032\004\230\265\030\001\022 \n\025Mes"
-  "sageType_EosSignTx\020\332\004\032\004\220\265\030\001\022)\n\036MessageTy"
-  "pe_EosTxActionRequest\020\333\004\032\004\230\265\030\001\022%\n\032Messag"
-  "eType_EosTxActionAck\020\334\004\032\004\220\265\030\001\022\"\n\027Message"
-  "Type_EosSignedTx\020\335\004\032\004\230\265\030\001\022&\n\033MessageType"
-  "_BeamSignMessage\020\276\005\032\004\220\265\030\001\022$\n\031MessageType"
-  "_BeamSignature\020\277\005\032\004\230\265\030\001\022(\n\035MessageType_B"
-  "eamVerifyMessage\020\300\005\032\004\220\265\030\001\022\'\n\034MessageType"
-  "_BeamGetPublicKey\020\301\005\032\004\220\265\030\001\022&\n\033MessageTyp"
-  "e_BeamGetOwnerKey\020\303\005\032\004\220\265\030\001\022#\n\030MessageTyp"
-  "e_BeamOwnerKey\020\304\005\032\004\230\265\030\001\022&\n\033MessageType_B"
-  "eamGenerateKey\020\305\005\032\004\220\265\030\001\022(\n\035MessageType_B"
-  "eamGenerateNonce\020\306\005\032\004\220\265\030\001\022#\n\030MessageType"
-  "_BeamECCPoint\020\307\005\032\004\230\265\030\001\022-\n\"MessageType_Be"
-  "amGenerateRangeproof\020\310\005\032\004\220\265\030\001\022)\n\036Message"
-  "Type_BeamRangeproofData\020\311\005\032\004\230\265\030\001\022*\n\037Mess"
-  "ageType_BeamSignTransaction\020\312\005\032\004\220\265\030\001\022,\n!"
-  "MessageType_BeamSignedTransaction\020\313\005\032\004\230\265"
-  "\030\001\022)\n\036MessageType_BeamGetNoncePublic\020\314\005\032"
-  "\004\220\265\030\001:4\n\007wire_in\022!.google.protobuf.EnumV"
-  "alueOptions\030\322\206\003 \001(\010:5\n\010wire_out\022!.google"
-  ".protobuf.EnumValueOptions\030\323\206\003 \001(\010::\n\rwi"
-  "re_debug_in\022!.google.protobuf.EnumValueO"
-  "ptions\030\324\206\003 \001(\010:;\n\016wire_debug_out\022!.googl"
-  "e.protobuf.EnumValueOptions\030\325\206\003 \001(\010:6\n\tw"
-  "ire_tiny\022!.google.protobuf.EnumValueOpti"
-  "ons\030\326\206\003 \001(\010:<\n\017wire_bootloader\022!.google."
-  "protobuf.EnumValueOptions\030\327\206\003 \001(\010:8\n\013wir"
-  "e_no_fsm\022!.google.protobuf.EnumValueOpti"
-  "ons\030\330\206\003 \001(\010B4\n#com.satoshilabs.trezor.li"
-  "b.protobufB\rTrezorMessage"
+  "ellarSignedTx\020\346\001\032\004\230\265\030\001\022$\n\031MessageType_Ca"
+  "rdanoSignTx\020\257\002\032\004\220\265\030\001\022\'\n\034MessageType_Card"
+  "anoTxRequest\020\260\002\032\004\230\265\030\001\022*\n\037MessageType_Car"
+  "danoGetPublicKey\020\261\002\032\004\220\265\030\001\022\'\n\034MessageType"
+  "_CardanoPublicKey\020\262\002\032\004\230\265\030\001\022(\n\035MessageTyp"
+  "e_CardanoGetAddress\020\263\002\032\004\220\265\030\001\022%\n\032MessageT"
+  "ype_CardanoAddress\020\264\002\032\004\230\265\030\001\022#\n\030MessageTy"
+  "pe_CardanoTxAck\020\265\002\032\004\220\265\030\001\022&\n\033MessageType_"
+  "CardanoSignedTx\020\266\002\032\004\230\265\030\001\022\'\n\034MessageType_"
+  "RippleGetAddress\020\220\003\032\004\220\265\030\001\022$\n\031MessageType"
+  "_RippleAddress\020\221\003\032\004\230\265\030\001\022#\n\030MessageType_R"
+  "ippleSignTx\020\222\003\032\004\220\265\030\001\022%\n\032MessageType_Ripp"
+  "leSignedTx\020\223\003\032\004\220\265\030\001\0223\n(MessageType_Moner"
+  "oTransactionInitRequest\020\365\003\032\004\230\265\030\001\022/\n$Mess"
+  "ageType_MoneroTransactionInitAck\020\366\003\032\004\230\265\030"
+  "\001\0227\n,MessageType_MoneroTransactionSetInp"
+  "utRequest\020\367\003\032\004\230\265\030\001\0223\n(MessageType_Monero"
+  "TransactionSetInputAck\020\370\003\032\004\230\265\030\001\022@\n5Messa"
+  "geType_MoneroTransactionInputsPermutatio"
+  "nRequest\020\371\003\032\004\230\265\030\001\022<\n1MessageType_MoneroT"
+  "ransactionInputsPermutationAck\020\372\003\032\004\230\265\030\001\022"
+  "8\n-MessageType_MoneroTransactionInputVin"
+  "iRequest\020\373\003\032\004\230\265\030\001\0224\n)MessageType_MoneroT"
+  "ransactionInputViniAck\020\374\003\032\004\230\265\030\001\022;\n0Messa"
+  "geType_MoneroTransactionAllInputsSetRequ"
+  "est\020\375\003\032\004\230\265\030\001\0227\n,MessageType_MoneroTransa"
+  "ctionAllInputsSetAck\020\376\003\032\004\230\265\030\001\0228\n-Message"
+  "Type_MoneroTransactionSetOutputRequest\020\377"
+  "\003\032\004\230\265\030\001\0224\n)MessageType_MoneroTransaction"
+  "SetOutputAck\020\200\004\032\004\230\265\030\001\0228\n-MessageType_Mon"
+  "eroTransactionAllOutSetRequest\020\201\004\032\004\230\265\030\001\022"
+  "4\n)MessageType_MoneroTransactionAllOutSe"
+  "tAck\020\202\004\032\004\230\265\030\001\0228\n-MessageType_MoneroTrans"
+  "actionSignInputRequest\020\203\004\032\004\230\265\030\001\0224\n)Messa"
+  "geType_MoneroTransactionSignInputAck\020\204\004\032"
+  "\004\230\265\030\001\0224\n)MessageType_MoneroTransactionFi"
+  "nalRequest\020\205\004\032\004\230\265\030\001\0220\n%MessageType_Moner"
+  "oTransactionFinalAck\020\206\004\032\004\230\265\030\001\0226\n+Message"
+  "Type_MoneroKeyImageExportInitRequest\020\222\004\032"
+  "\004\230\265\030\001\0222\n\'MessageType_MoneroKeyImageExpor"
+  "tInitAck\020\223\004\032\004\230\265\030\001\0224\n)MessageType_MoneroK"
+  "eyImageSyncStepRequest\020\224\004\032\004\230\265\030\001\0220\n%Messa"
+  "geType_MoneroKeyImageSyncStepAck\020\225\004\032\004\230\265\030"
+  "\001\0225\n*MessageType_MoneroKeyImageSyncFinal"
+  "Request\020\226\004\032\004\230\265\030\001\0221\n&MessageType_MoneroKe"
+  "yImageSyncFinalAck\020\227\004\032\004\230\265\030\001\022\'\n\034MessageTy"
+  "pe_MoneroGetAddress\020\234\004\032\004\220\265\030\001\022$\n\031MessageT"
+  "ype_MoneroAddress\020\235\004\032\004\230\265\030\001\022(\n\035MessageTyp"
+  "e_MoneroGetWatchKey\020\236\004\032\004\220\265\030\001\022%\n\032MessageT"
+  "ype_MoneroWatchKey\020\237\004\032\004\230\265\030\001\022-\n\"MessageTy"
+  "pe_DebugMoneroDiagRequest\020\242\004\032\004\220\265\030\001\022)\n\036Me"
+  "ssageType_DebugMoneroDiagAck\020\243\004\032\004\230\265\030\001\022,\n"
+  "!MessageType_MoneroGetTxKeyRequest\020\246\004\032\004\220"
+  "\265\030\001\022(\n\035MessageType_MoneroGetTxKeyAck\020\247\004\032"
+  "\004\230\265\030\001\0224\n)MessageType_MoneroLiveRefreshSt"
+  "artRequest\020\250\004\032\004\220\265\030\001\0220\n%MessageType_Moner"
+  "oLiveRefreshStartAck\020\251\004\032\004\230\265\030\001\0223\n(Message"
+  "Type_MoneroLiveRefreshStepRequest\020\252\004\032\004\220\265"
+  "\030\001\022/\n$MessageType_MoneroLiveRefreshStepA"
+  "ck\020\253\004\032\004\230\265\030\001\0224\n)MessageType_MoneroLiveRef"
+  "reshFinalRequest\020\254\004\032\004\220\265\030\001\0220\n%MessageType"
+  "_MoneroLiveRefreshFinalAck\020\255\004\032\004\230\265\030\001\022&\n\033M"
+  "essageType_EosGetPublicKey\020\330\004\032\004\220\265\030\001\022#\n\030M"
+  "essageType_EosPublicKey\020\331\004\032\004\230\265\030\001\022 \n\025Mess"
+  "ageType_EosSignTx\020\332\004\032\004\220\265\030\001\022)\n\036MessageTyp"
+  "e_EosTxActionRequest\020\333\004\032\004\230\265\030\001\022%\n\032Message"
+  "Type_EosTxActionAck\020\334\004\032\004\220\265\030\001\022\"\n\027MessageT"
+  "ype_EosSignedTx\020\335\004\032\004\230\265\030\001\022(\n\035MessageType_"
+  "BinanceGetAddress\020\274\005\032\004\220\265\030\001\022%\n\032MessageTyp"
+  "e_BinanceAddress\020\275\005\032\004\230\265\030\001\022*\n\037MessageType"
+  "_BinanceGetPublicKey\020\276\005\032\004\220\265\030\001\022\'\n\034Message"
+  "Type_BinancePublicKey\020\277\005\032\004\230\265\030\001\022$\n\031Messag"
+  "eType_BinanceSignTx\020\300\005\032\004\220\265\030\001\022\'\n\034MessageT"
+  "ype_BinanceTxRequest\020\301\005\032\004\230\265\030\001\022)\n\036Message"
+  "Type_BinanceTransferMsg\020\302\005\032\004\220\265\030\001\022&\n\033Mess"
+  "ageType_BinanceOrderMsg\020\303\005\032\004\220\265\030\001\022\'\n\034Mess"
+  "ageType_BinanceCancelMsg\020\304\005\032\004\220\265\030\001\022&\n\033Mes"
+  "sageType_BinanceSignedTx\020\305\005\032\004\230\265\030\001\022&\n\033Mes"
+  "sageType_BeamSignMessage\020\242\006\032\004\220\265\030\001\022$\n\031Mes"
+  "sageType_BeamSignature\020\243\006\032\004\230\265\030\001\022(\n\035Messa"
+  "geType_BeamVerifyMessage\020\244\006\032\004\220\265\030\001\022\'\n\034Mes"
+  "sageType_BeamGetPublicKey\020\245\006\032\004\220\265\030\001\022&\n\033Me"
+  "ssageType_BeamGetOwnerKey\020\247\006\032\004\220\265\030\001\022#\n\030Me"
+  "ssageType_BeamOwnerKey\020\250\006\032\004\230\265\030\001\022&\n\033Messa"
+  "geType_BeamGenerateKey\020\251\006\032\004\220\265\030\001\022(\n\035Messa"
+  "geType_BeamGenerateNonce\020\252\006\032\004\220\265\030\001\022#\n\030Mes"
+  "sageType_BeamECCPoint\020\253\006\032\004\230\265\030\001\022-\n\"Messag"
+  "eType_BeamGenerateRangeproof\020\254\006\032\004\220\265\030\001\022)\n"
+  "\036MessageType_BeamRangeproofData\020\255\006\032\004\230\265\030\001"
+  "\022*\n\037MessageType_BeamSignTransaction\020\256\006\032\004"
+  "\220\265\030\001\022,\n!MessageType_BeamSignedTransactio"
+  "n\020\257\006\032\004\230\265\030\001\022)\n\036MessageType_BeamGetNoncePu"
+  "blic\020\260\006\032\004\220\265\030\001:4\n\007wire_in\022!.google.protob"
+  "uf.EnumValueOptions\030\322\206\003 \001(\010:5\n\010wire_out\022"
+  "!.google.protobuf.EnumValueOptions\030\323\206\003 \001"
+  "(\010::\n\rwire_debug_in\022!.google.protobuf.En"
+  "umValueOptions\030\324\206\003 \001(\010:;\n\016wire_debug_out"
+  "\022!.google.protobuf.EnumValueOptions\030\325\206\003 "
+  "\001(\010:6\n\twire_tiny\022!.google.protobuf.EnumV"
+  "alueOptions\030\326\206\003 \001(\010:<\n\017wire_bootloader\022!"
+  ".google.protobuf.EnumValueOptions\030\327\206\003 \001("
+  "\010:8\n\013wire_no_fsm\022!.google.protobuf.EnumV"
+  "alueOptions\030\330\206\003 \001(\010B4\n#com.satoshilabs.t"
+  "rezor.lib.protobufB\rTrezorMessage"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_messages_2eproto = {
   false, InitDefaults_messages_2eproto, 
   descriptor_table_protodef_messages_2eproto,
-  "messages.proto", &assign_descriptors_table_messages_2eproto, 8825,
+  "messages.proto", &assign_descriptors_table_messages_2eproto, 8513,
 };
 
 void AddDescriptors_messages_2eproto() {
@@ -395,10 +387,6 @@ bool MessageType_IsValid(int value) {
     case 220:
     case 221:
     case 230:
-    case 250:
-    case 251:
-    case 252:
-    case 253:
     case 303:
     case 304:
     case 305:
@@ -407,18 +395,6 @@ bool MessageType_IsValid(int value) {
     case 308:
     case 309:
     case 310:
-    case 350:
-    case 351:
-    case 352:
-    case 353:
-    case 354:
-    case 355:
-    case 356:
-    case 357:
-    case 358:
-    case 359:
-    case 360:
-    case 361:
     case 400:
     case 401:
     case 402:
@@ -469,20 +445,30 @@ bool MessageType_IsValid(int value) {
     case 603:
     case 604:
     case 605:
+    case 700:
+    case 701:
     case 702:
     case 703:
     case 704:
     case 705:
+    case 706:
     case 707:
     case 708:
     case 709:
-    case 710:
-    case 711:
-    case 712:
-    case 713:
-    case 714:
-    case 715:
-    case 716:
+    case 802:
+    case 803:
+    case 804:
+    case 805:
+    case 807:
+    case 808:
+    case 809:
+    case 810:
+    case 811:
+    case 812:
+    case 813:
+    case 814:
+    case 815:
+    case 816:
       return true;
     default:
       return false;

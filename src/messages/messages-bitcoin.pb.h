@@ -482,6 +482,30 @@ class MultisigRedeemScriptType final :
   const ::google::protobuf::RepeatedPtrField<::std::string>& signatures() const;
   ::google::protobuf::RepeatedPtrField<::std::string>* mutable_signatures();
 
+  // repeated .hw.trezor.messages.common.HDNodeType nodes = 4;
+  int nodes_size() const;
+  void clear_nodes();
+  static const int kNodesFieldNumber = 4;
+  ::hw::trezor::messages::common::HDNodeType* mutable_nodes(int index);
+  ::google::protobuf::RepeatedPtrField< ::hw::trezor::messages::common::HDNodeType >*
+      mutable_nodes();
+  const ::hw::trezor::messages::common::HDNodeType& nodes(int index) const;
+  ::hw::trezor::messages::common::HDNodeType* add_nodes();
+  const ::google::protobuf::RepeatedPtrField< ::hw::trezor::messages::common::HDNodeType >&
+      nodes() const;
+
+  // repeated uint32 address_n = 5;
+  int address_n_size() const;
+  void clear_address_n();
+  static const int kAddressNFieldNumber = 5;
+  ::google::protobuf::uint32 address_n(int index) const;
+  void set_address_n(int index, ::google::protobuf::uint32 value);
+  void add_address_n(::google::protobuf::uint32 value);
+  const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+      address_n() const;
+  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+      mutable_address_n();
+
   // optional uint32 m = 3;
   bool has_m() const;
   void clear_m();
@@ -498,6 +522,8 @@ class MultisigRedeemScriptType final :
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::RepeatedPtrField< ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType > pubkeys_;
   ::google::protobuf::RepeatedPtrField<::std::string> signatures_;
+  ::google::protobuf::RepeatedPtrField< ::hw::trezor::messages::common::HDNodeType > nodes_;
+  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > address_n_;
   ::google::protobuf::uint32 m_;
   friend struct ::TableStruct_messages_2dbitcoin_2eproto;
 };
@@ -797,7 +823,7 @@ class PublicKey final :
   ::std::string* release_xpub();
   void set_allocated_xpub(::std::string* xpub);
 
-  // required .hw.trezor.messages.common.HDNodeType node = 1;
+  // optional .hw.trezor.messages.common.HDNodeType node = 1;
   bool has_node() const;
   void clear_node();
   static const int kNodeFieldNumber = 1;
@@ -1779,6 +1805,13 @@ class SignTx final :
   ::google::protobuf::uint32 timestamp() const;
   void set_timestamp(::google::protobuf::uint32 value);
 
+  // optional uint32 branch_id = 10;
+  bool has_branch_id() const;
+  void clear_branch_id();
+  static const int kBranchIdFieldNumber = 10;
+  ::google::protobuf::uint32 branch_id() const;
+  void set_branch_id(::google::protobuf::uint32 value);
+
   // optional uint32 version = 4 [default = 1];
   bool has_version() const;
   void clear_version();
@@ -1807,6 +1840,7 @@ class SignTx final :
   bool overwintered_;
   ::google::protobuf::uint32 version_group_id_;
   ::google::protobuf::uint32 timestamp_;
+  ::google::protobuf::uint32 branch_id_;
   ::google::protobuf::uint32 version_;
   friend struct ::TableStruct_messages_2dbitcoin_2eproto;
 };
@@ -3158,6 +3192,13 @@ class TxAck_TransactionType final :
   ::google::protobuf::uint32 timestamp() const;
   void set_timestamp(::google::protobuf::uint32 value);
 
+  // optional uint32 branch_id = 14;
+  bool has_branch_id() const;
+  void clear_branch_id();
+  static const int kBranchIdFieldNumber = 14;
+  ::google::protobuf::uint32 branch_id() const;
+  void set_branch_id(::google::protobuf::uint32 value);
+
   // @@protoc_insertion_point(class_scope:hw.trezor.messages.bitcoin.TxAck.TransactionType)
  private:
   class HasBitSetters;
@@ -3178,6 +3219,7 @@ class TxAck_TransactionType final :
   bool overwintered_;
   ::google::protobuf::uint32 version_group_id_;
   ::google::protobuf::uint32 timestamp_;
+  ::google::protobuf::uint32 branch_id_;
   friend struct ::TableStruct_messages_2dbitcoin_2eproto;
 };
 // -------------------------------------------------------------------
@@ -3512,6 +3554,63 @@ inline void MultisigRedeemScriptType::set_m(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.m)
 }
 
+// repeated .hw.trezor.messages.common.HDNodeType nodes = 4;
+inline int MultisigRedeemScriptType::nodes_size() const {
+  return nodes_.size();
+}
+inline ::hw::trezor::messages::common::HDNodeType* MultisigRedeemScriptType::mutable_nodes(int index) {
+  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.nodes)
+  return nodes_.Mutable(index);
+}
+inline ::google::protobuf::RepeatedPtrField< ::hw::trezor::messages::common::HDNodeType >*
+MultisigRedeemScriptType::mutable_nodes() {
+  // @@protoc_insertion_point(field_mutable_list:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.nodes)
+  return &nodes_;
+}
+inline const ::hw::trezor::messages::common::HDNodeType& MultisigRedeemScriptType::nodes(int index) const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.nodes)
+  return nodes_.Get(index);
+}
+inline ::hw::trezor::messages::common::HDNodeType* MultisigRedeemScriptType::add_nodes() {
+  // @@protoc_insertion_point(field_add:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.nodes)
+  return nodes_.Add();
+}
+inline const ::google::protobuf::RepeatedPtrField< ::hw::trezor::messages::common::HDNodeType >&
+MultisigRedeemScriptType::nodes() const {
+  // @@protoc_insertion_point(field_list:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.nodes)
+  return nodes_;
+}
+
+// repeated uint32 address_n = 5;
+inline int MultisigRedeemScriptType::address_n_size() const {
+  return address_n_.size();
+}
+inline void MultisigRedeemScriptType::clear_address_n() {
+  address_n_.Clear();
+}
+inline ::google::protobuf::uint32 MultisigRedeemScriptType::address_n(int index) const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.address_n)
+  return address_n_.Get(index);
+}
+inline void MultisigRedeemScriptType::set_address_n(int index, ::google::protobuf::uint32 value) {
+  address_n_.Set(index, value);
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.address_n)
+}
+inline void MultisigRedeemScriptType::add_address_n(::google::protobuf::uint32 value) {
+  address_n_.Add(value);
+  // @@protoc_insertion_point(field_add:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.address_n)
+}
+inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+MultisigRedeemScriptType::address_n() const {
+  // @@protoc_insertion_point(field_list:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.address_n)
+  return address_n_;
+}
+inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+MultisigRedeemScriptType::mutable_address_n() {
+  // @@protoc_insertion_point(field_mutable_list:hw.trezor.messages.bitcoin.MultisigRedeemScriptType.address_n)
+  return &address_n_;
+}
+
 // -------------------------------------------------------------------
 
 // GetPublicKey
@@ -3707,7 +3806,7 @@ inline void GetPublicKey::set_script_type(::hw::trezor::messages::bitcoin::Input
 
 // PublicKey
 
-// required .hw.trezor.messages.common.HDNodeType node = 1;
+// optional .hw.trezor.messages.common.HDNodeType node = 1;
 inline bool PublicKey::has_node() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -4699,18 +4798,18 @@ inline void SignTx::set_allocated_coin_name(::std::string* coin_name) {
 
 // optional uint32 version = 4 [default = 1];
 inline bool SignTx::has_version() const {
-  return (_has_bits_[0] & 0x00000100u) != 0;
+  return (_has_bits_[0] & 0x00000200u) != 0;
 }
 inline void SignTx::clear_version() {
   version_ = 1u;
-  _has_bits_[0] &= ~0x00000100u;
+  _has_bits_[0] &= ~0x00000200u;
 }
 inline ::google::protobuf::uint32 SignTx::version() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.bitcoin.SignTx.version)
   return version_;
 }
 inline void SignTx::set_version(::google::protobuf::uint32 value) {
-  _has_bits_[0] |= 0x00000100u;
+  _has_bits_[0] |= 0x00000200u;
   version_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.bitcoin.SignTx.version)
 }
@@ -4803,6 +4902,24 @@ inline void SignTx::set_timestamp(::google::protobuf::uint32 value) {
   _has_bits_[0] |= 0x00000080u;
   timestamp_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.bitcoin.SignTx.timestamp)
+}
+
+// optional uint32 branch_id = 10;
+inline bool SignTx::has_branch_id() const {
+  return (_has_bits_[0] & 0x00000100u) != 0;
+}
+inline void SignTx::clear_branch_id() {
+  branch_id_ = 0u;
+  _has_bits_[0] &= ~0x00000100u;
+}
+inline ::google::protobuf::uint32 SignTx::branch_id() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.bitcoin.SignTx.branch_id)
+  return branch_id_;
+}
+inline void SignTx::set_branch_id(::google::protobuf::uint32 value) {
+  _has_bits_[0] |= 0x00000100u;
+  branch_id_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.bitcoin.SignTx.branch_id)
 }
 
 // -------------------------------------------------------------------
@@ -6326,6 +6443,24 @@ inline void TxAck_TransactionType::set_timestamp(::google::protobuf::uint32 valu
   _has_bits_[0] |= 0x00000200u;
   timestamp_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.bitcoin.TxAck.TransactionType.timestamp)
+}
+
+// optional uint32 branch_id = 14;
+inline bool TxAck_TransactionType::has_branch_id() const {
+  return (_has_bits_[0] & 0x00000400u) != 0;
+}
+inline void TxAck_TransactionType::clear_branch_id() {
+  branch_id_ = 0u;
+  _has_bits_[0] &= ~0x00000400u;
+}
+inline ::google::protobuf::uint32 TxAck_TransactionType::branch_id() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.bitcoin.TxAck.TransactionType.branch_id)
+  return branch_id_;
+}
+inline void TxAck_TransactionType::set_branch_id(::google::protobuf::uint32 value) {
+  _has_bits_[0] |= 0x00000400u;
+  branch_id_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.bitcoin.TxAck.TransactionType.branch_id)
 }
 
 // -------------------------------------------------------------------

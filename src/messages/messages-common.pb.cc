@@ -408,12 +408,13 @@ const char descriptor_table_protodef_messages_2dcommon_2eproto[] =
   "tateAck\"\200\001\n\nHDNodeType\022\r\n\005depth\030\001 \002(\r\022\023\n"
   "\013fingerprint\030\002 \002(\r\022\021\n\tchild_num\030\003 \002(\r\022\022\n"
   "\nchain_code\030\004 \002(\014\022\023\n\013private_key\030\005 \001(\014\022\022"
-  "\n\npublic_key\030\006 \001(\014"
+  "\n\npublic_key\030\006 \001(\014B:\n#com.satoshilabs.tr"
+  "ezor.lib.protobufB\023TrezorMessageCommon"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dcommon_2eproto = {
   false, InitDefaults_messages_2dcommon_2eproto, 
   descriptor_table_protodef_messages_2dcommon_2eproto,
-  "messages-common.proto", &assign_descriptors_table_messages_2dcommon_2eproto, 1698,
+  "messages-common.proto", &assign_descriptors_table_messages_2dcommon_2eproto, 1758,
 };
 
 void AddDescriptors_messages_2dcommon_2eproto() {

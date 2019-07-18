@@ -4243,42 +4243,20 @@ class EosSignedTx final :
 
   // accessors -------------------------------------------------------
 
-  // optional bytes signature_r = 2;
-  bool has_signature_r() const;
-  void clear_signature_r();
-  static const int kSignatureRFieldNumber = 2;
-  const ::std::string& signature_r() const;
-  void set_signature_r(const ::std::string& value);
+  // optional string signature = 1;
+  bool has_signature() const;
+  void clear_signature();
+  static const int kSignatureFieldNumber = 1;
+  const ::std::string& signature() const;
+  void set_signature(const ::std::string& value);
   #if LANG_CXX11
-  void set_signature_r(::std::string&& value);
+  void set_signature(::std::string&& value);
   #endif
-  void set_signature_r(const char* value);
-  void set_signature_r(const void* value, size_t size);
-  ::std::string* mutable_signature_r();
-  ::std::string* release_signature_r();
-  void set_allocated_signature_r(::std::string* signature_r);
-
-  // optional bytes signature_s = 3;
-  bool has_signature_s() const;
-  void clear_signature_s();
-  static const int kSignatureSFieldNumber = 3;
-  const ::std::string& signature_s() const;
-  void set_signature_s(const ::std::string& value);
-  #if LANG_CXX11
-  void set_signature_s(::std::string&& value);
-  #endif
-  void set_signature_s(const char* value);
-  void set_signature_s(const void* value, size_t size);
-  ::std::string* mutable_signature_s();
-  ::std::string* release_signature_s();
-  void set_allocated_signature_s(::std::string* signature_s);
-
-  // optional uint32 signature_v = 1;
-  bool has_signature_v() const;
-  void clear_signature_v();
-  static const int kSignatureVFieldNumber = 1;
-  ::google::protobuf::uint32 signature_v() const;
-  void set_signature_v(::google::protobuf::uint32 value);
+  void set_signature(const char* value);
+  void set_signature(const char* value, size_t size);
+  ::std::string* mutable_signature();
+  ::std::string* release_signature();
+  void set_allocated_signature(::std::string* signature);
 
   // @@protoc_insertion_point(class_scope:hw.trezor.messages.eos.EosSignedTx)
  private:
@@ -4287,9 +4265,7 @@ class EosSignedTx final :
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr signature_r_;
-  ::google::protobuf::internal::ArenaStringPtr signature_s_;
-  ::google::protobuf::uint32 signature_v_;
+  ::google::protobuf::internal::ArenaStringPtr signature_;
   friend struct ::TableStruct_messages_2deos_2eproto;
 };
 // ===================================================================
@@ -7239,142 +7215,64 @@ inline void EosTxActionAck::set_allocated_unknown(::hw::trezor::messages::eos::E
 
 // EosSignedTx
 
-// optional uint32 signature_v = 1;
-inline bool EosSignedTx::has_signature_v() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-inline void EosSignedTx::clear_signature_v() {
-  signature_v_ = 0u;
-  _has_bits_[0] &= ~0x00000004u;
-}
-inline ::google::protobuf::uint32 EosSignedTx::signature_v() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.eos.EosSignedTx.signature_v)
-  return signature_v_;
-}
-inline void EosSignedTx::set_signature_v(::google::protobuf::uint32 value) {
-  _has_bits_[0] |= 0x00000004u;
-  signature_v_ = value;
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.eos.EosSignedTx.signature_v)
-}
-
-// optional bytes signature_r = 2;
-inline bool EosSignedTx::has_signature_r() const {
+// optional string signature = 1;
+inline bool EosSignedTx::has_signature() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
-inline void EosSignedTx::clear_signature_r() {
-  signature_r_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+inline void EosSignedTx::clear_signature() {
+  signature_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _has_bits_[0] &= ~0x00000001u;
 }
-inline const ::std::string& EosSignedTx::signature_r() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.eos.EosSignedTx.signature_r)
-  return signature_r_.GetNoArena();
+inline const ::std::string& EosSignedTx::signature() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.eos.EosSignedTx.signature)
+  return signature_.GetNoArena();
 }
-inline void EosSignedTx::set_signature_r(const ::std::string& value) {
+inline void EosSignedTx::set_signature(const ::std::string& value) {
   _has_bits_[0] |= 0x00000001u;
-  signature_r_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.eos.EosSignedTx.signature_r)
+  signature_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.eos.EosSignedTx.signature)
 }
 #if LANG_CXX11
-inline void EosSignedTx::set_signature_r(::std::string&& value) {
+inline void EosSignedTx::set_signature(::std::string&& value) {
   _has_bits_[0] |= 0x00000001u;
-  signature_r_.SetNoArena(
+  signature_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.eos.EosSignedTx.signature_r)
+  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.eos.EosSignedTx.signature)
 }
 #endif
-inline void EosSignedTx::set_signature_r(const char* value) {
+inline void EosSignedTx::set_signature(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   _has_bits_[0] |= 0x00000001u;
-  signature_r_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.eos.EosSignedTx.signature_r)
+  signature_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.eos.EosSignedTx.signature)
 }
-inline void EosSignedTx::set_signature_r(const void* value, size_t size) {
+inline void EosSignedTx::set_signature(const char* value, size_t size) {
   _has_bits_[0] |= 0x00000001u;
-  signature_r_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  signature_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.eos.EosSignedTx.signature_r)
+  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.eos.EosSignedTx.signature)
 }
-inline ::std::string* EosSignedTx::mutable_signature_r() {
+inline ::std::string* EosSignedTx::mutable_signature() {
   _has_bits_[0] |= 0x00000001u;
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.eos.EosSignedTx.signature_r)
-  return signature_r_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.eos.EosSignedTx.signature)
+  return signature_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::std::string* EosSignedTx::release_signature_r() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.eos.EosSignedTx.signature_r)
-  if (!has_signature_r()) {
+inline ::std::string* EosSignedTx::release_signature() {
+  // @@protoc_insertion_point(field_release:hw.trezor.messages.eos.EosSignedTx.signature)
+  if (!has_signature()) {
     return nullptr;
   }
   _has_bits_[0] &= ~0x00000001u;
-  return signature_r_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return signature_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void EosSignedTx::set_allocated_signature_r(::std::string* signature_r) {
-  if (signature_r != nullptr) {
+inline void EosSignedTx::set_allocated_signature(::std::string* signature) {
+  if (signature != nullptr) {
     _has_bits_[0] |= 0x00000001u;
   } else {
     _has_bits_[0] &= ~0x00000001u;
   }
-  signature_r_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), signature_r);
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.eos.EosSignedTx.signature_r)
-}
-
-// optional bytes signature_s = 3;
-inline bool EosSignedTx::has_signature_s() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-inline void EosSignedTx::clear_signature_s() {
-  signature_s_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _has_bits_[0] &= ~0x00000002u;
-}
-inline const ::std::string& EosSignedTx::signature_s() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.eos.EosSignedTx.signature_s)
-  return signature_s_.GetNoArena();
-}
-inline void EosSignedTx::set_signature_s(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000002u;
-  signature_s_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.eos.EosSignedTx.signature_s)
-}
-#if LANG_CXX11
-inline void EosSignedTx::set_signature_s(::std::string&& value) {
-  _has_bits_[0] |= 0x00000002u;
-  signature_s_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.eos.EosSignedTx.signature_s)
-}
-#endif
-inline void EosSignedTx::set_signature_s(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000002u;
-  signature_s_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.eos.EosSignedTx.signature_s)
-}
-inline void EosSignedTx::set_signature_s(const void* value, size_t size) {
-  _has_bits_[0] |= 0x00000002u;
-  signature_s_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.eos.EosSignedTx.signature_s)
-}
-inline ::std::string* EosSignedTx::mutable_signature_s() {
-  _has_bits_[0] |= 0x00000002u;
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.eos.EosSignedTx.signature_s)
-  return signature_s_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* EosSignedTx::release_signature_s() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.eos.EosSignedTx.signature_s)
-  if (!has_signature_s()) {
-    return nullptr;
-  }
-  _has_bits_[0] &= ~0x00000002u;
-  return signature_s_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void EosSignedTx::set_allocated_signature_s(::std::string* signature_s) {
-  if (signature_s != nullptr) {
-    _has_bits_[0] |= 0x00000002u;
-  } else {
-    _has_bits_[0] &= ~0x00000002u;
-  }
-  signature_s_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), signature_s);
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.eos.EosSignedTx.signature_s)
+  signature_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), signature);
+  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.eos.EosSignedTx.signature)
 }
 
 #ifdef __GNUC__

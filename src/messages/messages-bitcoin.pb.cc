@@ -20,9 +20,9 @@ extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::i
 extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TxRequest_TxRequestDetailsType_messages_2dbitcoin_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_TxRequest_TxRequestSerializedType_messages_2dbitcoin_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_MultisigRedeemScriptType_HDNodePathType_messages_2dbitcoin_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_MultisigRedeemScriptType_messages_2dbitcoin_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TxAck_TransactionType_TxInputType_messages_2dbitcoin_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<1> scc_info_TxAck_TransactionType_TxOutputType_messages_2dbitcoin_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<2> scc_info_MultisigRedeemScriptType_messages_2dbitcoin_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_messages_2dbitcoin_2eproto ::google::protobuf::internal::SCCInfo<3> scc_info_TxAck_TransactionType_messages_2dbitcoin_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_messages_2dcommon_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_HDNodeType_messages_2dcommon_2eproto;
 namespace hw {
@@ -131,9 +131,10 @@ static void InitDefaultsMultisigRedeemScriptType_messages_2dbitcoin_2eproto() {
   ::hw::trezor::messages::bitcoin::MultisigRedeemScriptType::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<1> scc_info_MultisigRedeemScriptType_messages_2dbitcoin_2eproto =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsMultisigRedeemScriptType_messages_2dbitcoin_2eproto}, {
-      &scc_info_MultisigRedeemScriptType_HDNodePathType_messages_2dbitcoin_2eproto.base,}};
+::google::protobuf::internal::SCCInfo<2> scc_info_MultisigRedeemScriptType_messages_2dbitcoin_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsMultisigRedeemScriptType_messages_2dbitcoin_2eproto}, {
+      &scc_info_MultisigRedeemScriptType_HDNodePathType_messages_2dbitcoin_2eproto.base,
+      &scc_info_HDNodeType_messages_2dcommon_2eproto.base,}};
 
 static void InitDefaultsGetPublicKey_messages_2dbitcoin_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -432,9 +433,13 @@ const ::google::protobuf::uint32 TableStruct_messages_2dbitcoin_2eproto::offsets
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, pubkeys_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, signatures_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, m_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, nodes_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType, address_n_),
   ~0u,
   ~0u,
   0,
+  ~0u,
+  ~0u,
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::GetPublicKey, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -530,15 +535,17 @@ const ::google::protobuf::uint32 TableStruct_messages_2dbitcoin_2eproto::offsets
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, overwintered_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, version_group_id_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::SignTx, branch_id_),
   1,
   2,
   0,
-  8,
+  9,
   3,
   4,
   5,
   6,
   7,
+  8,
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -655,6 +662,7 @@ const ::google::protobuf::uint32 TableStruct_messages_2dbitcoin_2eproto::offsets
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, overwintered_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, version_group_id_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, timestamp_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck_TransactionType, branch_id_),
   1,
   ~0u,
   ~0u,
@@ -668,6 +676,7 @@ const ::google::protobuf::uint32 TableStruct_messages_2dbitcoin_2eproto::offsets
   7,
   8,
   9,
+  10,
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::bitcoin::TxAck, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -678,23 +687,23 @@ const ::google::protobuf::uint32 TableStruct_messages_2dbitcoin_2eproto::offsets
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType_HDNodePathType)},
-  { 9, 17, sizeof(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType)},
-  { 20, 30, sizeof(::hw::trezor::messages::bitcoin::GetPublicKey)},
-  { 35, 42, sizeof(::hw::trezor::messages::bitcoin::PublicKey)},
-  { 44, 54, sizeof(::hw::trezor::messages::bitcoin::GetAddress)},
-  { 59, 65, sizeof(::hw::trezor::messages::bitcoin::Address)},
-  { 66, 75, sizeof(::hw::trezor::messages::bitcoin::SignMessage)},
-  { 79, 86, sizeof(::hw::trezor::messages::bitcoin::MessageSignature)},
-  { 88, 97, sizeof(::hw::trezor::messages::bitcoin::VerifyMessage)},
-  { 101, 115, sizeof(::hw::trezor::messages::bitcoin::SignTx)},
-  { 124, 133, sizeof(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType)},
-  { 137, 145, sizeof(::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType)},
-  { 148, 156, sizeof(::hw::trezor::messages::bitcoin::TxRequest)},
-  { 159, 176, sizeof(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType)},
-  { 188, 196, sizeof(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType)},
-  { 199, 213, sizeof(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType)},
-  { 222, 240, sizeof(::hw::trezor::messages::bitcoin::TxAck_TransactionType)},
-  { 253, 259, sizeof(::hw::trezor::messages::bitcoin::TxAck)},
+  { 9, 19, sizeof(::hw::trezor::messages::bitcoin::MultisigRedeemScriptType)},
+  { 24, 34, sizeof(::hw::trezor::messages::bitcoin::GetPublicKey)},
+  { 39, 46, sizeof(::hw::trezor::messages::bitcoin::PublicKey)},
+  { 48, 58, sizeof(::hw::trezor::messages::bitcoin::GetAddress)},
+  { 63, 69, sizeof(::hw::trezor::messages::bitcoin::Address)},
+  { 70, 79, sizeof(::hw::trezor::messages::bitcoin::SignMessage)},
+  { 83, 90, sizeof(::hw::trezor::messages::bitcoin::MessageSignature)},
+  { 92, 101, sizeof(::hw::trezor::messages::bitcoin::VerifyMessage)},
+  { 105, 120, sizeof(::hw::trezor::messages::bitcoin::SignTx)},
+  { 130, 139, sizeof(::hw::trezor::messages::bitcoin::TxRequest_TxRequestDetailsType)},
+  { 143, 151, sizeof(::hw::trezor::messages::bitcoin::TxRequest_TxRequestSerializedType)},
+  { 154, 162, sizeof(::hw::trezor::messages::bitcoin::TxRequest)},
+  { 165, 182, sizeof(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxInputType)},
+  { 194, 202, sizeof(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputBinType)},
+  { 205, 219, sizeof(::hw::trezor::messages::bitcoin::TxAck_TransactionType_TxOutputType)},
+  { 228, 247, sizeof(::hw::trezor::messages::bitcoin::TxAck_TransactionType)},
+  { 261, 267, sizeof(::hw::trezor::messages::bitcoin::TxAck)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -726,101 +735,104 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 const char descriptor_table_protodef_messages_2dbitcoin_2eproto[] =
   "\n\026messages-bitcoin.proto\022\032hw.trezor.mess"
-  "ages.bitcoin\032\025messages-common.proto\"\351\001\n\030"
+  "ages.bitcoin\032\025messages-common.proto\"\262\002\n\030"
   "MultisigRedeemScriptType\022T\n\007pubkeys\030\001 \003("
   "\0132C.hw.trezor.messages.bitcoin.MultisigR"
   "edeemScriptType.HDNodePathType\022\022\n\nsignat"
-  "ures\030\002 \003(\014\022\t\n\001m\030\003 \001(\r\032X\n\016HDNodePathType\022"
-  "3\n\004node\030\001 \002(\0132%.hw.trezor.messages.commo"
-  "n.HDNodeType\022\021\n\taddress_n\030\002 \003(\r\"\275\001\n\014GetP"
-  "ublicKey\022\021\n\taddress_n\030\001 \003(\r\022\030\n\020ecdsa_cur"
-  "ve_name\030\002 \001(\t\022\024\n\014show_display\030\003 \001(\010\022\032\n\tc"
-  "oin_name\030\004 \001(\t:\007Bitcoin\022N\n\013script_type\030\005"
-  " \001(\0162+.hw.trezor.messages.bitcoin.InputS"
-  "criptType:\014SPENDADDRESS\"N\n\tPublicKey\0223\n\004"
-  "node\030\001 \002(\0132%.hw.trezor.messages.common.H"
-  "DNodeType\022\014\n\004xpub\030\002 \001(\t\"\351\001\n\nGetAddress\022\021"
-  "\n\taddress_n\030\001 \003(\r\022\032\n\tcoin_name\030\002 \001(\t:\007Bi"
-  "tcoin\022\024\n\014show_display\030\003 \001(\010\022F\n\010multisig\030"
-  "\004 \001(\01324.hw.trezor.messages.bitcoin.Multi"
-  "sigRedeemScriptType\022N\n\013script_type\030\005 \001(\016"
-  "2+.hw.trezor.messages.bitcoin.InputScrip"
-  "tType:\014SPENDADDRESS\"\032\n\007Address\022\017\n\007addres"
-  "s\030\001 \002(\t\"\235\001\n\013SignMessage\022\021\n\taddress_n\030\001 \003"
-  "(\r\022\017\n\007message\030\002 \002(\014\022\032\n\tcoin_name\030\003 \001(\t:\007"
-  "Bitcoin\022N\n\013script_type\030\004 \001(\0162+.hw.trezor"
-  ".messages.bitcoin.InputScriptType:\014SPEND"
-  "ADDRESS\"6\n\020MessageSignature\022\017\n\007address\030\001"
-  " \001(\t\022\021\n\tsignature\030\002 \001(\014\"`\n\rVerifyMessage"
-  "\022\017\n\007address\030\001 \001(\t\022\021\n\tsignature\030\002 \001(\014\022\017\n\007"
-  "message\030\003 \001(\014\022\032\n\tcoin_name\030\004 \001(\t:\007Bitcoi"
-  "n\"\316\001\n\006SignTx\022\025\n\routputs_count\030\001 \002(\r\022\024\n\014i"
-  "nputs_count\030\002 \002(\r\022\032\n\tcoin_name\030\003 \001(\t:\007Bi"
-  "tcoin\022\022\n\007version\030\004 \001(\r:\0011\022\024\n\tlock_time\030\005"
-  " \001(\r:\0010\022\016\n\006expiry\030\006 \001(\r\022\024\n\014overwintered\030"
-  "\007 \001(\010\022\030\n\020version_group_id\030\010 \001(\r\022\021\n\ttimes"
-  "tamp\030\t \001(\r\"\234\004\n\tTxRequest\022G\n\014request_type"
-  "\030\001 \001(\01621.hw.trezor.messages.bitcoin.TxRe"
-  "quest.RequestType\022K\n\007details\030\002 \001(\0132:.hw."
-  "trezor.messages.bitcoin.TxRequest.TxRequ"
-  "estDetailsType\022Q\n\nserialized\030\003 \001(\0132=.hw."
-  "trezor.messages.bitcoin.TxRequest.TxRequ"
-  "estSerializedType\032q\n\024TxRequestDetailsTyp"
-  "e\022\025\n\rrequest_index\030\001 \001(\r\022\017\n\007tx_hash\030\002 \001("
-  "\014\022\026\n\016extra_data_len\030\003 \001(\r\022\031\n\021extra_data_"
-  "offset\030\004 \001(\r\032\\\n\027TxRequestSerializedType\022"
-  "\027\n\017signature_index\030\001 \001(\r\022\021\n\tsignature\030\002 "
-  "\001(\014\022\025\n\rserialized_tx\030\003 \001(\014\"U\n\013RequestTyp"
-  "e\022\013\n\007TXINPUT\020\000\022\014\n\010TXOUTPUT\020\001\022\n\n\006TXMETA\020\002"
-  "\022\016\n\nTXFINISHED\020\003\022\017\n\013TXEXTRADATA\020\004\"\375\013\n\005Tx"
-  "Ack\022=\n\002tx\030\001 \001(\01321.hw.trezor.messages.bit"
-  "coin.TxAck.TransactionType\032\264\013\n\017Transacti"
-  "onType\022\017\n\007version\030\001 \001(\r\022M\n\006inputs\030\002 \003(\0132"
-  "=.hw.trezor.messages.bitcoin.TxAck.Trans"
-  "actionType.TxInputType\022V\n\013bin_outputs\030\003 "
-  "\003(\0132A.hw.trezor.messages.bitcoin.TxAck.T"
-  "ransactionType.TxOutputBinType\022\021\n\tlock_t"
-  "ime\030\004 \001(\r\022O\n\007outputs\030\005 \003(\0132>.hw.trezor.m"
-  "essages.bitcoin.TxAck.TransactionType.Tx"
-  "OutputType\022\022\n\ninputs_cnt\030\006 \001(\r\022\023\n\013output"
-  "s_cnt\030\007 \001(\r\022\022\n\nextra_data\030\010 \001(\014\022\026\n\016extra"
-  "_data_len\030\t \001(\r\022\016\n\006expiry\030\n \001(\r\022\024\n\014overw"
-  "intered\030\013 \001(\010\022\030\n\020version_group_id\030\014 \001(\r\022"
-  "\021\n\ttimestamp\030\r \001(\r\032\227\003\n\013TxInputType\022\021\n\tad"
-  "dress_n\030\001 \003(\r\022\021\n\tprev_hash\030\002 \002(\014\022\022\n\nprev"
-  "_index\030\003 \002(\r\022\022\n\nscript_sig\030\004 \001(\014\022\034\n\010sequ"
-  "ence\030\005 \001(\r:\n4294967295\022N\n\013script_type\030\006 "
-  "\001(\0162+.hw.trezor.messages.bitcoin.InputSc"
-  "riptType:\014SPENDADDRESS\022F\n\010multisig\030\007 \001(\013"
-  "24.hw.trezor.messages.bitcoin.MultisigRe"
-  "deemScriptType\022\016\n\006amount\030\010 \001(\004\022\023\n\013decred"
-  "_tree\030\t \001(\r\022\035\n\025decred_script_version\030\n \001"
-  "(\r\022\036\n\026prev_block_hash_bip115\030\013 \001(\014\022 \n\030pr"
-  "ev_block_height_bip115\030\014 \001(\r\032W\n\017TxOutput"
-  "BinType\022\016\n\006amount\030\001 \002(\004\022\025\n\rscript_pubkey"
-  "\030\002 \002(\014\022\035\n\025decred_script_version\030\003 \001(\r\032\351\003"
-  "\n\014TxOutputType\022\017\n\007address\030\001 \001(\t\022\021\n\taddre"
-  "ss_n\030\002 \003(\r\022\016\n\006amount\030\003 \002(\004\022d\n\013script_typ"
-  "e\030\004 \002(\0162O.hw.trezor.messages.bitcoin.TxA"
-  "ck.TransactionType.TxOutputType.OutputSc"
-  "riptType\022F\n\010multisig\030\005 \001(\01324.hw.trezor.m"
-  "essages.bitcoin.MultisigRedeemScriptType"
-  "\022\026\n\016op_return_data\030\006 \001(\014\022\035\n\025decred_scrip"
-  "t_version\030\007 \001(\r\022\031\n\021block_hash_bip115\030\010 \001"
-  "(\014\022\033\n\023block_height_bip115\030\t \001(\r\"\207\001\n\020Outp"
-  "utScriptType\022\020\n\014PAYTOADDRESS\020\000\022\023\n\017PAYTOS"
-  "CRIPTHASH\020\001\022\021\n\rPAYTOMULTISIG\020\002\022\021\n\rPAYTOO"
-  "PRETURN\020\003\022\020\n\014PAYTOWITNESS\020\004\022\024\n\020PAYTOP2SH"
-  "WITNESS\020\005*l\n\017InputScriptType\022\020\n\014SPENDADD"
-  "RESS\020\000\022\021\n\rSPENDMULTISIG\020\001\022\014\n\010EXTERNAL\020\002\022"
-  "\020\n\014SPENDWITNESS\020\003\022\024\n\020SPENDP2SHWITNESS\020\004B"
-  ";\n#com.satoshilabs.trezor.lib.protobufB\024"
-  "TrezorMessageBitcoin"
+  "ures\030\002 \003(\014\022\t\n\001m\030\003 \001(\r\0224\n\005nodes\030\004 \003(\0132%.h"
+  "w.trezor.messages.common.HDNodeType\022\021\n\ta"
+  "ddress_n\030\005 \003(\r\032X\n\016HDNodePathType\0223\n\004node"
+  "\030\001 \002(\0132%.hw.trezor.messages.common.HDNod"
+  "eType\022\021\n\taddress_n\030\002 \003(\r\"\275\001\n\014GetPublicKe"
+  "y\022\021\n\taddress_n\030\001 \003(\r\022\030\n\020ecdsa_curve_name"
+  "\030\002 \001(\t\022\024\n\014show_display\030\003 \001(\010\022\032\n\tcoin_nam"
+  "e\030\004 \001(\t:\007Bitcoin\022N\n\013script_type\030\005 \001(\0162+."
+  "hw.trezor.messages.bitcoin.InputScriptTy"
+  "pe:\014SPENDADDRESS\"N\n\tPublicKey\0223\n\004node\030\001 "
+  "\001(\0132%.hw.trezor.messages.common.HDNodeTy"
+  "pe\022\014\n\004xpub\030\002 \001(\t\"\351\001\n\nGetAddress\022\021\n\taddre"
+  "ss_n\030\001 \003(\r\022\032\n\tcoin_name\030\002 \001(\t:\007Bitcoin\022\024"
+  "\n\014show_display\030\003 \001(\010\022F\n\010multisig\030\004 \001(\01324"
+  ".hw.trezor.messages.bitcoin.MultisigRede"
+  "emScriptType\022N\n\013script_type\030\005 \001(\0162+.hw.t"
+  "rezor.messages.bitcoin.InputScriptType:\014"
+  "SPENDADDRESS\"\032\n\007Address\022\017\n\007address\030\001 \002(\t"
+  "\"\235\001\n\013SignMessage\022\021\n\taddress_n\030\001 \003(\r\022\017\n\007m"
+  "essage\030\002 \002(\014\022\032\n\tcoin_name\030\003 \001(\t:\007Bitcoin"
+  "\022N\n\013script_type\030\004 \001(\0162+.hw.trezor.messag"
+  "es.bitcoin.InputScriptType:\014SPENDADDRESS"
+  "\"6\n\020MessageSignature\022\017\n\007address\030\001 \001(\t\022\021\n"
+  "\tsignature\030\002 \001(\014\"`\n\rVerifyMessage\022\017\n\007add"
+  "ress\030\001 \001(\t\022\021\n\tsignature\030\002 \001(\014\022\017\n\007message"
+  "\030\003 \001(\014\022\032\n\tcoin_name\030\004 \001(\t:\007Bitcoin\"\341\001\n\006S"
+  "ignTx\022\025\n\routputs_count\030\001 \002(\r\022\024\n\014inputs_c"
+  "ount\030\002 \002(\r\022\032\n\tcoin_name\030\003 \001(\t:\007Bitcoin\022\022"
+  "\n\007version\030\004 \001(\r:\0011\022\024\n\tlock_time\030\005 \001(\r:\0010"
+  "\022\016\n\006expiry\030\006 \001(\r\022\024\n\014overwintered\030\007 \001(\010\022\030"
+  "\n\020version_group_id\030\010 \001(\r\022\021\n\ttimestamp\030\t "
+  "\001(\r\022\021\n\tbranch_id\030\n \001(\r\"\234\004\n\tTxRequest\022G\n\014"
+  "request_type\030\001 \001(\01621.hw.trezor.messages."
+  "bitcoin.TxRequest.RequestType\022K\n\007details"
+  "\030\002 \001(\0132:.hw.trezor.messages.bitcoin.TxRe"
+  "quest.TxRequestDetailsType\022Q\n\nserialized"
+  "\030\003 \001(\0132=.hw.trezor.messages.bitcoin.TxRe"
+  "quest.TxRequestSerializedType\032q\n\024TxReque"
+  "stDetailsType\022\025\n\rrequest_index\030\001 \001(\r\022\017\n\007"
+  "tx_hash\030\002 \001(\014\022\026\n\016extra_data_len\030\003 \001(\r\022\031\n"
+  "\021extra_data_offset\030\004 \001(\r\032\\\n\027TxRequestSer"
+  "ializedType\022\027\n\017signature_index\030\001 \001(\r\022\021\n\t"
+  "signature\030\002 \001(\014\022\025\n\rserialized_tx\030\003 \001(\014\"U"
+  "\n\013RequestType\022\013\n\007TXINPUT\020\000\022\014\n\010TXOUTPUT\020\001"
+  "\022\n\n\006TXMETA\020\002\022\016\n\nTXFINISHED\020\003\022\017\n\013TXEXTRAD"
+  "ATA\020\004\"\220\014\n\005TxAck\022=\n\002tx\030\001 \001(\01321.hw.trezor."
+  "messages.bitcoin.TxAck.TransactionType\032\307"
+  "\013\n\017TransactionType\022\017\n\007version\030\001 \001(\r\022M\n\006i"
+  "nputs\030\002 \003(\0132=.hw.trezor.messages.bitcoin"
+  ".TxAck.TransactionType.TxInputType\022V\n\013bi"
+  "n_outputs\030\003 \003(\0132A.hw.trezor.messages.bit"
+  "coin.TxAck.TransactionType.TxOutputBinTy"
+  "pe\022\021\n\tlock_time\030\004 \001(\r\022O\n\007outputs\030\005 \003(\0132>"
+  ".hw.trezor.messages.bitcoin.TxAck.Transa"
+  "ctionType.TxOutputType\022\022\n\ninputs_cnt\030\006 \001"
+  "(\r\022\023\n\013outputs_cnt\030\007 \001(\r\022\022\n\nextra_data\030\010 "
+  "\001(\014\022\026\n\016extra_data_len\030\t \001(\r\022\016\n\006expiry\030\n "
+  "\001(\r\022\024\n\014overwintered\030\013 \001(\010\022\030\n\020version_gro"
+  "up_id\030\014 \001(\r\022\021\n\ttimestamp\030\r \001(\r\022\021\n\tbranch"
+  "_id\030\016 \001(\r\032\227\003\n\013TxInputType\022\021\n\taddress_n\030\001"
+  " \003(\r\022\021\n\tprev_hash\030\002 \002(\014\022\022\n\nprev_index\030\003 "
+  "\002(\r\022\022\n\nscript_sig\030\004 \001(\014\022\034\n\010sequence\030\005 \001("
+  "\r:\n4294967295\022N\n\013script_type\030\006 \001(\0162+.hw."
+  "trezor.messages.bitcoin.InputScriptType:"
+  "\014SPENDADDRESS\022F\n\010multisig\030\007 \001(\01324.hw.tre"
+  "zor.messages.bitcoin.MultisigRedeemScrip"
+  "tType\022\016\n\006amount\030\010 \001(\004\022\023\n\013decred_tree\030\t \001"
+  "(\r\022\035\n\025decred_script_version\030\n \001(\r\022\036\n\026pre"
+  "v_block_hash_bip115\030\013 \001(\014\022 \n\030prev_block_"
+  "height_bip115\030\014 \001(\r\032W\n\017TxOutputBinType\022\016"
+  "\n\006amount\030\001 \002(\004\022\025\n\rscript_pubkey\030\002 \002(\014\022\035\n"
+  "\025decred_script_version\030\003 \001(\r\032\351\003\n\014TxOutpu"
+  "tType\022\017\n\007address\030\001 \001(\t\022\021\n\taddress_n\030\002 \003("
+  "\r\022\016\n\006amount\030\003 \002(\004\022d\n\013script_type\030\004 \002(\0162O"
+  ".hw.trezor.messages.bitcoin.TxAck.Transa"
+  "ctionType.TxOutputType.OutputScriptType\022"
+  "F\n\010multisig\030\005 \001(\01324.hw.trezor.messages.b"
+  "itcoin.MultisigRedeemScriptType\022\026\n\016op_re"
+  "turn_data\030\006 \001(\014\022\035\n\025decred_script_version"
+  "\030\007 \001(\r\022\031\n\021block_hash_bip115\030\010 \001(\014\022\033\n\023blo"
+  "ck_height_bip115\030\t \001(\r\"\207\001\n\020OutputScriptT"
+  "ype\022\020\n\014PAYTOADDRESS\020\000\022\023\n\017PAYTOSCRIPTHASH"
+  "\020\001\022\021\n\rPAYTOMULTISIG\020\002\022\021\n\rPAYTOOPRETURN\020\003"
+  "\022\020\n\014PAYTOWITNESS\020\004\022\024\n\020PAYTOP2SHWITNESS\020\005"
+  "*l\n\017InputScriptType\022\020\n\014SPENDADDRESS\020\000\022\021\n"
+  "\rSPENDMULTISIG\020\001\022\014\n\010EXTERNAL\020\002\022\020\n\014SPENDW"
+  "ITNESS\020\003\022\024\n\020SPENDP2SHWITNESS\020\004B;\n#com.sa"
+  "toshilabs.trezor.lib.protobufB\024TrezorMes"
+  "sageBitcoin"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dbitcoin_2eproto = {
   false, InitDefaults_messages_2dbitcoin_2eproto, 
   descriptor_table_protodef_messages_2dbitcoin_2eproto,
-  "messages-bitcoin.proto", &assign_descriptors_table_messages_2dbitcoin_2eproto, 3620,
+  "messages-bitcoin.proto", &assign_descriptors_table_messages_2dbitcoin_2eproto, 3731,
 };
 
 void AddDescriptors_messages_2dbitcoin_2eproto() {
@@ -1285,10 +1297,15 @@ class MultisigRedeemScriptType::HasBitSetters {
   }
 };
 
+void MultisigRedeemScriptType::clear_nodes() {
+  nodes_.Clear();
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int MultisigRedeemScriptType::kPubkeysFieldNumber;
 const int MultisigRedeemScriptType::kSignaturesFieldNumber;
 const int MultisigRedeemScriptType::kMFieldNumber;
+const int MultisigRedeemScriptType::kNodesFieldNumber;
+const int MultisigRedeemScriptType::kAddressNFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 MultisigRedeemScriptType::MultisigRedeemScriptType()
@@ -1301,7 +1318,9 @@ MultisigRedeemScriptType::MultisigRedeemScriptType(const MultisigRedeemScriptTyp
       _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       pubkeys_(from.pubkeys_),
-      signatures_(from.signatures_) {
+      signatures_(from.signatures_),
+      nodes_(from.nodes_),
+      address_n_(from.address_n_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   m_ = from.m_;
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.bitcoin.MultisigRedeemScriptType)
@@ -1338,6 +1357,8 @@ void MultisigRedeemScriptType::Clear() {
 
   pubkeys_.Clear();
   signatures_.Clear();
+  nodes_.Clear();
+  address_n_.Clear();
   m_ = 0u;
   _has_bits_.Clear();
   _internal_metadata_.Clear();
@@ -1395,6 +1416,42 @@ const char* MultisigRedeemScriptType::_InternalParse(const char* begin, const ch
         if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
         msg->set_m(::google::protobuf::internal::ReadVarint(&ptr));
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated .hw.trezor.messages.common.HDNodeType nodes = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          parser_till_end = ::hw::trezor::messages::common::HDNodeType::_InternalParse;
+          object = msg->add_nodes();
+          if (size > end - ptr) goto len_delim_till_end;
+          ptr += size;
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+              {parser_till_end, object}, ptr - size, ptr));
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 34 && (ptr += 1));
+        break;
+      }
+      // repeated uint32 address_n = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 40) {
+          do {
+            msg->add_address_n(::google::protobuf::internal::ReadVarint(&ptr));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 40 && (ptr += 1));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::google::protobuf::internal::PackedUInt32Parser;
+        object = msg->mutable_address_n();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
         break;
       }
       default: {
@@ -1466,6 +1523,33 @@ bool MultisigRedeemScriptType::MergePartialFromCodedStream(
         break;
       }
 
+      // repeated .hw.trezor.messages.common.HDNodeType nodes = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+                input, add_nodes()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated uint32 address_n = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 1, 40u, input, this->mutable_address_n())));
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitiveNoInline<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, this->mutable_address_n())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -1514,6 +1598,21 @@ void MultisigRedeemScriptType::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->m(), output);
   }
 
+  // repeated .hw.trezor.messages.common.HDNodeType nodes = 4;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->nodes_size()); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4,
+      this->nodes(static_cast<int>(i)),
+      output);
+  }
+
+  // repeated uint32 address_n = 5;
+  for (int i = 0, n = this->address_n_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(
+      5, this->address_n(i), output);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -1546,6 +1645,18 @@ void MultisigRedeemScriptType::SerializeWithCachedSizes(
   if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->m(), target);
   }
+
+  // repeated .hw.trezor.messages.common.HDNodeType nodes = 4;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->nodes_size()); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        4, this->nodes(static_cast<int>(i)), target);
+  }
+
+  // repeated uint32 address_n = 5;
+  target = ::google::protobuf::internal::WireFormatLite::
+    WriteUInt32ToArray(5, this->address_n_, target);
 
   if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
@@ -1587,6 +1698,26 @@ size_t MultisigRedeemScriptType::ByteSizeLong() const {
       this->signatures(i));
   }
 
+  // repeated .hw.trezor.messages.common.HDNodeType nodes = 4;
+  {
+    unsigned int count = static_cast<unsigned int>(this->nodes_size());
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          this->nodes(static_cast<int>(i)));
+    }
+  }
+
+  // repeated uint32 address_n = 5;
+  {
+    size_t data_size = ::google::protobuf::internal::WireFormatLite::
+      UInt32Size(this->address_n_);
+    total_size += 1 *
+                  ::google::protobuf::internal::FromIntSize(this->address_n_size());
+    total_size += data_size;
+  }
+
   // optional uint32 m = 3;
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
@@ -1624,6 +1755,8 @@ void MultisigRedeemScriptType::MergeFrom(const MultisigRedeemScriptType& from) {
 
   pubkeys_.MergeFrom(from.pubkeys_);
   signatures_.MergeFrom(from.signatures_);
+  nodes_.MergeFrom(from.nodes_);
+  address_n_.MergeFrom(from.address_n_);
   if (from.has_m()) {
     set_m(from.m());
   }
@@ -1645,6 +1778,7 @@ void MultisigRedeemScriptType::CopyFrom(const MultisigRedeemScriptType& from) {
 
 bool MultisigRedeemScriptType::IsInitialized() const {
   if (!::google::protobuf::internal::AllAreInitialized(this->pubkeys())) return false;
+  if (!::google::protobuf::internal::AllAreInitialized(this->nodes())) return false;
   return true;
 }
 
@@ -1658,6 +1792,8 @@ void MultisigRedeemScriptType::InternalSwap(MultisigRedeemScriptType* other) {
   swap(_has_bits_[0], other->_has_bits_[0]);
   CastToBase(&pubkeys_)->InternalSwap(CastToBase(&other->pubkeys_));
   signatures_.InternalSwap(CastToBase(&other->signatures_));
+  CastToBase(&nodes_)->InternalSwap(CastToBase(&other->nodes_));
+  address_n_.InternalSwap(&other->address_n_);
   swap(m_, other->m_);
 }
 
@@ -2345,7 +2481,7 @@ const char* PublicKey::_InternalParse(const char* begin, const char* end, void* 
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // required .hw.trezor.messages.common.HDNodeType node = 1;
+      // optional .hw.trezor.messages.common.HDNodeType node = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
@@ -2408,7 +2544,7 @@ bool PublicKey::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // required .hw.trezor.messages.common.HDNodeType node = 1;
+      // optional .hw.trezor.messages.common.HDNodeType node = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
@@ -2462,7 +2598,7 @@ void PublicKey::SerializeWithCachedSizes(
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  // required .hw.trezor.messages.common.HDNodeType node = 1;
+  // optional .hw.trezor.messages.common.HDNodeType node = 1;
   if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, HasBitSetters::node(this), output);
@@ -2492,7 +2628,7 @@ void PublicKey::SerializeWithCachedSizes(
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  // required .hw.trezor.messages.common.HDNodeType node = 1;
+  // optional .hw.trezor.messages.common.HDNodeType node = 1;
   if (cached_has_bits & 0x00000002u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
@@ -2527,24 +2663,27 @@ size_t PublicKey::ByteSizeLong() const {
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         _internal_metadata_.unknown_fields());
   }
-  // required .hw.trezor.messages.common.HDNodeType node = 1;
-  if (has_node()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *node_);
-  }
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // optional string xpub = 2;
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000001u) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->xpub());
-  }
+  if (cached_has_bits & 0x00000003u) {
+    // optional string xpub = 2;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->xpub());
+    }
 
+    // optional .hw.trezor.messages.common.HDNodeType node = 1;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *node_);
+    }
+
+  }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2599,7 +2738,6 @@ void PublicKey::CopyFrom(const PublicKey& from) {
 }
 
 bool PublicKey::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
   if (has_node()) {
     if (!this->node_->IsInitialized()) return false;
   }
@@ -4919,7 +5057,7 @@ class SignTx::HasBitSetters {
     msg->_has_bits_[0] |= 0x00000001u;
   }
   static void set_has_version(SignTx* msg) {
-    msg->_has_bits_[0] |= 0x00000100u;
+    msg->_has_bits_[0] |= 0x00000200u;
   }
   static void set_has_lock_time(SignTx* msg) {
     msg->_has_bits_[0] |= 0x00000008u;
@@ -4936,6 +5074,9 @@ class SignTx::HasBitSetters {
   static void set_has_timestamp(SignTx* msg) {
     msg->_has_bits_[0] |= 0x00000080u;
   }
+  static void set_has_branch_id(SignTx* msg) {
+    msg->_has_bits_[0] |= 0x00000100u;
+  }
 };
 
 ::google::protobuf::internal::ExplicitlyConstructed<::std::string> SignTx::_i_give_permission_to_break_this_code_default_coin_name_;
@@ -4949,6 +5090,7 @@ const int SignTx::kExpiryFieldNumber;
 const int SignTx::kOverwinteredFieldNumber;
 const int SignTx::kVersionGroupIdFieldNumber;
 const int SignTx::kTimestampFieldNumber;
+const int SignTx::kBranchIdFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 SignTx::SignTx()
@@ -4976,8 +5118,8 @@ void SignTx::SharedCtor() {
       &scc_info_SignTx_messages_2dbitcoin_2eproto.base);
   coin_name_.UnsafeSetDefault(&::hw::trezor::messages::bitcoin::SignTx::_i_give_permission_to_break_this_code_default_coin_name_.get());
   ::memset(&outputs_count_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&timestamp_) -
-      reinterpret_cast<char*>(&outputs_count_)) + sizeof(timestamp_));
+      reinterpret_cast<char*>(&branch_id_) -
+      reinterpret_cast<char*>(&outputs_count_)) + sizeof(branch_id_));
   version_ = 1u;
 }
 
@@ -5014,7 +5156,10 @@ void SignTx::Clear() {
         reinterpret_cast<char*>(&timestamp_) -
         reinterpret_cast<char*>(&outputs_count_)) + sizeof(timestamp_));
   }
-  version_ = 1u;
+  if (cached_has_bits & 0x00000300u) {
+    branch_id_ = 0u;
+    version_ = 1u;
+  }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
@@ -5101,6 +5246,13 @@ const char* SignTx::_InternalParse(const char* begin, const char* end, void* obj
       case 9: {
         if (static_cast<::google::protobuf::uint8>(tag) != 72) goto handle_unusual;
         msg->set_timestamp(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 branch_id = 10;
+      case 10: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 80) goto handle_unusual;
+        msg->set_branch_id(::google::protobuf::internal::ReadVarint(&ptr));
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
@@ -5257,6 +5409,19 @@ bool SignTx::MergePartialFromCodedStream(
         break;
       }
 
+      // optional uint32 branch_id = 10;
+      case 10: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (80 & 0xFF)) {
+          HasBitSetters::set_has_branch_id(this);
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &branch_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -5306,7 +5471,7 @@ void SignTx::SerializeWithCachedSizes(
   }
 
   // optional uint32 version = 4 [default = 1];
-  if (cached_has_bits & 0x00000100u) {
+  if (cached_has_bits & 0x00000200u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(4, this->version(), output);
   }
 
@@ -5333,6 +5498,11 @@ void SignTx::SerializeWithCachedSizes(
   // optional uint32 timestamp = 9;
   if (cached_has_bits & 0x00000080u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(9, this->timestamp(), output);
+  }
+
+  // optional uint32 branch_id = 10;
+  if (cached_has_bits & 0x00000100u) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(10, this->branch_id(), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -5371,7 +5541,7 @@ void SignTx::SerializeWithCachedSizes(
   }
 
   // optional uint32 version = 4 [default = 1];
-  if (cached_has_bits & 0x00000100u) {
+  if (cached_has_bits & 0x00000200u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(4, this->version(), target);
   }
 
@@ -5398,6 +5568,11 @@ void SignTx::SerializeWithCachedSizes(
   // optional uint32 timestamp = 9;
   if (cached_has_bits & 0x00000080u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(9, this->timestamp(), target);
+  }
+
+  // optional uint32 branch_id = 10;
+  if (cached_has_bits & 0x00000100u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(10, this->branch_id(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -5498,13 +5673,22 @@ size_t SignTx::ByteSizeLong() const {
     }
 
   }
-  // optional uint32 version = 4 [default = 1];
-  if (cached_has_bits & 0x00000100u) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->version());
-  }
+  if (cached_has_bits & 0x00000300u) {
+    // optional uint32 branch_id = 10;
+    if (cached_has_bits & 0x00000100u) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->branch_id());
+    }
 
+    // optional uint32 version = 4 [default = 1];
+    if (cached_has_bits & 0x00000200u) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->version());
+    }
+
+  }
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -5561,8 +5745,14 @@ void SignTx::MergeFrom(const SignTx& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 0x00000100u) {
-    set_version(from.version());
+  if (cached_has_bits & 0x00000300u) {
+    if (cached_has_bits & 0x00000100u) {
+      branch_id_ = from.branch_id_;
+    }
+    if (cached_has_bits & 0x00000200u) {
+      version_ = from.version_;
+    }
+    _has_bits_[0] |= cached_has_bits;
   }
 }
 
@@ -5602,6 +5792,7 @@ void SignTx::InternalSwap(SignTx* other) {
   swap(overwintered_, other->overwintered_);
   swap(version_group_id_, other->version_group_id_);
   swap(timestamp_, other->timestamp_);
+  swap(branch_id_, other->branch_id_);
   swap(version_, other->version_);
 }
 
@@ -9112,6 +9303,9 @@ class TxAck_TransactionType::HasBitSetters {
   static void set_has_timestamp(TxAck_TransactionType* msg) {
     msg->_has_bits_[0] |= 0x00000200u;
   }
+  static void set_has_branch_id(TxAck_TransactionType* msg) {
+    msg->_has_bits_[0] |= 0x00000400u;
+  }
 };
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -9128,6 +9322,7 @@ const int TxAck_TransactionType::kExpiryFieldNumber;
 const int TxAck_TransactionType::kOverwinteredFieldNumber;
 const int TxAck_TransactionType::kVersionGroupIdFieldNumber;
 const int TxAck_TransactionType::kTimestampFieldNumber;
+const int TxAck_TransactionType::kBranchIdFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 TxAck_TransactionType::TxAck_TransactionType()
@@ -9148,8 +9343,8 @@ TxAck_TransactionType::TxAck_TransactionType(const TxAck_TransactionType& from)
     extra_data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.extra_data_);
   }
   ::memcpy(&version_, &from.version_,
-    static_cast<size_t>(reinterpret_cast<char*>(&timestamp_) -
-    reinterpret_cast<char*>(&version_)) + sizeof(timestamp_));
+    static_cast<size_t>(reinterpret_cast<char*>(&branch_id_) -
+    reinterpret_cast<char*>(&version_)) + sizeof(branch_id_));
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.bitcoin.TxAck.TransactionType)
 }
 
@@ -9158,8 +9353,8 @@ void TxAck_TransactionType::SharedCtor() {
       &scc_info_TxAck_TransactionType_messages_2dbitcoin_2eproto.base);
   extra_data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&version_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&timestamp_) -
-      reinterpret_cast<char*>(&version_)) + sizeof(timestamp_));
+      reinterpret_cast<char*>(&branch_id_) -
+      reinterpret_cast<char*>(&version_)) + sizeof(branch_id_));
 }
 
 TxAck_TransactionType::~TxAck_TransactionType() {
@@ -9198,10 +9393,10 @@ void TxAck_TransactionType::Clear() {
         reinterpret_cast<char*>(&overwintered_) -
         reinterpret_cast<char*>(&version_)) + sizeof(overwintered_));
   }
-  if (cached_has_bits & 0x00000300u) {
+  if (cached_has_bits & 0x00000700u) {
     ::memset(&version_group_id_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&timestamp_) -
-        reinterpret_cast<char*>(&version_group_id_)) + sizeof(timestamp_));
+        reinterpret_cast<char*>(&branch_id_) -
+        reinterpret_cast<char*>(&version_group_id_)) + sizeof(branch_id_));
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
@@ -9343,6 +9538,13 @@ const char* TxAck_TransactionType::_InternalParse(const char* begin, const char*
       case 13: {
         if (static_cast<::google::protobuf::uint8>(tag) != 104) goto handle_unusual;
         msg->set_timestamp(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 branch_id = 14;
+      case 14: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 112) goto handle_unusual;
+        msg->set_branch_id(::google::protobuf::internal::ReadVarint(&ptr));
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
@@ -9541,6 +9743,19 @@ bool TxAck_TransactionType::MergePartialFromCodedStream(
         break;
       }
 
+      // optional uint32 branch_id = 14;
+      case 14: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (112 & 0xFF)) {
+          HasBitSetters::set_has_branch_id(this);
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &branch_id_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -9647,6 +9862,11 @@ void TxAck_TransactionType::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(13, this->timestamp(), output);
   }
 
+  // optional uint32 branch_id = 14;
+  if (cached_has_bits & 0x00000400u) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(14, this->branch_id(), output);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -9735,6 +9955,11 @@ void TxAck_TransactionType::SerializeWithCachedSizes(
   // optional uint32 timestamp = 13;
   if (cached_has_bits & 0x00000200u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(13, this->timestamp(), target);
+  }
+
+  // optional uint32 branch_id = 14;
+  if (cached_has_bits & 0x00000400u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(14, this->branch_id(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -9848,7 +10073,7 @@ size_t TxAck_TransactionType::ByteSizeLong() const {
     }
 
   }
-  if (cached_has_bits & 0x00000300u) {
+  if (cached_has_bits & 0x00000700u) {
     // optional uint32 version_group_id = 12;
     if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
@@ -9861,6 +10086,13 @@ size_t TxAck_TransactionType::ByteSizeLong() const {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->timestamp());
+    }
+
+    // optional uint32 branch_id = 14;
+    if (cached_has_bits & 0x00000400u) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->branch_id());
     }
 
   }
@@ -9923,12 +10155,15 @@ void TxAck_TransactionType::MergeFrom(const TxAck_TransactionType& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 0x00000300u) {
+  if (cached_has_bits & 0x00000700u) {
     if (cached_has_bits & 0x00000100u) {
       version_group_id_ = from.version_group_id_;
     }
     if (cached_has_bits & 0x00000200u) {
       timestamp_ = from.timestamp_;
+    }
+    if (cached_has_bits & 0x00000400u) {
+      branch_id_ = from.branch_id_;
     }
     _has_bits_[0] |= cached_has_bits;
   }
@@ -9977,6 +10212,7 @@ void TxAck_TransactionType::InternalSwap(TxAck_TransactionType* other) {
   swap(overwintered_, other->overwintered_);
   swap(version_group_id_, other->version_group_id_);
   swap(timestamp_, other->timestamp_);
+  swap(branch_id_, other->branch_id_);
 }
 
 ::google::protobuf::Metadata TxAck_TransactionType::GetMetadata() const {

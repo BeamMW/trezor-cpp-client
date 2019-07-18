@@ -1172,6 +1172,13 @@ class ApplySettings final :
   ::google::protobuf::uint32 auto_lock_delay_ms() const;
   void set_auto_lock_delay_ms(::google::protobuf::uint32 value);
 
+  // optional uint32 display_rotation = 7;
+  bool has_display_rotation() const;
+  void clear_display_rotation();
+  static const int kDisplayRotationFieldNumber = 7;
+  ::google::protobuf::uint32 display_rotation() const;
+  void set_display_rotation(::google::protobuf::uint32 value);
+
   // @@protoc_insertion_point(class_scope:hw.trezor.messages.management.ApplySettings)
  private:
   class HasBitSetters;
@@ -1185,6 +1192,7 @@ class ApplySettings final :
   bool use_passphrase_;
   int passphrase_source_;
   ::google::protobuf::uint32 auto_lock_delay_ms_;
+  ::google::protobuf::uint32 display_rotation_;
   friend struct ::TableStruct_messages_2dmanagement_2eproto;
 };
 // -------------------------------------------------------------------
@@ -2448,6 +2456,13 @@ class ResetDevice final :
   bool no_backup() const;
   void set_no_backup(bool value);
 
+  // optional bool slip39 = 10;
+  bool has_slip39() const;
+  void clear_slip39();
+  static const int kSlip39FieldNumber = 10;
+  bool slip39() const;
+  void set_slip39(bool value);
+
   // optional uint32 strength = 2 [default = 256];
   bool has_strength() const;
   void clear_strength();
@@ -2473,6 +2488,7 @@ class ResetDevice final :
   bool skip_backup_;
   ::google::protobuf::uint32 u2f_counter_;
   bool no_backup_;
+  bool slip39_;
   ::google::protobuf::uint32 strength_;
   friend struct ::TableStruct_messages_2dmanagement_2eproto;
 };
@@ -4664,6 +4680,24 @@ inline void ApplySettings::set_auto_lock_delay_ms(::google::protobuf::uint32 val
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.ApplySettings.auto_lock_delay_ms)
 }
 
+// optional uint32 display_rotation = 7;
+inline bool ApplySettings::has_display_rotation() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+inline void ApplySettings::clear_display_rotation() {
+  display_rotation_ = 0u;
+  _has_bits_[0] &= ~0x00000040u;
+}
+inline ::google::protobuf::uint32 ApplySettings::display_rotation() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.ApplySettings.display_rotation)
+  return display_rotation_;
+}
+inline void ApplySettings::set_display_rotation(::google::protobuf::uint32 value) {
+  _has_bits_[0] |= 0x00000040u;
+  display_rotation_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.ApplySettings.display_rotation)
+}
+
 // -------------------------------------------------------------------
 
 // ApplyFlags
@@ -5287,18 +5321,18 @@ inline void ResetDevice::set_display_random(bool value) {
 
 // optional uint32 strength = 2 [default = 256];
 inline bool ResetDevice::has_strength() const {
-  return (_has_bits_[0] & 0x00000100u) != 0;
+  return (_has_bits_[0] & 0x00000200u) != 0;
 }
 inline void ResetDevice::clear_strength() {
   strength_ = 256u;
-  _has_bits_[0] &= ~0x00000100u;
+  _has_bits_[0] &= ~0x00000200u;
 }
 inline ::google::protobuf::uint32 ResetDevice::strength() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.management.ResetDevice.strength)
   return strength_;
 }
 inline void ResetDevice::set_strength(::google::protobuf::uint32 value) {
-  _has_bits_[0] |= 0x00000100u;
+  _has_bits_[0] |= 0x00000200u;
   strength_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.ResetDevice.strength)
 }
@@ -5511,6 +5545,24 @@ inline void ResetDevice::set_no_backup(bool value) {
   _has_bits_[0] |= 0x00000080u;
   no_backup_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.ResetDevice.no_backup)
+}
+
+// optional bool slip39 = 10;
+inline bool ResetDevice::has_slip39() const {
+  return (_has_bits_[0] & 0x00000100u) != 0;
+}
+inline void ResetDevice::clear_slip39() {
+  slip39_ = false;
+  _has_bits_[0] &= ~0x00000100u;
+}
+inline bool ResetDevice::slip39() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.ResetDevice.slip39)
+  return slip39_;
+}
+inline void ResetDevice::set_slip39(bool value) {
+  _has_bits_[0] |= 0x00000100u;
+  slip39_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.ResetDevice.slip39)
 }
 
 // -------------------------------------------------------------------

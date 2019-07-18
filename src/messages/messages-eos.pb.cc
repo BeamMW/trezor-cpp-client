@@ -939,12 +939,8 @@ const ::google::protobuf::uint32 TableStruct_messages_2deos_2eproto::offsets[] P
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignedTx, signature_v_),
-  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignedTx, signature_r_),
-  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignedTx, signature_s_),
-  2,
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::eos::EosSignedTx, signature_),
   0,
-  1,
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::hw::trezor::messages::eos::EosGetPublicKey)},
@@ -974,7 +970,7 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SE
   { 264, 273, sizeof(::hw::trezor::messages::eos::EosTxActionAck_EosActionNewAccount)},
   { 277, 284, sizeof(::hw::trezor::messages::eos::EosTxActionAck_EosActionUnknown)},
   { 286, 306, sizeof(::hw::trezor::messages::eos::EosTxActionAck)},
-  { 321, 329, sizeof(::hw::trezor::messages::eos::EosSignedTx)},
+  { 321, 327, sizeof(::hw::trezor::messages::eos::EosSignedTx)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -1114,15 +1110,14 @@ const char descriptor_table_protodef_messages_2deos_2eproto[] =
   "uthorization\022G\n\006active\030\004 \001(\01327.hw.trezor"
   ".messages.eos.EosTxActionAck.EosAuthoriz"
   "ation\0329\n\020EosActionUnknown\022\021\n\tdata_size\030\001"
-  " \001(\r\022\022\n\ndata_chunk\030\002 \001(\014\"L\n\013EosSignedTx\022"
-  "\023\n\013signature_v\030\001 \001(\r\022\023\n\013signature_r\030\002 \001("
-  "\014\022\023\n\013signature_s\030\003 \001(\014B7\n#com.satoshilab"
-  "s.trezor.lib.protobufB\020TrezorMessageEos"
+  " \001(\r\022\022\n\ndata_chunk\030\002 \001(\014\" \n\013EosSignedTx\022"
+  "\021\n\tsignature\030\001 \001(\tB7\n#com.satoshilabs.tr"
+  "ezor.lib.protobufB\020TrezorMessageEos"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_messages_2deos_2eproto = {
   false, InitDefaults_messages_2deos_2eproto, 
   descriptor_table_protodef_messages_2deos_2eproto,
-  "messages-eos.proto", &assign_descriptors_table_messages_2deos_2eproto, 4119,
+  "messages-eos.proto", &assign_descriptors_table_messages_2deos_2eproto, 4075,
 };
 
 void AddDescriptors_messages_2deos_2eproto() {
@@ -12725,21 +12720,13 @@ void EosSignedTx::InitAsDefaultInstance() {
 }
 class EosSignedTx::HasBitSetters {
  public:
-  static void set_has_signature_v(EosSignedTx* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
-  }
-  static void set_has_signature_r(EosSignedTx* msg) {
+  static void set_has_signature(EosSignedTx* msg) {
     msg->_has_bits_[0] |= 0x00000001u;
-  }
-  static void set_has_signature_s(EosSignedTx* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
   }
 };
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int EosSignedTx::kSignatureVFieldNumber;
-const int EosSignedTx::kSignatureRFieldNumber;
-const int EosSignedTx::kSignatureSFieldNumber;
+const int EosSignedTx::kSignatureFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 EosSignedTx::EosSignedTx()
@@ -12752,24 +12739,17 @@ EosSignedTx::EosSignedTx(const EosSignedTx& from)
       _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  signature_r_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_signature_r()) {
-    signature_r_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_r_);
+  signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.has_signature()) {
+    signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
   }
-  signature_s_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_signature_s()) {
-    signature_s_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_s_);
-  }
-  signature_v_ = from.signature_v_;
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.eos.EosSignedTx)
 }
 
 void EosSignedTx::SharedCtor() {
   ::google::protobuf::internal::InitSCC(
       &scc_info_EosSignedTx_messages_2deos_2eproto.base);
-  signature_r_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  signature_s_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  signature_v_ = 0u;
+  signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 EosSignedTx::~EosSignedTx() {
@@ -12778,8 +12758,7 @@ EosSignedTx::~EosSignedTx() {
 }
 
 void EosSignedTx::SharedDtor() {
-  signature_r_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  signature_s_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  signature_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 void EosSignedTx::SetCachedSize(int size) const {
@@ -12798,15 +12777,9 @@ void EosSignedTx::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000003u) {
-    if (cached_has_bits & 0x00000001u) {
-      signature_r_.ClearNonDefaultToEmptyNoArena();
-    }
-    if (cached_has_bits & 0x00000002u) {
-      signature_s_.ClearNonDefaultToEmptyNoArena();
-    }
+  if (cached_has_bits & 0x00000001u) {
+    signature_.ClearNonDefaultToEmptyNoArena();
   }
-  signature_v_ = 0u;
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
@@ -12824,39 +12797,18 @@ const char* EosSignedTx::_InternalParse(const char* begin, const char* end, void
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // optional uint32 signature_v = 1;
+      // optional string signature = 1;
       case 1: {
-        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
-        msg->set_signature_v(::google::protobuf::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
-      // optional bytes signature_r = 2;
-      case 2: {
-        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
         ptr = ::google::protobuf::io::ReadSize(ptr, &size);
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        object = msg->mutable_signature_r();
+        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.eos.EosSignedTx.signature");
+        object = msg->mutable_signature();
         if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
-          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
           goto string_till_end;
         }
-        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
-        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
-        ptr += size;
-        break;
-      }
-      // optional bytes signature_s = 3;
-      case 3: {
-        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
-        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        object = msg->mutable_signature_s();
-        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
-          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
-          goto string_till_end;
-        }
-        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
         ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
         ptr += size;
         break;
@@ -12895,35 +12847,15 @@ bool EosSignedTx::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional uint32 signature_v = 1;
+      // optional string signature = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_signature_v(this);
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &signature_v_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bytes signature_r = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
-                input, this->mutable_signature_r()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional bytes signature_s = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
-                input, this->mutable_signature_s()));
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_signature()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->signature().data(), static_cast<int>(this->signature().length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "hw.trezor.messages.eos.EosSignedTx.signature");
         } else {
           goto handle_unusual;
         }
@@ -12958,21 +12890,14 @@ void EosSignedTx::SerializeWithCachedSizes(
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  // optional uint32 signature_v = 1;
-  if (cached_has_bits & 0x00000004u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->signature_v(), output);
-  }
-
-  // optional bytes signature_r = 2;
+  // optional string signature = 1;
   if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
-      2, this->signature_r(), output);
-  }
-
-  // optional bytes signature_s = 3;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
-      3, this->signature_s(), output);
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->signature().data(), static_cast<int>(this->signature().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "hw.trezor.messages.eos.EosSignedTx.signature");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->signature(), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -12989,23 +12914,15 @@ void EosSignedTx::SerializeWithCachedSizes(
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  // optional uint32 signature_v = 1;
-  if (cached_has_bits & 0x00000004u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->signature_v(), target);
-  }
-
-  // optional bytes signature_r = 2;
+  // optional string signature = 1;
   if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->signature().data(), static_cast<int>(this->signature().length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "hw.trezor.messages.eos.EosSignedTx.signature");
     target =
-      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        2, this->signature_r(), target);
-  }
-
-  // optional bytes signature_s = 3;
-  if (cached_has_bits & 0x00000002u) {
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
-        3, this->signature_s(), target);
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        1, this->signature(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -13029,30 +12946,14 @@ size_t EosSignedTx::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  // optional string signature = 1;
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000007u) {
-    // optional bytes signature_r = 2;
-    if (cached_has_bits & 0x00000001u) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::BytesSize(
-          this->signature_r());
-    }
-
-    // optional bytes signature_s = 3;
-    if (cached_has_bits & 0x00000002u) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::BytesSize(
-          this->signature_s());
-    }
-
-    // optional uint32 signature_v = 1;
-    if (cached_has_bits & 0x00000004u) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::UInt32Size(
-          this->signature_v());
-    }
-
+  if (cached_has_bits & 0x00000001u) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->signature());
   }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -13080,20 +12981,9 @@ void EosSignedTx::MergeFrom(const EosSignedTx& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 0x00000007u) {
-    if (cached_has_bits & 0x00000001u) {
-      _has_bits_[0] |= 0x00000001u;
-      signature_r_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_r_);
-    }
-    if (cached_has_bits & 0x00000002u) {
-      _has_bits_[0] |= 0x00000002u;
-      signature_s_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_s_);
-    }
-    if (cached_has_bits & 0x00000004u) {
-      signature_v_ = from.signature_v_;
-    }
-    _has_bits_[0] |= cached_has_bits;
+  if (from.has_signature()) {
+    _has_bits_[0] |= 0x00000001u;
+    signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
   }
 }
 
@@ -13123,11 +13013,8 @@ void EosSignedTx::InternalSwap(EosSignedTx* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  signature_r_.Swap(&other->signature_r_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
-  signature_s_.Swap(&other->signature_s_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(signature_v_, other->signature_v_);
 }
 
 ::google::protobuf::Metadata EosSignedTx::GetMetadata() const {
