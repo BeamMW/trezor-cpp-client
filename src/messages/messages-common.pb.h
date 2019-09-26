@@ -155,11 +155,14 @@ enum ButtonRequest_ButtonRequestType {
   ButtonRequest_ButtonRequestType_ButtonRequest_MnemonicWordCount = 12,
   ButtonRequest_ButtonRequestType_ButtonRequest_MnemonicInput = 13,
   ButtonRequest_ButtonRequestType_ButtonRequest_PassphraseType = 14,
-  ButtonRequest_ButtonRequestType_ButtonRequest_UnknownDerivationPath = 15
+  ButtonRequest_ButtonRequestType_ButtonRequest_UnknownDerivationPath = 15,
+  ButtonRequest_ButtonRequestType_ButtonRequest_RecoveryHomepage = 16,
+  ButtonRequest_ButtonRequestType_ButtonRequest_Success = 17,
+  ButtonRequest_ButtonRequestType_ButtonRequest_Warning = 18
 };
 bool ButtonRequest_ButtonRequestType_IsValid(int value);
 const ButtonRequest_ButtonRequestType ButtonRequest_ButtonRequestType_ButtonRequestType_MIN = ButtonRequest_ButtonRequestType_ButtonRequest_Other;
-const ButtonRequest_ButtonRequestType ButtonRequest_ButtonRequestType_ButtonRequestType_MAX = ButtonRequest_ButtonRequestType_ButtonRequest_UnknownDerivationPath;
+const ButtonRequest_ButtonRequestType ButtonRequest_ButtonRequestType_ButtonRequestType_MAX = ButtonRequest_ButtonRequestType_ButtonRequest_Warning;
 const int ButtonRequest_ButtonRequestType_ButtonRequestType_ARRAYSIZE = ButtonRequest_ButtonRequestType_ButtonRequestType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* ButtonRequest_ButtonRequestType_descriptor();
@@ -639,6 +642,12 @@ class ButtonRequest final :
     ButtonRequest_ButtonRequestType_ButtonRequest_PassphraseType;
   static const ButtonRequestType ButtonRequest_UnknownDerivationPath =
     ButtonRequest_ButtonRequestType_ButtonRequest_UnknownDerivationPath;
+  static const ButtonRequestType ButtonRequest_RecoveryHomepage =
+    ButtonRequest_ButtonRequestType_ButtonRequest_RecoveryHomepage;
+  static const ButtonRequestType ButtonRequest_Success =
+    ButtonRequest_ButtonRequestType_ButtonRequest_Success;
+  static const ButtonRequestType ButtonRequest_Warning =
+    ButtonRequest_ButtonRequestType_ButtonRequest_Warning;
   static inline bool ButtonRequestType_IsValid(int value) {
     return ButtonRequest_ButtonRequestType_IsValid(value);
   }

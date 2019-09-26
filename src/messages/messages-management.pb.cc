@@ -49,6 +49,10 @@ class ChangePinDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<ChangePin> _instance;
 } _ChangePin_default_instance_;
+class SdProtectDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<SdProtect> _instance;
+} _SdProtect_default_instance_;
 class PingDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<Ping> _instance;
@@ -206,6 +210,20 @@ static void InitDefaultsChangePin_messages_2dmanagement_2eproto() {
 
 ::google::protobuf::internal::SCCInfo<0> scc_info_ChangePin_messages_2dmanagement_2eproto =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsChangePin_messages_2dmanagement_2eproto}, {}};
+
+static void InitDefaultsSdProtect_messages_2dmanagement_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::hw::trezor::messages::management::_SdProtect_default_instance_;
+    new (ptr) ::hw::trezor::messages::management::SdProtect();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::hw::trezor::messages::management::SdProtect::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_SdProtect_messages_2dmanagement_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsSdProtect_messages_2dmanagement_2eproto}, {}};
 
 static void InitDefaultsPing_messages_2dmanagement_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -424,6 +442,7 @@ void InitDefaults_messages_2dmanagement_2eproto() {
   ::google::protobuf::internal::InitSCC(&scc_info_ApplySettings_messages_2dmanagement_2eproto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_ApplyFlags_messages_2dmanagement_2eproto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_ChangePin_messages_2dmanagement_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_SdProtect_messages_2dmanagement_2eproto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_Ping_messages_2dmanagement_2eproto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_Cancel_messages_2dmanagement_2eproto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_GetEntropy_messages_2dmanagement_2eproto.base);
@@ -440,8 +459,8 @@ void InitDefaults_messages_2dmanagement_2eproto() {
   ::google::protobuf::internal::InitSCC(&scc_info_SetU2FCounter_messages_2dmanagement_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata_messages_2dmanagement_2eproto[21];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors_messages_2dmanagement_2eproto[3];
+::google::protobuf::Metadata file_level_metadata_messages_2dmanagement_2eproto[22];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors_messages_2dmanagement_2eproto[6];
 constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2dmanagement_2eproto = nullptr;
 
 const ::google::protobuf::uint32 TableStruct_messages_2dmanagement_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
@@ -491,6 +510,9 @@ const ::google::protobuf::uint32 TableStruct_messages_2dmanagement_2eproto::offs
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::Features, fw_vendor_keys_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::Features, unfinished_backup_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::Features, no_backup_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::Features, recovery_mode_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::Features, capabilities_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::Features, backup_type_),
   0,
   9,
   10,
@@ -518,6 +540,9 @@ const ::google::protobuf::uint32 TableStruct_messages_2dmanagement_2eproto::offs
   8,
   25,
   26,
+  27,
+  ~0u,
+  28,
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::ClearSession, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::ClearSession, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -555,6 +580,13 @@ const ::google::protobuf::uint32 TableStruct_messages_2dmanagement_2eproto::offs
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::ChangePin, remove_),
+  0,
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::SdProtect, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::SdProtect, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::SdProtect, operation_),
   0,
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::Ping, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::Ping, _internal_metadata_),
@@ -598,7 +630,7 @@ const ::google::protobuf::uint32 TableStruct_messages_2dmanagement_2eproto::offs
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::LoadDevice, mnemonic_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::LoadDevice, mnemonics_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::LoadDevice, node_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::LoadDevice, pin_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::LoadDevice, passphrase_protection_),
@@ -606,14 +638,14 @@ const ::google::protobuf::uint32 TableStruct_messages_2dmanagement_2eproto::offs
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::LoadDevice, label_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::LoadDevice, skip_checksum_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::LoadDevice, u2f_counter_),
+  ~0u,
+  3,
   0,
   4,
   1,
-  5,
   2,
-  3,
+  5,
   6,
-  7,
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::ResetDevice, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::ResetDevice, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -628,7 +660,7 @@ const ::google::protobuf::uint32 TableStruct_messages_2dmanagement_2eproto::offs
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::ResetDevice, u2f_counter_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::ResetDevice, skip_backup_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::ResetDevice, no_backup_),
-  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::ResetDevice, slip39_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::management::ResetDevice, backup_type_),
   2,
   9,
   3,
@@ -704,25 +736,26 @@ const ::google::protobuf::uint32 TableStruct_messages_2dmanagement_2eproto::offs
 static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::hw::trezor::messages::management::Initialize)},
   { 9, 14, sizeof(::hw::trezor::messages::management::GetFeatures)},
-  { 14, 46, sizeof(::hw::trezor::messages::management::Features)},
-  { 73, 78, sizeof(::hw::trezor::messages::management::ClearSession)},
-  { 78, 90, sizeof(::hw::trezor::messages::management::ApplySettings)},
-  { 97, 103, sizeof(::hw::trezor::messages::management::ApplyFlags)},
-  { 104, 110, sizeof(::hw::trezor::messages::management::ChangePin)},
-  { 111, 120, sizeof(::hw::trezor::messages::management::Ping)},
-  { 124, 129, sizeof(::hw::trezor::messages::management::Cancel)},
-  { 129, 135, sizeof(::hw::trezor::messages::management::GetEntropy)},
-  { 136, 142, sizeof(::hw::trezor::messages::management::Entropy)},
-  { 143, 148, sizeof(::hw::trezor::messages::management::WipeDevice)},
-  { 148, 161, sizeof(::hw::trezor::messages::management::LoadDevice)},
-  { 169, 184, sizeof(::hw::trezor::messages::management::ResetDevice)},
-  { 194, 199, sizeof(::hw::trezor::messages::management::BackupDevice)},
-  { 199, 204, sizeof(::hw::trezor::messages::management::EntropyRequest)},
-  { 204, 210, sizeof(::hw::trezor::messages::management::EntropyAck)},
-  { 211, 225, sizeof(::hw::trezor::messages::management::RecoveryDevice)},
-  { 234, 240, sizeof(::hw::trezor::messages::management::WordRequest)},
-  { 241, 247, sizeof(::hw::trezor::messages::management::WordAck)},
-  { 248, 254, sizeof(::hw::trezor::messages::management::SetU2FCounter)},
+  { 14, 49, sizeof(::hw::trezor::messages::management::Features)},
+  { 79, 84, sizeof(::hw::trezor::messages::management::ClearSession)},
+  { 84, 96, sizeof(::hw::trezor::messages::management::ApplySettings)},
+  { 103, 109, sizeof(::hw::trezor::messages::management::ApplyFlags)},
+  { 110, 116, sizeof(::hw::trezor::messages::management::ChangePin)},
+  { 117, 123, sizeof(::hw::trezor::messages::management::SdProtect)},
+  { 124, 133, sizeof(::hw::trezor::messages::management::Ping)},
+  { 137, 142, sizeof(::hw::trezor::messages::management::Cancel)},
+  { 142, 148, sizeof(::hw::trezor::messages::management::GetEntropy)},
+  { 149, 155, sizeof(::hw::trezor::messages::management::Entropy)},
+  { 156, 161, sizeof(::hw::trezor::messages::management::WipeDevice)},
+  { 161, 174, sizeof(::hw::trezor::messages::management::LoadDevice)},
+  { 182, 197, sizeof(::hw::trezor::messages::management::ResetDevice)},
+  { 207, 212, sizeof(::hw::trezor::messages::management::BackupDevice)},
+  { 212, 217, sizeof(::hw::trezor::messages::management::EntropyRequest)},
+  { 217, 223, sizeof(::hw::trezor::messages::management::EntropyAck)},
+  { 224, 238, sizeof(::hw::trezor::messages::management::RecoveryDevice)},
+  { 247, 253, sizeof(::hw::trezor::messages::management::WordRequest)},
+  { 254, 260, sizeof(::hw::trezor::messages::management::WordAck)},
+  { 261, 267, sizeof(::hw::trezor::messages::management::SetU2FCounter)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -733,6 +766,7 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::management::_ApplySettings_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::management::_ApplyFlags_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::management::_ChangePin_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::management::_SdProtect_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::management::_Ping_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::management::_Cancel_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::management::_GetEntropy_default_instance_),
@@ -752,14 +786,14 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 ::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2dmanagement_2eproto = {
   {}, AddDescriptors_messages_2dmanagement_2eproto, "messages-management.proto", schemas,
   file_default_instances, TableStruct_messages_2dmanagement_2eproto::offsets,
-  file_level_metadata_messages_2dmanagement_2eproto, 21, file_level_enum_descriptors_messages_2dmanagement_2eproto, file_level_service_descriptors_messages_2dmanagement_2eproto,
+  file_level_metadata_messages_2dmanagement_2eproto, 22, file_level_enum_descriptors_messages_2dmanagement_2eproto, file_level_service_descriptors_messages_2dmanagement_2eproto,
 };
 
 const char descriptor_table_protodef_messages_2dmanagement_2eproto[] =
   "\n\031messages-management.proto\022\035hw.trezor.m"
   "essages.management\032\025messages-common.prot"
   "o\"4\n\nInitialize\022\r\n\005state\030\001 \001(\014\022\027\n\017skip_p"
-  "assphrase\030\002 \001(\010\"\r\n\013GetFeatures\"\301\004\n\010Featu"
+  "assphrase\030\002 \001(\010\"\r\n\013GetFeatures\"\374\010\n\010Featu"
   "res\022\016\n\006vendor\030\001 \001(\t\022\025\n\rmajor_version\030\002 \001"
   "(\r\022\025\n\rminor_version\030\003 \001(\r\022\025\n\rpatch_versi"
   "on\030\004 \001(\r\022\027\n\017bootloader_mode\030\005 \001(\010\022\021\n\tdev"
@@ -774,56 +808,77 @@ const char descriptor_table_protodef_messages_2dmanagement_2eproto[] =
   "\026 \001(\r\022\020\n\010fw_minor\030\027 \001(\r\022\020\n\010fw_patch\030\030 \001("
   "\r\022\021\n\tfw_vendor\030\031 \001(\t\022\026\n\016fw_vendor_keys\030\032"
   " \001(\014\022\031\n\021unfinished_backup\030\033 \001(\010\022\021\n\tno_ba"
-  "ckup\030\034 \001(\010\"\016\n\014ClearSession\"\247\002\n\rApplySett"
-  "ings\022\020\n\010language\030\001 \001(\t\022\r\n\005label\030\002 \001(\t\022\026\n"
-  "\016use_passphrase\030\003 \001(\010\022\022\n\nhomescreen\030\004 \001("
-  "\014\022\\\n\021passphrase_source\030\005 \001(\0162A.hw.trezor"
-  ".messages.management.ApplySettings.Passp"
-  "hraseSourceType\022\032\n\022auto_lock_delay_ms\030\006 "
-  "\001(\r\022\030\n\020display_rotation\030\007 \001(\r\"5\n\024Passphr"
-  "aseSourceType\022\007\n\003ASK\020\000\022\n\n\006DEVICE\020\001\022\010\n\004HO"
-  "ST\020\002\"\033\n\nApplyFlags\022\r\n\005flags\030\001 \001(\r\"\033\n\tCha"
-  "ngePin\022\016\n\006remove\030\001 \001(\010\"i\n\004Ping\022\017\n\007messag"
-  "e\030\001 \001(\t\022\031\n\021button_protection\030\002 \001(\010\022\026\n\016pi"
-  "n_protection\030\003 \001(\010\022\035\n\025passphrase_protect"
-  "ion\030\004 \001(\010\"\010\n\006Cancel\"\032\n\nGetEntropy\022\014\n\004siz"
-  "e\030\001 \002(\r\"\032\n\007Entropy\022\017\n\007entropy\030\001 \002(\014\"\014\n\nW"
-  "ipeDevice\"\325\001\n\nLoadDevice\022\020\n\010mnemonic\030\001 \001"
-  "(\t\0223\n\004node\030\002 \001(\0132%.hw.trezor.messages.co"
-  "mmon.HDNodeType\022\013\n\003pin\030\003 \001(\t\022\035\n\025passphra"
-  "se_protection\030\004 \001(\010\022\031\n\010language\030\005 \001(\t:\007e"
-  "nglish\022\r\n\005label\030\006 \001(\t\022\025\n\rskip_checksum\030\007"
-  " \001(\010\022\023\n\013u2f_counter\030\010 \001(\r\"\352\001\n\013ResetDevic"
-  "e\022\026\n\016display_random\030\001 \001(\010\022\025\n\010strength\030\002 "
-  "\001(\r:\003256\022\035\n\025passphrase_protection\030\003 \001(\010\022"
-  "\026\n\016pin_protection\030\004 \001(\010\022\031\n\010language\030\005 \001("
-  "\t:\007english\022\r\n\005label\030\006 \001(\t\022\023\n\013u2f_counter"
-  "\030\007 \001(\r\022\023\n\013skip_backup\030\010 \001(\010\022\021\n\tno_backup"
-  "\030\t \001(\010\022\016\n\006slip39\030\n \001(\010\"\016\n\014BackupDevice\"\020"
-  "\n\016EntropyRequest\"\035\n\nEntropyAck\022\017\n\007entrop"
-  "y\030\001 \001(\014\"\361\002\n\016RecoveryDevice\022\022\n\nword_count"
-  "\030\001 \001(\r\022\035\n\025passphrase_protection\030\002 \001(\010\022\026\n"
-  "\016pin_protection\030\003 \001(\010\022\031\n\010language\030\004 \001(\t:"
-  "\007english\022\r\n\005label\030\005 \001(\t\022\030\n\020enforce_wordl"
-  "ist\030\006 \001(\010\022N\n\004type\030\010 \001(\0162@.hw.trezor.mess"
-  "ages.management.RecoveryDevice.RecoveryD"
-  "eviceType\022\023\n\013u2f_counter\030\t \001(\r\022\017\n\007dry_ru"
-  "n\030\n \001(\010\"Z\n\022RecoveryDeviceType\022%\n!Recover"
-  "yDeviceType_ScrambledWords\020\000\022\035\n\031Recovery"
-  "DeviceType_Matrix\020\001\"\277\001\n\013WordRequest\022H\n\004t"
-  "ype\030\001 \001(\0162:.hw.trezor.messages.managemen"
-  "t.WordRequest.WordRequestType\"f\n\017WordReq"
-  "uestType\022\031\n\025WordRequestType_Plain\020\000\022\033\n\027W"
-  "ordRequestType_Matrix9\020\001\022\033\n\027WordRequestT"
-  "ype_Matrix6\020\002\"\027\n\007WordAck\022\014\n\004word\030\001 \002(\t\"$"
-  "\n\rSetU2FCounter\022\023\n\013u2f_counter\030\001 \001(\rB>\n#"
-  "com.satoshilabs.trezor.lib.protobufB\027Tre"
-  "zorMessageManagement"
+  "ckup\030\034 \001(\010\022\025\n\rrecovery_mode\030\035 \001(\010\022H\n\014cap"
+  "abilities\030\036 \003(\01622.hw.trezor.messages.man"
+  "agement.Features.Capability\022>\n\013backup_ty"
+  "pe\030\037 \001(\0162).hw.trezor.messages.management"
+  ".BackupType\"\227\003\n\nCapability\022\026\n\022Capability"
+  "_Bitcoin\020\001\022\033\n\027Capability_Bitcoin_like\020\002\022"
+  "\026\n\022Capability_Binance\020\003\022\026\n\022Capability_Ca"
+  "rdano\020\004\022\025\n\021Capability_Crypto\020\005\022\022\n\016Capabi"
+  "lity_EOS\020\006\022\027\n\023Capability_Ethereum\020\007\022\023\n\017C"
+  "apability_Lisk\020\010\022\025\n\021Capability_Monero\020\t\022"
+  "\022\n\016Capability_NEM\020\n\022\025\n\021Capability_Ripple"
+  "\020\013\022\026\n\022Capability_Stellar\020\014\022\024\n\020Capability"
+  "_Tezos\020\r\022\022\n\016Capability_U2F\020\016\022\023\n\017Capabili"
+  "ty_Beam\020\021\022\025\n\021Capability_Shamir\020\017\022\033\n\027Capa"
+  "bility_ShamirGroups\020\020\"\016\n\014ClearSession\"\247\002"
+  "\n\rApplySettings\022\020\n\010language\030\001 \001(\t\022\r\n\005lab"
+  "el\030\002 \001(\t\022\026\n\016use_passphrase\030\003 \001(\010\022\022\n\nhome"
+  "screen\030\004 \001(\014\022\\\n\021passphrase_source\030\005 \001(\0162"
+  "A.hw.trezor.messages.management.ApplySet"
+  "tings.PassphraseSourceType\022\032\n\022auto_lock_"
+  "delay_ms\030\006 \001(\r\022\030\n\020display_rotation\030\007 \001(\r"
+  "\"5\n\024PassphraseSourceType\022\007\n\003ASK\020\000\022\n\n\006DEV"
+  "ICE\020\001\022\010\n\004HOST\020\002\"\033\n\nApplyFlags\022\r\n\005flags\030\001"
+  " \001(\r\"\033\n\tChangePin\022\016\n\006remove\030\001 \001(\010\"\237\001\n\tSd"
+  "Protect\022R\n\toperation\030\001 \001(\0162\?.hw.trezor.m"
+  "essages.management.SdProtect.SdProtectOp"
+  "erationType\">\n\026SdProtectOperationType\022\013\n"
+  "\007DISABLE\020\000\022\n\n\006ENABLE\020\001\022\013\n\007REFRESH\020\002\"i\n\004P"
+  "ing\022\017\n\007message\030\001 \001(\t\022\031\n\021button_protectio"
+  "n\030\002 \001(\010\022\026\n\016pin_protection\030\003 \001(\010\022\035\n\025passp"
+  "hrase_protection\030\004 \001(\010\"\010\n\006Cancel\"\032\n\nGetE"
+  "ntropy\022\014\n\004size\030\001 \002(\r\"\032\n\007Entropy\022\017\n\007entro"
+  "py\030\001 \002(\014\"\014\n\nWipeDevice\"\326\001\n\nLoadDevice\022\021\n"
+  "\tmnemonics\030\001 \003(\t\0223\n\004node\030\002 \001(\0132%.hw.trez"
+  "or.messages.common.HDNodeType\022\013\n\003pin\030\003 \001"
+  "(\t\022\035\n\025passphrase_protection\030\004 \001(\010\022\031\n\010lan"
+  "guage\030\005 \001(\t:\007english\022\r\n\005label\030\006 \001(\t\022\025\n\rs"
+  "kip_checksum\030\007 \001(\010\022\023\n\013u2f_counter\030\010 \001(\r\""
+  "\241\002\n\013ResetDevice\022\026\n\016display_random\030\001 \001(\010\022"
+  "\025\n\010strength\030\002 \001(\r:\003256\022\035\n\025passphrase_pro"
+  "tection\030\003 \001(\010\022\026\n\016pin_protection\030\004 \001(\010\022\031\n"
+  "\010language\030\005 \001(\t:\007english\022\r\n\005label\030\006 \001(\t\022"
+  "\023\n\013u2f_counter\030\007 \001(\r\022\023\n\013skip_backup\030\010 \001("
+  "\010\022\021\n\tno_backup\030\t \001(\010\022E\n\013backup_type\030\n \001("
+  "\0162).hw.trezor.messages.management.Backup"
+  "Type:\005Bip39\"\016\n\014BackupDevice\"\020\n\016EntropyRe"
+  "quest\"\035\n\nEntropyAck\022\017\n\007entropy\030\001 \001(\014\"\361\002\n"
+  "\016RecoveryDevice\022\022\n\nword_count\030\001 \001(\r\022\035\n\025p"
+  "assphrase_protection\030\002 \001(\010\022\026\n\016pin_protec"
+  "tion\030\003 \001(\010\022\031\n\010language\030\004 \001(\t:\007english\022\r\n"
+  "\005label\030\005 \001(\t\022\030\n\020enforce_wordlist\030\006 \001(\010\022N"
+  "\n\004type\030\010 \001(\0162@.hw.trezor.messages.manage"
+  "ment.RecoveryDevice.RecoveryDeviceType\022\023"
+  "\n\013u2f_counter\030\t \001(\r\022\017\n\007dry_run\030\n \001(\010\"Z\n\022"
+  "RecoveryDeviceType\022%\n!RecoveryDeviceType"
+  "_ScrambledWords\020\000\022\035\n\031RecoveryDeviceType_"
+  "Matrix\020\001\"\277\001\n\013WordRequest\022H\n\004type\030\001 \001(\0162:"
+  ".hw.trezor.messages.management.WordReque"
+  "st.WordRequestType\"f\n\017WordRequestType\022\031\n"
+  "\025WordRequestType_Plain\020\000\022\033\n\027WordRequestT"
+  "ype_Matrix9\020\001\022\033\n\027WordRequestType_Matrix6"
+  "\020\002\"\027\n\007WordAck\022\014\n\004word\030\001 \002(\t\"$\n\rSetU2FCou"
+  "nter\022\023\n\013u2f_counter\030\001 \001(\r*>\n\nBackupType\022"
+  "\t\n\005Bip39\020\000\022\020\n\014Slip39_Basic\020\001\022\023\n\017Slip39_A"
+  "dvanced\020\002B>\n#com.satoshilabs.trezor.lib."
+  "protobufB\027TrezorMessageManagement"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dmanagement_2eproto = {
   false, InitDefaults_messages_2dmanagement_2eproto, 
   descriptor_table_protodef_messages_2dmanagement_2eproto,
-  "messages-management.proto", &assign_descriptors_table_messages_2dmanagement_2eproto, 2500,
+  "messages-management.proto", &assign_descriptors_table_messages_2dmanagement_2eproto, 3353,
 };
 
 void AddDescriptors_messages_2dmanagement_2eproto() {
@@ -840,9 +895,60 @@ namespace hw {
 namespace trezor {
 namespace messages {
 namespace management {
-const ::google::protobuf::EnumDescriptor* ApplySettings_PassphraseSourceType_descriptor() {
+const ::google::protobuf::EnumDescriptor* Features_Capability_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dmanagement_2eproto);
   return file_level_enum_descriptors_messages_2dmanagement_2eproto[0];
+}
+bool Features_Capability_IsValid(int value) {
+  switch (value) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const Features_Capability Features::Capability_Bitcoin;
+const Features_Capability Features::Capability_Bitcoin_like;
+const Features_Capability Features::Capability_Binance;
+const Features_Capability Features::Capability_Cardano;
+const Features_Capability Features::Capability_Crypto;
+const Features_Capability Features::Capability_EOS;
+const Features_Capability Features::Capability_Ethereum;
+const Features_Capability Features::Capability_Lisk;
+const Features_Capability Features::Capability_Monero;
+const Features_Capability Features::Capability_NEM;
+const Features_Capability Features::Capability_Ripple;
+const Features_Capability Features::Capability_Stellar;
+const Features_Capability Features::Capability_Tezos;
+const Features_Capability Features::Capability_U2F;
+const Features_Capability Features::Capability_Beam;
+const Features_Capability Features::Capability_Shamir;
+const Features_Capability Features::Capability_ShamirGroups;
+const Features_Capability Features::Capability_MIN;
+const Features_Capability Features::Capability_MAX;
+const int Features::Capability_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+const ::google::protobuf::EnumDescriptor* ApplySettings_PassphraseSourceType_descriptor() {
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dmanagement_2eproto);
+  return file_level_enum_descriptors_messages_2dmanagement_2eproto[1];
 }
 bool ApplySettings_PassphraseSourceType_IsValid(int value) {
   switch (value) {
@@ -863,9 +969,32 @@ const ApplySettings_PassphraseSourceType ApplySettings::PassphraseSourceType_MIN
 const ApplySettings_PassphraseSourceType ApplySettings::PassphraseSourceType_MAX;
 const int ApplySettings::PassphraseSourceType_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+const ::google::protobuf::EnumDescriptor* SdProtect_SdProtectOperationType_descriptor() {
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dmanagement_2eproto);
+  return file_level_enum_descriptors_messages_2dmanagement_2eproto[2];
+}
+bool SdProtect_SdProtectOperationType_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const SdProtect_SdProtectOperationType SdProtect::DISABLE;
+const SdProtect_SdProtectOperationType SdProtect::ENABLE;
+const SdProtect_SdProtectOperationType SdProtect::REFRESH;
+const SdProtect_SdProtectOperationType SdProtect::SdProtectOperationType_MIN;
+const SdProtect_SdProtectOperationType SdProtect::SdProtectOperationType_MAX;
+const int SdProtect::SdProtectOperationType_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* RecoveryDevice_RecoveryDeviceType_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dmanagement_2eproto);
-  return file_level_enum_descriptors_messages_2dmanagement_2eproto[1];
+  return file_level_enum_descriptors_messages_2dmanagement_2eproto[3];
 }
 bool RecoveryDevice_RecoveryDeviceType_IsValid(int value) {
   switch (value) {
@@ -886,7 +1015,7 @@ const int RecoveryDevice::RecoveryDeviceType_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* WordRequest_WordRequestType_descriptor() {
   ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dmanagement_2eproto);
-  return file_level_enum_descriptors_messages_2dmanagement_2eproto[2];
+  return file_level_enum_descriptors_messages_2dmanagement_2eproto[4];
 }
 bool WordRequest_WordRequestType_IsValid(int value) {
   switch (value) {
@@ -907,6 +1036,21 @@ const WordRequest_WordRequestType WordRequest::WordRequestType_MIN;
 const WordRequest_WordRequestType WordRequest::WordRequestType_MAX;
 const int WordRequest::WordRequestType_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+const ::google::protobuf::EnumDescriptor* BackupType_descriptor() {
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2dmanagement_2eproto);
+  return file_level_enum_descriptors_messages_2dmanagement_2eproto[5];
+}
+bool BackupType_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
 
 // ===================================================================
 
@@ -1555,6 +1699,12 @@ class Features::HasBitSetters {
   static void set_has_no_backup(Features* msg) {
     msg->_has_bits_[0] |= 0x04000000u;
   }
+  static void set_has_recovery_mode(Features* msg) {
+    msg->_has_bits_[0] |= 0x08000000u;
+  }
+  static void set_has_backup_type(Features* msg) {
+    msg->_has_bits_[0] |= 0x10000000u;
+  }
 };
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -1585,6 +1735,9 @@ const int Features::kFwVendorFieldNumber;
 const int Features::kFwVendorKeysFieldNumber;
 const int Features::kUnfinishedBackupFieldNumber;
 const int Features::kNoBackupFieldNumber;
+const int Features::kRecoveryModeFieldNumber;
+const int Features::kCapabilitiesFieldNumber;
+const int Features::kBackupTypeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Features::Features()
@@ -1595,7 +1748,8 @@ Features::Features()
 Features::Features(const Features& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(nullptr),
-      _has_bits_(from._has_bits_) {
+      _has_bits_(from._has_bits_),
+      capabilities_(from.capabilities_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   vendor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.has_vendor()) {
@@ -1634,8 +1788,8 @@ Features::Features(const Features& from)
     fw_vendor_keys_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.fw_vendor_keys_);
   }
   ::memcpy(&major_version_, &from.major_version_,
-    static_cast<size_t>(reinterpret_cast<char*>(&no_backup_) -
-    reinterpret_cast<char*>(&major_version_)) + sizeof(no_backup_));
+    static_cast<size_t>(reinterpret_cast<char*>(&backup_type_) -
+    reinterpret_cast<char*>(&major_version_)) + sizeof(backup_type_));
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.management.Features)
 }
 
@@ -1652,8 +1806,8 @@ void Features::SharedCtor() {
   fw_vendor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   fw_vendor_keys_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&major_version_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&no_backup_) -
-      reinterpret_cast<char*>(&major_version_)) + sizeof(no_backup_));
+      reinterpret_cast<char*>(&backup_type_) -
+      reinterpret_cast<char*>(&major_version_)) + sizeof(backup_type_));
 }
 
 Features::~Features() {
@@ -1688,6 +1842,7 @@ void Features::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  capabilities_.Clear();
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
@@ -1728,10 +1883,10 @@ void Features::Clear() {
         reinterpret_cast<char*>(&fw_patch_) -
         reinterpret_cast<char*>(&imported_)) + sizeof(fw_patch_));
   }
-  if (cached_has_bits & 0x07000000u) {
+  if (cached_has_bits & 0x1f000000u) {
     ::memset(&needs_backup_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&no_backup_) -
-        reinterpret_cast<char*>(&needs_backup_)) + sizeof(no_backup_));
+        reinterpret_cast<char*>(&backup_type_) -
+        reinterpret_cast<char*>(&needs_backup_)) + sizeof(backup_type_));
   }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
@@ -2014,6 +2169,51 @@ const char* Features::_InternalParse(const char* begin, const char* end, void* o
       case 28: {
         if (static_cast<::google::protobuf::uint8>(tag) != 224) goto handle_unusual;
         msg->set_no_backup(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool recovery_mode = 29;
+      case 29: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 232) goto handle_unusual;
+        msg->set_recovery_mode(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // repeated .hw.trezor.messages.management.Features.Capability capabilities = 30;
+      case 30: {
+        if (static_cast<::google::protobuf::uint8>(tag) == 240) {
+          do {
+            ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+            if (!::hw::trezor::messages::management::Features_Capability_IsValid(val)) {
+              ::google::protobuf::internal::WriteVarint(30, val, msg->mutable_unknown_fields());
+              break;
+            }
+            msg->add_capabilities(static_cast<::hw::trezor::messages::management::Features_Capability>(val));
+            GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+            if (ptr >= end) break;
+          } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 65535) == 496 && (ptr += 2));
+          break;
+        } else if (static_cast<::google::protobuf::uint8>(tag) != 242) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        ctx->extra_parse_data().SetEnumValidator(::hw::trezor::messages::management::Features_Capability_IsValid, msg->mutable_unknown_fields(), 30);
+        parser_till_end = ::google::protobuf::internal::PackedValidEnumParser;
+        object = msg->mutable_capabilities();
+        if (size > end - ptr) goto len_delim_till_end;
+        auto newend = ptr + size;
+        if (size) ptr = parser_till_end(ptr, newend, object, ctx);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr == newend);
+        break;
+      }
+      // optional .hw.trezor.messages.management.BackupType backup_type = 31;
+      case 31: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 248) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::management::BackupType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(31, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_backup_type(static_cast<::hw::trezor::messages::management::BackupType>(val));
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
@@ -2408,6 +2608,64 @@ bool Features::MergePartialFromCodedStream(
         break;
       }
 
+      // optional bool recovery_mode = 29;
+      case 29: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (232 & 0xFF)) {
+          HasBitSetters::set_has_recovery_mode(this);
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &recovery_mode_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // repeated .hw.trezor.messages.management.Features.Capability capabilities = 30;
+      case 30: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (240 & 0xFF)) {
+          int value = 0;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          if (::hw::trezor::messages::management::Features_Capability_IsValid(value)) {
+            add_capabilities(static_cast< ::hw::trezor::messages::management::Features_Capability >(value));
+          } else {
+            mutable_unknown_fields()->AddVarint(
+                30, static_cast<::google::protobuf::uint64>(value));
+          }
+        } else if (static_cast< ::google::protobuf::uint8>(tag) == (242 & 0xFF)) {
+          DO_((::google::protobuf::internal::WireFormat::ReadPackedEnumPreserveUnknowns(
+                 input,
+                 30,
+                 ::hw::trezor::messages::management::Features_Capability_IsValid,
+                 mutable_unknown_fields(),
+                 this->mutable_capabilities())));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional .hw.trezor.messages.management.BackupType backup_type = 31;
+      case 31: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (248 & 0xFF)) {
+          int value = 0;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          if (::hw::trezor::messages::management::BackupType_IsValid(value)) {
+            set_backup_type(static_cast< ::hw::trezor::messages::management::BackupType >(value));
+          } else {
+            mutable_unknown_fields()->AddVarint(
+                31, static_cast<::google::protobuf::uint64>(value));
+          }
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -2604,6 +2862,23 @@ void Features::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(28, this->no_backup(), output);
   }
 
+  // optional bool recovery_mode = 29;
+  if (cached_has_bits & 0x08000000u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(29, this->recovery_mode(), output);
+  }
+
+  // repeated .hw.trezor.messages.management.Features.Capability capabilities = 30;
+  for (int i = 0, n = this->capabilities_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      30, this->capabilities(i), output);
+  }
+
+  // optional .hw.trezor.messages.management.BackupType backup_type = 31;
+  if (cached_has_bits & 0x10000000u) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      31, this->backup_type(), output);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -2795,6 +3070,21 @@ void Features::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(28, this->no_backup(), target);
   }
 
+  // optional bool recovery_mode = 29;
+  if (cached_has_bits & 0x08000000u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(29, this->recovery_mode(), target);
+  }
+
+  // repeated .hw.trezor.messages.management.Features.Capability capabilities = 30;
+  target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+    30, this->capabilities_, target);
+
+  // optional .hw.trezor.messages.management.BackupType backup_type = 31;
+  if (cached_has_bits & 0x10000000u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      31, this->backup_type(), target);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
@@ -2815,6 +3105,16 @@ size_t Features::ByteSizeLong() const {
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
+
+  // repeated .hw.trezor.messages.management.Features.Capability capabilities = 30;
+  {
+    size_t data_size = 0;
+    unsigned int count = static_cast<unsigned int>(this->capabilities_size());for (unsigned int i = 0; i < count; i++) {
+      data_size += ::google::protobuf::internal::WireFormatLite::EnumSize(
+        this->capabilities(static_cast<int>(i)));
+    }
+    total_size += (2UL * count) + data_size;
+  }
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
@@ -2975,7 +3275,7 @@ size_t Features::ByteSizeLong() const {
     }
 
   }
-  if (cached_has_bits & 0x07000000u) {
+  if (cached_has_bits & 0x1f000000u) {
     // optional bool needs_backup = 19;
     if (cached_has_bits & 0x01000000u) {
       total_size += 2 + 1;
@@ -2989,6 +3289,17 @@ size_t Features::ByteSizeLong() const {
     // optional bool no_backup = 28;
     if (cached_has_bits & 0x04000000u) {
       total_size += 2 + 1;
+    }
+
+    // optional bool recovery_mode = 29;
+    if (cached_has_bits & 0x08000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional .hw.trezor.messages.management.BackupType backup_type = 31;
+    if (cached_has_bits & 0x10000000u) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::EnumSize(this->backup_type());
     }
 
   }
@@ -3019,6 +3330,7 @@ void Features::MergeFrom(const Features& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  capabilities_.MergeFrom(from.capabilities_);
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
@@ -3109,7 +3421,7 @@ void Features::MergeFrom(const Features& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-  if (cached_has_bits & 0x07000000u) {
+  if (cached_has_bits & 0x1f000000u) {
     if (cached_has_bits & 0x01000000u) {
       needs_backup_ = from.needs_backup_;
     }
@@ -3118,6 +3430,12 @@ void Features::MergeFrom(const Features& from) {
     }
     if (cached_has_bits & 0x04000000u) {
       no_backup_ = from.no_backup_;
+    }
+    if (cached_has_bits & 0x08000000u) {
+      recovery_mode_ = from.recovery_mode_;
+    }
+    if (cached_has_bits & 0x10000000u) {
+      backup_type_ = from.backup_type_;
     }
     _has_bits_[0] |= cached_has_bits;
   }
@@ -3149,6 +3467,7 @@ void Features::InternalSwap(Features* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
+  capabilities_.InternalSwap(&other->capabilities_);
   vendor_.Swap(&other->vendor_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   device_id_.Swap(&other->device_id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -3185,6 +3504,8 @@ void Features::InternalSwap(Features* other) {
   swap(needs_backup_, other->needs_backup_);
   swap(unfinished_backup_, other->unfinished_backup_);
   swap(no_backup_, other->no_backup_);
+  swap(recovery_mode_, other->recovery_mode_);
+  swap(backup_type_, other->backup_type_);
 }
 
 ::google::protobuf::Metadata Features::GetMetadata() const {
@@ -4597,6 +4918,287 @@ void ChangePin::InternalSwap(ChangePin* other) {
 }
 
 ::google::protobuf::Metadata ChangePin::GetMetadata() const {
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dmanagement_2eproto);
+  return ::file_level_metadata_messages_2dmanagement_2eproto[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void SdProtect::InitAsDefaultInstance() {
+}
+class SdProtect::HasBitSetters {
+ public:
+  static void set_has_operation(SdProtect* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+};
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int SdProtect::kOperationFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+SdProtect::SdProtect()
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:hw.trezor.messages.management.SdProtect)
+}
+SdProtect::SdProtect(const SdProtect& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(nullptr),
+      _has_bits_(from._has_bits_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  operation_ = from.operation_;
+  // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.management.SdProtect)
+}
+
+void SdProtect::SharedCtor() {
+  operation_ = 0;
+}
+
+SdProtect::~SdProtect() {
+  // @@protoc_insertion_point(destructor:hw.trezor.messages.management.SdProtect)
+  SharedDtor();
+}
+
+void SdProtect::SharedDtor() {
+}
+
+void SdProtect::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const SdProtect& SdProtect::default_instance() {
+  ::google::protobuf::internal::InitSCC(&::scc_info_SdProtect_messages_2dmanagement_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void SdProtect::Clear() {
+// @@protoc_insertion_point(message_clear_start:hw.trezor.messages.management.SdProtect)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  operation_ = 0;
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* SdProtect::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<SdProtect*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // optional .hw.trezor.messages.management.SdProtect.SdProtectOperationType operation = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::management::SdProtect_SdProtectOperationType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(1, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_operation(static_cast<::hw::trezor::messages::management::SdProtect_SdProtectOperationType>(val));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool SdProtect::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:hw.trezor.messages.management.SdProtect)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional .hw.trezor.messages.management.SdProtect.SdProtectOperationType operation = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
+          int value = 0;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          if (::hw::trezor::messages::management::SdProtect_SdProtectOperationType_IsValid(value)) {
+            set_operation(static_cast< ::hw::trezor::messages::management::SdProtect_SdProtectOperationType >(value));
+          } else {
+            mutable_unknown_fields()->AddVarint(
+                1, static_cast<::google::protobuf::uint64>(value));
+          }
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:hw.trezor.messages.management.SdProtect)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:hw.trezor.messages.management.SdProtect)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void SdProtect::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:hw.trezor.messages.management.SdProtect)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // optional .hw.trezor.messages.management.SdProtect.SdProtectOperationType operation = 1;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      1, this->operation(), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:hw.trezor.messages.management.SdProtect)
+}
+
+::google::protobuf::uint8* SdProtect::InternalSerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.management.SdProtect)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _has_bits_[0];
+  // optional .hw.trezor.messages.management.SdProtect.SdProtectOperationType operation = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      1, this->operation(), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:hw.trezor.messages.management.SdProtect)
+  return target;
+}
+
+size_t SdProtect::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:hw.trezor.messages.management.SdProtect)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // optional .hw.trezor.messages.management.SdProtect.SdProtectOperationType operation = 1;
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->operation());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void SdProtect::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.management.SdProtect)
+  GOOGLE_DCHECK_NE(&from, this);
+  const SdProtect* source =
+      ::google::protobuf::DynamicCastToGenerated<SdProtect>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.management.SdProtect)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:hw.trezor.messages.management.SdProtect)
+    MergeFrom(*source);
+  }
+}
+
+void SdProtect::MergeFrom(const SdProtect& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:hw.trezor.messages.management.SdProtect)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_operation()) {
+    set_operation(from.operation());
+  }
+}
+
+void SdProtect::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:hw.trezor.messages.management.SdProtect)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void SdProtect::CopyFrom(const SdProtect& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:hw.trezor.messages.management.SdProtect)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool SdProtect::IsInitialized() const {
+  return true;
+}
+
+void SdProtect::Swap(SdProtect* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void SdProtect::InternalSwap(SdProtect* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(operation_, other->operation_);
+}
+
+::google::protobuf::Metadata SdProtect::GetMetadata() const {
   ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dmanagement_2eproto);
   return ::file_level_metadata_messages_2dmanagement_2eproto[kIndexInFileMessages];
 }
@@ -6050,30 +6652,27 @@ void LoadDevice::InitAsDefaultInstance() {
 }
 class LoadDevice::HasBitSetters {
  public:
-  static void set_has_mnemonic(LoadDevice* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
-  }
   static const ::hw::trezor::messages::common::HDNodeType& node(const LoadDevice* msg);
   static void set_has_node(LoadDevice* msg) {
-    msg->_has_bits_[0] |= 0x00000010u;
-  }
-  static void set_has_pin(LoadDevice* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
-  }
-  static void set_has_passphrase_protection(LoadDevice* msg) {
-    msg->_has_bits_[0] |= 0x00000020u;
-  }
-  static void set_has_language(LoadDevice* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
-  }
-  static void set_has_label(LoadDevice* msg) {
     msg->_has_bits_[0] |= 0x00000008u;
   }
+  static void set_has_pin(LoadDevice* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_passphrase_protection(LoadDevice* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_language(LoadDevice* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static void set_has_label(LoadDevice* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
   static void set_has_skip_checksum(LoadDevice* msg) {
-    msg->_has_bits_[0] |= 0x00000040u;
+    msg->_has_bits_[0] |= 0x00000020u;
   }
   static void set_has_u2f_counter(LoadDevice* msg) {
-    msg->_has_bits_[0] |= 0x00000080u;
+    msg->_has_bits_[0] |= 0x00000040u;
   }
 };
 
@@ -6083,11 +6682,11 @@ LoadDevice::HasBitSetters::node(const LoadDevice* msg) {
 }
 void LoadDevice::clear_node() {
   if (node_ != nullptr) node_->Clear();
-  _has_bits_[0] &= ~0x00000010u;
+  _has_bits_[0] &= ~0x00000008u;
 }
 ::google::protobuf::internal::ExplicitlyConstructed<::std::string> LoadDevice::_i_give_permission_to_break_this_code_default_language_;
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int LoadDevice::kMnemonicFieldNumber;
+const int LoadDevice::kMnemonicsFieldNumber;
 const int LoadDevice::kNodeFieldNumber;
 const int LoadDevice::kPinFieldNumber;
 const int LoadDevice::kPassphraseProtectionFieldNumber;
@@ -6105,12 +6704,9 @@ LoadDevice::LoadDevice()
 LoadDevice::LoadDevice(const LoadDevice& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(nullptr),
-      _has_bits_(from._has_bits_) {
+      _has_bits_(from._has_bits_),
+      mnemonics_(from.mnemonics_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  mnemonic_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_mnemonic()) {
-    mnemonic_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.mnemonic_);
-  }
   pin_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.has_pin()) {
     pin_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.pin_);
@@ -6137,7 +6733,6 @@ LoadDevice::LoadDevice(const LoadDevice& from)
 void LoadDevice::SharedCtor() {
   ::google::protobuf::internal::InitSCC(
       &scc_info_LoadDevice_messages_2dmanagement_2eproto.base);
-  mnemonic_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   pin_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   language_.UnsafeSetDefault(&::hw::trezor::messages::management::LoadDevice::_i_give_permission_to_break_this_code_default_language_.get());
   label_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -6152,7 +6747,6 @@ LoadDevice::~LoadDevice() {
 }
 
 void LoadDevice::SharedDtor() {
-  mnemonic_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   pin_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   language_.DestroyNoArena(&::hw::trezor::messages::management::LoadDevice::_i_give_permission_to_break_this_code_default_language_.get());
   label_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -6174,26 +6768,24 @@ void LoadDevice::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  mnemonics_.Clear();
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x0000001fu) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      mnemonic_.ClearNonDefaultToEmptyNoArena();
-    }
-    if (cached_has_bits & 0x00000002u) {
       pin_.ClearNonDefaultToEmptyNoArena();
     }
-    if (cached_has_bits & 0x00000004u) {
+    if (cached_has_bits & 0x00000002u) {
       language_.UnsafeMutablePointer()->assign(*&::hw::trezor::messages::management::LoadDevice::_i_give_permission_to_break_this_code_default_language_.get());
     }
-    if (cached_has_bits & 0x00000008u) {
+    if (cached_has_bits & 0x00000004u) {
       label_.ClearNonDefaultToEmptyNoArena();
     }
-    if (cached_has_bits & 0x00000010u) {
+    if (cached_has_bits & 0x00000008u) {
       GOOGLE_DCHECK(node_ != nullptr);
       node_->Clear();
     }
   }
-  if (cached_has_bits & 0x000000e0u) {
+  if (cached_has_bits & 0x00000070u) {
     ::memset(&passphrase_protection_, 0, static_cast<size_t>(
         reinterpret_cast<char*>(&u2f_counter_) -
         reinterpret_cast<char*>(&passphrase_protection_)) + sizeof(u2f_counter_));
@@ -6215,20 +6807,23 @@ const char* LoadDevice::_InternalParse(const char* begin, const char* end, void*
     ptr = ::google::protobuf::io::Parse32(ptr, &tag);
     GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
     switch (tag >> 3) {
-      // optional string mnemonic = 1;
+      // repeated string mnemonics = 1;
       case 1: {
         if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
-        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.management.LoadDevice.mnemonic");
-        object = msg->mutable_mnemonic();
-        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
-          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
-          goto string_till_end;
-        }
-        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
-        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
-        ptr += size;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          ctx->extra_parse_data().SetFieldName("hw.trezor.messages.management.LoadDevice.mnemonics");
+          object = msg->add_mnemonics();
+          if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+            parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+            goto string_till_end;
+          }
+          GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+          ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+          ptr += size;
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
         break;
       }
       // optional .hw.trezor.messages.common.HDNodeType node = 2;
@@ -6347,15 +6942,16 @@ bool LoadDevice::MergePartialFromCodedStream(
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional string mnemonic = 1;
+      // repeated string mnemonics = 1;
       case 1: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_mnemonic()));
+                input, this->add_mnemonics()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->mnemonic().data(), static_cast<int>(this->mnemonic().length()),
+            this->mnemonics(this->mnemonics_size() - 1).data(),
+            static_cast<int>(this->mnemonics(this->mnemonics_size() - 1).length()),
             ::google::protobuf::internal::WireFormat::PARSE,
-            "hw.trezor.messages.management.LoadDevice.mnemonic");
+            "hw.trezor.messages.management.LoadDevice.mnemonics");
         } else {
           goto handle_unusual;
         }
@@ -6484,25 +7080,25 @@ void LoadDevice::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
-  // optional string mnemonic = 1;
-  if (cached_has_bits & 0x00000001u) {
+  // repeated string mnemonics = 1;
+  for (int i = 0, n = this->mnemonics_size(); i < n; i++) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->mnemonic().data(), static_cast<int>(this->mnemonic().length()),
+      this->mnemonics(i).data(), static_cast<int>(this->mnemonics(i).length()),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "hw.trezor.messages.management.LoadDevice.mnemonic");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      1, this->mnemonic(), output);
+      "hw.trezor.messages.management.LoadDevice.mnemonics");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      1, this->mnemonics(i), output);
   }
 
+  cached_has_bits = _has_bits_[0];
   // optional .hw.trezor.messages.common.HDNodeType node = 2;
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, HasBitSetters::node(this), output);
   }
 
   // optional string pin = 3;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->pin().data(), static_cast<int>(this->pin().length()),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
@@ -6512,12 +7108,12 @@ void LoadDevice::SerializeWithCachedSizes(
   }
 
   // optional bool passphrase_protection = 4;
-  if (cached_has_bits & 0x00000020u) {
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(4, this->passphrase_protection(), output);
   }
 
   // optional string language = 5 [default = "english"];
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->language().data(), static_cast<int>(this->language().length()),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
@@ -6527,7 +7123,7 @@ void LoadDevice::SerializeWithCachedSizes(
   }
 
   // optional string label = 6;
-  if (cached_has_bits & 0x00000008u) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->label().data(), static_cast<int>(this->label().length()),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
@@ -6537,12 +7133,12 @@ void LoadDevice::SerializeWithCachedSizes(
   }
 
   // optional bool skip_checksum = 7;
-  if (cached_has_bits & 0x00000040u) {
+  if (cached_has_bits & 0x00000020u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(7, this->skip_checksum(), output);
   }
 
   // optional uint32 u2f_counter = 8;
-  if (cached_has_bits & 0x00000080u) {
+  if (cached_has_bits & 0x00000040u) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(8, this->u2f_counter(), output);
   }
 
@@ -6559,27 +7155,26 @@ void LoadDevice::SerializeWithCachedSizes(
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
-  // optional string mnemonic = 1;
-  if (cached_has_bits & 0x00000001u) {
+  // repeated string mnemonics = 1;
+  for (int i = 0, n = this->mnemonics_size(); i < n; i++) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->mnemonic().data(), static_cast<int>(this->mnemonic().length()),
+      this->mnemonics(i).data(), static_cast<int>(this->mnemonics(i).length()),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "hw.trezor.messages.management.LoadDevice.mnemonic");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        1, this->mnemonic(), target);
+      "hw.trezor.messages.management.LoadDevice.mnemonics");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(1, this->mnemonics(i), target);
   }
 
+  cached_has_bits = _has_bits_[0];
   // optional .hw.trezor.messages.common.HDNodeType node = 2;
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         2, HasBitSetters::node(this), target);
   }
 
   // optional string pin = 3;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->pin().data(), static_cast<int>(this->pin().length()),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
@@ -6590,12 +7185,12 @@ void LoadDevice::SerializeWithCachedSizes(
   }
 
   // optional bool passphrase_protection = 4;
-  if (cached_has_bits & 0x00000020u) {
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(4, this->passphrase_protection(), target);
   }
 
   // optional string language = 5 [default = "english"];
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00000002u) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->language().data(), static_cast<int>(this->language().length()),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
@@ -6606,7 +7201,7 @@ void LoadDevice::SerializeWithCachedSizes(
   }
 
   // optional string label = 6;
-  if (cached_has_bits & 0x00000008u) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
       this->label().data(), static_cast<int>(this->label().length()),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
@@ -6617,12 +7212,12 @@ void LoadDevice::SerializeWithCachedSizes(
   }
 
   // optional bool skip_checksum = 7;
-  if (cached_has_bits & 0x00000040u) {
+  if (cached_has_bits & 0x00000020u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(7, this->skip_checksum(), target);
   }
 
   // optional uint32 u2f_counter = 8;
-  if (cached_has_bits & 0x00000080u) {
+  if (cached_has_bits & 0x00000040u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(8, this->u2f_counter(), target);
   }
 
@@ -6647,55 +7242,56 @@ size_t LoadDevice::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x000000ffu) {
-    // optional string mnemonic = 1;
-    if (cached_has_bits & 0x00000001u) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::StringSize(
-          this->mnemonic());
-    }
+  // repeated string mnemonics = 1;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->mnemonics_size());
+  for (int i = 0, n = this->mnemonics_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->mnemonics(i));
+  }
 
+  cached_has_bits = _has_bits_[0];
+  if (cached_has_bits & 0x0000007fu) {
     // optional string pin = 3;
-    if (cached_has_bits & 0x00000002u) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->pin());
     }
 
     // optional string language = 5 [default = "english"];
-    if (cached_has_bits & 0x00000004u) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->language());
     }
 
     // optional string label = 6;
-    if (cached_has_bits & 0x00000008u) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->label());
     }
 
     // optional .hw.trezor.messages.common.HDNodeType node = 2;
-    if (cached_has_bits & 0x00000010u) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *node_);
     }
 
     // optional bool passphrase_protection = 4;
-    if (cached_has_bits & 0x00000020u) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 + 1;
     }
 
     // optional bool skip_checksum = 7;
-    if (cached_has_bits & 0x00000040u) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 + 1;
     }
 
     // optional uint32 u2f_counter = 8;
-    if (cached_has_bits & 0x00000080u) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::UInt32Size(
           this->u2f_counter());
@@ -6729,34 +7325,31 @@ void LoadDevice::MergeFrom(const LoadDevice& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  mnemonics_.MergeFrom(from.mnemonics_);
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 0x000000ffu) {
+  if (cached_has_bits & 0x0000007fu) {
     if (cached_has_bits & 0x00000001u) {
       _has_bits_[0] |= 0x00000001u;
-      mnemonic_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.mnemonic_);
+      pin_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.pin_);
     }
     if (cached_has_bits & 0x00000002u) {
       _has_bits_[0] |= 0x00000002u;
-      pin_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.pin_);
+      language_.AssignWithDefault(&::hw::trezor::messages::management::LoadDevice::_i_give_permission_to_break_this_code_default_language_.get(), from.language_);
     }
     if (cached_has_bits & 0x00000004u) {
       _has_bits_[0] |= 0x00000004u;
-      language_.AssignWithDefault(&::hw::trezor::messages::management::LoadDevice::_i_give_permission_to_break_this_code_default_language_.get(), from.language_);
-    }
-    if (cached_has_bits & 0x00000008u) {
-      _has_bits_[0] |= 0x00000008u;
       label_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.label_);
     }
-    if (cached_has_bits & 0x00000010u) {
+    if (cached_has_bits & 0x00000008u) {
       mutable_node()->::hw::trezor::messages::common::HDNodeType::MergeFrom(from.node());
     }
-    if (cached_has_bits & 0x00000020u) {
+    if (cached_has_bits & 0x00000010u) {
       passphrase_protection_ = from.passphrase_protection_;
     }
-    if (cached_has_bits & 0x00000040u) {
+    if (cached_has_bits & 0x00000020u) {
       skip_checksum_ = from.skip_checksum_;
     }
-    if (cached_has_bits & 0x00000080u) {
+    if (cached_has_bits & 0x00000040u) {
       u2f_counter_ = from.u2f_counter_;
     }
     _has_bits_[0] |= cached_has_bits;
@@ -6792,8 +7385,7 @@ void LoadDevice::InternalSwap(LoadDevice* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  mnemonic_.Swap(&other->mnemonic_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
+  mnemonics_.InternalSwap(CastToBase(&other->mnemonics_));
   pin_.Swap(&other->pin_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   language_.Swap(&other->language_, &::hw::trezor::messages::management::LoadDevice::_i_give_permission_to_break_this_code_default_language_.get(),
@@ -6845,7 +7437,7 @@ class ResetDevice::HasBitSetters {
   static void set_has_no_backup(ResetDevice* msg) {
     msg->_has_bits_[0] |= 0x00000080u;
   }
-  static void set_has_slip39(ResetDevice* msg) {
+  static void set_has_backup_type(ResetDevice* msg) {
     msg->_has_bits_[0] |= 0x00000100u;
   }
 };
@@ -6861,7 +7453,7 @@ const int ResetDevice::kLabelFieldNumber;
 const int ResetDevice::kU2FCounterFieldNumber;
 const int ResetDevice::kSkipBackupFieldNumber;
 const int ResetDevice::kNoBackupFieldNumber;
-const int ResetDevice::kSlip39FieldNumber;
+const int ResetDevice::kBackupTypeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ResetDevice::ResetDevice()
@@ -6894,8 +7486,8 @@ void ResetDevice::SharedCtor() {
   language_.UnsafeSetDefault(&::hw::trezor::messages::management::ResetDevice::_i_give_permission_to_break_this_code_default_language_.get());
   label_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&display_random_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&slip39_) -
-      reinterpret_cast<char*>(&display_random_)) + sizeof(slip39_));
+      reinterpret_cast<char*>(&backup_type_) -
+      reinterpret_cast<char*>(&display_random_)) + sizeof(backup_type_));
   strength_ = 256u;
 }
 
@@ -6939,7 +7531,7 @@ void ResetDevice::Clear() {
         reinterpret_cast<char*>(&display_random_)) + sizeof(no_backup_));
   }
   if (cached_has_bits & 0x00000300u) {
-    slip39_ = false;
+    backup_type_ = 0;
     strength_ = 256u;
   }
   _has_bits_.Clear();
@@ -7040,10 +7632,15 @@ const char* ResetDevice::_InternalParse(const char* begin, const char* end, void
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // optional bool slip39 = 10;
+      // optional .hw.trezor.messages.management.BackupType backup_type = 10 [default = Bip39];
       case 10: {
         if (static_cast<::google::protobuf::uint8>(tag) != 80) goto handle_unusual;
-        msg->set_slip39(::google::protobuf::internal::ReadVarint(&ptr));
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::management::BackupType_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(10, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_backup_type(static_cast<::hw::trezor::messages::management::BackupType>(val));
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
@@ -7202,13 +7799,19 @@ bool ResetDevice::MergePartialFromCodedStream(
         break;
       }
 
-      // optional bool slip39 = 10;
+      // optional .hw.trezor.messages.management.BackupType backup_type = 10 [default = Bip39];
       case 10: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (80 & 0xFF)) {
-          HasBitSetters::set_has_slip39(this);
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &slip39_)));
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          if (::hw::trezor::messages::management::BackupType_IsValid(value)) {
+            set_backup_type(static_cast< ::hw::trezor::messages::management::BackupType >(value));
+          } else {
+            mutable_unknown_fields()->AddVarint(
+                10, static_cast<::google::protobuf::uint64>(value));
+          }
         } else {
           goto handle_unusual;
         }
@@ -7298,9 +7901,10 @@ void ResetDevice::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(9, this->no_backup(), output);
   }
 
-  // optional bool slip39 = 10;
+  // optional .hw.trezor.messages.management.BackupType backup_type = 10 [default = Bip39];
   if (cached_has_bits & 0x00000100u) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(10, this->slip39(), output);
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      10, this->backup_type(), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -7374,9 +7978,10 @@ void ResetDevice::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(9, this->no_backup(), target);
   }
 
-  // optional bool slip39 = 10;
+  // optional .hw.trezor.messages.management.BackupType backup_type = 10 [default = Bip39];
   if (cached_has_bits & 0x00000100u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(10, this->slip39(), target);
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      10, this->backup_type(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -7450,9 +8055,10 @@ size_t ResetDevice::ByteSizeLong() const {
 
   }
   if (cached_has_bits & 0x00000300u) {
-    // optional bool slip39 = 10;
+    // optional .hw.trezor.messages.management.BackupType backup_type = 10 [default = Bip39];
     if (cached_has_bits & 0x00000100u) {
-      total_size += 1 + 1;
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::EnumSize(this->backup_type());
     }
 
     // optional uint32 strength = 2 [default = 256];
@@ -7522,7 +8128,7 @@ void ResetDevice::MergeFrom(const ResetDevice& from) {
   }
   if (cached_has_bits & 0x00000300u) {
     if (cached_has_bits & 0x00000100u) {
-      slip39_ = from.slip39_;
+      backup_type_ = from.backup_type_;
     }
     if (cached_has_bits & 0x00000200u) {
       strength_ = from.strength_;
@@ -7567,7 +8173,7 @@ void ResetDevice::InternalSwap(ResetDevice* other) {
   swap(skip_backup_, other->skip_backup_);
   swap(u2f_counter_, other->u2f_counter_);
   swap(no_backup_, other->no_backup_);
-  swap(slip39_, other->slip39_);
+  swap(backup_type_, other->backup_type_);
   swap(strength_, other->strength_);
 }
 
@@ -9909,6 +10515,9 @@ template<> PROTOBUF_NOINLINE ::hw::trezor::messages::management::ApplyFlags* Are
 }
 template<> PROTOBUF_NOINLINE ::hw::trezor::messages::management::ChangePin* Arena::CreateMaybeMessage< ::hw::trezor::messages::management::ChangePin >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::management::ChangePin >(arena);
+}
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::management::SdProtect* Arena::CreateMaybeMessage< ::hw::trezor::messages::management::SdProtect >(Arena* arena) {
+  return Arena::CreateInternal< ::hw::trezor::messages::management::SdProtect >(arena);
 }
 template<> PROTOBUF_NOINLINE ::hw::trezor::messages::management::Ping* Arena::CreateMaybeMessage< ::hw::trezor::messages::management::Ping >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::management::Ping >(arena);

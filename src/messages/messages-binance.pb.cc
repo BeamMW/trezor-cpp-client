@@ -386,10 +386,8 @@ const ::google::protobuf::uint32 TableStruct_messages_2dbinance_2eproto::offsets
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::binance::BinanceSignedTx, signature_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::binance::BinanceSignedTx, public_key_),
-  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::binance::BinanceSignedTx, json_),
   0,
   1,
-  2,
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::hw::trezor::messages::binance::BinanceGetAddress)},
@@ -403,7 +401,7 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SE
   { 74, 81, sizeof(::hw::trezor::messages::binance::BinanceTransferMsg)},
   { 83, 96, sizeof(::hw::trezor::messages::binance::BinanceOrderMsg)},
   { 104, 112, sizeof(::hw::trezor::messages::binance::BinanceCancelMsg)},
-  { 115, 123, sizeof(::hw::trezor::messages::binance::BinanceSignedTx)},
+  { 115, 122, sizeof(::hw::trezor::messages::binance::BinanceSignedTx)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -462,15 +460,15 @@ const char descriptor_table_protodef_messages_2dbinance_2eproto[] =
   "\002\"I\n\022BinanceTimeInForce\022\017\n\013TIF_UNKNOWN\020\000"
   "\022\007\n\003GTE\020\001\022\020\n\014TIF_RESERVED\020\002\022\007\n\003IOC\020\003\"A\n\020"
   "BinanceCancelMsg\022\r\n\005refid\030\001 \001(\t\022\016\n\006sende"
-  "r\030\002 \001(\t\022\016\n\006symbol\030\003 \001(\t\"F\n\017BinanceSigned"
+  "r\030\002 \001(\t\022\016\n\006symbol\030\003 \001(\t\"8\n\017BinanceSigned"
   "Tx\022\021\n\tsignature\030\001 \001(\014\022\022\n\npublic_key\030\002 \001("
-  "\014\022\014\n\004json\030\003 \001(\tB;\n#com.satoshilabs.trezo"
-  "r.lib.protobufB\024TrezorMessageBinance"
+  "\014B;\n#com.satoshilabs.trezor.lib.protobuf"
+  "B\024TrezorMessageBinance"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dbinance_2eproto = {
   false, InitDefaults_messages_2dbinance_2eproto, 
   descriptor_table_protodef_messages_2dbinance_2eproto,
-  "messages-binance.proto", &assign_descriptors_table_messages_2dbinance_2eproto, 1516,
+  "messages-binance.proto", &assign_descriptors_table_messages_2dbinance_2eproto, 1502,
 };
 
 void AddDescriptors_messages_2dbinance_2eproto() {
@@ -4987,15 +4985,11 @@ class BinanceSignedTx::HasBitSetters {
   static void set_has_public_key(BinanceSignedTx* msg) {
     msg->_has_bits_[0] |= 0x00000002u;
   }
-  static void set_has_json(BinanceSignedTx* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
-  }
 };
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int BinanceSignedTx::kSignatureFieldNumber;
 const int BinanceSignedTx::kPublicKeyFieldNumber;
-const int BinanceSignedTx::kJsonFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 BinanceSignedTx::BinanceSignedTx()
@@ -5016,10 +5010,6 @@ BinanceSignedTx::BinanceSignedTx(const BinanceSignedTx& from)
   if (from.has_public_key()) {
     public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
   }
-  json_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_json()) {
-    json_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.json_);
-  }
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.binance.BinanceSignedTx)
 }
 
@@ -5028,7 +5018,6 @@ void BinanceSignedTx::SharedCtor() {
       &scc_info_BinanceSignedTx_messages_2dbinance_2eproto.base);
   signature_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   public_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  json_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 BinanceSignedTx::~BinanceSignedTx() {
@@ -5039,7 +5028,6 @@ BinanceSignedTx::~BinanceSignedTx() {
 void BinanceSignedTx::SharedDtor() {
   signature_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   public_key_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  json_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 void BinanceSignedTx::SetCachedSize(int size) const {
@@ -5058,15 +5046,12 @@ void BinanceSignedTx::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000007u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       signature_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
       public_key_.ClearNonDefaultToEmptyNoArena();
-    }
-    if (cached_has_bits & 0x00000004u) {
-      json_.ClearNonDefaultToEmptyNoArena();
     }
   }
   _has_bits_.Clear();
@@ -5112,22 +5097,6 @@ const char* BinanceSignedTx::_InternalParse(const char* begin, const char* end, 
           goto string_till_end;
         }
         GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
-        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
-        ptr += size;
-        break;
-      }
-      // optional string json = 3;
-      case 3: {
-        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
-        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.binance.BinanceSignedTx.json");
-        object = msg->mutable_json();
-        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
-          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
-          goto string_till_end;
-        }
-        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
         ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
         ptr += size;
         break;
@@ -5188,21 +5157,6 @@ bool BinanceSignedTx::MergePartialFromCodedStream(
         break;
       }
 
-      // optional string json = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_json()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->json().data(), static_cast<int>(this->json().length()),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "hw.trezor.messages.binance.BinanceSignedTx.json");
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -5243,16 +5197,6 @@ void BinanceSignedTx::SerializeWithCachedSizes(
       2, this->public_key(), output);
   }
 
-  // optional string json = 3;
-  if (cached_has_bits & 0x00000004u) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->json().data(), static_cast<int>(this->json().length()),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "hw.trezor.messages.binance.BinanceSignedTx.json");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      3, this->json(), output);
-  }
-
   if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -5281,17 +5225,6 @@ void BinanceSignedTx::SerializeWithCachedSizes(
         2, this->public_key(), target);
   }
 
-  // optional string json = 3;
-  if (cached_has_bits & 0x00000004u) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->json().data(), static_cast<int>(this->json().length()),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "hw.trezor.messages.binance.BinanceSignedTx.json");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        3, this->json(), target);
-  }
-
   if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
@@ -5314,7 +5247,7 @@ size_t BinanceSignedTx::ByteSizeLong() const {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000007u) {
+  if (cached_has_bits & 0x00000003u) {
     // optional bytes signature = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
@@ -5327,13 +5260,6 @@ size_t BinanceSignedTx::ByteSizeLong() const {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->public_key());
-    }
-
-    // optional string json = 3;
-    if (cached_has_bits & 0x00000004u) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::StringSize(
-          this->json());
     }
 
   }
@@ -5365,7 +5291,7 @@ void BinanceSignedTx::MergeFrom(const BinanceSignedTx& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 0x00000007u) {
+  if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
       _has_bits_[0] |= 0x00000001u;
       signature_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.signature_);
@@ -5373,10 +5299,6 @@ void BinanceSignedTx::MergeFrom(const BinanceSignedTx& from) {
     if (cached_has_bits & 0x00000002u) {
       _has_bits_[0] |= 0x00000002u;
       public_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.public_key_);
-    }
-    if (cached_has_bits & 0x00000004u) {
-      _has_bits_[0] |= 0x00000004u;
-      json_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.json_);
     }
   }
 }
@@ -5410,8 +5332,6 @@ void BinanceSignedTx::InternalSwap(BinanceSignedTx* other) {
   signature_.Swap(&other->signature_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   public_key_.Swap(&other->public_key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  json_.Swap(&other->json_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
 }
 

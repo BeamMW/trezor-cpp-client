@@ -351,6 +351,20 @@ class DebugLinkGetState final :
 
   // accessors -------------------------------------------------------
 
+  // optional bool wait_word_list = 1;
+  bool has_wait_word_list() const;
+  void clear_wait_word_list();
+  static const int kWaitWordListFieldNumber = 1;
+  bool wait_word_list() const;
+  void set_wait_word_list(bool value);
+
+  // optional bool wait_word_pos = 2;
+  bool has_wait_word_pos() const;
+  void clear_wait_word_pos();
+  static const int kWaitWordPosFieldNumber = 2;
+  bool wait_word_pos() const;
+  void set_wait_word_pos(bool value);
+
   // @@protoc_insertion_point(class_scope:hw.trezor.messages.debug.DebugLinkGetState)
  private:
   class HasBitSetters;
@@ -358,6 +372,8 @@ class DebugLinkGetState final :
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  bool wait_word_list_;
+  bool wait_word_pos_;
   friend struct ::TableStruct_messages_2ddebug_2eproto;
 };
 // -------------------------------------------------------------------
@@ -1527,6 +1543,42 @@ inline void DebugLinkDecision::set_allocated_input(::std::string* input) {
 // -------------------------------------------------------------------
 
 // DebugLinkGetState
+
+// optional bool wait_word_list = 1;
+inline bool DebugLinkGetState::has_wait_word_list() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void DebugLinkGetState::clear_wait_word_list() {
+  wait_word_list_ = false;
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline bool DebugLinkGetState::wait_word_list() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.debug.DebugLinkGetState.wait_word_list)
+  return wait_word_list_;
+}
+inline void DebugLinkGetState::set_wait_word_list(bool value) {
+  _has_bits_[0] |= 0x00000001u;
+  wait_word_list_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.debug.DebugLinkGetState.wait_word_list)
+}
+
+// optional bool wait_word_pos = 2;
+inline bool DebugLinkGetState::has_wait_word_pos() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void DebugLinkGetState::clear_wait_word_pos() {
+  wait_word_pos_ = false;
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline bool DebugLinkGetState::wait_word_pos() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.debug.DebugLinkGetState.wait_word_pos)
+  return wait_word_pos_;
+}
+inline void DebugLinkGetState::set_wait_word_pos(bool value) {
+  _has_bits_[0] |= 0x00000002u;
+  wait_word_pos_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.debug.DebugLinkGetState.wait_word_pos)
+}
 
 // -------------------------------------------------------------------
 

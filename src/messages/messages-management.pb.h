@@ -43,7 +43,7 @@ struct TableStruct_messages_2dmanagement_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::google::protobuf::internal::ParseTable schema[21]
+  static const ::google::protobuf::internal::ParseTable schema[22]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
@@ -105,6 +105,9 @@ extern RecoveryDeviceDefaultTypeInternal _RecoveryDevice_default_instance_;
 class ResetDevice;
 class ResetDeviceDefaultTypeInternal;
 extern ResetDeviceDefaultTypeInternal _ResetDevice_default_instance_;
+class SdProtect;
+class SdProtectDefaultTypeInternal;
+extern SdProtectDefaultTypeInternal _SdProtect_default_instance_;
 class SetU2FCounter;
 class SetU2FCounterDefaultTypeInternal;
 extern SetU2FCounterDefaultTypeInternal _SetU2FCounter_default_instance_;
@@ -140,6 +143,7 @@ template<> ::hw::trezor::messages::management::LoadDevice* Arena::CreateMaybeMes
 template<> ::hw::trezor::messages::management::Ping* Arena::CreateMaybeMessage<::hw::trezor::messages::management::Ping>(Arena*);
 template<> ::hw::trezor::messages::management::RecoveryDevice* Arena::CreateMaybeMessage<::hw::trezor::messages::management::RecoveryDevice>(Arena*);
 template<> ::hw::trezor::messages::management::ResetDevice* Arena::CreateMaybeMessage<::hw::trezor::messages::management::ResetDevice>(Arena*);
+template<> ::hw::trezor::messages::management::SdProtect* Arena::CreateMaybeMessage<::hw::trezor::messages::management::SdProtect>(Arena*);
 template<> ::hw::trezor::messages::management::SetU2FCounter* Arena::CreateMaybeMessage<::hw::trezor::messages::management::SetU2FCounter>(Arena*);
 template<> ::hw::trezor::messages::management::WipeDevice* Arena::CreateMaybeMessage<::hw::trezor::messages::management::WipeDevice>(Arena*);
 template<> ::hw::trezor::messages::management::WordAck* Arena::CreateMaybeMessage<::hw::trezor::messages::management::WordAck>(Arena*);
@@ -151,6 +155,40 @@ namespace trezor {
 namespace messages {
 namespace management {
 
+enum Features_Capability {
+  Features_Capability_Capability_Bitcoin = 1,
+  Features_Capability_Capability_Bitcoin_like = 2,
+  Features_Capability_Capability_Binance = 3,
+  Features_Capability_Capability_Cardano = 4,
+  Features_Capability_Capability_Crypto = 5,
+  Features_Capability_Capability_EOS = 6,
+  Features_Capability_Capability_Ethereum = 7,
+  Features_Capability_Capability_Lisk = 8,
+  Features_Capability_Capability_Monero = 9,
+  Features_Capability_Capability_NEM = 10,
+  Features_Capability_Capability_Ripple = 11,
+  Features_Capability_Capability_Stellar = 12,
+  Features_Capability_Capability_Tezos = 13,
+  Features_Capability_Capability_U2F = 14,
+  Features_Capability_Capability_Beam = 17,
+  Features_Capability_Capability_Shamir = 15,
+  Features_Capability_Capability_ShamirGroups = 16
+};
+bool Features_Capability_IsValid(int value);
+const Features_Capability Features_Capability_Capability_MIN = Features_Capability_Capability_Bitcoin;
+const Features_Capability Features_Capability_Capability_MAX = Features_Capability_Capability_Beam;
+const int Features_Capability_Capability_ARRAYSIZE = Features_Capability_Capability_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* Features_Capability_descriptor();
+inline const ::std::string& Features_Capability_Name(Features_Capability value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    Features_Capability_descriptor(), value);
+}
+inline bool Features_Capability_Parse(
+    const ::std::string& name, Features_Capability* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<Features_Capability>(
+    Features_Capability_descriptor(), name, value);
+}
 enum ApplySettings_PassphraseSourceType {
   ApplySettings_PassphraseSourceType_ASK = 0,
   ApplySettings_PassphraseSourceType_DEVICE = 1,
@@ -170,6 +208,26 @@ inline bool ApplySettings_PassphraseSourceType_Parse(
     const ::std::string& name, ApplySettings_PassphraseSourceType* value) {
   return ::google::protobuf::internal::ParseNamedEnum<ApplySettings_PassphraseSourceType>(
     ApplySettings_PassphraseSourceType_descriptor(), name, value);
+}
+enum SdProtect_SdProtectOperationType {
+  SdProtect_SdProtectOperationType_DISABLE = 0,
+  SdProtect_SdProtectOperationType_ENABLE = 1,
+  SdProtect_SdProtectOperationType_REFRESH = 2
+};
+bool SdProtect_SdProtectOperationType_IsValid(int value);
+const SdProtect_SdProtectOperationType SdProtect_SdProtectOperationType_SdProtectOperationType_MIN = SdProtect_SdProtectOperationType_DISABLE;
+const SdProtect_SdProtectOperationType SdProtect_SdProtectOperationType_SdProtectOperationType_MAX = SdProtect_SdProtectOperationType_REFRESH;
+const int SdProtect_SdProtectOperationType_SdProtectOperationType_ARRAYSIZE = SdProtect_SdProtectOperationType_SdProtectOperationType_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* SdProtect_SdProtectOperationType_descriptor();
+inline const ::std::string& SdProtect_SdProtectOperationType_Name(SdProtect_SdProtectOperationType value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    SdProtect_SdProtectOperationType_descriptor(), value);
+}
+inline bool SdProtect_SdProtectOperationType_Parse(
+    const ::std::string& name, SdProtect_SdProtectOperationType* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<SdProtect_SdProtectOperationType>(
+    SdProtect_SdProtectOperationType_descriptor(), name, value);
 }
 enum RecoveryDevice_RecoveryDeviceType {
   RecoveryDevice_RecoveryDeviceType_RecoveryDeviceType_ScrambledWords = 0,
@@ -209,6 +267,26 @@ inline bool WordRequest_WordRequestType_Parse(
     const ::std::string& name, WordRequest_WordRequestType* value) {
   return ::google::protobuf::internal::ParseNamedEnum<WordRequest_WordRequestType>(
     WordRequest_WordRequestType_descriptor(), name, value);
+}
+enum BackupType {
+  Bip39 = 0,
+  Slip39_Basic = 1,
+  Slip39_Advanced = 2
+};
+bool BackupType_IsValid(int value);
+const BackupType BackupType_MIN = Bip39;
+const BackupType BackupType_MAX = Slip39_Advanced;
+const int BackupType_ARRAYSIZE = BackupType_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* BackupType_descriptor();
+inline const ::std::string& BackupType_Name(BackupType value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    BackupType_descriptor(), value);
+}
+inline bool BackupType_Parse(
+    const ::std::string& name, BackupType* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<BackupType>(
+    BackupType_descriptor(), name, value);
 }
 // ===================================================================
 
@@ -562,7 +640,73 @@ class Features final :
 
   // nested types ----------------------------------------------------
 
+  typedef Features_Capability Capability;
+  static const Capability Capability_Bitcoin =
+    Features_Capability_Capability_Bitcoin;
+  static const Capability Capability_Bitcoin_like =
+    Features_Capability_Capability_Bitcoin_like;
+  static const Capability Capability_Binance =
+    Features_Capability_Capability_Binance;
+  static const Capability Capability_Cardano =
+    Features_Capability_Capability_Cardano;
+  static const Capability Capability_Crypto =
+    Features_Capability_Capability_Crypto;
+  static const Capability Capability_EOS =
+    Features_Capability_Capability_EOS;
+  static const Capability Capability_Ethereum =
+    Features_Capability_Capability_Ethereum;
+  static const Capability Capability_Lisk =
+    Features_Capability_Capability_Lisk;
+  static const Capability Capability_Monero =
+    Features_Capability_Capability_Monero;
+  static const Capability Capability_NEM =
+    Features_Capability_Capability_NEM;
+  static const Capability Capability_Ripple =
+    Features_Capability_Capability_Ripple;
+  static const Capability Capability_Stellar =
+    Features_Capability_Capability_Stellar;
+  static const Capability Capability_Tezos =
+    Features_Capability_Capability_Tezos;
+  static const Capability Capability_U2F =
+    Features_Capability_Capability_U2F;
+  static const Capability Capability_Beam =
+    Features_Capability_Capability_Beam;
+  static const Capability Capability_Shamir =
+    Features_Capability_Capability_Shamir;
+  static const Capability Capability_ShamirGroups =
+    Features_Capability_Capability_ShamirGroups;
+  static inline bool Capability_IsValid(int value) {
+    return Features_Capability_IsValid(value);
+  }
+  static const Capability Capability_MIN =
+    Features_Capability_Capability_MIN;
+  static const Capability Capability_MAX =
+    Features_Capability_Capability_MAX;
+  static const int Capability_ARRAYSIZE =
+    Features_Capability_Capability_ARRAYSIZE;
+  static inline const ::google::protobuf::EnumDescriptor*
+  Capability_descriptor() {
+    return Features_Capability_descriptor();
+  }
+  static inline const ::std::string& Capability_Name(Capability value) {
+    return Features_Capability_Name(value);
+  }
+  static inline bool Capability_Parse(const ::std::string& name,
+      Capability* value) {
+    return Features_Capability_Parse(name, value);
+  }
+
   // accessors -------------------------------------------------------
+
+  // repeated .hw.trezor.messages.management.Features.Capability capabilities = 30;
+  int capabilities_size() const;
+  void clear_capabilities();
+  static const int kCapabilitiesFieldNumber = 30;
+  ::hw::trezor::messages::management::Features_Capability capabilities(int index) const;
+  void set_capabilities(int index, ::hw::trezor::messages::management::Features_Capability value);
+  void add_capabilities(::hw::trezor::messages::management::Features_Capability value);
+  const ::google::protobuf::RepeatedField<int>& capabilities() const;
+  ::google::protobuf::RepeatedField<int>* mutable_capabilities();
 
   // optional string vendor = 1;
   bool has_vendor() const;
@@ -825,6 +969,20 @@ class Features final :
   bool no_backup() const;
   void set_no_backup(bool value);
 
+  // optional bool recovery_mode = 29;
+  bool has_recovery_mode() const;
+  void clear_recovery_mode();
+  static const int kRecoveryModeFieldNumber = 29;
+  bool recovery_mode() const;
+  void set_recovery_mode(bool value);
+
+  // optional .hw.trezor.messages.management.BackupType backup_type = 31;
+  bool has_backup_type() const;
+  void clear_backup_type();
+  static const int kBackupTypeFieldNumber = 31;
+  ::hw::trezor::messages::management::BackupType backup_type() const;
+  void set_backup_type(::hw::trezor::messages::management::BackupType value);
+
   // @@protoc_insertion_point(class_scope:hw.trezor.messages.management.Features)
  private:
   class HasBitSetters;
@@ -832,6 +990,7 @@ class Features final :
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::google::protobuf::RepeatedField<int> capabilities_;
   ::google::protobuf::internal::ArenaStringPtr vendor_;
   ::google::protobuf::internal::ArenaStringPtr device_id_;
   ::google::protobuf::internal::ArenaStringPtr language_;
@@ -859,6 +1018,8 @@ class Features final :
   bool needs_backup_;
   bool unfinished_backup_;
   bool no_backup_;
+  bool recovery_mode_;
+  int backup_type_;
   friend struct ::TableStruct_messages_2dmanagement_2eproto;
 };
 // -------------------------------------------------------------------
@@ -1439,6 +1600,155 @@ class ChangePin final :
 };
 // -------------------------------------------------------------------
 
+class SdProtect final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.management.SdProtect) */ {
+ public:
+  SdProtect();
+  virtual ~SdProtect();
+
+  SdProtect(const SdProtect& from);
+
+  inline SdProtect& operator=(const SdProtect& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  SdProtect(SdProtect&& from) noexcept
+    : SdProtect() {
+    *this = ::std::move(from);
+  }
+
+  inline SdProtect& operator=(SdProtect&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const SdProtect& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const SdProtect* internal_default_instance() {
+    return reinterpret_cast<const SdProtect*>(
+               &_SdProtect_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    7;
+
+  void Swap(SdProtect* other);
+  friend void swap(SdProtect& a, SdProtect& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline SdProtect* New() const final {
+    return CreateMaybeMessage<SdProtect>(nullptr);
+  }
+
+  SdProtect* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<SdProtect>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const SdProtect& from);
+  void MergeFrom(const SdProtect& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
+  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
+  #else
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SdProtect* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef SdProtect_SdProtectOperationType SdProtectOperationType;
+  static const SdProtectOperationType DISABLE =
+    SdProtect_SdProtectOperationType_DISABLE;
+  static const SdProtectOperationType ENABLE =
+    SdProtect_SdProtectOperationType_ENABLE;
+  static const SdProtectOperationType REFRESH =
+    SdProtect_SdProtectOperationType_REFRESH;
+  static inline bool SdProtectOperationType_IsValid(int value) {
+    return SdProtect_SdProtectOperationType_IsValid(value);
+  }
+  static const SdProtectOperationType SdProtectOperationType_MIN =
+    SdProtect_SdProtectOperationType_SdProtectOperationType_MIN;
+  static const SdProtectOperationType SdProtectOperationType_MAX =
+    SdProtect_SdProtectOperationType_SdProtectOperationType_MAX;
+  static const int SdProtectOperationType_ARRAYSIZE =
+    SdProtect_SdProtectOperationType_SdProtectOperationType_ARRAYSIZE;
+  static inline const ::google::protobuf::EnumDescriptor*
+  SdProtectOperationType_descriptor() {
+    return SdProtect_SdProtectOperationType_descriptor();
+  }
+  static inline const ::std::string& SdProtectOperationType_Name(SdProtectOperationType value) {
+    return SdProtect_SdProtectOperationType_Name(value);
+  }
+  static inline bool SdProtectOperationType_Parse(const ::std::string& name,
+      SdProtectOperationType* value) {
+    return SdProtect_SdProtectOperationType_Parse(name, value);
+  }
+
+  // accessors -------------------------------------------------------
+
+  // optional .hw.trezor.messages.management.SdProtect.SdProtectOperationType operation = 1;
+  bool has_operation() const;
+  void clear_operation();
+  static const int kOperationFieldNumber = 1;
+  ::hw::trezor::messages::management::SdProtect_SdProtectOperationType operation() const;
+  void set_operation(::hw::trezor::messages::management::SdProtect_SdProtectOperationType value);
+
+  // @@protoc_insertion_point(class_scope:hw.trezor.messages.management.SdProtect)
+ private:
+  class HasBitSetters;
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  int operation_;
+  friend struct ::TableStruct_messages_2dmanagement_2eproto;
+};
+// -------------------------------------------------------------------
+
 class Ping final :
     public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.management.Ping) */ {
  public:
@@ -1484,7 +1794,7 @@ class Ping final :
                &_Ping_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   void Swap(Ping* other);
   friend void swap(Ping& a, Ping& b) {
@@ -1637,7 +1947,7 @@ class Cancel final :
                &_Cancel_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   void Swap(Cancel* other);
   friend void swap(Cancel& a, Cancel& b) {
@@ -1750,7 +2060,7 @@ class GetEntropy final :
                &_GetEntropy_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   void Swap(GetEntropy* other);
   friend void swap(GetEntropy& a, GetEntropy& b) {
@@ -1871,7 +2181,7 @@ class Entropy final :
                &_Entropy_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   void Swap(Entropy* other);
   friend void swap(Entropy& a, Entropy& b) {
@@ -2000,7 +2310,7 @@ class WipeDevice final :
                &_WipeDevice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   void Swap(WipeDevice* other);
   friend void swap(WipeDevice& a, WipeDevice& b) {
@@ -2113,7 +2423,7 @@ class LoadDevice final :
                &_LoadDevice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    13;
 
   void Swap(LoadDevice* other);
   friend void swap(LoadDevice& a, LoadDevice& b) {
@@ -2170,20 +2480,27 @@ class LoadDevice final :
 
   // accessors -------------------------------------------------------
 
-  // optional string mnemonic = 1;
-  bool has_mnemonic() const;
-  void clear_mnemonic();
-  static const int kMnemonicFieldNumber = 1;
-  const ::std::string& mnemonic() const;
-  void set_mnemonic(const ::std::string& value);
+  // repeated string mnemonics = 1;
+  int mnemonics_size() const;
+  void clear_mnemonics();
+  static const int kMnemonicsFieldNumber = 1;
+  const ::std::string& mnemonics(int index) const;
+  ::std::string* mutable_mnemonics(int index);
+  void set_mnemonics(int index, const ::std::string& value);
   #if LANG_CXX11
-  void set_mnemonic(::std::string&& value);
+  void set_mnemonics(int index, ::std::string&& value);
   #endif
-  void set_mnemonic(const char* value);
-  void set_mnemonic(const char* value, size_t size);
-  ::std::string* mutable_mnemonic();
-  ::std::string* release_mnemonic();
-  void set_allocated_mnemonic(::std::string* mnemonic);
+  void set_mnemonics(int index, const char* value);
+  void set_mnemonics(int index, const char* value, size_t size);
+  ::std::string* add_mnemonics();
+  void add_mnemonics(const ::std::string& value);
+  #if LANG_CXX11
+  void add_mnemonics(::std::string&& value);
+  #endif
+  void add_mnemonics(const char* value);
+  void add_mnemonics(const char* value, size_t size);
+  const ::google::protobuf::RepeatedPtrField<::std::string>& mnemonics() const;
+  ::google::protobuf::RepeatedPtrField<::std::string>* mutable_mnemonics();
 
   // optional string pin = 3;
   bool has_pin() const;
@@ -2267,7 +2584,7 @@ class LoadDevice final :
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr mnemonic_;
+  ::google::protobuf::RepeatedPtrField<::std::string> mnemonics_;
   ::google::protobuf::internal::ArenaStringPtr pin_;
   public:
   static ::google::protobuf::internal::ExplicitlyConstructed<::std::string> _i_give_permission_to_break_this_code_default_language_;
@@ -2327,7 +2644,7 @@ class ResetDevice final :
                &_ResetDevice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    14;
 
   void Swap(ResetDevice* other);
   friend void swap(ResetDevice& a, ResetDevice& b) {
@@ -2456,12 +2773,12 @@ class ResetDevice final :
   bool no_backup() const;
   void set_no_backup(bool value);
 
-  // optional bool slip39 = 10;
-  bool has_slip39() const;
-  void clear_slip39();
-  static const int kSlip39FieldNumber = 10;
-  bool slip39() const;
-  void set_slip39(bool value);
+  // optional .hw.trezor.messages.management.BackupType backup_type = 10 [default = Bip39];
+  bool has_backup_type() const;
+  void clear_backup_type();
+  static const int kBackupTypeFieldNumber = 10;
+  ::hw::trezor::messages::management::BackupType backup_type() const;
+  void set_backup_type(::hw::trezor::messages::management::BackupType value);
 
   // optional uint32 strength = 2 [default = 256];
   bool has_strength() const;
@@ -2488,7 +2805,7 @@ class ResetDevice final :
   bool skip_backup_;
   ::google::protobuf::uint32 u2f_counter_;
   bool no_backup_;
-  bool slip39_;
+  int backup_type_;
   ::google::protobuf::uint32 strength_;
   friend struct ::TableStruct_messages_2dmanagement_2eproto;
 };
@@ -2539,7 +2856,7 @@ class BackupDevice final :
                &_BackupDevice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    15;
 
   void Swap(BackupDevice* other);
   friend void swap(BackupDevice& a, BackupDevice& b) {
@@ -2652,7 +2969,7 @@ class EntropyRequest final :
                &_EntropyRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    16;
 
   void Swap(EntropyRequest* other);
   friend void swap(EntropyRequest& a, EntropyRequest& b) {
@@ -2765,7 +3082,7 @@ class EntropyAck final :
                &_EntropyAck_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    17;
 
   void Swap(EntropyAck* other);
   friend void swap(EntropyAck& a, EntropyAck& b) {
@@ -2894,7 +3211,7 @@ class RecoveryDevice final :
                &_RecoveryDevice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    18;
 
   void Swap(RecoveryDevice* other);
   friend void swap(RecoveryDevice& a, RecoveryDevice& b) {
@@ -3124,7 +3441,7 @@ class WordRequest final :
                &_WordRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    19;
 
   void Swap(WordRequest* other);
   friend void swap(WordRequest& a, WordRequest& b) {
@@ -3273,7 +3590,7 @@ class WordAck final :
                &_WordAck_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    20;
 
   void Swap(WordAck* other);
   friend void swap(WordAck& a, WordAck& b) {
@@ -3402,7 +3719,7 @@ class SetU2FCounter final :
                &_SetU2FCounter_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    21;
 
   void Swap(SetU2FCounter* other);
   friend void swap(SetU2FCounter& a, SetU2FCounter& b) {
@@ -4437,6 +4754,75 @@ inline void Features::set_no_backup(bool value) {
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.Features.no_backup)
 }
 
+// optional bool recovery_mode = 29;
+inline bool Features::has_recovery_mode() const {
+  return (_has_bits_[0] & 0x08000000u) != 0;
+}
+inline void Features::clear_recovery_mode() {
+  recovery_mode_ = false;
+  _has_bits_[0] &= ~0x08000000u;
+}
+inline bool Features::recovery_mode() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.Features.recovery_mode)
+  return recovery_mode_;
+}
+inline void Features::set_recovery_mode(bool value) {
+  _has_bits_[0] |= 0x08000000u;
+  recovery_mode_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.Features.recovery_mode)
+}
+
+// repeated .hw.trezor.messages.management.Features.Capability capabilities = 30;
+inline int Features::capabilities_size() const {
+  return capabilities_.size();
+}
+inline void Features::clear_capabilities() {
+  capabilities_.Clear();
+}
+inline ::hw::trezor::messages::management::Features_Capability Features::capabilities(int index) const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.Features.capabilities)
+  return static_cast< ::hw::trezor::messages::management::Features_Capability >(capabilities_.Get(index));
+}
+inline void Features::set_capabilities(int index, ::hw::trezor::messages::management::Features_Capability value) {
+  assert(::hw::trezor::messages::management::Features_Capability_IsValid(value));
+  capabilities_.Set(index, value);
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.Features.capabilities)
+}
+inline void Features::add_capabilities(::hw::trezor::messages::management::Features_Capability value) {
+  assert(::hw::trezor::messages::management::Features_Capability_IsValid(value));
+  capabilities_.Add(value);
+  // @@protoc_insertion_point(field_add:hw.trezor.messages.management.Features.capabilities)
+}
+inline const ::google::protobuf::RepeatedField<int>&
+Features::capabilities() const {
+  // @@protoc_insertion_point(field_list:hw.trezor.messages.management.Features.capabilities)
+  return capabilities_;
+}
+inline ::google::protobuf::RepeatedField<int>*
+Features::mutable_capabilities() {
+  // @@protoc_insertion_point(field_mutable_list:hw.trezor.messages.management.Features.capabilities)
+  return &capabilities_;
+}
+
+// optional .hw.trezor.messages.management.BackupType backup_type = 31;
+inline bool Features::has_backup_type() const {
+  return (_has_bits_[0] & 0x10000000u) != 0;
+}
+inline void Features::clear_backup_type() {
+  backup_type_ = 0;
+  _has_bits_[0] &= ~0x10000000u;
+}
+inline ::hw::trezor::messages::management::BackupType Features::backup_type() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.Features.backup_type)
+  return static_cast< ::hw::trezor::messages::management::BackupType >(backup_type_);
+}
+inline void Features::set_backup_type(::hw::trezor::messages::management::BackupType value) {
+  assert(::hw::trezor::messages::management::BackupType_IsValid(value));
+  _has_bits_[0] |= 0x10000000u;
+  backup_type_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.Features.backup_type)
+}
+
 // -------------------------------------------------------------------
 
 // ClearSession
@@ -4744,6 +5130,29 @@ inline void ChangePin::set_remove(bool value) {
 
 // -------------------------------------------------------------------
 
+// SdProtect
+
+// optional .hw.trezor.messages.management.SdProtect.SdProtectOperationType operation = 1;
+inline bool SdProtect::has_operation() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void SdProtect::clear_operation() {
+  operation_ = 0;
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline ::hw::trezor::messages::management::SdProtect_SdProtectOperationType SdProtect::operation() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.SdProtect.operation)
+  return static_cast< ::hw::trezor::messages::management::SdProtect_SdProtectOperationType >(operation_);
+}
+inline void SdProtect::set_operation(::hw::trezor::messages::management::SdProtect_SdProtectOperationType value) {
+  assert(::hw::trezor::messages::management::SdProtect_SdProtectOperationType_IsValid(value));
+  _has_bits_[0] |= 0x00000001u;
+  operation_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.SdProtect.operation)
+}
+
+// -------------------------------------------------------------------
+
 // Ping
 
 // optional string message = 1;
@@ -4958,69 +5367,78 @@ inline void Entropy::set_allocated_entropy(::std::string* entropy) {
 
 // LoadDevice
 
-// optional string mnemonic = 1;
-inline bool LoadDevice::has_mnemonic() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
+// repeated string mnemonics = 1;
+inline int LoadDevice::mnemonics_size() const {
+  return mnemonics_.size();
 }
-inline void LoadDevice::clear_mnemonic() {
-  mnemonic_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _has_bits_[0] &= ~0x00000001u;
+inline void LoadDevice::clear_mnemonics() {
+  mnemonics_.Clear();
 }
-inline const ::std::string& LoadDevice::mnemonic() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.LoadDevice.mnemonic)
-  return mnemonic_.GetNoArena();
+inline const ::std::string& LoadDevice::mnemonics(int index) const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.LoadDevice.mnemonics)
+  return mnemonics_.Get(index);
 }
-inline void LoadDevice::set_mnemonic(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000001u;
-  mnemonic_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.LoadDevice.mnemonic)
+inline ::std::string* LoadDevice::mutable_mnemonics(int index) {
+  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.management.LoadDevice.mnemonics)
+  return mnemonics_.Mutable(index);
+}
+inline void LoadDevice::set_mnemonics(int index, const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.LoadDevice.mnemonics)
+  mnemonics_.Mutable(index)->assign(value);
 }
 #if LANG_CXX11
-inline void LoadDevice::set_mnemonic(::std::string&& value) {
-  _has_bits_[0] |= 0x00000001u;
-  mnemonic_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.management.LoadDevice.mnemonic)
+inline void LoadDevice::set_mnemonics(int index, ::std::string&& value) {
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.LoadDevice.mnemonics)
+  mnemonics_.Mutable(index)->assign(std::move(value));
 }
 #endif
-inline void LoadDevice::set_mnemonic(const char* value) {
+inline void LoadDevice::set_mnemonics(int index, const char* value) {
   GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000001u;
-  mnemonic_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.management.LoadDevice.mnemonic)
+  mnemonics_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.management.LoadDevice.mnemonics)
 }
-inline void LoadDevice::set_mnemonic(const char* value, size_t size) {
-  _has_bits_[0] |= 0x00000001u;
-  mnemonic_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.management.LoadDevice.mnemonic)
+inline void LoadDevice::set_mnemonics(int index, const char* value, size_t size) {
+  mnemonics_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.management.LoadDevice.mnemonics)
 }
-inline ::std::string* LoadDevice::mutable_mnemonic() {
-  _has_bits_[0] |= 0x00000001u;
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.management.LoadDevice.mnemonic)
-  return mnemonic_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+inline ::std::string* LoadDevice::add_mnemonics() {
+  // @@protoc_insertion_point(field_add_mutable:hw.trezor.messages.management.LoadDevice.mnemonics)
+  return mnemonics_.Add();
 }
-inline ::std::string* LoadDevice::release_mnemonic() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.management.LoadDevice.mnemonic)
-  if (!has_mnemonic()) {
-    return nullptr;
-  }
-  _has_bits_[0] &= ~0x00000001u;
-  return mnemonic_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+inline void LoadDevice::add_mnemonics(const ::std::string& value) {
+  mnemonics_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:hw.trezor.messages.management.LoadDevice.mnemonics)
 }
-inline void LoadDevice::set_allocated_mnemonic(::std::string* mnemonic) {
-  if (mnemonic != nullptr) {
-    _has_bits_[0] |= 0x00000001u;
-  } else {
-    _has_bits_[0] &= ~0x00000001u;
-  }
-  mnemonic_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), mnemonic);
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.management.LoadDevice.mnemonic)
+#if LANG_CXX11
+inline void LoadDevice::add_mnemonics(::std::string&& value) {
+  mnemonics_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:hw.trezor.messages.management.LoadDevice.mnemonics)
+}
+#endif
+inline void LoadDevice::add_mnemonics(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  mnemonics_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:hw.trezor.messages.management.LoadDevice.mnemonics)
+}
+inline void LoadDevice::add_mnemonics(const char* value, size_t size) {
+  mnemonics_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:hw.trezor.messages.management.LoadDevice.mnemonics)
+}
+inline const ::google::protobuf::RepeatedPtrField<::std::string>&
+LoadDevice::mnemonics() const {
+  // @@protoc_insertion_point(field_list:hw.trezor.messages.management.LoadDevice.mnemonics)
+  return mnemonics_;
+}
+inline ::google::protobuf::RepeatedPtrField<::std::string>*
+LoadDevice::mutable_mnemonics() {
+  // @@protoc_insertion_point(field_mutable_list:hw.trezor.messages.management.LoadDevice.mnemonics)
+  return &mnemonics_;
 }
 
 // optional .hw.trezor.messages.common.HDNodeType node = 2;
 inline bool LoadDevice::has_node() const {
-  return (_has_bits_[0] & 0x00000010u) != 0;
+  return (_has_bits_[0] & 0x00000008u) != 0;
 }
 inline const ::hw::trezor::messages::common::HDNodeType& LoadDevice::node() const {
   const ::hw::trezor::messages::common::HDNodeType* p = node_;
@@ -5030,13 +5448,13 @@ inline const ::hw::trezor::messages::common::HDNodeType& LoadDevice::node() cons
 }
 inline ::hw::trezor::messages::common::HDNodeType* LoadDevice::release_node() {
   // @@protoc_insertion_point(field_release:hw.trezor.messages.management.LoadDevice.node)
-  _has_bits_[0] &= ~0x00000010u;
+  _has_bits_[0] &= ~0x00000008u;
   ::hw::trezor::messages::common::HDNodeType* temp = node_;
   node_ = nullptr;
   return temp;
 }
 inline ::hw::trezor::messages::common::HDNodeType* LoadDevice::mutable_node() {
-  _has_bits_[0] |= 0x00000010u;
+  _has_bits_[0] |= 0x00000008u;
   if (node_ == nullptr) {
     auto* p = CreateMaybeMessage<::hw::trezor::messages::common::HDNodeType>(GetArenaNoVirtual());
     node_ = p;
@@ -5055,9 +5473,9 @@ inline void LoadDevice::set_allocated_node(::hw::trezor::messages::common::HDNod
       node = ::google::protobuf::internal::GetOwnedMessage(
           message_arena, node, submessage_arena);
     }
-    _has_bits_[0] |= 0x00000010u;
+    _has_bits_[0] |= 0x00000008u;
   } else {
-    _has_bits_[0] &= ~0x00000010u;
+    _has_bits_[0] &= ~0x00000008u;
   }
   node_ = node;
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.management.LoadDevice.node)
@@ -5065,24 +5483,24 @@ inline void LoadDevice::set_allocated_node(::hw::trezor::messages::common::HDNod
 
 // optional string pin = 3;
 inline bool LoadDevice::has_pin() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
+  return (_has_bits_[0] & 0x00000001u) != 0;
 }
 inline void LoadDevice::clear_pin() {
   pin_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000001u;
 }
 inline const ::std::string& LoadDevice::pin() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.management.LoadDevice.pin)
   return pin_.GetNoArena();
 }
 inline void LoadDevice::set_pin(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000001u;
   pin_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.LoadDevice.pin)
 }
 #if LANG_CXX11
 inline void LoadDevice::set_pin(::std::string&& value) {
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000001u;
   pin_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.management.LoadDevice.pin)
@@ -5090,18 +5508,18 @@ inline void LoadDevice::set_pin(::std::string&& value) {
 #endif
 inline void LoadDevice::set_pin(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000001u;
   pin_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:hw.trezor.messages.management.LoadDevice.pin)
 }
 inline void LoadDevice::set_pin(const char* value, size_t size) {
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000001u;
   pin_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.management.LoadDevice.pin)
 }
 inline ::std::string* LoadDevice::mutable_pin() {
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000001u;
   // @@protoc_insertion_point(field_mutable:hw.trezor.messages.management.LoadDevice.pin)
   return pin_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -5110,14 +5528,14 @@ inline ::std::string* LoadDevice::release_pin() {
   if (!has_pin()) {
     return nullptr;
   }
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000001u;
   return pin_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void LoadDevice::set_allocated_pin(::std::string* pin) {
   if (pin != nullptr) {
-    _has_bits_[0] |= 0x00000002u;
+    _has_bits_[0] |= 0x00000001u;
   } else {
-    _has_bits_[0] &= ~0x00000002u;
+    _has_bits_[0] &= ~0x00000001u;
   }
   pin_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), pin);
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.management.LoadDevice.pin)
@@ -5125,42 +5543,42 @@ inline void LoadDevice::set_allocated_pin(::std::string* pin) {
 
 // optional bool passphrase_protection = 4;
 inline bool LoadDevice::has_passphrase_protection() const {
-  return (_has_bits_[0] & 0x00000020u) != 0;
+  return (_has_bits_[0] & 0x00000010u) != 0;
 }
 inline void LoadDevice::clear_passphrase_protection() {
   passphrase_protection_ = false;
-  _has_bits_[0] &= ~0x00000020u;
+  _has_bits_[0] &= ~0x00000010u;
 }
 inline bool LoadDevice::passphrase_protection() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.management.LoadDevice.passphrase_protection)
   return passphrase_protection_;
 }
 inline void LoadDevice::set_passphrase_protection(bool value) {
-  _has_bits_[0] |= 0x00000020u;
+  _has_bits_[0] |= 0x00000010u;
   passphrase_protection_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.LoadDevice.passphrase_protection)
 }
 
 // optional string language = 5 [default = "english"];
 inline bool LoadDevice::has_language() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
+  return (_has_bits_[0] & 0x00000002u) != 0;
 }
 inline void LoadDevice::clear_language() {
   language_.ClearToDefaultNoArena(&::hw::trezor::messages::management::LoadDevice::_i_give_permission_to_break_this_code_default_language_.get());
-  _has_bits_[0] &= ~0x00000004u;
+  _has_bits_[0] &= ~0x00000002u;
 }
 inline const ::std::string& LoadDevice::language() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.management.LoadDevice.language)
   return language_.GetNoArena();
 }
 inline void LoadDevice::set_language(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000004u;
+  _has_bits_[0] |= 0x00000002u;
   language_.SetNoArena(&::hw::trezor::messages::management::LoadDevice::_i_give_permission_to_break_this_code_default_language_.get(), value);
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.LoadDevice.language)
 }
 #if LANG_CXX11
 inline void LoadDevice::set_language(::std::string&& value) {
-  _has_bits_[0] |= 0x00000004u;
+  _has_bits_[0] |= 0x00000002u;
   language_.SetNoArena(
     &::hw::trezor::messages::management::LoadDevice::_i_give_permission_to_break_this_code_default_language_.get(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.management.LoadDevice.language)
@@ -5168,18 +5586,18 @@ inline void LoadDevice::set_language(::std::string&& value) {
 #endif
 inline void LoadDevice::set_language(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000004u;
+  _has_bits_[0] |= 0x00000002u;
   language_.SetNoArena(&::hw::trezor::messages::management::LoadDevice::_i_give_permission_to_break_this_code_default_language_.get(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:hw.trezor.messages.management.LoadDevice.language)
 }
 inline void LoadDevice::set_language(const char* value, size_t size) {
-  _has_bits_[0] |= 0x00000004u;
+  _has_bits_[0] |= 0x00000002u;
   language_.SetNoArena(&::hw::trezor::messages::management::LoadDevice::_i_give_permission_to_break_this_code_default_language_.get(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.management.LoadDevice.language)
 }
 inline ::std::string* LoadDevice::mutable_language() {
-  _has_bits_[0] |= 0x00000004u;
+  _has_bits_[0] |= 0x00000002u;
   // @@protoc_insertion_point(field_mutable:hw.trezor.messages.management.LoadDevice.language)
   return language_.MutableNoArena(&::hw::trezor::messages::management::LoadDevice::_i_give_permission_to_break_this_code_default_language_.get());
 }
@@ -5188,14 +5606,14 @@ inline ::std::string* LoadDevice::release_language() {
   if (!has_language()) {
     return nullptr;
   }
-  _has_bits_[0] &= ~0x00000004u;
+  _has_bits_[0] &= ~0x00000002u;
   return language_.ReleaseNonDefaultNoArena(&::hw::trezor::messages::management::LoadDevice::_i_give_permission_to_break_this_code_default_language_.get());
 }
 inline void LoadDevice::set_allocated_language(::std::string* language) {
   if (language != nullptr) {
-    _has_bits_[0] |= 0x00000004u;
+    _has_bits_[0] |= 0x00000002u;
   } else {
-    _has_bits_[0] &= ~0x00000004u;
+    _has_bits_[0] &= ~0x00000002u;
   }
   language_.SetAllocatedNoArena(&::hw::trezor::messages::management::LoadDevice::_i_give_permission_to_break_this_code_default_language_.get(), language);
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.management.LoadDevice.language)
@@ -5203,24 +5621,24 @@ inline void LoadDevice::set_allocated_language(::std::string* language) {
 
 // optional string label = 6;
 inline bool LoadDevice::has_label() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
+  return (_has_bits_[0] & 0x00000004u) != 0;
 }
 inline void LoadDevice::clear_label() {
   label_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _has_bits_[0] &= ~0x00000008u;
+  _has_bits_[0] &= ~0x00000004u;
 }
 inline const ::std::string& LoadDevice::label() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.management.LoadDevice.label)
   return label_.GetNoArena();
 }
 inline void LoadDevice::set_label(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000004u;
   label_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.LoadDevice.label)
 }
 #if LANG_CXX11
 inline void LoadDevice::set_label(::std::string&& value) {
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000004u;
   label_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.management.LoadDevice.label)
@@ -5228,18 +5646,18 @@ inline void LoadDevice::set_label(::std::string&& value) {
 #endif
 inline void LoadDevice::set_label(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000004u;
   label_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:hw.trezor.messages.management.LoadDevice.label)
 }
 inline void LoadDevice::set_label(const char* value, size_t size) {
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000004u;
   label_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.management.LoadDevice.label)
 }
 inline ::std::string* LoadDevice::mutable_label() {
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000004u;
   // @@protoc_insertion_point(field_mutable:hw.trezor.messages.management.LoadDevice.label)
   return label_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
@@ -5248,14 +5666,14 @@ inline ::std::string* LoadDevice::release_label() {
   if (!has_label()) {
     return nullptr;
   }
-  _has_bits_[0] &= ~0x00000008u;
+  _has_bits_[0] &= ~0x00000004u;
   return label_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void LoadDevice::set_allocated_label(::std::string* label) {
   if (label != nullptr) {
-    _has_bits_[0] |= 0x00000008u;
+    _has_bits_[0] |= 0x00000004u;
   } else {
-    _has_bits_[0] &= ~0x00000008u;
+    _has_bits_[0] &= ~0x00000004u;
   }
   label_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), label);
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.management.LoadDevice.label)
@@ -5263,36 +5681,36 @@ inline void LoadDevice::set_allocated_label(::std::string* label) {
 
 // optional bool skip_checksum = 7;
 inline bool LoadDevice::has_skip_checksum() const {
-  return (_has_bits_[0] & 0x00000040u) != 0;
+  return (_has_bits_[0] & 0x00000020u) != 0;
 }
 inline void LoadDevice::clear_skip_checksum() {
   skip_checksum_ = false;
-  _has_bits_[0] &= ~0x00000040u;
+  _has_bits_[0] &= ~0x00000020u;
 }
 inline bool LoadDevice::skip_checksum() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.management.LoadDevice.skip_checksum)
   return skip_checksum_;
 }
 inline void LoadDevice::set_skip_checksum(bool value) {
-  _has_bits_[0] |= 0x00000040u;
+  _has_bits_[0] |= 0x00000020u;
   skip_checksum_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.LoadDevice.skip_checksum)
 }
 
 // optional uint32 u2f_counter = 8;
 inline bool LoadDevice::has_u2f_counter() const {
-  return (_has_bits_[0] & 0x00000080u) != 0;
+  return (_has_bits_[0] & 0x00000040u) != 0;
 }
 inline void LoadDevice::clear_u2f_counter() {
   u2f_counter_ = 0u;
-  _has_bits_[0] &= ~0x00000080u;
+  _has_bits_[0] &= ~0x00000040u;
 }
 inline ::google::protobuf::uint32 LoadDevice::u2f_counter() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.management.LoadDevice.u2f_counter)
   return u2f_counter_;
 }
 inline void LoadDevice::set_u2f_counter(::google::protobuf::uint32 value) {
-  _has_bits_[0] |= 0x00000080u;
+  _has_bits_[0] |= 0x00000040u;
   u2f_counter_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.LoadDevice.u2f_counter)
 }
@@ -5547,22 +5965,23 @@ inline void ResetDevice::set_no_backup(bool value) {
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.ResetDevice.no_backup)
 }
 
-// optional bool slip39 = 10;
-inline bool ResetDevice::has_slip39() const {
+// optional .hw.trezor.messages.management.BackupType backup_type = 10 [default = Bip39];
+inline bool ResetDevice::has_backup_type() const {
   return (_has_bits_[0] & 0x00000100u) != 0;
 }
-inline void ResetDevice::clear_slip39() {
-  slip39_ = false;
+inline void ResetDevice::clear_backup_type() {
+  backup_type_ = 0;
   _has_bits_[0] &= ~0x00000100u;
 }
-inline bool ResetDevice::slip39() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.ResetDevice.slip39)
-  return slip39_;
+inline ::hw::trezor::messages::management::BackupType ResetDevice::backup_type() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.ResetDevice.backup_type)
+  return static_cast< ::hw::trezor::messages::management::BackupType >(backup_type_);
 }
-inline void ResetDevice::set_slip39(bool value) {
+inline void ResetDevice::set_backup_type(::hw::trezor::messages::management::BackupType value) {
+  assert(::hw::trezor::messages::management::BackupType_IsValid(value));
   _has_bits_[0] |= 0x00000100u;
-  slip39_ = value;
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.ResetDevice.slip39)
+  backup_type_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.ResetDevice.backup_type)
 }
 
 // -------------------------------------------------------------------
@@ -6040,6 +6459,8 @@ inline void SetU2FCounter::set_u2f_counter(::google::protobuf::uint32 value) {
 
 // -------------------------------------------------------------------
 
+// -------------------------------------------------------------------
+
 
 // @@protoc_insertion_point(namespace_scope)
 
@@ -6051,10 +6472,20 @@ inline void SetU2FCounter::set_u2f_counter(::google::protobuf::uint32 value) {
 namespace google {
 namespace protobuf {
 
+template <> struct is_proto_enum< ::hw::trezor::messages::management::Features_Capability> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::hw::trezor::messages::management::Features_Capability>() {
+  return ::hw::trezor::messages::management::Features_Capability_descriptor();
+}
 template <> struct is_proto_enum< ::hw::trezor::messages::management::ApplySettings_PassphraseSourceType> : ::std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::hw::trezor::messages::management::ApplySettings_PassphraseSourceType>() {
   return ::hw::trezor::messages::management::ApplySettings_PassphraseSourceType_descriptor();
+}
+template <> struct is_proto_enum< ::hw::trezor::messages::management::SdProtect_SdProtectOperationType> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::hw::trezor::messages::management::SdProtect_SdProtectOperationType>() {
+  return ::hw::trezor::messages::management::SdProtect_SdProtectOperationType_descriptor();
 }
 template <> struct is_proto_enum< ::hw::trezor::messages::management::RecoveryDevice_RecoveryDeviceType> : ::std::true_type {};
 template <>
@@ -6065,6 +6496,11 @@ template <> struct is_proto_enum< ::hw::trezor::messages::management::WordReques
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::hw::trezor::messages::management::WordRequest_WordRequestType>() {
   return ::hw::trezor::messages::management::WordRequest_WordRequestType_descriptor();
+}
+template <> struct is_proto_enum< ::hw::trezor::messages::management::BackupType> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::hw::trezor::messages::management::BackupType>() {
+  return ::hw::trezor::messages::management::BackupType_descriptor();
 }
 
 }  // namespace protobuf

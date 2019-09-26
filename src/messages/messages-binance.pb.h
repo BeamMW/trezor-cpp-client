@@ -2010,21 +2010,6 @@ class BinanceSignedTx final :
   ::std::string* release_public_key();
   void set_allocated_public_key(::std::string* public_key);
 
-  // optional string json = 3;
-  bool has_json() const;
-  void clear_json();
-  static const int kJsonFieldNumber = 3;
-  const ::std::string& json() const;
-  void set_json(const ::std::string& value);
-  #if LANG_CXX11
-  void set_json(::std::string&& value);
-  #endif
-  void set_json(const char* value);
-  void set_json(const char* value, size_t size);
-  ::std::string* mutable_json();
-  ::std::string* release_json();
-  void set_allocated_json(::std::string* json);
-
   // @@protoc_insertion_point(class_scope:hw.trezor.messages.binance.BinanceSignedTx)
  private:
   class HasBitSetters;
@@ -2034,7 +2019,6 @@ class BinanceSignedTx final :
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::internal::ArenaStringPtr signature_;
   ::google::protobuf::internal::ArenaStringPtr public_key_;
-  ::google::protobuf::internal::ArenaStringPtr json_;
   friend struct ::TableStruct_messages_2dbinance_2eproto;
 };
 // ===================================================================
@@ -3329,66 +3313,6 @@ inline void BinanceSignedTx::set_allocated_public_key(::std::string* public_key)
   }
   public_key_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), public_key);
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.binance.BinanceSignedTx.public_key)
-}
-
-// optional string json = 3;
-inline bool BinanceSignedTx::has_json() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-inline void BinanceSignedTx::clear_json() {
-  json_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _has_bits_[0] &= ~0x00000004u;
-}
-inline const ::std::string& BinanceSignedTx::json() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.binance.BinanceSignedTx.json)
-  return json_.GetNoArena();
-}
-inline void BinanceSignedTx::set_json(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000004u;
-  json_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.binance.BinanceSignedTx.json)
-}
-#if LANG_CXX11
-inline void BinanceSignedTx::set_json(::std::string&& value) {
-  _has_bits_[0] |= 0x00000004u;
-  json_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.binance.BinanceSignedTx.json)
-}
-#endif
-inline void BinanceSignedTx::set_json(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000004u;
-  json_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.binance.BinanceSignedTx.json)
-}
-inline void BinanceSignedTx::set_json(const char* value, size_t size) {
-  _has_bits_[0] |= 0x00000004u;
-  json_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.binance.BinanceSignedTx.json)
-}
-inline ::std::string* BinanceSignedTx::mutable_json() {
-  _has_bits_[0] |= 0x00000004u;
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.binance.BinanceSignedTx.json)
-  return json_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* BinanceSignedTx::release_json() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.binance.BinanceSignedTx.json)
-  if (!has_json()) {
-    return nullptr;
-  }
-  _has_bits_[0] &= ~0x00000004u;
-  return json_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void BinanceSignedTx::set_allocated_json(::std::string* json) {
-  if (json != nullptr) {
-    _has_bits_[0] |= 0x00000004u;
-  } else {
-    _has_bits_[0] &= ~0x00000004u;
-  }
-  json_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), json);
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.binance.BinanceSignedTx.json)
 }
 
 #ifdef __GNUC__

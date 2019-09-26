@@ -379,10 +379,10 @@ const char descriptor_table_protodef_messages_2dcommon_2eproto[] =
   "\010\022\030\n\024Failure_ProcessError\020\t\022\032\n\026Failure_N"
   "otEnoughFunds\020\n\022\032\n\026Failure_NotInitialize"
   "d\020\013\022\027\n\023Failure_PinMismatch\020\014\022\031\n\025Failure_"
-  "FirmwareError\020c\"\332\004\n\rButtonRequest\022H\n\004cod"
+  "FirmwareError\020c\"\264\005\n\rButtonRequest\022H\n\004cod"
   "e\030\001 \001(\0162:.hw.trezor.messages.common.Butt"
   "onRequest.ButtonRequestType\022\014\n\004data\030\002 \001("
-  "\t\"\360\003\n\021ButtonRequestType\022\027\n\023ButtonRequest"
+  "\t\"\312\004\n\021ButtonRequestType\022\027\n\023ButtonRequest"
   "_Other\020\001\022\"\n\036ButtonRequest_FeeOverThresho"
   "ld\020\002\022\037\n\033ButtonRequest_ConfirmOutput\020\003\022\035\n"
   "\031ButtonRequest_ResetDevice\020\004\022\035\n\031ButtonRe"
@@ -394,27 +394,30 @@ const char descriptor_table_protodef_messages_2dcommon_2eproto[] =
   "uttonRequest_MnemonicWordCount\020\014\022\037\n\033Butt"
   "onRequest_MnemonicInput\020\r\022 \n\034ButtonReque"
   "st_PassphraseType\020\016\022\'\n#ButtonRequest_Unk"
-  "nownDerivationPath\020\017\"\013\n\tButtonAck\"\343\001\n\020Pi"
-  "nMatrixRequest\022N\n\004type\030\001 \001(\0162@.hw.trezor"
-  ".messages.common.PinMatrixRequest.PinMat"
-  "rixRequestType\"\177\n\024PinMatrixRequestType\022 "
-  "\n\034PinMatrixRequestType_Current\020\001\022!\n\035PinM"
-  "atrixRequestType_NewFirst\020\002\022\"\n\036PinMatrix"
-  "RequestType_NewSecond\020\003\"\033\n\014PinMatrixAck\022"
-  "\013\n\003pin\030\001 \002(\t\"&\n\021PassphraseRequest\022\021\n\ton_"
-  "device\030\001 \001(\010\"2\n\rPassphraseAck\022\022\n\npassphr"
-  "ase\030\001 \001(\t\022\r\n\005state\030\002 \001(\014\"\'\n\026PassphraseSt"
-  "ateRequest\022\r\n\005state\030\001 \001(\014\"\024\n\022PassphraseS"
-  "tateAck\"\200\001\n\nHDNodeType\022\r\n\005depth\030\001 \002(\r\022\023\n"
-  "\013fingerprint\030\002 \002(\r\022\021\n\tchild_num\030\003 \002(\r\022\022\n"
-  "\nchain_code\030\004 \002(\014\022\023\n\013private_key\030\005 \001(\014\022\022"
-  "\n\npublic_key\030\006 \001(\014B:\n#com.satoshilabs.tr"
-  "ezor.lib.protobufB\023TrezorMessageCommon"
+  "nownDerivationPath\020\017\022\"\n\036ButtonRequest_Re"
+  "coveryHomepage\020\020\022\031\n\025ButtonRequest_Succes"
+  "s\020\021\022\031\n\025ButtonRequest_Warning\020\022\"\013\n\tButton"
+  "Ack\"\343\001\n\020PinMatrixRequest\022N\n\004type\030\001 \001(\0162@"
+  ".hw.trezor.messages.common.PinMatrixRequ"
+  "est.PinMatrixRequestType\"\177\n\024PinMatrixReq"
+  "uestType\022 \n\034PinMatrixRequestType_Current"
+  "\020\001\022!\n\035PinMatrixRequestType_NewFirst\020\002\022\"\n"
+  "\036PinMatrixRequestType_NewSecond\020\003\"\033\n\014Pin"
+  "MatrixAck\022\013\n\003pin\030\001 \002(\t\"&\n\021PassphraseRequ"
+  "est\022\021\n\ton_device\030\001 \001(\010\"2\n\rPassphraseAck\022"
+  "\022\n\npassphrase\030\001 \001(\t\022\r\n\005state\030\002 \001(\014\"\'\n\026Pa"
+  "ssphraseStateRequest\022\r\n\005state\030\001 \001(\014\"\024\n\022P"
+  "assphraseStateAck\"\200\001\n\nHDNodeType\022\r\n\005dept"
+  "h\030\001 \002(\r\022\023\n\013fingerprint\030\002 \002(\r\022\021\n\tchild_nu"
+  "m\030\003 \002(\r\022\022\n\nchain_code\030\004 \002(\014\022\023\n\013private_k"
+  "ey\030\005 \001(\014\022\022\n\npublic_key\030\006 \001(\014B:\n#com.sato"
+  "shilabs.trezor.lib.protobufB\023TrezorMessa"
+  "geCommon"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dcommon_2eproto = {
   false, InitDefaults_messages_2dcommon_2eproto, 
   descriptor_table_protodef_messages_2dcommon_2eproto,
-  "messages-common.proto", &assign_descriptors_table_messages_2dcommon_2eproto, 1758,
+  "messages-common.proto", &assign_descriptors_table_messages_2dcommon_2eproto, 1848,
 };
 
 void AddDescriptors_messages_2dcommon_2eproto() {
@@ -494,6 +497,9 @@ bool ButtonRequest_ButtonRequestType_IsValid(int value) {
     case 13:
     case 14:
     case 15:
+    case 16:
+    case 17:
+    case 18:
       return true;
     default:
       return false;
@@ -516,6 +522,9 @@ const ButtonRequest_ButtonRequestType ButtonRequest::ButtonRequest_MnemonicWordC
 const ButtonRequest_ButtonRequestType ButtonRequest::ButtonRequest_MnemonicInput;
 const ButtonRequest_ButtonRequestType ButtonRequest::ButtonRequest_PassphraseType;
 const ButtonRequest_ButtonRequestType ButtonRequest::ButtonRequest_UnknownDerivationPath;
+const ButtonRequest_ButtonRequestType ButtonRequest::ButtonRequest_RecoveryHomepage;
+const ButtonRequest_ButtonRequestType ButtonRequest::ButtonRequest_Success;
+const ButtonRequest_ButtonRequestType ButtonRequest::ButtonRequest_Warning;
 const ButtonRequest_ButtonRequestType ButtonRequest::ButtonRequestType_MIN;
 const ButtonRequest_ButtonRequestType ButtonRequest::ButtonRequestType_MAX;
 const int ButtonRequest::ButtonRequestType_ARRAYSIZE;
