@@ -123,6 +123,7 @@ enum Failure_FailureType {
   Failure_FailureType_Failure_NotEnoughFunds = 10,
   Failure_FailureType_Failure_NotInitialized = 11,
   Failure_FailureType_Failure_PinMismatch = 12,
+  Failure_FailureType_Failure_WipeCodeMismatch = 13,
   Failure_FailureType_Failure_FirmwareError = 99
 };
 bool Failure_FailureType_IsValid(int value);
@@ -178,11 +179,13 @@ inline bool ButtonRequest_ButtonRequestType_Parse(
 enum PinMatrixRequest_PinMatrixRequestType {
   PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_Current = 1,
   PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_NewFirst = 2,
-  PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_NewSecond = 3
+  PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_NewSecond = 3,
+  PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_WipeCodeFirst = 4,
+  PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_WipeCodeSecond = 5
 };
 bool PinMatrixRequest_PinMatrixRequestType_IsValid(int value);
 const PinMatrixRequest_PinMatrixRequestType PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_MIN = PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_Current;
-const PinMatrixRequest_PinMatrixRequestType PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_MAX = PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_NewSecond;
+const PinMatrixRequest_PinMatrixRequestType PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_MAX = PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_WipeCodeSecond;
 const int PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_ARRAYSIZE = PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* PinMatrixRequest_PinMatrixRequestType_descriptor();
@@ -451,6 +454,8 @@ class Failure final :
     Failure_FailureType_Failure_NotInitialized;
   static const FailureType Failure_PinMismatch =
     Failure_FailureType_Failure_PinMismatch;
+  static const FailureType Failure_WipeCodeMismatch =
+    Failure_FailureType_Failure_WipeCodeMismatch;
   static const FailureType Failure_FirmwareError =
     Failure_FailureType_Failure_FirmwareError;
   static inline bool FailureType_IsValid(int value) {
@@ -671,21 +676,6 @@ class ButtonRequest final :
 
   // accessors -------------------------------------------------------
 
-  // optional string data = 2;
-  bool has_data() const;
-  void clear_data();
-  static const int kDataFieldNumber = 2;
-  const ::std::string& data() const;
-  void set_data(const ::std::string& value);
-  #if LANG_CXX11
-  void set_data(::std::string&& value);
-  #endif
-  void set_data(const char* value);
-  void set_data(const char* value, size_t size);
-  ::std::string* mutable_data();
-  ::std::string* release_data();
-  void set_allocated_data(::std::string* data);
-
   // optional .hw.trezor.messages.common.ButtonRequest.ButtonRequestType code = 1;
   bool has_code() const;
   void clear_code();
@@ -700,7 +690,6 @@ class ButtonRequest final :
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr data_;
   int code_;
   friend struct ::TableStruct_messages_2dcommon_2eproto;
 };
@@ -926,6 +915,10 @@ class PinMatrixRequest final :
     PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_NewFirst;
   static const PinMatrixRequestType PinMatrixRequestType_NewSecond =
     PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_NewSecond;
+  static const PinMatrixRequestType PinMatrixRequestType_WipeCodeFirst =
+    PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_WipeCodeFirst;
+  static const PinMatrixRequestType PinMatrixRequestType_WipeCodeSecond =
+    PinMatrixRequest_PinMatrixRequestType_PinMatrixRequestType_WipeCodeSecond;
   static inline bool PinMatrixRequestType_IsValid(int value) {
     return PinMatrixRequest_PinMatrixRequestType_IsValid(value);
   }
@@ -1951,11 +1944,11 @@ inline void Failure::set_allocated_message(::std::string* message) {
 
 // optional .hw.trezor.messages.common.ButtonRequest.ButtonRequestType code = 1;
 inline bool ButtonRequest::has_code() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
+  return (_has_bits_[0] & 0x00000001u) != 0;
 }
 inline void ButtonRequest::clear_code() {
   code_ = 1;
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000001u;
 }
 inline ::hw::trezor::messages::common::ButtonRequest_ButtonRequestType ButtonRequest::code() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.common.ButtonRequest.code)
@@ -1963,69 +1956,9 @@ inline ::hw::trezor::messages::common::ButtonRequest_ButtonRequestType ButtonReq
 }
 inline void ButtonRequest::set_code(::hw::trezor::messages::common::ButtonRequest_ButtonRequestType value) {
   assert(::hw::trezor::messages::common::ButtonRequest_ButtonRequestType_IsValid(value));
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000001u;
   code_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.common.ButtonRequest.code)
-}
-
-// optional string data = 2;
-inline bool ButtonRequest::has_data() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-inline void ButtonRequest::clear_data() {
-  data_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline const ::std::string& ButtonRequest::data() const {
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.common.ButtonRequest.data)
-  return data_.GetNoArena();
-}
-inline void ButtonRequest::set_data(const ::std::string& value) {
-  _has_bits_[0] |= 0x00000001u;
-  data_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:hw.trezor.messages.common.ButtonRequest.data)
-}
-#if LANG_CXX11
-inline void ButtonRequest::set_data(::std::string&& value) {
-  _has_bits_[0] |= 0x00000001u;
-  data_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.common.ButtonRequest.data)
-}
-#endif
-inline void ButtonRequest::set_data(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  _has_bits_[0] |= 0x00000001u;
-  data_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.common.ButtonRequest.data)
-}
-inline void ButtonRequest::set_data(const char* value, size_t size) {
-  _has_bits_[0] |= 0x00000001u;
-  data_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.common.ButtonRequest.data)
-}
-inline ::std::string* ButtonRequest::mutable_data() {
-  _has_bits_[0] |= 0x00000001u;
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.common.ButtonRequest.data)
-  return data_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* ButtonRequest::release_data() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.common.ButtonRequest.data)
-  if (!has_data()) {
-    return nullptr;
-  }
-  _has_bits_[0] &= ~0x00000001u;
-  return data_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void ButtonRequest::set_allocated_data(::std::string* data) {
-  if (data != nullptr) {
-    _has_bits_[0] |= 0x00000001u;
-  } else {
-    _has_bits_[0] &= ~0x00000001u;
-  }
-  data_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), data);
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.common.ButtonRequest.data)
 }
 
 // -------------------------------------------------------------------

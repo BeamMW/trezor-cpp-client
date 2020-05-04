@@ -263,8 +263,6 @@ const ::google::protobuf::uint32 TableStruct_messages_2dcommon_2eproto::offsets[
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::ButtonRequest, code_),
-  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::ButtonRequest, data_),
-  1,
   0,
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::ButtonAck, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::common::ButtonAck, _internal_metadata_),
@@ -334,15 +332,15 @@ const ::google::protobuf::uint32 TableStruct_messages_2dcommon_2eproto::offsets[
 static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 6, sizeof(::hw::trezor::messages::common::Success)},
   { 7, 14, sizeof(::hw::trezor::messages::common::Failure)},
-  { 16, 23, sizeof(::hw::trezor::messages::common::ButtonRequest)},
-  { 25, 30, sizeof(::hw::trezor::messages::common::ButtonAck)},
-  { 30, 36, sizeof(::hw::trezor::messages::common::PinMatrixRequest)},
-  { 37, 43, sizeof(::hw::trezor::messages::common::PinMatrixAck)},
-  { 44, 50, sizeof(::hw::trezor::messages::common::PassphraseRequest)},
-  { 51, 58, sizeof(::hw::trezor::messages::common::PassphraseAck)},
-  { 60, 66, sizeof(::hw::trezor::messages::common::PassphraseStateRequest)},
-  { 67, 72, sizeof(::hw::trezor::messages::common::PassphraseStateAck)},
-  { 72, 83, sizeof(::hw::trezor::messages::common::HDNodeType)},
+  { 16, 22, sizeof(::hw::trezor::messages::common::ButtonRequest)},
+  { 23, 28, sizeof(::hw::trezor::messages::common::ButtonAck)},
+  { 28, 34, sizeof(::hw::trezor::messages::common::PinMatrixRequest)},
+  { 35, 41, sizeof(::hw::trezor::messages::common::PinMatrixAck)},
+  { 42, 48, sizeof(::hw::trezor::messages::common::PassphraseRequest)},
+  { 49, 56, sizeof(::hw::trezor::messages::common::PassphraseAck)},
+  { 58, 64, sizeof(::hw::trezor::messages::common::PassphraseStateRequest)},
+  { 65, 70, sizeof(::hw::trezor::messages::common::PassphraseStateAck)},
+  { 70, 81, sizeof(::hw::trezor::messages::common::HDNodeType)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -367,10 +365,10 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 const char descriptor_table_protodef_messages_2dcommon_2eproto[] =
   "\n\025messages-common.proto\022\031hw.trezor.messa"
-  "ges.common\"\032\n\007Success\022\017\n\007message\030\001 \001(\t\"\306"
+  "ges.common\"\032\n\007Success\022\017\n\007message\030\001 \001(\t\"\344"
   "\003\n\007Failure\022<\n\004code\030\001 \001(\0162..hw.trezor.mes"
   "sages.common.Failure.FailureType\022\017\n\007mess"
-  "age\030\002 \001(\t\"\353\002\n\013FailureType\022\035\n\031Failure_Une"
+  "age\030\002 \001(\t\"\211\003\n\013FailureType\022\035\n\031Failure_Une"
   "xpectedMessage\020\001\022\032\n\026Failure_ButtonExpect"
   "ed\020\002\022\025\n\021Failure_DataError\020\003\022\033\n\027Failure_A"
   "ctionCancelled\020\004\022\027\n\023Failure_PinExpected\020"
@@ -378,46 +376,48 @@ const char descriptor_table_protodef_messages_2dcommon_2eproto[] =
   "inInvalid\020\007\022\034\n\030Failure_InvalidSignature\020"
   "\010\022\030\n\024Failure_ProcessError\020\t\022\032\n\026Failure_N"
   "otEnoughFunds\020\n\022\032\n\026Failure_NotInitialize"
-  "d\020\013\022\027\n\023Failure_PinMismatch\020\014\022\031\n\025Failure_"
-  "FirmwareError\020c\"\264\005\n\rButtonRequest\022H\n\004cod"
-  "e\030\001 \001(\0162:.hw.trezor.messages.common.Butt"
-  "onRequest.ButtonRequestType\022\014\n\004data\030\002 \001("
-  "\t\"\312\004\n\021ButtonRequestType\022\027\n\023ButtonRequest"
-  "_Other\020\001\022\"\n\036ButtonRequest_FeeOverThresho"
-  "ld\020\002\022\037\n\033ButtonRequest_ConfirmOutput\020\003\022\035\n"
-  "\031ButtonRequest_ResetDevice\020\004\022\035\n\031ButtonRe"
-  "quest_ConfirmWord\020\005\022\034\n\030ButtonRequest_Wip"
-  "eDevice\020\006\022\035\n\031ButtonRequest_ProtectCall\020\007"
-  "\022\030\n\024ButtonRequest_SignTx\020\010\022\037\n\033ButtonRequ"
-  "est_FirmwareCheck\020\t\022\031\n\025ButtonRequest_Add"
-  "ress\020\n\022\033\n\027ButtonRequest_PublicKey\020\013\022#\n\037B"
-  "uttonRequest_MnemonicWordCount\020\014\022\037\n\033Butt"
-  "onRequest_MnemonicInput\020\r\022 \n\034ButtonReque"
-  "st_PassphraseType\020\016\022\'\n#ButtonRequest_Unk"
-  "nownDerivationPath\020\017\022\"\n\036ButtonRequest_Re"
-  "coveryHomepage\020\020\022\031\n\025ButtonRequest_Succes"
-  "s\020\021\022\031\n\025ButtonRequest_Warning\020\022\"\013\n\tButton"
-  "Ack\"\343\001\n\020PinMatrixRequest\022N\n\004type\030\001 \001(\0162@"
-  ".hw.trezor.messages.common.PinMatrixRequ"
-  "est.PinMatrixRequestType\"\177\n\024PinMatrixReq"
-  "uestType\022 \n\034PinMatrixRequestType_Current"
-  "\020\001\022!\n\035PinMatrixRequestType_NewFirst\020\002\022\"\n"
-  "\036PinMatrixRequestType_NewSecond\020\003\"\033\n\014Pin"
-  "MatrixAck\022\013\n\003pin\030\001 \002(\t\"&\n\021PassphraseRequ"
-  "est\022\021\n\ton_device\030\001 \001(\010\"2\n\rPassphraseAck\022"
-  "\022\n\npassphrase\030\001 \001(\t\022\r\n\005state\030\002 \001(\014\"\'\n\026Pa"
-  "ssphraseStateRequest\022\r\n\005state\030\001 \001(\014\"\024\n\022P"
-  "assphraseStateAck\"\200\001\n\nHDNodeType\022\r\n\005dept"
-  "h\030\001 \002(\r\022\023\n\013fingerprint\030\002 \002(\r\022\021\n\tchild_nu"
-  "m\030\003 \002(\r\022\022\n\nchain_code\030\004 \002(\014\022\023\n\013private_k"
-  "ey\030\005 \001(\014\022\022\n\npublic_key\030\006 \001(\014B:\n#com.sato"
-  "shilabs.trezor.lib.protobufB\023TrezorMessa"
-  "geCommon"
+  "d\020\013\022\027\n\023Failure_PinMismatch\020\014\022\034\n\030Failure_"
+  "WipeCodeMismatch\020\r\022\031\n\025Failure_FirmwareEr"
+  "ror\020c\"\246\005\n\rButtonRequest\022H\n\004code\030\001 \001(\0162:."
+  "hw.trezor.messages.common.ButtonRequest."
+  "ButtonRequestType\"\312\004\n\021ButtonRequestType\022"
+  "\027\n\023ButtonRequest_Other\020\001\022\"\n\036ButtonReques"
+  "t_FeeOverThreshold\020\002\022\037\n\033ButtonRequest_Co"
+  "nfirmOutput\020\003\022\035\n\031ButtonRequest_ResetDevi"
+  "ce\020\004\022\035\n\031ButtonRequest_ConfirmWord\020\005\022\034\n\030B"
+  "uttonRequest_WipeDevice\020\006\022\035\n\031ButtonReque"
+  "st_ProtectCall\020\007\022\030\n\024ButtonRequest_SignTx"
+  "\020\010\022\037\n\033ButtonRequest_FirmwareCheck\020\t\022\031\n\025B"
+  "uttonRequest_Address\020\n\022\033\n\027ButtonRequest_"
+  "PublicKey\020\013\022#\n\037ButtonRequest_MnemonicWor"
+  "dCount\020\014\022\037\n\033ButtonRequest_MnemonicInput\020"
+  "\r\022 \n\034ButtonRequest_PassphraseType\020\016\022\'\n#B"
+  "uttonRequest_UnknownDerivationPath\020\017\022\"\n\036"
+  "ButtonRequest_RecoveryHomepage\020\020\022\031\n\025Butt"
+  "onRequest_Success\020\021\022\031\n\025ButtonRequest_War"
+  "ning\020\022\"\013\n\tButtonAck\"\265\002\n\020PinMatrixRequest"
+  "\022N\n\004type\030\001 \001(\0162@.hw.trezor.messages.comm"
+  "on.PinMatrixRequest.PinMatrixRequestType"
+  "\"\320\001\n\024PinMatrixRequestType\022 \n\034PinMatrixRe"
+  "questType_Current\020\001\022!\n\035PinMatrixRequestT"
+  "ype_NewFirst\020\002\022\"\n\036PinMatrixRequestType_N"
+  "ewSecond\020\003\022&\n\"PinMatrixRequestType_WipeC"
+  "odeFirst\020\004\022\'\n#PinMatrixRequestType_WipeC"
+  "odeSecond\020\005\"\033\n\014PinMatrixAck\022\013\n\003pin\030\001 \002(\t"
+  "\"&\n\021PassphraseRequest\022\021\n\ton_device\030\001 \001(\010"
+  "\"2\n\rPassphraseAck\022\022\n\npassphrase\030\001 \001(\t\022\r\n"
+  "\005state\030\002 \001(\014\"\'\n\026PassphraseStateRequest\022\r"
+  "\n\005state\030\001 \001(\014\"\024\n\022PassphraseStateAck\"\200\001\n\n"
+  "HDNodeType\022\r\n\005depth\030\001 \002(\r\022\023\n\013fingerprint"
+  "\030\002 \002(\r\022\021\n\tchild_num\030\003 \002(\r\022\022\n\nchain_code\030"
+  "\004 \002(\014\022\023\n\013private_key\030\005 \001(\014\022\022\n\npublic_key"
+  "\030\006 \001(\014B:\n#com.satoshilabs.trezor.lib.pro"
+  "tobufB\023TrezorMessageCommon"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dcommon_2eproto = {
   false, InitDefaults_messages_2dcommon_2eproto, 
   descriptor_table_protodef_messages_2dcommon_2eproto,
-  "messages-common.proto", &assign_descriptors_table_messages_2dcommon_2eproto, 1848,
+  "messages-common.proto", &assign_descriptors_table_messages_2dcommon_2eproto, 1946,
 };
 
 void AddDescriptors_messages_2dcommon_2eproto() {
@@ -451,6 +451,7 @@ bool Failure_FailureType_IsValid(int value) {
     case 10:
     case 11:
     case 12:
+    case 13:
     case 99:
       return true;
     default:
@@ -471,6 +472,7 @@ const Failure_FailureType Failure::Failure_ProcessError;
 const Failure_FailureType Failure::Failure_NotEnoughFunds;
 const Failure_FailureType Failure::Failure_NotInitialized;
 const Failure_FailureType Failure::Failure_PinMismatch;
+const Failure_FailureType Failure::Failure_WipeCodeMismatch;
 const Failure_FailureType Failure::Failure_FirmwareError;
 const Failure_FailureType Failure::FailureType_MIN;
 const Failure_FailureType Failure::FailureType_MAX;
@@ -538,6 +540,8 @@ bool PinMatrixRequest_PinMatrixRequestType_IsValid(int value) {
     case 1:
     case 2:
     case 3:
+    case 4:
+    case 5:
       return true;
     default:
       return false;
@@ -548,6 +552,8 @@ bool PinMatrixRequest_PinMatrixRequestType_IsValid(int value) {
 const PinMatrixRequest_PinMatrixRequestType PinMatrixRequest::PinMatrixRequestType_Current;
 const PinMatrixRequest_PinMatrixRequestType PinMatrixRequest::PinMatrixRequestType_NewFirst;
 const PinMatrixRequest_PinMatrixRequestType PinMatrixRequest::PinMatrixRequestType_NewSecond;
+const PinMatrixRequest_PinMatrixRequestType PinMatrixRequest::PinMatrixRequestType_WipeCodeFirst;
+const PinMatrixRequest_PinMatrixRequestType PinMatrixRequest::PinMatrixRequestType_WipeCodeSecond;
 const PinMatrixRequest_PinMatrixRequestType PinMatrixRequest::PinMatrixRequestType_MIN;
 const PinMatrixRequest_PinMatrixRequestType PinMatrixRequest::PinMatrixRequestType_MAX;
 const int PinMatrixRequest::PinMatrixRequestType_ARRAYSIZE;
@@ -1246,16 +1252,12 @@ void ButtonRequest::InitAsDefaultInstance() {
 class ButtonRequest::HasBitSetters {
  public:
   static void set_has_code(ButtonRequest* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
-  }
-  static void set_has_data(ButtonRequest* msg) {
     msg->_has_bits_[0] |= 0x00000001u;
   }
 };
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ButtonRequest::kCodeFieldNumber;
-const int ButtonRequest::kDataFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ButtonRequest::ButtonRequest()
@@ -1268,18 +1270,11 @@ ButtonRequest::ButtonRequest(const ButtonRequest& from)
       _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_data()) {
-    data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
-  }
   code_ = from.code_;
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.common.ButtonRequest)
 }
 
 void ButtonRequest::SharedCtor() {
-  ::google::protobuf::internal::InitSCC(
-      &scc_info_ButtonRequest_messages_2dcommon_2eproto.base);
-  data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   code_ = 1;
 }
 
@@ -1289,7 +1284,6 @@ ButtonRequest::~ButtonRequest() {
 }
 
 void ButtonRequest::SharedDtor() {
-  data_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 void ButtonRequest::SetCachedSize(int size) const {
@@ -1307,13 +1301,7 @@ void ButtonRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000003u) {
-    if (cached_has_bits & 0x00000001u) {
-      data_.ClearNonDefaultToEmptyNoArena();
-    }
-    code_ = 1;
-  }
+  code_ = 1;
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
@@ -1343,22 +1331,6 @@ const char* ButtonRequest::_InternalParse(const char* begin, const char* end, vo
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // optional string data = 2;
-      case 2: {
-        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
-        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        ctx->extra_parse_data().SetFieldName("hw.trezor.messages.common.ButtonRequest.data");
-        object = msg->mutable_data();
-        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
-          parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
-          goto string_till_end;
-        }
-        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
-        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
-        ptr += size;
-        break;
-      }
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
@@ -1374,13 +1346,6 @@ const char* ButtonRequest::_InternalParse(const char* begin, const char* end, vo
     }  // switch
   }  // while
   return ptr;
-string_till_end:
-  static_cast<::std::string*>(object)->clear();
-  static_cast<::std::string*>(object)->reserve(size);
-  goto len_delim_till_end;
-len_delim_till_end:
-  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
-                               {parser_till_end, object}, size);
 }
 #else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ButtonRequest::MergePartialFromCodedStream(
@@ -1406,21 +1371,6 @@ bool ButtonRequest::MergePartialFromCodedStream(
             mutable_unknown_fields()->AddVarint(
                 1, static_cast<::google::protobuf::uint64>(value));
           }
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional string data = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_data()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->data().data(), static_cast<int>(this->data().length()),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "hw.trezor.messages.common.ButtonRequest.data");
         } else {
           goto handle_unusual;
         }
@@ -1456,19 +1406,9 @@ void ButtonRequest::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional .hw.trezor.messages.common.ButtonRequest.ButtonRequestType code = 1;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000001u) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       1, this->code(), output);
-  }
-
-  // optional string data = 2;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->data().data(), static_cast<int>(this->data().length()),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "hw.trezor.messages.common.ButtonRequest.data");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->data(), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1486,20 +1426,9 @@ void ButtonRequest::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional .hw.trezor.messages.common.ButtonRequest.ButtonRequestType code = 1;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000001u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       1, this->code(), target);
-  }
-
-  // optional string data = 2;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->data().data(), static_cast<int>(this->data().length()),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "hw.trezor.messages.common.ButtonRequest.data");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        2, this->data(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -1523,22 +1452,13 @@ size_t ButtonRequest::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  // optional .hw.trezor.messages.common.ButtonRequest.ButtonRequestType code = 1;
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000003u) {
-    // optional string data = 2;
-    if (cached_has_bits & 0x00000001u) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::StringSize(
-          this->data());
-    }
-
-    // optional .hw.trezor.messages.common.ButtonRequest.ButtonRequestType code = 1;
-    if (cached_has_bits & 0x00000002u) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::EnumSize(this->code());
-    }
-
+  if (cached_has_bits & 0x00000001u) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->code());
   }
+
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1566,16 +1486,8 @@ void ButtonRequest::MergeFrom(const ButtonRequest& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 0x00000003u) {
-    if (cached_has_bits & 0x00000001u) {
-      _has_bits_[0] |= 0x00000001u;
-      data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
-    }
-    if (cached_has_bits & 0x00000002u) {
-      code_ = from.code_;
-    }
-    _has_bits_[0] |= cached_has_bits;
+  if (from.has_code()) {
+    set_code(from.code());
   }
 }
 
@@ -1605,8 +1517,6 @@ void ButtonRequest::InternalSwap(ButtonRequest* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  data_.Swap(&other->data_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
   swap(code_, other->code_);
 }
 

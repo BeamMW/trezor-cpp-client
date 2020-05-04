@@ -89,6 +89,9 @@ enum MessageType {
   MessageType_GetFeatures = 55,
   MessageType_SetU2FCounter = 63,
   MessageType_SdProtect = 79,
+  MessageType_GetNextU2FCounter = 80,
+  MessageType_NextU2FCounter = 81,
+  MessageType_ChangeWipeCode = 82,
   MessageType_FirmwareErase = 6,
   MessageType_FirmwareUpload = 7,
   MessageType_FirmwareRequest = 8,
@@ -122,6 +125,7 @@ enum MessageType {
   MessageType_DebugLinkMemory = 111,
   MessageType_DebugLinkMemoryWrite = 112,
   MessageType_DebugLinkFlashErase = 113,
+  MessageType_DebugLinkLayout = 9001,
   MessageType_EthereumGetPublicKey = 450,
   MessageType_EthereumPublicKey = 451,
   MessageType_EthereumGetAddress = 56,
@@ -252,11 +256,17 @@ enum MessageType {
   MessageType_BeamRangeproofData = 913,
   MessageType_BeamSignTransaction = 914,
   MessageType_BeamSignedTransaction = 915,
-  MessageType_BeamGetNoncePublic = 916
+  MessageType_BeamGetNoncePublic = 916,
+  MessageType_BeamSignTransactionSend = 917,
+  MessageType_BeamSignTransactionSendResult = 918,
+  MessageType_BeamSignTransactionReceive = 919,
+  MessageType_BeamSignTransactionReceiveResult = 920,
+  MessageType_BeamSignTransactionSplit = 921,
+  MessageType_BeamSignTransactionSplitResult = 922
 };
 bool MessageType_IsValid(int value);
 const MessageType MessageType_MIN = MessageType_Initialize;
-const MessageType MessageType_MAX = MessageType_BeamGetNoncePublic;
+const MessageType MessageType_MAX = MessageType_DebugLinkLayout;
 const int MessageType_ARRAYSIZE = MessageType_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* MessageType_descriptor();

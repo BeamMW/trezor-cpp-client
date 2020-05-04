@@ -42,7 +42,7 @@ struct TableStruct_messages_2dtezos_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::google::protobuf::internal::ParseTable schema[13]
+  static const ::google::protobuf::internal::ParseTable schema[15]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
@@ -89,6 +89,12 @@ extern TezosSignTx_TezosRevealOpDefaultTypeInternal _TezosSignTx_TezosRevealOp_d
 class TezosSignTx_TezosTransactionOp;
 class TezosSignTx_TezosTransactionOpDefaultTypeInternal;
 extern TezosSignTx_TezosTransactionOpDefaultTypeInternal _TezosSignTx_TezosTransactionOp_default_instance_;
+class TezosSignTx_TezosTransactionOp_TezosParametersManager;
+class TezosSignTx_TezosTransactionOp_TezosParametersManagerDefaultTypeInternal;
+extern TezosSignTx_TezosTransactionOp_TezosParametersManagerDefaultTypeInternal _TezosSignTx_TezosTransactionOp_TezosParametersManager_default_instance_;
+class TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer;
+class TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransferDefaultTypeInternal;
+extern TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransferDefaultTypeInternal _TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer_default_instance_;
 class TezosSignedTx;
 class TezosSignedTxDefaultTypeInternal;
 extern TezosSignedTxDefaultTypeInternal _TezosSignedTx_default_instance_;
@@ -110,6 +116,8 @@ template<> ::hw::trezor::messages::tezos::TezosSignTx_TezosOriginationOp* Arena:
 template<> ::hw::trezor::messages::tezos::TezosSignTx_TezosProposalOp* Arena::CreateMaybeMessage<::hw::trezor::messages::tezos::TezosSignTx_TezosProposalOp>(Arena*);
 template<> ::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp* Arena::CreateMaybeMessage<::hw::trezor::messages::tezos::TezosSignTx_TezosRevealOp>(Arena*);
 template<> ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp* Arena::CreateMaybeMessage<::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp>(Arena*);
+template<> ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager* Arena::CreateMaybeMessage<::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager>(Arena*);
+template<> ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* Arena::CreateMaybeMessage<::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer>(Arena*);
 template<> ::hw::trezor::messages::tezos::TezosSignedTx* Arena::CreateMaybeMessage<::hw::trezor::messages::tezos::TezosSignedTx>(Arena*);
 }  // namespace protobuf
 }  // namespace google
@@ -965,14 +973,20 @@ class TezosSignTx_TezosRevealOp final :
   ::std::string* release_public_key();
   void set_allocated_public_key(::std::string* public_key);
 
-  // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
+  // optional bytes source = 7;
   bool has_source() const;
   void clear_source();
-  static const int kSourceFieldNumber = 1;
-  const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& source() const;
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* release_source();
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* mutable_source();
-  void set_allocated_source(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* source);
+  static const int kSourceFieldNumber = 7;
+  const ::std::string& source() const;
+  void set_source(const ::std::string& value);
+  #if LANG_CXX11
+  void set_source(::std::string&& value);
+  #endif
+  void set_source(const char* value);
+  void set_source(const void* value, size_t size);
+  ::std::string* mutable_source();
+  ::std::string* release_source();
+  void set_allocated_source(::std::string* source);
 
   // optional uint64 fee = 2;
   bool has_fee() const;
@@ -1010,11 +1024,291 @@ class TezosSignTx_TezosRevealOp final :
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::internal::ArenaStringPtr public_key_;
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* source_;
+  ::google::protobuf::internal::ArenaStringPtr source_;
   ::google::protobuf::uint64 fee_;
   ::google::protobuf::uint64 counter_;
   ::google::protobuf::uint64 gas_limit_;
   ::google::protobuf::uint64 storage_limit_;
+  friend struct ::TableStruct_messages_2dtezos_2eproto;
+};
+// -------------------------------------------------------------------
+
+class TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.TezosManagerTransfer) */ {
+ public:
+  TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer();
+  virtual ~TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer();
+
+  TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer(const TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer& from);
+
+  inline TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer& operator=(const TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer(TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer&& from) noexcept
+    : TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer() {
+    *this = ::std::move(from);
+  }
+
+  inline TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer& operator=(TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* internal_default_instance() {
+    return reinterpret_cast<const TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer*>(
+               &_TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    6;
+
+  void Swap(TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* other);
+  friend void swap(TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer& a, TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* New() const final {
+    return CreateMaybeMessage<TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer>(nullptr);
+  }
+
+  TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer& from);
+  void MergeFrom(const TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
+  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
+  #else
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID destination = 1;
+  bool has_destination() const;
+  void clear_destination();
+  static const int kDestinationFieldNumber = 1;
+  const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& destination() const;
+  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* release_destination();
+  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* mutable_destination();
+  void set_allocated_destination(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* destination);
+
+  // optional uint64 amount = 2;
+  bool has_amount() const;
+  void clear_amount();
+  static const int kAmountFieldNumber = 2;
+  ::google::protobuf::uint64 amount() const;
+  void set_amount(::google::protobuf::uint64 value);
+
+  // @@protoc_insertion_point(class_scope:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.TezosManagerTransfer)
+ private:
+  class HasBitSetters;
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* destination_;
+  ::google::protobuf::uint64 amount_;
+  friend struct ::TableStruct_messages_2dtezos_2eproto;
+};
+// -------------------------------------------------------------------
+
+class TezosSignTx_TezosTransactionOp_TezosParametersManager final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager) */ {
+ public:
+  TezosSignTx_TezosTransactionOp_TezosParametersManager();
+  virtual ~TezosSignTx_TezosTransactionOp_TezosParametersManager();
+
+  TezosSignTx_TezosTransactionOp_TezosParametersManager(const TezosSignTx_TezosTransactionOp_TezosParametersManager& from);
+
+  inline TezosSignTx_TezosTransactionOp_TezosParametersManager& operator=(const TezosSignTx_TezosTransactionOp_TezosParametersManager& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  TezosSignTx_TezosTransactionOp_TezosParametersManager(TezosSignTx_TezosTransactionOp_TezosParametersManager&& from) noexcept
+    : TezosSignTx_TezosTransactionOp_TezosParametersManager() {
+    *this = ::std::move(from);
+  }
+
+  inline TezosSignTx_TezosTransactionOp_TezosParametersManager& operator=(TezosSignTx_TezosTransactionOp_TezosParametersManager&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const TezosSignTx_TezosTransactionOp_TezosParametersManager& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const TezosSignTx_TezosTransactionOp_TezosParametersManager* internal_default_instance() {
+    return reinterpret_cast<const TezosSignTx_TezosTransactionOp_TezosParametersManager*>(
+               &_TezosSignTx_TezosTransactionOp_TezosParametersManager_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    7;
+
+  void Swap(TezosSignTx_TezosTransactionOp_TezosParametersManager* other);
+  friend void swap(TezosSignTx_TezosTransactionOp_TezosParametersManager& a, TezosSignTx_TezosTransactionOp_TezosParametersManager& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline TezosSignTx_TezosTransactionOp_TezosParametersManager* New() const final {
+    return CreateMaybeMessage<TezosSignTx_TezosTransactionOp_TezosParametersManager>(nullptr);
+  }
+
+  TezosSignTx_TezosTransactionOp_TezosParametersManager* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<TezosSignTx_TezosTransactionOp_TezosParametersManager>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const TezosSignTx_TezosTransactionOp_TezosParametersManager& from);
+  void MergeFrom(const TezosSignTx_TezosTransactionOp_TezosParametersManager& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
+  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
+  #else
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(TezosSignTx_TezosTransactionOp_TezosParametersManager* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  typedef TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer TezosManagerTransfer;
+
+  // accessors -------------------------------------------------------
+
+  // optional bytes set_delegate = 1;
+  bool has_set_delegate() const;
+  void clear_set_delegate();
+  static const int kSetDelegateFieldNumber = 1;
+  const ::std::string& set_delegate() const;
+  void set_set_delegate(const ::std::string& value);
+  #if LANG_CXX11
+  void set_set_delegate(::std::string&& value);
+  #endif
+  void set_set_delegate(const char* value);
+  void set_set_delegate(const void* value, size_t size);
+  ::std::string* mutable_set_delegate();
+  ::std::string* release_set_delegate();
+  void set_allocated_set_delegate(::std::string* set_delegate);
+
+  // optional .hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.TezosManagerTransfer transfer = 3;
+  bool has_transfer() const;
+  void clear_transfer();
+  static const int kTransferFieldNumber = 3;
+  const ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer& transfer() const;
+  ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* release_transfer();
+  ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* mutable_transfer();
+  void set_allocated_transfer(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* transfer);
+
+  // optional bool cancel_delegate = 2;
+  bool has_cancel_delegate() const;
+  void clear_cancel_delegate();
+  static const int kCancelDelegateFieldNumber = 2;
+  bool cancel_delegate() const;
+  void set_cancel_delegate(bool value);
+
+  // @@protoc_insertion_point(class_scope:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager)
+ private:
+  class HasBitSetters;
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::google::protobuf::internal::ArenaStringPtr set_delegate_;
+  ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* transfer_;
+  bool cancel_delegate_;
   friend struct ::TableStruct_messages_2dtezos_2eproto;
 };
 // -------------------------------------------------------------------
@@ -1064,7 +1358,7 @@ class TezosSignTx_TezosTransactionOp final :
                &_TezosSignTx_TezosTransactionOp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    8;
 
   void Swap(TezosSignTx_TezosTransactionOp* other);
   friend void swap(TezosSignTx_TezosTransactionOp& a, TezosSignTx_TezosTransactionOp& b) {
@@ -1119,6 +1413,8 @@ class TezosSignTx_TezosTransactionOp final :
 
   // nested types ----------------------------------------------------
 
+  typedef TezosSignTx_TezosTransactionOp_TezosParametersManager TezosParametersManager;
+
   // accessors -------------------------------------------------------
 
   // optional bytes parameters = 8;
@@ -1136,14 +1432,20 @@ class TezosSignTx_TezosTransactionOp final :
   ::std::string* release_parameters();
   void set_allocated_parameters(::std::string* parameters);
 
-  // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
+  // optional bytes source = 9;
   bool has_source() const;
   void clear_source();
-  static const int kSourceFieldNumber = 1;
-  const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& source() const;
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* release_source();
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* mutable_source();
-  void set_allocated_source(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* source);
+  static const int kSourceFieldNumber = 9;
+  const ::std::string& source() const;
+  void set_source(const ::std::string& value);
+  #if LANG_CXX11
+  void set_source(::std::string&& value);
+  #endif
+  void set_source(const char* value);
+  void set_source(const void* value, size_t size);
+  ::std::string* mutable_source();
+  ::std::string* release_source();
+  void set_allocated_source(::std::string* source);
 
   // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID destination = 7;
   bool has_destination() const;
@@ -1153,6 +1455,15 @@ class TezosSignTx_TezosTransactionOp final :
   ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* release_destination();
   ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* mutable_destination();
   void set_allocated_destination(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* destination);
+
+  // optional .hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager parameters_manager = 10;
+  bool has_parameters_manager() const;
+  void clear_parameters_manager();
+  static const int kParametersManagerFieldNumber = 10;
+  const ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager& parameters_manager() const;
+  ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager* release_parameters_manager();
+  ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager* mutable_parameters_manager();
+  void set_allocated_parameters_manager(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager* parameters_manager);
 
   // optional uint64 fee = 2;
   bool has_fee() const;
@@ -1197,8 +1508,9 @@ class TezosSignTx_TezosTransactionOp final :
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::internal::ArenaStringPtr parameters_;
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* source_;
+  ::google::protobuf::internal::ArenaStringPtr source_;
   ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* destination_;
+  ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager* parameters_manager_;
   ::google::protobuf::uint64 fee_;
   ::google::protobuf::uint64 counter_;
   ::google::protobuf::uint64 gas_limit_;
@@ -1253,7 +1565,7 @@ class TezosSignTx_TezosOriginationOp final :
                &_TezosSignTx_TezosOriginationOp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    9;
 
   void Swap(TezosSignTx_TezosOriginationOp* other);
   friend void swap(TezosSignTx_TezosOriginationOp& a, TezosSignTx_TezosOriginationOp& b) {
@@ -1355,14 +1667,20 @@ class TezosSignTx_TezosOriginationOp final :
   ::std::string* release_script();
   void set_allocated_script(::std::string* script);
 
-  // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
+  // optional bytes source = 12;
   bool has_source() const;
   void clear_source();
-  static const int kSourceFieldNumber = 1;
-  const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& source() const;
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* release_source();
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* mutable_source();
-  void set_allocated_source(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* source);
+  static const int kSourceFieldNumber = 12;
+  const ::std::string& source() const;
+  void set_source(const ::std::string& value);
+  #if LANG_CXX11
+  void set_source(::std::string&& value);
+  #endif
+  void set_source(const char* value);
+  void set_source(const void* value, size_t size);
+  ::std::string* mutable_source();
+  ::std::string* release_source();
+  void set_allocated_source(::std::string* source);
 
   // optional uint64 fee = 2;
   bool has_fee() const;
@@ -1423,7 +1741,7 @@ class TezosSignTx_TezosOriginationOp final :
   ::google::protobuf::internal::ArenaStringPtr manager_pubkey_;
   ::google::protobuf::internal::ArenaStringPtr delegate_;
   ::google::protobuf::internal::ArenaStringPtr script_;
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* source_;
+  ::google::protobuf::internal::ArenaStringPtr source_;
   ::google::protobuf::uint64 fee_;
   ::google::protobuf::uint64 counter_;
   ::google::protobuf::uint64 gas_limit_;
@@ -1480,7 +1798,7 @@ class TezosSignTx_TezosDelegationOp final :
                &_TezosSignTx_TezosDelegationOp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    10;
 
   void Swap(TezosSignTx_TezosDelegationOp* other);
   friend void swap(TezosSignTx_TezosDelegationOp& a, TezosSignTx_TezosDelegationOp& b) {
@@ -1552,14 +1870,20 @@ class TezosSignTx_TezosDelegationOp final :
   ::std::string* release_delegate();
   void set_allocated_delegate(::std::string* delegate);
 
-  // optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
+  // optional bytes source = 7;
   bool has_source() const;
   void clear_source();
-  static const int kSourceFieldNumber = 1;
-  const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& source() const;
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* release_source();
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* mutable_source();
-  void set_allocated_source(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* source);
+  static const int kSourceFieldNumber = 7;
+  const ::std::string& source() const;
+  void set_source(const ::std::string& value);
+  #if LANG_CXX11
+  void set_source(::std::string&& value);
+  #endif
+  void set_source(const char* value);
+  void set_source(const void* value, size_t size);
+  ::std::string* mutable_source();
+  ::std::string* release_source();
+  void set_allocated_source(::std::string* source);
 
   // optional uint64 fee = 2;
   bool has_fee() const;
@@ -1597,7 +1921,7 @@ class TezosSignTx_TezosDelegationOp final :
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::internal::ArenaStringPtr delegate_;
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* source_;
+  ::google::protobuf::internal::ArenaStringPtr source_;
   ::google::protobuf::uint64 fee_;
   ::google::protobuf::uint64 counter_;
   ::google::protobuf::uint64 gas_limit_;
@@ -1651,7 +1975,7 @@ class TezosSignTx_TezosProposalOp final :
                &_TezosSignTx_TezosProposalOp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    11;
 
   void Swap(TezosSignTx_TezosProposalOp* other);
   friend void swap(TezosSignTx_TezosProposalOp& a, TezosSignTx_TezosProposalOp& b) {
@@ -1811,7 +2135,7 @@ class TezosSignTx_TezosBallotOp final :
                &_TezosSignTx_TezosBallotOp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    12;
 
   void Swap(TezosSignTx_TezosBallotOp* other);
   friend void swap(TezosSignTx_TezosBallotOp& a, TezosSignTx_TezosBallotOp& b) {
@@ -2000,7 +2324,7 @@ class TezosSignTx final :
                &_TezosSignTx_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    13;
 
   void Swap(TezosSignTx* other);
   friend void swap(TezosSignTx& a, TezosSignTx& b) {
@@ -2210,7 +2534,7 @@ class TezosSignedTx final :
                &_TezosSignedTx_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    14;
 
   void Swap(TezosSignedTx* other);
   friend void swap(TezosSignedTx& a, TezosSignedTx& b) {
@@ -2650,52 +2974,63 @@ inline void TezosSignTx_TezosContractID::set_allocated_hash(::std::string* hash)
 
 // TezosSignTx_TezosRevealOp
 
-// optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
+// optional bytes source = 7;
 inline bool TezosSignTx_TezosRevealOp::has_source() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
 inline void TezosSignTx_TezosRevealOp::clear_source() {
-  if (source_ != nullptr) source_->Clear();
+  source_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _has_bits_[0] &= ~0x00000002u;
 }
-inline const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& TezosSignTx_TezosRevealOp::source() const {
-  const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* p = source_;
+inline const ::std::string& TezosSignTx_TezosRevealOp::source() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp.source)
-  return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID*>(
-      &::hw::trezor::messages::tezos::_TezosSignTx_TezosContractID_default_instance_);
+  return source_.GetNoArena();
 }
-inline ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* TezosSignTx_TezosRevealOp::release_source() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp.source)
-  _has_bits_[0] &= ~0x00000002u;
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* temp = source_;
-  source_ = nullptr;
-  return temp;
-}
-inline ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* TezosSignTx_TezosRevealOp::mutable_source() {
+inline void TezosSignTx_TezosRevealOp::set_source(const ::std::string& value) {
   _has_bits_[0] |= 0x00000002u;
-  if (source_ == nullptr) {
-    auto* p = CreateMaybeMessage<::hw::trezor::messages::tezos::TezosSignTx_TezosContractID>(GetArenaNoVirtual());
-    source_ = p;
-  }
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp.source)
-  return source_;
+  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp.source)
 }
-inline void TezosSignTx_TezosRevealOp::set_allocated_source(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* source) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
-  if (message_arena == nullptr) {
-    delete source_;
+#if LANG_CXX11
+inline void TezosSignTx_TezosRevealOp::set_source(::std::string&& value) {
+  _has_bits_[0] |= 0x00000002u;
+  source_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp.source)
+}
+#endif
+inline void TezosSignTx_TezosRevealOp::set_source(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000002u;
+  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp.source)
+}
+inline void TezosSignTx_TezosRevealOp::set_source(const void* value, size_t size) {
+  _has_bits_[0] |= 0x00000002u;
+  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp.source)
+}
+inline ::std::string* TezosSignTx_TezosRevealOp::mutable_source() {
+  _has_bits_[0] |= 0x00000002u;
+  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp.source)
+  return source_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* TezosSignTx_TezosRevealOp::release_source() {
+  // @@protoc_insertion_point(field_release:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp.source)
+  if (!has_source()) {
+    return nullptr;
   }
-  if (source) {
-    ::google::protobuf::Arena* submessage_arena = nullptr;
-    if (message_arena != submessage_arena) {
-      source = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, source, submessage_arena);
-    }
+  _has_bits_[0] &= ~0x00000002u;
+  return source_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void TezosSignTx_TezosRevealOp::set_allocated_source(::std::string* source) {
+  if (source != nullptr) {
     _has_bits_[0] |= 0x00000002u;
   } else {
     _has_bits_[0] &= ~0x00000002u;
   }
-  source_ = source;
+  source_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), source);
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.tezos.TezosSignTx.TezosRevealOp.source)
 }
 
@@ -2833,143 +3168,356 @@ inline void TezosSignTx_TezosRevealOp::set_allocated_public_key(::std::string* p
 
 // -------------------------------------------------------------------
 
-// TezosSignTx_TezosTransactionOp
+// TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer
 
-// optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
-inline bool TezosSignTx_TezosTransactionOp::has_source() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
+// optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID destination = 1;
+inline bool TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer::has_destination() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
 }
-inline void TezosSignTx_TezosTransactionOp::clear_source() {
-  if (source_ != nullptr) source_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+inline void TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer::clear_destination() {
+  if (destination_ != nullptr) destination_->Clear();
+  _has_bits_[0] &= ~0x00000001u;
 }
-inline const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& TezosSignTx_TezosTransactionOp::source() const {
-  const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* p = source_;
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.source)
+inline const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer::destination() const {
+  const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* p = destination_;
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.TezosManagerTransfer.destination)
   return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID*>(
       &::hw::trezor::messages::tezos::_TezosSignTx_TezosContractID_default_instance_);
 }
-inline ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* TezosSignTx_TezosTransactionOp::release_source() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.source)
-  _has_bits_[0] &= ~0x00000002u;
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* temp = source_;
-  source_ = nullptr;
+inline ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer::release_destination() {
+  // @@protoc_insertion_point(field_release:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.TezosManagerTransfer.destination)
+  _has_bits_[0] &= ~0x00000001u;
+  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* temp = destination_;
+  destination_ = nullptr;
   return temp;
 }
-inline ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* TezosSignTx_TezosTransactionOp::mutable_source() {
-  _has_bits_[0] |= 0x00000002u;
-  if (source_ == nullptr) {
+inline ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer::mutable_destination() {
+  _has_bits_[0] |= 0x00000001u;
+  if (destination_ == nullptr) {
     auto* p = CreateMaybeMessage<::hw::trezor::messages::tezos::TezosSignTx_TezosContractID>(GetArenaNoVirtual());
-    source_ = p;
+    destination_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.source)
-  return source_;
+  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.TezosManagerTransfer.destination)
+  return destination_;
 }
-inline void TezosSignTx_TezosTransactionOp::set_allocated_source(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* source) {
+inline void TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer::set_allocated_destination(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* destination) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
-    delete source_;
+    delete destination_;
   }
-  if (source) {
+  if (destination) {
     ::google::protobuf::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
-      source = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, source, submessage_arena);
+      destination = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, destination, submessage_arena);
+    }
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  destination_ = destination;
+  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.TezosManagerTransfer.destination)
+}
+
+// optional uint64 amount = 2;
+inline bool TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer::has_amount() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer::clear_amount() {
+  amount_ = PROTOBUF_ULONGLONG(0);
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline ::google::protobuf::uint64 TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer::amount() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.TezosManagerTransfer.amount)
+  return amount_;
+}
+inline void TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer::set_amount(::google::protobuf::uint64 value) {
+  _has_bits_[0] |= 0x00000002u;
+  amount_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.TezosManagerTransfer.amount)
+}
+
+// -------------------------------------------------------------------
+
+// TezosSignTx_TezosTransactionOp_TezosParametersManager
+
+// optional bytes set_delegate = 1;
+inline bool TezosSignTx_TezosTransactionOp_TezosParametersManager::has_set_delegate() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void TezosSignTx_TezosTransactionOp_TezosParametersManager::clear_set_delegate() {
+  set_delegate_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline const ::std::string& TezosSignTx_TezosTransactionOp_TezosParametersManager::set_delegate() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.set_delegate)
+  return set_delegate_.GetNoArena();
+}
+inline void TezosSignTx_TezosTransactionOp_TezosParametersManager::set_set_delegate(const ::std::string& value) {
+  _has_bits_[0] |= 0x00000001u;
+  set_delegate_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.set_delegate)
+}
+#if LANG_CXX11
+inline void TezosSignTx_TezosTransactionOp_TezosParametersManager::set_set_delegate(::std::string&& value) {
+  _has_bits_[0] |= 0x00000001u;
+  set_delegate_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.set_delegate)
+}
+#endif
+inline void TezosSignTx_TezosTransactionOp_TezosParametersManager::set_set_delegate(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000001u;
+  set_delegate_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.set_delegate)
+}
+inline void TezosSignTx_TezosTransactionOp_TezosParametersManager::set_set_delegate(const void* value, size_t size) {
+  _has_bits_[0] |= 0x00000001u;
+  set_delegate_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.set_delegate)
+}
+inline ::std::string* TezosSignTx_TezosTransactionOp_TezosParametersManager::mutable_set_delegate() {
+  _has_bits_[0] |= 0x00000001u;
+  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.set_delegate)
+  return set_delegate_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* TezosSignTx_TezosTransactionOp_TezosParametersManager::release_set_delegate() {
+  // @@protoc_insertion_point(field_release:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.set_delegate)
+  if (!has_set_delegate()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000001u;
+  return set_delegate_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void TezosSignTx_TezosTransactionOp_TezosParametersManager::set_allocated_set_delegate(::std::string* set_delegate) {
+  if (set_delegate != nullptr) {
+    _has_bits_[0] |= 0x00000001u;
+  } else {
+    _has_bits_[0] &= ~0x00000001u;
+  }
+  set_delegate_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), set_delegate);
+  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.set_delegate)
+}
+
+// optional bool cancel_delegate = 2;
+inline bool TezosSignTx_TezosTransactionOp_TezosParametersManager::has_cancel_delegate() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void TezosSignTx_TezosTransactionOp_TezosParametersManager::clear_cancel_delegate() {
+  cancel_delegate_ = false;
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline bool TezosSignTx_TezosTransactionOp_TezosParametersManager::cancel_delegate() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.cancel_delegate)
+  return cancel_delegate_;
+}
+inline void TezosSignTx_TezosTransactionOp_TezosParametersManager::set_cancel_delegate(bool value) {
+  _has_bits_[0] |= 0x00000004u;
+  cancel_delegate_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.cancel_delegate)
+}
+
+// optional .hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.TezosManagerTransfer transfer = 3;
+inline bool TezosSignTx_TezosTransactionOp_TezosParametersManager::has_transfer() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void TezosSignTx_TezosTransactionOp_TezosParametersManager::clear_transfer() {
+  if (transfer_ != nullptr) transfer_->Clear();
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline const ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer& TezosSignTx_TezosTransactionOp_TezosParametersManager::transfer() const {
+  const ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* p = transfer_;
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.transfer)
+  return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer*>(
+      &::hw::trezor::messages::tezos::_TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer_default_instance_);
+}
+inline ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* TezosSignTx_TezosTransactionOp_TezosParametersManager::release_transfer() {
+  // @@protoc_insertion_point(field_release:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.transfer)
+  _has_bits_[0] &= ~0x00000002u;
+  ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* temp = transfer_;
+  transfer_ = nullptr;
+  return temp;
+}
+inline ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* TezosSignTx_TezosTransactionOp_TezosParametersManager::mutable_transfer() {
+  _has_bits_[0] |= 0x00000002u;
+  if (transfer_ == nullptr) {
+    auto* p = CreateMaybeMessage<::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer>(GetArenaNoVirtual());
+    transfer_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.transfer)
+  return transfer_;
+}
+inline void TezosSignTx_TezosTransactionOp_TezosParametersManager::set_allocated_transfer(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager_TezosManagerTransfer* transfer) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == nullptr) {
+    delete transfer_;
+  }
+  if (transfer) {
+    ::google::protobuf::Arena* submessage_arena = nullptr;
+    if (message_arena != submessage_arena) {
+      transfer = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, transfer, submessage_arena);
     }
     _has_bits_[0] |= 0x00000002u;
   } else {
     _has_bits_[0] &= ~0x00000002u;
   }
-  source_ = source;
+  transfer_ = transfer;
+  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager.transfer)
+}
+
+// -------------------------------------------------------------------
+
+// TezosSignTx_TezosTransactionOp
+
+// optional bytes source = 9;
+inline bool TezosSignTx_TezosTransactionOp::has_source() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void TezosSignTx_TezosTransactionOp::clear_source() {
+  source_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline const ::std::string& TezosSignTx_TezosTransactionOp::source() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.source)
+  return source_.GetNoArena();
+}
+inline void TezosSignTx_TezosTransactionOp::set_source(const ::std::string& value) {
+  _has_bits_[0] |= 0x00000002u;
+  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.source)
+}
+#if LANG_CXX11
+inline void TezosSignTx_TezosTransactionOp::set_source(::std::string&& value) {
+  _has_bits_[0] |= 0x00000002u;
+  source_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.source)
+}
+#endif
+inline void TezosSignTx_TezosTransactionOp::set_source(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000002u;
+  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.source)
+}
+inline void TezosSignTx_TezosTransactionOp::set_source(const void* value, size_t size) {
+  _has_bits_[0] |= 0x00000002u;
+  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.source)
+}
+inline ::std::string* TezosSignTx_TezosTransactionOp::mutable_source() {
+  _has_bits_[0] |= 0x00000002u;
+  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.source)
+  return source_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* TezosSignTx_TezosTransactionOp::release_source() {
+  // @@protoc_insertion_point(field_release:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.source)
+  if (!has_source()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000002u;
+  return source_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void TezosSignTx_TezosTransactionOp::set_allocated_source(::std::string* source) {
+  if (source != nullptr) {
+    _has_bits_[0] |= 0x00000002u;
+  } else {
+    _has_bits_[0] &= ~0x00000002u;
+  }
+  source_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), source);
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.source)
 }
 
 // optional uint64 fee = 2;
 inline bool TezosSignTx_TezosTransactionOp::has_fee() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
+  return (_has_bits_[0] & 0x00000010u) != 0;
 }
 inline void TezosSignTx_TezosTransactionOp::clear_fee() {
   fee_ = PROTOBUF_ULONGLONG(0);
-  _has_bits_[0] &= ~0x00000008u;
+  _has_bits_[0] &= ~0x00000010u;
 }
 inline ::google::protobuf::uint64 TezosSignTx_TezosTransactionOp::fee() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.fee)
   return fee_;
 }
 inline void TezosSignTx_TezosTransactionOp::set_fee(::google::protobuf::uint64 value) {
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000010u;
   fee_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.fee)
 }
 
 // optional uint64 counter = 3;
 inline bool TezosSignTx_TezosTransactionOp::has_counter() const {
-  return (_has_bits_[0] & 0x00000010u) != 0;
+  return (_has_bits_[0] & 0x00000020u) != 0;
 }
 inline void TezosSignTx_TezosTransactionOp::clear_counter() {
   counter_ = PROTOBUF_ULONGLONG(0);
-  _has_bits_[0] &= ~0x00000010u;
+  _has_bits_[0] &= ~0x00000020u;
 }
 inline ::google::protobuf::uint64 TezosSignTx_TezosTransactionOp::counter() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.counter)
   return counter_;
 }
 inline void TezosSignTx_TezosTransactionOp::set_counter(::google::protobuf::uint64 value) {
-  _has_bits_[0] |= 0x00000010u;
+  _has_bits_[0] |= 0x00000020u;
   counter_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.counter)
 }
 
 // optional uint64 gas_limit = 4;
 inline bool TezosSignTx_TezosTransactionOp::has_gas_limit() const {
-  return (_has_bits_[0] & 0x00000020u) != 0;
+  return (_has_bits_[0] & 0x00000040u) != 0;
 }
 inline void TezosSignTx_TezosTransactionOp::clear_gas_limit() {
   gas_limit_ = PROTOBUF_ULONGLONG(0);
-  _has_bits_[0] &= ~0x00000020u;
+  _has_bits_[0] &= ~0x00000040u;
 }
 inline ::google::protobuf::uint64 TezosSignTx_TezosTransactionOp::gas_limit() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.gas_limit)
   return gas_limit_;
 }
 inline void TezosSignTx_TezosTransactionOp::set_gas_limit(::google::protobuf::uint64 value) {
-  _has_bits_[0] |= 0x00000020u;
+  _has_bits_[0] |= 0x00000040u;
   gas_limit_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.gas_limit)
 }
 
 // optional uint64 storage_limit = 5;
 inline bool TezosSignTx_TezosTransactionOp::has_storage_limit() const {
-  return (_has_bits_[0] & 0x00000040u) != 0;
+  return (_has_bits_[0] & 0x00000080u) != 0;
 }
 inline void TezosSignTx_TezosTransactionOp::clear_storage_limit() {
   storage_limit_ = PROTOBUF_ULONGLONG(0);
-  _has_bits_[0] &= ~0x00000040u;
+  _has_bits_[0] &= ~0x00000080u;
 }
 inline ::google::protobuf::uint64 TezosSignTx_TezosTransactionOp::storage_limit() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.storage_limit)
   return storage_limit_;
 }
 inline void TezosSignTx_TezosTransactionOp::set_storage_limit(::google::protobuf::uint64 value) {
-  _has_bits_[0] |= 0x00000040u;
+  _has_bits_[0] |= 0x00000080u;
   storage_limit_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.storage_limit)
 }
 
 // optional uint64 amount = 6;
 inline bool TezosSignTx_TezosTransactionOp::has_amount() const {
-  return (_has_bits_[0] & 0x00000080u) != 0;
+  return (_has_bits_[0] & 0x00000100u) != 0;
 }
 inline void TezosSignTx_TezosTransactionOp::clear_amount() {
   amount_ = PROTOBUF_ULONGLONG(0);
-  _has_bits_[0] &= ~0x00000080u;
+  _has_bits_[0] &= ~0x00000100u;
 }
 inline ::google::protobuf::uint64 TezosSignTx_TezosTransactionOp::amount() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.amount)
   return amount_;
 }
 inline void TezosSignTx_TezosTransactionOp::set_amount(::google::protobuf::uint64 value) {
-  _has_bits_[0] |= 0x00000080u;
+  _has_bits_[0] |= 0x00000100u;
   amount_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.amount)
 }
@@ -3083,56 +3631,116 @@ inline void TezosSignTx_TezosTransactionOp::set_allocated_parameters(::std::stri
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.parameters)
 }
 
-// -------------------------------------------------------------------
-
-// TezosSignTx_TezosOriginationOp
-
-// optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
-inline bool TezosSignTx_TezosOriginationOp::has_source() const {
+// optional .hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.TezosParametersManager parameters_manager = 10;
+inline bool TezosSignTx_TezosTransactionOp::has_parameters_manager() const {
   return (_has_bits_[0] & 0x00000008u) != 0;
 }
-inline void TezosSignTx_TezosOriginationOp::clear_source() {
-  if (source_ != nullptr) source_->Clear();
+inline void TezosSignTx_TezosTransactionOp::clear_parameters_manager() {
+  if (parameters_manager_ != nullptr) parameters_manager_->Clear();
   _has_bits_[0] &= ~0x00000008u;
 }
-inline const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& TezosSignTx_TezosOriginationOp::source() const {
-  const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* p = source_;
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp.source)
-  return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID*>(
-      &::hw::trezor::messages::tezos::_TezosSignTx_TezosContractID_default_instance_);
+inline const ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager& TezosSignTx_TezosTransactionOp::parameters_manager() const {
+  const ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager* p = parameters_manager_;
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.parameters_manager)
+  return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager*>(
+      &::hw::trezor::messages::tezos::_TezosSignTx_TezosTransactionOp_TezosParametersManager_default_instance_);
 }
-inline ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* TezosSignTx_TezosOriginationOp::release_source() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp.source)
+inline ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager* TezosSignTx_TezosTransactionOp::release_parameters_manager() {
+  // @@protoc_insertion_point(field_release:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.parameters_manager)
   _has_bits_[0] &= ~0x00000008u;
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* temp = source_;
-  source_ = nullptr;
+  ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager* temp = parameters_manager_;
+  parameters_manager_ = nullptr;
   return temp;
 }
-inline ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* TezosSignTx_TezosOriginationOp::mutable_source() {
+inline ::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager* TezosSignTx_TezosTransactionOp::mutable_parameters_manager() {
   _has_bits_[0] |= 0x00000008u;
-  if (source_ == nullptr) {
-    auto* p = CreateMaybeMessage<::hw::trezor::messages::tezos::TezosSignTx_TezosContractID>(GetArenaNoVirtual());
-    source_ = p;
+  if (parameters_manager_ == nullptr) {
+    auto* p = CreateMaybeMessage<::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager>(GetArenaNoVirtual());
+    parameters_manager_ = p;
   }
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp.source)
-  return source_;
+  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.parameters_manager)
+  return parameters_manager_;
 }
-inline void TezosSignTx_TezosOriginationOp::set_allocated_source(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* source) {
+inline void TezosSignTx_TezosTransactionOp::set_allocated_parameters_manager(::hw::trezor::messages::tezos::TezosSignTx_TezosTransactionOp_TezosParametersManager* parameters_manager) {
   ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == nullptr) {
-    delete source_;
+    delete parameters_manager_;
   }
-  if (source) {
+  if (parameters_manager) {
     ::google::protobuf::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
-      source = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, source, submessage_arena);
+      parameters_manager = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, parameters_manager, submessage_arena);
     }
     _has_bits_[0] |= 0x00000008u;
   } else {
     _has_bits_[0] &= ~0x00000008u;
   }
-  source_ = source;
+  parameters_manager_ = parameters_manager;
+  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.tezos.TezosSignTx.TezosTransactionOp.parameters_manager)
+}
+
+// -------------------------------------------------------------------
+
+// TezosSignTx_TezosOriginationOp
+
+// optional bytes source = 12;
+inline bool TezosSignTx_TezosOriginationOp::has_source() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void TezosSignTx_TezosOriginationOp::clear_source() {
+  source_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline const ::std::string& TezosSignTx_TezosOriginationOp::source() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp.source)
+  return source_.GetNoArena();
+}
+inline void TezosSignTx_TezosOriginationOp::set_source(const ::std::string& value) {
+  _has_bits_[0] |= 0x00000008u;
+  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp.source)
+}
+#if LANG_CXX11
+inline void TezosSignTx_TezosOriginationOp::set_source(::std::string&& value) {
+  _has_bits_[0] |= 0x00000008u;
+  source_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp.source)
+}
+#endif
+inline void TezosSignTx_TezosOriginationOp::set_source(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000008u;
+  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp.source)
+}
+inline void TezosSignTx_TezosOriginationOp::set_source(const void* value, size_t size) {
+  _has_bits_[0] |= 0x00000008u;
+  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp.source)
+}
+inline ::std::string* TezosSignTx_TezosOriginationOp::mutable_source() {
+  _has_bits_[0] |= 0x00000008u;
+  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp.source)
+  return source_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* TezosSignTx_TezosOriginationOp::release_source() {
+  // @@protoc_insertion_point(field_release:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp.source)
+  if (!has_source()) {
+    return nullptr;
+  }
+  _has_bits_[0] &= ~0x00000008u;
+  return source_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void TezosSignTx_TezosOriginationOp::set_allocated_source(::std::string* source) {
+  if (source != nullptr) {
+    _has_bits_[0] |= 0x00000008u;
+  } else {
+    _has_bits_[0] &= ~0x00000008u;
+  }
+  source_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), source);
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.tezos.TezosSignTx.TezosOriginationOp.source)
 }
 
@@ -3446,52 +4054,63 @@ inline void TezosSignTx_TezosOriginationOp::set_allocated_script(::std::string* 
 
 // TezosSignTx_TezosDelegationOp
 
-// optional .hw.trezor.messages.tezos.TezosSignTx.TezosContractID source = 1;
+// optional bytes source = 7;
 inline bool TezosSignTx_TezosDelegationOp::has_source() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
 inline void TezosSignTx_TezosDelegationOp::clear_source() {
-  if (source_ != nullptr) source_->Clear();
+  source_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _has_bits_[0] &= ~0x00000002u;
 }
-inline const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID& TezosSignTx_TezosDelegationOp::source() const {
-  const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* p = source_;
+inline const ::std::string& TezosSignTx_TezosDelegationOp::source() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp.source)
-  return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID*>(
-      &::hw::trezor::messages::tezos::_TezosSignTx_TezosContractID_default_instance_);
+  return source_.GetNoArena();
 }
-inline ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* TezosSignTx_TezosDelegationOp::release_source() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp.source)
-  _has_bits_[0] &= ~0x00000002u;
-  ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* temp = source_;
-  source_ = nullptr;
-  return temp;
-}
-inline ::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* TezosSignTx_TezosDelegationOp::mutable_source() {
+inline void TezosSignTx_TezosDelegationOp::set_source(const ::std::string& value) {
   _has_bits_[0] |= 0x00000002u;
-  if (source_ == nullptr) {
-    auto* p = CreateMaybeMessage<::hw::trezor::messages::tezos::TezosSignTx_TezosContractID>(GetArenaNoVirtual());
-    source_ = p;
-  }
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp.source)
-  return source_;
+  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp.source)
 }
-inline void TezosSignTx_TezosDelegationOp::set_allocated_source(::hw::trezor::messages::tezos::TezosSignTx_TezosContractID* source) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
-  if (message_arena == nullptr) {
-    delete source_;
+#if LANG_CXX11
+inline void TezosSignTx_TezosDelegationOp::set_source(::std::string&& value) {
+  _has_bits_[0] |= 0x00000002u;
+  source_.SetNoArena(
+    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp.source)
+}
+#endif
+inline void TezosSignTx_TezosDelegationOp::set_source(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  _has_bits_[0] |= 0x00000002u;
+  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp.source)
+}
+inline void TezosSignTx_TezosDelegationOp::set_source(const void* value, size_t size) {
+  _has_bits_[0] |= 0x00000002u;
+  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp.source)
+}
+inline ::std::string* TezosSignTx_TezosDelegationOp::mutable_source() {
+  _has_bits_[0] |= 0x00000002u;
+  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp.source)
+  return source_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline ::std::string* TezosSignTx_TezosDelegationOp::release_source() {
+  // @@protoc_insertion_point(field_release:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp.source)
+  if (!has_source()) {
+    return nullptr;
   }
-  if (source) {
-    ::google::protobuf::Arena* submessage_arena = nullptr;
-    if (message_arena != submessage_arena) {
-      source = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, source, submessage_arena);
-    }
+  _has_bits_[0] &= ~0x00000002u;
+  return source_.ReleaseNonDefaultNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+inline void TezosSignTx_TezosDelegationOp::set_allocated_source(::std::string* source) {
+  if (source != nullptr) {
     _has_bits_[0] |= 0x00000002u;
   } else {
     _has_bits_[0] &= ~0x00000002u;
   }
-  source_ = source;
+  source_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), source);
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.tezos.TezosSignTx.TezosDelegationOp.source)
 }
 
@@ -4514,6 +5133,10 @@ inline void TezosSignedTx::set_allocated_operation_hash(::std::string* operation
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

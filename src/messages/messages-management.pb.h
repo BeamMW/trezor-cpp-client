@@ -32,7 +32,6 @@
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
-#include "messages-common.pb.h"
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 #define PROTOBUF_INTERNAL_EXPORT_messages_2dmanagement_2eproto
@@ -43,7 +42,7 @@ struct TableStruct_messages_2dmanagement_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::google::protobuf::internal::ParseTable schema[22]
+  static const ::google::protobuf::internal::ParseTable schema[25]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
@@ -69,6 +68,9 @@ extern CancelDefaultTypeInternal _Cancel_default_instance_;
 class ChangePin;
 class ChangePinDefaultTypeInternal;
 extern ChangePinDefaultTypeInternal _ChangePin_default_instance_;
+class ChangeWipeCode;
+class ChangeWipeCodeDefaultTypeInternal;
+extern ChangeWipeCodeDefaultTypeInternal _ChangeWipeCode_default_instance_;
 class ClearSession;
 class ClearSessionDefaultTypeInternal;
 extern ClearSessionDefaultTypeInternal _ClearSession_default_instance_;
@@ -90,12 +92,18 @@ extern GetEntropyDefaultTypeInternal _GetEntropy_default_instance_;
 class GetFeatures;
 class GetFeaturesDefaultTypeInternal;
 extern GetFeaturesDefaultTypeInternal _GetFeatures_default_instance_;
+class GetNextU2FCounter;
+class GetNextU2FCounterDefaultTypeInternal;
+extern GetNextU2FCounterDefaultTypeInternal _GetNextU2FCounter_default_instance_;
 class Initialize;
 class InitializeDefaultTypeInternal;
 extern InitializeDefaultTypeInternal _Initialize_default_instance_;
 class LoadDevice;
 class LoadDeviceDefaultTypeInternal;
 extern LoadDeviceDefaultTypeInternal _LoadDevice_default_instance_;
+class NextU2FCounter;
+class NextU2FCounterDefaultTypeInternal;
+extern NextU2FCounterDefaultTypeInternal _NextU2FCounter_default_instance_;
 class Ping;
 class PingDefaultTypeInternal;
 extern PingDefaultTypeInternal _Ping_default_instance_;
@@ -131,6 +139,7 @@ template<> ::hw::trezor::messages::management::ApplySettings* Arena::CreateMaybe
 template<> ::hw::trezor::messages::management::BackupDevice* Arena::CreateMaybeMessage<::hw::trezor::messages::management::BackupDevice>(Arena*);
 template<> ::hw::trezor::messages::management::Cancel* Arena::CreateMaybeMessage<::hw::trezor::messages::management::Cancel>(Arena*);
 template<> ::hw::trezor::messages::management::ChangePin* Arena::CreateMaybeMessage<::hw::trezor::messages::management::ChangePin>(Arena*);
+template<> ::hw::trezor::messages::management::ChangeWipeCode* Arena::CreateMaybeMessage<::hw::trezor::messages::management::ChangeWipeCode>(Arena*);
 template<> ::hw::trezor::messages::management::ClearSession* Arena::CreateMaybeMessage<::hw::trezor::messages::management::ClearSession>(Arena*);
 template<> ::hw::trezor::messages::management::Entropy* Arena::CreateMaybeMessage<::hw::trezor::messages::management::Entropy>(Arena*);
 template<> ::hw::trezor::messages::management::EntropyAck* Arena::CreateMaybeMessage<::hw::trezor::messages::management::EntropyAck>(Arena*);
@@ -138,8 +147,10 @@ template<> ::hw::trezor::messages::management::EntropyRequest* Arena::CreateMayb
 template<> ::hw::trezor::messages::management::Features* Arena::CreateMaybeMessage<::hw::trezor::messages::management::Features>(Arena*);
 template<> ::hw::trezor::messages::management::GetEntropy* Arena::CreateMaybeMessage<::hw::trezor::messages::management::GetEntropy>(Arena*);
 template<> ::hw::trezor::messages::management::GetFeatures* Arena::CreateMaybeMessage<::hw::trezor::messages::management::GetFeatures>(Arena*);
+template<> ::hw::trezor::messages::management::GetNextU2FCounter* Arena::CreateMaybeMessage<::hw::trezor::messages::management::GetNextU2FCounter>(Arena*);
 template<> ::hw::trezor::messages::management::Initialize* Arena::CreateMaybeMessage<::hw::trezor::messages::management::Initialize>(Arena*);
 template<> ::hw::trezor::messages::management::LoadDevice* Arena::CreateMaybeMessage<::hw::trezor::messages::management::LoadDevice>(Arena*);
+template<> ::hw::trezor::messages::management::NextU2FCounter* Arena::CreateMaybeMessage<::hw::trezor::messages::management::NextU2FCounter>(Arena*);
 template<> ::hw::trezor::messages::management::Ping* Arena::CreateMaybeMessage<::hw::trezor::messages::management::Ping>(Arena*);
 template<> ::hw::trezor::messages::management::RecoveryDevice* Arena::CreateMaybeMessage<::hw::trezor::messages::management::RecoveryDevice>(Arena*);
 template<> ::hw::trezor::messages::management::ResetDevice* Arena::CreateMaybeMessage<::hw::trezor::messages::management::ResetDevice>(Arena*);
@@ -983,6 +994,27 @@ class Features final :
   ::hw::trezor::messages::management::BackupType backup_type() const;
   void set_backup_type(::hw::trezor::messages::management::BackupType value);
 
+  // optional bool sd_card_present = 32;
+  bool has_sd_card_present() const;
+  void clear_sd_card_present();
+  static const int kSdCardPresentFieldNumber = 32;
+  bool sd_card_present() const;
+  void set_sd_card_present(bool value);
+
+  // optional bool sd_protection = 33;
+  bool has_sd_protection() const;
+  void clear_sd_protection();
+  static const int kSdProtectionFieldNumber = 33;
+  bool sd_protection() const;
+  void set_sd_protection(bool value);
+
+  // optional bool wipe_code_protection = 34;
+  bool has_wipe_code_protection() const;
+  void clear_wipe_code_protection();
+  static const int kWipeCodeProtectionFieldNumber = 34;
+  bool wipe_code_protection() const;
+  void set_wipe_code_protection(bool value);
+
   // @@protoc_insertion_point(class_scope:hw.trezor.messages.management.Features)
  private:
   class HasBitSetters;
@@ -1020,6 +1052,9 @@ class Features final :
   bool no_backup_;
   bool recovery_mode_;
   int backup_type_;
+  bool sd_card_present_;
+  bool sd_protection_;
+  bool wipe_code_protection_;
   friend struct ::TableStruct_messages_2dmanagement_2eproto;
 };
 // -------------------------------------------------------------------
@@ -1600,6 +1635,127 @@ class ChangePin final :
 };
 // -------------------------------------------------------------------
 
+class ChangeWipeCode final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.management.ChangeWipeCode) */ {
+ public:
+  ChangeWipeCode();
+  virtual ~ChangeWipeCode();
+
+  ChangeWipeCode(const ChangeWipeCode& from);
+
+  inline ChangeWipeCode& operator=(const ChangeWipeCode& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  ChangeWipeCode(ChangeWipeCode&& from) noexcept
+    : ChangeWipeCode() {
+    *this = ::std::move(from);
+  }
+
+  inline ChangeWipeCode& operator=(ChangeWipeCode&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const ChangeWipeCode& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const ChangeWipeCode* internal_default_instance() {
+    return reinterpret_cast<const ChangeWipeCode*>(
+               &_ChangeWipeCode_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    7;
+
+  void Swap(ChangeWipeCode* other);
+  friend void swap(ChangeWipeCode& a, ChangeWipeCode& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ChangeWipeCode* New() const final {
+    return CreateMaybeMessage<ChangeWipeCode>(nullptr);
+  }
+
+  ChangeWipeCode* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<ChangeWipeCode>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const ChangeWipeCode& from);
+  void MergeFrom(const ChangeWipeCode& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
+  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
+  #else
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ChangeWipeCode* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional bool remove = 1;
+  bool has_remove() const;
+  void clear_remove();
+  static const int kRemoveFieldNumber = 1;
+  bool remove() const;
+  void set_remove(bool value);
+
+  // @@protoc_insertion_point(class_scope:hw.trezor.messages.management.ChangeWipeCode)
+ private:
+  class HasBitSetters;
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  bool remove_;
+  friend struct ::TableStruct_messages_2dmanagement_2eproto;
+};
+// -------------------------------------------------------------------
+
 class SdProtect final :
     public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.management.SdProtect) */ {
  public:
@@ -1645,7 +1801,7 @@ class SdProtect final :
                &_SdProtect_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   void Swap(SdProtect* other);
   friend void swap(SdProtect& a, SdProtect& b) {
@@ -1794,7 +1950,7 @@ class Ping final :
                &_Ping_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   void Swap(Ping* other);
   friend void swap(Ping& a, Ping& b) {
@@ -1947,7 +2103,7 @@ class Cancel final :
                &_Cancel_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   void Swap(Cancel* other);
   friend void swap(Cancel& a, Cancel& b) {
@@ -2060,7 +2216,7 @@ class GetEntropy final :
                &_GetEntropy_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   void Swap(GetEntropy* other);
   friend void swap(GetEntropy& a, GetEntropy& b) {
@@ -2181,7 +2337,7 @@ class Entropy final :
                &_Entropy_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   void Swap(Entropy* other);
   friend void swap(Entropy& a, Entropy& b) {
@@ -2310,7 +2466,7 @@ class WipeDevice final :
                &_WipeDevice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    13;
 
   void Swap(WipeDevice* other);
   friend void swap(WipeDevice& a, WipeDevice& b) {
@@ -2423,7 +2579,7 @@ class LoadDevice final :
                &_LoadDevice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    14;
 
   void Swap(LoadDevice* other);
   friend void swap(LoadDevice& a, LoadDevice& b) {
@@ -2517,7 +2673,7 @@ class LoadDevice final :
   ::std::string* release_pin();
   void set_allocated_pin(::std::string* pin);
 
-  // optional string language = 5 [default = "english"];
+  // optional string language = 5 [default = "en-US"];
   bool has_language() const;
   void clear_language();
   static const int kLanguageFieldNumber = 5;
@@ -2547,15 +2703,6 @@ class LoadDevice final :
   ::std::string* release_label();
   void set_allocated_label(::std::string* label);
 
-  // optional .hw.trezor.messages.common.HDNodeType node = 2;
-  bool has_node() const;
-  void clear_node();
-  static const int kNodeFieldNumber = 2;
-  const ::hw::trezor::messages::common::HDNodeType& node() const;
-  ::hw::trezor::messages::common::HDNodeType* release_node();
-  ::hw::trezor::messages::common::HDNodeType* mutable_node();
-  void set_allocated_node(::hw::trezor::messages::common::HDNodeType* node);
-
   // optional bool passphrase_protection = 4;
   bool has_passphrase_protection() const;
   void clear_passphrase_protection();
@@ -2569,6 +2716,20 @@ class LoadDevice final :
   static const int kSkipChecksumFieldNumber = 7;
   bool skip_checksum() const;
   void set_skip_checksum(bool value);
+
+  // optional bool needs_backup = 9;
+  bool has_needs_backup() const;
+  void clear_needs_backup();
+  static const int kNeedsBackupFieldNumber = 9;
+  bool needs_backup() const;
+  void set_needs_backup(bool value);
+
+  // optional bool no_backup = 10;
+  bool has_no_backup() const;
+  void clear_no_backup();
+  static const int kNoBackupFieldNumber = 10;
+  bool no_backup() const;
+  void set_no_backup(bool value);
 
   // optional uint32 u2f_counter = 8;
   bool has_u2f_counter() const;
@@ -2591,9 +2752,10 @@ class LoadDevice final :
   private:
   ::google::protobuf::internal::ArenaStringPtr language_;
   ::google::protobuf::internal::ArenaStringPtr label_;
-  ::hw::trezor::messages::common::HDNodeType* node_;
   bool passphrase_protection_;
   bool skip_checksum_;
+  bool needs_backup_;
+  bool no_backup_;
   ::google::protobuf::uint32 u2f_counter_;
   friend struct ::TableStruct_messages_2dmanagement_2eproto;
 };
@@ -2644,7 +2806,7 @@ class ResetDevice final :
                &_ResetDevice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    15;
 
   void Swap(ResetDevice* other);
   friend void swap(ResetDevice& a, ResetDevice& b) {
@@ -2701,7 +2863,7 @@ class ResetDevice final :
 
   // accessors -------------------------------------------------------
 
-  // optional string language = 5 [default = "english"];
+  // optional string language = 5 [default = "en-US"];
   bool has_language() const;
   void clear_language();
   static const int kLanguageFieldNumber = 5;
@@ -2856,7 +3018,7 @@ class BackupDevice final :
                &_BackupDevice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    16;
 
   void Swap(BackupDevice* other);
   friend void swap(BackupDevice& a, BackupDevice& b) {
@@ -2969,7 +3131,7 @@ class EntropyRequest final :
                &_EntropyRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    17;
 
   void Swap(EntropyRequest* other);
   friend void swap(EntropyRequest& a, EntropyRequest& b) {
@@ -3082,7 +3244,7 @@ class EntropyAck final :
                &_EntropyAck_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    18;
 
   void Swap(EntropyAck* other);
   friend void swap(EntropyAck& a, EntropyAck& b) {
@@ -3211,7 +3373,7 @@ class RecoveryDevice final :
                &_RecoveryDevice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    19;
 
   void Swap(RecoveryDevice* other);
   friend void swap(RecoveryDevice& a, RecoveryDevice& b) {
@@ -3294,7 +3456,7 @@ class RecoveryDevice final :
 
   // accessors -------------------------------------------------------
 
-  // optional string language = 4 [default = "english"];
+  // optional string language = 4 [default = "en-US"];
   bool has_language() const;
   void clear_language();
   static const int kLanguageFieldNumber = 4;
@@ -3441,7 +3603,7 @@ class WordRequest final :
                &_WordRequest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    20;
 
   void Swap(WordRequest* other);
   friend void swap(WordRequest& a, WordRequest& b) {
@@ -3590,7 +3752,7 @@ class WordAck final :
                &_WordAck_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    21;
 
   void Swap(WordAck* other);
   friend void swap(WordAck& a, WordAck& b) {
@@ -3719,7 +3881,7 @@ class SetU2FCounter final :
                &_SetU2FCounter_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    22;
 
   void Swap(SetU2FCounter* other);
   friend void swap(SetU2FCounter& a, SetU2FCounter& b) {
@@ -3784,6 +3946,240 @@ class SetU2FCounter final :
   void set_u2f_counter(::google::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:hw.trezor.messages.management.SetU2FCounter)
+ private:
+  class HasBitSetters;
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  ::google::protobuf::uint32 u2f_counter_;
+  friend struct ::TableStruct_messages_2dmanagement_2eproto;
+};
+// -------------------------------------------------------------------
+
+class GetNextU2FCounter final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.management.GetNextU2FCounter) */ {
+ public:
+  GetNextU2FCounter();
+  virtual ~GetNextU2FCounter();
+
+  GetNextU2FCounter(const GetNextU2FCounter& from);
+
+  inline GetNextU2FCounter& operator=(const GetNextU2FCounter& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  GetNextU2FCounter(GetNextU2FCounter&& from) noexcept
+    : GetNextU2FCounter() {
+    *this = ::std::move(from);
+  }
+
+  inline GetNextU2FCounter& operator=(GetNextU2FCounter&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const GetNextU2FCounter& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const GetNextU2FCounter* internal_default_instance() {
+    return reinterpret_cast<const GetNextU2FCounter*>(
+               &_GetNextU2FCounter_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    23;
+
+  void Swap(GetNextU2FCounter* other);
+  friend void swap(GetNextU2FCounter& a, GetNextU2FCounter& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline GetNextU2FCounter* New() const final {
+    return CreateMaybeMessage<GetNextU2FCounter>(nullptr);
+  }
+
+  GetNextU2FCounter* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<GetNextU2FCounter>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const GetNextU2FCounter& from);
+  void MergeFrom(const GetNextU2FCounter& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
+  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
+  #else
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(GetNextU2FCounter* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:hw.trezor.messages.management.GetNextU2FCounter)
+ private:
+  class HasBitSetters;
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  mutable ::google::protobuf::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_messages_2dmanagement_2eproto;
+};
+// -------------------------------------------------------------------
+
+class NextU2FCounter final :
+    public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:hw.trezor.messages.management.NextU2FCounter) */ {
+ public:
+  NextU2FCounter();
+  virtual ~NextU2FCounter();
+
+  NextU2FCounter(const NextU2FCounter& from);
+
+  inline NextU2FCounter& operator=(const NextU2FCounter& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  #if LANG_CXX11
+  NextU2FCounter(NextU2FCounter&& from) noexcept
+    : NextU2FCounter() {
+    *this = ::std::move(from);
+  }
+
+  inline NextU2FCounter& operator=(NextU2FCounter&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+  #endif
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _internal_metadata_.unknown_fields();
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return _internal_metadata_.mutable_unknown_fields();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return default_instance().GetDescriptor();
+  }
+  static const NextU2FCounter& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const NextU2FCounter* internal_default_instance() {
+    return reinterpret_cast<const NextU2FCounter*>(
+               &_NextU2FCounter_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    24;
+
+  void Swap(NextU2FCounter* other);
+  friend void swap(NextU2FCounter& a, NextU2FCounter& b) {
+    a.Swap(&b);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline NextU2FCounter* New() const final {
+    return CreateMaybeMessage<NextU2FCounter>(nullptr);
+  }
+
+  NextU2FCounter* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<NextU2FCounter>(arena);
+  }
+  void CopyFrom(const ::google::protobuf::Message& from) final;
+  void MergeFrom(const ::google::protobuf::Message& from) final;
+  void CopyFrom(const NextU2FCounter& from);
+  void MergeFrom(const NextU2FCounter& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  #if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  static const char* _InternalParse(const char* begin, const char* end, void* object, ::google::protobuf::internal::ParseContext* ctx);
+  ::google::protobuf::internal::ParseFunc _ParseFunc() const final { return _InternalParse; }
+  #else
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input) final;
+  #endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const final;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      ::google::protobuf::uint8* target) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(NextU2FCounter* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional uint32 u2f_counter = 1;
+  bool has_u2f_counter() const;
+  void clear_u2f_counter();
+  static const int kU2FCounterFieldNumber = 1;
+  ::google::protobuf::uint32 u2f_counter() const;
+  void set_u2f_counter(::google::protobuf::uint32 value);
+
+  // @@protoc_insertion_point(class_scope:hw.trezor.messages.management.NextU2FCounter)
  private:
   class HasBitSetters;
 
@@ -4823,6 +5219,60 @@ inline void Features::set_backup_type(::hw::trezor::messages::management::Backup
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.Features.backup_type)
 }
 
+// optional bool sd_card_present = 32;
+inline bool Features::has_sd_card_present() const {
+  return (_has_bits_[0] & 0x20000000u) != 0;
+}
+inline void Features::clear_sd_card_present() {
+  sd_card_present_ = false;
+  _has_bits_[0] &= ~0x20000000u;
+}
+inline bool Features::sd_card_present() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.Features.sd_card_present)
+  return sd_card_present_;
+}
+inline void Features::set_sd_card_present(bool value) {
+  _has_bits_[0] |= 0x20000000u;
+  sd_card_present_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.Features.sd_card_present)
+}
+
+// optional bool sd_protection = 33;
+inline bool Features::has_sd_protection() const {
+  return (_has_bits_[0] & 0x40000000u) != 0;
+}
+inline void Features::clear_sd_protection() {
+  sd_protection_ = false;
+  _has_bits_[0] &= ~0x40000000u;
+}
+inline bool Features::sd_protection() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.Features.sd_protection)
+  return sd_protection_;
+}
+inline void Features::set_sd_protection(bool value) {
+  _has_bits_[0] |= 0x40000000u;
+  sd_protection_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.Features.sd_protection)
+}
+
+// optional bool wipe_code_protection = 34;
+inline bool Features::has_wipe_code_protection() const {
+  return (_has_bits_[0] & 0x80000000u) != 0;
+}
+inline void Features::clear_wipe_code_protection() {
+  wipe_code_protection_ = false;
+  _has_bits_[0] &= ~0x80000000u;
+}
+inline bool Features::wipe_code_protection() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.Features.wipe_code_protection)
+  return wipe_code_protection_;
+}
+inline void Features::set_wipe_code_protection(bool value) {
+  _has_bits_[0] |= 0x80000000u;
+  wipe_code_protection_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.Features.wipe_code_protection)
+}
+
 // -------------------------------------------------------------------
 
 // ClearSession
@@ -5126,6 +5576,28 @@ inline void ChangePin::set_remove(bool value) {
   _has_bits_[0] |= 0x00000001u;
   remove_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.ChangePin.remove)
+}
+
+// -------------------------------------------------------------------
+
+// ChangeWipeCode
+
+// optional bool remove = 1;
+inline bool ChangeWipeCode::has_remove() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void ChangeWipeCode::clear_remove() {
+  remove_ = false;
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline bool ChangeWipeCode::remove() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.ChangeWipeCode.remove)
+  return remove_;
+}
+inline void ChangeWipeCode::set_remove(bool value) {
+  _has_bits_[0] |= 0x00000001u;
+  remove_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.ChangeWipeCode.remove)
 }
 
 // -------------------------------------------------------------------
@@ -5436,51 +5908,6 @@ LoadDevice::mutable_mnemonics() {
   return &mnemonics_;
 }
 
-// optional .hw.trezor.messages.common.HDNodeType node = 2;
-inline bool LoadDevice::has_node() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
-}
-inline const ::hw::trezor::messages::common::HDNodeType& LoadDevice::node() const {
-  const ::hw::trezor::messages::common::HDNodeType* p = node_;
-  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.LoadDevice.node)
-  return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::common::HDNodeType*>(
-      &::hw::trezor::messages::common::_HDNodeType_default_instance_);
-}
-inline ::hw::trezor::messages::common::HDNodeType* LoadDevice::release_node() {
-  // @@protoc_insertion_point(field_release:hw.trezor.messages.management.LoadDevice.node)
-  _has_bits_[0] &= ~0x00000008u;
-  ::hw::trezor::messages::common::HDNodeType* temp = node_;
-  node_ = nullptr;
-  return temp;
-}
-inline ::hw::trezor::messages::common::HDNodeType* LoadDevice::mutable_node() {
-  _has_bits_[0] |= 0x00000008u;
-  if (node_ == nullptr) {
-    auto* p = CreateMaybeMessage<::hw::trezor::messages::common::HDNodeType>(GetArenaNoVirtual());
-    node_ = p;
-  }
-  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.management.LoadDevice.node)
-  return node_;
-}
-inline void LoadDevice::set_allocated_node(::hw::trezor::messages::common::HDNodeType* node) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
-  if (message_arena == nullptr) {
-    delete reinterpret_cast< ::google::protobuf::MessageLite*>(node_);
-  }
-  if (node) {
-    ::google::protobuf::Arena* submessage_arena = nullptr;
-    if (message_arena != submessage_arena) {
-      node = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, node, submessage_arena);
-    }
-    _has_bits_[0] |= 0x00000008u;
-  } else {
-    _has_bits_[0] &= ~0x00000008u;
-  }
-  node_ = node;
-  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.management.LoadDevice.node)
-}
-
 // optional string pin = 3;
 inline bool LoadDevice::has_pin() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
@@ -5543,23 +5970,23 @@ inline void LoadDevice::set_allocated_pin(::std::string* pin) {
 
 // optional bool passphrase_protection = 4;
 inline bool LoadDevice::has_passphrase_protection() const {
-  return (_has_bits_[0] & 0x00000010u) != 0;
+  return (_has_bits_[0] & 0x00000008u) != 0;
 }
 inline void LoadDevice::clear_passphrase_protection() {
   passphrase_protection_ = false;
-  _has_bits_[0] &= ~0x00000010u;
+  _has_bits_[0] &= ~0x00000008u;
 }
 inline bool LoadDevice::passphrase_protection() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.management.LoadDevice.passphrase_protection)
   return passphrase_protection_;
 }
 inline void LoadDevice::set_passphrase_protection(bool value) {
-  _has_bits_[0] |= 0x00000010u;
+  _has_bits_[0] |= 0x00000008u;
   passphrase_protection_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.LoadDevice.passphrase_protection)
 }
 
-// optional string language = 5 [default = "english"];
+// optional string language = 5 [default = "en-US"];
 inline bool LoadDevice::has_language() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
@@ -5681,38 +6108,74 @@ inline void LoadDevice::set_allocated_label(::std::string* label) {
 
 // optional bool skip_checksum = 7;
 inline bool LoadDevice::has_skip_checksum() const {
-  return (_has_bits_[0] & 0x00000020u) != 0;
+  return (_has_bits_[0] & 0x00000010u) != 0;
 }
 inline void LoadDevice::clear_skip_checksum() {
   skip_checksum_ = false;
-  _has_bits_[0] &= ~0x00000020u;
+  _has_bits_[0] &= ~0x00000010u;
 }
 inline bool LoadDevice::skip_checksum() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.management.LoadDevice.skip_checksum)
   return skip_checksum_;
 }
 inline void LoadDevice::set_skip_checksum(bool value) {
-  _has_bits_[0] |= 0x00000020u;
+  _has_bits_[0] |= 0x00000010u;
   skip_checksum_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.LoadDevice.skip_checksum)
 }
 
 // optional uint32 u2f_counter = 8;
 inline bool LoadDevice::has_u2f_counter() const {
-  return (_has_bits_[0] & 0x00000040u) != 0;
+  return (_has_bits_[0] & 0x00000080u) != 0;
 }
 inline void LoadDevice::clear_u2f_counter() {
   u2f_counter_ = 0u;
-  _has_bits_[0] &= ~0x00000040u;
+  _has_bits_[0] &= ~0x00000080u;
 }
 inline ::google::protobuf::uint32 LoadDevice::u2f_counter() const {
   // @@protoc_insertion_point(field_get:hw.trezor.messages.management.LoadDevice.u2f_counter)
   return u2f_counter_;
 }
 inline void LoadDevice::set_u2f_counter(::google::protobuf::uint32 value) {
-  _has_bits_[0] |= 0x00000040u;
+  _has_bits_[0] |= 0x00000080u;
   u2f_counter_ = value;
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.LoadDevice.u2f_counter)
+}
+
+// optional bool needs_backup = 9;
+inline bool LoadDevice::has_needs_backup() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
+}
+inline void LoadDevice::clear_needs_backup() {
+  needs_backup_ = false;
+  _has_bits_[0] &= ~0x00000020u;
+}
+inline bool LoadDevice::needs_backup() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.LoadDevice.needs_backup)
+  return needs_backup_;
+}
+inline void LoadDevice::set_needs_backup(bool value) {
+  _has_bits_[0] |= 0x00000020u;
+  needs_backup_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.LoadDevice.needs_backup)
+}
+
+// optional bool no_backup = 10;
+inline bool LoadDevice::has_no_backup() const {
+  return (_has_bits_[0] & 0x00000040u) != 0;
+}
+inline void LoadDevice::clear_no_backup() {
+  no_backup_ = false;
+  _has_bits_[0] &= ~0x00000040u;
+}
+inline bool LoadDevice::no_backup() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.LoadDevice.no_backup)
+  return no_backup_;
+}
+inline void LoadDevice::set_no_backup(bool value) {
+  _has_bits_[0] |= 0x00000040u;
+  no_backup_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.LoadDevice.no_backup)
 }
 
 // -------------------------------------------------------------------
@@ -5791,7 +6254,7 @@ inline void ResetDevice::set_pin_protection(bool value) {
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.ResetDevice.pin_protection)
 }
 
-// optional string language = 5 [default = "english"];
+// optional string language = 5 [default = "en-US"];
 inline bool ResetDevice::has_language() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -6114,7 +6577,7 @@ inline void RecoveryDevice::set_pin_protection(bool value) {
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.RecoveryDevice.pin_protection)
 }
 
-// optional string language = 4 [default = "english"];
+// optional string language = 4 [default = "en-US"];
 inline bool RecoveryDevice::has_language() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
@@ -6416,9 +6879,41 @@ inline void SetU2FCounter::set_u2f_counter(::google::protobuf::uint32 value) {
   // @@protoc_insertion_point(field_set:hw.trezor.messages.management.SetU2FCounter.u2f_counter)
 }
 
+// -------------------------------------------------------------------
+
+// GetNextU2FCounter
+
+// -------------------------------------------------------------------
+
+// NextU2FCounter
+
+// optional uint32 u2f_counter = 1;
+inline bool NextU2FCounter::has_u2f_counter() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void NextU2FCounter::clear_u2f_counter() {
+  u2f_counter_ = 0u;
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline ::google::protobuf::uint32 NextU2FCounter::u2f_counter() const {
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.management.NextU2FCounter.u2f_counter)
+  return u2f_counter_;
+}
+inline void NextU2FCounter::set_u2f_counter(::google::protobuf::uint32 value) {
+  _has_bits_[0] |= 0x00000001u;
+  u2f_counter_ = value;
+  // @@protoc_insertion_point(field_set:hw.trezor.messages.management.NextU2FCounter.u2f_counter)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

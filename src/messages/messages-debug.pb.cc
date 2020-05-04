@@ -25,6 +25,10 @@ class DebugLinkDecisionDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<DebugLinkDecision> _instance;
 } _DebugLinkDecision_default_instance_;
+class DebugLinkLayoutDefaultTypeInternal {
+ public:
+  ::google::protobuf::internal::ExplicitlyConstructed<DebugLinkLayout> _instance;
+} _DebugLinkLayout_default_instance_;
 class DebugLinkGetStateDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<DebugLinkGetState> _instance;
@@ -74,6 +78,20 @@ static void InitDefaultsDebugLinkDecision_messages_2ddebug_2eproto() {
 
 ::google::protobuf::internal::SCCInfo<0> scc_info_DebugLinkDecision_messages_2ddebug_2eproto =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsDebugLinkDecision_messages_2ddebug_2eproto}, {}};
+
+static void InitDefaultsDebugLinkLayout_messages_2ddebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::hw::trezor::messages::debug::_DebugLinkLayout_default_instance_;
+    new (ptr) ::hw::trezor::messages::debug::DebugLinkLayout();
+    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::hw::trezor::messages::debug::DebugLinkLayout::InitAsDefaultInstance();
+}
+
+::google::protobuf::internal::SCCInfo<0> scc_info_DebugLinkLayout_messages_2ddebug_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsDebugLinkLayout_messages_2ddebug_2eproto}, {}};
 
 static void InitDefaultsDebugLinkGetState_messages_2ddebug_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -190,6 +208,7 @@ static void InitDefaultsDebugLinkFlashErase_messages_2ddebug_2eproto() {
 
 void InitDefaults_messages_2ddebug_2eproto() {
   ::google::protobuf::internal::InitSCC(&scc_info_DebugLinkDecision_messages_2ddebug_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_DebugLinkLayout_messages_2ddebug_2eproto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_DebugLinkGetState_messages_2ddebug_2eproto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_DebugLinkState_messages_2ddebug_2eproto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_DebugLinkStop_messages_2ddebug_2eproto.base);
@@ -200,8 +219,8 @@ void InitDefaults_messages_2ddebug_2eproto() {
   ::google::protobuf::internal::InitSCC(&scc_info_DebugLinkFlashErase_messages_2ddebug_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata_messages_2ddebug_2eproto[9];
-constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_messages_2ddebug_2eproto = nullptr;
+::google::protobuf::Metadata file_level_metadata_messages_2ddebug_2eproto[10];
+const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors_messages_2ddebug_2eproto[1];
 constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2ddebug_2eproto = nullptr;
 
 const ::google::protobuf::uint32 TableStruct_messages_2ddebug_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
@@ -211,11 +230,24 @@ const ::google::protobuf::uint32 TableStruct_messages_2ddebug_2eproto::offsets[]
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkDecision, yes_no_),
-  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkDecision, up_down_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkDecision, swipe_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkDecision, input_),
-  1,
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkDecision, x_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkDecision, y_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkDecision, wait_),
   2,
+  1,
   0,
+  4,
+  5,
+  3,
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkLayout, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkLayout, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkLayout, lines_),
+  ~0u,
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkGetState, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkGetState, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -223,8 +255,10 @@ const ::google::protobuf::uint32 TableStruct_messages_2ddebug_2eproto::offsets[]
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkGetState, wait_word_list_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkGetState, wait_word_pos_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkGetState, wait_layout_),
   0,
   1,
+  2,
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkState, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkState, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -242,6 +276,7 @@ const ::google::protobuf::uint32 TableStruct_messages_2ddebug_2eproto::offsets[]
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkState, recovery_word_pos_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkState, reset_word_pos_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkState, mnemonic_type_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkState, layout_lines_),
   0,
   1,
   2,
@@ -254,6 +289,7 @@ const ::google::protobuf::uint32 TableStruct_messages_2ddebug_2eproto::offsets[]
   9,
   10,
   11,
+  ~0u,
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkStop, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::debug::DebugLinkStop, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -306,19 +342,21 @@ const ::google::protobuf::uint32 TableStruct_messages_2ddebug_2eproto::offsets[]
   0,
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 8, sizeof(::hw::trezor::messages::debug::DebugLinkDecision)},
-  { 11, 18, sizeof(::hw::trezor::messages::debug::DebugLinkGetState)},
-  { 20, 37, sizeof(::hw::trezor::messages::debug::DebugLinkState)},
-  { 49, 54, sizeof(::hw::trezor::messages::debug::DebugLinkStop)},
-  { 54, 62, sizeof(::hw::trezor::messages::debug::DebugLinkLog)},
-  { 65, 72, sizeof(::hw::trezor::messages::debug::DebugLinkMemoryRead)},
-  { 74, 80, sizeof(::hw::trezor::messages::debug::DebugLinkMemory)},
-  { 81, 89, sizeof(::hw::trezor::messages::debug::DebugLinkMemoryWrite)},
-  { 92, 98, sizeof(::hw::trezor::messages::debug::DebugLinkFlashErase)},
+  { 0, 11, sizeof(::hw::trezor::messages::debug::DebugLinkDecision)},
+  { 17, 23, sizeof(::hw::trezor::messages::debug::DebugLinkLayout)},
+  { 24, 32, sizeof(::hw::trezor::messages::debug::DebugLinkGetState)},
+  { 35, 53, sizeof(::hw::trezor::messages::debug::DebugLinkState)},
+  { 66, 71, sizeof(::hw::trezor::messages::debug::DebugLinkStop)},
+  { 71, 79, sizeof(::hw::trezor::messages::debug::DebugLinkLog)},
+  { 82, 89, sizeof(::hw::trezor::messages::debug::DebugLinkMemoryRead)},
+  { 91, 97, sizeof(::hw::trezor::messages::debug::DebugLinkMemory)},
+  { 98, 106, sizeof(::hw::trezor::messages::debug::DebugLinkMemoryWrite)},
+  { 109, 115, sizeof(::hw::trezor::messages::debug::DebugLinkFlashErase)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::debug::_DebugLinkDecision_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::debug::_DebugLinkLayout_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::debug::_DebugLinkGetState_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::debug::_DebugLinkState_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::debug::_DebugLinkStop_default_instance_),
@@ -332,37 +370,43 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 ::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2ddebug_2eproto = {
   {}, AddDescriptors_messages_2ddebug_2eproto, "messages-debug.proto", schemas,
   file_default_instances, TableStruct_messages_2ddebug_2eproto::offsets,
-  file_level_metadata_messages_2ddebug_2eproto, 9, file_level_enum_descriptors_messages_2ddebug_2eproto, file_level_service_descriptors_messages_2ddebug_2eproto,
+  file_level_metadata_messages_2ddebug_2eproto, 10, file_level_enum_descriptors_messages_2ddebug_2eproto, file_level_service_descriptors_messages_2ddebug_2eproto,
 };
 
 const char descriptor_table_protodef_messages_2ddebug_2eproto[] =
   "\n\024messages-debug.proto\022\030hw.trezor.messag"
-  "es.debug\032\025messages-common.proto\"C\n\021Debug"
-  "LinkDecision\022\016\n\006yes_no\030\001 \001(\010\022\017\n\007up_down\030"
-  "\002 \001(\010\022\r\n\005input\030\003 \001(\t\"B\n\021DebugLinkGetStat"
-  "e\022\026\n\016wait_word_list\030\001 \001(\010\022\025\n\rwait_word_p"
-  "os\030\002 \001(\010\"\273\002\n\016DebugLinkState\022\016\n\006layout\030\001 "
-  "\001(\014\022\013\n\003pin\030\002 \001(\t\022\016\n\006matrix\030\003 \001(\t\022\027\n\017mnem"
-  "onic_secret\030\004 \001(\014\0223\n\004node\030\005 \001(\0132%.hw.tre"
-  "zor.messages.common.HDNodeType\022\035\n\025passph"
-  "rase_protection\030\006 \001(\010\022\022\n\nreset_word\030\007 \001("
-  "\t\022\025\n\rreset_entropy\030\010 \001(\014\022\032\n\022recovery_fak"
-  "e_word\030\t \001(\t\022\031\n\021recovery_word_pos\030\n \001(\r\022"
-  "\026\n\016reset_word_pos\030\013 \001(\r\022\025\n\rmnemonic_type"
-  "\030\014 \001(\r\"\017\n\rDebugLinkStop\";\n\014DebugLinkLog\022"
-  "\r\n\005level\030\001 \001(\r\022\016\n\006bucket\030\002 \001(\t\022\014\n\004text\030\003"
-  " \001(\t\"6\n\023DebugLinkMemoryRead\022\017\n\007address\030\001"
-  " \001(\r\022\016\n\006length\030\002 \001(\r\"!\n\017DebugLinkMemory\022"
-  "\016\n\006memory\030\001 \001(\014\"F\n\024DebugLinkMemoryWrite\022"
-  "\017\n\007address\030\001 \001(\r\022\016\n\006memory\030\002 \001(\014\022\r\n\005flas"
-  "h\030\003 \001(\010\"%\n\023DebugLinkFlashErase\022\016\n\006sector"
-  "\030\001 \001(\rB9\n#com.satoshilabs.trezor.lib.pro"
-  "tobufB\022TrezorMessageDebug"
+  "es.debug\032\025messages-common.proto\"\344\001\n\021Debu"
+  "gLinkDecision\022\016\n\006yes_no\030\001 \001(\010\022N\n\005swipe\030\002"
+  " \001(\0162\?.hw.trezor.messages.debug.DebugLin"
+  "kDecision.DebugSwipeDirection\022\r\n\005input\030\003"
+  " \001(\t\022\t\n\001x\030\004 \001(\r\022\t\n\001y\030\005 \001(\r\022\014\n\004wait\030\006 \001(\010"
+  "\"<\n\023DebugSwipeDirection\022\006\n\002UP\020\000\022\010\n\004DOWN\020"
+  "\001\022\010\n\004LEFT\020\002\022\t\n\005RIGHT\020\003\" \n\017DebugLinkLayou"
+  "t\022\r\n\005lines\030\001 \003(\t\"W\n\021DebugLinkGetState\022\026\n"
+  "\016wait_word_list\030\001 \001(\010\022\025\n\rwait_word_pos\030\002"
+  " \001(\010\022\023\n\013wait_layout\030\003 \001(\010\"\321\002\n\016DebugLinkS"
+  "tate\022\016\n\006layout\030\001 \001(\014\022\013\n\003pin\030\002 \001(\t\022\016\n\006mat"
+  "rix\030\003 \001(\t\022\027\n\017mnemonic_secret\030\004 \001(\014\0223\n\004no"
+  "de\030\005 \001(\0132%.hw.trezor.messages.common.HDN"
+  "odeType\022\035\n\025passphrase_protection\030\006 \001(\010\022\022"
+  "\n\nreset_word\030\007 \001(\t\022\025\n\rreset_entropy\030\010 \001("
+  "\014\022\032\n\022recovery_fake_word\030\t \001(\t\022\031\n\021recover"
+  "y_word_pos\030\n \001(\r\022\026\n\016reset_word_pos\030\013 \001(\r"
+  "\022\025\n\rmnemonic_type\030\014 \001(\r\022\024\n\014layout_lines\030"
+  "\r \003(\t\"\017\n\rDebugLinkStop\";\n\014DebugLinkLog\022\r"
+  "\n\005level\030\001 \001(\r\022\016\n\006bucket\030\002 \001(\t\022\014\n\004text\030\003 "
+  "\001(\t\"6\n\023DebugLinkMemoryRead\022\017\n\007address\030\001 "
+  "\001(\r\022\016\n\006length\030\002 \001(\r\"!\n\017DebugLinkMemory\022\016"
+  "\n\006memory\030\001 \001(\014\"F\n\024DebugLinkMemoryWrite\022\017"
+  "\n\007address\030\001 \001(\r\022\016\n\006memory\030\002 \001(\014\022\r\n\005flash"
+  "\030\003 \001(\010\"%\n\023DebugLinkFlashErase\022\016\n\006sector\030"
+  "\001 \001(\rB9\n#com.satoshilabs.trezor.lib.prot"
+  "obufB\022TrezorMessageDebug"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_messages_2ddebug_2eproto = {
   false, InitDefaults_messages_2ddebug_2eproto, 
   descriptor_table_protodef_messages_2ddebug_2eproto,
-  "messages-debug.proto", &assign_descriptors_table_messages_2ddebug_2eproto, 865,
+  "messages-debug.proto", &assign_descriptors_table_messages_2ddebug_2eproto, 1104,
 };
 
 void AddDescriptors_messages_2ddebug_2eproto() {
@@ -379,6 +423,31 @@ namespace hw {
 namespace trezor {
 namespace messages {
 namespace debug {
+const ::google::protobuf::EnumDescriptor* DebugLinkDecision_DebugSwipeDirection_descriptor() {
+  ::google::protobuf::internal::AssignDescriptors(&assign_descriptors_table_messages_2ddebug_2eproto);
+  return file_level_enum_descriptors_messages_2ddebug_2eproto[0];
+}
+bool DebugLinkDecision_DebugSwipeDirection_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const DebugLinkDecision_DebugSwipeDirection DebugLinkDecision::UP;
+const DebugLinkDecision_DebugSwipeDirection DebugLinkDecision::DOWN;
+const DebugLinkDecision_DebugSwipeDirection DebugLinkDecision::LEFT;
+const DebugLinkDecision_DebugSwipeDirection DebugLinkDecision::RIGHT;
+const DebugLinkDecision_DebugSwipeDirection DebugLinkDecision::DebugSwipeDirection_MIN;
+const DebugLinkDecision_DebugSwipeDirection DebugLinkDecision::DebugSwipeDirection_MAX;
+const int DebugLinkDecision::DebugSwipeDirection_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 // ===================================================================
 
@@ -387,20 +456,32 @@ void DebugLinkDecision::InitAsDefaultInstance() {
 class DebugLinkDecision::HasBitSetters {
  public:
   static void set_has_yes_no(DebugLinkDecision* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
-  }
-  static void set_has_up_down(DebugLinkDecision* msg) {
     msg->_has_bits_[0] |= 0x00000004u;
+  }
+  static void set_has_swipe(DebugLinkDecision* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
   }
   static void set_has_input(DebugLinkDecision* msg) {
     msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_x(DebugLinkDecision* msg) {
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_y(DebugLinkDecision* msg) {
+    msg->_has_bits_[0] |= 0x00000020u;
+  }
+  static void set_has_wait(DebugLinkDecision* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
   }
 };
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int DebugLinkDecision::kYesNoFieldNumber;
-const int DebugLinkDecision::kUpDownFieldNumber;
+const int DebugLinkDecision::kSwipeFieldNumber;
 const int DebugLinkDecision::kInputFieldNumber;
+const int DebugLinkDecision::kXFieldNumber;
+const int DebugLinkDecision::kYFieldNumber;
+const int DebugLinkDecision::kWaitFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DebugLinkDecision::DebugLinkDecision()
@@ -417,9 +498,9 @@ DebugLinkDecision::DebugLinkDecision(const DebugLinkDecision& from)
   if (from.has_input()) {
     input_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.input_);
   }
-  ::memcpy(&yes_no_, &from.yes_no_,
-    static_cast<size_t>(reinterpret_cast<char*>(&up_down_) -
-    reinterpret_cast<char*>(&yes_no_)) + sizeof(up_down_));
+  ::memcpy(&swipe_, &from.swipe_,
+    static_cast<size_t>(reinterpret_cast<char*>(&y_) -
+    reinterpret_cast<char*>(&swipe_)) + sizeof(y_));
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.debug.DebugLinkDecision)
 }
 
@@ -427,9 +508,9 @@ void DebugLinkDecision::SharedCtor() {
   ::google::protobuf::internal::InitSCC(
       &scc_info_DebugLinkDecision_messages_2ddebug_2eproto.base);
   input_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&yes_no_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&up_down_) -
-      reinterpret_cast<char*>(&yes_no_)) + sizeof(up_down_));
+  ::memset(&swipe_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&y_) -
+      reinterpret_cast<char*>(&swipe_)) + sizeof(y_));
 }
 
 DebugLinkDecision::~DebugLinkDecision() {
@@ -460,9 +541,11 @@ void DebugLinkDecision::Clear() {
   if (cached_has_bits & 0x00000001u) {
     input_.ClearNonDefaultToEmptyNoArena();
   }
-  ::memset(&yes_no_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&up_down_) -
-      reinterpret_cast<char*>(&yes_no_)) + sizeof(up_down_));
+  if (cached_has_bits & 0x0000003eu) {
+    ::memset(&swipe_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&y_) -
+        reinterpret_cast<char*>(&swipe_)) + sizeof(y_));
+  }
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
@@ -487,10 +570,15 @@ const char* DebugLinkDecision::_InternalParse(const char* begin, const char* end
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
-      // optional bool up_down = 2;
+      // optional .hw.trezor.messages.debug.DebugLinkDecision.DebugSwipeDirection swipe = 2;
       case 2: {
         if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
-        msg->set_up_down(::google::protobuf::internal::ReadVarint(&ptr));
+        ::google::protobuf::uint64 val = ::google::protobuf::internal::ReadVarint(&ptr);
+        if (!::hw::trezor::messages::debug::DebugLinkDecision_DebugSwipeDirection_IsValid(val)) {
+          ::google::protobuf::internal::WriteVarint(2, val, msg->mutable_unknown_fields());
+          break;
+        }
+        msg->set_swipe(static_cast<::hw::trezor::messages::debug::DebugLinkDecision_DebugSwipeDirection>(val));
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
@@ -508,6 +596,27 @@ const char* DebugLinkDecision::_InternalParse(const char* begin, const char* end
         GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
         ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
         ptr += size;
+        break;
+      }
+      // optional uint32 x = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_x(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional uint32 y = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 40) goto handle_unusual;
+        msg->set_y(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool wait = 6;
+      case 6: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 48) goto handle_unusual;
+        msg->set_wait(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
       default: {
@@ -557,13 +666,19 @@ bool DebugLinkDecision::MergePartialFromCodedStream(
         break;
       }
 
-      // optional bool up_down = 2;
+      // optional .hw.trezor.messages.debug.DebugLinkDecision.DebugSwipeDirection swipe = 2;
       case 2: {
         if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
-          HasBitSetters::set_has_up_down(this);
+          int value = 0;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &up_down_)));
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          if (::hw::trezor::messages::debug::DebugLinkDecision_DebugSwipeDirection_IsValid(value)) {
+            set_swipe(static_cast< ::hw::trezor::messages::debug::DebugLinkDecision_DebugSwipeDirection >(value));
+          } else {
+            mutable_unknown_fields()->AddVarint(
+                2, static_cast<::google::protobuf::uint64>(value));
+          }
         } else {
           goto handle_unusual;
         }
@@ -579,6 +694,45 @@ bool DebugLinkDecision::MergePartialFromCodedStream(
             this->input().data(), static_cast<int>(this->input().length()),
             ::google::protobuf::internal::WireFormat::PARSE,
             "hw.trezor.messages.debug.DebugLinkDecision.input");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional uint32 x = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
+          HasBitSetters::set_has_x(this);
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &x_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional uint32 y = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (40 & 0xFF)) {
+          HasBitSetters::set_has_y(this);
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &y_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bool wait = 6;
+      case 6: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (48 & 0xFF)) {
+          HasBitSetters::set_has_wait(this);
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &wait_)));
         } else {
           goto handle_unusual;
         }
@@ -614,13 +768,14 @@ void DebugLinkDecision::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional bool yes_no = 1;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(1, this->yes_no(), output);
   }
 
-  // optional bool up_down = 2;
-  if (cached_has_bits & 0x00000004u) {
-    ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->up_down(), output);
+  // optional .hw.trezor.messages.debug.DebugLinkDecision.DebugSwipeDirection swipe = 2;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      2, this->swipe(), output);
   }
 
   // optional string input = 3;
@@ -631,6 +786,21 @@ void DebugLinkDecision::SerializeWithCachedSizes(
       "hw.trezor.messages.debug.DebugLinkDecision.input");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       3, this->input(), output);
+  }
+
+  // optional uint32 x = 4;
+  if (cached_has_bits & 0x00000010u) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(4, this->x(), output);
+  }
+
+  // optional uint32 y = 5;
+  if (cached_has_bits & 0x00000020u) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(5, this->y(), output);
+  }
+
+  // optional bool wait = 6;
+  if (cached_has_bits & 0x00000008u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(6, this->wait(), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -648,13 +818,14 @@ void DebugLinkDecision::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional bool yes_no = 1;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(1, this->yes_no(), target);
   }
 
-  // optional bool up_down = 2;
-  if (cached_has_bits & 0x00000004u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->up_down(), target);
+  // optional .hw.trezor.messages.debug.DebugLinkDecision.DebugSwipeDirection swipe = 2;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      2, this->swipe(), target);
   }
 
   // optional string input = 3;
@@ -666,6 +837,21 @@ void DebugLinkDecision::SerializeWithCachedSizes(
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         3, this->input(), target);
+  }
+
+  // optional uint32 x = 4;
+  if (cached_has_bits & 0x00000010u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(4, this->x(), target);
+  }
+
+  // optional uint32 y = 5;
+  if (cached_has_bits & 0x00000020u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(5, this->y(), target);
+  }
+
+  // optional bool wait = 6;
+  if (cached_has_bits & 0x00000008u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(6, this->wait(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -690,7 +876,7 @@ size_t DebugLinkDecision::ByteSizeLong() const {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000007u) {
+  if (cached_has_bits & 0x0000003fu) {
     // optional string input = 3;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
@@ -698,14 +884,34 @@ size_t DebugLinkDecision::ByteSizeLong() const {
           this->input());
     }
 
-    // optional bool yes_no = 1;
+    // optional .hw.trezor.messages.debug.DebugLinkDecision.DebugSwipeDirection swipe = 2;
     if (cached_has_bits & 0x00000002u) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::EnumSize(this->swipe());
+    }
+
+    // optional bool yes_no = 1;
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 + 1;
     }
 
-    // optional bool up_down = 2;
-    if (cached_has_bits & 0x00000004u) {
+    // optional bool wait = 6;
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 + 1;
+    }
+
+    // optional uint32 x = 4;
+    if (cached_has_bits & 0x00000010u) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->x());
+    }
+
+    // optional uint32 y = 5;
+    if (cached_has_bits & 0x00000020u) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->y());
     }
 
   }
@@ -737,16 +943,25 @@ void DebugLinkDecision::MergeFrom(const DebugLinkDecision& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 0x00000007u) {
+  if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
       _has_bits_[0] |= 0x00000001u;
       input_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.input_);
     }
     if (cached_has_bits & 0x00000002u) {
-      yes_no_ = from.yes_no_;
+      swipe_ = from.swipe_;
     }
     if (cached_has_bits & 0x00000004u) {
-      up_down_ = from.up_down_;
+      yes_no_ = from.yes_no_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      wait_ = from.wait_;
+    }
+    if (cached_has_bits & 0x00000010u) {
+      x_ = from.x_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      y_ = from.y_;
     }
     _has_bits_[0] |= cached_has_bits;
   }
@@ -780,11 +995,309 @@ void DebugLinkDecision::InternalSwap(DebugLinkDecision* other) {
   swap(_has_bits_[0], other->_has_bits_[0]);
   input_.Swap(&other->input_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
+  swap(swipe_, other->swipe_);
   swap(yes_no_, other->yes_no_);
-  swap(up_down_, other->up_down_);
+  swap(wait_, other->wait_);
+  swap(x_, other->x_);
+  swap(y_, other->y_);
 }
 
 ::google::protobuf::Metadata DebugLinkDecision::GetMetadata() const {
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2ddebug_2eproto);
+  return ::file_level_metadata_messages_2ddebug_2eproto[kIndexInFileMessages];
+}
+
+
+// ===================================================================
+
+void DebugLinkLayout::InitAsDefaultInstance() {
+}
+class DebugLinkLayout::HasBitSetters {
+ public:
+};
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int DebugLinkLayout::kLinesFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+DebugLinkLayout::DebugLinkLayout()
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:hw.trezor.messages.debug.DebugLinkLayout)
+}
+DebugLinkLayout::DebugLinkLayout(const DebugLinkLayout& from)
+  : ::google::protobuf::Message(),
+      _internal_metadata_(nullptr),
+      _has_bits_(from._has_bits_),
+      lines_(from.lines_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.debug.DebugLinkLayout)
+}
+
+void DebugLinkLayout::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_DebugLinkLayout_messages_2ddebug_2eproto.base);
+}
+
+DebugLinkLayout::~DebugLinkLayout() {
+  // @@protoc_insertion_point(destructor:hw.trezor.messages.debug.DebugLinkLayout)
+  SharedDtor();
+}
+
+void DebugLinkLayout::SharedDtor() {
+}
+
+void DebugLinkLayout::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const DebugLinkLayout& DebugLinkLayout::default_instance() {
+  ::google::protobuf::internal::InitSCC(&::scc_info_DebugLinkLayout_messages_2ddebug_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void DebugLinkLayout::Clear() {
+// @@protoc_insertion_point(message_clear_start:hw.trezor.messages.debug.DebugLinkLayout)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  lines_.Clear();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
+}
+
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* DebugLinkLayout::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<DebugLinkLayout*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // repeated string lines = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          ctx->extra_parse_data().SetFieldName("hw.trezor.messages.debug.DebugLinkLayout.lines");
+          object = msg->add_lines();
+          if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+            parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+            goto string_till_end;
+          }
+          GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+          ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+          ptr += size;
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 10 && (ptr += 1));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+bool DebugLinkLayout::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:hw.trezor.messages.debug.DebugLinkLayout)
+  for (;;) {
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // repeated string lines = 1;
+      case 1: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_lines()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->lines(this->lines_size() - 1).data(),
+            static_cast<int>(this->lines(this->lines_size() - 1).length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "hw.trezor.messages.debug.DebugLinkLayout.lines");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, _internal_metadata_.mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:hw.trezor.messages.debug.DebugLinkLayout)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:hw.trezor.messages.debug.DebugLinkLayout)
+  return false;
+#undef DO_
+}
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+
+void DebugLinkLayout::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:hw.trezor.messages.debug.DebugLinkLayout)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated string lines = 1;
+  for (int i = 0, n = this->lines_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->lines(i).data(), static_cast<int>(this->lines(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "hw.trezor.messages.debug.DebugLinkLayout.lines");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      1, this->lines(i), output);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        _internal_metadata_.unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:hw.trezor.messages.debug.DebugLinkLayout)
+}
+
+::google::protobuf::uint8* DebugLinkLayout::InternalSerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.debug.DebugLinkLayout)
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated string lines = 1;
+  for (int i = 0, n = this->lines_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->lines(i).data(), static_cast<int>(this->lines(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "hw.trezor.messages.debug.DebugLinkLayout.lines");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(1, this->lines(i), target);
+  }
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:hw.trezor.messages.debug.DebugLinkLayout)
+  return target;
+}
+
+size_t DebugLinkLayout::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:hw.trezor.messages.debug.DebugLinkLayout)
+  size_t total_size = 0;
+
+  if (_internal_metadata_.have_unknown_fields()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        _internal_metadata_.unknown_fields());
+  }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated string lines = 1;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->lines_size());
+  for (int i = 0, n = this->lines_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->lines(i));
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void DebugLinkLayout::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.debug.DebugLinkLayout)
+  GOOGLE_DCHECK_NE(&from, this);
+  const DebugLinkLayout* source =
+      ::google::protobuf::DynamicCastToGenerated<DebugLinkLayout>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.debug.DebugLinkLayout)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:hw.trezor.messages.debug.DebugLinkLayout)
+    MergeFrom(*source);
+  }
+}
+
+void DebugLinkLayout::MergeFrom(const DebugLinkLayout& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:hw.trezor.messages.debug.DebugLinkLayout)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  lines_.MergeFrom(from.lines_);
+}
+
+void DebugLinkLayout::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:hw.trezor.messages.debug.DebugLinkLayout)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void DebugLinkLayout::CopyFrom(const DebugLinkLayout& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:hw.trezor.messages.debug.DebugLinkLayout)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool DebugLinkLayout::IsInitialized() const {
+  return true;
+}
+
+void DebugLinkLayout::Swap(DebugLinkLayout* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void DebugLinkLayout::InternalSwap(DebugLinkLayout* other) {
+  using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
+  lines_.InternalSwap(CastToBase(&other->lines_));
+}
+
+::google::protobuf::Metadata DebugLinkLayout::GetMetadata() const {
   ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2ddebug_2eproto);
   return ::file_level_metadata_messages_2ddebug_2eproto[kIndexInFileMessages];
 }
@@ -802,11 +1315,15 @@ class DebugLinkGetState::HasBitSetters {
   static void set_has_wait_word_pos(DebugLinkGetState* msg) {
     msg->_has_bits_[0] |= 0x00000002u;
   }
+  static void set_has_wait_layout(DebugLinkGetState* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
+  }
 };
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int DebugLinkGetState::kWaitWordListFieldNumber;
 const int DebugLinkGetState::kWaitWordPosFieldNumber;
+const int DebugLinkGetState::kWaitLayoutFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DebugLinkGetState::DebugLinkGetState()
@@ -820,15 +1337,15 @@ DebugLinkGetState::DebugLinkGetState(const DebugLinkGetState& from)
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&wait_word_list_, &from.wait_word_list_,
-    static_cast<size_t>(reinterpret_cast<char*>(&wait_word_pos_) -
-    reinterpret_cast<char*>(&wait_word_list_)) + sizeof(wait_word_pos_));
+    static_cast<size_t>(reinterpret_cast<char*>(&wait_layout_) -
+    reinterpret_cast<char*>(&wait_word_list_)) + sizeof(wait_layout_));
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.debug.DebugLinkGetState)
 }
 
 void DebugLinkGetState::SharedCtor() {
   ::memset(&wait_word_list_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&wait_word_pos_) -
-      reinterpret_cast<char*>(&wait_word_list_)) + sizeof(wait_word_pos_));
+      reinterpret_cast<char*>(&wait_layout_) -
+      reinterpret_cast<char*>(&wait_word_list_)) + sizeof(wait_layout_));
 }
 
 DebugLinkGetState::~DebugLinkGetState() {
@@ -855,8 +1372,8 @@ void DebugLinkGetState::Clear() {
   (void) cached_has_bits;
 
   ::memset(&wait_word_list_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&wait_word_pos_) -
-      reinterpret_cast<char*>(&wait_word_list_)) + sizeof(wait_word_pos_));
+      reinterpret_cast<char*>(&wait_layout_) -
+      reinterpret_cast<char*>(&wait_word_list_)) + sizeof(wait_layout_));
   _has_bits_.Clear();
   _internal_metadata_.Clear();
 }
@@ -885,6 +1402,13 @@ const char* DebugLinkGetState::_InternalParse(const char* begin, const char* end
       case 2: {
         if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
         msg->set_wait_word_pos(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional bool wait_layout = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_wait_layout(::google::protobuf::internal::ReadVarint(&ptr));
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
@@ -941,6 +1465,19 @@ bool DebugLinkGetState::MergePartialFromCodedStream(
         break;
       }
 
+      // optional bool wait_layout = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
+          HasBitSetters::set_has_wait_layout(this);
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, &wait_layout_)));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -979,6 +1516,11 @@ void DebugLinkGetState::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->wait_word_pos(), output);
   }
 
+  // optional bool wait_layout = 3;
+  if (cached_has_bits & 0x00000004u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBool(3, this->wait_layout(), output);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -1003,6 +1545,11 @@ void DebugLinkGetState::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->wait_word_pos(), target);
   }
 
+  // optional bool wait_layout = 3;
+  if (cached_has_bits & 0x00000004u) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(3, this->wait_layout(), target);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
@@ -1025,7 +1572,7 @@ size_t DebugLinkGetState::ByteSizeLong() const {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000003u) {
+  if (cached_has_bits & 0x00000007u) {
     // optional bool wait_word_list = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 + 1;
@@ -1033,6 +1580,11 @@ size_t DebugLinkGetState::ByteSizeLong() const {
 
     // optional bool wait_word_pos = 2;
     if (cached_has_bits & 0x00000002u) {
+      total_size += 1 + 1;
+    }
+
+    // optional bool wait_layout = 3;
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 + 1;
     }
 
@@ -1065,12 +1617,15 @@ void DebugLinkGetState::MergeFrom(const DebugLinkGetState& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 0x00000003u) {
+  if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
       wait_word_list_ = from.wait_word_list_;
     }
     if (cached_has_bits & 0x00000002u) {
       wait_word_pos_ = from.wait_word_pos_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      wait_layout_ = from.wait_layout_;
     }
     _has_bits_[0] |= cached_has_bits;
   }
@@ -1104,6 +1659,7 @@ void DebugLinkGetState::InternalSwap(DebugLinkGetState* other) {
   swap(_has_bits_[0], other->_has_bits_[0]);
   swap(wait_word_list_, other->wait_word_list_);
   swap(wait_word_pos_, other->wait_word_pos_);
+  swap(wait_layout_, other->wait_layout_);
 }
 
 ::google::protobuf::Metadata DebugLinkGetState::GetMetadata() const {
@@ -1180,6 +1736,7 @@ const int DebugLinkState::kRecoveryFakeWordFieldNumber;
 const int DebugLinkState::kRecoveryWordPosFieldNumber;
 const int DebugLinkState::kResetWordPosFieldNumber;
 const int DebugLinkState::kMnemonicTypeFieldNumber;
+const int DebugLinkState::kLayoutLinesFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 DebugLinkState::DebugLinkState()
@@ -1190,7 +1747,8 @@ DebugLinkState::DebugLinkState()
 DebugLinkState::DebugLinkState(const DebugLinkState& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(nullptr),
-      _has_bits_(from._has_bits_) {
+      _has_bits_(from._has_bits_),
+      layout_lines_(from.layout_lines_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   layout_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.has_layout()) {
@@ -1277,6 +1835,7 @@ void DebugLinkState::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  layout_lines_.Clear();
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
@@ -1477,6 +2036,25 @@ const char* DebugLinkState::_InternalParse(const char* begin, const char* end, v
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
         break;
       }
+      // repeated string layout_lines = 13;
+      case 13: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 106) goto handle_unusual;
+        do {
+          ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+          GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+          ctx->extra_parse_data().SetFieldName("hw.trezor.messages.debug.DebugLinkState.layout_lines");
+          object = msg->add_layout_lines();
+          if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+            parser_till_end = ::google::protobuf::internal::GreedyStringParserUTF8Verify;
+            goto string_till_end;
+          }
+          GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheckUTF8Verify(ptr, size, ctx));
+          ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+          ptr += size;
+          if (ptr >= end) break;
+        } while ((::google::protobuf::io::UnalignedLoad<::google::protobuf::uint64>(ptr) & 255) == 106 && (ptr += 1));
+        break;
+      }
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
@@ -1667,6 +2245,22 @@ bool DebugLinkState::MergePartialFromCodedStream(
         break;
       }
 
+      // repeated string layout_lines = 13;
+      case 13: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (106 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->add_layout_lines()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->layout_lines(this->layout_lines_size() - 1).data(),
+            static_cast<int>(this->layout_lines(this->layout_lines_size() - 1).length()),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "hw.trezor.messages.debug.DebugLinkState.layout_lines");
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -1779,6 +2373,16 @@ void DebugLinkState::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(12, this->mnemonic_type(), output);
   }
 
+  // repeated string layout_lines = 13;
+  for (int i = 0, n = this->layout_lines_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->layout_lines(i).data(), static_cast<int>(this->layout_lines(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "hw.trezor.messages.debug.DebugLinkState.layout_lines");
+    ::google::protobuf::internal::WireFormatLite::WriteString(
+      13, this->layout_lines(i), output);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         _internal_metadata_.unknown_fields(), output);
@@ -1885,6 +2489,16 @@ void DebugLinkState::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(12, this->mnemonic_type(), target);
   }
 
+  // repeated string layout_lines = 13;
+  for (int i = 0, n = this->layout_lines_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->layout_lines(i).data(), static_cast<int>(this->layout_lines(i).length()),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "hw.trezor.messages.debug.DebugLinkState.layout_lines");
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteStringToArray(13, this->layout_lines(i), target);
+  }
+
   if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target);
@@ -1905,6 +2519,14 @@ size_t DebugLinkState::ByteSizeLong() const {
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
+
+  // repeated string layout_lines = 13;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->layout_lines_size());
+  for (int i = 0, n = this->layout_lines_size(); i < n; i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->layout_lines(i));
+  }
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
@@ -2020,6 +2642,7 @@ void DebugLinkState::MergeFrom(const DebugLinkState& from) {
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  layout_lines_.MergeFrom(from.layout_lines_);
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
@@ -2100,6 +2723,7 @@ void DebugLinkState::InternalSwap(DebugLinkState* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
+  layout_lines_.InternalSwap(CastToBase(&other->layout_lines_));
   layout_.Swap(&other->layout_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   pin_.Swap(&other->pin_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
@@ -4086,6 +4710,9 @@ namespace google {
 namespace protobuf {
 template<> PROTOBUF_NOINLINE ::hw::trezor::messages::debug::DebugLinkDecision* Arena::CreateMaybeMessage< ::hw::trezor::messages::debug::DebugLinkDecision >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::debug::DebugLinkDecision >(arena);
+}
+template<> PROTOBUF_NOINLINE ::hw::trezor::messages::debug::DebugLinkLayout* Arena::CreateMaybeMessage< ::hw::trezor::messages::debug::DebugLinkLayout >(Arena* arena) {
+  return Arena::CreateInternal< ::hw::trezor::messages::debug::DebugLinkLayout >(arena);
 }
 template<> PROTOBUF_NOINLINE ::hw::trezor::messages::debug::DebugLinkGetState* Arena::CreateMaybeMessage< ::hw::trezor::messages::debug::DebugLinkGetState >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::debug::DebugLinkGetState >(arena);
