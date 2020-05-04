@@ -101,24 +101,24 @@ int main()
                 std::cout << std::endl;
                 clear_flag(queue_size, is_alive_idx);
             });
-            trezor->call_BeamGenerateRangeproof(0, 0, 0, 1, false, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
-                const uint8_t * rp_raw = reinterpret_cast<const uint8_t *>(child_cast<Message, BeamRangeproofData>(msg).data().c_str());
-                std::cout << "SESSION: " << session << std::endl;
-                std::cout << "BEAM GENERATED RANGEPROOF:" << std::endl;
-                std::cout << "first 64 of 688 bytes: ";
-                print_bin(rp_raw, 64);
+            // trezor->call_BeamGenerateRangeproof(0, 0, 0, 1, false, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+            //     const uint8_t * rp_raw = reinterpret_cast<const uint8_t *>(child_cast<Message, BeamRangeproofData>(msg).data().c_str());
+            //     std::cout << "SESSION: " << session << std::endl;
+            //     std::cout << "BEAM GENERATED RANGEPROOF:" << std::endl;
+            //     std::cout << "first 64 of 688 bytes: ";
+            //     print_bin(rp_raw, 64);
 
-                rangeproof_confidential_packed_t rp;
-                memcpy(&rp, rp_raw, sizeof(rangeproof_confidential_packed_t));
-                std::cout << "mu:" << std::endl;
-                print_bin(rp.mu, 32);
-                std::cout << "tDot:" << std::endl;
-                print_bin(rp.tDot, 32);
-                std::cout << "tauX:" << std::endl;
-                print_bin(rp.part3.tauX, 32);
-                std::cout << std::endl;
-                clear_flag(queue_size, is_alive_idx);
-            });
+            //     rangeproof_confidential_packed_t rp;
+            //     memcpy(&rp, rp_raw, sizeof(rangeproof_confidential_packed_t));
+            //     std::cout << "mu:" << std::endl;
+            //     print_bin(rp.mu, 32);
+            //     std::cout << "tDot:" << std::endl;
+            //     print_bin(rp.tDot, 32);
+            //     std::cout << "tauX:" << std::endl;
+            //     print_bin(rp.part3.tauX, 32);
+            //     std::cout << std::endl;
+            //     clear_flag(queue_size, is_alive_idx);
+            // });
 
             std::vector<key_idv_t> inputs;
             inputs.push_back({1, 1, 1, 2});

@@ -68,17 +68,17 @@ public:
 
   void call_BeamGenerateRangeproof(uint64_t idx, uint32_t type, uint32_t subIdx, uint64_t value, bool isPublic, MessageCallback callback)
   {
-    using namespace hw::trezor::messages;
-    using namespace hw::trezor::messages::beam;
+    // using namespace hw::trezor::messages;
+    // using namespace hw::trezor::messages::beam;
 
-    BeamGenerateRangeproof message;
-    auto kidv = message.mutable_kidv();
-    kidv->set_idx(idx);
-    kidv->set_type(type);
-    kidv->set_sub_idx(subIdx);
-    kidv->set_value(value);
-    message.set_is_public(isPublic);
-    call(pack_message(message), MessageType_BeamRangeproofData, callback);
+    // BeamGenerateRangeproof message;
+    // auto kidv = message.mutable_kidv();
+    // kidv->set_idx(idx);
+    // kidv->set_type(type);
+    // kidv->set_sub_idx(subIdx);
+    // kidv->set_value(value);
+    // message.set_is_public(isPublic);
+    // call(pack_message(message), MessageType_BeamRangeproofData, callback);
   }
 
   void call_BeamSignTransaction(const std::vector<key_idv_t> &inputs, const std::vector<key_idv_t> &outputs, const transaction_data_t &tx_data, MessageCallback callback)
