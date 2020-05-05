@@ -70,7 +70,8 @@ int main()
             });
             trezor->call_BeamGetOwnerKey(true, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
                 std::cout << "SESSION: " << session << std::endl;
-                std::cout << "BEAM OWNER KEY: " << child_cast<Message, BeamOwnerKey>(msg).key() << std::endl;
+                std::cout << "BEAM OWNER KEY: ";
+                print_bin(reinterpret_cast<const uint8_t *>(child_cast<Message, BeamOwnerKey>(msg).key().c_str()), 32);
                 std::cout << std::endl;
                 clear_flag(queue_size, is_alive_idx);
             });
