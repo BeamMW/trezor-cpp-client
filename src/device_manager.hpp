@@ -51,76 +51,64 @@ public:
     call(pack_message(message), MessageType_BeamECCPoint, callback);
   }
 
-  void call_BeamGenerateKey(uint64_t idx, uint32_t type, uint32_t subIdx, uint64_t value, bool isCoinKey, MessageCallback callback)
+  // NEW CRYPTO ---------------------------------------------------------
+
+  void call_BeamSignTransactionSend(const BeamCrypto_TxCommon &txCommon,
+                                    const BeamCrypto_TxMutualInfo &txMutualInfo,
+                                    const BeamCrypto_TxSenderParams txSenderParams,
+                                    MessageCallback callback)
   {
     using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
 
-    BeamGenerateKey message;
-    auto kidv = message.mutable_kidv();
-    kidv->set_idx(idx);
-    kidv->set_type(type);
-    kidv->set_sub_idx(subIdx);
-    kidv->set_value(value);
-    message.set_is_coin_key(isCoinKey);
-    call(pack_message(message), MessageType_BeamECCPoint, callback);
-  }
+    BeamSignTransactionSend message;
 
-  void call_BeamGenerateRangeproof(uint64_t idx, uint32_t type, uint32_t subIdx, uint64_t value, bool isPublic, MessageCallback callback)
-  {
-    // using namespace hw::trezor::messages;
-    // using namespace hw::trezor::messages::beam;
-
-    // BeamGenerateRangeproof message;
-    // auto kidv = message.mutable_kidv();
-    // kidv->set_idx(idx);
-    // kidv->set_type(type);
-    // kidv->set_sub_idx(subIdx);
-    // kidv->set_value(value);
-    // message.set_is_public(isPublic);
-    // call(pack_message(message), MessageType_BeamRangeproofData, callback);
-  }
-
-  void call_BeamSignTransaction(const std::vector<key_idv_t> &inputs, const std::vector<key_idv_t> &outputs, const transaction_data_t &tx_data, MessageCallback callback)
-  {
-    using namespace hw::trezor::messages;
-    using namespace hw::trezor::messages::beam;
-
-    BeamSignTransaction message;
-    for (auto in : inputs)
+    auto tx_common = message.mutable_tx_common();
+    tx_common->set_offset_sk(txCommon.m_kOffset.m_pVal, 32);
+    for (auto in : *txCommon.m_pIns)
     {
-      auto kidv = message.add_inputs();
-      kidv->set_idx(in.idx);
-      kidv->set_type(in.type);
-      kidv->set_sub_idx(in.sub_idx);
-      kidv->set_value(in.value);
+      auto coinId = tx_common->add_inputs();
+      coinId->set_idx(in.m_Idx);
+      coinId->set_type(in.m_Type);
+      coinId->set_sub_idx(in.m_SubIdx);
+      coinId->set_amount(in.m_Amount);
+      coinId->set_asset_id(in.m_AssetID);
     }
-    for (auto out : outputs)
+    for (auto out : *txCommon.m_pOuts)
     {
-      auto kidv = message.add_outputs();
-      kidv->set_idx(out.idx);
-      kidv->set_type(out.type);
-      kidv->set_sub_idx(out.sub_idx);
-      kidv->set_value(out.value);
+      auto coinId = tx_common->add_outputs();
+      coinId->set_idx(out.m_Idx);
+      coinId->set_type(out.m_Type);
+      coinId->set_sub_idx(out.m_SubIdx);
+      coinId->set_amount(out.m_Amount);
+      coinId->set_asset_id(out.m_AssetID);
     }
+    auto kernel_params = tx_common->mutable_kernel_params();
+    kernel_params->set_fee(txCommon.m_Krn.m_Fee);
+    kernel_params->set_min_height(txCommon.m_Krn.m_hMin);
+    kernel_params->set_max_height(txCommon.m_Krn.m_hMax);
+    auto commitment = kernel_params->mutable_commitment();
+    commitment->set_x(txCommon.m_Krn.m_Commitment.m_X.m_pVal, 32);
+    commitment->set_y(txCommon.m_Krn.m_Commitment.m_Y);
+    auto kernel_signature = kernel_params->mutable_signature();
+    kernel_signature->set_sign_k(txCommon.m_Krn.m_Signature.m_k.m_pVal, 32);
+    auto kernel_nonce_pub = kernel_signature->mutable_nonce_pub();
+    kernel_nonce_pub->set_x(txCommon.m_Krn.m_Signature.m_NoncePub.m_X.m_pVal, 32);
+    kernel_nonce_pub->set_y(txCommon.m_Krn.m_Signature.m_NoncePub.m_Y);
 
-    auto params = message.mutable_kernel_params();
-    params->set_fee(tx_data.fee);
-    params->set_min_height(tx_data.min_height);
-    params->set_max_height(tx_data.max_height);
+    auto tx_mutual_info = message.mutable_tx_mutual_info();
+    tx_mutual_info->set_peer(txMutualInfo.m_Peer.m_pVal, 32);
+    tx_mutual_info->set_wallet_identity_key(txMutualInfo.m_MyIDKey);
+    auto payment_proof_signature = tx_mutual_info->mutable_payment_proof_signature();
+    payment_proof_signature->set_sign_k(txMutualInfo.m_PaymentProofSignature.m_k.m_pVal, 32);
+    auto payment_proof_nonce_pub = payment_proof_signature->mutable_nonce_pub();
+    payment_proof_nonce_pub->set_x(txMutualInfo.m_PaymentProofSignature.m_NoncePub.m_X.m_pVal, 32);
+    payment_proof_nonce_pub->set_y(txMutualInfo.m_PaymentProofSignature.m_NoncePub.m_Y);
 
-    auto commitment = params->mutable_commitment();
-    commitment->set_x(tx_data.kernel_commitment.x, 32);
-    commitment->set_y(tx_data.kernel_commitment.y);
+    message.set_nonce_slot(txSenderParams.m_iSlot);
+    message.set_user_agreement(txSenderParams.m_UserAgreement.m_pVal, 32);
 
-    auto nonce = params->mutable_multisig_nonce();
-    nonce->set_x(tx_data.kernel_nonce.x, 32);
-    nonce->set_y(tx_data.kernel_nonce.y);
-
-    message.set_offset_sk(tx_data.offset, 32);
-    message.set_nonce_slot(tx_data.nonce_slot);
-
-    call(pack_message(message), MessageType_BeamSignedTransaction, callback);
+    call(pack_message(message), MessageType_BeamSignTransactionSend, callback);
   }
 
 protected:
@@ -142,6 +130,9 @@ protected:
       break;
     case MessageType_BeamSignedTransaction:
       execute_callback<BeamSignedTransaction>(call, session);
+      break;
+    case MessageType_BeamSignTransactionSend:
+      execute_callback<BeamSignTransactionSend>(call, session);
       break;
     default:
       break;
