@@ -128,6 +128,27 @@ int main()
             trezor->call_BeamSignTransactionSend(txCommon, txMutualInfo, txSenderParams, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
                 const uint8_t *offset_sk = reinterpret_cast<const uint8_t *>(child_cast<Message, BeamSignTransactionSend>(msg).tx_common().offset_sk().c_str());
                 std::cout << "SESSION: " << session << std::endl;
+                std::cout << "BeamSignTransactionSend" << std::endl;
+                std::cout << "BEAM TX offset_sk: ";
+                print_bin(reinterpret_cast<const uint8_t *>(offset_sk), 32);
+                std::cout << std::endl;
+                clear_flag(queue_size, is_alive_idx);
+            });
+
+            trezor->call_BeamSignTransactionReceive(txCommon, txMutualInfo, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+                const uint8_t *offset_sk = reinterpret_cast<const uint8_t *>(child_cast<Message, BeamSignTransactionReceive>(msg).tx_common().offset_sk().c_str());
+                std::cout << "SESSION: " << session << std::endl;
+                std::cout << "BeamSignTransactionReceive" << std::endl;
+                std::cout << "BEAM TX offset_sk: ";
+                print_bin(reinterpret_cast<const uint8_t *>(offset_sk), 32);
+                std::cout << std::endl;
+                clear_flag(queue_size, is_alive_idx);
+            });
+
+            trezor->call_BeamSignTransactionSplit(txCommon, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+                const uint8_t *offset_sk = reinterpret_cast<const uint8_t *>(child_cast<Message, BeamSignTransactionSplit>(msg).tx_common().offset_sk().c_str());
+                std::cout << "SESSION: " << session << std::endl;
+                std::cout << "BeamSignTransactionSplit" << std::endl;
                 std::cout << "BEAM TX offset_sk: ";
                 print_bin(reinterpret_cast<const uint8_t *>(offset_sk), 32);
                 std::cout << std::endl;
