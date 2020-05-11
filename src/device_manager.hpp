@@ -53,6 +53,54 @@ public:
 
   // NEW CRYPTO ---------------------------------------------------------
 
+  void call_BeamGenerateRangeproof(const BeamCrypto_CoinID *cid,
+                                   const BeamCrypto_CompactPoint *pt0,
+                                   const BeamCrypto_CompactPoint *pt1,
+                                   MessageCallback callback)
+  {
+    using namespace hw::trezor::messages;
+    using namespace hw::trezor::messages::beam;
+
+    BeamGenerateRangeproof message;
+    auto coinId = message.mutable_cid();
+    coinId->set_idx(cid->m_Idx);
+    coinId->set_type(cid->m_Type);
+    coinId->set_sub_idx(cid->m_SubIdx);
+    coinId->set_amount(cid->m_Amount);
+    coinId->set_asset_id(cid->m_AssetID);
+
+    auto message_pt0 = message.mutable_pt0();
+    message_pt0->set_x(pt0->m_X.m_pVal, 32);
+    message_pt0->set_y(pt0->m_Y);
+
+    auto message_pt1 = message.mutable_pt1();
+    message_pt1->set_x(pt1->m_X.m_pVal, 32);
+    message_pt1->set_y(pt1->m_Y);
+
+    call(pack_message(message), MessageType_BeamRangeproofData, callback);
+  }
+
+  void call_BeamCreateOutput(uint64_t coin_id_scheme,
+                             const BeamCrypto_CoinID *cid,
+                             MessageCallback callback)
+  {
+    using namespace hw::trezor::messages;
+    using namespace hw::trezor::messages::beam;
+
+    BeamCreateOutput message;
+
+    message.set_coin_id_scheme(coin_id_scheme);
+
+    auto coinId = message.mutable_coin_id();
+    coinId->set_idx(cid->m_Idx);
+    coinId->set_type(cid->m_Type);
+    coinId->set_sub_idx(cid->m_SubIdx);
+    coinId->set_amount(cid->m_Amount);
+    coinId->set_asset_id(cid->m_AssetID);
+
+    call(pack_message(message), MessageType_BeamRangeproofData, callback);
+  }
+
   void call_BeamSignTransactionSend(const BeamCrypto_TxCommon &txCommon,
                                     const BeamCrypto_TxMutualInfo &txMutualInfo,
                                     const BeamCrypto_TxSenderParams txSenderParams,
@@ -209,6 +257,30 @@ public:
     call(pack_message(message), MessageType_BeamSignTransactionSplit, callback);
   }
 
+  void call_BeamGetPKdf(bool is_root_key, uint32_t child_idx, bool show_display, MessageCallback callback)
+  {
+    using namespace hw::trezor::messages;
+    using namespace hw::trezor::messages::beam;
+
+    BeamGetPKdf message;
+    message.set_is_root_key(is_root_key);
+    message.set_child_idx(child_idx);
+    message.set_show_display(show_display);
+
+    call(pack_message(message), MessageType_BeamPKdf, callback);
+  }
+
+  void call_BeamGetNumSlots(bool show_display, MessageCallback callback)
+  {
+    using namespace hw::trezor::messages;
+    using namespace hw::trezor::messages::beam;
+
+    BeamGetNumSlots message;
+    message.set_show_display(show_display);
+
+    call(pack_message(message), MessageType_BeamNumSlots, callback);
+  }
+
 protected:
   virtual void handle_custom_response(const Call &call, const std::string &session)
   {
@@ -237,6 +309,12 @@ protected:
       break;
     case MessageType_BeamSignTransactionSplit:
       execute_callback<BeamSignTransactionSplit>(call, session);
+      break;
+    case MessageType_BeamPKdf:
+      execute_callback<BeamPKdf>(call, session);
+      break;
+    case MessageType_BeamNumSlots:
+      execute_callback<BeamNumSlots>(call, session);
       break;
     default:
       break;
