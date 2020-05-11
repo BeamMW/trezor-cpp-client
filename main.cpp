@@ -154,6 +154,51 @@ int main()
                 std::cout << std::endl;
                 clear_flag(queue_size, is_alive_idx);
             });
+
+            BeamCrypto_CoinID cid = {1, 1, 1, 2, 0};
+            BeamCrypto_CompactPoint pt0;
+            memcpy(pt0.m_X.m_pVal, test_bytes, 32);
+            pt0.m_Y = 1;
+            BeamCrypto_CompactPoint pt1;
+            memcpy(pt1.m_X.m_pVal, test_bytes, 32);
+            pt1.m_Y = 1;
+
+            trezor->call_BeamGenerateRangeproof(&cid, &pt0, &pt1, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+                bool is_successful = child_cast<Message, BeamRangeproofData>(msg).is_successful();
+                std::cout << "SESSION: " << session << std::endl;
+                std::cout << "BeamGenerateRangeproof" << std::endl;
+                std::cout << "is_successful: " << is_successful << std::endl;
+                std::cout << std::endl;
+                clear_flag(queue_size, is_alive_idx);
+            });
+
+            // trezor->call_BeamCreateOutput(0, &cid, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+            //     bool is_successful = child_cast<Message, BeamRangeproofData>(msg).is_successful();
+            //     std::cout << "SESSION: " << session << std::endl;
+            //     std::cout << "BeamCreateOutput" << std::endl;
+            //     std::cout << "is_successful: " << is_successful << std::endl;
+            //     std::cout << std::endl;
+            //     clear_flag(queue_size, is_alive_idx);
+            // });
+
+            trezor->call_BeamGetPKdf(false, 1, true, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+                const uint8_t *key = reinterpret_cast<const uint8_t *>(child_cast<Message, BeamPKdf>(msg).key().c_str());
+                std::cout << "SESSION: " << session << std::endl;
+                std::cout << "BeamGetPKdf" << std::endl;
+                std::cout << "key: ";
+                print_bin(reinterpret_cast<const uint8_t *>(key), 32);
+                std::cout << std::endl;
+                clear_flag(queue_size, is_alive_idx);
+            });
+
+            trezor->call_BeamGetNumSlots(true, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+                uint32_t num_slots = child_cast<Message, BeamNumSlots>(msg).num_slots();
+                std::cout << "SESSION: " << session << std::endl;
+                std::cout << "BeamGetNumSlots" << std::endl;
+                std::cout << "num_slots: " << num_slots << std::endl;
+                std::cout << std::endl;
+                clear_flag(queue_size, is_alive_idx);
+            });
         }
         catch (std::runtime_error e)
         {
