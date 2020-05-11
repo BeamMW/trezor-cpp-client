@@ -262,7 +262,12 @@ enum MessageType {
   MessageType_BeamSignTransactionReceive = 919,
   MessageType_BeamSignTransactionReceiveResult = 920,
   MessageType_BeamSignTransactionSplit = 921,
-  MessageType_BeamSignTransactionSplitResult = 922
+  MessageType_BeamSignTransactionSplitResult = 922,
+  MessageType_BeamGetNumSlots = 923,
+  MessageType_BeamNumSlots = 924,
+  MessageType_BeamGetPKdf = 925,
+  MessageType_BeamPKdf = 926,
+  MessageType_BeamCreateOutput = 927
 };
 bool MessageType_IsValid(int value);
 const MessageType MessageType_MIN = MessageType_Initialize;

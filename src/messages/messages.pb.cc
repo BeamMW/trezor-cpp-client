@@ -40,7 +40,7 @@ static constexpr ::google::protobuf::Message* const* file_default_instances = nu
 
 const char descriptor_table_protodef_messages_2eproto[] =
   "\n\016messages.proto\022\022hw.trezor.messages\032 go"
-  "ogle/protobuf/descriptor.proto*\367C\n\013Messa"
+  "ogle/protobuf/descriptor.proto*\262E\n\013Messa"
   "geType\022$\n\026MessageType_Initialize\020\000\032\010\220\265\030\001"
   "\260\265\030\001\022\032\n\020MessageType_Ping\020\001\032\004\220\265\030\001\022\035\n\023Mess"
   "ageType_Success\020\002\032\004\230\265\030\001\022\035\n\023MessageType_F"
@@ -258,23 +258,28 @@ const char descriptor_table_protodef_messages_2eproto[] =
   "onReceiveResult\020\230\007\032\004\230\265\030\001\022/\n$MessageType_"
   "BeamSignTransactionSplit\020\231\007\032\004\220\265\030\001\0225\n*Mes"
   "sageType_BeamSignTransactionSplitResult\020"
-  "\232\007\032\004\230\265\030\001:4\n\007wire_in\022!.google.protobuf.En"
-  "umValueOptions\030\322\206\003 \001(\010:5\n\010wire_out\022!.goo"
-  "gle.protobuf.EnumValueOptions\030\323\206\003 \001(\010::\n"
-  "\rwire_debug_in\022!.google.protobuf.EnumVal"
-  "ueOptions\030\324\206\003 \001(\010:;\n\016wire_debug_out\022!.go"
-  "ogle.protobuf.EnumValueOptions\030\325\206\003 \001(\010:6"
-  "\n\twire_tiny\022!.google.protobuf.EnumValueO"
-  "ptions\030\326\206\003 \001(\010:<\n\017wire_bootloader\022!.goog"
-  "le.protobuf.EnumValueOptions\030\327\206\003 \001(\010:8\n\013"
-  "wire_no_fsm\022!.google.protobuf.EnumValueO"
-  "ptions\030\330\206\003 \001(\010B4\n#com.satoshilabs.trezor"
-  ".lib.protobufB\rTrezorMessage"
+  "\232\007\032\004\230\265\030\001\022&\n\033MessageType_BeamGetNumSlots\020"
+  "\233\007\032\004\220\265\030\001\022#\n\030MessageType_BeamNumSlots\020\234\007\032"
+  "\004\230\265\030\001\022\"\n\027MessageType_BeamGetPKdf\020\235\007\032\004\220\265\030"
+  "\001\022\037\n\024MessageType_BeamPKdf\020\236\007\032\004\230\265\030\001\022\'\n\034Me"
+  "ssageType_BeamCreateOutput\020\237\007\032\004\220\265\030\001:4\n\007w"
+  "ire_in\022!.google.protobuf.EnumValueOption"
+  "s\030\322\206\003 \001(\010:5\n\010wire_out\022!.google.protobuf."
+  "EnumValueOptions\030\323\206\003 \001(\010::\n\rwire_debug_i"
+  "n\022!.google.protobuf.EnumValueOptions\030\324\206\003"
+  " \001(\010:;\n\016wire_debug_out\022!.google.protobuf"
+  ".EnumValueOptions\030\325\206\003 \001(\010:6\n\twire_tiny\022!"
+  ".google.protobuf.EnumValueOptions\030\326\206\003 \001("
+  "\010:<\n\017wire_bootloader\022!.google.protobuf.E"
+  "numValueOptions\030\327\206\003 \001(\010:8\n\013wire_no_fsm\022!"
+  ".google.protobuf.EnumValueOptions\030\330\206\003 \001("
+  "\010B4\n#com.satoshilabs.trezor.lib.protobuf"
+  "B\rTrezorMessage"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_messages_2eproto = {
   false, InitDefaults_messages_2eproto, 
   descriptor_table_protodef_messages_2eproto,
-  "messages.proto", &assign_descriptors_table_messages_2eproto, 9228,
+  "messages.proto", &assign_descriptors_table_messages_2eproto, 9415,
 };
 
 void AddDescriptors_messages_2eproto() {
@@ -501,6 +506,11 @@ bool MessageType_IsValid(int value) {
     case 920:
     case 921:
     case 922:
+    case 923:
+    case 924:
+    case 925:
+    case 926:
+    case 927:
     case 9001:
       return true;
     default:
