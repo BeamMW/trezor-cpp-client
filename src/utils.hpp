@@ -63,7 +63,7 @@ std::string pack_message(int type, size_t length, const Container &msg)
     return ss.str();
 }
 
-std::string pack_message(const google::protobuf::Message &msg)
+inline std::string pack_message(const google::protobuf::Message &msg)
 {
     auto name = "MessageType_" + msg.GetDescriptor()->name();
     auto msg_type = hw::trezor::messages::MessageType_descriptor()
@@ -74,7 +74,7 @@ std::string pack_message(const google::protobuf::Message &msg)
     return pack_message(msg_type, serialized_msg.size(), serialized_msg);
 }
 
-std::string get_message_type_name(int type)
+inline std::string get_message_type_name(int type)
 {
     if (type == INTERNAL_ERROR)
         return "CLIENT INTERNAL ERROR";

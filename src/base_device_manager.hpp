@@ -40,7 +40,7 @@ private:
   void handle_response(const Call &call, const std::string &session);
 };
 
-BaseDeviceManager::BaseDeviceManager()
+inline BaseDeviceManager::BaseDeviceManager()
 {
   m_worker_queue.setGlobalPopCallback(
       [&](const std::string &session_pop, const Call &call) {
@@ -64,11 +64,11 @@ BaseDeviceManager::BaseDeviceManager()
       });
 }
 
-BaseDeviceManager::~BaseDeviceManager()
+inline BaseDeviceManager::~BaseDeviceManager()
 {
 }
 
-void BaseDeviceManager::init(const Enumerate &enumerate)
+inline void BaseDeviceManager::init(const Enumerate &enumerate)
 {
   if (enumerate.session != "null")
     throw std::runtime_error("device already occupied, complete the previous session first");
@@ -78,21 +78,21 @@ void BaseDeviceManager::init(const Enumerate &enumerate)
   m_is_real = enumerate.vendor && enumerate.product;
 }
 
-void BaseDeviceManager::callback_Failure(MessageCallback callback)
+inline void BaseDeviceManager::callback_Failure(MessageCallback callback)
 {
   using namespace hw::trezor::messages;
   auto key = std::make_pair(MessageType_Failure, GLOBAL_SESSION_ID);
   m_callbacks[key] = callback;
 }
 
-void BaseDeviceManager::callback_Success(MessageCallback callback)
+inline void BaseDeviceManager::callback_Success(MessageCallback callback)
 {
   using namespace hw::trezor::messages;
   auto key = std::make_pair(MessageType_Success, GLOBAL_SESSION_ID);
   m_callbacks[key] = callback;
 }
 
-bool BaseDeviceManager::execute_callback(const Message &msg, int type, const std::string &session)
+inline bool BaseDeviceManager::execute_callback(const Message &msg, int type, const std::string &session)
 {
   auto key = std::make_pair(type, session);
   auto callback = m_callbacks.find(key);
@@ -110,7 +110,7 @@ bool BaseDeviceManager::execute_callback(const Call &call, const std::string &se
   return execute_callback(call.to_message<MessageType>(), call.type, session);
 }
 
-void BaseDeviceManager::call(std::string message, int type, MessageCallback callback) throw()
+inline void BaseDeviceManager::call(std::string message, int type, MessageCallback callback) throw()
 {
   m_request_queue.push(m_request_queue.size(), [&, message, type, callback](size_t size) {
     if (m_session != "null")
@@ -138,7 +138,7 @@ void BaseDeviceManager::call(std::string message, int type, MessageCallback call
   });
 }
 
-void BaseDeviceManager::handle_response(const Call &call, const std::string &session)
+inline void BaseDeviceManager::handle_response(const Call &call, const std::string &session)
 {
   using namespace hw::trezor::messages;
 

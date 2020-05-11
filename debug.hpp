@@ -34,7 +34,7 @@ void print_bin(T msg)
   print_bin(msg, msg.size());
 }
 
-void print_call_response(const Call &value)
+inline void print_call_response(const Call &value)
 {
   std::cout << "call.error = " << value.error << std::endl;
   std::cout << "call.type = " << value.type
