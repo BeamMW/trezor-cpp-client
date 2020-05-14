@@ -10,7 +10,7 @@ public:
   {
   }
 
-  void call_Ping(std::string text, bool button_protection, MessageCallback callback)
+  void call_Ping(std::string text, bool button_protection, MessageCallback&& callback)
   {
     using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
@@ -18,17 +18,17 @@ public:
     Ping message;
     message.set_message(text);
     message.set_button_protection(button_protection);
-    call(pack_message(message), MessageType_Success, callback);
+    call(pack_message(message), MessageType_Success, std::move(callback));
   }
 
-  void call_BeamGetOwnerKey(bool show_display, MessageCallback callback)
+  void call_BeamGetOwnerKey(bool show_display, MessageCallback&& callback)
   {
     using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
 
     BeamGetOwnerKey message;
     message.set_show_display(show_display);
-    call(pack_message(message), MessageType_BeamOwnerKey, callback);
+    call(pack_message(message), MessageType_BeamOwnerKey, std::move(callback));
   }
 
   void call_BeamGenerateNonce(uint8_t slot, MessageCallback callback)
@@ -38,7 +38,7 @@ public:
 
     BeamGenerateNonce message;
     message.set_slot(slot);
-    call(pack_message(message), MessageType_BeamECCPoint, callback);
+    call(pack_message(message), MessageType_BeamECCPoint, std::move(callback));
   }
 
   void call_BeamGetNoncePublic(uint8_t slot, MessageCallback callback)
@@ -48,7 +48,7 @@ public:
 
     BeamGetNoncePublic message;
     message.set_slot(slot);
-    call(pack_message(message), MessageType_BeamECCPoint, callback);
+    call(pack_message(message), MessageType_BeamECCPoint, std::move(callback));
   }
 
   // NEW CRYPTO ---------------------------------------------------------
@@ -58,7 +58,7 @@ public:
                                    const BeamCrypto_CompactPoint *pt1,
                                    const BeamCrypto_UintBig *extra_sk0,
                                    const BeamCrypto_UintBig *extra_sk1,
-                                   MessageCallback callback)
+                                   MessageCallback&& callback)
   {
     using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
@@ -85,13 +85,13 @@ public:
     if (extra_sk1)
       message.set_extra_sk0(extra_sk1->m_pVal, 32);
 
-    call(pack_message(message), MessageType_BeamRangeproofData, callback);
+    call(pack_message(message), MessageType_BeamRangeproofData, std::move(callback));
   }
 
   void call_BeamSignTransactionSend(const BeamCrypto_TxCommon &txCommon,
                                     const BeamCrypto_TxMutualInfo &txMutualInfo,
-                                    const BeamCrypto_TxSenderParams txSenderParams,
-                                    MessageCallback callback)
+                                    const BeamCrypto_TxSenderParams &txSenderParams,
+                                    MessageCallback&& callback)
   {
     using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
@@ -143,12 +143,12 @@ public:
     message.set_nonce_slot(txSenderParams.m_iSlot);
     message.set_user_agreement(txSenderParams.m_UserAgreement.m_pVal, 32);
 
-    call(pack_message(message), MessageType_BeamSignTransactionSend, callback);
+    call(pack_message(message), MessageType_BeamSignTransactionSend, std::move(callback));
   }
 
   void call_BeamSignTransactionReceive(const BeamCrypto_TxCommon &txCommon,
                                        const BeamCrypto_TxMutualInfo &txMutualInfo,
-                                       MessageCallback callback)
+                                       MessageCallback&& callback)
   {
     using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
@@ -197,11 +197,11 @@ public:
     payment_proof_nonce_pub->set_x(txMutualInfo.m_PaymentProofSignature.m_NoncePub.m_X.m_pVal, 32);
     payment_proof_nonce_pub->set_y(txMutualInfo.m_PaymentProofSignature.m_NoncePub.m_Y);
 
-    call(pack_message(message), MessageType_BeamSignTransactionReceive, callback);
+    call(pack_message(message), MessageType_BeamSignTransactionReceive, std::move(callback));
   }
 
   void call_BeamSignTransactionSplit(const BeamCrypto_TxCommon &txCommon,
-                                     MessageCallback callback)
+                                     MessageCallback&& callback)
   {
     using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
@@ -241,10 +241,10 @@ public:
     kernel_nonce_pub->set_x(txCommon.m_Krn.m_Signature.m_NoncePub.m_X.m_pVal, 32);
     kernel_nonce_pub->set_y(txCommon.m_Krn.m_Signature.m_NoncePub.m_Y);
 
-    call(pack_message(message), MessageType_BeamSignTransactionSplit, callback);
+    call(pack_message(message), MessageType_BeamSignTransactionSplit, std::move(callback));
   }
 
-  void call_BeamGetPKdf(bool is_root_key, uint32_t child_idx, bool show_display, MessageCallback callback)
+  void call_BeamGetPKdf(bool is_root_key, uint32_t child_idx, bool show_display, MessageCallback&& callback)
   {
     using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
@@ -254,10 +254,10 @@ public:
     message.set_child_idx(child_idx);
     message.set_show_display(show_display);
 
-    call(pack_message(message), MessageType_BeamPKdf, callback);
+    call(pack_message(message), MessageType_BeamPKdf, std::move(callback));
   }
 
-  void call_BeamGetNumSlots(bool show_display, MessageCallback callback)
+  void call_BeamGetNumSlots(bool show_display, MessageCallback&& callback)
   {
     using namespace hw::trezor::messages;
     using namespace hw::trezor::messages::beam;
@@ -265,7 +265,7 @@ public:
     BeamGetNumSlots message;
     message.set_show_display(show_display);
 
-    call(pack_message(message), MessageType_BeamNumSlots, callback);
+    call(pack_message(message), MessageType_BeamNumSlots, std::move(callback));
   }
 
 protected:

@@ -25,7 +25,7 @@ protected:
   bool execute_callback(const Message &msg, int type, const std::string &session);
   template <typename MessageType>
   bool execute_callback(const Call &call, const std::string &session);
-  void call(std::string message, int type, MessageCallback callback) throw();
+  void call(std::string message, int type, MessageCallback&& callback) throw();
 
 private:
   Client m_client;
@@ -110,9 +110,9 @@ bool BaseDeviceManager::execute_callback(const Call &call, const std::string &se
   return execute_callback(call.to_message<MessageType>(), call.type, session);
 }
 
-inline void BaseDeviceManager::call(std::string message, int type, MessageCallback callback) throw()
+inline void BaseDeviceManager::call(std::string message, int type, MessageCallback&& callback) throw()
 {
-  m_request_queue.push(m_request_queue.size(), [&, message, type, callback](size_t size) {
+  m_request_queue.push(m_request_queue.size(), [&, message, type, callback=std::move(callback)](size_t size) {
     if (m_session != "null")
     {
       throw std::runtime_error("previous session must be completed");
@@ -126,7 +126,7 @@ inline void BaseDeviceManager::call(std::string message, int type, MessageCallba
       if (callback)
       {
         auto key = std::make_pair(type, m_session);
-        m_callbacks[key] = callback;
+        m_callbacks[key] = std::move(callback);
       }
       m_worker_queue.push(m_session, [&, message](const std::string &session) {
         return m_client.call(session, message);
