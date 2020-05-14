@@ -56,6 +56,8 @@ public:
   void call_BeamGenerateRangeproof(const BeamCrypto_CoinID *cid,
                                    const BeamCrypto_CompactPoint *pt0,
                                    const BeamCrypto_CompactPoint *pt1,
+                                   const BeamCrypto_UintBig *extra_sk0,
+                                   const BeamCrypto_UintBig *extra_sk1,
                                    MessageCallback callback)
   {
     using namespace hw::trezor::messages;
@@ -77,26 +79,11 @@ public:
     message_pt1->set_x(pt1->m_X.m_pVal, 32);
     message_pt1->set_y(pt1->m_Y);
 
-    call(pack_message(message), MessageType_BeamRangeproofData, callback);
-  }
+    if (extra_sk0)
+      message.set_extra_sk0(extra_sk0->m_pVal, 32);
 
-  void call_BeamCreateOutput(uint64_t coin_id_scheme,
-                             const BeamCrypto_CoinID *cid,
-                             MessageCallback callback)
-  {
-    using namespace hw::trezor::messages;
-    using namespace hw::trezor::messages::beam;
-
-    BeamCreateOutput message;
-
-    message.set_coin_id_scheme(coin_id_scheme);
-
-    auto coinId = message.mutable_coin_id();
-    coinId->set_idx(cid->m_Idx);
-    coinId->set_type(cid->m_Type);
-    coinId->set_sub_idx(cid->m_SubIdx);
-    coinId->set_amount(cid->m_Amount);
-    coinId->set_asset_id(cid->m_AssetID);
+    if (extra_sk1)
+      message.set_extra_sk0(extra_sk1->m_pVal, 32);
 
     call(pack_message(message), MessageType_BeamRangeproofData, callback);
   }

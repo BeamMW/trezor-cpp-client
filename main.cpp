@@ -163,7 +163,7 @@ int main()
             memcpy(pt1.m_X.m_pVal, test_bytes, 32);
             pt1.m_Y = 1;
 
-            trezor->call_BeamGenerateRangeproof(&cid, &pt0, &pt1, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+            trezor->call_BeamGenerateRangeproof(&cid, &pt0, &pt1, nullptr, nullptr, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
                 bool is_successful = child_cast<Message, BeamRangeproofData>(msg).is_successful();
                 std::cout << "SESSION: " << session << std::endl;
                 std::cout << "BeamGenerateRangeproof" << std::endl;
@@ -171,15 +171,6 @@ int main()
                 std::cout << std::endl;
                 clear_flag(queue_size, is_alive_idx);
             });
-
-            // trezor->call_BeamCreateOutput(0, &cid, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
-            //     bool is_successful = child_cast<Message, BeamRangeproofData>(msg).is_successful();
-            //     std::cout << "SESSION: " << session << std::endl;
-            //     std::cout << "BeamCreateOutput" << std::endl;
-            //     std::cout << "is_successful: " << is_successful << std::endl;
-            //     std::cout << std::endl;
-            //     clear_flag(queue_size, is_alive_idx);
-            // });
 
             trezor->call_BeamGetPKdf(false, 1, true, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
                 const uint8_t *key = reinterpret_cast<const uint8_t *>(child_cast<Message, BeamPKdf>(msg).key().c_str());
