@@ -83,10 +83,6 @@ class BeamGenerateRangeproofDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<BeamGenerateRangeproof> _instance;
 } _BeamGenerateRangeproof_default_instance_;
-class BeamCreateOutputDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<BeamCreateOutput> _instance;
-} _BeamCreateOutput_default_instance_;
 class BeamRangeproofDataDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<BeamRangeproofData> _instance;
@@ -347,21 +343,6 @@ static void InitDefaultsBeamGenerateRangeproof_messages_2dbeam_2eproto() {
       &scc_info_BeamCoinID_messages_2dbeam_2eproto.base,
       &scc_info_BeamECCPoint_messages_2dbeam_2eproto.base,}};
 
-static void InitDefaultsBeamCreateOutput_messages_2dbeam_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::hw::trezor::messages::beam::_BeamCreateOutput_default_instance_;
-    new (ptr) ::hw::trezor::messages::beam::BeamCreateOutput();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::hw::trezor::messages::beam::BeamCreateOutput::InitAsDefaultInstance();
-}
-
-::google::protobuf::internal::SCCInfo<1> scc_info_BeamCreateOutput_messages_2dbeam_2eproto =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsBeamCreateOutput_messages_2dbeam_2eproto}, {
-      &scc_info_BeamCoinID_messages_2dbeam_2eproto.base,}};
-
 static void InitDefaultsBeamRangeproofData_messages_2dbeam_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -373,8 +354,9 @@ static void InitDefaultsBeamRangeproofData_messages_2dbeam_2eproto() {
   ::hw::trezor::messages::beam::BeamRangeproofData::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_BeamRangeproofData_messages_2dbeam_2eproto =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsBeamRangeproofData_messages_2dbeam_2eproto}, {}};
+::google::protobuf::internal::SCCInfo<1> scc_info_BeamRangeproofData_messages_2dbeam_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsBeamRangeproofData_messages_2dbeam_2eproto}, {
+      &scc_info_BeamECCPoint_messages_2dbeam_2eproto.base,}};
 
 static void InitDefaultsBeamSignedTransaction_messages_2dbeam_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -630,7 +612,6 @@ void InitDefaults_messages_2dbeam_2eproto() {
   ::google::protobuf::internal::InitSCC(&scc_info_BeamGetOwnerKey_messages_2dbeam_2eproto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_BeamOwnerKey_messages_2dbeam_2eproto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_BeamGenerateRangeproof_messages_2dbeam_2eproto.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_BeamCreateOutput_messages_2dbeam_2eproto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_BeamRangeproofData_messages_2dbeam_2eproto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_BeamSignedTransaction_messages_2dbeam_2eproto.base);
   ::google::protobuf::internal::InitSCC(&scc_info_BeamSignTransaction_BeamKernelParametersOld_messages_2dbeam_2eproto.base);
@@ -650,7 +631,7 @@ void InitDefaults_messages_2dbeam_2eproto() {
   ::google::protobuf::internal::InitSCC(&scc_info_BeamSignTransactionSplitResult_messages_2dbeam_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata_messages_2dbeam_2eproto[31];
+::google::protobuf::Metadata file_level_metadata_messages_2dbeam_2eproto[30];
 constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_messages_2dbeam_2eproto = nullptr;
 constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_messages_2dbeam_2eproto = nullptr;
 
@@ -781,18 +762,13 @@ const ::google::protobuf::uint32 TableStruct_messages_2dbeam_2eproto::offsets[] 
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamGenerateRangeproof, cid_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamGenerateRangeproof, pt0_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamGenerateRangeproof, pt1_),
-  0,
-  1,
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamGenerateRangeproof, extra_sk0_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamGenerateRangeproof, extra_sk1_),
   2,
-  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamCreateOutput, _has_bits_),
-  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamCreateOutput, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamCreateOutput, coin_id_scheme_),
-  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamCreateOutput, coin_id_),
-  1,
+  3,
+  4,
   0,
+  1,
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamRangeproofData, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamRangeproofData, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -800,8 +776,12 @@ const ::google::protobuf::uint32 TableStruct_messages_2dbeam_2eproto::offsets[] 
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamRangeproofData, data_taux_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamRangeproofData, is_successful_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamRangeproofData, pt0_),
+  PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamRangeproofData, pt1_),
   0,
+  3,
   1,
+  2,
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamSignedTransaction, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::hw::trezor::messages::beam::BeamSignedTransaction, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -980,25 +960,24 @@ static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SE
   { 93, 101, sizeof(::hw::trezor::messages::beam::BeamGetPublicKey)},
   { 104, 110, sizeof(::hw::trezor::messages::beam::BeamGetOwnerKey)},
   { 111, 117, sizeof(::hw::trezor::messages::beam::BeamOwnerKey)},
-  { 118, 126, sizeof(::hw::trezor::messages::beam::BeamGenerateRangeproof)},
-  { 129, 136, sizeof(::hw::trezor::messages::beam::BeamCreateOutput)},
-  { 138, 145, sizeof(::hw::trezor::messages::beam::BeamRangeproofData)},
-  { 147, 153, sizeof(::hw::trezor::messages::beam::BeamSignedTransaction)},
-  { 154, 167, sizeof(::hw::trezor::messages::beam::BeamSignTransaction_BeamKernelParametersOld)},
-  { 175, 185, sizeof(::hw::trezor::messages::beam::BeamSignTransaction)},
-  { 190, 198, sizeof(::hw::trezor::messages::beam::BeamGetPKdf)},
-  { 201, 207, sizeof(::hw::trezor::messages::beam::BeamPKdf)},
-  { 208, 214, sizeof(::hw::trezor::messages::beam::BeamGetNumSlots)},
-  { 215, 221, sizeof(::hw::trezor::messages::beam::BeamNumSlots)},
-  { 222, 232, sizeof(::hw::trezor::messages::beam::BeamTxCommon_BeamKernelParameters)},
-  { 237, 246, sizeof(::hw::trezor::messages::beam::BeamTxCommon)},
-  { 250, 258, sizeof(::hw::trezor::messages::beam::BeamTxMutualInfo)},
-  { 261, 270, sizeof(::hw::trezor::messages::beam::BeamSignTransactionSend)},
-  { 274, 280, sizeof(::hw::trezor::messages::beam::BeamSignTransactionSendResult)},
-  { 281, 288, sizeof(::hw::trezor::messages::beam::BeamSignTransactionReceive)},
-  { 290, 296, sizeof(::hw::trezor::messages::beam::BeamSignTransactionReceiveResult)},
-  { 297, 303, sizeof(::hw::trezor::messages::beam::BeamSignTransactionSplit)},
-  { 304, 310, sizeof(::hw::trezor::messages::beam::BeamSignTransactionSplitResult)},
+  { 118, 128, sizeof(::hw::trezor::messages::beam::BeamGenerateRangeproof)},
+  { 133, 142, sizeof(::hw::trezor::messages::beam::BeamRangeproofData)},
+  { 146, 152, sizeof(::hw::trezor::messages::beam::BeamSignedTransaction)},
+  { 153, 166, sizeof(::hw::trezor::messages::beam::BeamSignTransaction_BeamKernelParametersOld)},
+  { 174, 184, sizeof(::hw::trezor::messages::beam::BeamSignTransaction)},
+  { 189, 197, sizeof(::hw::trezor::messages::beam::BeamGetPKdf)},
+  { 200, 206, sizeof(::hw::trezor::messages::beam::BeamPKdf)},
+  { 207, 213, sizeof(::hw::trezor::messages::beam::BeamGetNumSlots)},
+  { 214, 220, sizeof(::hw::trezor::messages::beam::BeamNumSlots)},
+  { 221, 231, sizeof(::hw::trezor::messages::beam::BeamTxCommon_BeamKernelParameters)},
+  { 236, 245, sizeof(::hw::trezor::messages::beam::BeamTxCommon)},
+  { 249, 257, sizeof(::hw::trezor::messages::beam::BeamTxMutualInfo)},
+  { 260, 269, sizeof(::hw::trezor::messages::beam::BeamSignTransactionSend)},
+  { 273, 279, sizeof(::hw::trezor::messages::beam::BeamSignTransactionSendResult)},
+  { 280, 287, sizeof(::hw::trezor::messages::beam::BeamSignTransactionReceive)},
+  { 289, 295, sizeof(::hw::trezor::messages::beam::BeamSignTransactionReceiveResult)},
+  { 296, 302, sizeof(::hw::trezor::messages::beam::BeamSignTransactionSplit)},
+  { 303, 309, sizeof(::hw::trezor::messages::beam::BeamSignTransactionSplitResult)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
@@ -1015,7 +994,6 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::beam::_BeamGetOwnerKey_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::beam::_BeamOwnerKey_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::beam::_BeamGenerateRangeproof_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::beam::_BeamCreateOutput_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::beam::_BeamRangeproofData_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::beam::_BeamSignedTransaction_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::hw::trezor::messages::beam::_BeamSignTransaction_BeamKernelParametersOld_default_instance_),
@@ -1038,7 +1016,7 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 ::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_messages_2dbeam_2eproto = {
   {}, AddDescriptors_messages_2dbeam_2eproto, "messages-beam.proto", schemas,
   file_default_instances, TableStruct_messages_2dbeam_2eproto::offsets,
-  file_level_metadata_messages_2dbeam_2eproto, 31, file_level_enum_descriptors_messages_2dbeam_2eproto, file_level_service_descriptors_messages_2dbeam_2eproto,
+  file_level_metadata_messages_2dbeam_2eproto, 30, file_level_enum_descriptors_messages_2dbeam_2eproto, file_level_service_descriptors_messages_2dbeam_2eproto,
 };
 
 const char descriptor_table_protodef_messages_2dbeam_2eproto[] =
@@ -1064,74 +1042,75 @@ const char descriptor_table_protodef_messages_2dbeam_2eproto[] =
   "etPublicKey\022\017\n\007kid_idx\030\001 \001(\004\022\023\n\013kid_sub_"
   "idx\030\002 \001(\r\022\024\n\014show_display\030\003 \001(\010\"\'\n\017BeamG"
   "etOwnerKey\022\024\n\014show_display\030\001 \001(\010\"\033\n\014Beam"
-  "OwnerKey\022\013\n\003key\030\001 \001(\014\"\262\001\n\026BeamGenerateRa"
+  "OwnerKey\022\013\n\003key\030\001 \001(\014\"\330\001\n\026BeamGenerateRa"
   "ngeproof\0220\n\003cid\030\001 \001(\0132#.hw.trezor.messag"
   "es.beam.BeamCoinID\0222\n\003pt0\030\002 \001(\0132%.hw.tre"
   "zor.messages.beam.BeamECCPoint\0222\n\003pt1\030\003 "
   "\001(\0132%.hw.trezor.messages.beam.BeamECCPoi"
-  "nt\"`\n\020BeamCreateOutput\022\026\n\016coin_id_scheme"
-  "\030\001 \001(\004\0224\n\007coin_id\030\002 \001(\0132#.hw.trezor.mess"
-  "ages.beam.BeamCoinID\">\n\022BeamRangeproofDa"
-  "ta\022\021\n\tdata_taux\030\001 \001(\014\022\025\n\ris_successful\030\002"
-  " \001(\010\"*\n\025BeamSignedTransaction\022\021\n\tsignatu"
-  "re\030\001 \001(\014\"\272\004\n\023BeamSignTransaction\0223\n\006inpu"
-  "ts\030\001 \003(\0132#.hw.trezor.messages.beam.BeamK"
-  "eyIDV\022\021\n\toffset_sk\030\002 \001(\014\0224\n\007outputs\030\003 \003("
-  "\0132#.hw.trezor.messages.beam.BeamKeyIDV\022\022"
-  "\n\nnonce_slot\030\004 \001(\r\022[\n\rkernel_params\030\005 \001("
-  "\0132D.hw.trezor.messages.beam.BeamSignTran"
-  "saction.BeamKernelParametersOld\032\263\002\n\027Beam"
-  "KernelParametersOld\022\013\n\003fee\030\001 \001(\004\0229\n\ncomm"
-  "itment\030\002 \001(\0132%.hw.trezor.messages.beam.B"
-  "eamECCPoint\022\022\n\nmin_height\030\004 \001(\004\022\022\n\nmax_h"
-  "eight\030\005 \001(\004\022\026\n\016asset_emission\030\006 \001(\022\022\021\n\th"
-  "ash_lock\030\007 \001(\014\022=\n\016multisig_nonce\030\010 \001(\0132%"
-  ".hw.trezor.messages.beam.BeamECCPoint\022>\n"
-  "\017multisig_excess\030\t \001(\0132%.hw.trezor.messa"
-  "ges.beam.BeamECCPoint\"K\n\013BeamGetPKdf\022\023\n\013"
-  "is_root_key\030\001 \001(\010\022\021\n\tchild_idx\030\002 \001(\r\022\024\n\014"
-  "show_display\030\003 \001(\010\"\027\n\010BeamPKdf\022\013\n\003key\030\001 "
-  "\001(\014\"\'\n\017BeamGetNumSlots\022\024\n\014show_display\030\001"
-  " \001(\010\"!\n\014BeamNumSlots\022\021\n\tnum_slots\030\001 \001(\r\""
-  "\243\003\n\014BeamTxCommon\0223\n\006inputs\030\001 \003(\0132#.hw.tr"
-  "ezor.messages.beam.BeamCoinID\022\021\n\toffset_"
-  "sk\030\002 \001(\014\0224\n\007outputs\030\003 \003(\0132#.hw.trezor.me"
-  "ssages.beam.BeamCoinID\022Q\n\rkernel_params\030"
-  "\004 \001(\0132:.hw.trezor.messages.beam.BeamTxCo"
-  "mmon.BeamKernelParameters\032\301\001\n\024BeamKernel"
-  "Parameters\022\013\n\003fee\030\001 \001(\004\022\022\n\nmin_height\030\002 "
-  "\001(\004\022\022\n\nmax_height\030\003 \001(\004\0229\n\ncommitment\030\004 "
+  "nt\022\021\n\textra_sk0\030\004 \001(\014\022\021\n\textra_sk1\030\005 \001(\014"
+  "\"\246\001\n\022BeamRangeproofData\022\021\n\tdata_taux\030\001 \001"
+  "(\014\022\025\n\ris_successful\030\002 \001(\010\0222\n\003pt0\030\003 \001(\0132%"
+  ".hw.trezor.messages.beam.BeamECCPoint\0222\n"
+  "\003pt1\030\004 \001(\0132%.hw.trezor.messages.beam.Bea"
+  "mECCPoint\"*\n\025BeamSignedTransaction\022\021\n\tsi"
+  "gnature\030\001 \001(\014\"\272\004\n\023BeamSignTransaction\0223\n"
+  "\006inputs\030\001 \003(\0132#.hw.trezor.messages.beam."
+  "BeamKeyIDV\022\021\n\toffset_sk\030\002 \001(\014\0224\n\007outputs"
+  "\030\003 \003(\0132#.hw.trezor.messages.beam.BeamKey"
+  "IDV\022\022\n\nnonce_slot\030\004 \001(\r\022[\n\rkernel_params"
+  "\030\005 \001(\0132D.hw.trezor.messages.beam.BeamSig"
+  "nTransaction.BeamKernelParametersOld\032\263\002\n"
+  "\027BeamKernelParametersOld\022\013\n\003fee\030\001 \001(\004\0229\n"
+  "\ncommitment\030\002 \001(\0132%.hw.trezor.messages.b"
+  "eam.BeamECCPoint\022\022\n\nmin_height\030\004 \001(\004\022\022\n\n"
+  "max_height\030\005 \001(\004\022\026\n\016asset_emission\030\006 \001(\022"
+  "\022\021\n\thash_lock\030\007 \001(\014\022=\n\016multisig_nonce\030\010 "
   "\001(\0132%.hw.trezor.messages.beam.BeamECCPoi"
-  "nt\0229\n\tsignature\030\005 \001(\0132&.hw.trezor.messag"
-  "es.beam.BeamSignature\"\206\001\n\020BeamTxMutualIn"
-  "fo\022\014\n\004peer\030\001 \001(\014\022\033\n\023wallet_identity_key\030"
-  "\002 \001(\004\022G\n\027payment_proof_signature\030\003 \001(\0132&"
-  ".hw.trezor.messages.beam.BeamSignature\"\302"
-  "\001\n\027BeamSignTransactionSend\0228\n\ttx_common\030"
-  "\001 \001(\0132%.hw.trezor.messages.beam.BeamTxCo"
-  "mmon\022A\n\016tx_mutual_info\030\002 \001(\0132).hw.trezor"
-  ".messages.beam.BeamTxMutualInfo\022\022\n\nnonce"
-  "_slot\030\003 \001(\r\022\026\n\016user_agreement\030\004 \001(\014\"]\n\035B"
-  "eamSignTransactionSendResult\022<\n\002tx\030\001 \001(\013"
-  "20.hw.trezor.messages.beam.BeamSignTrans"
-  "actionSend\"\231\001\n\032BeamSignTransactionReceiv"
-  "e\0228\n\ttx_common\030\001 \001(\0132%.hw.trezor.message"
-  "s.beam.BeamTxCommon\022A\n\016tx_mutual_info\030\002 "
-  "\001(\0132).hw.trezor.messages.beam.BeamTxMutu"
-  "alInfo\"c\n BeamSignTransactionReceiveResu"
-  "lt\022\?\n\002tx\030\001 \001(\01323.hw.trezor.messages.beam"
-  ".BeamSignTransactionReceive\"T\n\030BeamSignT"
-  "ransactionSplit\0228\n\ttx_common\030\001 \001(\0132%.hw."
-  "trezor.messages.beam.BeamTxCommon\"_\n\036Bea"
-  "mSignTransactionSplitResult\022=\n\002tx\030\001 \001(\0132"
-  "1.hw.trezor.messages.beam.BeamSignTransa"
-  "ctionSplitB8\n#com.satoshilabs.trezor.lib"
-  ".protobufB\021TrezorMessageBeam"
+  "nt\022>\n\017multisig_excess\030\t \001(\0132%.hw.trezor."
+  "messages.beam.BeamECCPoint\"K\n\013BeamGetPKd"
+  "f\022\023\n\013is_root_key\030\001 \001(\010\022\021\n\tchild_idx\030\002 \001("
+  "\r\022\024\n\014show_display\030\003 \001(\010\"\027\n\010BeamPKdf\022\013\n\003k"
+  "ey\030\001 \001(\014\"\'\n\017BeamGetNumSlots\022\024\n\014show_disp"
+  "lay\030\001 \001(\010\"!\n\014BeamNumSlots\022\021\n\tnum_slots\030\001"
+  " \001(\r\"\243\003\n\014BeamTxCommon\0223\n\006inputs\030\001 \003(\0132#."
+  "hw.trezor.messages.beam.BeamCoinID\022\021\n\tof"
+  "fset_sk\030\002 \001(\014\0224\n\007outputs\030\003 \003(\0132#.hw.trez"
+  "or.messages.beam.BeamCoinID\022Q\n\rkernel_pa"
+  "rams\030\004 \001(\0132:.hw.trezor.messages.beam.Bea"
+  "mTxCommon.BeamKernelParameters\032\301\001\n\024BeamK"
+  "ernelParameters\022\013\n\003fee\030\001 \001(\004\022\022\n\nmin_heig"
+  "ht\030\002 \001(\004\022\022\n\nmax_height\030\003 \001(\004\0229\n\ncommitme"
+  "nt\030\004 \001(\0132%.hw.trezor.messages.beam.BeamE"
+  "CCPoint\0229\n\tsignature\030\005 \001(\0132&.hw.trezor.m"
+  "essages.beam.BeamSignature\"\206\001\n\020BeamTxMut"
+  "ualInfo\022\014\n\004peer\030\001 \001(\014\022\033\n\023wallet_identity"
+  "_key\030\002 \001(\004\022G\n\027payment_proof_signature\030\003 "
+  "\001(\0132&.hw.trezor.messages.beam.BeamSignat"
+  "ure\"\302\001\n\027BeamSignTransactionSend\0228\n\ttx_co"
+  "mmon\030\001 \001(\0132%.hw.trezor.messages.beam.Bea"
+  "mTxCommon\022A\n\016tx_mutual_info\030\002 \001(\0132).hw.t"
+  "rezor.messages.beam.BeamTxMutualInfo\022\022\n\n"
+  "nonce_slot\030\003 \001(\r\022\026\n\016user_agreement\030\004 \001(\014"
+  "\"]\n\035BeamSignTransactionSendResult\022<\n\002tx\030"
+  "\001 \001(\01320.hw.trezor.messages.beam.BeamSign"
+  "TransactionSend\"\231\001\n\032BeamSignTransactionR"
+  "eceive\0228\n\ttx_common\030\001 \001(\0132%.hw.trezor.me"
+  "ssages.beam.BeamTxCommon\022A\n\016tx_mutual_in"
+  "fo\030\002 \001(\0132).hw.trezor.messages.beam.BeamT"
+  "xMutualInfo\"c\n BeamSignTransactionReceiv"
+  "eResult\022\?\n\002tx\030\001 \001(\01323.hw.trezor.messages"
+  ".beam.BeamSignTransactionReceive\"T\n\030Beam"
+  "SignTransactionSplit\0228\n\ttx_common\030\001 \001(\0132"
+  "%.hw.trezor.messages.beam.BeamTxCommon\"_"
+  "\n\036BeamSignTransactionSplitResult\022=\n\002tx\030\001"
+  " \001(\01321.hw.trezor.messages.beam.BeamSignT"
+  "ransactionSplitB8\n#com.satoshilabs.trezo"
+  "r.lib.protobufB\021TrezorMessageBeam"
   ;
 ::google::protobuf::internal::DescriptorTable descriptor_table_messages_2dbeam_2eproto = {
   false, InitDefaults_messages_2dbeam_2eproto, 
   descriptor_table_protodef_messages_2dbeam_2eproto,
-  "messages-beam.proto", &assign_descriptors_table_messages_2dbeam_2eproto, 3388,
+  "messages-beam.proto", &assign_descriptors_table_messages_2dbeam_2eproto, 3433,
 };
 
 void AddDescriptors_messages_2dbeam_2eproto() {
@@ -5492,15 +5471,21 @@ class BeamGenerateRangeproof::HasBitSetters {
  public:
   static const ::hw::trezor::messages::beam::BeamCoinID& cid(const BeamGenerateRangeproof* msg);
   static void set_has_cid(BeamGenerateRangeproof* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
+    msg->_has_bits_[0] |= 0x00000004u;
   }
   static const ::hw::trezor::messages::beam::BeamECCPoint& pt0(const BeamGenerateRangeproof* msg);
   static void set_has_pt0(BeamGenerateRangeproof* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
+    msg->_has_bits_[0] |= 0x00000008u;
   }
   static const ::hw::trezor::messages::beam::BeamECCPoint& pt1(const BeamGenerateRangeproof* msg);
   static void set_has_pt1(BeamGenerateRangeproof* msg) {
-    msg->_has_bits_[0] |= 0x00000004u;
+    msg->_has_bits_[0] |= 0x00000010u;
+  }
+  static void set_has_extra_sk0(BeamGenerateRangeproof* msg) {
+    msg->_has_bits_[0] |= 0x00000001u;
+  }
+  static void set_has_extra_sk1(BeamGenerateRangeproof* msg) {
+    msg->_has_bits_[0] |= 0x00000002u;
   }
 };
 
@@ -5520,6 +5505,8 @@ BeamGenerateRangeproof::HasBitSetters::pt1(const BeamGenerateRangeproof* msg) {
 const int BeamGenerateRangeproof::kCidFieldNumber;
 const int BeamGenerateRangeproof::kPt0FieldNumber;
 const int BeamGenerateRangeproof::kPt1FieldNumber;
+const int BeamGenerateRangeproof::kExtraSk0FieldNumber;
+const int BeamGenerateRangeproof::kExtraSk1FieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 BeamGenerateRangeproof::BeamGenerateRangeproof()
@@ -5532,6 +5519,14 @@ BeamGenerateRangeproof::BeamGenerateRangeproof(const BeamGenerateRangeproof& fro
       _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
+  extra_sk0_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.has_extra_sk0()) {
+    extra_sk0_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.extra_sk0_);
+  }
+  extra_sk1_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (from.has_extra_sk1()) {
+    extra_sk1_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.extra_sk1_);
+  }
   if (from.has_cid()) {
     cid_ = new ::hw::trezor::messages::beam::BeamCoinID(*from.cid_);
   } else {
@@ -5553,6 +5548,8 @@ BeamGenerateRangeproof::BeamGenerateRangeproof(const BeamGenerateRangeproof& fro
 void BeamGenerateRangeproof::SharedCtor() {
   ::google::protobuf::internal::InitSCC(
       &scc_info_BeamGenerateRangeproof_messages_2dbeam_2eproto.base);
+  extra_sk0_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  extra_sk1_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   ::memset(&cid_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&pt1_) -
       reinterpret_cast<char*>(&cid_)) + sizeof(pt1_));
@@ -5564,6 +5561,8 @@ BeamGenerateRangeproof::~BeamGenerateRangeproof() {
 }
 
 void BeamGenerateRangeproof::SharedDtor() {
+  extra_sk0_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  extra_sk1_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete cid_;
   if (this != internal_default_instance()) delete pt0_;
   if (this != internal_default_instance()) delete pt1_;
@@ -5585,16 +5584,22 @@ void BeamGenerateRangeproof::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000007u) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
+      extra_sk0_.ClearNonDefaultToEmptyNoArena();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      extra_sk1_.ClearNonDefaultToEmptyNoArena();
+    }
+    if (cached_has_bits & 0x00000004u) {
       GOOGLE_DCHECK(cid_ != nullptr);
       cid_->Clear();
     }
-    if (cached_has_bits & 0x00000002u) {
+    if (cached_has_bits & 0x00000008u) {
       GOOGLE_DCHECK(pt0_ != nullptr);
       pt0_->Clear();
     }
-    if (cached_has_bits & 0x00000004u) {
+    if (cached_has_bits & 0x00000010u) {
       GOOGLE_DCHECK(pt1_ != nullptr);
       pt1_->Clear();
     }
@@ -5655,6 +5660,36 @@ const char* BeamGenerateRangeproof::_InternalParse(const char* begin, const char
             {parser_till_end, object}, ptr - size, ptr));
         break;
       }
+      // optional bytes extra_sk0 = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_extra_sk0();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
+      // optional bytes extra_sk1 = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        object = msg->mutable_extra_sk1();
+        if (size > end - ptr + ::google::protobuf::internal::ParseContext::kSlopBytes) {
+          parser_till_end = ::google::protobuf::internal::GreedyStringParser;
+          goto string_till_end;
+        }
+        GOOGLE_PROTOBUF_PARSER_ASSERT(::google::protobuf::internal::StringCheck(ptr, size, ctx));
+        ::google::protobuf::internal::InlineGreedyStringParser(object, ptr, size, ctx);
+        ptr += size;
+        break;
+      }
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
@@ -5670,6 +5705,10 @@ const char* BeamGenerateRangeproof::_InternalParse(const char* begin, const char
     }  // switch
   }  // while
   return ptr;
+string_till_end:
+  static_cast<::std::string*>(object)->clear();
+  static_cast<::std::string*>(object)->reserve(size);
+  goto len_delim_till_end;
 len_delim_till_end:
   return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
                                {parser_till_end, object}, size);
@@ -5718,6 +5757,28 @@ bool BeamGenerateRangeproof::MergePartialFromCodedStream(
         break;
       }
 
+      // optional bytes extra_sk0 = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_extra_sk0()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional bytes extra_sk1 = 5;
+      case 5: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_extra_sk1()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -5747,21 +5808,33 @@ void BeamGenerateRangeproof::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional .hw.trezor.messages.beam.BeamCoinID cid = 1;
-  if (cached_has_bits & 0x00000001u) {
+  if (cached_has_bits & 0x00000004u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, HasBitSetters::cid(this), output);
   }
 
   // optional .hw.trezor.messages.beam.BeamECCPoint pt0 = 2;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, HasBitSetters::pt0(this), output);
   }
 
   // optional .hw.trezor.messages.beam.BeamECCPoint pt1 = 3;
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00000010u) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, HasBitSetters::pt1(this), output);
+  }
+
+  // optional bytes extra_sk0 = 4;
+  if (cached_has_bits & 0x00000001u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
+      4, this->extra_sk0(), output);
+  }
+
+  // optional bytes extra_sk1 = 5;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
+      5, this->extra_sk1(), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -5779,24 +5852,38 @@ void BeamGenerateRangeproof::SerializeWithCachedSizes(
 
   cached_has_bits = _has_bits_[0];
   // optional .hw.trezor.messages.beam.BeamCoinID cid = 1;
-  if (cached_has_bits & 0x00000001u) {
+  if (cached_has_bits & 0x00000004u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         1, HasBitSetters::cid(this), target);
   }
 
   // optional .hw.trezor.messages.beam.BeamECCPoint pt0 = 2;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         2, HasBitSetters::pt0(this), target);
   }
 
   // optional .hw.trezor.messages.beam.BeamECCPoint pt1 = 3;
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00000010u) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         3, HasBitSetters::pt1(this), target);
+  }
+
+  // optional bytes extra_sk0 = 4;
+  if (cached_has_bits & 0x00000001u) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        4, this->extra_sk0(), target);
+  }
+
+  // optional bytes extra_sk1 = 5;
+  if (cached_has_bits & 0x00000002u) {
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
+        5, this->extra_sk1(), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -5821,23 +5908,37 @@ size_t BeamGenerateRangeproof::ByteSizeLong() const {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000007u) {
-    // optional .hw.trezor.messages.beam.BeamCoinID cid = 1;
+  if (cached_has_bits & 0x0000001fu) {
+    // optional bytes extra_sk0 = 4;
     if (cached_has_bits & 0x00000001u) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->extra_sk0());
+    }
+
+    // optional bytes extra_sk1 = 5;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->extra_sk1());
+    }
+
+    // optional .hw.trezor.messages.beam.BeamCoinID cid = 1;
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *cid_);
     }
 
     // optional .hw.trezor.messages.beam.BeamECCPoint pt0 = 2;
-    if (cached_has_bits & 0x00000002u) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *pt0_);
     }
 
     // optional .hw.trezor.messages.beam.BeamECCPoint pt1 = 3;
-    if (cached_has_bits & 0x00000004u) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSize(
           *pt1_);
@@ -5872,14 +5973,22 @@ void BeamGenerateRangeproof::MergeFrom(const BeamGenerateRangeproof& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 0x00000007u) {
+  if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      mutable_cid()->::hw::trezor::messages::beam::BeamCoinID::MergeFrom(from.cid());
+      _has_bits_[0] |= 0x00000001u;
+      extra_sk0_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.extra_sk0_);
     }
     if (cached_has_bits & 0x00000002u) {
-      mutable_pt0()->::hw::trezor::messages::beam::BeamECCPoint::MergeFrom(from.pt0());
+      _has_bits_[0] |= 0x00000002u;
+      extra_sk1_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.extra_sk1_);
     }
     if (cached_has_bits & 0x00000004u) {
+      mutable_cid()->::hw::trezor::messages::beam::BeamCoinID::MergeFrom(from.cid());
+    }
+    if (cached_has_bits & 0x00000008u) {
+      mutable_pt0()->::hw::trezor::messages::beam::BeamECCPoint::MergeFrom(from.pt0());
+    }
+    if (cached_has_bits & 0x00000010u) {
       mutable_pt1()->::hw::trezor::messages::beam::BeamECCPoint::MergeFrom(from.pt1());
     }
   }
@@ -5911,6 +6020,10 @@ void BeamGenerateRangeproof::InternalSwap(BeamGenerateRangeproof* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
+  extra_sk0_.Swap(&other->extra_sk0_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  extra_sk1_.Swap(&other->extra_sk1_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(cid_, other->cid_);
   swap(pt0_, other->pt0_);
   swap(pt1_, other->pt1_);
@@ -5924,359 +6037,11 @@ void BeamGenerateRangeproof::InternalSwap(BeamGenerateRangeproof* other) {
 
 // ===================================================================
 
-void BeamCreateOutput::InitAsDefaultInstance() {
-  ::hw::trezor::messages::beam::_BeamCreateOutput_default_instance_._instance.get_mutable()->coin_id_ = const_cast< ::hw::trezor::messages::beam::BeamCoinID*>(
-      ::hw::trezor::messages::beam::BeamCoinID::internal_default_instance());
-}
-class BeamCreateOutput::HasBitSetters {
- public:
-  static void set_has_coin_id_scheme(BeamCreateOutput* msg) {
-    msg->_has_bits_[0] |= 0x00000002u;
-  }
-  static const ::hw::trezor::messages::beam::BeamCoinID& coin_id(const BeamCreateOutput* msg);
-  static void set_has_coin_id(BeamCreateOutput* msg) {
-    msg->_has_bits_[0] |= 0x00000001u;
-  }
-};
-
-const ::hw::trezor::messages::beam::BeamCoinID&
-BeamCreateOutput::HasBitSetters::coin_id(const BeamCreateOutput* msg) {
-  return *msg->coin_id_;
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int BeamCreateOutput::kCoinIdSchemeFieldNumber;
-const int BeamCreateOutput::kCoinIdFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-BeamCreateOutput::BeamCreateOutput()
-  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:hw.trezor.messages.beam.BeamCreateOutput)
-}
-BeamCreateOutput::BeamCreateOutput(const BeamCreateOutput& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(nullptr),
-      _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_coin_id()) {
-    coin_id_ = new ::hw::trezor::messages::beam::BeamCoinID(*from.coin_id_);
-  } else {
-    coin_id_ = nullptr;
-  }
-  coin_id_scheme_ = from.coin_id_scheme_;
-  // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.beam.BeamCreateOutput)
-}
-
-void BeamCreateOutput::SharedCtor() {
-  ::google::protobuf::internal::InitSCC(
-      &scc_info_BeamCreateOutput_messages_2dbeam_2eproto.base);
-  ::memset(&coin_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&coin_id_scheme_) -
-      reinterpret_cast<char*>(&coin_id_)) + sizeof(coin_id_scheme_));
-}
-
-BeamCreateOutput::~BeamCreateOutput() {
-  // @@protoc_insertion_point(destructor:hw.trezor.messages.beam.BeamCreateOutput)
-  SharedDtor();
-}
-
-void BeamCreateOutput::SharedDtor() {
-  if (this != internal_default_instance()) delete coin_id_;
-}
-
-void BeamCreateOutput::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const BeamCreateOutput& BeamCreateOutput::default_instance() {
-  ::google::protobuf::internal::InitSCC(&::scc_info_BeamCreateOutput_messages_2dbeam_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void BeamCreateOutput::Clear() {
-// @@protoc_insertion_point(message_clear_start:hw.trezor.messages.beam.BeamCreateOutput)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(coin_id_ != nullptr);
-    coin_id_->Clear();
-  }
-  coin_id_scheme_ = PROTOBUF_ULONGLONG(0);
-  _has_bits_.Clear();
-  _internal_metadata_.Clear();
-}
-
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-const char* BeamCreateOutput::_InternalParse(const char* begin, const char* end, void* object,
-                  ::google::protobuf::internal::ParseContext* ctx) {
-  auto msg = static_cast<BeamCreateOutput*>(object);
-  ::google::protobuf::int32 size; (void)size;
-  int depth; (void)depth;
-  ::google::protobuf::uint32 tag;
-  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
-  auto ptr = begin;
-  while (ptr < end) {
-    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
-    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-    switch (tag >> 3) {
-      // optional uint64 coin_id_scheme = 1;
-      case 1: {
-        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
-        msg->set_coin_id_scheme(::google::protobuf::internal::ReadVarint(&ptr));
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        break;
-      }
-      // optional .hw.trezor.messages.beam.BeamCoinID coin_id = 2;
-      case 2: {
-        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
-        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
-        parser_till_end = ::hw::trezor::messages::beam::BeamCoinID::_InternalParse;
-        object = msg->mutable_coin_id();
-        if (size > end - ptr) goto len_delim_till_end;
-        ptr += size;
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
-            {parser_till_end, object}, ptr - size, ptr));
-        break;
-      }
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->EndGroup(tag);
-          return ptr;
-        }
-        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
-          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
-        ptr = res.first;
-        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
-        if (res.second) return ptr;
-      }
-    }  // switch
-  }  // while
-  return ptr;
-len_delim_till_end:
-  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
-                               {parser_till_end, object}, size);
-}
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool BeamCreateOutput::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:hw.trezor.messages.beam.BeamCreateOutput)
-  for (;;) {
-    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // optional uint64 coin_id_scheme = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
-          HasBitSetters::set_has_coin_id_scheme(this);
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &coin_id_scheme_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // optional .hw.trezor.messages.beam.BeamCoinID coin_id = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_coin_id()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:hw.trezor.messages.beam.BeamCreateOutput)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:hw.trezor.messages.beam.BeamCreateOutput)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void BeamCreateOutput::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:hw.trezor.messages.beam.BeamCreateOutput)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // optional uint64 coin_id_scheme = 1;
-  if (cached_has_bits & 0x00000002u) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt64(1, this->coin_id_scheme(), output);
-  }
-
-  // optional .hw.trezor.messages.beam.BeamCoinID coin_id = 2;
-  if (cached_has_bits & 0x00000001u) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, HasBitSetters::coin_id(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:hw.trezor.messages.beam.BeamCreateOutput)
-}
-
-::google::protobuf::uint8* BeamCreateOutput::InternalSerializeWithCachedSizesToArray(
-    ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:hw.trezor.messages.beam.BeamCreateOutput)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  // optional uint64 coin_id_scheme = 1;
-  if (cached_has_bits & 0x00000002u) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(1, this->coin_id_scheme(), target);
-  }
-
-  // optional .hw.trezor.messages.beam.BeamCoinID coin_id = 2;
-  if (cached_has_bits & 0x00000001u) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, HasBitSetters::coin_id(this), target);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:hw.trezor.messages.beam.BeamCreateOutput)
-  return target;
-}
-
-size_t BeamCreateOutput::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:hw.trezor.messages.beam.BeamCreateOutput)
-  size_t total_size = 0;
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000003u) {
-    // optional .hw.trezor.messages.beam.BeamCoinID coin_id = 2;
-    if (cached_has_bits & 0x00000001u) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::MessageSize(
-          *coin_id_);
-    }
-
-    // optional uint64 coin_id_scheme = 1;
-    if (cached_has_bits & 0x00000002u) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::UInt64Size(
-          this->coin_id_scheme());
-    }
-
-  }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void BeamCreateOutput::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:hw.trezor.messages.beam.BeamCreateOutput)
-  GOOGLE_DCHECK_NE(&from, this);
-  const BeamCreateOutput* source =
-      ::google::protobuf::DynamicCastToGenerated<BeamCreateOutput>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:hw.trezor.messages.beam.BeamCreateOutput)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:hw.trezor.messages.beam.BeamCreateOutput)
-    MergeFrom(*source);
-  }
-}
-
-void BeamCreateOutput::MergeFrom(const BeamCreateOutput& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:hw.trezor.messages.beam.BeamCreateOutput)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 0x00000003u) {
-    if (cached_has_bits & 0x00000001u) {
-      mutable_coin_id()->::hw::trezor::messages::beam::BeamCoinID::MergeFrom(from.coin_id());
-    }
-    if (cached_has_bits & 0x00000002u) {
-      coin_id_scheme_ = from.coin_id_scheme_;
-    }
-    _has_bits_[0] |= cached_has_bits;
-  }
-}
-
-void BeamCreateOutput::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:hw.trezor.messages.beam.BeamCreateOutput)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void BeamCreateOutput::CopyFrom(const BeamCreateOutput& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:hw.trezor.messages.beam.BeamCreateOutput)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool BeamCreateOutput::IsInitialized() const {
-  return true;
-}
-
-void BeamCreateOutput::Swap(BeamCreateOutput* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void BeamCreateOutput::InternalSwap(BeamCreateOutput* other) {
-  using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(coin_id_, other->coin_id_);
-  swap(coin_id_scheme_, other->coin_id_scheme_);
-}
-
-::google::protobuf::Metadata BeamCreateOutput::GetMetadata() const {
-  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_messages_2dbeam_2eproto);
-  return ::file_level_metadata_messages_2dbeam_2eproto[kIndexInFileMessages];
-}
-
-
-// ===================================================================
-
 void BeamRangeproofData::InitAsDefaultInstance() {
+  ::hw::trezor::messages::beam::_BeamRangeproofData_default_instance_._instance.get_mutable()->pt0_ = const_cast< ::hw::trezor::messages::beam::BeamECCPoint*>(
+      ::hw::trezor::messages::beam::BeamECCPoint::internal_default_instance());
+  ::hw::trezor::messages::beam::_BeamRangeproofData_default_instance_._instance.get_mutable()->pt1_ = const_cast< ::hw::trezor::messages::beam::BeamECCPoint*>(
+      ::hw::trezor::messages::beam::BeamECCPoint::internal_default_instance());
 }
 class BeamRangeproofData::HasBitSetters {
  public:
@@ -6284,13 +6049,31 @@ class BeamRangeproofData::HasBitSetters {
     msg->_has_bits_[0] |= 0x00000001u;
   }
   static void set_has_is_successful(BeamRangeproofData* msg) {
+    msg->_has_bits_[0] |= 0x00000008u;
+  }
+  static const ::hw::trezor::messages::beam::BeamECCPoint& pt0(const BeamRangeproofData* msg);
+  static void set_has_pt0(BeamRangeproofData* msg) {
     msg->_has_bits_[0] |= 0x00000002u;
+  }
+  static const ::hw::trezor::messages::beam::BeamECCPoint& pt1(const BeamRangeproofData* msg);
+  static void set_has_pt1(BeamRangeproofData* msg) {
+    msg->_has_bits_[0] |= 0x00000004u;
   }
 };
 
+const ::hw::trezor::messages::beam::BeamECCPoint&
+BeamRangeproofData::HasBitSetters::pt0(const BeamRangeproofData* msg) {
+  return *msg->pt0_;
+}
+const ::hw::trezor::messages::beam::BeamECCPoint&
+BeamRangeproofData::HasBitSetters::pt1(const BeamRangeproofData* msg) {
+  return *msg->pt1_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int BeamRangeproofData::kDataTauxFieldNumber;
 const int BeamRangeproofData::kIsSuccessfulFieldNumber;
+const int BeamRangeproofData::kPt0FieldNumber;
+const int BeamRangeproofData::kPt1FieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 BeamRangeproofData::BeamRangeproofData()
@@ -6307,6 +6090,16 @@ BeamRangeproofData::BeamRangeproofData(const BeamRangeproofData& from)
   if (from.has_data_taux()) {
     data_taux_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_taux_);
   }
+  if (from.has_pt0()) {
+    pt0_ = new ::hw::trezor::messages::beam::BeamECCPoint(*from.pt0_);
+  } else {
+    pt0_ = nullptr;
+  }
+  if (from.has_pt1()) {
+    pt1_ = new ::hw::trezor::messages::beam::BeamECCPoint(*from.pt1_);
+  } else {
+    pt1_ = nullptr;
+  }
   is_successful_ = from.is_successful_;
   // @@protoc_insertion_point(copy_constructor:hw.trezor.messages.beam.BeamRangeproofData)
 }
@@ -6315,7 +6108,9 @@ void BeamRangeproofData::SharedCtor() {
   ::google::protobuf::internal::InitSCC(
       &scc_info_BeamRangeproofData_messages_2dbeam_2eproto.base);
   data_taux_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  is_successful_ = false;
+  ::memset(&pt0_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&is_successful_) -
+      reinterpret_cast<char*>(&pt0_)) + sizeof(is_successful_));
 }
 
 BeamRangeproofData::~BeamRangeproofData() {
@@ -6325,6 +6120,8 @@ BeamRangeproofData::~BeamRangeproofData() {
 
 void BeamRangeproofData::SharedDtor() {
   data_taux_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete pt0_;
+  if (this != internal_default_instance()) delete pt1_;
 }
 
 void BeamRangeproofData::SetCachedSize(int size) const {
@@ -6343,8 +6140,18 @@ void BeamRangeproofData::Clear() {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000001u) {
-    data_taux_.ClearNonDefaultToEmptyNoArena();
+  if (cached_has_bits & 0x00000007u) {
+    if (cached_has_bits & 0x00000001u) {
+      data_taux_.ClearNonDefaultToEmptyNoArena();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      GOOGLE_DCHECK(pt0_ != nullptr);
+      pt0_->Clear();
+    }
+    if (cached_has_bits & 0x00000004u) {
+      GOOGLE_DCHECK(pt1_ != nullptr);
+      pt1_->Clear();
+    }
   }
   is_successful_ = false;
   _has_bits_.Clear();
@@ -6384,6 +6191,32 @@ const char* BeamRangeproofData::_InternalParse(const char* begin, const char* en
         if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
         msg->set_is_successful(::google::protobuf::internal::ReadVarint(&ptr));
         GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // optional .hw.trezor.messages.beam.BeamECCPoint pt0 = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::beam::BeamECCPoint::_InternalParse;
+        object = msg->mutable_pt0();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // optional .hw.trezor.messages.beam.BeamECCPoint pt1 = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::hw::trezor::messages::beam::BeamECCPoint::_InternalParse;
+        object = msg->mutable_pt1();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
         break;
       }
       default: {
@@ -6444,6 +6277,28 @@ bool BeamRangeproofData::MergePartialFromCodedStream(
         break;
       }
 
+      // optional .hw.trezor.messages.beam.BeamECCPoint pt0 = 3;
+      case 3: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_pt0()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
+      // optional .hw.trezor.messages.beam.BeamECCPoint pt1 = 4;
+      case 4: {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
+               input, mutable_pt1()));
+        } else {
+          goto handle_unusual;
+        }
+        break;
+      }
+
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -6479,8 +6334,20 @@ void BeamRangeproofData::SerializeWithCachedSizes(
   }
 
   // optional bool is_successful = 2;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000008u) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->is_successful(), output);
+  }
+
+  // optional .hw.trezor.messages.beam.BeamECCPoint pt0 = 3;
+  if (cached_has_bits & 0x00000002u) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      3, HasBitSetters::pt0(this), output);
+  }
+
+  // optional .hw.trezor.messages.beam.BeamECCPoint pt1 = 4;
+  if (cached_has_bits & 0x00000004u) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4, HasBitSetters::pt1(this), output);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6505,8 +6372,22 @@ void BeamRangeproofData::SerializeWithCachedSizes(
   }
 
   // optional bool is_successful = 2;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00000008u) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->is_successful(), target);
+  }
+
+  // optional .hw.trezor.messages.beam.BeamECCPoint pt0 = 3;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        3, HasBitSetters::pt0(this), target);
+  }
+
+  // optional .hw.trezor.messages.beam.BeamECCPoint pt1 = 4;
+  if (cached_has_bits & 0x00000004u) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageToArray(
+        4, HasBitSetters::pt1(this), target);
   }
 
   if (_internal_metadata_.have_unknown_fields()) {
@@ -6531,7 +6412,7 @@ size_t BeamRangeproofData::ByteSizeLong() const {
   (void) cached_has_bits;
 
   cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x00000003u) {
+  if (cached_has_bits & 0x0000000fu) {
     // optional bytes data_taux = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
@@ -6539,8 +6420,22 @@ size_t BeamRangeproofData::ByteSizeLong() const {
           this->data_taux());
     }
 
-    // optional bool is_successful = 2;
+    // optional .hw.trezor.messages.beam.BeamECCPoint pt0 = 3;
     if (cached_has_bits & 0x00000002u) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *pt0_);
+    }
+
+    // optional .hw.trezor.messages.beam.BeamECCPoint pt1 = 4;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSize(
+          *pt1_);
+    }
+
+    // optional bool is_successful = 2;
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 + 1;
     }
 
@@ -6573,12 +6468,18 @@ void BeamRangeproofData::MergeFrom(const BeamRangeproofData& from) {
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 0x00000003u) {
+  if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
       _has_bits_[0] |= 0x00000001u;
       data_taux_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_taux_);
     }
     if (cached_has_bits & 0x00000002u) {
+      mutable_pt0()->::hw::trezor::messages::beam::BeamECCPoint::MergeFrom(from.pt0());
+    }
+    if (cached_has_bits & 0x00000004u) {
+      mutable_pt1()->::hw::trezor::messages::beam::BeamECCPoint::MergeFrom(from.pt1());
+    }
+    if (cached_has_bits & 0x00000008u) {
       is_successful_ = from.is_successful_;
     }
     _has_bits_[0] |= cached_has_bits;
@@ -6613,6 +6514,8 @@ void BeamRangeproofData::InternalSwap(BeamRangeproofData* other) {
   swap(_has_bits_[0], other->_has_bits_[0]);
   data_taux_.Swap(&other->data_taux_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
+  swap(pt0_, other->pt0_);
+  swap(pt1_, other->pt1_);
   swap(is_successful_, other->is_successful_);
 }
 
@@ -12900,9 +12803,6 @@ template<> PROTOBUF_NOINLINE ::hw::trezor::messages::beam::BeamOwnerKey* Arena::
 }
 template<> PROTOBUF_NOINLINE ::hw::trezor::messages::beam::BeamGenerateRangeproof* Arena::CreateMaybeMessage< ::hw::trezor::messages::beam::BeamGenerateRangeproof >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::beam::BeamGenerateRangeproof >(arena);
-}
-template<> PROTOBUF_NOINLINE ::hw::trezor::messages::beam::BeamCreateOutput* Arena::CreateMaybeMessage< ::hw::trezor::messages::beam::BeamCreateOutput >(Arena* arena) {
-  return Arena::CreateInternal< ::hw::trezor::messages::beam::BeamCreateOutput >(arena);
 }
 template<> PROTOBUF_NOINLINE ::hw::trezor::messages::beam::BeamRangeproofData* Arena::CreateMaybeMessage< ::hw::trezor::messages::beam::BeamRangeproofData >(Arena* arena) {
   return Arena::CreateInternal< ::hw::trezor::messages::beam::BeamRangeproofData >(arena);
