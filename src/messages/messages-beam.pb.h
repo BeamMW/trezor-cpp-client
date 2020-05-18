@@ -2904,6 +2904,24 @@ class BeamPKdf final :
   ::std::string* release_key();
   void set_allocated_key(::std::string* key);
 
+  // optional .hw.trezor.messages.beam.BeamECCPoint cofactor_G = 2;
+  bool has_cofactor_g() const;
+  void clear_cofactor_g();
+  static const int kCofactorGFieldNumber = 2;
+  const ::hw::trezor::messages::beam::BeamECCPoint& cofactor_g() const;
+  ::hw::trezor::messages::beam::BeamECCPoint* release_cofactor_g();
+  ::hw::trezor::messages::beam::BeamECCPoint* mutable_cofactor_g();
+  void set_allocated_cofactor_g(::hw::trezor::messages::beam::BeamECCPoint* cofactor_g);
+
+  // optional .hw.trezor.messages.beam.BeamECCPoint cofactor_J = 3;
+  bool has_cofactor_j() const;
+  void clear_cofactor_j();
+  static const int kCofactorJFieldNumber = 3;
+  const ::hw::trezor::messages::beam::BeamECCPoint& cofactor_j() const;
+  ::hw::trezor::messages::beam::BeamECCPoint* release_cofactor_j();
+  ::hw::trezor::messages::beam::BeamECCPoint* mutable_cofactor_j();
+  void set_allocated_cofactor_j(::hw::trezor::messages::beam::BeamECCPoint* cofactor_j);
+
   // @@protoc_insertion_point(class_scope:hw.trezor.messages.beam.BeamPKdf)
  private:
   class HasBitSetters;
@@ -2912,6 +2930,8 @@ class BeamPKdf final :
   ::google::protobuf::internal::HasBits<1> _has_bits_;
   mutable ::google::protobuf::internal::CachedSize _cached_size_;
   ::google::protobuf::internal::ArenaStringPtr key_;
+  ::hw::trezor::messages::beam::BeamECCPoint* cofactor_g_;
+  ::hw::trezor::messages::beam::BeamECCPoint* cofactor_j_;
   friend struct ::TableStruct_messages_2dbeam_2eproto;
 };
 // -------------------------------------------------------------------
@@ -6429,6 +6449,104 @@ inline void BeamPKdf::set_allocated_key(::std::string* key) {
   }
   key_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), key);
   // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamPKdf.key)
+}
+
+// optional .hw.trezor.messages.beam.BeamECCPoint cofactor_G = 2;
+inline bool BeamPKdf::has_cofactor_g() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void BeamPKdf::clear_cofactor_g() {
+  if (cofactor_g_ != nullptr) cofactor_g_->Clear();
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline const ::hw::trezor::messages::beam::BeamECCPoint& BeamPKdf::cofactor_g() const {
+  const ::hw::trezor::messages::beam::BeamECCPoint* p = cofactor_g_;
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamPKdf.cofactor_G)
+  return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::beam::BeamECCPoint*>(
+      &::hw::trezor::messages::beam::_BeamECCPoint_default_instance_);
+}
+inline ::hw::trezor::messages::beam::BeamECCPoint* BeamPKdf::release_cofactor_g() {
+  // @@protoc_insertion_point(field_release:hw.trezor.messages.beam.BeamPKdf.cofactor_G)
+  _has_bits_[0] &= ~0x00000002u;
+  ::hw::trezor::messages::beam::BeamECCPoint* temp = cofactor_g_;
+  cofactor_g_ = nullptr;
+  return temp;
+}
+inline ::hw::trezor::messages::beam::BeamECCPoint* BeamPKdf::mutable_cofactor_g() {
+  _has_bits_[0] |= 0x00000002u;
+  if (cofactor_g_ == nullptr) {
+    auto* p = CreateMaybeMessage<::hw::trezor::messages::beam::BeamECCPoint>(GetArenaNoVirtual());
+    cofactor_g_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.beam.BeamPKdf.cofactor_G)
+  return cofactor_g_;
+}
+inline void BeamPKdf::set_allocated_cofactor_g(::hw::trezor::messages::beam::BeamECCPoint* cofactor_g) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == nullptr) {
+    delete cofactor_g_;
+  }
+  if (cofactor_g) {
+    ::google::protobuf::Arena* submessage_arena = nullptr;
+    if (message_arena != submessage_arena) {
+      cofactor_g = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, cofactor_g, submessage_arena);
+    }
+    _has_bits_[0] |= 0x00000002u;
+  } else {
+    _has_bits_[0] &= ~0x00000002u;
+  }
+  cofactor_g_ = cofactor_g;
+  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamPKdf.cofactor_G)
+}
+
+// optional .hw.trezor.messages.beam.BeamECCPoint cofactor_J = 3;
+inline bool BeamPKdf::has_cofactor_j() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void BeamPKdf::clear_cofactor_j() {
+  if (cofactor_j_ != nullptr) cofactor_j_->Clear();
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline const ::hw::trezor::messages::beam::BeamECCPoint& BeamPKdf::cofactor_j() const {
+  const ::hw::trezor::messages::beam::BeamECCPoint* p = cofactor_j_;
+  // @@protoc_insertion_point(field_get:hw.trezor.messages.beam.BeamPKdf.cofactor_J)
+  return p != nullptr ? *p : *reinterpret_cast<const ::hw::trezor::messages::beam::BeamECCPoint*>(
+      &::hw::trezor::messages::beam::_BeamECCPoint_default_instance_);
+}
+inline ::hw::trezor::messages::beam::BeamECCPoint* BeamPKdf::release_cofactor_j() {
+  // @@protoc_insertion_point(field_release:hw.trezor.messages.beam.BeamPKdf.cofactor_J)
+  _has_bits_[0] &= ~0x00000004u;
+  ::hw::trezor::messages::beam::BeamECCPoint* temp = cofactor_j_;
+  cofactor_j_ = nullptr;
+  return temp;
+}
+inline ::hw::trezor::messages::beam::BeamECCPoint* BeamPKdf::mutable_cofactor_j() {
+  _has_bits_[0] |= 0x00000004u;
+  if (cofactor_j_ == nullptr) {
+    auto* p = CreateMaybeMessage<::hw::trezor::messages::beam::BeamECCPoint>(GetArenaNoVirtual());
+    cofactor_j_ = p;
+  }
+  // @@protoc_insertion_point(field_mutable:hw.trezor.messages.beam.BeamPKdf.cofactor_J)
+  return cofactor_j_;
+}
+inline void BeamPKdf::set_allocated_cofactor_j(::hw::trezor::messages::beam::BeamECCPoint* cofactor_j) {
+  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  if (message_arena == nullptr) {
+    delete cofactor_j_;
+  }
+  if (cofactor_j) {
+    ::google::protobuf::Arena* submessage_arena = nullptr;
+    if (message_arena != submessage_arena) {
+      cofactor_j = ::google::protobuf::internal::GetOwnedMessage(
+          message_arena, cofactor_j, submessage_arena);
+    }
+    _has_bits_[0] |= 0x00000004u;
+  } else {
+    _has_bits_[0] &= ~0x00000004u;
+  }
+  cofactor_j_ = cofactor_j;
+  // @@protoc_insertion_point(field_set_allocated:hw.trezor.messages.beam.BeamPKdf.cofactor_J)
 }
 
 // -------------------------------------------------------------------
