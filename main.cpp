@@ -172,12 +172,18 @@ int main()
                 clear_flag(queue_size, is_alive_idx);
             });
 
-            trezor->call_BeamGetPKdf(false, 1, true, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
+            trezor->call_BeamGetPKdf(true, 0, true, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
                 const uint8_t *key = reinterpret_cast<const uint8_t *>(child_cast<Message, BeamPKdf>(msg).key().c_str());
+                const uint8_t *cofactor_g_x = reinterpret_cast<const uint8_t *>(child_cast<Message, BeamPKdf>(msg).cofactor_g().x().c_str());
+                const uint8_t *cofactor_j_x = reinterpret_cast<const uint8_t *>(child_cast<Message, BeamPKdf>(msg).cofactor_j().x().c_str());
                 std::cout << "SESSION: " << session << std::endl;
                 std::cout << "BeamGetPKdf" << std::endl;
                 std::cout << "key: ";
                 print_bin(reinterpret_cast<const uint8_t *>(key), 32);
+                std::cout << "cofactor_g_x: ";
+                print_bin(reinterpret_cast<const uint8_t *>(cofactor_g_x), 32);
+                std::cout << "cofactor_j_x: ";
+                print_bin(reinterpret_cast<const uint8_t *>(cofactor_j_x), 32);
                 std::cout << std::endl;
                 clear_flag(queue_size, is_alive_idx);
             });
