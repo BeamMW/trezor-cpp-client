@@ -69,7 +69,7 @@ class WorkingQueue : public Queue<InQueueItem<O, I>>
             deque.end());
     }
 
-    bool replase(const I &old_args, InQueueFunction<O, I> new_function, PopCallback<O, I> new_callback)
+    bool replase(const I &old_args, const InQueueFunction<O, I>& new_function, const PopCallback<O, I>& new_callback)
     {
         std::unique_lock<std::mutex> mlock(Queue<InQueueItem<O, I>>::m_mutex);
         auto &deque = Queue<InQueueItem<O, I>>::m_deque;
