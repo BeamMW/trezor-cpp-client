@@ -155,19 +155,25 @@ int main()
                 clear_flag(queue_size, is_alive_idx);
             });
 
-            BeamCrypto_CoinID cid = {1, 1, 1, 2, 0};
+            BeamCrypto_CoinID cid = {1, 111, 16777216, 23110, 0};
             BeamCrypto_CompactPoint pt0;
-            memcpy(pt0.m_X.m_pVal, test_bytes, 32);
-            pt0.m_Y = 1;
             BeamCrypto_CompactPoint pt1;
-            memcpy(pt1.m_X.m_pVal, test_bytes, 32);
+            hex2bin("5cea50aa1375f9482f605541b1883c9ec8d2206444cc32754d7371f018a44410", 64, pt0.m_X.m_pVal);
+            hex2bin("b18f7b5debc52ccb967a3361f0b74cd2aa6102f78cd82a7378870b056c2aa519", 64, pt1.m_X.m_pVal);
+            pt0.m_Y = 1;
             pt1.m_Y = 1;
 
             trezor->call_BeamGenerateRangeproof(&cid, &pt0, &pt1, nullptr, nullptr, [&, is_alive_idx](const Message &msg, std::string session, size_t queue_size) {
                 bool is_successful = child_cast<Message, BeamRangeproofData>(msg).is_successful();
+                const uint8_t *pt0_x = reinterpret_cast<const uint8_t *>(child_cast<Message, BeamRangeproofData>(msg).pt0().x().c_str());
+                const uint8_t *pt1_x = reinterpret_cast<const uint8_t *>(child_cast<Message, BeamRangeproofData>(msg).pt1().x().c_str());
                 std::cout << "SESSION: " << session << std::endl;
                 std::cout << "BeamGenerateRangeproof" << std::endl;
                 std::cout << "is_successful: " << is_successful << std::endl;
+                std::cout << "pt0_x: ";
+                print_bin(reinterpret_cast<const uint8_t *>(pt0_x), 32);
+                std::cout << "pt0_y: ";
+                print_bin(reinterpret_cast<const uint8_t *>(pt1_x), 32);
                 std::cout << std::endl;
                 clear_flag(queue_size, is_alive_idx);
             });
