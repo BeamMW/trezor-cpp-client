@@ -19,3 +19,16 @@ inline void from_json(const nlohmann::json &j, Enumerate &value)
   value.vendor = j.at("vendor").get<int>();
   value.product = j.at("product").get<int>();
 }
+
+namespace std
+{
+    inline string to_string(const Enumerate& device)
+    {
+        return "Trezor(device.path=" + device.path
+            + ",product=" + std::to_string(device.product)
+            + ",session=" + device.session
+            + ",vendor=" + std::to_string(device.vendor)
+            + ")";
+    }
+    
+}
