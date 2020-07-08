@@ -29,6 +29,7 @@ protected:
 
 private:
   Client m_client;
+  std::mutex m_mutex;
   WorkingQueue<Call, std::string> m_worker_queue;
   WorkingQueue<bool, size_t> m_request_queue;
 
@@ -48,12 +49,17 @@ inline BaseDeviceManager::BaseDeviceManager()
         if (MessageType_ButtonRequest == call.type)
         {
           m_worker_queue.push(session_pop, [&](const std::string &session) {
+            std::unique_lock<std::mutex> lock(m_mutex);
             return m_client.call(session, pack_message(ButtonAck()));
           });
         }
         else
         {
+          std::unique_lock<std::mutex> lock(m_mutex);
           auto released = m_client.release(session_pop);
+          std::stringstream ss;
+          ss << "\nreleased session: " << released.session << std::endl;
+          std::cout << ss.str();
           if (released.session == m_session)
             m_session = "null";
 
@@ -73,6 +79,7 @@ inline void BaseDeviceManager::init(const Enumerate &enumerate)
   if (enumerate.session != "null")
     throw std::runtime_error("device already occupied, complete the previous session first");
 
+  std::unique_lock<std::mutex> lock(m_mutex);
   m_path = enumerate.path;
   m_session = enumerate.session;
   m_is_real = enumerate.vendor && enumerate.product;
@@ -82,6 +89,7 @@ inline void BaseDeviceManager::callback_Failure(MessageCallback callback)
 {
   using namespace hw::trezor::messages;
   auto key = std::make_pair(MessageType_Failure, GLOBAL_SESSION_ID);
+  std::unique_lock<std::mutex> lock(m_mutex);
   m_callbacks[key] = callback;
 }
 
@@ -89,6 +97,7 @@ inline void BaseDeviceManager::callback_Success(MessageCallback callback)
 {
   using namespace hw::trezor::messages;
   auto key = std::make_pair(MessageType_Success, GLOBAL_SESSION_ID);
+  std::unique_lock<std::mutex> lock(m_mutex);
   m_callbacks[key] = callback;
 }
 
@@ -112,7 +121,10 @@ bool BaseDeviceManager::execute_callback(const Call &call, const std::string &se
 
 inline void BaseDeviceManager::call(std::string message, int type, MessageCallback&& callback) throw()
 {
-  m_request_queue.push(m_request_queue.size(), [&, message, type, callback=std::move(callback)](size_t size) {
+  m_request_queue.push(m_request_queue.size(), 
+      [this, message, type, callback=std::move(callback)](size_t size)
+  {
+    std::unique_lock<std::mutex> lock(m_mutex);
     if (m_session != "null")
     {
       throw std::runtime_error("previous session must be completed");
@@ -122,13 +134,21 @@ inline void BaseDeviceManager::call(std::string message, int type, MessageCallba
     auto acquired = m_client.acquire(m_path, m_session);
     if (acquired.error.empty())
     {
+        std::stringstream  ss;
+        ss << "\nacquired session: " << acquired.session << std::endl;
+        std::cout << ss.str();
       m_session = acquired.session;
       if (callback)
       {
-        auto key = std::make_pair(type, m_session);
-        m_callbacks[key] = std::move(callback);
+        auto key = std::make_pair(type, acquired.session);
+        auto p = m_callbacks.insert({ key, std::move(callback) });
+        if (p.second == false)
+        {
+            throw std::runtime_error("callback already exists");
+        }
       }
-      m_worker_queue.push(m_session, [&, message](const std::string &session) {
+      m_worker_queue.push(m_session, [this, message](const std::string &session) {
+        std::unique_lock<std::mutex> lock(m_mutex);
         return m_client.call(session, message);
       });
 

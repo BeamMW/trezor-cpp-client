@@ -33,19 +33,22 @@ public:
 
     void push (const T& item)
     {
-        std::unique_lock<std::mutex> mlock(m_mutex);
-        m_deque.push_back(item);
-        mlock.unlock();
+        {
+            std::unique_lock<std::mutex> mlock(m_mutex);
+            m_deque.push_back(item);
+        }
         m_cond.notify_one();
     }
 
     void clear ()
     {
+        std::unique_lock<std::mutex> mlock(m_mutex);
         m_deque.clear();
     }
 
     size_t size()
     {
+        std::unique_lock<std::mutex> mlock(m_mutex);
         return m_deque.size();
     }
 

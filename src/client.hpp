@@ -32,17 +32,17 @@ class Client
         return perform<std::vector<Enumerate>>("/enumerate").first;
     }
 
-    Session acquire(std::string path, std::string previousSession = "null") const
+    Session acquire(const std::string& path, const std::string& previousSession = "null") const
     {
         return perform<Session>("/acquire/" + path + "/" + previousSession).first;
     }
 
-    Session release(std::string session) const
+    Session release(const std::string& session) const
     {
         return perform<Session>("/release/" + session).first;
     }
 
-    Call call(std::string session, std::string hex) const
+    Call call(const std::string& session, const std::string& hex) const
     {
         Call response;
         auto result = perform<Error>("/call/" + session, hex.c_str());
@@ -71,7 +71,7 @@ class Client
 
   protected:
     template <typename T>
-    std::pair<T, std::string> perform(std::string url, const char *body = nullptr) const
+    std::pair<T, std::string> perform(const std::string& url, const char *body = nullptr) const
     {
         auto result = perform(url, body);
         T response;
@@ -97,7 +97,7 @@ class Client
         return std::make_pair(response, result);
     }
 
-    std::string perform(std::string url, const char *body = nullptr) const
+    std::string perform(const std::string& url, const char *body = nullptr) const
     {
         if (!m_Curl)
             return {};
