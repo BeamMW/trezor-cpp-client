@@ -57,9 +57,6 @@ inline BaseDeviceManager::BaseDeviceManager()
         {
           std::unique_lock<std::mutex> lock(m_mutex);
           auto released = m_client.release(session_pop);
-          std::stringstream ss;
-          ss << "\nreleased session: " << released.session << std::endl;
-          std::cout << ss.str();
           if (released.session == m_session)
             m_session = "null";
 
@@ -134,9 +131,6 @@ inline void BaseDeviceManager::call(std::string message, int type, MessageCallba
     auto acquired = m_client.acquire(m_path, m_session);
     if (acquired.error.empty())
     {
-        std::stringstream  ss;
-        ss << "\nacquired session: " << acquired.session << std::endl;
-        std::cout << ss.str();
       m_session = acquired.session;
       if (callback)
       {

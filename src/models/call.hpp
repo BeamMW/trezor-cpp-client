@@ -20,7 +20,7 @@ typedef struct
     return std::move(message);
   }
 
-  std::string to_response()
+  std::string to_response() const
   {
     return pack_message(type, length, msg);
   }
